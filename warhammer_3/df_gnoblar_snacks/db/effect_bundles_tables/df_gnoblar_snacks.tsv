@@ -1,0 +1,10 @@
+key	localised_description	localised_title	bundle_target	priority	ui_icon	is_global_effect	show_in_3d_space	owner_only
+#effect_bundles_tables;4;db/effect_bundles_tables/df_gnoblar_snacks								
+df_gnoblar_snacks_in_the_book_reward			faction	1		true	false	true
+df_gnoblar_snacks_stomache_ache_skaven_reward			faction	1		false	false	true
+df_gnoblar_snacks_stomache_ache_undead_reward			faction	1		false	false	true
+df_gnoblar_snacks_stomache_ache_nurgle_reward			faction	1		false	false	true
+df_gnoblar_snacks_alcohol_content_reward			faction	1		false	false	true
+df_gnoblar_snacks_disgusting_food_reward			faction	1		false	false	true
+df_gnoblar_snacks_horse_meat_reward			faction	1		false	false	true
+df_gnoblar_snacks_fearful_gnoblars_reward			faction	1		false	false	true

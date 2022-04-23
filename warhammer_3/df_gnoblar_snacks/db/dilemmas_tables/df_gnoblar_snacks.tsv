@@ -1,0 +1,4 @@
+key	generate	localised_description	localised_title	ui_image	prioritized	event_category	sound_popup_override	sound_click_override	override_icon
+#dilemmas_tables;2;db/dilemmas_tables/df_gnoblar_snacks									
+df_gnoblar_snacks_dilemma_1	false			eat_unit	true	Event			
+df_gnoblar_snacks_dilemma_2	false			eat_unit	true	Event			

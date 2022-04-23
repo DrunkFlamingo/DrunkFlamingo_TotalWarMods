@@ -1,0 +1,18 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/df_gnoblar_snacks_bundles.loc		
+effect_bundles_localised_title_df_gnoblar_snacks_in_the_book_reward	In the Book	true
+effect_bundles_localised_title_df_gnoblar_snacks_stomache_ache_skaven_reward	Queasy Ogres	true
+effect_bundles_localised_title_df_gnoblar_snacks_stomache_ache_undead_reward	Queasy Ogres	true
+effect_bundles_localised_title_df_gnoblar_snacks_stomache_ache_nurgle_reward	Queasy Ogres	true
+effect_bundles_localised_title_df_gnoblar_snacks_alcohol_content_reward	Irritable Ogres	true
+effect_bundles_localised_title_df_gnoblar_snacks_disgusting_food_reward	Disappointed Ogres	true
+effect_bundles_localised_title_df_gnoblar_snacks_horse_meat_reward	A Taste for Horse Meat	true
+effect_bundles_localised_title_df_gnoblar_snacks_fearful_gnoblars_reward	Terrified Gnoblars	true
+effect_bundles_localised_description_df_gnoblar_snacks_in_the_book_reward	Ogres can eat anything. Some of our former allies didn't take that warning to heart.	true
+effect_bundles_localised_description_df_gnoblar_snacks_stomache_ache_skaven_reward	Ogres can eat anything. That doesn't mean it will be pleasant.	true
+effect_bundles_localised_description_df_gnoblar_snacks_stomache_ache_undead_reward	Ogres can eat anything. That doesn't mean it will be pleasant.	true
+effect_bundles_localised_description_df_gnoblar_snacks_stomache_ache_nurgle_reward	Ogres can eat anything. That doesn't mean it will be pleasant.	true
+effect_bundles_localised_description_df_gnoblar_snacks_alcohol_content_reward	After a night of quarreling and revelling, everyone has quite the headache.	true
+effect_bundles_localised_description_df_gnoblar_snacks_disgusting_food_reward	Ogres can eat anything. That doesn't mean it will be pleasant.	true
+effect_bundles_localised_description_df_gnoblar_snacks_horse_meat_reward	Horses are majestic creatures. Delicious too.	true
+effect_bundles_localised_description_df_gnoblar_snacks_fearful_gnoblars_reward	One Ogre can eat more than twice his weight in Gnoblars. If they can find the craven bastards, that is. 	true

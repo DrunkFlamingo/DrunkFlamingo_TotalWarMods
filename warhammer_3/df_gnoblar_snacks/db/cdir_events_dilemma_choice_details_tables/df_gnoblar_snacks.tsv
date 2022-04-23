@@ -1,0 +1,6 @@
+choice_key	dilemma_key	associated_audio_trigger
+#cdir_events_dilemma_choice_details_tables;3;db/cdir_events_dilemma_choice_details_tables/df_gnoblar_snacks		
+FIRST	df_gnoblar_snacks_dilemma_1	
+FIRST	df_gnoblar_snacks_dilemma_2	
+SECOND	df_gnoblar_snacks_dilemma_1	
+SECOND	df_gnoblar_snacks_dilemma_2	

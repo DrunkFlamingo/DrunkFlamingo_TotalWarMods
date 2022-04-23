@@ -1,0 +1,10 @@
+key	generate	ui_image	prioritised	event_category	override_icon
+#incidents_tables;3;db/incidents_tables/df_gnoblar_snacks					
+df_gnoblar_snacks_in_the_book	false	faction	true	Event	
+df_gnoblar_snacks_stomache_ache_skaven	false	faction	true	Event	
+df_gnoblar_snacks_stomache_ache_undead	false	faction	true	Event	
+df_gnoblar_snacks_stomache_ache_nurgle	false	faction	true	Event	
+df_gnoblar_snacks_alcohol_content	false	faction	true	Event	
+df_gnoblar_snacks_disgusting_food	false	faction	true	Event	
+df_gnoblar_snacks_horse_meat	false	faction	true	Event	
+df_gnoblar_snacks_fearful_gnoblars	false	faction	true	Event	

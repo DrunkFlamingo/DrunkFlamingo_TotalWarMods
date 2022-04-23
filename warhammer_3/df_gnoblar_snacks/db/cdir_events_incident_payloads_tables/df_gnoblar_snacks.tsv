@@ -1,0 +1,10 @@
+id	incident_key	payload_key	value	target_key
+#cdir_events_incident_payloads_tables;2;db/cdir_events_incident_payloads_tables/df_gnoblar_snacks				
+416901	df_gnoblar_snacks_in_the_book	EFFECT_BUNDLE	KEY[df_gnoblar_snacks_in_the_book_reward];DURATION[0]	default
+416902	df_gnoblar_snacks_stomache_ache_skaven	EFFECT_BUNDLE	KEY[df_gnoblar_snacks_stomache_ache_skaven_reward];DURATION[3]	default
+416903	df_gnoblar_snacks_stomache_ache_undead	EFFECT_BUNDLE	KEY[df_gnoblar_snacks_stomache_ache_undead_reward];DURATION[3]	default
+416904	df_gnoblar_snacks_stomache_ache_nurgle	EFFECT_BUNDLE	KEY[df_gnoblar_snacks_stomache_ache_nurgle_reward];DURATION[3]	default
+416905	df_gnoblar_snacks_alcohol_content	EFFECT_BUNDLE	KEY[df_gnoblar_snacks_alcohol_content_reward];DURATION[3]	default
+416906	df_gnoblar_snacks_disgusting_food	EFFECT_BUNDLE	KEY[df_gnoblar_snacks_disgusting_food_reward];DURATION[3]	default
+416907	df_gnoblar_snacks_horse_meat	EFFECT_BUNDLE	KEY[df_gnoblar_snacks_horse_meat_reward];DURATION[3]	default
+416908	df_gnoblar_snacks_fearful_gnoblars	EFFECT_BUNDLE	KEY[df_gnoblar_snacks_fearful_gnoblars_reward];DURATION[3]	default

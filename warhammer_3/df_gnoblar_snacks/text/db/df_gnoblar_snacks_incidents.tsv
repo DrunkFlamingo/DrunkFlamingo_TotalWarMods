@@ -1,0 +1,30 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/df_gnoblar_snacks_incidents.loc		
+incidents_localised_title_df_gnoblar_snacks_in_the_book	The Great Cookbook of Grudges	true
+incidents_localised_title_df_gnoblar_snacks_alcohol_content	Drunken Ogres	true
+incidents_localised_title_df_gnoblar_snacks_disgusting_food	A Revolting Meal	true
+incidents_localised_title_df_gnoblar_snacks_horse_meat	A Delicious Meal	true
+incidents_localised_title_df_gnoblar_snacks_fearful_gnoblars	Fearful Gnoblars	true
+incidents_localised_description_df_gnoblar_snacks_in_the_book	After our Feast, our Dwarven Allies send a dessert with a message: they've written down our recipe and chronicled our feast in their people's greatest cook book. They won't forget our cullinary innovation any time soon. \\n[[col:yellow]]Gained from eating allied Dwarf units[[col]]	true
+incidents_localised_description_df_gnoblar_snacks_alcohol_content	After we Feast, our Ogres bellow and quarrel as they stumble around the camp. Their appetites are sated, but their skull pounds as the morning sun rises.  \\n[[col:yellow]]Gained from eating allied Dwarf or Kislevite units[[col]]	true
+incidents_localised_description_df_gnoblar_snacks_disgusting_food	After we feast, our Ogres can be heard grumbling. The meat was stringy, with more bone and gristle than flesh. Ogres will eat anything, but they'd rather not eat that.  \\n[[col:yellow]]Gained from eating allied Peasant units[[col]]	true
+incidents_localised_description_df_gnoblar_snacks_horse_meat	After we feast, our Ogres rave at the flavour of the meat. When the next battle is joined, there will be no difficulties getting some of them to guard the flank.  \\n[[col:yellow]]Gained from eating allied Cavalry units[[col]]	true
+incidents_localised_description_df_gnoblar_snacks_fearful_gnoblars	After our feast, Gnoblars have made themselves scarce. You're offering good pay and plenty of opportunity for promotion, but still the Gnoblars seem reticent to come anywhere near your camp.  \\n[[col:yellow]]Gained from eating a lot of Gnoblars[[col]]	true
+incidents_localised_title_df_gnoblar_snacks_stomache_ache_nurgle	Aching Stomach	true
+incidents_localised_title_df_gnoblar_snacks_stomache_ache_undead	Aching Stomach	true
+incidents_localised_title_df_gnoblar_snacks_stomache_ache_skaven	Aching Stomach	true
+incidents_localised_description_df_gnoblar_snacks_stomache_ache_nurgle	After our Feast, even the Ironguts are feeling a little queasy. Buboes and Pox are easy enough to eat, but much harder to stomach. \\n[[col:yellow]]Gained from eating allied Nurgling units[[col]]	true
+incidents_localised_description_df_gnoblar_snacks_stomache_ache_undead	After our Feast, even the Ironguts are feeling a little queasy. Their stomaches churn as though their food still marched within their stomach. \\n[[col:yellow]]Gained from eating allied Undead units[[col]]	true
+incidents_localised_description_df_gnoblar_snacks_stomache_ache_skaven	After our Feast, even the Ironguts are feeling a little queasy. A pale green glow permeates their raucous belches. \\n[[col:yellow]]Gained from eating allied Skaven units[[col]]	true
+dilemmas_localised_title_df_gnoblar_snacks_dilemma_1	Eat Units	true
+dilemmas_localised_description_df_gnoblar_snacks_dilemma_1	This lot is getting hungry, and it looks to them like you've stocked meat for the occasion. Shall we let em have a snack, boss?	true
+cdir_events_dilemma_choice_details_localised_choice_label_df_gnoblar_snacks_dilemma_1FIRST	Eat Em Now!	true
+cdir_events_dilemma_choice_details_localised_choice_label_df_gnoblar_snacks_dilemma_1SECOND	Eat Em Later	true
+cdir_events_dilemma_choice_details_localised_choice_title_df_gnoblar_snacks_dilemma_1FIRST	There's good meat on them! Throw em in the pot!	true
+cdir_events_dilemma_choice_details_localised_choice_title_df_gnoblar_snacks_dilemma_1SECOND	We've still got a use for these ones. Let's go eat somethin else. 	true
+dilemmas_localised_title_df_gnoblar_snacks_dilemma_2	Eat Units	true
+dilemmas_localised_description_df_gnoblar_snacks_dilemma_2	This lot is getting hungry, and it looks to them like you've stocked meat for the occasion. Shall we let em have a snack, boss?	true
+cdir_events_dilemma_choice_details_localised_choice_label_df_gnoblar_snacks_dilemma_2FIRST	Eat Em Now!	true
+cdir_events_dilemma_choice_details_localised_choice_label_df_gnoblar_snacks_dilemma_2SECOND	Eat Em Later	true
+cdir_events_dilemma_choice_details_localised_choice_title_df_gnoblar_snacks_dilemma_2FIRST	There's good meat on them! Throw em in the pot!	true
+cdir_events_dilemma_choice_details_localised_choice_title_df_gnoblar_snacks_dilemma_2SECOND	We've still got a use for these ones. Let's go eat somethin else. 	true

@@ -1,0 +1,18 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/df_gnoblar_snacks.loc		
+mod_snack_button_label	[[col:yellow]]Eat Units[[/col]]\\n\\n	true
+mod_snack_button_only_gnoblars	[[col:red]]Only Gnoblars can be eaten![[/col]]	true
+mod_snack_button_diplomacy	\\n\\n[[col:red]]Eating allied units will have diplomatic reprocussions.[[/col]]	true
+mod_snack_button_food_gain	[[img:icon_ogr_meat]][[/img]]Meat gained: 	true
+mod_snack_button_unit_limit	Careful not to choke! \\n\\n[[col:red]]You can only eat up to four units at once![[/col]]	true
+mod_snack_button_non_selected	Select units on the panel above to prepare a feast for this army.	true
+effect_bundles_localised_name_df_recently_eaten_gnoblars	Fearful Gnoblars	true
+effect_bundles_localised_description_df_recently_eaten_gnoblars		true
+pooled_resource_factors_display_name_mod_meat_eat_units	Units Eaten	true
+pooled_resource_factors_display_name_mod_eat_units	Units Eaten	true
+pooled_resources_positive_factors_display_name_mod_meat_eat_units	Units Eaten	true
+pooled_resources_negative_factors_display_name_mod_meat_eat_units	Units Eaten	true
+pooled_resource_factors_display_name_positive_mod_eat_units	Units Eaten	true
+pooled_resource_factors_display_name_negative_mod_eat_units	Units Eaten	true
+ui_text_replacements_localised_text_unit_information_food_tooltip_wh3_main_sc_ogr_ogre_kingdoms	While this unit exists, this amount will be deducted from this force's [[img:icon_ogr_meat]][[/img]]Meat.	true
+ui_text_replacements_localised_text_food_cost_title_wh3_main_sc_ogr_ogre_kingdoms	Meat Consumption	true
