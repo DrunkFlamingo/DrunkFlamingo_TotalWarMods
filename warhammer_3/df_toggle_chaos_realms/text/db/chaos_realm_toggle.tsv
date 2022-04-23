@@ -1,0 +1,7 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/chaos_realm_toggle.loc		
+fe_chaos_realm_header	Realms of Chaos	true
+incidents_localised_title_df_chaos_realms_off	Ursun Falls Silent	true
+incidents_localised_description_df_chaos_realms_off	The promises of your new advisor come to nothing - the God of Kislev falls silent. Without his mighty roar, penetrating the maelstrom is all but impossible.\\n\\nYet the Tome of Fate still binds the old man to your service; a divine punishment for his scheming. With his great foresight, who is to say what feats you may yet accomplish.	true
+uied_component_texts_localised_string_fe_chaos_realm_checkbox_text	Enable Campaign Narrative	true
+uied_component_texts_localised_string_fe_chaos_realm_checkbox_tooltip	Enable this option to play the campaign with the Realm of Chaos narrative. \\n\\n[[col:yellow]]If this option is disabled the Rifts to the Chaos Realms will never open, and the campaign will remain a sandbox.[[/col]]	true
