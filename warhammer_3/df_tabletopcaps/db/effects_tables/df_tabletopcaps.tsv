@@ -1,0 +1,4 @@
+effect	icon	priority	icon_negative	category	is_positive_value_good
+#effects_tables;0;db/effects_tables/df_tabletopcaps					
+ttc_capacity_rare	special_units.png	2	special_units.png	campaign	true
+ttc_capacity_special	rare_units.png	1	rare_units.png	campaign	true

@@ -1,0 +1,3 @@
+effect	icon	priority	icon_negative	category	is_positive_value_good
+#effects_tables;0;db/effects_tables/df_tabletopcaps_special_rules					
+df_core_snow_leopard	common_units.png	15	common_units.png	campaign	true
