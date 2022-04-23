@@ -1,7 +1,7 @@
 *.png
 *.dds
 *.pack
-warhammer_3/df_tabletopcaps/settings.rpfm_reserved.json
+*.rpfm_reserved.json
 
 **/private
 **/tw_lib

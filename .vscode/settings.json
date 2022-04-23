@@ -8,6 +8,11 @@
         "tw_lib/wh3/frontend/",
         "tw_lib/wh3/battle/"
     ],
+    "Lua.workspace.ignoreDir": [
+        ".vscode",
+        "warhammer_2",
+        "thrones_of_brittania"
+    ],
     "Lua.diagnostics.disable": [
         "lowercase-global"
     ],
