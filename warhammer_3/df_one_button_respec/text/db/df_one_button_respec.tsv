@@ -1,0 +1,24 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/df_one_button_respec.loc		
+mod_respec_button_tt	[[col:yellow]]Reset Character Skills[[/col]]\\n[[img:icon_treasury]][[/img]]9999\\n\\nRefund all of this character's skill points. \\n[[col:red]]This can only be done once.[[/col]]	true
+mod_respec_button_tt_locked_used	[[col:yellow]]Reset Character Skills[[/col]]\\n[[img:icon_treasury]][[/img]]9999\\n\\n[[col:red]]This character has already reset their skills.\\nThis can only be done once.[[/col]]	true
+mod_respec_button_tt_locked_cost	[[col:yellow]]Reset Character Skills[[/col]]\\n[[img:icon_treasury]][[/img]]9999\\n\\n[[col:red]]You cannot afford to reset this character's skills.[[/col]]	true
+campaign_payload_ui_details_description_dummy_respec_character	[[col:yellow]]All Character skill points will be refunded.[[/col]]	true
+campaign_payload_ui_details_description_dummy_respec_only_once	This can only be done once per Character.	true
+dilemmas_localised_title_df_one_button_respec_dilemma_1	Reset Character Skills	true
+dilemmas_localised_description_df_one_button_respec_dilemma_1	All beings must adapt if they are to survive, But change does not always come easily, or without a cost.	true
+cdir_events_dilemma_choice_details_localised_choice_label_df_one_button_respec_dilemma_1FIRST	Reset Skills	true
+cdir_events_dilemma_choice_details_localised_choice_label_df_one_button_respec_dilemma_1SECOND	Not Right Now	true
+cdir_events_dilemma_choice_details_localised_choice_title_df_one_button_respec_dilemma_1FIRST	All skill points will be refunded.	true
+cdir_events_dilemma_choice_details_localised_choice_title_df_one_button_respec_dilemma_1SECOND	This character's skills will remain unchanged. 	true
+dilemmas_localised_title_df_one_button_respec_dilemma_2	Reset Character Skills	true
+dilemmas_localised_description_df_one_button_respec_dilemma_2	All beings must adapt if they are to survive, But change does not always come easily, or without a cost.	true
+cdir_events_dilemma_choice_details_localised_choice_label_df_one_button_respec_dilemma_2FIRST	Reset Skills	true
+cdir_events_dilemma_choice_details_localised_choice_label_df_one_button_respec_dilemma_2SECOND	Not Right Now	true
+cdir_events_dilemma_choice_details_localised_choice_title_df_one_button_respec_dilemma_2FIRST	All skill points will be refunded.	true
+cdir_events_dilemma_choice_details_localised_choice_title_df_one_button_respec_dilemma_2SECOND	This character's skills will remain unchanged. 	true
+mod_respec_button_tt_title	[[col:yellow]]Reset Character Skills[[/col]]\\n	true
+mod_respec_button_tt_cost	[[img:icon_treasury]][[/img]]9999\\n\\n	true
+mod_respec_button_tt_already_used	[[col:red]]This character has already reset their skills.\\nThis can only be done once.[[/col]]	true
+mod_respec_button_tt_cant_afford	[[col:red]]You cannot afford to reset this character's skills.[[/col]]	true
+mod_respec_button_once_per_character	[[col:red]]This can only be done once.[[/col]]	true

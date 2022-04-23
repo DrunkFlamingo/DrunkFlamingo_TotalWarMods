@@ -1,0 +1,12 @@
+campaign_difficulty_handicap	human	effect	optional_campaign_key	effect_scope	effect_value
+#campaign_difficulty_handicap_effects_tables;0;db/campaign_difficulty_handicap_effects_tables/if_youre_trying_to_submod_look_here					
+-3	true	obr_respec_cost_mod		faction_to_character_own_unseen	0.0
+-2	true	obr_respec_cost_mod		faction_to_character_own_unseen	0.0
+-1	true	obr_respec_cost_mod		faction_to_character_own_unseen	0.0
+0	true	obr_respec_cost_mod		faction_to_character_own_unseen	0.0
+1	true	obr_respec_cost_mod		faction_to_character_own_unseen	0.0
+-3	true	obr_unlimited_respec		faction_to_character_own_unseen	0.0
+-2	true	obr_unlimited_respec		faction_to_character_own_unseen	0.0
+-1	true	obr_unlimited_respec		faction_to_character_own_unseen	0.0
+0	true	obr_unlimited_respec		faction_to_character_own_unseen	0.0
+1	true	obr_unlimited_respec		faction_to_character_own_unseen	0.0

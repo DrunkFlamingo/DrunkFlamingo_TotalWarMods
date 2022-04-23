@@ -1,0 +1,4 @@
+effect	icon	priority	icon_negative	category	is_positive_value_good
+#effects_tables;0;db/effects_tables/obr					
+obr_respec_cost_mod		0		campaign	true
+obr_unlimited_respec		0		campaign	true
