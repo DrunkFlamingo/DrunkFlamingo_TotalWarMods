@@ -1,6 +1,7 @@
 {
     "Lua.runtime.version": "Lua 5.1",
     "Lua.workspace.library": [
+        "warhammer_3/CAScriptDump",
         "tw_lib/wh3/all.lua",
         "tw_lib/wh3/global.lua",
         "tw_lib/wh3/tw_events_and_interfaces.lua",
@@ -18,7 +19,7 @@
     ],
     "Lua.completion.autoRequire": false,
     "Lua.diagnostics.workspaceDelay": 500,
-    "Lua.diagnostics.workspaceRate": 40,
+    "Lua.diagnostics.workspaceRate": 10,
     "Lua.IntelliSense.traceBeSetted": true,
     "Lua.IntelliSense.traceFieldInject": true,
     "Lua.IntelliSense.traceLocalSet": true,
