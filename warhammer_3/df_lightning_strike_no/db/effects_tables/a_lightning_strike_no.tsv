@@ -1,0 +1,3 @@
+effect	icon	priority	icon_negative	category	is_positive_value_good
+#effects_tables;0;db/effects_tables/a_lightning_strike_no					
+wh_main_effect_conquest_enable_night_battles		0		campaign	true
