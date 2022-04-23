@@ -7,3 +7,7 @@
 **/tw_lib
 **/CAScriptDump
 **/CAUIDump
+**/input
+**/output
+log.txt
+main.lua

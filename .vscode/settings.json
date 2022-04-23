@@ -11,6 +11,8 @@
     ],
     "Lua.workspace.ignoreDir": [
         ".vscode",
+        "lua",
+        "twui",
         "warhammer_2",
         "thrones_of_brittania"
     ],
