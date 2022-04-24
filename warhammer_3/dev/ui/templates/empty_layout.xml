@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<layout
+	version="137"
+	comment=""
+	precache_condition="">
+	<hierarchy>
+		<root this="AA6BBCC3-EE1D-44EB-BFF6226C7F222BA5">
+			
+		</root>
+	</hierarchy>
+	<components>
+		<root
+			this="AA6BBCC3-EE1D-44EB-BFF6226C7F222BA5"
+			id="root"
+			tooltipslocalised="true"
+			uniqueguid="AA6BBCC3-EE1D-44EB-BFF6226C7F222BA5"
+			currentstate="27D10A97-E29B-427C-82D0F58B773E036C"
+			defaultstate="27D10A97-E29B-427C-82D0F58B773E036C">
+			<componentimages>
+				<component_image
+					this="AFF3C75D-E4A4-4A27-97EA6C9F26D53448"
+					uniqueguid="AFF3C75D-E4A4-4A27-97EA6C9F26D53448"/>
+			</componentimages>
+			<states>
+				<newstate
+					this="27D10A97-E29B-427C-82D0F58B773E036C"
+					name="NewState"
+					width="1600"
+					height="900"
+					interactive="true"
+					uniqueguid="27D10A97-E29B-427C-82D0F58B773E036C">
+					<imagemetrics>
+						<image
+							this="D67322AA-1C64-4075-A1296B240201F090"
+							uniqueguid="D67322AA-1C64-4075-A1296B240201F090"
+							componentimage="AFF3C75D-E4A4-4A27-97EA6C9F26D53448"
+							width="1440"
+							height="900"
+							colour="#F0F0F0FF"/>
+					</imagemetrics>
+				</newstate>
+			</states>
+		</root>
+		
+	</components>
+</layout>
