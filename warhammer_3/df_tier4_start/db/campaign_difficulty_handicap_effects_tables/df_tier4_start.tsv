@@ -1,0 +1,12 @@
+campaign_difficulty_handicap	human	effect	optional_campaign_key	effect_scope	effect_value
+#campaign_difficulty_handicap_effects_tables;0;db/campaign_difficulty_handicap_effects_tables/df_tier4_start					
+-3	true	start_tfour_extra_money		faction_to_faction_own	4000.0
+-2	true	start_tfour_extra_money		faction_to_faction_own	6000.0
+-1	true	start_tfour_extra_money		faction_to_faction_own	8000.0
+0	true	start_tfour_extra_money		faction_to_faction_own	10000.0
+1	true	start_tfour_extra_money		faction_to_faction_own	12000.0
+-1	false	start_tfour_extra_money		faction_to_faction_own	8000.0
+0	false	start_tfour_extra_money		faction_to_faction_own	12000.0
+1	false	start_tfour_extra_money		faction_to_faction_own	16000.0
+2	false	start_tfour_extra_money		faction_to_faction_own	20000.0
+3	false	start_tfour_extra_money		faction_to_faction_own	24000.0
