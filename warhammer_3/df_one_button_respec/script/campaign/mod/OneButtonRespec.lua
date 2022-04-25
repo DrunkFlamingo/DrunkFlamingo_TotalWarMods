@@ -44,6 +44,8 @@ local panels_open_callback = function(callback, ...)
         false)
 end
 
+---Gets the character off the UI panel rather than using the current selected character, so that this works with Heroes.
+---@return CHARACTER_SCRIPT_INTERFACE
 local get_selected_character = function()
     local character
     --:root:character_details_panel:character_context_parent
@@ -75,6 +77,9 @@ local get_or_create_respec_button = function()
     end
 end
 
+---Gets the respec cost of the character, factoring the bonus value for submods
+---@param character CHARACTER_SCRIPT_INTERFACE
+---@return number
 local function get_respec_cost(character)
     local cost = respec_cost
     local cost_mod = get_characters_bonus_value(character, "obr_respec_cost_mod")
@@ -87,15 +92,21 @@ local function get_respec_cost(character)
 end
 
 
-
+---Checks if a character can afford to respec
+---@param character CHARACTER_SCRIPT_INTERFACE
+---@param cost integer
+---@return boolean
 local function respec_cost_condition(character, cost)
     return character:faction():treasury() > (-1*cost)
 end
 
-
+---Returns the proper state and tooltip string for a character based on their factions money and their saved shared state
+---@param character CHARACTER_SCRIPT_INTERFACE
+---@return string
+---@return string
 local function get_respec_state_and_tooltip(character)
-    if character:is_null_interface() then
-        out("Something went wrong, character passed for respec state is null")
+    if not character or character:is_null_interface() then
+        out("Something went wrong, character passed for respec state is either nil or the null interface")
         return "inactive", "[[col:red]]Something went wrong generating the character context object for this button, please close and reopen the panel[[/col]]"
     end
     local tt = common.get_localised_string("mod_respec_button_tt_title")
@@ -128,6 +139,8 @@ local function get_respec_state_and_tooltip(character)
     return state, tt
 end
 
+
+---@param respec_button UIC
 local populate_respec_button = function (respec_button)
     if not is_uicomponent(respec_button) then
         out("The respec button passed to the populate function is not a valid UIComponent.")
@@ -147,6 +160,9 @@ local mp_safe_trigger = function()
     CampaignUI.TriggerCampaignScriptEvent(character:faction():command_queue_index(), ui_trigger_string..tostring(character:command_queue_index()))
 end
 
+---comment
+---@param faction FACTION_SCRIPT_INTERFACE
+---@param character CHARACTER_SCRIPT_INTERFACE
 local trigger_respec_dilemma = function(faction, character)
     out("Offering the respec dilemma for faction "..faction:name().." on character "..tostring(character:command_queue_index()).."  ")
     local dilemma_key = get_dilemma_key()
