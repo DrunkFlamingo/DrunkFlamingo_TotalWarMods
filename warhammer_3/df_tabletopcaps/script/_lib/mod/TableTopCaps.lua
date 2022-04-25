@@ -366,7 +366,7 @@ end
 ---@param character_record ttc_character|nil
 ---@return ttc_unit
 mod.get_unit = function(unit_key, character_record)
-  if character_record then
+  if character_record ~= nil then
     if character_record.units[unit_key] then
       return character_record.units[unit_key]
     end
@@ -391,6 +391,9 @@ end
 ---for calling from the lua script console to generate bonus values
 mod.list_bonus_values = function()
   local file = io.open("ttc_bonus_value_output.txt", "w+")
+  if not file then
+    return
+  end
   for unit_key, info in pairs(mod.units) do
     for suffix, group in pairs(mod.special_rule_group_override_suffixes) do
       local group_override_key = mod.special_rule_bonus_value_prefix .. unit_key .. suffix
@@ -421,6 +424,9 @@ end
 --for outputting the details needed for the cost preview webapp.
 mod.print_unit_names_and_cards_for_webapp = function()
   local file = io.open("unit_names_and_cards.txt", "w+")
+  if not file then
+    return
+  end
   for unit_key, info in pairs(mod.units) do
     local main_unit_record = cco("CcoMainUnitRecord", unit_key)
     local localized_name = main_unit_record:Call("Name")
