@@ -1,0 +1,4 @@
+faction_name	primary_colour_hex	secondary_colour_hex	tertiary_colour_hex
+#faction_uniform_colours_tables;0;db/faction_uniform_colours_tables/bandits			
+vik_fact_bandits	4E6246	C6B5A0	48382D
+vik_fact_northleode_usurpers	4E6246	C6B5A0	48382D

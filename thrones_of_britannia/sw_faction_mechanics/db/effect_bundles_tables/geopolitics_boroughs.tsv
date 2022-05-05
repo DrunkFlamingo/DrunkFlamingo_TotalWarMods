@@ -1,0 +1,11 @@
+key	localised_description	localised_title	ui_icon	bundle_target
+#effect_bundles_tables;1;db/effect_bundles_tables/geopolitics_boroughs				
+boroughs_vs_saxons_1			diplomacy.png	faction
+boroughs_vs_saxons_2			diplomacy.png	faction
+boroughs_vs_saxons_3			diplomacy.png	faction
+boroughs_vs_danes_1			diplomacy.png	faction
+boroughs_vs_danes_2			diplomacy.png	faction
+boroughs_vs_danes_3			diplomacy.png	faction
+boroughs_vs_boroughs_1			diplomacy.png	faction
+boroughs_vs_boroughs_2			diplomacy.png	faction
+boroughs_vs_boroughs_3			diplomacy.png	faction

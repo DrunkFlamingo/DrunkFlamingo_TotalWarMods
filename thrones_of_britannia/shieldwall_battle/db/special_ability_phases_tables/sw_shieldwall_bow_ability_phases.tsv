@@ -1,0 +1,12 @@
+id	duration	effect_type	requested_stance	unbreakable	cant_move	kill_own_unit	freeze_fatigue	fatigue_change_ratio	inspiration_aura_range_mod	ability_recharge_change	minor_casualties	major_casualties	ui_vfx	rally_amount	poison
+#special_ability_phases_tables;13;db/special_ability_phases_tables/sw_shieldwall_bow_ability_phases															
+supressing_fire_small_unit	8.0	negative		false	false	false	false	0.0	0.0	0.0	false	false	debuff	0	false
+supressing_fire_large_unit	8.0	negative		false	false	false	false	0.0	0.0	0.0	false	false	debuff	0	false
+javelin_stopping_power_heavy	8.0	negative		false	false	false	false	0.0	0.0	0.0	false	false	debuff	0	false
+javelin_stopping_power_light	8.0	negative		false	false	false	false	0.0	0.0	0.0	false	false	debuff	0	false
+javelin_stopping_power_horseback	8.0	negative		false	false	false	false	0.0	0.0	0.0	false	false	debuff	0	false
+vik_sniped	4.0	negative		false	false	false	false	0.0	0.0	0.0	false	false	debuff	0	false
+vik_hail	4.0	negative		false	false	false	false	0.0	0.0	0.0	false	false	debuff	0	false
+vik_stopping_power	4.0	negative		false	false	false	false	0.0	0.0	0.0	false	false	debuff	0	false
+vik_hail_slings	4.0	negative		false	false	false	false	0.0	0.0	0.0	false	false	debuff	0	false
+vik_professional_archers	4.0	negative		false	false	false	false	0.0	0.0	0.0	false	false	debuff	0	false

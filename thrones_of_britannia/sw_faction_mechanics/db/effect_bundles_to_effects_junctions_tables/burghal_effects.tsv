@@ -1,0 +1,5 @@
+effect_bundle_key	effect_key	effect_scope	value	advancement_stage
+#effect_bundles_to_effects_junctions_tables;2;db/effect_bundles_to_effects_junctions_tables/burghal_effects				
+vik_english_peasant_negative	vik_allegiance_usurper	faction_to_faction_own	1.0	start_turn_completed
+vik_english_peasant_positive	shieldwall_peasants_upkeep	faction_to_faction_own_unseen	-40.0	start_turn_completed
+vik_english_peasant_positive	vik_allegiance	faction_to_faction_own	1.0	start_turn_completed

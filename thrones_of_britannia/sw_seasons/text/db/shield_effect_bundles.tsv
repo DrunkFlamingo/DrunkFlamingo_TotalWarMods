@@ -1,0 +1,21 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/shield_effect_bundles.loc		
+effect_bundles_localised_description_shield_season_winter	In the white winter,\\nfrosty winds chill the bone;\\nThe Earth stands hard as iron,\\nand water like a stone.	true
+effect_bundles_localised_description_shield_season_summer	Sumer is icumen in,\\nLhude sing cuccu!\\nGroweþ sed and bloweþ med\\nAnd springþ þe wde nu,\\nSing cuccu!	true
+effect_bundles_localised_description_shield_season_harvest	The summer is finally over,\\nand all the summer flowers;\\nThe harvest fire blazes,\\nsurrounded by golden towers	true
+effect_bundles_localised_description_shield_season_spring	Give us pleasure in the flowers today\\ngive us pleasure in the orchard white.\\nFragrant fruits by day,\\nchittering insects by night	true
+effect_bundles_localised_description_shield_season_winter_bitter	My home is starred with frost;\\nThe world is bitter cold tonight;\\nThe moon is cruel, and the wind;\\nIs like a two-edged sword to smite.	true
+effect_bundles_localised_description_shield_season_summer_drought	The searing heat of the hot summer sun shines down unforgivingly upon the baked earth. Pervading stillness hangs like a heavy veil around us.	true
+effect_bundles_localised_description_shield_season_harvest_cold	On a day like today,\\nplease take me away,\\nfrom the cold and windy weather.	true
+effect_bundles_localised_description_shield_season_spring_flood	A waste of waters ruthlessly sways and uplifts its weedy mane;\\nWhere brooding day stares down upon the sea in dull disdain.	true
+effect_bundles_localised_title_shield_season_winter	Winter	true
+effect_bundles_localised_title_shield_season_summer	Summer	true
+effect_bundles_localised_title_shield_season_harvest	Harvest	true
+effect_bundles_localised_title_shield_season_spring	Spring	true
+effect_bundles_localised_title_shield_season_winter_bitter	Bitter Winter	true
+effect_bundles_localised_title_shield_season_summer_drought	Dry Summer	true
+effect_bundles_localised_title_shield_season_harvest_cold	Cold Harvest	true
+effect_bundles_localised_title_shield_season_spring_flood	Spring Floods	true
+effects_description_shield_mud	The Thaw: %+n% movement speed on the first turn of spring	true
+incidents_localised_title_sw_winter_explainer	Winter is Coming	false
+incidents_localised_description_sw_winter_explainer	Though the Danes may find this country mild, the cold still bites. We would be wise to prepare for winter. 	false

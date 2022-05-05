@@ -1,0 +1,8 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/northleode_loc.loc		
+effect_bundles_localised_title_sw_northleode_king_of_nothing	Puppet King of Nothing	false
+effect_bundles_localised_description_sw_northleode_king_of_nothing	Appointed by the heathens to rule with impotence, the Kings of Northanhymbra have a lot to prove	false
+effects_description_sw_break_vassalage_to_remove	Break free of your vassalage to remove this effect!	false
+effect_bundles_localised_title_sw_northleode_friend_of_mercia	Friend of Mierce	false
+effect_bundles_localised_title_sw_northleode_protector	Protector of the Saxon Kingdoms	false
+effect_bundles_localised_description_sw_northleode_friend_of_mercia	We receive +40 as a diplomatic bonus with Mierce for agreeing to go to war with Jórvík.	false

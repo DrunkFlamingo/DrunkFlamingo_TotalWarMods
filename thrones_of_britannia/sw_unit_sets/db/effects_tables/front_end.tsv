@@ -1,0 +1,4 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/front_end				
+sw_front_end_faster_peasant_levy	replenishment_spear.png	3	replenishment_spear.png	false
+sw_front_end_bernician_horses	increased_pool_max_cavalry.png	4	increased_pool_max_cavalry.png	false

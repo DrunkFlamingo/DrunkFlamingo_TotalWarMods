@@ -1,0 +1,44 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/@sw_trait_categories.loc		
+trait_categories_localized_name_noble	Path of the Noble	true
+trait_categories_localized_name_items_general	Weapons and Relics	true
+trait_categories_localized_name_personality	Mind and Body	true
+trait_categories_localized_name_industrious	Path of the Magnate	true
+trait_categories_localized_name_experience	Title and Privilege	true
+trait_categories_localized_name_wise	Path of the Scholar	true
+trait_categories_localized_name_foolish	Path of the Judge	true
+trait_categories_localized_name_virtuous	Path of the Saint	true
+trait_categories_localized_name_sinful	Path of the Heathen	true
+trait_categories_localized_name_heroic	Path of the Warrior	true
+trait_categories_localized_name_malicious	Path of the Tyrant	true
+trait_categories_localized_name_cowardly	Path of the Elder	true
+trait_categories_localized_name_brutish	Path of the Brute	true
+trait_categories_localized_name_legendary	Mood and Politics	true
+effect_bundles_localised_description_vik_trait_category_brutish	There are times when course and ferine ways, lacking finesse and judgment, are precisely what's needed to win the day.\\n[[col:yellow]] Traits of this type have political consequences [[/col]]	true
+effect_bundles_localised_description_vik_trait_category_cowardly	An experienced man in the twilight of his life has an opportunity to hand off his best traits to the rising generation.\\n[[col:yellow]] Traits of this type have political consequences [[/col]]	true
+effect_bundles_localised_description_vik_trait_category_experience	There’s simply no substitute for the insight and understanding gained from a life lived on the very bleeding edge.	true
+effect_bundles_localised_description_vik_trait_category_foolish	The character of a Judge must reflect the laws that he represents: clear, fair and consistent.\\n[[col:yellow]] Traits of this type have political consequences [[/col]]	true
+effect_bundles_localised_description_vik_trait_category_heroic	In battle, there is no nobility or peasantry. There are only those who win and those who are dead.\\n[[col:yellow]] Traits of this type have political consequences [[/col]]	true
+effect_bundles_localised_description_vik_trait_category_industrious	A man will often set altruism aside and act out of self-interest.\\n[[col:yellow]] Traits of this type have political consequences [[/col]]	true
+effect_bundles_localised_description_vik_trait_category_items	Objects collected along life's winding track may prove vital at some later juncture. 	true
+effect_bundles_localised_description_vik_trait_category_legendary	Some deeds – and the men who accomplish them – are the stuff of legend, to be passed down the ages for perpetuity.	true
+effect_bundles_localised_description_vik_trait_category_malicious	There was never a tyrant born on this Earth, but only men who become oppressors by degrees.\\n[[col:yellow]] Traits of this type have political consequences [[/col]]	true
+effect_bundles_localised_description_vik_trait_category_noble	Some characteristics cannot be learned, but instead are bestowed upon the individual before they are even born.\\n[[col:yellow]] Traits of this type have political consequences [[/col]]	true
+effect_bundles_localised_description_vik_trait_category_personality	Nature and nurture, in tandem, define the measure of a man.	true
+effect_bundles_localised_description_vik_trait_category_sinful	The Old Gods smile upon their chosen hero and bestow upon him the gifts needed for success.\\n[[col:yellow]] Traits of this type have political consequences [[/col]]	true
+effect_bundles_localised_description_vik_trait_category_virtuous	Whatsoever things are true, honest, just, pure, lovely, of good report; if there be any virtue, and if there be any praise... then let him be called a true man of God.\\n[[col:yellow]] Traits of this type have political consequences [[/col]]	true
+effect_bundles_localised_description_vik_trait_category_wise	A passion of knowledge and learning will separate men from beasts.\\n[[col:yellow]] Traits of this type have political consequences [[/col]]	true
+effect_bundles_localised_title_vik_trait_category_brutish	Path of the Brute	true
+effect_bundles_localised_title_vik_trait_category_cowardly	Path of the Elder	true
+effect_bundles_localised_title_vik_trait_category_experience	Title and Privilege	true
+effect_bundles_localised_title_vik_trait_category_foolish	Path of the Judge	true
+effect_bundles_localised_title_vik_trait_category_heroic	Path of the Warrior	true
+effect_bundles_localised_title_vik_trait_category_industrious	Path of the Magnate	true
+effect_bundles_localised_title_vik_trait_category_items	Weapons and Relics	true
+effect_bundles_localised_title_vik_trait_category_legendary	Legendary	true
+effect_bundles_localised_title_vik_trait_category_malicious	Path of the Tyrant	true
+effect_bundles_localised_title_vik_trait_category_noble	Path of the Noble	true
+effect_bundles_localised_title_vik_trait_category_personality	Mind and Body	true
+effect_bundles_localised_title_vik_trait_category_sinful	Path of the Heathen	true
+effect_bundles_localised_title_vik_trait_category_virtuous	Path of the Saint	true
+effect_bundles_localised_title_vik_trait_category_wise	Path of the Scholar	true

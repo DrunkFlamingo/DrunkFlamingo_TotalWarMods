@@ -1,0 +1,24 @@
+order	special_ability	phase
+#special_ability_to_special_ability_phase_junctions_tables;1;db/special_ability_to_special_ability_phase_junctions_tables/sw_shieldwall_abilities		
+1	rapid_advance	vik_rapid_advance_1
+1	att_gen_fear_02	vik_war_cry_1
+1	att_gen_rally_02	vik_rally_1
+1	att_gen_inspire_02	vik_inspire_1
+1	att_gen_raise_01	vik_penteulu_banner_1
+1	att_gen_raise_02	vik_northmen_banner_1
+1	att_gen_raise_03	vik_eastmen_banner_1
+1	att_gen_brace_02	vik_hold_firm_1
+1	focus_fire	vik_focus_fire_1
+1	rapid_volley	vik_extended_range_1
+1	att_gen_brace_03	vik_endurance_1
+1	frenzy	vik_offensive_frenzy_1
+2	frenzy	fatigue_penalty_2
+2	form_wedge	vik_form_wedge
+1	com_into_the_breach	vik_into_the_breach
+1	frenzied_charge	vik_highland_charge
+2	frenzied_charge	fatigue_penalty_2
+1	att_gen_raise_05	vik_stand_and_fight
+1	com_force_concentration	vik_dragoons_mounted
+1	headhunt	vik_gone_berserk
+1	trample	vik_heavy_blades
+1	com_relentless	vik_swordsmen

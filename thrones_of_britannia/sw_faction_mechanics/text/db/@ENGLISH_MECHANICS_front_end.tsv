@@ -1,0 +1,11 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/@ENGLISH_MECHANICS_front_end.loc		
+effects_description_vik_faction_trait_dummy_burghal	[[col:green]]Burghal:[[/col]] When all governors are loyal, benefit from improved allegiance and reduced levy upkeep.	true
+effects_description_sw_front_end_no_harvest_season	[[col:red]]Harvest Season:[[/col]] Peasant units do not replenish during the Harvest or Winter.	true
+effects_description_vik_faction_trait_dummy_westsexa	[[col:green]]Witan:[[/col]] Powerful decrees with high political costs	true
+effects_description_shieldwall_saxons_free_fyrd	[[col:green]]Fyrd:[[/col]] Fyrd units have no recruitment cost during the Spring and Summer	true
+effects_description_vik_faction_trait_dummy_west_seaxe_fortify	[[col:green]]Military Drills:[[/col]] Unit's gain experience when in the Fortify stance	true
+effects_description_sw_front_end_hunter_society	[[col:green]]Hunter Society:[[/col]] %+n% bonus income from hunting buildings	true
+effects_description_sw_front_end_holy_isle	[[col:green]]Holy Isle of Lindisfarne:[[/col]] %+n% Population Growth for Clergy	true
+effects_description_vik_faction_trait_dummy_miercna_hoards	[[col:green]]Hoards:[[/col]] Stockpile and distribute wealth to purchase fealty and preserve the kingdom.	false
+effects_description_sw_front_end_light_rations	[[col:green]]Light Rations:[[/col]] %+n Food Upkeep (all units)	false

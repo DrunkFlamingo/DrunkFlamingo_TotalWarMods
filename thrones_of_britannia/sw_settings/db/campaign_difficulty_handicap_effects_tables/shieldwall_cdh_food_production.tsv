@@ -1,0 +1,7 @@
+campaign_difficulty_handicap	human	effect	effect_scope	effect_value	optional_campaign_key
+#campaign_difficulty_handicap_effects_tables;0;db/campaign_difficulty_handicap_effects_tables/shieldwall_cdh_food_production					
+-1	false	vik_food_base_production_faction	faction_to_faction_own	20.0	
+0	false	vik_food_base_production_faction	faction_to_faction_own	40.0	
+1	false	vik_food_base_production_faction	faction_to_faction_own	50.0	
+2	false	vik_food_base_production_faction	faction_to_faction_own	60.0	
+3	false	vik_food_base_production_faction	faction_to_faction_own	80.0	

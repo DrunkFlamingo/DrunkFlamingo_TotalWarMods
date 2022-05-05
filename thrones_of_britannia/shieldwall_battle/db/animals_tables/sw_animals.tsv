@@ -1,0 +1,5 @@
+key	animation	armour	charge_bonus	entity	melee_attack	melee_defence
+#animals_tables;0;db/animals_tables/sw_animals						
+es_african_dog	rome_animal_mastiff	att_none	4	shield_irish_dogs	1	1
+wardog	rome_animal_mastiff	att_none	4	shield_other_dogs	1	1
+irish_wardog	rome_animal_mastiff	att_none	6	shield_irish_dogs	1	1

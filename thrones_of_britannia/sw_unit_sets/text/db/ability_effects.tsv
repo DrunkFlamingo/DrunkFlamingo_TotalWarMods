@@ -1,0 +1,18 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/ability_effects.loc		
+effects_description_sw_reduced_focus_fire_cooldown	%+n% Cooldown for the Focus Fire Ability	true
+effects_description_shieldwall_formation_unlock_wedge	Enables the Infantry Wedge formation for trained melee units.	true
+effects_description_shieldwall_formation_unlock_castle	Enables the Shield Castle formation for trained melee units.	true
+effects_description_shieldwall_formation_unlock_flying_wedge	Enables the Flying Wedge formation for Cavalry Units	true
+effects_description_sw_reduced_hold_firm_cooldown	%+n% Cooldown for the Hold Firm Ability	true
+effects_description_sw_reduced_rally_cooldown	%+n% Cooldown for the Rally Ability	true
+effects_description_sw_reduced_marksmenship_cooldown	%+n% Cooldown for the Marksmenship Ability	true
+effects_description_sw_unlock_rapid_advance	Enables the Rapid Advance Ability for Light Infantry	true
+effects_description_shieldwall_formation_unlock_square	Enables the Infantry Square for Spear Infantry	true
+effects_description_sw_unlock_warcry	Enables the Warcry Ability	true
+effects_description_sw_reduced_inspire_cooldown	%+n% Cooldown for the Inspire Ability	true
+effects_description_vik_general_bodyguard_damage_mod	%+n Damage inflicted by the commander's unit	true
+effects_description_sw_unlock_endurance	Enables the Stand and Fight Ability	true
+effects_description_sw_unlock_highland_charge	Enables The Highland Charge Ability	true
+effects_description_sw_cooldown_endurance	%+n% Cooldown for the Stand and Fight Ability	true
+effects_description_sw_cooldown_highland_charge	%+n% Cooldown for the Highland Charge Ability	true

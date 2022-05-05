@@ -1,0 +1,11 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/shieldwall_custom_season_effects.loc		
+effects_description_shield_seasons_food_farms	%+n% Food from Farming, Orchard, Pasture, and Hunting Buildings	true
+effects_description_shield_seasons_commerce	%+n% Income (COMMERCE) from Seasonal Economics	true
+effects_description_shield_seasons_supplies	%+n Supplies 	true
+effects_description_shield_seasons_movement_speed	%+n Land Army Movement	true
+effects_description_shield_seasons_farming_income	Harvest: %+n% Income (FARM) 	true
+effects_description_shield_seasons_hunting_event	Hunting Season: Characters who own hunting estates may embark on Hunts.	true
+campaign_payload_ui_details_description_b_prepare_surplus	Run a food surplus to accumulate food stores before winter begins.	false
+campaign_payload_ui_details_description_c_prepare_storage	Build Warehouses and Granaries to increase food storage.	false
+campaign_payload_ui_details_description_a_prepare_winter	[[col:red]]Our food income will be significantly reduced during winter.	false

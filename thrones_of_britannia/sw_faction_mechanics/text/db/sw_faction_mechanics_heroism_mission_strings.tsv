@@ -1,0 +1,214 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/sw_faction_mechanics_heroism_mission_strings.loc		
+campaign_localised_strings_string_sw_heroism_vik_fact_aileach	Defeat Ailech's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_airer_goidel	Defeat Airer Goidel's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_airgialla	Defeat Airgialla's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_athfochla	Defeat Athfochla's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_bedeborg	Defeat Bedeborg's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_brechinauc	Defeat Brechinauc's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_brega	Defeat Brega's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_breifne	Defeat Breifne's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_caisil	Defeat Caisil's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_cent	Defeat Cent's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_cerneu	Defeat Cerneu's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_circenn	Defeat Circenn's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_connacht	Defeat Connacht's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_defena	Defeat Defena's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_dene	Defeat Dene's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_desmuma	Defeat Desmuma's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_djurby	Defeat Djurby's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_dorsaete	Defeat Dorsaete's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_dubgaill	Defeat Dubgaill's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_dyfet	Defeat Dewet's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_dyflin	Defeat Dyflin's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_east_engle	Defeat East Engle's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_east_seaxe	Defeat East Seaxe's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_finngaill	Defeat Finngaill's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_fortriu	Defeat Fortriu's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_gallgoidel	Defeat Gallgoidel's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_gliwissig	Defeat Gliwissig's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_grantebru	Defeat Grantebru's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_gwent	Defeat Gwent's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_gwined	Defeat Gwined's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_haeden	Defeat Haeden's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_heimiliborg	Defeat Heimiliborg's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_hellirborg	Defeat Hellirborg's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_hlymrekr	Defeat Hlymrekr's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_holdrness	Defeat Holdrness's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_hwicce	Defeat Hwicce's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_hylrborg	Defeat Hylrborg's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_iarmuma	Defeat Iarmuma's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_laigin	Defeat Laigin's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_ledeborg	Defeat Ledeborg's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_mide	Defeat Mide's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_mierce	Defeat Mierce's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_myrrborg	Defeat Myrrborg's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_nordmann	Defeat Nordmann's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_normaunds	Defeat Normaunds's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_norse	Defeat Norse's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_northleode	Defeat Northanhymbra's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_northymbre	Defeat Jorvik's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_orkneyar	Defeat Orkneyar's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_osraige	Defeat Osraige's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_powis	Defeat Powis's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_seisilwig	Defeat Seisilwig's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_steinnborg	Defeat Steinnborg's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_strat_clut	Defeat Strat Clut's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_sudreyar	Defeat Sudreyar's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_suth_seaxe	Defeat Suth Seaxe's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_tuadmuma	Defeat Tuadmuma's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_ulaid	Defeat Ulaid's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_vedrafjordr	Defeat Vedrafjordr's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_veidrborg	Defeat Veidrborg's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_veisafjordr	Defeat Veisafjordr's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_west_seaxe	Defeat West Seaxe's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_westernas	Defeat Westernas's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_westmoringas	Defeat Westmoringas's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_vik_fact_wicing	Defeat Wicing's King on the field of battle	false
+campaign_localised_strings_string_sw_heroism_region_vik_reg_aberffro	Recapture Aberffro	false
+campaign_localised_strings_string_sw_heroism_region_vik_reg_aberteifi	Recapture Aberteifi	false
+campaign_localised_strings_string_sw_heroism_region_vik_reg_cair_gwent	Recapture Cair Gwent	false
+campaign_localised_strings_string_sw_heroism_region_vik_reg_dinefwr	Recapture Dinefwr	false
+campaign_localised_strings_string_sw_heroism_region_vik_reg_guvan	Recapture Guvan	false
+campaign_localised_strings_string_sw_heroism_region_vik_reg_mathrafal	Recapture Mathrafal	false
+missions_localised_title_sw_heroism_vik_fact_airgialla	Heroic War: Airgialla	false
+missions_localised_title_sw_heroism_vik_fact_athfochla	Heroic War: Athfochla	false
+missions_localised_title_sw_heroism_vik_fact_bedeborg	Heroic War: Bedeborg	false
+missions_localised_title_sw_heroism_vik_fact_brechinauc	Heroic War: Brechinauc	false
+missions_localised_title_sw_heroism_vik_fact_brega	Heroic War: Brega	false
+missions_localised_title_sw_heroism_vik_fact_breifne	Heroic War: Breifne	false
+missions_localised_title_sw_heroism_vik_fact_caisil	Heroic War: Caisil	false
+missions_localised_title_sw_heroism_vik_fact_cent	Heroic War: Cent	false
+missions_localised_title_sw_heroism_vik_fact_cerneu	Heroic War: Cerneu	false
+missions_localised_title_sw_heroism_vik_fact_circenn	Heroic War: Circenn	false
+missions_localised_title_sw_heroism_vik_fact_connacht	Heroic War: Connacht	false
+missions_localised_title_sw_heroism_vik_fact_defena	Heroic War: Defena	false
+missions_localised_title_sw_heroism_vik_fact_dene	Heroic War: Dene	false
+missions_localised_title_sw_heroism_vik_fact_desmuma	Heroic War: Desmuma	false
+missions_localised_title_sw_heroism_vik_fact_djurby	Heroic War: Djurby	false
+missions_localised_title_sw_heroism_vik_fact_dorsaete	Heroic War: Dorsaete	false
+missions_localised_title_sw_heroism_vik_fact_dubgaill	Heroic War: Dubgaill	false
+missions_localised_title_sw_heroism_vik_fact_dyfet	Heroic War: Dewet	false
+missions_localised_title_sw_heroism_vik_fact_dyflin	Heroic War: Dyflin	false
+missions_localised_title_sw_heroism_vik_fact_east_engle	Heroic War: East Engle	false
+missions_localised_title_sw_heroism_vik_fact_east_seaxe	Heroic War: East Seaxe	false
+missions_localised_title_sw_heroism_vik_fact_finngaill	Heroic War: Finngaill	false
+missions_localised_title_sw_heroism_vik_fact_fortriu	Heroic War: Fortriu	false
+missions_localised_title_sw_heroism_vik_fact_gallgoidel	Heroic War: Gallgoidel	false
+missions_localised_title_sw_heroism_vik_fact_gliwissig	Heroic War: Gliwissig	false
+missions_localised_title_sw_heroism_vik_fact_grantebru	Heroic War: Grantebru	false
+missions_localised_title_sw_heroism_vik_fact_gwent	Heroic War: Gwent	false
+missions_localised_title_sw_heroism_vik_fact_gwined	Heroic War: Gwined	false
+missions_localised_title_sw_heroism_vik_fact_haeden	Heroic War: Haeden	false
+missions_localised_title_sw_heroism_vik_fact_heimiliborg	Heroic War: Heimiliborg	false
+missions_localised_title_sw_heroism_vik_fact_hellirborg	Heroic War: Hellirborg	false
+missions_localised_title_sw_heroism_vik_fact_hlymrekr	Heroic War: Hlymrekr	false
+missions_localised_title_sw_heroism_vik_fact_holdrness	Heroic War: Holdrness	false
+missions_localised_title_sw_heroism_vik_fact_hwicce	Heroic War: Hwicce	false
+missions_localised_title_sw_heroism_vik_fact_hylrborg	Heroic War: Hylrborg	false
+missions_localised_title_sw_heroism_vik_fact_iarmuma	Heroic War: Iarmuma	false
+missions_localised_title_sw_heroism_vik_fact_laigin	Heroic War: Laigin	false
+missions_localised_title_sw_heroism_vik_fact_ledeborg	Heroic War: Ledeborg	false
+missions_localised_title_sw_heroism_vik_fact_mide	Heroic War: Mide	false
+missions_localised_title_sw_heroism_vik_fact_mierce	Heroic War: Mierce	false
+missions_localised_title_sw_heroism_vik_fact_myrrborg	Heroic War: Myrrborg	false
+missions_localised_title_sw_heroism_vik_fact_nordmann	Heroic War: Nordmann	false
+missions_localised_title_sw_heroism_vik_fact_normaunds	Heroic War: Normaunds	false
+missions_localised_title_sw_heroism_vik_fact_norse	Heroic War: Norse	false
+missions_localised_title_sw_heroism_vik_fact_northleode	Heroic War: Northanhymbra	false
+missions_localised_title_sw_heroism_vik_fact_northymbre	Heroic War: Jorvik	false
+missions_localised_title_sw_heroism_vik_fact_orkneyar	Heroic War: Orkneyar	false
+missions_localised_title_sw_heroism_vik_fact_osraige	Heroic War: Osraige	false
+missions_localised_title_sw_heroism_vik_fact_powis	Heroic War: Powis	false
+missions_localised_title_sw_heroism_vik_fact_seisilwig	Heroic War: Seisilwig	false
+missions_localised_title_sw_heroism_vik_fact_steinnborg	Heroic War: Steinnborg	false
+missions_localised_title_sw_heroism_vik_fact_strat_clut	Heroic War: Strat Clut	false
+missions_localised_title_sw_heroism_vik_fact_sudreyar	Heroic War: Sudreyar	false
+missions_localised_title_sw_heroism_vik_fact_suth_seaxe	Heroic War: Suth Seaxe	false
+missions_localised_title_sw_heroism_vik_fact_tuadmuma	Heroic War: Tuadmuma	false
+missions_localised_title_sw_heroism_vik_fact_ulaid	Heroic War: Ulaid	false
+missions_localised_title_sw_heroism_vik_fact_vedrafjordr	Heroic War: Vedrafjordr	false
+missions_localised_title_sw_heroism_vik_fact_veidrborg	Heroic War: Veidrborg	false
+missions_localised_title_sw_heroism_vik_fact_veisafjordr	Heroic War: Veisafjordr	false
+missions_localised_title_sw_heroism_vik_fact_west_seaxe	Heroic War: West Seaxe	false
+missions_localised_title_sw_heroism_vik_fact_westernas	Heroic War: Westernas	false
+missions_localised_title_sw_heroism_vik_fact_westmoringas	Heroic War: Westmoringas	false
+missions_localised_title_sw_heroism_vik_fact_wicing	Heroic War: Wicing	false
+missions_localised_title_sw_heroism_region_vik_reg_aberffro	Ancestral Land: Aberffro	false
+missions_localised_title_sw_heroism_region_vik_reg_aberteifi	Ancestral Land: Aberteifi	false
+missions_localised_title_sw_heroism_region_vik_reg_cair_gwent	Ancestral Land: Cair Gwent	false
+missions_localised_title_sw_heroism_region_vik_reg_dinefwr	Ancestral Land: Dinefwr	false
+missions_localised_title_sw_heroism_region_vik_reg_guvan	Ancestral Land: Guvan	false
+missions_localised_title_sw_heroism_region_vik_reg_mathrafal	Ancestral Land: Mathrafal	false
+missions_localised_description_sw_heroism_vik_fact_airgialla	Victory does not come to men who listen to their fears. The King of Airgialla has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_athfochla	Victory does not come to men who listen to their fears. The King of Athfochla has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_bedeborg	Victory does not come to men who listen to their fears. The King of Bedeborg has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_brechinauc	Victory does not come to men who listen to their fears. The King of Brechinauc has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_brega	Victory does not come to men who listen to their fears. The King of Brega has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_breifne	Victory does not come to men who listen to their fears. The King of Breifne has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_caisil	Victory does not come to men who listen to their fears. The King of Caisil has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_cent	Victory does not come to men who listen to their fears. The King of Cent has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_cerneu	Victory does not come to men who listen to their fears. The King of Cerneu has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_circenn	Victory does not come to men who listen to their fears. The King of Circenn has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_connacht	Victory does not come to men who listen to their fears. The King of Connacht has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_defena	Victory does not come to men who listen to their fears. The King of Defena has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_dene	Victory does not come to men who listen to their fears. The King of Dene has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_desmuma	Victory does not come to men who listen to their fears. The King of Desmuma has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_djurby	Victory does not come to men who listen to their fears. The King of Djurby has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_dorsaete	Victory does not come to men who listen to their fears. The King of Dorsaete has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_dubgaill	Victory does not come to men who listen to their fears. The King of Dubgaill has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_dyfet	Victory does not come to men who listen to their fears. The King of Dewet has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_dyflin	Victory does not come to men who listen to their fears. The King of Dyflin has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_east_engle	Victory does not come to men who listen to their fears. The King of East Engle has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_east_seaxe	Victory does not come to men who listen to their fears. The King of East Seaxe has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_finngaill	Victory does not come to men who listen to their fears. The King of Finngaill has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_fortriu	Victory does not come to men who listen to their fears. The King of Fortriu has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_gallgoidel	Victory does not come to men who listen to their fears. The King of Gallgoidel has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_gliwissig	Victory does not come to men who listen to their fears. The King of Gliwissig has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_grantebru	Victory does not come to men who listen to their fears. The King of Grantebru has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_gwent	Victory does not come to men who listen to their fears. The King of Gwent has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_gwined	Victory does not come to men who listen to their fears. The King of Gwined has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_haeden	Victory does not come to men who listen to their fears. The King of Haeden has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_heimiliborg	Victory does not come to men who listen to their fears. The King of Heimiliborg has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_hellirborg	Victory does not come to men who listen to their fears. The King of Hellirborg has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_hlymrekr	Victory does not come to men who listen to their fears. The King of Hlymrekr has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_holdrness	Victory does not come to men who listen to their fears. The King of Holdrness has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_hwicce	Victory does not come to men who listen to their fears. The King of Hwicce has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_hylrborg	Victory does not come to men who listen to their fears. The King of Hylrborg has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_iarmuma	Victory does not come to men who listen to their fears. The King of Iarmuma has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_laigin	Victory does not come to men who listen to their fears. The King of Laigin has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_ledeborg	Victory does not come to men who listen to their fears. The King of Ledeborg has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_mide	Victory does not come to men who listen to their fears. The King of Mide has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_mierce	Victory does not come to men who listen to their fears. The King of Mierce has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_myrrborg	Victory does not come to men who listen to their fears. The King of Myrrborg has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_nordmann	Victory does not come to men who listen to their fears. The King of Nordmann has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_normaunds	Victory does not come to men who listen to their fears. The King of Normaunds has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_norse	Victory does not come to men who listen to their fears. The King of the Norse has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_northleode	Victory does not come to men who listen to their fears. The King of Northanhymbra has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_northymbre	Victory does not come to men who listen to their fears. The King of Jorvik has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_orkneyar	Victory does not come to men who listen to their fears. The King of Orkneyar has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_osraige	Victory does not come to men who listen to their fears. The King of Osraige has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_powis	Victory does not come to men who listen to their fears. The King of Powis has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_seisilwig	Victory does not come to men who listen to their fears. The King of Seisilwig has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_steinnborg	Victory does not come to men who listen to their fears. The King of Steinnborg has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_strat_clut	Victory does not come to men who listen to their fears. The King of Strat Clut has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_sudreyar	Victory does not come to men who listen to their fears. The King of Sudreyar has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_suth_seaxe	Victory does not come to men who listen to their fears. The King of Suth Seaxe has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_tuadmuma	Victory does not come to men who listen to their fears. The King of Tuadmuma has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_ulaid	Victory does not come to men who listen to their fears. The King of Ulaid has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_vedrafjordr	Victory does not come to men who listen to their fears. The King of Vedrafjordr has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_veidrborg	Victory does not come to men who listen to their fears. The King of Veidrborg has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_veisafjordr	Victory does not come to men who listen to their fears. The King of Veisafjordr has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_west_seaxe	Victory does not come to men who listen to their fears. The King of West Seaxe has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_westernas	Victory does not come to men who listen to their fears. The King of Westernas has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_westmoringas	Victory does not come to men who listen to their fears. The King of Westmoringas has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_vik_fact_wicing	Victory does not come to men who listen to their fears. The King of Wicing has challenged us and we shall be there to meet him in battle!	false
+missions_localised_description_sw_heroism_region_vik_reg_aberffro	Our people have lost their lands in years past, but no more! We must not rest easy until we have recaptured Aberffro.	false
+missions_localised_description_sw_heroism_region_vik_reg_aberteifi	Our people have lost their lands in years past, but no more! We must not rest easy until we have recaptured Aberteifi.	false
+missions_localised_description_sw_heroism_region_vik_reg_cair_gwent	Our people have lost their lands in years past, but no more! We must not rest easy until we have recaptured Cair Gwent.	false
+missions_localised_description_sw_heroism_region_vik_reg_dinefwr	Our people have lost their lands in years past, but no more! We must not rest easy until we have recaptured Dinefwr.	false
+missions_localised_description_sw_heroism_region_vik_reg_guvan	Our people have lost their lands in years past, but no more! We must not rest easy until we have recaptured Guvan.	false
+missions_localised_description_sw_heroism_region_vik_reg_mathrafal	Our people have lost their lands in years past, but no more! We must not rest easy until we have recaptured Mathrafal.	false
+campaign_localised_strings_string_sw_heroism_defeat_bandits	Clear out the bandits from your lands	false
+missions_localised_title_sw_heroism_defeat_bandits	Rampant Banditry	false
+missions_localised_description_sw_heroism_defeat_bandits	Our honour demands we defend our people from these bandits. Ride out and crush them for daring to threaten what is yours. 	false

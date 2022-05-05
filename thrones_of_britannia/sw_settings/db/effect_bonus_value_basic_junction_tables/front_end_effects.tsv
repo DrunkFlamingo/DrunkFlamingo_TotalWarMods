@@ -1,0 +1,6 @@
+effect	bonus_value_id
+#effect_bonus_value_basic_junction_tables;0;db/effect_bonus_value_basic_junction_tables/front_end_effects	
+sw_fe_northymbria_2	mod_food_production
+sw_fe_gva_1	gdp_mod_land_trade
+sw_fe_welsh_3	happiness_mod_religious_unrest
+sw_fe_strat_clut_2	faction_fame

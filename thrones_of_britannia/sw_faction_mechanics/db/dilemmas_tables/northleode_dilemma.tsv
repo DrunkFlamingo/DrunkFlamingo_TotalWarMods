@@ -1,0 +1,9 @@
+key	generate	localised_description	localised_title	ui_icon	ui_image	prioritized	event_category
+#dilemmas_tables;3;db/dilemmas_tables/northleode_dilemma							
+sw_northleode_help_against_strat_clut	false			message_generic_news.png	vik_event_armies_clash_01	true	Ybor
+sw_northleode_help_against_jorvik	false			message_generic_news.png	vik_event_armies_clash_01	true	Ybor
+sw_northleode_betrayal_east_engle	false			message_generic_news.png	vik_event_armies_clash_01	true	Ybor
+sw_northleode_betrayal_mierce	false			message_generic_news.png	vik_event_armies_clash_01	true	Ybor
+sw_mierce_djurby_capitulates	false			message_generic_news.png	vik_event_armies_clash_01	true	Ybor
+sw_mierce_scheme_against_wessex	false			message_generic_news.png	vik_event_armies_clash_01	true	Ybor
+sw_gwined_avenge_rhodri	false			message_generic_news.png	vik_event_armies_clash_01	true	Ybor

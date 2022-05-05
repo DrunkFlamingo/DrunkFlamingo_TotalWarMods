@@ -1,0 +1,9 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/replenishment_effects				
+sw_no_replen_serf	replenishment_negative.png	1	replenishment_negative.png	false
+sw_no_replen_lord	replenishment_negative.png	1	replenishment_negative.png	false
+sw_no_replen_merc	replenishment_negative.png	1	replenishment_negative.png	false
+sw_replen_serf	replenishment.png	3	replenishment_negative.png	false
+sw_replen_lord	replenishment.png	3	replenishment_negative.png	false
+sw_replen_merc	replenishment.png	3	replenishment_negative.png	false
+sw_replen_vikings	replenishment.png	3	replenishment_negative.png	false

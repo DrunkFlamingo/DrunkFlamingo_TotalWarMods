@@ -1,0 +1,10 @@
+key	generate	localised_description	localised_title	ui_icon	ui_image	prioritized	event_category
+#dilemmas_tables;3;db/dilemmas_tables/trait_dilemmas							
+sw_traits_strange_friends	true	Guy is hanging out with Vikings	Trait Event	message_generic_news.png	vik_event_debate	true	Ybor
+sw_traits_foreign_settlers	true	Guy wants viking bodyguards	Trait Event	message_generic_news.png	vik_event_debate	true	Ybor
+sw_traits_beloved	true	Guy wants to give handouts to peasants	Trait Event	message_generic_news.png	vik_event_debate	true	Ybor
+sw_traits_grooming_heir	true	Do you groom your heir?	Trait Event	message_generic_news.png	vik_event_debate	true	Ybor
+sw_traits_educating_heir	true	Do you educate your heir?	Trait Event	message_generic_news.png	vik_event_debate	true	Ybor
+sw_traits_corruption	true	Lord has become corrupt	Trait Event	message_generic_news.png	vik_event_debate	true	Ybor
+sw_traits_treason	true	Lord is plotting against you	Trait Event	message_generic_news.png	vik_event_debate	true	Ybor
+sw_traits_collector	true	Lord has become a fervent collector	Trait Event	message_generic_news.png	vik_event_debate	true	Ybor

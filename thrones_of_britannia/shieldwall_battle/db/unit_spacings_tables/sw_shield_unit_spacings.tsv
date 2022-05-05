@@ -1,0 +1,10 @@
+key	close_formation_spacing_horizontal	close_formation_spacing_variation	close_formation_spacing_vertical	dismounted_close_formation_spacing_horizontal	dismounted_close_formation_spacing_variation	dismounted_close_formation_spacing_vertical	dismounted_loose_formation_spacing_horizontal	dismounted_loose_formation_spacing_variation	dismounted_loose_formation_spacing_vertical	horde	loose_formation_spacing_horizontal	loose_formation_spacing_variation	loose_formation_spacing_vertical
+#unit_spacings_tables;2;db/unit_spacings_tables/sw_shield_unit_spacings													
+cavalry	1.6	0.35	3.0	1.0	0.15	1.0	2.2	0.6	2.6	false	3.0	0.6	6.0
+melee_inf	1.0	0.15	1.1	1.0	0.15	1.25	2.2	0.6	2.6	false	2.2	0.6	2.6
+missile_inf	2.0	0.55	1.4	1.3	0.3	1.4	3.6	1.5	3.6	false	3.6	1.5	3.6
+bersekers	2.5	0.5	2.0	1.3	0.3	1.4	3.6	1.5	3.6	false	3.6	1.5	3.6
+hunters	2.5	0.5	2.0	1.3	0.3	1.4	3.6	1.5	3.6	false	3.6	1.5	3.6
+melee_inf_loose	1.2	0.3	1.15	1.0	0.15	1.25	2.2	0.6	2.6	false	2.2	0.6	2.6
+missile_inf_loose	2.0	0.6	1.8	1.3	0.3	1.4	3.6	1.5	3.6	false	3.6	1.5	3.6
+general_inf	1.1	0.2	1.1	1.0	0.15	1.25	2.2	0.6	2.6	false	2.2	0.6	2.6

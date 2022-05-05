@@ -1,0 +1,6 @@
+key	generate	ui_icon	ui_image	prioritised	event_category
+#incidents_tables;4;db/incidents_tables/sw_trait_effects					
+shield_loyalty_event_treaties_broken_vikings	false	message_generic_news.png	vik_event_debate	true	political_action_outcome
+shield_trait_event_prince_assumes_throne	false	message_generic_news.png	vik_event_debate	true	political_action_outcome
+shield_loyalty_event_rampant_banditry	false	message_generic_news.png	vik_event_debate	true	political_action_outcome
+shield_loyalty_event_library	false	message_generic_news.png	vik_event_debate	true	political_action_outcome

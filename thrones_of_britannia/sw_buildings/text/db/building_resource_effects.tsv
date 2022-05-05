@@ -1,0 +1,19 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/building_resource_effects.loc		
+effects_description_shield_resource_candles_production	%+n Candle Production	true
+effects_description_shield_resource_textiles_production	%+n Textile Production	true
+effects_description_shield_trade_resource_bonus_cloth	%+n Cloth Production	true
+effects_description_shield_trade_resource_bonus_copper	%+n Copper Production	true
+effects_description_shield_trade_resource_bonus_iron	%+n Iron Production	true
+effects_description_shield_trade_resource_bonus_lead	%+n Lead Production	true
+effects_description_shield_trade_resource_bonus_tin	%+n Tin Production	true
+effects_description_shield_trade_resource_bonus_steel	%+n Steel Production	true
+effects_description_shield_trade_resource_bonus_silver	%+n Silver Production	true
+effects_description_shield_trade_resource_bonus_gold	%+n Gold Production	true
+effects_description_shield_resource_jewellery_production	%+n Jewellery Production	true
+effects_description_shield_resource_steel_production	%+n Forged Steel Production	true
+effects_description_shield_trade_resource_consumption_tin_copper	Consumes Tin and Copper from nearby provinces.	true
+effects_description_shield_trade_resource_consumption_gold_silver	Consumes Gold and Silver from nearby provinces.	true
+effects_description_shield_trade_resource_bonus_mint	%+n Gold Production in this Province	true
+effects_description_shield_trade_resource_consumption_iron	Consumes Iron from nearby provinces.	true
+effects_description_shield_trade_resource_consumption_cloth	Consumes Cloth from nearby provinces.	true

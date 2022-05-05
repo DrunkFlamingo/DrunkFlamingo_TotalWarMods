@@ -1,0 +1,6 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/shieldwall_custom_estate_effect_localisation.loc		
+effects_description_shield_estates_landed	Grants a Landed Title 	true
+effects_description_shield_estates_commerce	Grants a Pecuniary Holding 	true
+effects_description_shield_estates_church	Grants a Family Estate	true
+effects_description_shield_estates_hunting	Grants a Hunting Estate	true

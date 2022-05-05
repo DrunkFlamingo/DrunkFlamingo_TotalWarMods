@@ -1,0 +1,21 @@
+unit_caste	unit_category	unit_class	unit_record	unit_set	exclude
+#unit_set_to_unit_junctions_tables;0;db/unit_set_to_unit_junctions_tables/champions					
+			dan_mailed_swordsmen	heroes	false
+			dan_shield_biters	heroes	false
+			eng_earls_thegns	heroes	false
+			eng_mailed_thegns	heroes	false
+			eng_royal_thegns	heroes	false
+			est_berserkers	heroes	false
+			est_champions	heroes	false
+			est_norse_mailed_hersir	heroes	false
+			sco_alban_warriors	heroes	false
+			vik_mailed_hersir_axemen	heroes	false
+			vik_shield_biters	heroes	false
+			eng_earls_spearmen	heroes	false
+			iri_mailed_fianna	heroes	false
+			wel_royal_uchelwr	penteulu	false
+			nor_knights	knights	false
+			est_shield_biters	berserker	false
+			dan_berserkers	berserker	false
+			wel_royal_uchelwr	heroes	false
+			nor_knights	heroes	false

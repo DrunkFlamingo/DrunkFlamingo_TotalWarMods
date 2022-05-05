@@ -1,0 +1,13 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/sw_trait_effect_notifications.loc		
+incidents_localised_description_shield_loyalty_event_treaties_broken_vikings	For the good of your Kingdom, you broke your accords with the Vikings. Yet many of your nobles still dine at their tables and hunt with their sons, and your decision has upset them greatly. 	false
+incidents_localised_title_shield_loyalty_event_treaties_broken_vikings	Treachery Begets Treachery	false
+campaign_payload_ui_details_description_shield_loyalty_event_treaties_broken_vikings	-3 Loyalty for characters with the Viking Ways trait.	false
+campaign_payload_ui_details_description_shield_loyalty_event_rampant_banditry	-2 Loyalty for characters with the Dutiful trait.	false
+incidents_localised_title_shield_trait_event_prince_assumes_throne	Kingly	false
+incidents_localised_title_shield_loyalty_event_rampant_banditry	Neglected Duties	false
+incidents_localised_description_shield_trait_event_prince_assumes_throne	Your whole life, you have been groomed to one day take the throne. Now that day has come, and the efforts your father put into your political future have paid off.	false
+incidents_localised_description_shield_loyalty_event_rampant_banditry	You've been busy with more important things. Yet in your absense, banditry has spread across the Kingdom, and your neglect has angered some of your more principled nobles.	false
+campaign_payload_ui_details_description_shield_loyalty_event_library	+1 Loyalty for characters with the Educated trait.	false
+incidents_localised_title_shield_loyalty_event_library	Scholarly Pursuits	false
+incidents_localised_description_shield_loyalty_event_library	An educated nobility makes our Kingdom stronger. Many of your nobles understand this, and are pleased with your recent investments in building Libraries in your kingdom	false

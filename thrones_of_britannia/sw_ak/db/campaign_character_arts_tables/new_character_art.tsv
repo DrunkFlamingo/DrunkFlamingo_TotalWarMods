@@ -1,0 +1,3 @@
+id	art_set_id	level	age	portrait	season	uniform	card	info	sea_uniform	navy_uniform	land_animation	sea_animation	navy_animation	religion	is_faction_leader
+#campaign_character_arts_tables;7;db/campaign_character_arts_tables/new_character_art															
+74327901	ecgberht	0	16	UI\Portraits\portrait_ph.png	none	ecgberht	UI\Portraits\portrait_ph.png	UI\Portraits\portrait_ph.png	campaign_ship_barb_fleet	campaign_ship_barb_fleet	sword_general	ship_navy	ship_navy		true

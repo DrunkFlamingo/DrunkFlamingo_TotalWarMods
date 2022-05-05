@@ -1,0 +1,9 @@
+building	effect	effect_scope	value	value_damaged	value_ruined
+#building_effects_junction_tables;3;db/building_effects_junction_tables/serf_capacity					
+vik_market_2	shield_scripted_pop_cap_serf	region_to_region_own	125.0	60.0	0.0
+vik_market_3	shield_scripted_pop_cap_serf	region_to_region_own	250.0	80.0	0.0
+vik_market_4	shield_scripted_pop_cap_serf	region_to_region_own	375.0	100.0	0.0
+vik_market_5	shield_scripted_pop_cap_serf	region_to_region_own	500.0	120.0	0.0
+vik_guildhall_1	shield_scripted_pop_cap_serf	region_to_region_own	125.0	125.0	0.0
+vik_guildhall_2	shield_scripted_pop_cap_serf	region_to_region_own	250.0	250.0	0.0
+vik_guildhall_3	shield_scripted_pop_cap_serf	region_to_region_own	375.0	375.0	0.0

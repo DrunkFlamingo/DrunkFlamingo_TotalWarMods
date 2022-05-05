@@ -1,0 +1,4 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/scripted_dummy_technology_effects				
+shieldwall_scripted_tech_peasant_replenishment	payload_wound.png	4	payload_wound.png	false
+shieldwall_scripted_loyalty_when_estates_built	payload_secure_loyalty.png	3	payload_secure_loyalty.png	false

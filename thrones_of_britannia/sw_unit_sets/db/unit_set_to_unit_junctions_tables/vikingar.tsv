@@ -1,0 +1,7 @@
+unit_caste	unit_category	unit_class	unit_record	unit_set	exclude
+#unit_set_to_unit_junctions_tables;0;db/unit_set_to_unit_junctions_tables/vikingar					
+			est_spear_hirdmen	vikingar	false
+			est_marauders	vikingar	false
+			est_axe_warriors	vikingar	false
+			dan_anglian_raiders	vikingar	false
+			wel_mailed_axemen	vikingar	false

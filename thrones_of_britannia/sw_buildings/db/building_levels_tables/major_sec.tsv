@@ -1,0 +1,110 @@
+level_name	chain	level	create_time	create_cost	upkeep_cost	commodity	commodity_vol	only_in_capital	military_prestige	naval_prestige	economic_prestige	enlightenment_prestige	destruction_terminator	faction_unique	religion_requirement	first_in_world_bundle	resource_requirement	unique_index	can_convert	building_instance_key	audio_building_type	should_show_building_level_in_ui_for_technology	health_override	development_point_cost	has_aqueduct	can_be_damaged	requires_primary_slot_in_group
+#building_levels_tables;11;db/building_levels_tables/major_sec																											
+vik_round_tower_1	vik_round_tower	0	4	450	60		0	false	0	0	0	0	true	false				15640	true	vik_round_tower	military	true	0.0	0	false	true	
+vik_round_tower_2	vik_round_tower	1	4	550	85		0	false	0	0	0	0	false	false				15650	true	vik_round_tower	military	true	0.0	0	false	true	
+vik_round_tower_3	vik_round_tower	2	4	700	110		0	false	0	0	0	0	false	false				15659	true	vik_round_tower	military	true	0.0	0	false	true	
+vik_church_crafts_1	vik_church_crafts	0	4	550	0		0	false	0	0	0	0	true	false				17230	true	vik_church_crafts	workshop_stonemasonry	true	0.0	0	false	true	
+vik_church_crafts_2	vik_church_crafts	1	1	650	0		0	false	0	0	0	0	false	false				17233	true	vik_church_crafts	workshop_stonemasonry	true	0.0	0	false	true	
+vik_church_crafts_3	vik_church_crafts	2	2	750	0		0	false	0	0	0	0	false	false				17238	true	vik_church_crafts	workshop_stonemasonry	true	0.0	0	false	true	
+vik_bullaun_1	vik_bullaun	0	5	650	100		0	false	0	0	0	0	true	false				17202	true	vik_bullaun	military	true	0.0	0	false	true	
+vik_bullaun_2	vik_bullaun	1	2	750	170		0	false	0	0	0	0	false	false				17212	true	vik_bullaun	military	true	0.0	0	false	true	
+vik_bullaun_3	vik_bullaun	2	3	900	250		0	false	0	0	0	0	false	false				17222	true	vik_bullaun	military	true	0.0	0	false	true	
+vik_wax_1	vik_wax	0	7	600	0		0	false	0	0	0	0	true	false				17566	true	vik_wax	church	true	0.0	0	false	true	
+vik_wax_2	vik_wax	1	4	750	0		0	false	0	0	0	0	false	false				17570	true	vik_wax	church	true	0.0	0	false	true	
+vik_wax_3	vik_wax	2	5	900	0		0	false	0	0	0	0	false	false				17577	true	vik_wax	church	true	0.0	0	false	true	
+vik_scribes_1	vik_scribes	0	6	800	0		0	false	0	0	0	0	true	false				15883	true	vik_bonus	law_court	true	0.0	0	false	true	
+vik_scribes_2	vik_scribes	1	4	900	0		0	false	0	0	0	0	false	false			shield_candles	15888	true	vik_bonus	law_court	false	0.0	0	false	true	
+vik_scribes_3	vik_scribes	2	4	1000	0		0	false	0	0	0	0	false	false			shield_candles	15895	true	vik_bonus	law_court	false	0.0	0	false	true	
+vik_lead_1	vik_lead	0	7	700	0		0	false	0	0	0	0	true	false			res_vik_lead	16099	true	vik_resource	mine	true	0.0	0	false	true	
+vik_lead_2	vik_lead	1	4	850	0		0	false	0	0	0	0	false	false			res_vik_lead	16106	true	vik_resource	mine	true	0.0	0	false	true	
+vik_lead_3	vik_lead	2	5	1000	0		0	false	0	0	0	0	false	false			res_vik_lead	16113	true	vik_resource	mine	true	0.0	0	false	true	
+vik_lead_4	vik_lead	3	97	9999	0		0	false	0	0	0	0	false	false				16117	true	vik_resource	mine	true	0.0	0	false	true	
+vik_lead_5	vik_lead	4	97	9999	0		0	false	0	0	0	0	false	false				16118	true	vik_resource	mine	true	0.0	0	false	true	
+vik_lead_b_2	vik_lead	1	97	9999	0		0	false	0	0	0	0	false	false				17445	true	vik_resource	mine	true	0.0	0	false	true	
+vik_lead_b_3	vik_lead	2	97	9999	0		0	false	0	0	0	0	false	false				17448	true	vik_resource	mine	true	0.0	0	false	true	
+vik_lead_b_4	vik_lead	3	97	9999	0		0	false	0	0	0	0	false	false				17031	true	vik_resource	mine	true	0.0	0	false	true	
+vik_lead_b_5	vik_lead	4	97	9999	0		0	false	0	0	0	0	false	false				17033	true	vik_resource	mine	true	0.0	0	false	true	
+vik_library_1	vik_library	0	7	1300	35		0	false	0	0	0	0	true	false				14667	true	vik_agent	law_court	true	0.0	0	false	true	
+vik_library_2	vik_library	1	4	1400	50		0	false	0	0	0	0	false	false				14672	true	vik_agent	law_court	true	0.0	0	false	true	
+vik_library_3	vik_library	2	5	1500	75		0	false	0	0	0	0	false	false				14682	true	vik_agent	law_court	false	0.0	0	false	true	
+vik_arena_1	vik_arena	0	1	750	35		0	false	0	0	0	0	true	false				14434	true	vik_arena	military	true	0.0	0	false	true	
+vik_arena_2	vik_arena	1	1	900	50		0	false	0	0	0	0	false	false				14443	true	vik_arena	military	false	0.0	0	false	true	
+vik_arena_3	vik_arena	2	1	1050	60		0	false	0	0	0	0	false	false				14444	true	vik_arena	military	false	0.0	0	false	true	
+vik_artisans_1	vik_artisans	0	8	750	0		0	false	0	0	0	0	true	false			res_vik_gold	17185	true	vik_artisans	workshop_stonemasonry	true	0.0	0	false	true	
+vik_artisans_2	vik_artisans	1	2	900	0		0	false	0	0	0	0	false	false			res_vik_gold	17188	true	vik_artisans	workshop_stonemasonry	true	0.0	0	false	true	
+vik_artisans_3	vik_artisans	2	2	1050	0		0	false	0	0	0	0	false	false			res_vik_gold	17198	true	vik_artisans	workshop_stonemasonry	true	0.0	0	false	true	
+vik_assembly_1	vik_assembly	0	2	750	55		0	false	0	0	0	0	true	false				15810	true	vik_bard	law_court	true	0.0	0	false	true	
+vik_assembly_2	vik_assembly	1	2	900	65		0	false	0	0	0	0	false	false				15813	true	vik_bard	law_court	true	0.0	0	false	true	
+vik_assembly_3	vik_assembly	2	2	1050	70		0	false	0	0	0	0	false	false				15822	true	vik_bard	law_court	true	0.0	0	false	true	
+vik_church_1	vik_church	0	7	750	25		0	false	0	0	0	0	false	false				14461	true	vik_church	church	true	0.0	0	false	true	
+vik_church_2	vik_church	1	3	950	30		0	false	0	0	0	0	false	false				14470	true	vik_church	church	true	0.0	0	false	true	
+vik_church_3	vik_church	2	3	1200	35		0	false	0	0	0	0	false	false				14477	true	vik_church	church	true	0.0	0	false	true	
+vik_tithe_hall_1	vik_tithe_hall	0	4	900	0		0	false	0	0	0	0	true	false				15915	true	vik_tithe_hall	farm	true	0.0	0	false	true	
+vik_tithe_hall_2	vik_tithe_hall	1	2	1100	0		0	false	0	0	0	0	false	false				15918	true	vik_tithe_hall	farm	true	0.0	0	false	true	
+vik_tithe_hall_3	vik_tithe_hall	2	2	1300	0		0	false	0	0	0	0	false	false				15919	true	vik_tithe_hall	farm	true	0.0	0	false	true	
+vik_craft_merchant_1	vik_craft_merchant	0	4	750	0		0	false	0	0	0	0	true	false			res_vik_copper	17241	true	vik_craft_merchant	market	true	0.0	0	false	true	
+vik_craft_merchant_2	vik_craft_merchant	1	3	900	0		0	false	0	0	0	0	false	false			res_vik_copper	17248	true	vik_craft_merchant	market	true	0.0	0	false	true	
+vik_craft_merchant_3	vik_craft_merchant	2	6	1050	0		0	false	0	0	0	0	false	false			res_vik_copper	17252	true	vik_craft_merchant	market	true	0.0	0	false	true	
+vik_craft_merchant_b_2	vik_craft_merchant	1	3	1000	0		0	false	0	0	0	0	false	false			res_vik_tin	17253	true	vik_craft_merchant	market	true	0.0	0	false	true	
+vik_craft_merchant_b_3	vik_craft_merchant	2	6	1150	0		0	false	0	0	0	0	false	false			res_vik_tin	17254	true	vik_craft_merchant	market	true	0.0	0	false	true	
+vik_forge_1	vik_forge	0	7	850	30		0	false	0	0	0	0	true	false			res_vik_iron	14573	true	vik_forge	workshop	true	0.0	0	false	true	
+vik_forge_2	vik_forge	1	6	1000	40		0	false	0	0	0	0	false	false			res_vik_iron	14574	true	vik_forge	workshop	true	0.0	0	false	true	
+vik_forge_3	vik_forge	2	6	1200	50		0	false	0	0	0	0	false	false			res_vik_iron	14578	true	vik_forge	workshop	true	0.0	0	false	true	
+vik_wood_1	vik_wood	0	4	450	10		0	false	0	0	0	0	true	false				16255	true	vik_resource	workshop_carpentry	true	0.0	0	false	true	
+vik_wood_2	vik_wood	1	2	600	25		0	false	0	0	0	0	false	false				16264	true	vik_resource	workshop_carpentry	true	0.0	0	false	true	
+vik_wood_3	vik_wood	2	4	750	35		0	false	0	0	0	0	false	false				16270	true	vik_resource	workshop_carpentry	true	0.0	0	false	true	
+vik_wood_4	vik_wood	3	9997	9999	0		0	false	0	0	0	0	false	false				16272	true	vik_resource	workshop_carpentry	true	0.0	0	false	true	
+vik_wood_5	vik_wood	4	9997	9999	0		0	false	0	0	0	0	false	false				16274	true	vik_resource	workshop_carpentry	true	0.0	0	false	true	
+vik_wood_b_2	vik_wood	1	2	700	10		0	false	0	0	0	0	false	false				17522	true	vik_resource	workshop_carpentry	true	0.0	0	false	true	
+vik_wood_b_3	vik_wood	2	2	850	20		0	false	0	0	0	0	false	false				17524	true	vik_resource	workshop_carpentry	true	0.0	0	false	true	
+vik_wood_b_4	vik_wood	3	9997	9999	0		0	false	0	0	0	0	false	false				17104	true	vik_resource	workshop_carpentry	true	0.0	0	false	true	
+vik_wood_b_5	vik_wood	4	9997	9999	0		0	false	0	0	0	0	false	false				17110	true	vik_resource	workshop_carpentry	true	0.0	0	false	true	
+vik_workshop_1	vik_workshop	0	2	1100	0		0	false	0	0	0	0	true	false			res_vik_iron	17331	true	vik_workshop	workshop_stonemasonry	true	0.0	0	false	true	
+vik_workshop_2	vik_workshop	1	2	1500	0		0	false	0	0	0	0	false	false			res_vik_iron	17332	true	vik_workshop	workshop_stonemasonry	true	0.0	0	false	true	
+vik_workshop_3	vik_workshop	2	2	1900	0		0	false	0	0	0	0	false	false			res_vik_iron	17342	true	vik_workshop	workshop_stonemasonry	true	0.0	0	false	true	
+vik_warehouse_1	vik_warehouse	0	4	700	0		0	false	0	0	0	0	true	false				17308	true	vik_warehouse	market	true	0.0	0	false	true	
+vik_warehouse_2	vik_warehouse	1	4	850	0		0	false	0	0	0	0	false	false				17316	true	vik_warehouse	market	true	0.0	0	false	true	
+vik_warehouse_3	vik_warehouse	2	6	1000	0		0	false	0	0	0	0	false	false				17325	true	vik_warehouse	market	true	0.0	0	false	true	
+vik_textiles_1	vik_textiles	0	6	600	0		0	false	0	0	0	0	true	false			res_vik_cloth	17578	true	vik_textiles	workshop_weaver	true	0.0	0	false	true	
+vik_textiles_2	vik_textiles	1	3	750	0		0	false	0	0	0	0	false	false			res_vik_cloth	17579	true	vik_textiles	workshop_weaver	true	0.0	0	false	true	
+vik_textiles_3	vik_textiles	2	4	900	0		0	false	0	0	0	0	false	false			res_vik_cloth	17581	true	vik_textiles	workshop_weaver	true	0.0	0	false	true	
+vik_thing_1	vik_thing	0	4	700	0		0	false	0	0	0	0	true	false				15983	true	vik_law	workshop	true	0.0	0	false	true	
+vik_thing_2	vik_thing	1	2	850	0		0	false	0	0	0	0	false	false				15989	true	vik_law	workshop	true	0.0	0	false	true	
+vik_thing_3	vik_thing	2	2	1000	0		0	false	0	0	0	0	false	false				15993	true	vik_law	workshop	false	0.0	0	false	true	
+vik_thrall_1	vik_thrall	0	7	600	0		0	false	0	0	0	0	true	false				15715	true	vik_thrall	workshop	true	0.0	0	false	true	
+vik_thrall_2	vik_thrall	1	4	750	0		0	false	0	0	0	0	false	false				15718	true	vik_thrall	workshop	true	0.0	0	false	true	
+vik_thrall_3	vik_thrall	2	4	900	0		0	false	0	0	0	0	false	false				15719	true	vik_thrall	workshop	true	0.0	0	false	true	
+vik_moot_hill_1	vik_moot_hill	0	4	600	0		0	false	0	0	0	0	true	false				15959	true	vik_law	law_court	true	0.0	0	false	true	
+vik_moot_hill_2	vik_moot_hill	1	2	750	0		0	false	0	0	0	0	false	false				15968	true	vik_law	law_court	true	0.0	0	false	true	
+vik_moot_hill_3	vik_moot_hill	2	2	900	0		0	false	0	0	0	0	false	false				15975	true	vik_law	law_court	true	0.0	0	false	true	
+vik_mint_1	vik_mint	0	10	600	0		0	false	0	0	0	0	true	false			res_vik_silver	15560	true	vik_mint	workshop	true	0.0	0	false	true	
+vik_mint_2	vik_mint	1	4	750	0		0	false	0	0	0	0	false	false			res_vik_silver	15562	true	vik_mint	workshop	false	0.0	0	false	true	
+vik_mint_3	vik_mint	2	7	900	0		0	false	0	0	0	0	false	false			res_vik_silver	15572	true	vik_mint	workshop	false	0.0	0	false	true	
+vik_merchant_1	vik_merchant	0	4	600	0		0	false	0	0	0	0	true	false				17268	true	vik_merchant	market	true	0.0	0	false	true	
+vik_merchant_2	vik_merchant	1	2	750	0		0	false	0	0	0	0	false	false				17270	true	vik_merchant	market	false	0.0	0	false	true	
+vik_merchant_3	vik_merchant	2	2	900	0		0	false	0	0	0	0	false	false				17271	true	vik_merchant	market	false	0.0	0	false	true	
+vik_master_forge_1	vik_master_forge	0	10	900	0		0	false	0	0	0	0	true	false			res_vik_iron	15529	true	vik_master_forge	workshop	true	0.0	0	false	true	
+vik_master_forge_2	vik_master_forge	1	8	1100	0		0	false	0	0	0	0	false	false			res_vik_iron	15533	true	vik_master_forge	workshop	true	0.0	0	false	true	
+vik_master_forge_3	vik_master_forge	2	8	1300	0		0	false	0	0	0	0	false	false			res_vik_iron	15535	true	vik_master_forge	workshop	true	0.0	0	false	true	
+vik_market_fair_1	vik_market_fair	0	4	750	0		0	false	0	0	0	0	true	false				15828	true	vik_tanner	market	true	0.0	0	false	true	
+vik_market_fair_2	vik_market_fair	1	2	950	0		0	false	0	0	0	0	false	false				15833	true	vik_tanner	market	true	0.0	0	false	true	
+vik_market_fair_3	vik_market_fair	2	2	1200	0		0	false	0	0	0	0	false	false				15839	true	vik_tanner	market	true	0.0	0	false	true	
+vik_court_1	vik_court	0	4	750	0		0	false	0	0	0	0	true	false				14493	true	vik_law	law_court	true	0.0	0	false	true	
+vik_court_2	vik_court	1	1	950	12		0	false	0	0	0	0	false	false				14502	true	vik_law	law_court	true	0.0	0	false	true	
+vik_court_3	vik_court	2	2	1200	30		0	false	0	0	0	0	false	false				14511	true	vik_law	law_court	false	0.0	0	false	true	
+vik_estate_1	vik_estate	0	6	750	10		0	false	0	0	0	0	true	false				15871	true	vik_bonus	town	true	0.0	0	false	true	
+vik_estate_2	vik_estate	1	2	950	16		0	false	0	0	0	0	false	false				15880	true	vik_bonus	town	false	0.0	0	false	true	
+vik_estate_3	vik_estate	2	4	1200	22		0	false	0	0	0	0	false	false				15882	true	vik_bonus	town	false	0.0	0	false	true	
+vik_high_cross_1	vik_high_cross	0	1	500	0		0	false	0	0	0	0	true	false				14655	true	vik_high_cross	roman_temple	true	0.0	0	false	true	
+vik_high_cross_2	vik_high_cross	1	4	800	0		0	false	0	0	0	0	false	false				14665	true	vik_high_cross	roman_temple	true	0.0	0	false	true	
+vik_tools_1	vik_tools	0	7	600	0		0	false	0	0	0	0	true	false				15925	true	vik_tools	workshop_stonemasonry	true	0.0	0	false	true	
+vik_tools_2	vik_tools	1	4	750	0		0	false	0	0	0	0	false	false				15928	true	vik_tools	workshop_stonemasonry	false	0.0	0	false	true	
+vik_tools_3	vik_tools	2	5	900	0		0	false	0	0	0	0	false	false				15936	true	vik_tools	workshop_stonemasonry	false	0.0	0	false	true	
+vik_tools_b_2	vik_tools	1	3	850	0		0	false	0	0	0	0	false	false				15937	true	vik_tools	workshop_stonemasonry	true	0.0	0	false	true	
+vik_tools_b_3	vik_tools	2	4	1000	0		0	false	0	0	0	0	false	false				15938	true	vik_tools	workshop_stonemasonry	true	0.0	0	false	true	
+vik_hof_1	vik_hof	0	6	700	10		0	false	0	0	0	0	true	false				15939	true	vik_hof	roman_temple	true	0.0	0	false	true	
+vik_archery_1	vik_archery	0	4	500	0		0	false	0	0	0	0	true	false				15940	true	vik_archery	military	true	0.0	0	false	true	
+vik_athletics_1	vik_athletics	0	2	500	0		0	false	0	0	0	0	true	false				15941	true	vik_athletics	military	true	0.0	0	false	true	
+vik_archery_2	vik_archery	1	4	800	0		0	false	0	0	0	0	false	false				15942	true	vik_archery	military	false	0.0	0	false	true	
+vik_athletics_2	vik_athletics	1	3	800	0		0	false	0	0	0	0	false	false				15943	true	vik_athletics	military	false	0.0	0	false	true	
+vik_hof_2	vik_hof	1	5	900	20		0	false	0	0	0	0	false	false				15944	true	vik_hof	roman_temple	true	0.0	0	false	true	

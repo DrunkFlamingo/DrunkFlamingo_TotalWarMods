@@ -1,0 +1,12 @@
+id	mission_key	payload_key	status_key	value
+#cdir_events_mission_payloads_tables;1;db/cdir_events_mission_payloads_tables/english_start				
+90210	sw_start_mierce	vik_starting_rebels_defeated	SUCCESS	DURATION[5];GLOBAL
+90211	sw_start_mierce	TARGET	SUCCESS	EVENT
+90212	sw_start_wessex	vik_starting_rebels_defeated	SUCCESS	DURATION[5];GLOBAL
+90213	sw_start_wessex	TARGET	SUCCESS	EVENT
+90214	sw_start_northleode	vik_starting_rebels_defeated	SUCCESS	DURATION[5];GLOBAL
+90215	sw_start_northleode	TARGET	SUCCESS	EVENT
+90216	sw_start_gwined	vik_starting_rebels_defeated	SUCCESS	DURATION[5];GLOBAL
+90217	sw_start_gwined	TARGET	SUCCESS	EVENT
+90218	sw_start_gwined	TEXT_DISPLAY	SUCCESS	LOOKUP[heroism_3]
+90220	sw_mierce_oswald_bones	TEXT_DISPLAY	SUCCESS	LOOKUP[dummy_sw_mierce_oswald_bones]

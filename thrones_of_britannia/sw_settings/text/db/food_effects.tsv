@@ -1,0 +1,6 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/food_effects.loc		
+effects_description_shieldwall_pop_growth	%+n% Base Population Growth	true
+effects_description_shieldwall_pop_famine	%+n% Population Decay	true
+effects_description_shieldwall_store_food	Food Surplus will be stored.	true
+effects_description_sw_banditry	%+n Banditry	false

@@ -1,0 +1,16 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/english_start_missions.loc		
+campaign_localised_strings_string_sw_start_mierce	Defeat Ledeborg's King on the field of battle.	false
+campaign_localised_strings_string_sw_start_wessex	Clear out the bandits from your lands	false
+campaign_localised_strings_string_sw_start_northleode	Drive out the Viking raiders!	false
+missions_localised_title_sw_start_mierce	Border Wars	false
+missions_localised_title_sw_start_wessex	Rampant Banditry	false
+missions_localised_title_sw_start_northleode	Viking Raiders	false
+missions_localised_description_sw_start_mierce	With the settlement of the Danes to our East, we acquired a temperamental and dangerous neighbour. Our disagreements with Ledeborg have spilled over into conflict, and Djurby has joined the war! We must deal with these distractions quickly, lest we be caught unaware when the Welsh come to avenge their former King.	false
+missions_localised_description_sw_start_wessex	We have been at war for many years, and while we emerged victorious, our Kingdom needs time to recover. While our fighting men were away, bandits took advantage of the chaos to pillage our Kingdom. Our first task now should be to root them out.	false
+missions_localised_description_sw_start_northleode	We have many ambitions to restore our Kingdom to greatness, but we must first secure our borders and build our strength. Viking Raiders have come ashore near Coldingaham, and will lay waste to our countryside if we do not intercept them.	false
+missions_localised_title_sw_sw_start_gwined	Rampant Banditry	false
+missions_localised_description_sw_start_gwined	Our Kingdom has seen many hardships since the death of Rodhri the Great, being constantly raided by the Vikings while the threat of Civil War looms. Bandits took advantage of the chaos to pillage our Kingdom. Our first task now should be to root them out.	false
+campaign_localised_strings_string_sw_mierce_oswald_bones	Occupy or Sack the City of Jórvík	false
+missions_localised_title_sw_mierce_oswald_bones	The Hunt for St. Oswald	false
+missions_localised_description_sw_mierce_oswald_bones	St. Oswald was a Northymbrian King who was known for fully embracing the Christian faith as few other northern Anglo-Saxon kings had before him. Unforunately his resting place is now occupied by the heathens in the North, whose presence defiles the holy grounds where he lie. We must send a raiding party into the North that we may recover his remains and relocate them to a more sacred resting place.	false

@@ -1,0 +1,62 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/unit_set_effects.loc		
+effects_description_shieldwall_tech_noble_armour	%+n armour for Nobleman units	true
+effects_description_shield_mercenary_recruitment_cost	%+n Recruitment Cost for Mercenary Units	true
+effects_description_shield_mercenary_replenishment	%+n% Replenishment for Mercenary Units	true
+effects_description_shieldwall_noble_levy_cap	%+n Levy Capacity for Noble Units	true
+effects_description_shieldwall_horsemen_levy_cap	%+n Levy Capacity for Mounted Warriors	true
+effects_description_shieldwall_noble_infantry_levy_cap	%+n Levy Capacity for Noble Infantry	true
+effects_description_shieldwall_hero_levy_cap	%+n Levy Capacity for Heroic Units	true
+effects_description_shieldwall_fyrd_levy_cost	%+n% Recruitment Cost for Fyrd Units	true
+effects_description_shieldwall_fyrd_levy_replenishment	%+n% Replenishment for Fyrd Units	true
+effects_description_shieldwall_fyrd_levy_cap	%+n Levy Capacity for Fyrd Units	true
+effects_description_shieldwall_thegn_levy_cap	%+n Levy Capacity for Thegns	true
+effects_description_shieldwall_hird_levy_cap	%+n Levy Capacity for Hird Units	true
+effects_description_shieldwall_cavalry_levy_cap	%+n Levy Capacity for Cavalry Units	true
+effects_description_shieldwall_bowmen_levy_cap	%+n Levy Capacity for Bowmen	true
+effects_description_shieldwall_penteulu_levy_cap	%+n Levy Capacity for Penteulu	true
+effects_description_shieldwall_thrall_levy_cap	%+n Levy Capacity for Thralls	true
+effects_description_shieldwall_irish_thrall_levy_cap	%+n Levy Capacity for Irish Vassal Units	true
+effects_description_shieldwall_heroism_noble_morale	%+n Morale for Nobleman Units	true
+effects_description_shieldwall_bowmen_accuracy	%+n Accuracy for Bowmen and Longbowmen	true
+effects_description_shieldwall_cavalry_melee_skill	%+n Melee Skill for Cavalry	true
+effects_description_shieldwall_foot_noble_melee_skill	%+n Melee Skill for Noble Infantry	true
+effects_description_shieldwall_fyrd_levy_upkeep	%+n% Upkeep for Fyrd Units	true
+effects_description_shieldwall_bowmen_recruit_exp	%+n Recruitment Experience Per Turn	true
+effects_description_shieldwall_peasants_recruitment_cost	%+n% Recruitment Cost for Peasant Units	true
+effects_description_sw_reduced_focus_fire_cooldown	%+n Cooldown for the Focus Fire Ability	true
+effects_description_shieldwall_formation_unlock_wedge	Enables the Infantry Wedge formation for trained melee units.	true
+effects_description_shieldwall_formation_unlock_castle	Enables the Shield Castle formation for trained melee units.	true
+effects_description_shieldwall_formation_unlock_flying_wedge	Enables the Flying Wedge formation for Cavalry Units	true
+effects_description_sw_no_replen_serf	Disables replenishment for Peasant units	true
+effects_description_sw_no_replen_lord	Disables replenishment for Noble units	true
+effects_description_sw_no_replen_merc	Disables replenishment for Mercenary units	true
+effects_description_shieldwall_vikingar_recruitment_cost	%+n% Recruitment Cost for Vikingar Units	true
+effects_description_shieldwall_vikingar_capacity	%+n Levy Capacity for Vikingar Units	true
+effects_description_sw_replen_serf	%+n% Replenishment for Peasant Units	true
+effects_description_sw_replen_lord	%+n% Replenishment for Noble Units	true
+effects_description_sw_replen_merc	%+n% Replenishment for Mercenary Units	true
+effects_description_sw_replen_vikings	%+n% Replenishment for Peasant Units	true
+effects_description_shieldwall_peasants_upkeep	%+n% Upkeep for Peasant Units	true
+effects_description_sw_pools_berserkers_increase	%+n Levy Capacity for Berserker	true
+effects_description_sw_pools_berserkers_rate	%+n Turns to replenish unit pool for Berserkers	true
+effects_description_sw_pools_bows_increase	%+n Levy Capacity for Archers	true
+effects_description_sw_pools_bows_rate	%+n Turns to replenish unit pool for Archers	true
+effects_description_sw_pools_light_infantry_increase	%+n Levy Capacity for Slingers and Javelinmen	true
+effects_description_sw_pools_light_infantry_rate	%+n Turns to replenish unit pool for Slingers and Javelinmen	true
+effects_description_sw_pools_foreign_warriors_increase	%+n Levy Capacity for Foreign Warriors	true
+effects_description_sw_pools_foreign_warriors_rate	%+n Turns to replenish unit pool for Foreign Warriors	true
+effects_description_sw_pools_nobles_increase	%+n Levy Capacity for Noble Units	true
+effects_description_sw_pools_nobles_rate	%+n Turns to replenish unit pool for Noble Units	true
+effects_description_sw_pools_peasants_increase	%+n Levy Capacity for Peasant Units	true
+effects_description_sw_pools_peasants_rate	%+n Turns to replenish unit pool for Peasant Units	true
+effects_description_sw_pools_all_peasants_except_siege_and_dogs_increase	%+n Levy Capacity for Peasant Units (except Siege)	false
+effects_description_sw_pools_all_peasants_except_siege_and_dogs_rate	%+n Turns to replenish unit pool for Peasant Units (except Siege)	false
+effects_description_sw_pools_dogs_increase	%+n Levy Capacity for Wardogs	false
+effects_description_sw_pools_dogs_rate	%+n Turns to replenish unit pool for Wardogs	false
+effects_description_sw_pools_siege_increase	%+n Levy Capacity for Siege Weapons	false
+effects_description_sw_pools_siege_rate	%+n Turns to replenish unit pool for Siege Weapons	false
+effects_description_sw_pools_hunters_increase	%+n Levy Capacity for Hunter units	false
+effects_description_sw_pools_hunters_rate	%+n Turns to replenish unit pool for Hunter units	false
+effects_description_shieldwall_taeog_upkeepand_recruitment_cost	%+n% Recruitment and Upkeep cost for Taeog units	false
+effects_description_shieldwall_cavalry_charge_bonus	%+n Charge Bonus for Cavalry	false

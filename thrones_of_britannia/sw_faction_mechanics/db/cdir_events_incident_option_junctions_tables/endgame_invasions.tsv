@@ -1,0 +1,26 @@
+id	incident_key	option_key	value
+#cdir_events_incident_option_junctions_tables;2;db/cdir_events_incident_option_junctions_tables/endgame_invasions			
+32000	sw_normans_invasion_prelude	GEN_TARGET_NONE	
+32001	sw_normans_invasion_near_lunden	GEN_TARGET_NONE	
+32002	sw_normans_invasion_near_northwic	GEN_TARGET_NONE	
+32003	sw_normans_invasion_near_tintagol	GEN_TARGET_NONE	
+32004	sw_normans_invasion_far_away	GEN_TARGET_NONE	
+32005	sw_normans_invasion_harrying	GEN_TARGET_NONE	
+32006	sw_normans_conqueror_survives	GEN_TARGET_NONE	
+32007	sw_normans_conqueror_dies	GEN_TARGET_NONE	
+32008	sw_norse_invasion_arrives	GEN_TARGET_NONE	
+32009	sw_norse_conqueror_dies	GEN_TARGET_NONE	
+32010	sw_normans_invasion_prelude	VAR_CHANCE	100
+32011	sw_normans_invasion_near_lunden	VAR_CHANCE	100
+32012	sw_normans_invasion_near_northwic	VAR_CHANCE	100
+32013	sw_normans_invasion_near_tintagol	VAR_CHANCE	100
+32014	sw_normans_invasion_far_away	VAR_CHANCE	100
+32015	sw_normans_invasion_harrying	VAR_CHANCE	100
+32016	sw_normans_conqueror_survives	VAR_CHANCE	100
+32017	sw_normans_conqueror_dies	VAR_CHANCE	100
+32018	sw_norse_invasion_arrives	VAR_CHANCE	100
+32019	sw_norse_conqueror_dies	VAR_CHANCE	100
+32020	sw_normans_invasion_near_werham	VAR_CHANCE	100
+32021	sw_norse_invasion_attacks	VAR_CHANCE	100
+32022	sw_normans_invasion_near_werham	GEN_TARGET_NONE	
+32023	sw_norse_invasion_attacks	GEN_TARGET_NONE	

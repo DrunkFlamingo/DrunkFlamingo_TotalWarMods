@@ -1,0 +1,25 @@
+key	active_time	recharge_time	num_uses	effect_range	affect_self	num_effected_friendly_units	num_effected_enemy_units	update_targets_every_frame	initial_recharge	activated_projectile	can_autotrigger	target_friends	target_enemies	target_ground	target_intercept_range	assume_specific_behaviour	clear_current_order	wind_up_time	passive	unique_id
+#unit_special_abilities_tables;16;db/unit_special_abilities_tables/sw_shieldwall_abilities																				
+att_gen_rally_02	30.0	100.0	-1	60.0	true	6	0	false	0.0		false	false	false	false	0.0		false	0.0	false	173
+att_gen_inspire_02	30.0	120.0	-1	0.0	false	6	0	false	0.0		false	true	false	false	100.0		false	0.0	false	417
+form_wedge	-1.0	-1.0	-1	0.0	true	0	0	false	0.0		false	false	false	false	0.0	wedge_formation	true	0.0	false	102
+att_gen_brace_02	16.0	100.0	-1	40.0	true	3	0	false	0.0		false	false	false	false	0.0		false	0.0	false	104
+rapid_advance	16.0	100.0	-1	0.0	true	0	0	false	0.0		false	false	false	false	0.0		false	0.0	false	64
+att_gen_brace_03	16.0	100.0	-1	0.0	true	0	0	false	0.0		false	false	false	false	0.0		false	0.0	false	235
+rapid_volley	16.0	100.0	-1	0.0	true	0	0	false	0.0		false	false	false	false	0.0		false	0.0	false	107
+frenzied_charge	17.0	100.0	-1	0.0	true	0	0	false	0.0		false	false	false	false	0.0		false	0.0	false	55
+focus_fire	16.0	100.0	-1	40.0	true	3	0	false	0.0		false	false	false	false	0.0		false	0.0	false	109
+att_gen_fear_02	16.0	100.0	-1	40.0	false	0	4	false	0.0		false	false	true	false	60.0		false	0.0	false	110
+fire_volley	16.0	100.0	-1	0.0	true	0	0	false	0.0		false	false	false	false	0.0	focus_fire	false	0.0	false	111
+second_wind	16.0	100.0	-1	0.0	true	0	0	false	0.0		false	false	false	false	0.0		false	0.0	false	112
+frenzy	17.0	100.0	-1	0.0	true	0	0	false	0.0		false	false	false	false	0.0		false	0.0	false	113
+att_gen_raise_05	-1.0	0.0	-1	0.0	true	0	0	false	30.0		false	false	false	false	0.0	stand_and_fight_formation	true	0.0	false	38
+att_gen_raise_01	16.0	100.0	-1	40.0	true	3	0	false	0.0		false	false	false	false	0.0		false	0.0	false	249
+att_gen_raise_02	16.0	100.0	-1	40.0	true	3	0	false	0.0		false	false	false	false	0.0		false	0.0	false	251
+att_gen_raise_03	16.0	100.0	-1	40.0	true	3	0	false	0.0		false	false	false	false	0.0		false	0.0	false	253
+com_into_the_breach	-1.0	-1.0	-1	40.0	false	3	-1	true	-1.0		false	false	false	false	0.0		false	0.0	true	119
+com_force_concentration	-1.0	-1.0	-1	0.0	true	0	-1	false	-1.0		false	false	false	false	0.0		false	0.0	true	120
+headhunt	-1.0	-1.0	-1	0.0	true	0	-1	true	-1.0		false	false	false	false	0.0		false	0.0	true	121
+form_pike_square	-1.0	-1.0	-1	0.0	true	0	-1	true	0.0		false	false	false	false	0.0	pike_square_formation	true	0.0	false	122
+trample	-1.0	-1.0	-1	0.0	true	0	0	true	-1.0		false	false	false	false	0.0		false	0.0	false	70
+com_relentless	-1.0	-1.0	-1	0.0	true	0	0	true	-1.0		false	false	false	false	0.0		false	0.0	false	121

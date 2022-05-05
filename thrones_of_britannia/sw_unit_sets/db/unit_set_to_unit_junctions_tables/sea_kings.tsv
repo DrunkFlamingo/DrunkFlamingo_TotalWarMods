@@ -1,0 +1,10 @@
+unit_caste	unit_category	unit_class	unit_record	unit_set	exclude
+#unit_set_to_unit_junctions_tables;0;db/unit_set_to_unit_junctions_tables/sea_kings					
+			est_warband	thralls	false
+			est_kerns	irish_thralls	false
+			est_raiders	irish_thralls	false
+			est_kerns	thralls	false
+			est_raiders	thralls	false
+			est_berserkers	sea_captain	false
+			est_champions	sea_king	false
+			est_norse_mailed_hersir	sea_king	false

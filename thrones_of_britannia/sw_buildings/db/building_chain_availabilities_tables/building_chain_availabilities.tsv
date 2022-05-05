@@ -1,0 +1,60 @@
+id	set_id	culture	faction	sub_culture	campaign
+#building_chain_availabilities_tables;1;db/building_chain_availabilities_tables/building_chain_availabilities					
+5080	abandoned	vik_cult			vik_attila
+5293	abandoned	vik_cult		vik_sub_cult_welsh	vik_attila
+5546	abandoned	vik_cult		vik_sub_cult_anglo_viking	vik_attila
+5718	abandoned	vik_cult		vik_sub_cult_english	vik_attila
+5824	abandoned	vik_cult		vik_sub_cult_irish	vik_attila
+6255	abandoned	vik_cult		vik_sub_cult_scots	vik_attila
+6346	abandoned	vik_cult		vik_sub_cult_viking_gael	vik_attila
+7583	vik_everyone	vik_cult			vik_attila
+7587	vik_granary	vik_cult			vik_attila
+7588	vik_abbey	vik_cult			vik_attila
+7598	vik_moot	vik_cult			vik_attila
+7603	vik_everyone	vik_cult		vik_sub_cult_welsh	vik_attila
+7607	vik_granary	vik_cult		vik_sub_cult_welsh	vik_attila
+7616	vik_abbey	vik_cult		vik_sub_cult_welsh	vik_attila
+7625	vik_law	vik_cult		vik_sub_cult_welsh	vik_attila
+7631	vik_everyone	vik_cult		vik_sub_cult_anglo_viking	vik_attila
+7637	vik_granary	vik_cult		vik_sub_cult_anglo_viking	vik_attila
+7640	vik_abbey	vik_cult		vik_sub_cult_anglo_viking	vik_attila
+7645	vik_thing	vik_cult		vik_sub_cult_anglo_viking	vik_attila
+7655	vik_everyone	vik_cult		vik_sub_cult_english	vik_attila
+7660	vik_granary	vik_cult		vik_sub_cult_english	vik_attila
+7670	vik_benedictine	vik_cult		vik_sub_cult_english	vik_attila
+7680	vik_moot	vik_cult		vik_sub_cult_english	vik_attila
+7688	vik_everyone	vik_cult		vik_sub_cult_irish	vik_attila
+7697	vik_granary	vik_cult		vik_sub_cult_irish	vik_attila
+7705	vik_celi_de	vik_cult		vik_sub_cult_irish	vik_attila
+7706	vik_moot	vik_cult		vik_sub_cult_irish	vik_attila
+7709	vik_everyone	vik_cult	vik_fact_mide	vik_sub_cult_irish	vik_attila
+7711	vik_granary	vik_cult	vik_fact_mide	vik_sub_cult_irish	vik_attila
+7716	vik_celi_de	vik_cult	vik_fact_mide	vik_sub_cult_irish	vik_attila
+7724	vik_moot	vik_cult	vik_fact_mide	vik_sub_cult_irish	vik_attila
+7725	vik_high_cross	vik_cult	vik_fact_mide	vik_sub_cult_irish	vik_attila
+7731	vik_everyone	vik_cult		vik_sub_cult_scots	vik_attila
+7744	vik_celi_de	vik_cult		vik_sub_cult_scots	vik_attila
+7748	vik_moot	vik_cult		vik_sub_cult_scots	vik_attila
+7752	vik_everyone	vik_cult		vik_sub_cult_viking_gael	vik_attila
+7753	vik_granary	vik_cult		vik_sub_cult_viking_gael	vik_attila
+7761	vik_abbey	vik_cult		vik_sub_cult_viking_gael	vik_attila
+7768	vik_thing	vik_cult		vik_sub_cult_viking_gael	vik_attila
+7769	vik_everyone	vik_cult		vik_sub_cult_viking	vik_attila
+7770	vik_granary	vik_cult		vik_sub_cult_viking	vik_attila
+7776	vik_abbey	vik_cult		vik_sub_cult_viking	vik_attila
+7780	vik_thing	vik_cult		vik_sub_cult_viking	vik_attila
+7786	vik_everyone	vik_cult	vik_fact_dyflin	vik_sub_cult_viking_gael	vik_attila
+7790	vik_granary	vik_cult	vik_fact_dyflin	vik_sub_cult_viking_gael	vik_attila
+7791	vik_abbey	vik_cult	vik_fact_dyflin	vik_sub_cult_viking_gael	vik_attila
+7800	vik_thing	vik_cult	vik_fact_dyflin	vik_sub_cult_viking_gael	vik_attila
+7809	vik_thralls	vik_cult	vik_fact_dyflin	vik_sub_cult_viking_gael	vik_attila
+7818	vik_souterrain	vik_cult		vik_sub_cult_scots	vik_attila
+1000	vik_viking	vik_cult		vik_sub_cult_anglo_viking	vik_attila
+1002	vik_viking	vik_cult		vik_sub_cult_viking_gael	vik_attila
+1003	vik_viking	vik_cult		vik_sub_cult_viking	vik_attila
+1004	vik_viking	vik_cult	vik_fact_dyflin	vik_sub_cult_viking_gael	vik_attila
+1010	vik_not_viking	vik_cult		vik_sub_cult_scots	vik_attila
+1011	vik_not_viking	vik_cult		vik_sub_cult_irish	vik_attila
+1012	vik_not_viking	vik_cult		vik_sub_cult_welsh	vik_attila
+1013	vik_not_viking	vik_cult		vik_sub_cult_english	vik_attila
+1014	vik_not_viking	vik_cult	vik_fact_mide	vik_sub_cult_irish	vik_attila

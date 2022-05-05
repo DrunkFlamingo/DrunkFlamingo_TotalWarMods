@@ -1,0 +1,389 @@
+key	image_path	localised_description	localised_name	pre_battle_speech_parameter	unlocked_at_rank	is_background_skill	is_female_only_background_skill	is_male_only_background_skill	background_weighting
+#character_skills_tables;3;db/character_skills_tables/character_skills									
+vik_back_wife_ambitious	ambitious.png	This woman is consumed with ambition, for her husband, his faction, and for herself.	Ambitious		0	true	true	false	5.0
+vik_back_wife_ambitious_circenn	ambitious.png	This woman is consumed with ambition, for her husband, his faction, and for herself.	Ambitious		0	true	true	false	5.0
+vik_back_wife_ambitious_dyflin	ambitious.png	This woman is consumed with ambition, for her husband, his faction, and for herself.	Ambitious		0	true	true	false	5.0
+vik_back_wife_ambitious_east_engle	ambitious.png	This woman is consumed with ambition, for her husband, his faction, and for herself.	Ambitious		0	true	true	false	5.0
+vik_back_wife_ambitious_gwined	ambitious.png	This woman is consumed with ambition for her husband, his faction, and for herself.	Ambitious		0	true	true	false	5.0
+vik_back_wife_ambitious_mide	ambitious.png	This woman is consumed with ambition, for her husband, his faction, and for herself.	Ambitious		0	true	true	false	5.0
+vik_back_wife_ambitious_mierce	ambitious.png	This woman is consumed with ambition, for her husband, his faction, and for herself.	Ambitious		0	true	true	false	5.0
+vik_back_wife_ambitious_northymbre	ambitious.png	This woman is consumed with ambition, for her husband, his faction, and for herself.	Ambitious		0	true	true	false	5.0
+vik_back_wife_ambitious_strat_clut	ambitious.png	This woman is consumed with ambition, for her husband, his faction, and for herself.	Ambitious		0	true	true	false	5.0
+vik_back_wife_ambitious_sudreyar	ambitious.png	This woman is consumed with ambition, for her husband, his faction, and for herself.	Ambitious		0	true	true	false	5.0
+vik_back_wife_ambitious_west_seaxe	ambitious.png	This woman is consumed with ambition, for her husband, his faction, and for herself.	Ambitious		0	true	true	false	5.0
+vik_back_wife_arrogant	arrogant.png	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	Arrogant		0	true	true	false	5.0
+vik_back_wife_arrogant_circenn	arrogant.png	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	Arrogant		0	true	true	false	5.0
+vik_back_wife_arrogant_dyflin	arrogant.png	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	Arrogant		0	true	true	false	5.0
+vik_back_wife_arrogant_east_engle	arrogant.png	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	Arrogant		0	true	true	false	5.0
+vik_back_wife_arrogant_gwined	arrogant.png	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	Arrogant		0	true	true	false	5.0
+vik_back_wife_arrogant_mide	arrogant.png	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	Arrogant		0	true	true	false	5.0
+vik_back_wife_arrogant_mierce	arrogant.png	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	Arrogant		0	true	true	false	5.0
+vik_back_wife_arrogant_northymbre	arrogant.png	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	Arrogant		0	true	true	false	5.0
+vik_back_wife_arrogant_strat_clut	arrogant.png	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	Arrogant		0	true	true	false	5.0
+vik_back_wife_arrogant_sudreyar	arrogant.png	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	Arrogant		0	true	true	false	5.0
+vik_back_wife_arrogant_west_seaxe	arrogant.png	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	Arrogant		0	true	true	false	5.0
+vik_back_wife_brutal	brutal.png	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	Brutal		0	true	true	false	5.0
+vik_back_wife_brutal_circenn	brutal.png	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	Brutal		0	true	true	false	5.0
+vik_back_wife_brutal_dyflin	brutal.png	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	Brutal		0	true	true	false	5.0
+vik_back_wife_brutal_east_engle	brutal.png	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	Brutal		0	true	true	false	5.0
+vik_back_wife_brutal_gwined	brutal.png	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	Brutal		0	true	true	false	5.0
+vik_back_wife_brutal_mide	brutal.png	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	Brutal		0	true	true	false	5.0
+vik_back_wife_brutal_mierce	brutal.png	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	Brutal		0	true	true	false	5.0
+vik_back_wife_brutal_northymbre	brutal.png	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	Brutal		0	true	true	false	5.0
+vik_back_wife_brutal_strat_clut	brutal.png	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	Brutal		0	true	true	false	5.0
+vik_back_wife_brutal_sudreyar	brutal.png	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	Brutal		0	true	true	false	5.0
+vik_back_wife_brutal_west_seaxe	brutal.png	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	Brutal		0	true	true	false	5.0
+vik_back_wife_charming	charming.png	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	Charming		0	true	true	false	5.0
+vik_back_wife_charming_circenn	charming.png	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	Charming		0	true	true	false	5.0
+vik_back_wife_charming_dyflin	charming.png	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	Charming		0	true	true	false	5.0
+vik_back_wife_charming_east_engle	charming.png	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	Charming		0	true	true	false	5.0
+vik_back_wife_charming_gwined	charming.png	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	Charming		0	true	true	false	5.0
+vik_back_wife_charming_mide	charming.png	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	Charming		0	true	true	false	5.0
+vik_back_wife_charming_mierce	charming.png	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	Charming		0	true	true	false	5.0
+vik_back_wife_charming_northymbre	charming.png	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	Charming		0	true	true	false	5.0
+vik_back_wife_charming_strat_clut	charming.png	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	Charming		0	true	true	false	5.0
+vik_back_wife_charming_sudreyar	charming.png	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	Charming		0	true	true	false	5.0
+vik_back_wife_charming_west_seaxe	charming.png	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	Charming		0	true	true	false	5.0
+vik_back_wife_demanding	demanding.png	This woman's husband wishes he'd died on campaign years prior.	Demanding		0	true	true	false	5.0
+vik_back_wife_demanding_circenn	demanding.png	This woman's husband wishes he'd died on campaign years prior.	Demanding		0	true	true	false	5.0
+vik_back_wife_demanding_dyflin	demanding.png	This woman's husband wishes he'd died on campaign years prior.	Demanding		0	true	true	false	5.0
+vik_back_wife_demanding_east_engle	demanding.png	This woman's husband wishes he'd died on campaign years prior.	Demanding		0	true	true	false	5.0
+vik_back_wife_demanding_gwined	demanding.png	This woman's husband wishes he'd died on campaign years prior.	Demanding		0	true	true	false	5.0
+vik_back_wife_demanding_mide	demanding.png	This woman's husband wishes he'd died on campaign years prior.	Demanding		0	true	true	false	5.0
+vik_back_wife_demanding_mierce	demanding.png	This woman's husband wishes he'd died on campaign years prior.	Demanding		0	true	true	false	5.0
+vik_back_wife_demanding_northymbre	demanding.png	This woman's husband wishes he'd died on campaign years prior.	Demanding		0	true	true	false	5.0
+vik_back_wife_demanding_strat_clut	demanding.png	This woman's husband wishes he'd died on campaign years prior.	Demanding		0	true	true	false	5.0
+vik_back_wife_demanding_sudreyar	demanding.png	This woman's husband wishes he'd died on campaign years prior.	Demanding		0	true	true	false	5.0
+vik_back_wife_demanding_west_seaxe	demanding.png	This woman's husband wishes he'd died on campaign years prior.	Demanding		0	true	true	false	5.0
+vik_back_wife_educated	educated.png	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	Educated		0	true	true	false	5.0
+vik_back_wife_educated_circenn	educated.png	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	Educated		0	true	true	false	5.0
+vik_back_wife_educated_dyflin	educated.png	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	Educated		0	true	true	false	5.0
+vik_back_wife_educated_east_engle	educated.png	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	Educated		0	true	true	false	5.0
+vik_back_wife_educated_gwined	educated.png	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	Educated		0	true	true	false	5.0
+vik_back_wife_educated_mide	educated.png	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	Educated		0	true	true	false	5.0
+vik_back_wife_educated_mierce	educated.png	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	Educated		0	true	true	false	5.0
+vik_back_wife_educated_northymbre	educated.png	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	Educated		0	true	true	false	5.0
+vik_back_wife_educated_strat_clut	educated.png	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	Educated		0	true	true	false	5.0
+vik_back_wife_educated_sudreyar	educated.png	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	Educated		0	true	true	false	5.0
+vik_back_wife_educated_west_seaxe	educated.png	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	Educated		0	true	true	false	5.0
+vik_back_wife_faithful	faithful.png	This lady adores her chosen husband and would never cuckold and betray him.	Faithful		0	true	true	false	5.0
+vik_back_wife_faithful_circenn	faithful.png	This lady adores her chosen husband and would never cuckold and betray him.	Faithful		0	true	true	false	5.0
+vik_back_wife_faithful_dyflin	faithful.png	This lady adores her chosen husband and would never cuckold and betray him.	Faithful		0	true	true	false	5.0
+vik_back_wife_faithful_east_engle	faithful.png	This lady adores her chosen husband and would never cuckold and betray him.	Faithful		0	true	true	false	5.0
+vik_back_wife_faithful_gwined	faithful.png	This lady adores her chosen husband and would never cuckold and betray him.	Faithful		0	true	true	false	5.0
+vik_back_wife_faithful_mide	faithful.png	This lady adores her chosen husband and would never cuckold and betray him.	Faithful		0	true	true	false	5.0
+vik_back_wife_faithful_mierce	faithful.png	This lady adores her chosen husband and would never cuckold and betray him.	Faithful		0	true	true	false	5.0
+vik_back_wife_faithful_northymbre	faithful.png	This lady adores her chosen husband and would never cuckold and betray him.	Faithful		0	true	true	false	5.0
+vik_back_wife_faithful_strat_clut	faithful.png	This lady adores her chosen husband and would never cuckold and betray him.	Faithful		0	true	true	false	5.0
+vik_back_wife_faithful_sudreyar	faithful.png	This lady adores her chosen husband and would never cuckold and betray him.	Faithful		0	true	true	false	5.0
+vik_back_wife_faithful_west_seaxe	faithful.png	This lady adores her chosen husband and would never cuckold and betray him.	Faithful		0	true	true	false	5.0
+vik_back_wife_gossip	gossip.png	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	Gossip		0	true	true	false	5.0
+vik_back_wife_gossip_circenn	gossip.png	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	Gossip		0	true	true	false	5.0
+vik_back_wife_gossip_dyflin	gossip.png	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	Gossip		0	true	true	false	5.0
+vik_back_wife_gossip_east_engle	gossip.png	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	Gossip		0	true	true	false	5.0
+vik_back_wife_gossip_gwined	gossip.png	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	Gossip		0	true	true	false	5.0
+vik_back_wife_gossip_mide	gossip.png	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	Gossip		0	true	true	false	5.0
+vik_back_wife_gossip_mierce	gossip.png	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	Gossip		0	true	true	false	5.0
+vik_back_wife_gossip_northymbre	gossip.png	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	Gossip		0	true	true	false	5.0
+vik_back_wife_gossip_strat_clut	gossip.png	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	Gossip		0	true	true	false	5.0
+vik_back_wife_gossip_sudreyar	gossip.png	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	Gossip		0	true	true	false	5.0
+vik_back_wife_gossip_west_seaxe	gossip.png	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	Gossip		0	true	true	false	5.0
+vik_back_wife_loyal	loyal.png	This lady is utterly loyal to her husband and inspires the same devotion in others.	Loyal		0	true	true	false	5.0
+vik_back_wife_loyal_circenn	loyal.png	This lady is utterly loyal to her husband and inspires the same devotion in others.	Loyal		0	true	true	false	5.0
+vik_back_wife_loyal_dyflin	loyal.png	This lady is utterly loyal to her husband and inspires the same devotion in others.	Loyal		0	true	true	false	5.0
+vik_back_wife_loyal_east_engle	loyal.png	This lady is utterly loyal to her husband and inspires the same devotion in others.	Loyal		0	true	true	false	5.0
+vik_back_wife_loyal_gwined	loyal.png	This lady is utterly loyal to her husband and inspires the same devotion in others.	Loyal		0	true	true	false	5.0
+vik_back_wife_loyal_mide	loyal.png	This lady is utterly loyal to her husband and inspires the same devotion in others.	Loyal		0	true	true	false	5.0
+vik_back_wife_loyal_mierce	loyal.png	This lady is utterly loyal to her husband and inspires the same devotion in others.	Loyal		0	true	true	false	5.0
+vik_back_wife_loyal_northymbre	loyal.png	This lady is utterly loyal to her husband and inspires the same devotion in others.	Loyal		0	true	true	false	5.0
+vik_back_wife_loyal_strat_clut	loyal.png	This lady is utterly loyal to her husband and inspires the same devotion in others.	Loyal		0	true	true	false	5.0
+vik_back_wife_loyal_sudreyar	loyal.png	This lady is utterly loyal to her husband and inspires the same devotion in others.	Loyal		0	true	true	false	5.0
+vik_back_wife_loyal_west_seaxe	loyal.png	This lady is utterly loyal to her husband and inspires the same devotion in others.	Loyal		0	true	true	false	5.0
+vik_back_wife_midwife	midwife.png	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	Midwife		0	true	true	false	5.0
+vik_back_wife_midwife_circenn	midwife.png	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	Midwife		0	true	true	false	5.0
+vik_back_wife_midwife_dyflin	midwife.png	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	Midwife		0	true	true	false	5.0
+vik_back_wife_midwife_east_engle	midwife.png	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	Midwife		0	true	true	false	5.0
+vik_back_wife_midwife_gwined	midwife.png	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	Midwife		0	true	true	false	5.0
+vik_back_wife_midwife_mide	midwife.png	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	Midwife		0	true	true	false	5.0
+vik_back_wife_midwife_mierce	midwife.png	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	Midwife		0	true	true	false	5.0
+vik_back_wife_midwife_northymbre	midwife.png	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	Midwife		0	true	true	false	5.0
+vik_back_wife_midwife_strat_clut	midwife.png	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	Midwife		0	true	true	false	5.0
+vik_back_wife_midwife_sudreyar	midwife.png	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	Midwife		0	true	true	false	5.0
+vik_back_wife_midwife_west_seaxe	midwife.png	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	Midwife		0	true	true	false	5.0
+vik_back_wife_natural_beauty	natural_beauty.png	This one needs no adornment but the morning sun, so pleasing is her countenance.	Natural Beauty		0	true	true	false	5.0
+vik_back_wife_natural_beauty_circenn	natural_beauty.png	This one needs no adornment but the morning sun, so pleasing is her countenance.	Natural Beauty		0	true	true	false	5.0
+vik_back_wife_natural_beauty_dyflin	natural_beauty.png	This one needs no adornment but the morning sun, so pleasing is her countenance.	Natural Beauty		0	true	true	false	5.0
+vik_back_wife_natural_beauty_east_engle	natural_beauty.png	This one needs no adornment but the morning sun, so pleasing is her countenance.	Natural Beauty		0	true	true	false	5.0
+vik_back_wife_natural_beauty_gwined	natural_beauty.png	This one needs no adornment but the morning sun, so pleasing is her countenance.	Natural Beauty		0	true	true	false	5.0
+vik_back_wife_natural_beauty_mide	natural_beauty.png	This one needs no adornment but the morning sun, so pleasing is her countenance.	Natural Beauty		0	true	true	false	5.0
+vik_back_wife_natural_beauty_mierce	natural_beauty.png	This one needs no adornment but the morning sun, so pleasing is her countenance.	Natural Beauty		0	true	true	false	5.0
+vik_back_wife_natural_beauty_northymbre	natural_beauty.png	This one needs no adornment but the morning sun, so pleasing is her countenance.	Natural Beauty		0	true	true	false	5.0
+vik_back_wife_natural_beauty_strat_clut	natural_beauty.png	This one needs no adornment but the morning sun, so pleasing is her countenance.	Natural Beauty		0	true	true	false	5.0
+vik_back_wife_natural_beauty_sudreyar	natural_beauty.png	This one needs no adornment but the morning sun, so pleasing is her countenance.	Natural Beauty		0	true	true	false	5.0
+vik_back_wife_natural_beauty_west_seaxe	natural_beauty.png	This one needs no adornment but the morning sun, so pleasing is her countenance.	Natural Beauty		0	true	true	false	5.0
+vik_back_wife_noble	noble.png	It's a matter of breeding, you understand.	Noble		0	true	true	false	5.0
+vik_back_wife_noble_circenn	noble.png	It's a matter of breeding, you understand.	Noble		0	true	true	false	5.0
+vik_back_wife_noble_dyflin	noble.png	It's a matter of breeding, you understand.	Noble		0	true	true	false	5.0
+vik_back_wife_noble_east_engle	noble.png	It's a matter of breeding, you understand.	Noble		0	true	true	false	5.0
+vik_back_wife_noble_gwined	noble.png	It's a matter of breeding, you understand.	Noble		0	true	true	false	5.0
+vik_back_wife_noble_mide	noble.png	It's a matter of breeding, you understand.	Noble		0	true	true	false	5.0
+vik_back_wife_noble_mierce	noble.png	It's a matter of breeding, you understand.	Noble		0	true	true	false	5.0
+vik_back_wife_noble_northymbre	noble.png	It's a matter of breeding, you understand.	Noble		0	true	true	false	5.0
+vik_back_wife_noble_strat_clut	noble.png	It's a matter of breeding, you understand.	Noble		0	true	true	false	5.0
+vik_back_wife_noble_sudreyar	noble.png	It's a matter of breeding, you understand.	Noble		0	true	true	false	5.0
+vik_back_wife_noble_west_seaxe	noble.png	It's a matter of breeding, you understand.	Noble		0	true	true	false	5.0
+vik_back_wife_organised	organised.png	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	Organised		0	true	true	false	5.0
+vik_back_wife_organised_circenn	organised.png	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	Organised		0	true	true	false	5.0
+vik_back_wife_organised_dyflin	organised.png	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	Organised		0	true	true	false	5.0
+vik_back_wife_organised_east_engle	organised.png	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	Organised		0	true	true	false	5.0
+vik_back_wife_organised_gwined	organised.png	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	Organised		0	true	true	false	5.0
+vik_back_wife_organised_mide	organised.png	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	Organised		0	true	true	false	5.0
+vik_back_wife_organised_mierce	organised.png	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	Organised		0	true	true	false	5.0
+vik_back_wife_organised_northymbre	organised.png	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	Organised		0	true	true	false	5.0
+vik_back_wife_organised_strat_clut	organised.png	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	Organised		0	true	true	false	5.0
+vik_back_wife_organised_sudreyar	organised.png	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	Organised		0	true	true	false	5.0
+vik_back_wife_organised_west_seaxe	organised.png	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	Organised		0	true	true	false	5.0
+vik_back_wife_peaceful	peaceful.png	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	Peaceful		0	true	true	false	5.0
+vik_back_wife_peaceful_circenn	peaceful.png	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	Peaceful		0	true	true	false	5.0
+vik_back_wife_peaceful_dyflin	peaceful.png	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	Peaceful		0	true	true	false	5.0
+vik_back_wife_peaceful_east_engle	peaceful.png	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	Peaceful		0	true	true	false	5.0
+vik_back_wife_peaceful_gwined	peaceful.png	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	Peaceful		0	true	true	false	5.0
+vik_back_wife_peaceful_mide	peaceful.png	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	Peaceful		0	true	true	false	5.0
+vik_back_wife_peaceful_mierce	peaceful.png	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	Peaceful		0	true	true	false	5.0
+vik_back_wife_peaceful_northymbre	peaceful.png	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	Peaceful		0	true	true	false	5.0
+vik_back_wife_peaceful_strat_clut	peaceful.png	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	Peaceful		0	true	true	false	5.0
+vik_back_wife_peaceful_sudreyar	peaceful.png	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	Peaceful		0	true	true	false	5.0
+vik_back_wife_peaceful_west_seaxe	peaceful.png	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	Peaceful		0	true	true	false	5.0
+vik_back_wife_renowned	renowned.png	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	Renowned		0	true	true	false	5.0
+vik_back_wife_renowned_circenn	renowned.png	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	Renowned		0	true	true	false	5.0
+vik_back_wife_renowned_dyflin	renowned.png	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	Renowned		0	true	true	false	5.0
+vik_back_wife_renowned_east_engle	renowned.png	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	Renowned		0	true	true	false	5.0
+vik_back_wife_renowned_gwined	renowned.png	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	Renowned		0	true	true	false	5.0
+vik_back_wife_renowned_mide	renowned.png	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	Renowned		0	true	true	false	5.0
+vik_back_wife_renowned_mierce	renowned.png	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	Renowned		0	true	true	false	5.0
+vik_back_wife_renowned_northymbre	renowned.png	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	Renowned		0	true	true	false	5.0
+vik_back_wife_renowned_strat_clut	renowned.png	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	Renowned		0	true	true	false	5.0
+vik_back_wife_renowned_sudreyar	renowned.png	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	Renowned		0	true	true	false	5.0
+vik_back_wife_renowned_west_seaxe	renowned.png	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	Renowned		0	true	true	false	5.0
+vik_back_wife_sensible	sensible.png	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	Sensible		0	true	true	false	5.0
+vik_back_wife_sensible_circenn	sensible.png	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	Sensible		0	true	true	false	5.0
+vik_back_wife_sensible_dyflin	sensible.png	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	Sensible		0	true	true	false	5.0
+vik_back_wife_sensible_east_engle	sensible.png	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	Sensible		0	true	true	false	5.0
+vik_back_wife_sensible_gwined	sensible.png	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	Sensible		0	true	true	false	5.0
+vik_back_wife_sensible_mide	sensible.png	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	Sensible		0	true	true	false	5.0
+vik_back_wife_sensible_mierce	sensible.png	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	Sensible		0	true	true	false	5.0
+vik_back_wife_sensible_northymbre	sensible.png	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	Sensible		0	true	true	false	5.0
+vik_back_wife_sensible_strat_clut	sensible.png	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	Sensible		0	true	true	false	5.0
+vik_back_wife_sensible_sudreyar	sensible.png	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	Sensible		0	true	true	false	5.0
+vik_back_wife_sensible_west_seaxe	sensible.png	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	Sensible		0	true	true	false	5.0
+vik_back_wife_shieldmaiden	shieldmaiden.png	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	Shieldmaiden		0	true	true	false	5.0
+vik_back_wife_shieldmaiden_circenn	shieldmaiden.png	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	Shieldmaiden		0	true	true	false	5.0
+vik_back_wife_shieldmaiden_dyflin	shieldmaiden.png	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	Shieldmaiden		0	true	true	false	5.0
+vik_back_wife_shieldmaiden_east_engle	shieldmaiden.png	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	Shieldmaiden		0	true	true	false	5.0
+vik_back_wife_shieldmaiden_gwined	shieldmaiden.png	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	Shieldmaiden		0	true	true	false	5.0
+vik_back_wife_shieldmaiden_mide	shieldmaiden.png	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	Shieldmaiden		0	true	true	false	5.0
+vik_back_wife_shieldmaiden_mierce	shieldmaiden.png	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	Shieldmaiden		0	true	true	false	5.0
+vik_back_wife_shieldmaiden_northymbre	shieldmaiden.png	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	Shieldmaiden		0	true	true	false	5.0
+vik_back_wife_shieldmaiden_strat_clut	shieldmaiden.png	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	Shieldmaiden		0	true	true	false	5.0
+vik_back_wife_shieldmaiden_sudreyar	shieldmaiden.png	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	Shieldmaiden		0	true	true	false	5.0
+vik_back_wife_shieldmaiden_west_seaxe	shieldmaiden.png	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	Shieldmaiden		0	true	true	false	5.0
+vik_back_wife_strict	strict.png	This woman is a harpy - she demands that the rules are observed to the very letter.	Strict		0	true	true	false	5.0
+vik_back_wife_strict_circenn	strict.png	This woman is a harpy - she demands that the rules are observed to the very letter.	Strict		0	true	true	false	5.0
+vik_back_wife_strict_dyflin	strict.png	This woman is a harpy - she demands that the rules are observed to the very letter.	Strict		0	true	true	false	5.0
+vik_back_wife_strict_east_engle	strict.png	This woman is a harpy - she demands that the rules are observed to the very letter.	Strict		0	true	true	false	5.0
+vik_back_wife_strict_gwined	strict.png	This woman is a harpy - she demands that the rules be observed to the very letter.	Strict		0	true	true	false	5.0
+vik_back_wife_strict_mide	strict.png	This woman is a harpy - she demands that the rules are observed to the very letter.	Strict		0	true	true	false	5.0
+vik_back_wife_strict_mierce	strict.png	This woman is a harpy - she demands that the rules are observed to the very letter.	Strict		0	true	true	false	5.0
+vik_back_wife_strict_northymbre	strict.png	This woman is a harpy - she demands that the rules are observed to the very letter.	Strict		0	true	true	false	5.0
+vik_back_wife_strict_strat_clut	strict.png	This woman is a harpy - she demands that the rules are observed to the very letter.	Strict		0	true	true	false	5.0
+vik_back_wife_strict_sudreyar	strict.png	This woman is a harpy - she demands that the rules are observed to the very letter.	Strict		0	true	true	false	5.0
+vik_back_wife_strict_west_seaxe	strict.png	This woman is a harpy - she demands that the rules are observed to the very letter.	Strict		0	true	true	false	5.0
+vik_back_wife_ugly	ugly.png	"Well, she's rich, which takes the edge off a little."	Ugly		0	true	true	false	5.0
+vik_back_wife_ugly_circenn	ugly.png	Well, she's rich, which takes the edge off a little.	Ugly		0	true	true	false	5.0
+vik_back_wife_ugly_dyflin	ugly.png	Well, she's rich, which takes the edge off a little.	Ugly		0	true	true	false	5.0
+vik_back_wife_ugly_east_engle	ugly.png	Well, she's rich, which takes the edge off a little.	Ugly		0	true	true	false	5.0
+vik_back_wife_ugly_gwined	ugly.png	"Well, she's rich, which takes the edge off a little."	Ugly		0	true	true	false	5.0
+vik_back_wife_ugly_mide	ugly.png	Well, she's rich, which takes the edge off a little.	Ugly		0	true	true	false	5.0
+vik_back_wife_ugly_mierce	ugly.png	Well, she's rich, which takes the edge off a little.	Ugly		0	true	true	false	5.0
+vik_back_wife_ugly_northymbre	ugly.png	Well, she's rich, which takes the edge off a little.	Ugly		0	true	true	false	5.0
+vik_back_wife_ugly_strat_clut	ugly.png	Well, she's rich, which takes the edge off a little.	Ugly		0	true	true	false	5.0
+vik_back_wife_ugly_sudreyar	ugly.png	Well, she's rich, which takes the edge off a little.	Ugly		0	true	true	false	5.0
+vik_back_wife_ugly_west_seaxe	ugly.png	Well, she's rich, which takes the edge off a little.	Ugly		0	true	true	false	5.0
+vik_back_wife_unfaithful	unfaithful.png	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	Unfaithful		0	true	true	false	5.0
+vik_back_wife_unfaithful_circenn	unfaithful.png	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	Unfaithful		0	true	true	false	5.0
+vik_back_wife_unfaithful_dyflin	unfaithful.png	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	Unfaithful		0	true	true	false	5.0
+vik_back_wife_unfaithful_east_engle	unfaithful.png	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	Unfaithful		0	true	true	false	5.0
+vik_back_wife_unfaithful_gwined	unfaithful.png	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	Unfaithful		0	true	true	false	5.0
+vik_back_wife_unfaithful_mide	unfaithful.png	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	Unfaithful		0	true	true	false	5.0
+vik_back_wife_unfaithful_mierce	unfaithful.png	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	Unfaithful		0	true	true	false	5.0
+vik_back_wife_unfaithful_northymbre	unfaithful.png	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	Unfaithful		0	true	true	false	5.0
+vik_back_wife_unfaithful_strat_clut	unfaithful.png	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	Unfaithful		0	true	true	false	5.0
+vik_back_wife_unfaithful_sudreyar	unfaithful.png	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	Unfaithful		0	true	true	false	5.0
+vik_back_wife_unfaithful_west_seaxe	unfaithful.png	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	Unfaithful		0	true	true	false	5.0
+vik_back_wife_wasteful	wasteful.png	"What? We take what we desire - have you forgotten?"	Wasteful		0	true	true	false	5.0
+vik_back_wife_wasteful_circenn	wasteful.png	What? We take what we desire - have you forgotten?	Wasteful		0	true	true	false	5.0
+vik_back_wife_wasteful_dyflin	wasteful.png	What? We take what we desire - have you forgotten?	Wasteful		0	true	true	false	5.0
+vik_back_wife_wasteful_east_engle	wasteful.png	What? We take what we desire - have you forgotten?	Wasteful		0	true	true	false	5.0
+vik_back_wife_wasteful_gwined	wasteful.png	"What? We take what we desire - have you forgotten?"	Wasteful		0	true	true	false	5.0
+vik_back_wife_wasteful_mide	wasteful.png	What? We take what we desire - have you forgotten?	Wasteful		0	true	true	false	5.0
+vik_back_wife_wasteful_mierce	wasteful.png	What? We take what we desire - have you forgotten?	Wasteful		0	true	true	false	5.0
+vik_back_wife_wasteful_northymbre	wasteful.png	What? We take what we desire - have you forgotten?	Wasteful		0	true	true	false	5.0
+vik_back_wife_wasteful_strat_clut	wasteful.png	What? We take what we desire - have you forgotten?	Wasteful		0	true	true	false	5.0
+vik_back_wife_wasteful_sudreyar	wasteful.png	What? We take what we desire - have you forgotten?	Wasteful		0	true	true	false	5.0
+vik_back_wife_wasteful_west_seaxe	wasteful.png	What? We take what we desire - have you forgotten?	Wasteful		0	true	true	false	5.0
+vik_back_wife_wealthy	wealthy.png	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	Wealthy		0	true	true	false	5.0
+vik_back_wife_wealthy_circenn	wealthy.png	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	Wealthy		0	true	true	false	5.0
+vik_back_wife_wealthy_dyflin	wealthy.png	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	Wealthy		0	true	true	false	5.0
+vik_back_wife_wealthy_east_engle	wealthy.png	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	Wealthy		0	true	true	false	5.0
+vik_back_wife_wealthy_gwined	wealthy.png	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	Wealthy		0	true	true	false	5.0
+vik_back_wife_wealthy_mide	wealthy.png	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	Wealthy		0	true	true	false	5.0
+vik_back_wife_wealthy_mierce	wealthy.png	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	Wealthy		0	true	true	false	5.0
+vik_back_wife_wealthy_northymbre	wealthy.png	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	Wealthy		0	true	true	false	5.0
+vik_back_wife_wealthy_strat_clut	wealthy.png	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	Wealthy		0	true	true	false	5.0
+vik_back_wife_wealthy_sudreyar	wealthy.png	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	Wealthy		0	true	true	false	5.0
+vik_back_wife_wealthy_west_seaxe	wealthy.png	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	Wealthy		0	true	true	false	5.0
+vik_back_wife_well_connected	well_connected.png	It's not what you know, but who.	Well Connected		0	true	true	false	5.0
+vik_back_wife_well_connected_circenn	well_connected.png	It's not what you know, but who.	Well Connected		0	true	true	false	5.0
+vik_back_wife_well_connected_dyflin	well_connected.png	It's not what you know, but who.	Well Connected		0	true	true	false	5.0
+vik_back_wife_well_connected_east_engle	well_connected.png	It's not what you know, but who.	Well Connected		0	true	true	false	5.0
+vik_back_wife_well_connected_gwined	well_connected.png	It's not what you know, but who.	Well Connected		0	true	true	false	5.0
+vik_back_wife_well_connected_mide	well_connected.png	It's not what you know, but who.	Well Connected		0	true	true	false	5.0
+vik_back_wife_well_connected_mierce	well_connected.png	It's not what you know, but who.	Well Connected		0	true	true	false	5.0
+vik_back_wife_well_connected_northymbre	well_connected.png	It's not what you know, but who.	Well Connected		0	true	true	false	5.0
+vik_back_wife_well_connected_strat_clut	well_connected.png	It's not what you know, but who.	Well Connected		0	true	true	false	5.0
+vik_back_wife_well_connected_sudreyar	well_connected.png	It's not what you know, but who.	Well Connected		0	true	true	false	5.0
+vik_back_wife_well_connected_west_seaxe	well_connected.png	It's not what you know, but who.	Well Connected		0	true	true	false	5.0
+vik_back_wife_wise	wise.png	"Calm yourself, husband, the plan will come to fruition eventually - we just have to wait."	Wise		0	true	true	false	5.0
+vik_back_wife_wise_circenn	wise.png	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	Wise		0	true	true	false	5.0
+vik_back_wife_wise_dyflin	wise.png	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	Wise		0	true	true	false	5.0
+vik_back_wife_wise_east_engle	wise.png	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	Wise		0	true	true	false	5.0
+vik_back_wife_wise_gwined	wise.png	"Calm yourself, husband, the plan will come to fruition eventually - we just have to wait."	Wise		0	true	true	false	5.0
+vik_back_wife_wise_mide	wise.png	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	Wise		0	true	true	false	5.0
+vik_back_wife_wise_mierce	wise.png	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	Wise		0	true	true	false	5.0
+vik_back_wife_wise_northymbre	wise.png	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	Wise		0	true	true	false	5.0
+vik_back_wife_wise_strat_clut	wise.png	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	Wise		0	true	true	false	5.0
+vik_back_wife_wise_sudreyar	wise.png	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	Wise		0	true	true	false	5.0
+vik_back_wife_wise_west_seaxe	wise.png	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	Wise		0	true	true	false	5.0
+vik_dummy_agent	vik_skill_scout_large.png	You should not be seeing this, please report it to your nearest designer	DUMMY -  NOT USED IF SEEN TELL A DESIGNER		0	false	false	false	0.0
+vik_dummy_army	vik_skill_scout_large.png	You should not be seeing this, please report it to your nearest designer	DUMMY -  NOT USED IF SEEN TELL A DESIGNER		0	false	false	false	0.0
+vik_dummy_navy	vik_skill_scout_large.png	You should not be seeing this, please report it to your nearest designer	DUMMY -  NOT USED IF SEEN TELL A DESIGNER		0	false	false	false	0.0
+vik_follower_bard	vik_skill_bard_large.png	Everyone stops to hear his hummable tunes and enticing rhymes.	Bard		0	false	false	false	0.0
+vik_follower_bard_circenn	vik_skill_bard_large.png	Everyone stops to hear his hummable tunes and enticing rhymes.	Bard		0	false	false	false	0.0
+vik_follower_bard_dyflin	vik_skill_bard_large.png	Everyone stops to hear his hummable tunes and enticing rhymes.	Bard		0	false	false	false	0.0
+vik_follower_bard_east_engle	vik_skill_bard_large.png	Everyone stops to hear his hummable tunes and enticing rhymes.	Bard		0	false	false	false	0.0
+vik_follower_bard_gwined	vik_gwined_skill_bard_large.png	Everyone stops to hear his hummable tunes and enticing rhymes.	Bard		0	false	false	false	0.0
+vik_follower_bard_mide	vik_skill_bard_large.png	Everyone stops to hear his hummable tunes and enticing rhymes.	Bard		0	false	false	false	0.0
+vik_follower_bard_mierce	vik_skill_bard_large.png	Everyone stops to hear his hummable tunes and enticing rhymes.	Bard		0	false	false	false	0.0
+vik_follower_bard_northymbre	vik_skill_bard_large.png	Everyone stops to hear his hummable tunes and enticing rhymes.	Bard		0	false	false	false	0.0
+vik_follower_bard_strat_clut	vik_skill_bard_large.png	Everyone stops to hear his hummable tunes and enticing rhymes.	Bard		0	false	false	false	0.0
+vik_follower_bard_sudreyar	vik_skill_bard_large.png	Everyone stops to hear his hummable tunes and enticing rhymes.	Bard		0	false	false	false	0.0
+vik_follower_bard_west_seaxe	vik_skill_bard_large.png	Everyone stops to hear his hummable tunes and enticing rhymes.	Bard		0	false	false	false	0.0
+vik_follower_champion	vik_skill_champion_large.png	Powerful men attract enemies; this one ensures they never get close enough to strike.	Champion		0	false	false	false	0.0
+vik_follower_champion_circenn	vik_skill_champion_large.png	Powerful men attract enemies; this one ensures they never get close enough to strike.	Champion		0	false	false	false	0.0
+vik_follower_champion_dyflin	vik_skill_champion_large.png	Powerful men attract enemies; this one ensures they never get close enough to strike.	Champion		0	false	false	false	0.0
+vik_follower_champion_east_engle	vik_skill_champion_large.png	Powerful men attract enemies; this one ensures they never get close enough to strike.	Champion		0	false	false	false	0.0
+vik_follower_champion_gwined	vik_gwined_skill_champion_large.png	Powerful men attract enemies; this one ensures they never get close enough to strike.	Champion		0	false	false	false	0.0
+vik_follower_champion_mide	vik_skill_champion_large.png	Powerful men attract enemies; this one ensures they never get close enough to strike.	Champion		0	false	false	false	0.0
+vik_follower_champion_mierce	vik_skill_champion_large.png	Powerful men attract enemies; this one ensures they never get close enough to strike.	Champion		0	false	false	false	0.0
+vik_follower_champion_northymbre	vik_skill_champion_large.png	Powerful men attract enemies; this one ensures they never get close enough to strike.	Champion		0	false	false	false	0.0
+vik_follower_champion_strat_clut	vik_skill_champion_large.png	Powerful men attract enemies; this one ensures they never get close enough to strike.	Champion		0	false	false	false	0.0
+vik_follower_champion_sudreyar	vik_skill_champion_large.png	Powerful men attract enemies; this one ensures they never get close enough to strike.	Champion		0	false	false	false	0.0
+vik_follower_champion_west_seaxe	vik_skill_champion_large.png	Powerful men attract enemies; this one ensures they never get close enough to strike.	Champion		0	false	false	false	0.0
+vik_follower_forager	vik_skill_forager_large.png	When campaigning, it makes sense to bring someone who knows how to find provisions anywhere and everywhere.	Forager		0	false	false	false	0.0
+vik_follower_forager_circenn	vik_skill_forager_large.png	When campaigning, it makes sense to bring someone who knows how to find provisions anywhere and everywhere.	Forager		0	false	false	false	0.0
+vik_follower_forager_dyflin	vik_skill_forager_large.png	When campaigning, it makes sense to bring someone who knows how to find provisions anywhere and everywhere.	Forager		0	false	false	false	0.0
+vik_follower_forager_east_engle	vik_skill_forager_large.png	When campaigning, it makes sense to bring someone who knows how to find provisions anywhere and everywhere.	Forager		0	false	false	false	0.0
+vik_follower_forager_gwined	vik_gwined_skill_forager_large.png	When campaigning, it makes sense to bring someone who knows how to find provisions anywhere and everywhere.	Forager		0	false	false	false	0.0
+vik_follower_forager_mide	vik_skill_forager_large.png	When campaigning, it makes sense to bring someone who knows how to find provisions anywhere and everywhere.	Forager		0	false	false	false	0.0
+vik_follower_forager_mierce	vik_skill_forager_large.png	When campaigning, it makes sense to bring someone who knows how to find provisions anywhere and everywhere.	Forager		0	false	false	false	0.0
+vik_follower_forager_northymbre	vik_skill_forager_large.png	When campaigning, it makes sense to bring someone who knows how to find provisions anywhere and everywhere.	Forager		0	false	false	false	0.0
+vik_follower_forager_strat_clut	vik_skill_forager_large.png	When campaigning, it makes sense to bring someone who knows how to find provisions anywhere and everywhere.	Forager		0	false	false	false	0.0
+vik_follower_forager_sudreyar	vik_skill_forager_large.png	When campaigning, it makes sense to bring someone who knows how to find provisions anywhere and everywhere.	Forager		0	false	false	false	0.0
+vik_follower_forager_west_seaxe	vik_skill_forager_large.png	When campaigning, it makes sense to bring someone who knows how to find provisions anywhere and everywhere.	Forager		0	false	false	false	0.0
+vik_follower_pillager	vik_skill_pirate_large.png	In war, there is no time for niceties - this man will ruthlessly strip the area for money or goods, using violence where necessary.	Pillager		0	false	false	false	0.0
+vik_follower_pillager_circenn	vik_skill_pirate_large.png	In war, there is no time for niceties - this man will ruthlessly strip the area for money or goods, using violence where necessary.	Pillager		0	false	false	false	0.0
+vik_follower_pillager_dyflin	vik_skill_pirate_large.png	In war, there is no time for niceties - this man will ruthlessly strip the area for money or goods, using violence where necessary.	Pillager		0	false	false	false	0.0
+vik_follower_pillager_east_engle	vik_skill_pirate_large.png	In war, there is no time for niceties - this man will ruthlessly strip the area for money or goods, using violence where necessary.	Pillager		0	false	false	false	0.0
+vik_follower_pillager_gwined	vik_gwined_skill_pirate_large.png	In war, there is no time for niceties - this man will ruthlessly strip the area for money or goods, using violence where necessary.	Pillager		0	false	false	false	0.0
+vik_follower_pillager_mide	vik_skill_pirate_large.png	In war, there is no time for niceties - this man will ruthlessly strip the area for money or goods, using violence where necessary.	Pillager		0	false	false	false	0.0
+vik_follower_pillager_mierce	vik_skill_pirate_large.png	In war, there is no time for niceties - this man will ruthlessly strip the area for money or goods, using violence where necessary.	Pillager		0	false	false	false	0.0
+vik_follower_pillager_northymbre	vik_skill_pirate_large.png	In war, there is no time for niceties - this man will ruthlessly strip the area for money or goods, using violence where necessary.	Pillager		0	false	false	false	0.0
+vik_follower_pillager_strat_clut	vik_skill_pirate_large.png	In war, there is no time for niceties - this man will ruthlessly strip the area for money or goods, using violence where necessary.	Pillager		0	false	false	false	0.0
+vik_follower_pillager_sudreyar	vik_skill_pirate_large.png	In war, there is no time for niceties - this man will ruthlessly strip the area for money or goods, using violence where necessary.	Pillager		0	false	false	false	0.0
+vik_follower_pillager_west_seaxe	vik_skill_pirate_large.png	In war, there is no time for niceties - this man will ruthlessly strip the area for money or goods, using violence where necessary.	Pillager		0	false	false	false	0.0
+vik_follower_priest	vik_skill_priest_large.png	This man has heard the Word and wishes to pass it on to others.	Priest		0	false	false	false	0.0
+vik_follower_priest_circenn	vik_skill_priest_large.png	This man has heard the Word and wishes to pass it on to others.	Priest		0	false	false	false	0.0
+vik_follower_priest_dyflin	vik_skill_priest_large.png	This man has heard the Word and wishes to pass it on to others.	Priest		0	false	false	false	0.0
+vik_follower_priest_east_engle	vik_skill_priest_large.png	This man has heard the Word and wishes to pass it on to others.	Priest		0	false	false	false	0.0
+vik_follower_priest_gwined	vik_gwined_skill_priest_large.png	This man has heard the Word and wishes to pass it on to others.	Priest		0	false	false	false	0.0
+vik_follower_priest_mide	vik_skill_priest_large.png	This man has heard the Word and wishes to pass it on to others.	Priest		0	false	false	false	0.0
+vik_follower_priest_mierce	vik_skill_priest_large.png	This man has heard the Word and wishes to pass it on to others.	Priest		0	false	false	false	0.0
+vik_follower_priest_northymbre	vik_skill_priest_large.png	This man has heard the Word and wishes to pass it on to others.	Priest		0	false	false	false	0.0
+vik_follower_priest_strat_clut	vik_skill_priest_large.png	This man has heard the Word and wishes to pass it on to others.	Priest		0	false	false	false	0.0
+vik_follower_priest_sudreyar	vik_skill_priest_large.png	This man has heard the Word and wishes to pass it on to others.	Priest		0	false	false	false	0.0
+vik_follower_priest_west_seaxe	vik_skill_priest_large.png	This man has heard the Word and wishes to pass it on to others.	Priest		0	false	false	false	0.0
+vik_follower_quartermaster	vik_skill_quartermaster_large.png	This fellow is essential - he keeps the army fed, watered, armed and, most importantly, moving.	Quartermaster		0	false	false	false	0.0
+vik_follower_quartermaster_circenn	vik_skill_quartermaster_large.png	This fellow is essential - he keeps the army fed, watered, armed and, most importantly, moving.	Quartermaster		0	false	false	false	0.0
+vik_follower_quartermaster_dyflin	vik_skill_quartermaster_large.png	This fellow is essential - he keeps the army fed, watered, armed and, most importantly, moving.	Quartermaster		0	false	false	false	0.0
+vik_follower_quartermaster_east_engle	vik_skill_quartermaster_large.png	This fellow is essential - he keeps the army fed, watered, armed and, most importantly, moving.	Quartermaster		0	false	false	false	0.0
+vik_follower_quartermaster_gwined	vik_gwined_skill_quartermaster_large.png	This fellow is essential - he keeps the army fed, watered, armed and, most importantly, moving.	Quartermaster		0	false	false	false	0.0
+vik_follower_quartermaster_mide	vik_skill_quartermaster_large.png	This fellow is essential - he keeps the army fed, watered, armed and, most importantly, moving.	Quartermaster		0	false	false	false	0.0
+vik_follower_quartermaster_mierce	vik_skill_quartermaster_large.png	This fellow is essential - he keeps the army fed, watered, armed and, most importantly, moving.	Quartermaster		0	false	false	false	0.0
+vik_follower_quartermaster_northymbre	vik_skill_quartermaster_large.png	This fellow is essential - he keeps the army fed, watered, armed and, most importantly, moving.	Quartermaster		0	false	false	false	0.0
+vik_follower_quartermaster_strat_clut	vik_skill_quartermaster_large.png	This fellow is essential - he keeps the army fed, watered, armed and, most importantly, moving.	Quartermaster		0	false	false	false	0.0
+vik_follower_quartermaster_sudreyar	vik_skill_quartermaster_large.png	This fellow is essential - he keeps the army fed, watered, armed and, most importantly, moving.	Quartermaster		0	false	false	false	0.0
+vik_follower_quartermaster_west_seaxe	vik_skill_quartermaster_large.png	This fellow is essential - he keeps the army fed, watered, armed and, most importantly, moving.	Quartermaster		0	false	false	false	0.0
+vik_follower_scribe	vik_skill_scribe_large.png	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	Scribe		0	false	false	false	0.0
+vik_follower_scribe_circenn	vik_skill_scribe_large.png	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	Scribe		0	false	false	false	0.0
+vik_follower_scribe_dyflin	vik_skill_scribe_large.png	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	Scribe		0	false	false	false	0.0
+vik_follower_scribe_east_engle	vik_skill_scribe_large.png	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	Scribe		0	false	false	false	0.0
+vik_follower_scribe_gwined	vik_gwined_skill_scribe_large.png	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	Scribe		0	false	false	false	0.0
+vik_follower_scribe_mide	vik_skill_scribe_large.png	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	Scribe		0	false	false	false	0.0
+vik_follower_scribe_mierce	vik_skill_scribe_large.png	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	Scribe		0	false	false	false	0.0
+vik_follower_scribe_northymbre	vik_skill_scribe_large.png	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	Scribe		0	false	false	false	0.0
+vik_follower_scribe_strat_clut	vik_skill_scribe_large.png	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	Scribe		0	false	false	false	0.0
+vik_follower_scribe_sudreyar	vik_skill_scribe_large.png	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	Scribe		0	false	false	false	0.0
+vik_follower_scribe_west_seaxe	vik_skill_scribe_large.png	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	Scribe		0	false	false	false	0.0
+vik_follower_siege_engineer	vik_skill_siege_engineer_large.png	If breaking into places is your goal, this man will make it happen.	Siege Engineer		0	false	false	false	0.0
+vik_follower_siege_engineer_circenn	vik_skill_siege_engineer_large.png	If breaking into places is your goal, this man will make it happen.	Siege Engineer		0	false	false	false	0.0
+vik_follower_siege_engineer_dyflin	vik_skill_siege_engineer_large.png	If breaking into places is your goal, this man will make it happen.	Siege Engineer		0	false	false	false	0.0
+vik_follower_siege_engineer_east_engle	vik_skill_siege_engineer_large.png	If breaking into places is your goal, this man will make it happen.	Siege Engineer		0	false	false	false	0.0
+vik_follower_siege_engineer_gwined	vik_gwined_skill_siege_engineer_large.png	If breaking into places is your goal, this man will make it happen.	Siege Engineer		0	false	false	false	0.0
+vik_follower_siege_engineer_mide	vik_skill_siege_engineer_large.png	If breaking into places is your goal, this man will make it happen.	Siege Engineer		0	false	false	false	0.0
+vik_follower_siege_engineer_mierce	vik_skill_siege_engineer_large.png	If breaking into places is your goal, this man will make it happen.	Siege Engineer		0	false	false	false	0.0
+vik_follower_siege_engineer_northymbre	vik_skill_siege_engineer_large.png	If breaking into places is your goal, this man will make it happen.	Siege Engineer		0	false	false	false	0.0
+vik_follower_siege_engineer_strat_clut	vik_skill_siege_engineer_large.png	If breaking into places is your goal, this man will make it happen.	Siege Engineer		0	false	false	false	0.0
+vik_follower_siege_engineer_sudreyar	vik_skill_siege_engineer_large.png	If breaking into places is your goal, this man will make it happen.	Siege Engineer		0	false	false	false	0.0
+vik_follower_siege_engineer_west_seaxe	vik_skill_siege_engineer_large.png	If breaking into places is your goal, this man will make it happen.	Siege Engineer		0	false	false	false	0.0
+vik_back_wife_ambitious_northleode	ambitious.png	This woman is consumed with ambition, for her husband, his faction, and for herself.	Ambitious		0	true	true	false	5.0
+vik_back_wife_arrogant_northleode	arrogant.png	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	Arrogant		0	true	true	false	5.0
+vik_back_wife_brutal_northleode	brutal.png	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	Brutal		0	true	true	false	5.0
+vik_back_wife_charming_northleode	charming.png	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	Charming		0	true	true	false	5.0
+vik_back_wife_demanding_northleode	demanding.png	This woman's husband wishes he'd died on campaign years prior.	Demanding		0	true	true	false	5.0
+vik_back_wife_educated_northleode	educated.png	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	Educated		0	true	true	false	5.0
+vik_back_wife_faithful_northleode	faithful.png	This lady adores her chosen husband and would never cuckold and betray him.	Faithful		0	true	true	false	5.0
+vik_back_wife_gossip_northleode	gossip.png	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	Gossip		0	true	true	false	5.0
+vik_back_wife_loyal_northleode	loyal.png	This lady is utterly loyal to her husband and inspires the same devotion in others.	Loyal		0	true	true	false	5.0
+vik_back_wife_midwife_northleode	midwife.png	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	Midwife		0	true	true	false	5.0
+vik_back_wife_natural_beauty_northleode	natural_beauty.png	This one needs no adornment but the morning sun, so pleasing is her countenance.	Natural Beauty		0	true	true	false	5.0
+vik_back_wife_noble_northleode	noble.png	It's a matter of breeding, you understand.	Noble		0	true	true	false	5.0
+vik_back_wife_organised_northleode	organised.png	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	Organised		0	true	true	false	5.0
+vik_back_wife_peaceful_northleode	peaceful.png	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	Peaceful		0	true	true	false	5.0
+vik_back_wife_renowned_northleode	renowned.png	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	Renowned		0	true	true	false	5.0
+vik_back_wife_sensible_northleode	sensible.png	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	Sensible		0	true	true	false	5.0
+vik_back_wife_shieldmaiden_northleode	shieldmaiden.png	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	Shieldmaiden		0	true	true	false	5.0
+vik_back_wife_strict_northleode	strict.png	This woman is a harpy - she demands that the rules are observed to the very letter.	Strict		0	true	true	false	5.0
+vik_back_wife_ugly_northleode	ugly.png	Well, she's rich, which takes the edge off a little.	Ugly		0	true	true	false	5.0
+vik_back_wife_unfaithful_northleode	unfaithful.png	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	Unfaithful		0	true	true	false	5.0
+vik_back_wife_wasteful_northleode	wasteful.png	What? We take what we desire - have you forgotten?	Wasteful		0	true	true	false	5.0
+vik_back_wife_wealthy_northleode	wealthy.png	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	Wealthy		0	true	true	false	5.0
+vik_back_wife_well_connected_northleode	well_connected.png	It's not what you know, but who.	Well Connected		0	true	true	false	5.0
+vik_back_wife_wise_northleode	wise.png	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	Wise		0	true	true	false	5.0
+vik_follower_bard_northleode	vik_skill_bard_large.png	Everyone stops to hear his hummable tunes and enticing rhymes.	Bard		0	false	false	false	0.0
+vik_follower_champion_northleode	vik_skill_champion_large.png	Powerful men attract enemies; this one ensures they never get close enough to strike.	Champion		0	false	false	false	0.0
+vik_follower_forager_northleode	vik_skill_forager_large.png	When campaigning, it makes sense to bring someone who knows how to find provisions anywhere and everywhere.	Forager		0	false	false	false	0.0
+vik_follower_pillager_northleode	vik_skill_pirate_large.png	In war, there is no time for niceties - this man will ruthlessly strip the area for money or goods, using violence where necessary.	Pillager		0	false	false	false	0.0
+vik_follower_priest_northleode	vik_skill_priest_large.png	This man has heard the Word and wishes to pass it on to others.	Priest		0	false	false	false	0.0
+vik_follower_quartermaster_northleode	vik_skill_quartermaster_large.png	This fellow is essential - he keeps the army fed, watered, armed and, most importantly, moving.	Quartermaster		0	false	false	false	0.0
+vik_follower_scribe_northleode	vik_skill_scribe_large.png	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	Scribe		0	false	false	false	0.0
+vik_follower_siege_engineer_northleode	vik_skill_siege_engineer_large.png	If breaking into places is your goal, this man will make it happen.	Siege Engineer		0	false	false	false	0.0

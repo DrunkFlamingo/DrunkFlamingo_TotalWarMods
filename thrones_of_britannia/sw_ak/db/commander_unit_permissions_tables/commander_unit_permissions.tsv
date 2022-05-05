@@ -1,0 +1,25 @@
+culture_key	faction_key	subculture_key	unit_key
+#commander_unit_permissions_tables;0;db/commander_unit_permissions_tables/commander_unit_permissions			
+	vik_fact_dene		dan_royal_huscarls
+		vik_sub_cult_anglo_viking	dan_royal_huscarls
+	vik_fact_haeden		dan_warlords_companions
+		vik_sub_cult_anglo_viking	dan_warlords_companions
+		vik_sub_cult_english	eng_royal_bodyguard
+		vik_sub_cult_english	eng_royal_companions
+	vik_fact_dubgaill		est_hearthguard
+	vik_fact_finngaill		est_hearthguard
+	vik_fact_nordmann		est_hearthguard
+	vik_fact_wicing		est_hearthguard
+	vik_fact_norse		est_hearthguard
+	vik_fact_rebels_viking		est_hearthguard
+	vik_fact_separatists_viking		est_hearthguard
+		vik_sub_cult_viking_gael	est_hearthguard
+		vik_sub_cult_viking_gael	est_royal_huskarls
+		vik_sub_cult_irish	iri_household_horsemen
+		vik_sub_cult_irish	iri_household_riders
+	vik_fact_normaunds		nor_miles
+		vik_sub_cult_scots	sco_royal_bodyguard
+		vik_sub_cult_scots	sco_royal_followers
+	vik_fact_jorvik		wel_armoured_axemen
+		vik_sub_cult_welsh	wel_royal_teulu
+		vik_sub_cult_welsh	wel_teulu

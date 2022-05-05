@@ -1,0 +1,314 @@
+key	category	model	audio_material	hit_points	gun_type	onscreen_name	ignition_threshold	radar_icon	visible_in_public_ted	fortwall_penetration_chance	collision_3d	destruct_thresholds	joiner	auxiliary	burn_rate	height_map_mesh	can_burn	visibility_mode	blood_pack_model_override_folder
+#battlefield_buildings_tables;19;db/battlefield_buildings_tables/sw_battlefield_buildings																			
+attila_rock_med_01	generic	attila_rock_med_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+attila_rock_med_02	generic	attila_rock_med_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+attila_rock_med_03	generic	attila_rock_med_03	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+attila_rock_med_04	generic	attila_rock_med_04	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+attila_rock_med_05	generic	attila_rock_med_05	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+attila_rock_med_06	generic	attila_rock_med_06	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+attila_rock_med_07	generic	attila_rock_med_07	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+barbabarian_dolmens_big04	generic	barbabarian_dolmens_big04	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+barbarian_ahouse_1	generic	barbarian_ahouse_1	wood	250		building	300	house_2.tga	true	0	true		false	false	1.0	false	true	basic	
+barbarian_ahouse_2	generic	barbarian_ahouse_2	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_church	generic	barbarian_church	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_church_tall	generic	barbarian_church_tall	wood	250		building	300	church.tga	true	0	true		false	false	1.0	false	true	basic	
+barbarian_city_building_1	generic	barbarian_city_building_1	wood	250		building	300	house_1.tga	true	0	true		false	false	1.0	false	true	basic	
+barbarian_city_building_2	generic	barbarian_city_building_2	wood	250		building	300	hall.tga	true	0	true		false	false	1.0	false	true	basic	
+barbarian_court_corner	generic	barbarian_court_corner	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_court_door	generic	barbarian_court_door	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_court_wall	generic	barbarian_court_wall	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_dolmen_big03	generic	barbarian_dolmen_big03	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+barbarian_dolmen_big05	generic	barbarian_dolmen_big05	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+barbarian_dolmen_medium03	generic	barbarian_dolmen_medium03	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+barbarian_dolmen_mediun02	generic	barbarian_dolmen_mediun02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+barbarian_dolmen_top_01	generic	barbarian_dolmen_top_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+barbarian_dolmen_top_02	generic	barbarian_dolmen_top_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+barbarian_fort_600m_01	fort_wall	barbarian_fort_600m_01	wood	1500		fort_wall	5000		true	0	true		false	false	1.0	false	false	complex	
+barbarian_fort_600m_02	fort_wall	barbarian_fort_600m_02	wood	1500		fort_wall	5000		true	0	true		false	false	1.0	false	false	complex	
+barbarian_fort_600m_03	fort_wall	barbarian_fort_600m_03	wood	1500		fort_wall	5000		true	0	true		false	false	1.0	false	false	complex	
+barbarian_fort_600m_04	fort_wall	barbarian_fort_600m_04	wood	1500		fort_wall	5000		true	0	true		false	false	1.0	false	false	complex	
+barbarian_fort_600m_05	fort_wall	barbarian_fort_600m_05	wood	1500		fort_wall	5000		true	0	true		false	false	1.0	false	false	complex	
+barbarian_fort_bridgingcolumn_left	fort_wall	barbarian_fort_bridgingcolumn_left	wood	500		fort_wall	1250		true	0	true	0.8	false	true	1.0	false	false	basic	
+barbarian_fort_bridgingcolumn_right	fort_wall	barbarian_fort_bridgingcolumn_right	wood	500		fort_wall	1250		true	0	true	0.8	false	true	1.0	false	false	basic	
+barbarian_fort_curve_20m_radius	fort_wall	barbarian_fort_curve_20m_radius	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	false	complex	
+barbarian_fort_curve_60m_radius	fort_wall	barbarian_fort_curve_60m_radius	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	false	complex	
+barbarian_fort_curved_bastion	unbreachable_fort_wall	barbarian_fort_curved_bastion	wood	500		fort_wall	1250		true	0	true		false	false	1.0	false	false	basic	
+barbarian_fort_endcap_left	fort_wall	barbarian_fort_endcap_left	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	false	basic	
+barbarian_fort_endcap_right	fort_wall	barbarian_fort_endcap_right	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	false	basic	
+barbarian_fort_gateway_a	gate	barbarian_fort_gateway_a	wood	3750		gate	8000		true	0	true		false	false	10.0	false	true	basic	
+barbarian_fort_gateway_b	gate	barbarian_fort_gateway_b	wood	3750		gate	8000		true	0	true		false	false	10.0	false	true	basic	
+barbarian_fort_internal_curve_20m_radius	fort_wall	barbarian_fort_internal_curve_20m_radius	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	false	basic	
+barbarian_fort_kink_left	fort_wall	barbarian_fort_kink_left	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	false	basic	
+barbarian_fort_kink_right	fort_wall	barbarian_fort_kink_right	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	false	basic	
+barbarian_fort_step_down_a	fort_wall	barbarian_fort_step_down_a	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	false	basic	
+barbarian_fort_step_up_a	fort_wall	barbarian_fort_step_up_a	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	false	basic	
+barbarian_fort_straight	fort_wall	barbarian_fort_straight	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	false	basic	
+barbarian_fort_tower_end_right	fort_wall	barbarian_fort_tower_end_right	wood	500		fort_wall	1250	tower.tga	true	0	true	0.8	false	false	1.0	false	false	basic	
+barbarian_fort_watchtower_b	fort_tower	barbarian_fort_watchtower_b	wood	175	att_tower_wooden	watchtower	700	tower.tga	true	0	true		false	false	3.0	false	true	none	
+barbarian_grain_store	generic	barbarian_grain_store	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_longhouse_1	generic	barbarian_longhouse_1	wood	250		building	300	hall.tga	true	0	true		false	false	1.0	false	true	basic	
+barbarian_longhouse_2	generic	barbarian_longhouse_2	wood	250		building	300	hall.tga	true	0	true		false	false	1.0	false	true	basic	
+barbarian_roundhouse_1	generic	barbarian_roundhouse_1	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_roundhouse_2	generic	barbarian_roundhouse_2	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_roundhouse_3	generic	barbarian_roundhouse_3	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_roundhouse_4	generic	barbarian_roundhouse_4	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_tower_rebuilt_stone_corner	fort_wall	barbarian_tower_rebuilt_stone_corner	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	false	basic	
+barbarian_tower_rebuilt_stone_straight	fort_wall	barbarian_tower_rebuilt_stone_straight	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	false	basic	
+barbarian_townhouse_1	generic	barbarian_townhouse_1	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_townhouse_2	generic	barbarian_townhouse_2	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_townhouse_3	generic	barbarian_townhouse_3	wood	250		building	300	house_1.tga	true	0	true		false	false	1.0	false	true	basic	
+barbarian_turf_house_01	generic	barbarian_turf_house_01	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_turf_house_02	generic	barbarian_turf_house_02	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_turf_house_03	generic	barbarian_turf_house_03	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_turf_house_04	generic	barbarian_turf_house_04	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+barbarian_turf_house_05	generic	barbarian_turf_house_05	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+cinematic_floor_tile_urban_0	generic	cinematic_floor_tile_urban_0	stone	250		building	500		true	0	true		false	false	1.0	false	true	basic	
+cinematic_floor_tile_urban_2	generic	cinematic_floor_tile_urban_2	stone	250		building	500		true	0	true		false	false	1.0	false	true	basic	
+cinematic_ramses_ii_head	generic	cinematic_ramses_ii_head	stone	250		building	500		true	0	true		false	false	1.0	false	true	basic	
+cinematics_fort_wooden_gateway	fort_wall	cinematics_fort_wooden_gateway	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	true	basic	
+cinematics_roman_wooden_fort_corner	fort_wall	cinematics_roman_wooden_fort_corner	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	true	basic	
+cinematics_roman_wooden_fort_straight	fort_wall	cinematics_roman_wooden_fort_straight	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	true	basic	
+cinematics_roman_wooden_fort_watchtower	fort_wall	cinematics_roman_wooden_fort_watchtower	wood	500		fort_wall	1250		true	0	true	0.8	false	false	1.0	false	true	basic	
+civilian_ship01	generic	civilian_ship01	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+dock_fishing_shed_1	generic	dock_fishing_shed_1	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+dock_fishing_shed_2	generic	dock_fishing_shed_2	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+dock_fishing_shed_3	generic	dock_fishing_shed_3	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+dock_fishing_shed_platform_1	generic	dock_fishing_shed_platform_1	wood	250		building	300		true	0	true		false	false	1.0	false	true	none	
+dock_fishing_shed_platform_2	generic	dock_fishing_shed_platform_2	wood	250		building	300		true	0	true		false	false	1.0	false	true	none	
+fort_watchtower_wood	fort_tower	fort_watchtower_wood	wood	175	att_tower_wooden	watchtower	700		true	0	true		false	false	3.0	false	true	none	
+global_furnace	generic	global_furnace	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+global_ground_10x10	ground_platform	global_ground_10x10	wood	250			300		true	0	true		false	false	1.0	true	false	basic	
+global_ground_10x10_corner	ground_platform	global_ground_10x10_corner	wood	250			300		true	0	true		false	false	1.0	true	false	basic	
+global_ground_20x20	ground_platform	global_ground_20x20	wood	250			300		true	0	true		false	false	1.0	true	false	basic	
+global_ground_30x30	ground_platform	global_ground_30x30	wood	250			300		true	0	true		false	false	1.0	true	false	basic	
+global_ground_40x40	ground_platform	global_ground_40x40	wood	250			300		true	0	true		false	false	1.0	true	false	basic	
+global_ground_50x50	ground_platform	global_ground_50x50	wood	250			300		true	0	true		false	false	1.0	true	false	basic	
+global_ground_dynamic	ground_platform	global_ground_dynamic	wood	250			300		true	0	true		false	false	1.0	false	false	basic	
+global_ground_large_ramp	ground_platform	global_ground_large_ramp	wood	250			300		true	0	true		false	false	1.0	false	false	basic	
+global_ground_pathborder_shallow	ground_platform	global_ground_pathborder_shallow	wood	250			100		false	0	true		false	false	1.0	false	false	basic	
+global_ground_siege_ramp	ground_platform	global_ground_siege_ramp	wood	250			300		true	0	true		false	false	1.0	false	false	basic	
+global_swamp_1	ground_platform	global_swamp_1	wood	250			300		true	0	true		false	false	1.0	true	false	basic	
+human_scale	generic	human_scale	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+lighthouse_pharos	generic	lighthouse_pharos	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_ahouse_1	generic	nordic_ahouse_1	wood	250		building	300	house_2.tga	true	0	true		false	false	1.0	false	true	basic	
+nordic_ahouse_1_02	generic	nordic_ahouse_1_02	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_ahouse_2	generic	nordic_ahouse_2	wood	250		building	300	house_2.tga	true	0	true		false	false	1.0	false	true	basic	
+nordic_ahouse_2_02	generic	nordic_ahouse_2_02	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_city_building_1	generic	nordic_city_building_1	wood	250		building	300	house1.tga	true	0	true		false	false	1.0	false	true	basic	
+nordic_city_building_2	generic	nordic_city_building_2	wood	250		building	300	house1.tga	true	0	true		false	false	1.0	false	true	basic	
+nordic_city_building_3	generic	nordic_city_building_3	wood	250		building	300	house1.tga	true	0	true		false	false	1.0	false	true	basic	
+nordic_court_corner	generic	nordic_court_corner	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_court_door	generic	nordic_court_door	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_court_wall	generic	nordic_court_wall	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_dock_fishing_shed_1	generic	nordic_dock_fishing_shed_1	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+nordic_dock_fishing_shed_2	generic	nordic_dock_fishing_shed_2	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+nordic_dock_fishing_shed_3	generic	nordic_dock_fishing_shed_3	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+nordic_dock_fishing_shed_platform_1	generic	nordic_dock_fishing_shed_platform_1	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+nordic_dock_fishing_shed_platform_2	generic	nordic_dock_fishing_shed_platform_2	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+nordic_furnace	generic	nordic_furnace	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_grain_store	generic	nordic_grain_store	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_hill_mound	ground_platform	nordic_hill_mound	wood	250			300		true	0	true		false	false	1.0	false	false	basic	
+nordic_longhouse_1	generic	nordic_longhouse_1	wood	250		building	300	hall.tga	true	0	true		false	false	1.0	false	true	basic	
+nordic_longhouse_2	generic	nordic_longhouse_2	wood	250		building	300	hall.tga	true	0	true		false	false	1.0	false	true	basic	
+nordic_middlehouse_1	generic	nordic_middlehouse_1	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+nordic_middlehouse_2	generic	nordic_middlehouse_2	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+nordic_middlehouse_3	generic	nordic_middlehouse_3	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+nordic_middlehouse_4	generic	nordic_middlehouse_4	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+nordic_roundhouse_1	generic	nordic_roundhouse_1	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_roundhouse_4	generic	nordic_roundhouse_4	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_townhouse_1	generic	nordic_townhouse_1	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_townhouse_2	generic	nordic_townhouse_2	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_townhouse_3	generic	nordic_townhouse_3	wood	250		building	300	house_1.tga	true	0	true		false	false	1.0	false	true	basic	
+nordic_turfhouse_1	generic	nordic_turfhouse_1	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_turfhouse_2	generic	nordic_turfhouse_2	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+nordic_turfhouse_3	generic	nordic_turfhouse_3	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+occupiable_barricade	generic	occupiable_barricade	wood	3000		barricade	7000		true	0	true		false	false	63.0	false	true	basic	
+piece01_destruct01_collision3d	generic	piece01_destruct01_collision3d	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+roman_fort_angled_joiner	fort_wall	roman_fort_angled_joiner	stone	625		fort_wall	1750		true	0	true	0.8	true	false	1.0	false	false	basic	
+roman_fort_bridgingcolumn_left	fort_wall	roman_fort_bridgingcolumn_left	stone	625		fort_wall	1750		true	0	true	0.8	false	true	1.0	false	false	basic	
+roman_fort_bridgingcolumn_left_b	fort_wall	roman_fort_bridgingcolumn_left_b	stone	250		fort_wall	100		false	0	true		false	false	1.0	false	true	basic	
+roman_fort_bridgingcolumn_right	fort_wall	roman_fort_bridgingcolumn_right	stone	625		fort_wall	1750		true	0	true	0.8	false	true	1.0	false	false	basic	
+roman_fort_external_angled_to_grid_joiner	fort_wall	roman_fort_external_angled_to_grid_joiner	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+roman_fort_external_corner	fort_wall	roman_fort_external_corner	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+roman_fort_external_grid_to_angled_joiner	fort_wall	roman_fort_external_grid_to_angled_joiner	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+roman_fort_gateway_e	gate	roman_fort_gateway_e	stone	3750		gate	8000		true	0	true		false	false	10.0	false	false	basic	
+roman_fort_internal_angled_to_grid_joiner	fort_wall	roman_fort_internal_angled_to_grid_joiner	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+roman_fort_internal_corner	fort_wall	roman_fort_internal_corner	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+roman_fort_internal_grid_to_angled_joiner	fort_wall	roman_fort_internal_grid_to_angled_joiner	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+roman_fort_straight	fort_wall	roman_fort_straight	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+roman_fort_straight_stepped_down_10m_square_bastion_a	unbreachable_fort_wall	roman_fort_straight_stepped_down_10m_square_bastion_a	stone	625		fort_wall	1750		true	0	true		false	false	1.0	false	false	basic	
+roman_fort_straight_stepped_up_10m_square_bastion_a	unbreachable_fort_wall	roman_fort_straight_stepped_up_10m_square_bastion_a	stone	625		fort_wall	1750		true	0	true		false	false	1.0	false	false	basic	
+roman_fort_straight_with_doors_a	fort_wall	roman_fort_straight_with_doors_a	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+roman_fort_straight_with_solid_squared_bastion	unbreachable_fort_wall	roman_fort_straight_with_solid_squared_bastion	stone	625		fort_wall	1750		true	0	true		false	false	1.0	false	false	basic	
+roman_fort_tower_b_corner_with_extension	fort_tower	roman_fort_tower_b_corner_with_extension	stone	625	att_tower_stone	fort_tower	1750	tower.tga	true	0	true		false	false	1.0	false	false	basic	
+roman_fort_tower_c_straight_with_extension	fort_tower	roman_fort_tower_c_straight_with_extension	stone	625	att_tower_stone	fort_tower	1750	tower.tga	true	0	true		false	false	1.0	false	false	basic	
+roman_fort_tower_end_left	fort_tower	roman_fort_tower_end_left	stone	625	att_tower_stone	fort_tower	1750	tower.tga	true	0	true		false	false	1.0	false	false	basic	
+roman_fort_tower_end_right	fort_tower	roman_fort_tower_end_right	stone	625	att_tower_stone	fort_tower	1750	tower.tga	true	0	true		false	false	1.0	false	false	basic	
+row_boat01	incidental	row_boat01	wood	250		building	300		true	0	true		false	false	1.0	false	true	none	
+rubble003	fort_wall	rubble003	stone	250		fort_wall	100		false	0	true		false	false	1.0	false	true	basic	
+rubble01	fort_wall	rubble01	stone	250		fort_wall	100		false	0	true		false	false	1.0	false	true	basic	
+rubble02	fort_wall	rubble02	stone	250		fort_wall	100		false	0	true		false	false	1.0	false	true	basic	
+ruin_columns_1	incidental	ruin_columns_1	stone	250		building	300		true	0	true		false	false	1.0	false	false	none	
+ruin_columns_2	incidental	ruin_columns_2	stone	250		building	300		true	0	true		false	false	1.0	false	false	none	
+ruin_columns_3	incidental	ruin_columns_3	stone	250		building	300		true	0	true		false	false	1.0	false	false	none	
+ruin_columns_4	incidental	ruin_columns_4	stone	250		building	300		true	0	true		false	false	1.0	true	false	none	
+ruin_columns_5	incidental	ruin_columns_5	stone	250		building	300		true	0	true		false	false	1.0	true	false	none	
+ruin_floor_1	ground_platform	ruin_floor_1	stone	250		building	300		true	0	true		false	false	1.0	true	false	basic	
+ruin_floor_2	ground_platform	ruin_floor_2	stone	250		building	300		true	0	true		false	false	1.0	true	false	basic	
+ruin_floor_3	ground_platform	ruin_floor_3	stone	250		building	300		true	0	true		false	false	1.0	true	false	basic	
+ruin_rubble_1	ground_platform	ruin_rubble_1	stone	250		building	300		true	0	true		false	false	1.0	true	false	basic	
+ruin_rubble_2	ground_platform	ruin_rubble_2	stone	250		building	300		true	0	true		false	false	1.0	false	false	basic	
+ruin_single_column_1	incidental	ruin_single_column_1	stone	250		building	300		true	0	true		false	false	1.0	false	false	none	
+ruin_single_column_2	incidental	ruin_single_column_2	stone	250		building	300		true	0	true		false	false	1.0	false	false	none	
+ruin_single_column_3	incidental	ruin_single_column_3	stone	250		building	300		true	0	true		false	false	1.0	false	false	none	
+ruin_single_column_4	incidental	ruin_single_column_4	stone	250		building	300		true	0	true		false	false	1.0	false	false	none	
+ruined_theater	incidental	ruined_theater	stone	250			300		true	0	true		false	false	1.0	false	false	basic	
+short_dock_straight_1	generic	short_dock_straight_1	stone	250		building	500		true	0	true		false	false	1.0	false	false	basic	
+short_dock_straight_2	generic	short_dock_straight_2	stone	250		building	500		true	0	true		false	false	1.0	false	false	basic	
+short_dock_straight_3	generic	short_dock_straight_3	stone	250		building	500		true	0	true		false	false	1.0	false	false	basic	
+short_dock_straight_4	generic	short_dock_straight_4	stone	250		building	500		true	0	true		false	false	1.0	false	false	basic	
+short_dock_straight_5	generic	short_dock_straight_5	stone	250		building	500		true	0	true		false	false	1.0	false	false	basic	
+sidewalk_corner	generic	sidewalk_corner	stone	250		building	500		true	0	true		false	false	1.0	false	false	basic	
+sidewalk_straight	generic	sidewalk_straight	stone	250		building	500		true	0	true		false	false	1.0	false	false	basic	
+siege_barricade_wall_1_encampment	generic	siege_barricade_wall_1	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+siege_barricade_wall_2_encampment	generic	siege_barricade_wall_2	wood	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_alps01_double_unlit	generic	sky_alps01_double_unlit	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_alps01_full_unlit	generic	sky_alps01_full_unlit	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_alps01_half_unlit	generic	sky_alps01_half_unlit	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_alps02_double_unlit	generic	sky_alps02_double_unlit	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_alps02_full_unlit	generic	sky_alps02_full_unlit	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_alps02_half_unlit	generic	sky_alps02_half_unlit	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_blue_75	generic	sky_blue_75	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_grey_75	generic	sky_grey_75	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_grey_75_unlit	generic	sky_grey_75_unlit	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_grey_storm_75	generic	sky_grey_storm_75	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_grey_storm_half_unlit	generic	sky_grey_storm_half_unlit	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_grey_with_land_75	generic	sky_grey_with_land_75	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_night_75	generic	sky_night_75	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_night_half_unlit	generic	sky_night_half_unlit	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_pink	generic	sky_pink	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_sunset	generic	sky_sunset	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_sunset_half	generic	sky_sunset_half	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+sky_sunset_half_unlit	generic	sky_sunset_half_unlit	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+under_water_100m	generic	under_water_100m	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+under_water_150m	generic	under_water_150m	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+under_water_200m	generic	under_water_200m	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+under_water_300m	generic	under_water_300m	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+under_water_50m	generic	under_water_50m	stone	250		building	300		true	0	true		false	false	1.0	false	true	basic	
+vik_anglo_saxon_cross_01	generic	vik_anglo_saxon_cross_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_anglo_saxon_cross_02	generic	vik_anglo_saxon_cross_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_anglo_saxon_cross_02b	generic	vik_anglo_saxon_cross_02b	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_anglosaxon_cheftians_house_01	generic	vik_anglosaxon_cheftians_house_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_anglosaxon_cheftians_house_construction_01	generic	vik_anglosaxon_cheftians_house_construction_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_anglosaxon_church_01	generic	vik_anglosaxon_church_01	stone	250			100	church.tga	false	0	true		false	false	1.0	false	true	basic	
+vik_anglosaxon_church_02	generic	vik_anglosaxon_church_02	stone	250			100	church.tga	false	0	true		false	false	1.0	false	true	basic	
+vik_anglosaxon_watchtower	fort_tower	vik_anglosaxon_watchtower	wood	175	att_tower_wooden	watchtower	700	tower.tga	true	0	true		false	false	3.0	false	true	none	
+vik_bridge_arch_left	generic	vik_bridge_arch_left	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_bridge_arch_right	generic	vik_bridge_arch_right	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_bridge_grate	generic	vik_bridge_grate	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_bridge_join	generic	vik_bridge_join	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_bridge_wall10m_short	generic	vik_bridge_wall10m_short	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_bridge_wall10m_tall	generic	vik_bridge_wall10m_tall	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_bridge_wall20m_short	generic	vik_bridge_wall20m_short	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_bridge_wall20m_tall	generic	vik_bridge_wall20m_tall	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_causeway_a	generic	vik_causeway_a	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_causeway_b	generic	vik_causeway_b	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_causeway_c	generic	vik_causeway_c	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_causeway_d	generic	vik_causeway_d	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_celtic_cross_01	generic	vik_celtic_cross_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_celtic_cross_02	generic	vik_celtic_cross_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_base_01	generic	vik_cliff_base_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_base_02	generic	vik_cliff_base_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_bottom_01	generic	vik_cliff_bottom_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_large_01	generic	vik_cliff_large_01	stone	250			100	rock_1.tga	false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_large_02	generic	vik_cliff_large_02	stone	250			100	rock_1.tga	false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_large_curve_01	generic	vik_cliff_large_curve_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_large_curve_02	generic	vik_cliff_large_curve_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_large_pillar_01	generic	vik_cliff_large_pillar_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_large_pillar_02	generic	vik_cliff_large_pillar_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_med_01	generic	vik_cliff_med_01	stone	250			100	rock_2.tga	false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_med_02	generic	vik_cliff_med_02	stone	250			100	rock_2.tga	false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_med_curve_01	generic	vik_cliff_med_curve_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_med_curve_02	generic	vik_cliff_med_curve_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_rock_pile_01	generic	vik_cliff_rock_pile_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliff_rock_pile_02	generic	vik_cliff_rock_pile_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliffs_med_pillar_01	generic	vik_cliffs_med_pillar_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliffs_med_pillar_02	generic	vik_cliffs_med_pillar_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliffs_rock_pile_small_01	generic	vik_cliffs_rock_pile_small_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_cliffs_rock_pile_small_02	generic	vik_cliffs_rock_pile_small_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_dummy_wall_icon_generator	generic	vik_dummy_wall_icon_generator	stone	250			100	wall.tga	false	0	true		false	false	1.0	false	true	basic	
+vik_embedded_rocks_01	generic	vik_embedded_rocks_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_embedded_rocks_02	generic	vik_embedded_rocks_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_embedded_rocks_03	generic	vik_embedded_rocks_03	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_embedded_rocks_04	generic	vik_embedded_rocks_04	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_embedded_rocks_05	generic	vik_embedded_rocks_05	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_embedded_rocks_06	generic	vik_embedded_rocks_06	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_embedded_rocks_07	generic	vik_embedded_rocks_07	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_embedded_rocks_08	generic	vik_embedded_rocks_08	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_embedded_rocks_09	generic	vik_embedded_rocks_09	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_embedded_rocks_10	generic	vik_embedded_rocks_10	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_embedded_rocks_11	generic	vik_embedded_rocks_11	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_ground_bank_01	ground_platform	vik_ground_bank_01	wood	250			100		false	0	true		false	false	1.0	false	false	basic	
+vik_ground_bank_02	ground_platform	vik_ground_bank_02	wood	250			100		false	0	true		false	false	1.0	false	false	basic	
+vik_ground_bank_03	ground_platform	vik_ground_bank_03	wood	250			100		false	0	true		false	false	1.0	false	false	basic	
+vik_ground_bank_04	ground_platform	vik_ground_bank_04	wood	250			100		false	0	true		false	false	1.0	false	false	basic	
+vik_large_drinking_hall_01	generic	vik_large_drinking_hall_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_large_turf_hall_01	generic	vik_large_turf_hall_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_long_hall_01	generic	vik_long_hall_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_newgrange	generic	vik_newgrange	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_nordic_gatehouse_01	generic	vik_nordic_gatehouse_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_nordic_watchtower	fort_tower	vik_nordic_watchtower	wood	175	att_tower_wooden	watchtower	700	tower.tga	true	0	true		false	false	1.0	false	true	none	
+vik_pictish_cross_01	generic	vik_pictish_cross_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_pictish_cross_02	generic	vik_pictish_cross_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_queen_maeve_tomb	generic	vik_queen_maeve_tomb	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_round_tower	generic	vik_round_tower	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_runestone_01	generic	vik_runestone_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_runestone_02	generic	vik_runestone_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_runestone_03	generic	vik_runestone_03	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_runestone_04	generic	vik_runestone_04	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_runestone_05	generic	vik_runestone_05	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_small_rocks_group_01	generic	vik_small_rocks_group_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_small_rocks_group_02	generic	vik_small_rocks_group_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_small_rocks_group_03	generic	vik_small_rocks_group_03	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_small_rocks_group_04	generic	vik_small_rocks_group_04	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_small_rocks_group_05	generic	vik_small_rocks_group_05	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_small_rocks_group_06	generic	vik_small_rocks_group_06	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_sutton_hoo	generic	vik_sutton_hoo	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_sutton_hoo_1	generic	vik_sutton_hoo_1	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_sutton_hoo_2	generic	vik_sutton_hoo_2	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_totem_01	generic	vik_totem_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_totem_02	generic	vik_totem_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_totem_03	generic	vik_totem_03	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_totem_04	generic	vik_totem_04	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_totem_05	generic	vik_totem_05	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_wonder_decal	generic	vik_wonder_decal	wood	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_wonder_sevensisters_01	generic	vik_wonder_sevensisters_01	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_wonder_sevensisters_02	generic	vik_wonder_sevensisters_02	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_wonder_sevensisters_03	generic	vik_wonder_sevensisters_03	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_wonder_sevensisters_04	generic	vik_wonder_sevensisters_04	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_wonder_sevensisters_05	generic	vik_wonder_sevensisters_05	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_wonder_sevensisters_06	generic	vik_wonder_sevensisters_06	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_wonder_sevensisters_07	generic	vik_wonder_sevensisters_07	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_wonder_sevensisters_08	generic	vik_wonder_sevensisters_08	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_wonder_sevensisters_09	generic	vik_wonder_sevensisters_09	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_wonder_sevensisters_10	generic	vik_wonder_sevensisters_10	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_wonder_sevensisters_11	generic	vik_wonder_sevensisters_11	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+vik_wonder_sevensisters_12	generic	vik_wonder_sevensisters_12	stone	250			100		false	0	true		false	false	1.0	false	true	basic	
+water_plane	generic	water_plane	stone	250		building	500		true	0	true		false	false	1.0	false	false	basic	
+western_ahouse_1	generic	western_ahouse_1	stone	250		building	300	house_2.tga	true	0	true		false	false	1.0	false	true	basic	
+western_fort_small_wall_bridgingcolumn_left	fort_wall	western_fort_small_wall_bridgingcolumn_left	stone	625		fort_wall	1750		true	0	true	0.8	false	true	1.0	false	false	basic	
+western_fort_small_wall_bridgingcolumn_right	fort_wall	western_fort_small_wall_bridgingcolumn_right	stone	625		fort_wall	1750		true	0	true	0.8	false	true	1.0	false	false	basic	
+western_fort_small_wall_curve_20m_radius	fort_wall	western_fort_small_wall_curve_20m_radius	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	complex	
+western_fort_small_wall_curve_60m_radius	fort_wall	western_fort_small_wall_curve_60m_radius	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	complex	
+western_fort_small_wall_curved_bastion	unbreachable_fort_wall	western_fort_small_wall_curved_bastion	stone	625		fort_wall	1750		true	0	true		false	false	1.0	false	false	basic	
+western_fort_small_wall_endcap_left	fort_wall	western_fort_small_wall_endcap_left	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+western_fort_small_wall_endcap_right	fort_wall	western_fort_small_wall_endcap_right	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+western_fort_small_wall_gateway_a	gate	western_fort_small_wall_gateway_a	stone	3750		gate	8000		true	0	true		false	false	10.0	false	false	basic	
+western_fort_small_wall_internal_curve_20m_radius	fort_wall	western_fort_small_wall_internal_curve_20m_radius	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+western_fort_small_wall_kink_left	fort_wall	western_fort_small_wall_kink_left	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+western_fort_small_wall_kink_right	fort_wall	western_fort_small_wall_kink_right	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+western_fort_small_wall_step_down_a	fort_wall	western_fort_small_wall_step_down_a	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+western_fort_small_wall_step_up_a	fort_wall	western_fort_small_wall_step_up_a	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+western_fort_small_wall_straight	fort_wall	western_fort_small_wall_straight	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+western_fort_small_wall_straight_pipetest	fort_wall	western_fort_small_wall_straight_pipetest	stone	625		fort_wall	1750		true	0	true	0.8	false	false	1.0	false	false	basic	
+western_townhouse_1	generic	western_townhouse_1	stone	250		building	300	house_1.tga	true	0	true		false	false	1.0	false	true	basic	

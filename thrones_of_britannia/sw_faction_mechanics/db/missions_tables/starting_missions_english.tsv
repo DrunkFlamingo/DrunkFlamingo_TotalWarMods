@@ -1,0 +1,7 @@
+key	generate	localised_description	localised_title	mission_type	ui_icon	ui_image	prioritised	event_category
+#missions_tables;2;db/missions_tables/starting_missions_english								
+sw_start_mierce	false			SANDS_DUMMY_MISSION	rom_event_mission.png	vik_event_invade_territory_01	true	Ybor
+sw_start_wessex	false			SANDS_DUMMY_MISSION	rom_event_mission.png	vik_event_invade_territory_01	true	Ybor
+sw_start_northleode	false			SANDS_DUMMY_MISSION	rom_event_mission.png	vik_event_invade_territory_01	true	Ybor
+sw_start_gwined	false			SANDS_DUMMY_MISSION	rom_event_mission.png	vik_event_invade_territory_01	true	Ybor
+sw_mierce_oswald_bones	false			SANDS_DUMMY_MISSION	rom_event_mission.png	vik_event_invade_territory_01	true	Ybor

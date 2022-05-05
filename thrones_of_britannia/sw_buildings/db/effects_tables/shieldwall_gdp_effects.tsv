@@ -1,0 +1,7 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/shieldwall_gdp_effects				
+shield_pop_gdp_farm	wealth.png	1	wealth.png	false
+shield_pop_gdp_comm	wealth.png	2	wealth.png	false
+shield_pop_gdp_church	wealth.png	1	wealth.png	false
+shield_pop_gdp_industry	wealth.png	3	wealth.png	false
+shield_gdp_mining		0		true

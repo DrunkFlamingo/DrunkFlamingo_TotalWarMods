@@ -1,0 +1,10 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/flags.loc		
+effect_bundles_localised_title_shieldwall_conscription_small	Recent Levy	true
+effect_bundles_localised_title_shieldwall_conscription_medium	Gathering Militia	true
+effect_bundles_localised_title_shieldwall_conscription_large	Recent Conscription	true
+effect_bundles_localised_description_shieldwall_conscription_small	With the young and able rounded up, the King's men march onward. 	true
+effect_bundles_localised_description_shieldwall_conscription_medium	This province is currently levying troops!	true
+effect_bundles_localised_description_shieldwall_conscription_large	With the young and able rounded up, the King's men march onward. 	true
+effect_bundles_localised_title_shieldwall_mercenary_choice	Gathering Mercenaries	true
+effect_bundles_localised_description_shieldwall_mercenary_choice	Mercenary Companies are hiring in this province, and their services may soon become available. 	true

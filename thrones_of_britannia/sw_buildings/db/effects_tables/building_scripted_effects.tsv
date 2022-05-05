@@ -1,0 +1,14 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/building_scripted_effects				
+hof_event_blessing	icon_pagan.png	3	icon_pagan.png	false
+archery_event_training	vik_wood_effect_bundles.png	3	vik_wood_effect_bundles.png	false
+athletics_event_training	beat_the_drums.png	3	beat_the_drums.png	false
+smith_event_training	vik_forge_effect_bundles.png	3	vik_forge_effect_bundles.png	false
+court_event_tensions	pop_foreign.png	3	pop_foreign.png	false
+merchant_event_scams	vik_silver_effect_bundles.png	3	vik_silver_effect_bundles.png	false
+resupply_event_supply_lines	vik_warehouse_effect_bundles.png	3	vik_warehouse_effect_bundles.png	false
+church_event_conversion	vik_res_saint.png	3	vik_res_saint.png	false
+garrison_event_drills	experience_effect.png	3	experience_effect.png	false
+garrison_event_sparing	vik_arena_effect_bundles.png	3	vik_arena_effect_bundles.png	false
+traits_promotes_eduiated	personality_good.png	1	personality_bad.png	false
+traits_upgrades_educated	influence.png	2	influence.png	false

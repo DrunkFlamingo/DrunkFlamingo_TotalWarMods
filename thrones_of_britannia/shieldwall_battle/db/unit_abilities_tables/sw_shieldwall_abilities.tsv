@@ -1,0 +1,26 @@
+key	stationary_for_turn	supersedes_ability	requires_effect_enabling	tooltip_text
+#unit_abilities_tables;4;db/unit_abilities_tables/sw_shieldwall_abilities				
+att_gen_rally_02	false		false	Rally || The presence of the general gives encouragement to the men who die for him.
+att_gen_fear_02	false		false	Warcry || "You don't frighten us, pig-dogs. We'll split you in two and use your gizzards for a football!"
+att_gen_inspire_02	false		false	Inspire || War requires resilience of spirit and the strength of character to see things through to the end.
+form_wedge	false		false	Wedge Formation || Even the strongest line infantry cannot stand up to a reinforced point.
+form_shield_screen	false		false	Shield Screen || "Get your shields shields up!"
+att_gen_brace_02	false		false	Holdfirm || "Dig your heels in, shields up!"
+rapid_advance	false		false	Rapid Advice|| "On my command… Forwarrrrrrd!"
+att_gen_brace_03	false		false	Resolve || "Any man found retreating will be summarily executed."
+rapid_volley	false		false	Marksmenship || "Our arrows will blot out the sun!"
+frenzied_charge	false		false	Highland Charge || "No tactics or maneuvres... just straight at 'em!"
+focus_fire	false		false	Focus Fire || A good archer is known not by his arrows but by his ability to hit the target.
+fire_volley	false		false	Flaming Arrows || Like a maniac shooting flaming arrows of death...
+second_wind	false		false	Second Wind || "We must hold the line... just a little while longer."
+frenzy	false		false	Warp Spasm || Let the blood rage take control.
+att_gen_raise_05	false		false	Stand and Fight || A fierce warrior never worries about his fear."
+att_gen_raise_01	false		false	Hero's Banner || "Men of Wales take heart, the Sons of Arthur ride with you!"
+att_gen_raise_02	false		false	Sea King's Banner || "Show them the true power of the Norse!"
+att_gen_raise_03	false		false	Sea King's Banner || "Flock to our standard, brave lads!"
+com_into_the_breach	false		false	Into the Breach ||  These men would follow their captain anywhere, and fight anything, if he so commanded.
+com_force_concentration	false		false	Mounted Infantry || Trained to fight on foot, these men must dismount to be effective. 
+headhunt	false		false	Battle Trance || Mad as dogs, strong as bears, the Berserker kill without hestitation until the last enemy falls. 
+form_pike_square	false		false	Square||"Together lads, we'll stop them on all sides!"\n\n[[col:red]]Units cannot move in this formation.[[/col]]
+trample	false		false	Bonesplitting Strikes || Heavy strikes cleave through bone and flesh.
+com_relentless	false		false	Parry || Bladesmenship is a rewarding form of art.

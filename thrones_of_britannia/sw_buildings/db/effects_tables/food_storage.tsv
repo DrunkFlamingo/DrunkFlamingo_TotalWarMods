@@ -1,0 +1,5 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/food_storage				
+shield_food_decay	payload_feast.png	2	payload_feast.png	false
+shield_food_storage_building	food.png	901	food.png	false
+shield_food_stored	food.png	1	food.png	false

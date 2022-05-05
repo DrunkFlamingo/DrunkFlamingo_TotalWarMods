@@ -1,0 +1,10 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/!political_incidents.loc		
+incidents_localised_title_sw_politics_becomes_corrupt	Corruption	false
+incidents_localised_title_sw_politics_becomes_treasonous	Whispers of Treason	false
+incidents_localised_description_sw_politics_becomes_corrupt	Word reaches your ears that this noble, long disloyal to the crown, has taken to embezzling funds for their own gain.  Though we may choose to tolerate this, it would benefit us to be rid of this noble.	false
+incidents_localised_description_sw_politics_becomes_treasonous	Word reaches your ears that this noble, long disloyal to the crown, has begun to plot against other nobles, and perhaps even you. Though we may choose to tolerate this, it would benefit us to be rid of this noble.	false
+incidents_localised_title_sw_secure_loyalty_fears_brute	Secure Loyalty	false
+incidents_localised_title_sw_secure_loyalty_fears_tyrant	Secure Loyalty	false
+incidents_localised_description_sw_secure_loyalty_fears_brute	Afraid of the harm you might cause them, this person promises their loyalty to you and your family. A reputation for brutality has its benefits.	false
+incidents_localised_description_sw_secure_loyalty_fears_tyrant	Afraid of the harm you might cause them, this person promises their loyalty to you and your family. A reputation for Tyranny has its benefits.	false

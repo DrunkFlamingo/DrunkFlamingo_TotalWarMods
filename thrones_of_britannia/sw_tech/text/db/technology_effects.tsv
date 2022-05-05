@@ -1,0 +1,4 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/technology_effects.loc		
+effects_description_shieldwall_scripted_tech_peasant_replenishment	Up to %+n% of casualties will rejoin the Population Pool after battles in friendly territory	true
+effects_description_shieldwall_scripted_loyalty_when_estates_built	%+n Loyalty for 10 turns whenever an estate building is completed	true

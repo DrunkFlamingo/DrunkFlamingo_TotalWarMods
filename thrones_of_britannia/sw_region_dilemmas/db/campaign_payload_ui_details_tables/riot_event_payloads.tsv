@@ -1,0 +1,12 @@
+component	icon
+#campaign_payload_ui_details_tables;0;db/campaign_payload_ui_details_tables/riot_event_payloads	
+sw_slave_rebellion_significant_1	icon_province.png
+sw_riot_ends	diplomacy.png
+sw_slave_rebellion_significant_2	attrition_enemy.png
+sw_slave_uprising	icon_effects_raiding.png
+sw_nobles_slaughtered	pop_lord_negative.png
+sw_peasants_slaughtered	pop_serf_negative.png
+sw_monks_slaughtered	pop_monk_negative.png
+sw_slaves_slaughtered	dyflin_slaves.png
+sw_bandits_arrive	loot_raid.png
+sw_riots_soldiers_stationed	army_positive.png

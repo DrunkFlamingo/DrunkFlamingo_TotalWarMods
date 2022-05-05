@@ -1,0 +1,9 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/payload_ui.loc		
+campaign_payload_ui_details_description_sw_dont_repent	Retain your current traits	true
+campaign_payload_ui_details_description_sw_lose_brutish_and_tyrant_traits	Lose all Brute and Tyrant traits	true
+campaign_payload_ui_details_description_sw_do_nothing	Do Nothing	true
+campaign_payload_ui_details_description_sw_king_trait_charitable	King gains trait: Charitable	true
+campaign_payload_ui_details_description_sw_violent_action	Violence may have consequences	true
+campaign_payload_ui_details_description_sw_tyranical_action	Tyranny may have consequences	true
+campaign_payload_ui_details_description_sw_greedy_action	Greed may have consequences	true

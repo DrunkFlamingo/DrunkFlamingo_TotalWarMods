@@ -1,0 +1,10 @@
+level	campaign	ai_prestige	army_cap	champion_cap	dignatary_cap	navy_cap	player_prestige	province_initiative_cap	spy_cap	description_lookup	effect_bundle	title_lookup	tooltip_lookup
+#fame_levels_tables;5;db/fame_levels_tables/fame_levels													
+0	vik_attila	0	999	1	1	0	0	2	1	imperium_01_description	fame_1	imperium_01_title	imperium_tooltip_01
+1	vik_attila	10	999	1	1	0	16	2	1	imperium_02_description	fame_1	imperium_02_title	imperium_tooltip_02
+2	vik_attila	20	999	2	2	0	32	3	2	imperium_03_description	fame_2	imperium_03_title	imperium_tooltip_03
+3	vik_attila	40	999	2	2	0	64	4	2	imperium_04_description	fame_3	imperium_04_title	imperium_tooltip_04
+4	vik_attila	80	999	3	3	0	128	4	3	imperium_05_description	fame_4	imperium_05_title	imperium_tooltip_05
+5	vik_attila	160	999	3	3	0	256	5	3	imperium_06_description	fame_5	imperium_06_title	imperium_tooltip_06
+6	vik_attila	320	999	4	4	0	512	6	4	imperium_07_description	fame_6	imperium_07_title	imperium_tooltip_07
+7	vik_attila	320	999	4	4	0	532	10	4	imperium_07_description	fame_7	imperium_07_title	imperium_tooltip_07

@@ -1,0 +1,16 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/ability_mods				
+sw_reduced_focus_fire_cooldown	increased_pool_max_ranged.png	1	increased_pool_max_ranged.png	false
+sw_reduced_hold_firm_cooldown		1		false
+sw_reduced_rally_cooldown	rally.png	1	rally.png	false
+sw_reduced_marksmenship_cooldown	accuracy.png	1	accuracy.png	false
+sw_unlock_rapid_advance	surge.png	1	surge.png	false
+shieldwall_formation_unlock_wedge	infantry.png	1	infantry.png	false
+shieldwall_formation_unlock_castle	bulwark.png	1	bulwark.png	false
+shieldwall_formation_unlock_flying_wedge	cavalry.png	1	cavalry.png	false
+shieldwall_formation_unlock_square	spearmen_units.png	1	spearmen_units.png	false
+sw_unlock_warcry	war_cry.png	1	war_cry.png	false
+sw_reduced_inspire_cooldown	general_positive.png	1	general_positive.png	false
+sw_unlock_endurance	spearmen_units.png	1	spearmen_units.png	false
+sw_unlock_highland_charge	charge.png	1	charge.png	false
+sw_cooldown_endurance	command.png	1	command.png	false

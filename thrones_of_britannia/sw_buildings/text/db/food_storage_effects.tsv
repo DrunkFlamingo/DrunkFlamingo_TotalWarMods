@@ -1,0 +1,5 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/food_storage_effects.loc		
+effects_description_shield_food_decay	Your Food storage will decrease this turn	true
+effects_description_shield_food_stored	%+n Food from Stores	true
+effects_description_shield_food_storage_building	%+n Food Storage Capacity (Factionwide)	true

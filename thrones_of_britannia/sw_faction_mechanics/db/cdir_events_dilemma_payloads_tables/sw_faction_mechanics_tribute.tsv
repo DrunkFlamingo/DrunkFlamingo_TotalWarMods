@@ -1,0 +1,17 @@
+id	choice_key	dilemma_key	payload_key	value
+#cdir_events_dilemma_payloads_tables;2;db/cdir_events_dilemma_payloads_tables/sw_faction_mechanics_tribute				
+33011	FIRST	sw_spend_tribute_authority_or_foreigners	CHANGE_GRAVITAS	AMOUNT[5];OWN_FACTION_LEADER
+33012	FIRST	sw_spend_tribute_authority_or_foreigners	TARGET	EVENT
+33013	FIRST	sw_spend_tribute_authority_or_foreigners	TEXT_DISPLAY	LOOKUP[dummy_spend_culture_tribute_30]
+33014	SECOND	sw_spend_tribute_authority_or_foreigners	TEXT_DISPLAY	LOOKUP[sw_foreign_warriors_120]
+33015	SECOND	sw_spend_tribute_authority_or_foreigners	TEXT_DISPLAY	LOOKUP[dummy_spend_culture_tribute_30]
+33016	THIRD	sw_spend_tribute_authority_or_foreigners	TEXT_DISPLAY	LOOKUP[sw_do_nothing]
+33017	FIRST	sw_spend_tribute_sea_captain	REPLENISH_UNIT_SET	UNIT_SET[sea_captain];COUNT[1]
+33018	FIRST	sw_spend_tribute_sea_captain	TEXT_DISPLAY	LOOKUP[dummy_spend_culture_tribute_30]
+33019	SECOND	sw_spend_tribute_sea_captain	TEXT_DISPLAY	LOOKUP[sw_do_nothing]
+33020	FIRST	sw_spend_tribute_sea_king	REPLENISH_UNIT_SET	UNIT_SET[sea_king];COUNT[1]
+33021	FIRST	sw_spend_tribute_sea_king	TEXT_DISPLAY	LOOKUP[dummy_spend_culture_tribute_50]
+33022	SECOND	sw_spend_tribute_sea_king	TEXT_DISPLAY	LOOKUP[sw_do_nothing]
+33023	FIRST	sw_spend_tribute_vikingar	REPLENISH_UNIT_SET	UNIT_SET[vikingar];COUNT[3]
+33024	FIRST	sw_spend_tribute_vikingar	TEXT_DISPLAY	LOOKUP[dummy_spend_culture_tribute_25]
+33025	SECOND	sw_spend_tribute_vikingar	TEXT_DISPLAY	LOOKUP[sw_do_nothing]

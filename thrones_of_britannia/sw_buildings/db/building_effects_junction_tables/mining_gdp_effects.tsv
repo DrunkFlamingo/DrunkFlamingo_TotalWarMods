@@ -1,0 +1,19 @@
+building	effect	effect_scope	value	value_damaged	value_ruined
+#building_effects_junction_tables;3;db/building_effects_junction_tables/mining_gdp_effects					
+vik_silver_1	shield_gdp_industry	building_to_building_own	66.0	33.0	0.0
+vik_silver_2	shield_gdp_industry	building_to_building_own	100.0	50.0	0.0
+vik_silver_3	shield_gdp_industry	building_to_building_own	134.0	67.0	0.0
+vik_silver_b_3	shield_gdp_industry	building_to_building_own	114.0	57.0	0.0
+vik_tin_1	shield_gdp_industry	building_to_building_own	46.0	23.0	0.0
+vik_tin_2	shield_gdp_industry	building_to_building_own	64.0	32.0	0.0
+vik_tin_3	shield_gdp_industry	building_to_building_own	76.0	38.0	0.0
+vik_copper_1	shield_gdp_industry	building_to_building_own	60.0	30.0	0.0
+vik_copper_2	shield_gdp_industry	building_to_building_own	86.0	43.0	0.0
+vik_copper_3	shield_gdp_industry	building_to_building_own	116.0	58.0	0.0
+vik_gold_1	shield_gdp_industry	building_to_building_own	90.0	45.0	0.0
+vik_gold_2	shield_gdp_industry	building_to_building_own	134.0	67.0	0.0
+vik_gold_3	shield_gdp_industry	building_to_building_own	166.0	83.0	0.0
+vik_gold_b_3	shield_gdp_industry	building_to_building_own	100.0	50.0	0.0
+vik_iron_1	shield_gdp_industry	building_to_building_own	60.0	30.0	0.0
+vik_iron_2	shield_gdp_industry	building_to_building_own	86.0	43.0	0.0
+vik_iron_3	shield_gdp_industry	building_to_building_own	106.0	53.0	0.0

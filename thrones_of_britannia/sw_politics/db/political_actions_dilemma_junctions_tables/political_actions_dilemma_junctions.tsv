@@ -1,0 +1,12 @@
+dilemma	political_action	weighting	optimal_outcome	min_political_difference	max_political_difference
+#political_actions_dilemma_junctions_tables;3;db/political_actions_dilemma_junctions_tables/political_actions_dilemma_junctions					
+vik_politics_adopt_money	adopt	4	false	-99	99
+vik_politics_assassinate_caught	assassinate	7	false	-99	99
+vik_politics_assassinate_tricky	assassinate	7	false	-99	99
+vik_politics_lower_influence_immune	diminish_popularity	4	false	-99	99
+vik_politics_hold_feast_bard	gather_support	4	false	-99	99
+vik_politics_hold_feast_fight	gather_support	4	false	-99	99
+vik_politics_marriage_objection	marriage	3	false	-99	99
+vik_politics_seek_wife_success	seek_wife	10	true	-99	99
+vik_politics_strip_estate_fabricate	strip_estate	0	false	-99	99
+vik_politics_strip_estate_money	strip_estate	0	false	-99	99

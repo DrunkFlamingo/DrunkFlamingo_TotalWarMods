@@ -1,0 +1,52 @@
+id	incident_key	option_key	value
+#cdir_events_incident_option_junctions_tables;2;db/cdir_events_incident_option_junctions_tables/skill_events			
+5400	sw_skills_henchmen_1	VAR_CHANCE	100
+5401	sw_skills_henchmen_2	VAR_CHANCE	100
+5402	sw_skills_henchmen_3	VAR_CHANCE	100
+5403	sw_skills_henchmen_4	VAR_CHANCE	100
+5404	sw_renown_captain_recruited	VAR_CHANCE	100
+5405	sw_renown_sailors_recruited	VAR_CHANCE	100
+5406	sw_renown_vikings_recruited	VAR_CHANCE	100
+5407	sw_heroism_champion	VAR_CHANCE	100
+5408	sw_heroism_bard	VAR_CHANCE	100
+5409	sw_heroism_bard_2	VAR_CHANCE	100
+5410	sw_heroism_bard_3	VAR_CHANCE	100
+5411	sw_fame_bard	VAR_CHANCE	100
+5412	sw_fame_scribe	VAR_CHANCE	100
+5413	sw_authority_scribe	VAR_CHANCE	100
+5414	sw_upgraded_fame_scribe	VAR_CHANCE	100
+5415	sw_upgraded_authority_scribe	VAR_CHANCE	100
+5416	sw_upgraded_money_scribe	VAR_CHANCE	100
+5417	sw_tribute_skald	VAR_CHANCE	100
+5418	sw_army_skald	VAR_CHANCE	100
+5419	sw_discoveries_skald	VAR_CHANCE	100
+5420	sw_morale_skald	VAR_CHANCE	100
+5421	sw_skills_henchmen_1	GEN_TARGET_NONE	
+5422	sw_skills_henchmen_2	GEN_TARGET_NONE	
+5423	sw_skills_henchmen_3	GEN_TARGET_NONE	
+5424	sw_skills_henchmen_4	GEN_TARGET_NONE	
+5425	sw_renown_captain_recruited	GEN_TARGET_NONE	
+5426	sw_renown_sailors_recruited	GEN_TARGET_NONE	
+5427	sw_renown_vikings_recruited	GEN_TARGET_NONE	
+5428	sw_heroism_champion	GEN_TARGET_NONE	
+5429	sw_heroism_bard	GEN_TARGET_NONE	
+5430	sw_heroism_bard_2	GEN_TARGET_NONE	
+5431	sw_heroism_bard_3	GEN_TARGET_NONE	
+5432	sw_fame_bard	GEN_TARGET_NONE	
+5433	sw_fame_scribe	GEN_TARGET_NONE	
+5434	sw_authority_scribe	GEN_TARGET_NONE	
+5435	sw_upgraded_fame_scribe	GEN_TARGET_NONE	
+5436	sw_upgraded_authority_scribe	GEN_TARGET_NONE	
+5437	sw_upgraded_money_scribe	GEN_TARGET_NONE	
+5438	sw_tribute_skald	GEN_TARGET_NONE	
+5439	sw_army_skald	GEN_TARGET_NONE	
+5440	sw_discoveries_skald	GEN_TARGET_NONE	
+5441	sw_morale_skald	GEN_TARGET_NONE	
+5442	sw_bard_retreat	GEN_TARGET_NONE	
+5443	sw_skald_retreat	GEN_TARGET_NONE	
+5444	sw_bard_retreat	VAR_CHANCE	100
+5445	sw_skald_retreat	VAR_CHANCE	100
+5446	sw_drill_select_fyrd	VAR_CHANCE	100
+5447	sw_drill_marcher	VAR_CHANCE	100
+5448	sw_drill_select_fyrd	GEN_TARGET_NONE	
+5449	sw_drill_marcher	GEN_TARGET_NONE	

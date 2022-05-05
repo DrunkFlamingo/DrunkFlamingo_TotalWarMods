@@ -1,0 +1,10 @@
+trait	agent
+#trait_to_included_agents_tables;0;db/trait_to_included_agents_tables/flag_traits	
+sw_traits_strange_friends_flag	general
+sw_traits_foreign_settlers_flag	general
+sw_traits_beloved_flag	general
+sw_traits_grooming_heir_flag	general
+sw_traits_educating_heir_flag	general
+sw_traits_corruption_flag	general
+sw_traits_treason_flag	general
+sw_traits_collector_flag	general

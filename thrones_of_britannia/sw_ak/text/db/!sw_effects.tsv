@@ -1,0 +1,6 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/!sw_effects.loc		
+effects_description_vik_faction_trait_dummy_units_northumbria	Unique units: Jórvík Thegns, who upgrade to Jórvík Mailed Thegns	true
+effects_description_vik_faction_trait_northymbre_army	Very strong axe infantry. Has access to Berserkers. Good all-round infantry, including powerful spearmen from Jórvík.	true
+effects_description_vik_diplomacy_northymbra	%+n Diplomatic bonus towards Jórvík	true
+effects_tooltip_vik_diplomacy_northymbra	Diplomatic bonus towards Jórvík	true

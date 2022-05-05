@@ -1,0 +1,22 @@
+key	localised_description	localised_title	ui_icon	bundle_target
+#effect_bundles_tables;1;db/effect_bundles_tables/new_decrees				
+sw_decree_mierce_church			decrees.png	faction
+sw_decree_mierce_lords			decrees.png	faction
+sw_decree_mierce_pay_hoards			decrees.png	faction
+sw_decree_mierce_warriors			decrees.png	faction
+sw_decree_northleode_bebbanburg			decrees.png	faction
+sw_decree_northleode_dun_foither			decrees.png	faction
+sw_decree_northleode_tamworthige			decrees.png	faction
+sw_decree_northleode_eoferwic			decrees.png	faction
+sw_decree_wessex_ad_hoc_levy			decrees.png	faction
+sw_decree_wessex_fyrd			decrees.png	faction
+sw_decree_wessex_scholarship			decrees.png	faction
+sw_decree_wessex_witan			decrees.png	faction
+sw_hoards_0			coin_unique.png	faction
+sw_hoards_1			coin_unique.png	faction
+sw_hoards_2			coin_unique.png	faction
+sw_hoards_3			coin_unique.png	faction
+sw_decree_gwined_song_of_mead			bard_songs.png	faction
+sw_decree_gwined_song_of_horses			bard_songs.png	faction
+sw_decree_gwined_song_of_pendragon			bard_songs.png	faction
+sw_decree_gwined_song_of_thousand_sons			bard_songs.png	faction

@@ -1,0 +1,22 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/building_effects.loc		
+effects_description_shieldwall_great_hall_construction	%+n% Construction Cost for Great Halls	true
+effects_description_shieldwall_gva_port_bonus	%+n% Income from Port Buildings	true
+effects_description_shieldwall_gva_farm_tradeoff	%+n% Food from Farms but -20% Income from Farms	true
+effects_description_shieldwall_has_variable_income_cloth	Build Sheep Pastures to increase this building's resource production.	true
+effects_description_shieldwall_has_variable_income_iron	Build Iron Mines to increase this building's resource production.	true
+effects_description_shieldwall_has_variable_income_gold_silver	Build Gold or Silver Mines to increase this building's resource production.	true
+effects_description_shieldwall_has_variable_income_copper_tin	Build Copper or Tin Mines to increase this building's resource production.	true
+effects_description_shieldwall_has_variable_income_church	Build Churches, Monasteries or Abbeys to increase this building's income.	true
+effects_description_shieldwall_market_settlement_building_income	%+n% Income from the Main Settlement Building	true
+effects_description_sw_food_per_vassal	%+n food per vassal faction	true
+effect_bundles_localised_title_vik_konungsgurtha_1	Konungsgurtha	false
+effect_bundles_localised_title_vik_konungsgurtha_2	Konungsgurtha	false
+effect_bundles_localised_title_vik_konungsgurtha_3	Konungsgurtha	false
+effect_bundles_localised_title_vik_konungsgurtha_4	Konungsgurtha	false
+effect_bundles_localised_title_vik_konungsgurtha_5	Konungsgurtha	false
+effect_bundles_localised_description_vik_konungsgurtha_1	Vassals pay their tribute to the King of Jorvik	false
+effect_bundles_localised_description_vik_konungsgurtha_2	Vassals pay their tribute to the King of Jorvik	false
+effect_bundles_localised_description_vik_konungsgurtha_3	Vassals pay their tribute to the King of Jorvik	false
+effect_bundles_localised_description_vik_konungsgurtha_4	Vassals pay their tribute to the King of Jorvik	false
+effect_bundles_localised_description_vik_konungsgurtha_5	Vassals pay their tribute to the King of Jorvik	false

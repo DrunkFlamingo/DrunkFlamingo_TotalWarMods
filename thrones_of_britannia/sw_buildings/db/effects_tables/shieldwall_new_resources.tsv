@@ -1,0 +1,19 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/shieldwall_new_resources				
+shield_resource_candles_production	candles.png	61	candles.png	false
+shield_resource_textiles_production	textiles_bundle.png	61	textiles_bundle.png	false
+shield_resource_jewellery_production	jewellery_bundle.png	61	jewellery_bundle.png	false
+shield_resource_steel_production	tools_bundle.png	61	tools_bundle.png	false
+shield_trade_resource_bonus_steel	tools_bundle.png	61	tools_bundle.png	true
+shield_trade_resource_bonus_gold	gold.png	61	gold.png	true
+shield_trade_resource_bonus_silver	silver.png	61	silver.png	true
+shield_trade_resource_bonus_lead	lead.png	61	lead.png	true
+shield_trade_resource_bonus_iron	iron.png	61	iron.png	true
+shield_trade_resource_bonus_copper	copper.png	61	copper.png	true
+shield_trade_resource_bonus_tin	tin.png	61	tin.png	true
+shield_trade_resource_bonus_cloth	cloth.png	61	cloth.png	true
+shield_trade_resource_bonus_mint	gold.png	61	gold.png	true
+shield_trade_resource_consumption_iron	iron.png	61	iron.png	false
+shield_trade_resource_consumption_tin_copper	jewellery_bundle.png	61	jewellery_bundle.png	false
+shield_trade_resource_consumption_gold_silver	jewellery_bundle.png	61	jewellery_bundle.png	false
+shield_trade_resource_consumption_cloth	cloth.png	61	cloth.png	false

@@ -1,0 +1,39 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/mercenary_pool_effects.loc		
+effects_description_sw_pools_nobles_except_heroes_increase	%+n Levy Capacity for Noble Units (except Heroes)	false
+effects_description_sw_pools_nobles_except_heroes_rate	%+n turns to replenish levy pool for Noble Units (except Heroes)	false
+effects_description_sw_pools_peasant_infantry_increase	%+n Levy Capacity for Peasant Infantry Units	false
+effects_description_sw_pools_peasant_infantry_rate	%+n turns to replenish levy pool for Peasant Infantry Units	false
+effects_description_sw_pools_peasant_ranged_increase	%+n Levy Capacity for Peasant Ranged Units	false
+effects_description_sw_pools_peasant_ranged_rate	%+n turns to replenish levy pool for Peasant Ranged Units	false
+effects_description_sw_pools_noble_infantry_not_heroes_increase	%+n Levy Capacity for Noble Infantry Units(except Heroes)	false
+effects_description_sw_pools_noble_infantry_not_heroes_rate	%+n turns to replenish levy pool for Noble Infantry Units (except Heroes)	false
+effects_description_sw_pools_noble_cav_or_ranged_not_heroes_increase	%+n Levy Capacity for Noble Cavalry and Ranged Units (except Heroes)	false
+effects_description_sw_pools_noble_cav_or_ranged_not_heroes_rate	%+n turns to replenish levy pool for Noble Cavalry and Ranged Units (except Heroes)	false
+effects_description_sw_pools_heroes_increase	Increases Levy Capacity for Heroic Units	false
+effects_description_sw_pools_heroes_rate	%+n turns to replenish levy pool for Heroic Units	false
+effects_description_sw_pools_thralls_increase	%+n Levy Capacity for Thrall Units	false
+effects_description_sw_pools_thralls_rate	%+n turns to replenish levy pool for Thrall Units	false
+effects_description_sw_pools_all_axes_except_heroes_increase	%+n Levy Capacity for Axe Units (except Heroes)	false
+effects_description_sw_pools_all_axes_except_heroes_rate	%+n turns to replenish levy pool for Axe Units (except Heroes)	false
+effects_description_sw_pools_all_ranged_except_heroes_increase	%+n Levy Capacity for Ranged Units (except Heroes)	false
+effects_description_sw_pools_all_ranged_except_heroes_rate	%+n turns to replenish levy pool for Ranged Units (except Heroes)	false
+effects_description_sw_pools_all_spears_except_heroes_increase	%+n Levy Capacity for Spear Units (except Heroes)	false
+effects_description_sw_pools_all_spears_except_heroes_rate	%+n turns to replenish levy pool for Spear Units (except Heroes)	false
+effects_description_sw_pools_all_swords_except_heroes_increase	%+n Levy Capacity for Sword Units (except Heroes)	false
+effects_description_sw_pools_all_swords_except_heroes_rate	%+n turns to replenish levy pool for Sword Units (except Heroes)	false
+effects_description_sw_pools_berserkers_increase	%+n Levy Capacity for Berserkers	false
+effects_description_sw_pools_berserkers_rate	%+n turns to replenish levy pool for Berserkers	false
+effects_description_sw_pools_bows_increase	%+n Levy Capacity for Archers	false
+effects_description_sw_pools_bows_rate	%+n turns to replenish levy pool for Archers	false
+effects_description_sw_pools_light_infantry_increase	%+n Levy Capacity for Slingers and Javelinmen	false
+effects_description_sw_pools_light_infantry_rate	%+n turns to replenish levy pool for Slingers and Javelinmen	false
+effects_description_sw_pools_foreign_warriors_increase	%+n Levy Capacity for Foreign Warriors	false
+effects_description_sw_pools_foreign_warriors_rate	%+n Turns to replenish levy pool for Foreign Warriors	false
+effects_description_sw_pools_foreign_warriors_except_berserkers_rate	%+n Turns to replenish levy pool for Foreign Warriors (except Berserkers)	false
+effects_description_sw_pools_nobles_increase	%+n Levy Capacity for Noble Units AVOID USING	false
+effects_description_sw_pools_nobles_rate	%+n turns to replenish levy pool for Noble Units AVOID USING	false
+effects_description_sw_pools_peasants_increase	%+n Levy Capacity for Peasant Units	false
+effects_description_sw_pools_peasants_rate	%+n turns to replenish levy pool for Peasant Units	false
+effects_description_sw_pools_all_cavalry_except_heroes_increase	%+n Levy Capacity for Cavalry Units (Except Heroes)	false
+effects_description_sw_pools_all_cavalry_except_heroes_rate	%+n turns to replenish levy pool for Cavalry Units (Except Heroes)	false

@@ -1,0 +1,6 @@
+key	culure_key	faction_key	is_army	subculture_key	icon	banner_decorator	campaign
+#military_force_legacy_emblems_tables;3;db/military_force_legacy_emblems_tables/sw_military_force_legacy_emblems							
+dan_emblem_army_01			true	vik_sub_cult_anglo_viking	vik_standard_viking_01	vik_standard_viking_01	
+dan_emblem_navy_01			false	vik_sub_cult_anglo_viking	vik_standard_viking_01	vik_standard_viking_01	
+est_emblem_army_01			true	vik_sub_cult_viking_gael	vik_standard_viking_01	vik_standard_viking_01	
+est_emblem_navy_01			false	vik_sub_cult_viking_gael	vik_standard_viking_01	vik_standard_viking_01	

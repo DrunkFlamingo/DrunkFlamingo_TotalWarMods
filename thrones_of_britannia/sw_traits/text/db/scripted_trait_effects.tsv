@@ -1,0 +1,64 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/scripted_trait_effects.loc		
+effects_description_shield_xloyalty_oppressor	%+n Loyalty (Relationship) if the king is an Opressor	true
+effects_tooltip_shield_loyalty_event_court	Loyalty Events	true
+effects_description_shield_loyalty_event_execution	%+n Loyalty (Mood) from executing corrupt or treasonous lords	true
+effects_tooltip_shield_loyalty_event_bandits	Loyalty Events	true
+effects_description_shield_xloyalty_educated	%+n Loyalty (Relationship) if the king is Educated	true
+effects_description_shield_xloyalty_berserker	%+n Loyalty (Relationship) if the king is a Berserker	true
+effects_tooltip_shield_xloyalty_pagan	Relationship: Heathen King	true
+effects_description_shield_xloyalty_high_born	%+n Loyalty (Relationship) if the king is High Born	true
+effects_tooltip_shield_xloyalty_wise	Relationship: Scholarly King	true
+effects_tooltip_shield_xloyalty_just	Relationship: Just King	true
+effects_tooltip_shield_xloyalty_bloodthirsty	Relationship: Brutish King	true
+effects_tooltip_shield_xloyalty_subjugator	Relationship: Tyrannical King	true
+effects_description_shield_loyalty_event_treaties_broken_vikings	Disapproves of breaking treaties with Vikings (%+n Loyalty)	true
+effects_description_shield_loyalty_event_war_declared	%+n Loyalty from declaring war	true
+effects_description_shield_loyalty_event_city	%+n Loyalty (Mood) from upgrading market settlements	true
+effects_description_shield_loyalty_event_civil_tech	%+n Loyalty (Mood) from researching civil technologies	true
+effects_tooltip_shield_loyalty_event_library	Loyalty Events	true
+effects_tooltip_shield_loyalty_event_princely	Groomed Heir	true
+effects_description_shield_xloyalty_sailor	%+n Loyalty (Relationship) if the king is a Sailor	true
+effects_description_shield_xloyalty_lawful	%+n Loyalty (Relationship) if the king is Lawful	true
+effects_tooltip_shield_xloyalty_friend_of_the_church	Relationship: Pious King	true
+effects_description_shield_xloyalty_violent	%+n Loyalty (Relationship) if the king is Violent	true
+effects_tooltip_shield_loyalty_event_hunting_estates	Loyalty Events	true
+effects_description_shield_xloyalty_greedy	%+n Loyalty (Relationship) if the king is Greedy	true
+effects_description_shield_loyalty_event_high_level_churches	%+n Loyalty (Mood) from upgrading monastery settlements	true
+effects_description_shield_loyalty_event_peace_treaty	%+n Loyalty (Mood) from making peace treaties	true
+effects_tooltip_shield_loyalty_event_sacking_churches	Loyalty Events	true
+effects_description_shield_loyalty_event_rebellions	%+n Loyalty (Mood) from crushing rebellions	true
+effects_tooltip_shield_loyalty_event_churches	Loyalty Events	true
+effects_tooltip_shield_loyalty_event_civil_tech	Loyalty Events	true
+effects_description_shield_loyalty_event_hunting_estates	%+n Loyalty (Mood) from upgrading hunting estates	true
+effects_description_shield_loyalty_event_sacking_churches	%+n Loyalty (Mood) from sacking churches	true
+effects_tooltip_shield_loyalty_event_high_level_churches	Loyalty Events	true
+effects_description_shield_loyalty_event_churches	%+n Loyalty (Mood) from building new churches	true
+effects_tooltip_shield_xloyalty_greedy	Relationship: Greedy King	true
+effects_tooltip_shield_loyalty_event_peace_treaty	Loyalty Events	true
+effects_tooltip_shield_xloyalty_lawful	Relationship: Just King	true
+effects_description_shield_loyalty_event_princely	%+n Loyalty for 12 turns when this character becomes King	true
+effects_description_shield_loyalty_event_library	Approves of building libraries and schools (%+n Loyalty)	true
+effects_tooltip_shield_xloyalty_sailor	Relationship: Heathen King	true
+effects_tooltip_shield_xloyalty_violent	Relationship: Brutish King	true
+effects_tooltip_shield_loyalty_event_city	Loyalty Events	true
+effects_tooltip_shield_loyalty_event_war_declared	Loyalty Events	true
+effects_tooltip_shield_loyalty_event_treaties_broken_vikings	Breaking Treaties	true
+effects_tooltip_shield_loyalty_event_rebellions	Loyalty Events	true
+effects_description_shield_xloyalty_friend_of_the_church	%+n Loyalty (Relationship) if the king is a Friend of the Church	true
+effects_description_shield_xloyalty_subjugator	%+n Loyalty (Relationship) if the king is a Subjugator	true
+effects_tooltip_shield_xloyalty_high_born	Relationship: Noble King	true
+effects_description_shield_xloyalty_pagan	%+n Loyalty (Relationship) if the king is Pagan	true
+effects_description_shield_xloyalty_bloodthirsty	%+n Loyalty (Relationship) if the king is Bloodthirsty	true
+effects_description_shield_xloyalty_just	%+n Loyalty (Relationship) if the king is Just	true
+effects_description_shield_xloyalty_wise	%+n Loyalty (Relationship) if the king is Wise	true
+effects_tooltip_shield_xloyalty_berserker	Relationship: Heathen King	true
+effects_tooltip_shield_xloyalty_opressor	Relationship: Tyrannical King	true
+effects_tooltip_shield_loyalty_event_execution	Loyalty Events	true
+effects_description_shield_loyalty_event_court	%+n Loyalty (Mood) from building court buildings	true
+effects_tooltip_shield_xloyalty_educated	Relationship: Scholarly King	true
+effects_description_shield_loyalty_event_bandits	Disapproves of failing to deal with Bandits (%+n Loyalty)	true
+effects_description_shieldwall_disloyal_bad_traits	Disloyal characters may cause negative events.	true
+effects_description_shieldwall_disloyal_plotter_authority	If this character gains high authority, they may plot against your rule!	true
+effects_description_shieldwall_prevents_foreign_conflict	Prevents conflict between locals and foreigners	false
+effects_description_shieldwall_put_down_riots	Can forcefully end Riots	false

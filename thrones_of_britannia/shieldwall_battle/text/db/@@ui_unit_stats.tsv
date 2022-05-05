@@ -1,0 +1,11 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/@@ui_unit_stats.loc		
+ui_unit_stats_onscreen_name_stat_bonus_vs_infantry	Bonus Vs. Infantry	true
+ui_unit_stats_tooltip_text_stat_melee_attack	This determines the chance of hitting your opponent through their guard while in melee. 	true
+ui_unit_stats_onscreen_name_scalar_bracing	Bracing	true
+ui_unit_stats_onscreen_name_stat_bonus_vs_cavalry	Bonus Vs. Cavalry	true
+ui_unit_stats_onscreen_name_stat_melee_defence	Parry Chance	true
+ui_unit_stats_onscreen_name_stat_weapon_range	Range	true
+ui_unit_stats_onscreen_name_stat_armour	Armour	true
+ui_unit_stats_onscreen_name_stat_missile_block_chance	Shield Defense	false
+ui_unit_stats_onscreen_name_stat_stat_shield_armour	Shield Defense	false

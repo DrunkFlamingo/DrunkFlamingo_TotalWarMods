@@ -1,0 +1,7 @@
+id	incident_key	payload_key	value
+#cdir_events_incident_payloads_tables;2;db/cdir_events_incident_payloads_tables/sw_trait_effects			
+10001	shield_loyalty_event_treaties_broken_vikings	TEXT_DISPLAY	LOOKUP[shield_loyalty_event_treaties_broken_vikings]
+10002	shield_trait_event_prince_assumes_throne	TARGET	EVENT
+10003	shield_trait_event_prince_assumes_throne	princely_1	DURATION[12]
+10004	shield_loyalty_event_rampant_banditry	TEXT_DISPLAY	LOOKUP[shield_loyalty_event_rampant_banditry]
+10005	shield_loyalty_event_library	TEXT_DISPLAY	LOOKUP[shield_loyalty_event_library]
