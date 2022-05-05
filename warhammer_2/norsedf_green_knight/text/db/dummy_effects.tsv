@@ -1,0 +1,3 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/dummy_effects.loc		
+effects_description_df_greenknight_defensive_chance	%+n% Chance for the Green Knight to appear in Settlement Defense battles.	true

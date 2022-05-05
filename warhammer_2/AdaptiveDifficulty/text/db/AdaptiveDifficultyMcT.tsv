@@ -1,0 +1,33 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/AdaptiveDifficultyMcT.loc		
+mct_diff_mod_title	Adaptive Difficulty	false
+mct_diff_mod_desc	Settings can only be changed at Campaign Start	false
+mct_diff_difficulty_selector_title	Difficulty Level	false
+mct_diff_difficulty_selector_tt	Select which difficulty you wish to change settings for. This does NOT set the difficulty for your game: it closes and opens the options below according to your selection. Difficulty still has to be changed on the campaign setup screen or in campaign options once the game has started.	false
+mct_diff_option_max_effect_title	Maximum Effect	false
+mct_diff_option_max_effect_tt	Sets the maximum value this effect can reach on this difficulty.	false
+mct_diff_option_min_effect_title	Minimum Effect	false
+mct_diff_option_min_effect_tt	Sets the minimum value this effect can reach on this difficulty.	false
+mct_diff_option_start_effect_title	Starting Effect	false
+mct_diff_option_start_effect_tt	Sets the startting value of this effect. Must be between the minimum and maximum values.	false
+mct_diff_option_required_regions_title	PH	false
+mct_diff_option_required_regions_tt	PH	false
+mct_diff_option_victory_value_title	PH	false
+mct_diff_option_victory_value_tt	PH	false
+mct_diff_option_defeat_value_title	PH	false
+mct_diff_option_defeat_value_tt	PH	false
+mct_diff_option_per_turn_value_title	PH	false
+mct_diff_option_per_turn_value_tt	PH	false
+mct_diff_difficulty_1	Easy	false
+mct_diff_difficulty_2	Normal	false
+mct_diff_difficulty_3	Hard	false
+mct_diff_difficulty_4	Very Hard	false
+mct_diff_difficulty_5	Legendary	false
+mct_diff_selector_section	Select Difficulty to Edit:	false
+mct_diff_global_settings	Global Settings	false
+mct_diff_time_scale_title	Time Scale	false
+mct_diff_turn_interval_title	Update Interval (Turns)	false
+mct_diff_time_scale_tt	How many base turns it takes for an effect to move from minimum to maximum (or vice versa, for negative value bonuses). Reducing this value will cause the AI to lose and gain bonuses more rapidly; increasing this value will cause the AI to lose and gain bonuses more slowly. 	false
+mct_diff_turn_interval_tt	How often AI bonuses are updated on turn start. A lower value will cause *slightly* longer turn times. There are often balance implications to how often effects update.	false
+mct_diff_character_catchup_title	Character Catchup EXP	false
+mct_diff_character_catchup_tt	Allows AI characters to recieve EXP bonuses when they are below the level of the player's highest ranked character.	false

@@ -1,0 +1,3 @@
+effect_bundle_key	effect_key	effect_scope	value	advancement_stage
+#effect_bundles_to_effects_junctions_tables;2;db/effect_bundles_to_effects_junctions_tables/NorseDF_GKdefends				
+norse_green_knight_appears	norse_summon_green_knight_enable	force_to_general_own	1.0	start_turn_completed
