@@ -1,7 +1,19 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
 *.png
 *.dds
 *.pack
 *.rpfm_reserved.json
+*.meta
+*.anim
+*.bin
 
 **/private
 **/tw_lib

@@ -1,5 +1,5 @@
 # DrunkFlamingo_TotalWarMods
 
-My mods for Total War games, excluding Shieldwall Overhaul. 
+My mods for Total War games.
 
 Still being set up.
