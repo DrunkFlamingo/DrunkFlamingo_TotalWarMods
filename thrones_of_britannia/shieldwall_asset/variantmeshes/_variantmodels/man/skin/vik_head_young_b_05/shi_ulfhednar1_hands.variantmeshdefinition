@@ -1,0 +1,8 @@
+<VARIANT_MESH>
+	<SLOT name="skin" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\skin\vik_head_young_b_05/shi_ulfhednar_face.rigid_model_v2" />
+	</SLOT>
+	<SLOT name="hands" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/skin/vik_hands_open_legs_01/vik_hands_open_01.rigid_model_v2" />
+	</SLOT>
+</VARIANT_MESH>

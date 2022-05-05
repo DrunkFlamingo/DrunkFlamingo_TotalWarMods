@@ -1,0 +1,22 @@
+<VARIANT_MESH>
+	<SLOT name="tops" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\tops\vik_tunic_03/saka_cata_2.rigid_model_v2" />
+	</SLOT>
+	<SLOT name="accessories" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\tops\vik_tunic_03/saka_cata_shoulder.rigid_model_v2" />
+	</SLOT>
+	<SLOT name="accessories2" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\tops\vik_tunic_03/saka_cata_skirt.rigid_model_v2" />
+	</SLOT>
+	<SLOT name="tunics" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\tunics/steppe_tunic_01_cut_05.rigid_model_v2" >
+			<TINT red="0.019608" green="0.039216" blue="0.082353" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\tunics/steppe_tunic_01_cut_05.rigid_model_v2" >
+			<TINT red="0.035294" green="0.066667" blue="0.039216" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\tunics/steppe_tunic_01_cut_05.rigid_model_v2" >
+			<TINT red="0.062745" green="0.011765" blue="0.011765" random_range="0.0" />
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

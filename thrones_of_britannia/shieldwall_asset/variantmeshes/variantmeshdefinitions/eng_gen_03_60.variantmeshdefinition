@@ -1,0 +1,41 @@
+<VARIANT_MESH>
+	<SLOT name="skin" >
+		<VARIANT_MESH_REFERENCE definition="VariantMeshes/_VariantModels/man/skin/vik_young_c_05b_cine.VariantMeshDefinition" />
+	</SLOT>
+	<SLOT name="facial_hair" >
+		<VARIANT_MESH_REFERENCE definition="VariantMeshes/_VariantModels/man/hair_beards/short1_helm2_kingly1c_grey.VariantMeshDefinition" />
+	</SLOT>
+	<SLOT name="helmets" >
+		<VARIANT_MESH_REFERENCE definition="VariantMeshes/_VariantModels/man/helmets/vik_crossband_nasal.VariantMeshDefinition" />
+	</SLOT>
+	<SLOT name="tops" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\tops\vik_mail_01/shi_mail_01_gamb_03_red.rigid_model_v2" >
+			<TINT red="0.094118" green="0.172549" blue="0.101961" random_range="0.0" />
+		</VARIANT_MESH>
+	</SLOT>
+	<SLOT name="trousers" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\trousers\vik_trousers_gartered_02/vik_trousers_gartered_02.rigid_model_v2" >
+			<TINT red="0.45098" green="0.282353" blue="0.078431" random_range="0.0" />
+		</VARIANT_MESH>
+	</SLOT>
+	<SLOT name="cloaks" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\cloak\vik_cloak_01/vik_cloak_01_over_armour.rigid_model_v2" >
+			<TINT red="0.427451" green="0.082353" blue="0.082353" random_range="0.0" />
+		</VARIANT_MESH>
+	</SLOT>
+	<SLOT name="shield" attach_point="weapon_03" >
+		<VARIANT_MESH>
+			<SLOT name="shields" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/man/shield/vik_shield_round_leather_02/vik_shield_round_leather_02.rigid_model_v2"  decal_diffuse="VariantMeshes/_VariantModels/man/patterns/saxon/Saxon_shield_GeneralCrossForked2"  decal_normal="VariantMeshes/_VariantModels/man/patterns/blank/decal_normal"  imposter_model="VariantMeshes/_VariantModels/man/shield/vik_shield_round_leather_01/vik_shield_round_leather_01.rigid_model_v2" >
+					<TINT red="0.094118" green="0.172549" blue="0.101961" random_range="0.0" />
+				</VARIANT_MESH>
+			</SLOT>
+		</VARIANT_MESH>
+	</SLOT>
+	<SLOT name="weapon_1" />
+	<SLOT name="weapon_2" attach_point="weapon_02" >
+		<VARIANT_MESH_REFERENCE definition="VariantMeshes/_VariantModels/man/weapons/vik_swords_viking_03.VariantMeshDefinition" />
+	</SLOT>
+	<SLOT name="weapon_3" />
+	<SLOT name="weapon_4" />
+</VARIANT_MESH>

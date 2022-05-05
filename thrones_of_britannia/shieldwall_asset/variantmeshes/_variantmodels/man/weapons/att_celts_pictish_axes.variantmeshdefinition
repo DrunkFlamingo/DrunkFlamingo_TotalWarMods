@@ -1,0 +1,10 @@
+<VARIANT_MESH>
+	<SLOT name="weapons" attach_point="weapon_02" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/weapons/att_celts_pictish_axe_iron.rigid_model_v2" imposter_model="VariantMeshes/_VariantModels/man/weapons/att_celts_pictish_axe_iron.rigid_model_v2" >
+					<TINT red="0.058824" green="0.047059" blue="0.039216" random_range="0.0" />
+					<TINT red="0.337255" green="0.14902" blue="0.027451" random_range="0.0" />
+					<TINT red="0.470588" green="0.364706" blue="0.270588" random_range="0.0" />
+					<TINT red="0.192157" green="0.121569" blue="0.07451" random_range="0.0" />
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

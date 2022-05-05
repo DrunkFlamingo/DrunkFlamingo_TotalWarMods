@@ -1,0 +1,17 @@
+<VARIANT_MESH>
+	<SLOT name="trousers" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\trousers\vik_trousers_poor_01/vik_trousers_poor_01.rigid_model_v2" >
+			<TINT red="0.07451" green="0.058824" blue="0.047059" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\trousers\vik_trousers_gartered_01/vik_trousers_gartered_01.rigid_model_v2" >
+			<TINT red="0.07451" green="0.058824" blue="0.047059" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\trousers\vik_trousers_swathed_01/shi_trousers_swathed_blue.rigid_model_v2" >
+			<TINT red="0.07451" green="0.058824" blue="0.047059" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\trousers\vik_trousers_swathed_01/shi_trousers_swathed_gray.rigid_model_v2" />
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\trousers\vik_trousers_swathed_01/shi_trousers_swathed_green.rigid_model_v2" >
+			<TINT red="0.07451" green="0.058824" blue="0.047059" random_range="0.0" />
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

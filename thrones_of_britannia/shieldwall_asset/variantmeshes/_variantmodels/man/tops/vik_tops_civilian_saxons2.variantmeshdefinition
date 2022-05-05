@@ -1,0 +1,19 @@
+<VARIANT_MESH>
+	<SLOT name="tunics" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/tops/vik_tunic_01/vik_tunic_01.rigid_model_v2" >
+			<TINT red="0.117647" green="0.239216" blue="0.462745" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/tops/vik_tunic_02/vik_tunic_02.rigid_model_v2" >
+			<TINT red="0.427451" green="0.082353" blue="0.082353" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/tops/vik_tunic_poor_02/vik_tunic_poor_02.rigid_model_v2" >
+			<TINT red="0.721569" green="0.454902" blue="0.129412" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\tops\vik_tunic_gaelic_01/shi_tunic_gaelic_01.rigid_model_v2" >
+			<TINT red="0.043137" green="0.082353" blue="0.047059" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\tops\vik_tunic_02/vik_tunic_02.rigid_model_v2" >
+			<TINT red="0.776471" green="0.709804" blue="0.627451" random_range="0.0" />
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>
