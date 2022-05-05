@@ -14,6 +14,9 @@
 *.meta
 *.anim
 *.bin
+*.psd
+*.rigid_model_v2
+
 
 **/private
 **/tw_lib
