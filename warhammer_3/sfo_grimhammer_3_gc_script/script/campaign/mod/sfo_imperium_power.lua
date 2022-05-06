@@ -1,6 +1,16 @@
-local util = df_util
---v function(t: any)
-local function log(t) df_util.log(tostring(t), "IMPERIUM") end
+---@param t string
+local out = function(t)
+    ModLog("SFO: "..tostring(t).." (sfo_imperium)")
+end
+
+---round num to the nearest multiple of num
+---@param num number
+---@param mult integer
+---@return integer
+local mround = function(num, mult)
+    return (math.floor((num/mult)+0.5))*mult
+end
+
 --Uses custom effect bundles to construct benefits and penalties based on the size of each empire.
 
 --if a subculture list is used, it must be exhaustive.
@@ -140,7 +150,7 @@ local function get_effect_value(value, base, halving_value, invert, offset)
         local c_base = base - offset + 1
         while c_base - halving_value >= 0 do
             c_base = c_base - halving_value
-            retval = util.mround(retval/2, 1)
+            retval = mround(retval/2, 1)
         end
         return retval
     end
@@ -148,7 +158,7 @@ local function get_effect_value(value, base, halving_value, invert, offset)
     if base % halving_value == 0 then
         multiplier = multiplier + 1
     end
-    local retval = util.mround(value*multiplier, 1)
+    local retval = mround(value*multiplier, 1)
     return retval
 end
 
@@ -167,7 +177,7 @@ local function build_imperium_bundles(faction, capitals, settlements, full_provi
             local faction_whitelist = effect.faction --# assume faction_whitelist: map<string, boolean>
             local is_valid_for_culture = (not culture_whitelist) or not not culture_whitelist[faction:subculture()]
             local is_valid_for_faction = (not faction_whitelist) or ((faction_whitelist[faction:name()] ~= false and is_valid_for_culture) or not not faction_whitelist[faction:name()]) 
-            log("Checking effect: "..effect.key .."; is valid for culture: "..tostring(is_valid_for_culture).."; is valid for faction: "..tostring(is_valid_for_faction))
+            out("Checking effect: "..effect.key .."; is valid for culture: "..tostring(is_valid_for_culture).."; is valid for faction: "..tostring(is_valid_for_faction))
             if settlements >= effect.min and settlements <= effect.max and is_valid_for_culture and is_valid_for_faction then
                 local base = settlements
                 if effect.full_province_only then
@@ -176,7 +186,7 @@ local function build_imperium_bundles(faction, capitals, settlements, full_provi
                     base = capitals
                 end
                 local value = get_effect_value(effect.value, base, effect.halving_value, effect.invert_halving, effect.min)
-                log("Base ("..base..") within bounds: ("..effect.min..","..effect.max..") and being added with value: "..value)
+                out("Base ("..base..") within bounds: ("..effect.min..","..effect.max..") and being added with value: "..value)
                 if value ~= 0 then
                     new_bundle:add_effect(effect.key, effect.scope, value)
                     added_effects = true
@@ -205,15 +215,15 @@ local function build_region_counts_and_bundles(faction)
             end
         end
     end
-    log("Human faction "..faction:name().." has c:"..c.." f:"..f.." s:"..s)
+    out("Human faction "..faction:name().." has c:"..c.." f:"..f.." s:"..s)
     build_imperium_bundles(faction, c, s, f)
 end
 
-cm.first_tick_callbacks[#cm.first_tick_callbacks+1] = function(context) 
+sfo_imperium_power = function() 
     if cm:is_new_game() then
         for j = 1, #cm:get_human_factions() do
             local faction = cm:get_faction(cm:get_human_factions()[j])
-            log("Building Startpos Imperium Bundle for: "..faction:name())
+            out("Building Startpos Imperium Bundle for: "..faction:name())
             build_region_counts_and_bundles(faction)
         end
     end
@@ -225,7 +235,7 @@ cm.first_tick_callbacks[#cm.first_tick_callbacks+1] = function(context)
         end,
         function(context)
             local faction = context:garrison_residence():region():owning_faction() --:CA_FACTION
-            log("Human faction "..faction:name().." captured a settlement.")
+            out("Human faction "..faction:name().." captured a settlement.")
             build_region_counts_and_bundles(faction)
         end,
         true)
@@ -237,7 +247,7 @@ cm.first_tick_callbacks[#cm.first_tick_callbacks+1] = function(context)
         end,
         function(context)
             local faction = context:previous_faction() --:CA_FACTION
-            log("human faction  "..faction:name().." lost a settlement")
+            out("human faction  "..faction:name().." lost a settlement")
             build_region_counts_and_bundles(faction)
         end,
         true)
@@ -249,11 +259,11 @@ cm.first_tick_callbacks[#cm.first_tick_callbacks+1] = function(context)
         end,
         function(context)
             local faction = context:confederation() --:CA_FACTION
-            log("human faction  "..faction:name().." confederated an ally")
+            out("human faction  "..faction:name().." confederated an ally")
             build_region_counts_and_bundles(faction)
         end,
         true)
 
 end
 
-log("Script Loaded")
+out("Script Loaded")
