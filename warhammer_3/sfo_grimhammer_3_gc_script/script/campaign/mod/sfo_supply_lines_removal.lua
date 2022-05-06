@@ -1,7 +1,7 @@
 function upkeep_penalty_condition(faction)
 	local culture = faction:culture();
 	
-	return faction:is_human() and not wh_faction_is_horde(faction) and culture ~= "wh_main_brt_bretonnia" and culture ~= "wh2_dlc09_tmb_tomb_kings";
+	return faction:is_human() and faction:is_allowed_to_capture_territory() and culture ~= "wh_main_brt_bretonnia" and culture ~= "wh2_dlc09_tmb_tomb_kings";
 end;
 
 -- loop through the player's armys and apply
