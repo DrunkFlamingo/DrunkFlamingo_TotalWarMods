@@ -1,0 +1,3 @@
+feature	group	available
+#campaign_features_tables;0;db/campaign_features_tables/SFO_campaign		
+additional_army_upkeep	wh_main_feature_all	false

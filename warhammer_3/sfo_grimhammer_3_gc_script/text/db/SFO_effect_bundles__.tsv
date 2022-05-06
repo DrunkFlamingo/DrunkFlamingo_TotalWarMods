@@ -1,0 +1,8 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/SFO_effect_bundles__.loc		
+effect_bundles_localised_title_wh_imperium_0	[[col:white]]IMPERIUM POWER [[img:ui/campaign ui/effect_bundles/wh_imperium_0.png]][[/img]][[/col]]	true
+effect_bundles_localised_description_wh_imperium_0	Imperium Power is the indicator of your faction’s expansion. When your faction owns very few settlements (1-5), there is little maintenance. When your faction maintains over 5 settlements, there are slowly increasing benefits and penalties.\\n\\nGaining settlements increases Imperium Power while losing settlements lowers it.	true
+effect_bundles_localised_title_wh_imperium_1	[[col:white]]IMPERIUM POWER [[img:ui/campaign ui/effect_bundles/wh_imperium_1.png]][[/img]][[/col]]	true
+effect_bundles_localised_description_wh_imperium_1	Imperium Power is the indicator of your faction’s expansion. When your faction owns very few settlements (1-5), there is little maintenance. When your faction maintains over 5 settlements, there are slowly increasing benefits and penalties.\\n\\nGaining settlements increases Imperium Power while losing settlements lowers it.	true
+effect_bundles_localised_title_wh_army_movement_per_unit	Supply Lines	true
+effect_bundles_localised_description_wh_army_movement_per_unit	Up to +20% campaign movement range depending on number of units in army.	true

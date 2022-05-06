@@ -1,0 +1,3 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/#SFO_uied_component_texts__.loc		
+uied_component_texts_localised_string_label_txt_Tooltip_790010	Collecting the income from a province will provide it with an additional +1 recruitment slot, at the cost of a -10 [[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}} penalty. Not collecting provide +50 [[img:icon_growth]][[/img]]growth.	true
