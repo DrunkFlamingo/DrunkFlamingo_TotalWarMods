@@ -1,0 +1,5 @@
+key	localised_description	localised_title	bundle_target	priority	ui_icon	is_global_effect	show_in_3d_space	owner_only
+#effect_bundles_tables;4;db/effect_bundles_tables/movement								
+wh_army_movement_per_unit			force	1	merc.png	true	false	true
+wh_imperium_0			faction	1	wh_imperium_0.png	true	false	true
+wh_imperium_1			faction	1	wh_imperium_1.png	true	false	true

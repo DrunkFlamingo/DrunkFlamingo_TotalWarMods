@@ -1,0 +1,49 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/SFO_campaign_effect_scopes__.loc		
+campaign_effect_scopes_localised_text_character_to_enemy_province	\\n(enemy local province)	true
+campaign_effect_scopes_localised_text_character_to_force_enemy_provincewide	\\n(enemy armies in province)	true
+campaign_effect_scopes_localised_text_character_to_force_own_provincewide	\\n(own armies in province)	true
+campaign_effect_scopes_localised_text_character_to_province_enemy	\\n(enemy local province)	true
+campaign_effect_scopes_localised_text_character_to_province_own	\\n(own local province)	true
+campaign_effect_scopes_localised_text_faction_to_force_enemy	\\n(enemy armies factionwide)	true
+campaign_effect_scopes_localised_text_faction_to_force_own	\\n(own armies factionwide)	true
+campaign_effect_scopes_localised_text_force_to_force_own	\\n(this army)	true
+campaign_effect_scopes_localised_text_force_to_force_own_owned_territory	\\n(this army in owned territory)	true
+campaign_effect_scopes_localised_text_general_to_force_enemy_regionwide	\\n(enemy armies in region)	true
+campaign_effect_scopes_localised_text_province_to_character_enemy	\\n(enemy characters in province)	true
+campaign_effect_scopes_localised_text_province_to_character_own	\\n(own characters in province)	true
+campaign_effect_scopes_localised_text_province_to_force_any_provincewide	\\n(any army in province)	true
+campaign_effect_scopes_localised_text_province_to_force_enemy_provincewide	\\n(enemy armies in province)	true
+campaign_effect_scopes_localised_text_province_to_force_own_provincewide	\\n(own armies in province)	true
+campaign_effect_scopes_localised_text_province_to_army_own	\\n(own armies in province)	true
+campaign_effect_scopes_localised_text_region_to_character_enemy	\\n(enemy characters in region)	true
+campaign_effect_scopes_localised_text_region_to_character_enemy_text	\\n(enemy characters in region)	true
+campaign_effect_scopes_localised_text_region_to_character_own	\\n(own characters in region)	true
+campaign_effect_scopes_localised_text_region_to_character_own_text	\\n(own characters in region)	true
+campaign_effect_scopes_localised_text_region_to_force_any	\\n(any armies in region)	true
+campaign_effect_scopes_localised_text_region_to_force_enemy	\\n(enemy armies in region)	true
+campaign_effect_scopes_localised_text_region_to_force_own	\\n(own armies in region)	true
+campaign_effect_scopes_localised_text_region_to_province_own		true
+campaign_effect_scopes_localised_text_region_to_region_own		true
+campaign_effect_scopes_localised_text_character_to_force_own_regionwide_any	\\n(own armies in region)	true
+campaign_effect_scopes_localised_text_ability_mount_only	\\n(only while on mount)	true
+campaign_effect_scopes_localised_text_faction_to_character_own_agents	\\n(all characters factionwide)	true
+campaign_effect_scopes_localised_text_faction_to_character_own	\\n(all characters factionwide)	true
+campaign_effect_scopes_localised_text_character_to_character_own_factionwide	\\n(all characters factionwide)	true
+campaign_effect_scopes_localised_text_character_to_character_provincewide	\\n(own characters in province)	true
+campaign_effect_scopes_localised_text_character_to_character_regionwide	\\n(own characters in region)	true
+campaign_effect_scopes_localised_text_foreign_building_to_character_own	\\n(own characters in region)	true
+campaign_effect_scopes_localised_text_foreign_building_to_forces_own_regionwide	\\n(own armies in region)	true
+campaign_effect_scopes_localised_text_building_to_force_own_provincewide	\\n(own armies in province)	true
+campaign_effect_scopes_localised_text_province_to_region_own_provincewide	\\n(all regions in province)	true
+campaign_effect_scopes_localised_text_province_to_region_own	\\n(all regions in province)	true
+campaign_effect_scopes_localised_text_faction_to_region_own	\\n(all regions factionwide)	true
+campaign_effect_scopes_localised_text_building_to_forces_own_regionwide	\\n(own armies in region)	true
+campaign_effect_scopes_localised_text_character_to_character_regionwide_local_region	\\n(own characters in region)	true
+campaign_effect_scopes_localised_text_faction_to_force_own_owned_territory	\\n(own armies factionwide in owned territory)	true
+campaign_effect_scopes_localised_text_faction_to_force_own_enemy_territory	\\n(own armies factionwide in enemy territory)	true
+campaign_effect_scopes_localised_text_army_to_army_enemy	\\n(enemy armies in region)	true
+campaign_effect_scopes_localised_text_faction_to_character_own_factionwide_text	\\n(own armies factionwide)	true
+campaign_effect_scopes_localised_text_faction_to_faction_own	\\n(factionwide)	true
+campaign_effect_scopes_localised_text_faction_to_character_own_increasing	 [[col:yellow]](increasing)[[/col]]	true
+campaign_effect_scopes_localised_text_faction_to_character_own_decreasing	 [[col:yellow]](decreasing)[[/col]]	true
