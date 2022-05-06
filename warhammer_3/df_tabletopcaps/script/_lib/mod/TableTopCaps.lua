@@ -443,6 +443,17 @@ mod.print_unit_names_and_cards_for_webapp = function()
   file:close()
 end
 
+---Used to dump all information about the local faction's characters to log
+---@param self tabletopcaps
+mod.print_all_characters = function (self)
+  local char_list = cm:get_local_faction(true):character_list()
+  for i = 0, char_list:num_items() - 1 do
+    local this_character = char_list:item_at(i)
+    if mod.characters[this_character:command_queue_index()] then
+      mod.characters[this_character:command_queue_index()]:print_state()
+    end
+  end
+end
 
 
 -----------------------------------------------------------------------------------------------------------
@@ -1380,7 +1391,11 @@ mod.check_ai_character = function(character, read_only)
       end
     end
   end
-  mod.characters[character:command_queue_index()] = nil
+  if character:faction():is_human() then
+    --we don't want to delete a human's record in case they're currently using the UI
+  else
+    mod.characters[character:command_queue_index()] = nil
+  end
 end
 
 
