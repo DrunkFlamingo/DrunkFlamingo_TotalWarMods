@@ -1,0 +1,16 @@
+faction	unit_variant	soldier_type	primary_colour_hex	secondary_colour_hex	tertiary_colour_hex
+#unit_variants_colours_tables;1;db/unit_variants_colours_tables/sw_unit_variants_colours					
+vik_fact_sudreyar	est_spear_hirdmen	soldier	86827D	B7B5B4	5D5B59
+vik_fact_sudreyar	est_champions	soldier	86827D	B7B5B4	5D5B59
+vik_fact_norse	vik_jomsvikings	soldier	8A3C2E	C6B5A0	464646
+vik_fact_west_seaxe	dan_northumbrian_mailed_thegns	soldier	37378E	A0B5C6	8C5028
+vik_fact_mierce	dan_mailed_horsemen	soldier	4E6246	792C14	B48052
+vik_fact_west_seaxe	dan_mailed_horsemen	soldier	4E6246	792C14	B48052
+vik_fact_east_engle	dan_jarls_huscarls	soldier	7D7E7D	8C2D2E	464646
+vik_fact_east_engle	dan_marauders	soldier	4E6246	6D1515	C6B5A0
+vik_fact_east_engle	wel_mailed_axemen	soldier	585F6E	C6B5A0	3B3B3B
+vik_fact_east_engle	vik_jomsvikings	soldier	8A3C2E	C6B5A0	464646
+vik_fact_west_seaxe	eng_mailed_thegns	soldier	964035	C6B5A0	B48052
+vik_fact_west_seaxe	vik_thrall_axemen	soldier	C6B5A0	4F3E32	4E6246
+vik_fact_circenn	sco_sword_warriors	soldier	6D1515	C6B5A0	1E1E1E
+vik_fact_circenn	eng_marcher_armoured_spearmen	soldier	2F5434	C6B5A0	6D1515

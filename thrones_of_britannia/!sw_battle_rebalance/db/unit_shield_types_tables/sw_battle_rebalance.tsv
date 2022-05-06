@@ -1,0 +1,10 @@
+key	shield_defence_value	shield_armour_value	audio_material	missile_block_chance
+#unit_shield_types_tables;3;db/unit_shield_types_tables/sw_battle_rebalance				
+sw_medium_saxon	25	8	wood	45
+sw_medium_wood	25	5	wood	35
+sw_medium	25	7	wood	40
+sw_small_wood	15	3	wood	15
+sw_small	15	4	wood	20
+sw_reinforced	40	11	wood	65
+sw_large	35	10	wood	55
+sw_none	0	0	wood	0

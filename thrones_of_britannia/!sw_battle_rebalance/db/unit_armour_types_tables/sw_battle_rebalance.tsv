@@ -1,0 +1,8 @@
+key	armour_value	bonus_vs_missiles	weak_vs_missiles	audio_material
+#unit_armour_types_tables;1;db/unit_armour_types_tables/sw_battle_rebalance				
+sw_cloth_helmet	2	1	0	cloth
+sw_none	0	0	0	cloth
+sw_leather	5	1	0	leather
+sw_mail	10	1	0	chainmail
+sw_heavy_mail	15	1	0	chainmail
+sw_scale	20	1	0	chainmail

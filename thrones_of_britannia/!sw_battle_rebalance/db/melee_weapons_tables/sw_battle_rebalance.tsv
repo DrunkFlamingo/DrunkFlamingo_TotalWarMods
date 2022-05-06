@@ -1,0 +1,27 @@
+key	armour_penetrating	armour_piercing	bonus_v_cavalry	bonus_v_elephants	bonus_v_infantry	damage	ap_damage	first_strike	shield_piercing	weapon_length	melee_weapon_type	audio_material	building_damage
+#melee_weapons_tables;7;db/melee_weapons_tables/sw_battle_rebalance													
+sw_spear_levy	false	false	10	0	0	1	5	0	false	3.0	spear	spear	0.5
+sw_spear_vikingar	false	false	12	0	0	1	8	0	false	3.0	spear	spear	0.5
+sw_spear_noble	false	false	16	0	0	2	11	0	false	3.0	spear	spear	0.5
+sw_spear_hero	false	false	24	0	0	3	14	0	false	3.0	spear	spear	0.5
+sw_sword_veteran	false	false	0	0	0	10	0	0	false	1.0	sword	sword_long	0.5
+sw_sword_noble	false	false	0	0	0	13	0	0	false	1.0	sword	sword_long	0.5
+sw_sword_hero	false	false	0	0	0	20	0	0	false	1.0	sword	sword_long	0.5
+sw_axe_levy	false	false	0	0	4	3	3	0	false	1.0	axe	axe	0.5
+sw_axe_veteran	false	false	0	0	6	5	5	0	false	1.0	axe	axe	0.5
+sw_axe_noble	false	false	0	0	8	6	6	0	false	1.0	axe	axe	0.5
+sw_axe_hero	false	false	0	0	10	7	7	0	false	1.0	axe	axe	0.5
+sw_seaxe	false	false	0	0	2	6	4	0	false	1.0	axe	axe	0.5
+sw_dagger	false	false	0	0	0	8	0	0	false	1.0	knife	sword	0.5
+sw_iri_club	false	false	0	0	0	2	6	0	false	1.0	axe	club	0.5
+sw_dane_axe_veteran	false	false	8	0	6	4	8	0	false	1.0	axe	axe	0.5
+sw_dane_axe_noble	false	false	12	0	10	5	10	0	false	1.0	axe	axe	0.5
+sw_dane_axe_hero	false	false	16	0	14	6	12	0	false	1.0	axe	axe	0.5
+sw_scout_spear	false	false	6	0	0	4	4	0	false	1.0	spear	spear	0.5
+sw_cavalry_spear	false	false	8	0	0	6	6	0	false	1.0	spear	spear	0.5
+sw_wel_lance_noble	false	false	8	0	0	4	8	0	false	2.0	lance	spear	0.5
+sw_nor_lance_noble	false	false	8	0	0	4	12	0	false	2.0	lance	spear	0.5
+sw_wel_lance_hero	false	false	12	0	0	6	14	0	false	2.0	lance	spear	0.5
+sw_nor_lance_hero	false	false	12	0	0	4	20	0	false	2.0	lance	spear	0.5
+sw_dan_berserker_weapon	false	false	0	0	0	20	4	0	false	1.0	axe	axe	0.5
+sw_est_berserker_weapon	false	false	0	0	0	4	16	0	false	1.0	axe	axe	0.5

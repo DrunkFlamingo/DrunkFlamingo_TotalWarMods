@@ -1,0 +1,11 @@
+faction_name	primary_colour_hex	secondary_colour_hex	tertiary_colour_hex
+#faction_uniform_colours_tables;0;db/faction_uniform_colours_tables/sw_faction_uniform_colours			
+vik_fact_circenn_mp	38536F	B5AD96	6D1515
+vik_fact_gwined_mp	C7C2A4	963714	4B694B
+vik_fact_normaunds_mp	8E3737	C6B5A0	28508C
+vik_fact_west_seaxe_mp	964035	D89E40	C6B5A0
+vik_fact_mierce_mp	5A8093	C38C32	C6B5A0
+vik_fact_dyflin_mp	B67D4B	2D231C	C6B5A0
+vik_fact_northleode_mp	B49646	78320A	C6B5A0
+vik_fact_sudreyar_mp	C6B5A0	585F6E	C8BBB0
+vik_fact_east_engle_mp	647F9A	D6BC8B	476395

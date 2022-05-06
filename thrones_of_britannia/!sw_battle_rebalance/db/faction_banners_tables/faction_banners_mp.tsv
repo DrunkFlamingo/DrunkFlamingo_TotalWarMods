@@ -1,0 +1,23 @@
+key	symbol	primary_hex	secondary_hex	tertiary_hex
+#faction_banners_tables;0;db/faction_banners_tables/faction_banners_mp				
+vik_fact_caisil		25354C	F1B129	000000
+vik_fact_cent		AB212E	E7EEE6	000000
+vik_fact_circenn_mp		034F89	FCFCFC	000000
+vik_fact_dyflin_mp		C08742	201A0A	000000
+vik_fact_east_engle_mp		5387AE	FCEFCD	000000
+vik_fact_fortriu		5D3C29	F9C651	000000
+vik_fact_gwined_mp		FCFCFC	A91400	000000
+vik_fact_hellirborg		945246	FCEFCD	000000
+vik_fact_hlymrekr		B31A2E	EFDCCB	000000
+vik_fact_mide_mp		B4C5D5	F9C651	000000
+vik_fact_mierce_mp		1F7DA3	EFC43A	000000
+vik_fact_normaunds_mp		C85B44	201A0A	000000
+vik_fact_northleode_mp		F1B129	6B2721	000000
+vik_fact_northymbre_mp		BB646D	F4BA32	000000
+vik_fact_orkneyar		C16665	F9C651	000000
+vik_fact_osraige		FBD572	5B422E	000000
+vik_fact_powis		F4BA32	B33221	000000
+vik_fact_seisilwig		C85B44	F9C651	000000
+vik_fact_strat_clut_mp		6A0900	E7EEE6	000000
+vik_fact_sudreyar_mp		EFDCCB	585F6E	000000
+vik_fact_west_seaxe_mp		961F0B	FABD24	000000

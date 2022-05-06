@@ -1,0 +1,42 @@
+key	onscreen_name	max_value	campaign_only	sort_order
+#ui_unit_stats_tables;5;db/ui_unit_stats_tables/ui_unit_stats				
+scalar_bracing	Entity Mass	1000	false	0
+scalar_entity_acceleration_modifier	Acceleration	100	false	0
+scalar_entity_charge_speed_modifier	Charge Speed	100	false	0
+scalar_entity_deceleration_modifier	Deceleration	100	false	0
+scalar_spotting_range	Spotting Range	800	false	0
+stat_accuracy	Accuracy	35	false	9
+stat_ammo	Ammunition	25	false	12
+stat_armour	Armour	25	false	7
+stat_attack	Attack	80	false	0
+stat_bonus_vs_cavalry	Attack Against Cavalry	15	false	5
+stat_bonus_vs_elephants	Attack Against Elephants	30	false	0
+stat_bonus_vs_infantry	Attack Against Infantry	12	false	14
+stat_capture_power	Capture Power	25	false	0
+stat_charge_bonus	Charge Bonus	38	false	4
+stat_defence	Defence	65	false	0
+stat_first_strike	First Strike	100	false	0
+stat_health	Health	32	false	0
+stat_hiding	Hiding	100	false	0
+stat_melee_attack	Melee Skill	35	false	2
+stat_melee_damage_ap	Armour-piercing Damage	25	false	0
+stat_melee_damage_base	Melee Base Damage	25	false	0
+stat_melee_defence	Melee Defence	65	false	3
+stat_men_count	Men Count	80	false	13
+stat_missile_block_chance	Missile Block Chance	75	false	0
+stat_missile_damage	Missile Damage	25	false	11
+stat_missile_damage_ap	Armour-Piercing Damage	25	false	0
+stat_missile_damage_base	Missile Base Damage	25	false	0
+stat_morale	Morale	30	false	1
+stat_reloading	Rate of Fire	80	false	8
+stat_remaining_ammo	Added Ammunition	20	false	0
+stat_shield_armour	Shield Armour	50	false	0
+stat_shield_defence	Shield	50	false	0
+stat_ship_douse_fire	Douse Fire	10	false	0
+stat_ship_health	Hull Strength	2500	false	0
+stat_ship_health_fire	Fire Resistance	2000	false	0
+stat_ship_move_speed	Speed	100	false	0
+stat_speed	Speed	60	false	0
+stat_spotting	Spotting	1200	false	0
+stat_weapon_damage	Melee Damage	25	false	10
+stat_weapon_range	Range	180	false	6

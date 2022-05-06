@@ -1,0 +1,15 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/mp_factions.loc		
+factions_screen_name_vik_fact_circenn_mp	Circenn (Multiplayer)	true
+factions_screen_name_vik_fact_dyflin_mp	Dyflin (Multiplayer)	true
+factions_screen_name_vik_fact_east_engle_mp	East Engle (Multiplayer)	true
+factions_screen_name_vik_fact_gwined_mp	Gwined (Multiplayer)	true
+factions_screen_name_vik_fact_mide_mp	placeholder	true
+factions_screen_name_vik_fact_mierce_mp	placeholder	true
+factions_screen_name_vik_fact_normaunds_mp	placeholder	true
+factions_screen_name_vik_fact_norse_mp	placeholder	true
+factions_screen_name_vik_fact_northleode_mp	placeholder	true
+factions_screen_name_vik_fact_northymbre_mp	Jorvik (Multiplayer)	true
+factions_screen_name_vik_fact_strat_clut_mp	Strat Clut (Multiplayer)	true
+factions_screen_name_vik_fact_sudreyar_mp	Sudreyar (Multiplayer)	true
+factions_screen_name_vik_fact_west_seaxe_mp	West Seaxe (Multiplayer)	true

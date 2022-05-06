@@ -1,0 +1,23 @@
+faction	general_unit	unit	siege_unit_attacker	siege_unit_defender
+#units_custom_battle_permissions_tables;4;db/units_custom_battle_permissions_tables/new_mp_factions				
+vik_fact_west_seaxe_mp	false	sw_eng_gebur_spear	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_fyrd_spear	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_thegn_spear	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_thegn_sword	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_seax	true	true
+vik_fact_west_seaxe_mp	true	sw_mrc_vikingar	true	true
+vik_fact_west_seaxe_mp	true	sw_eng_elite_general	true	true
+vik_fact_west_seaxe_mp	true	sw_eng_general	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_gebur_bow	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_fyrd_bow	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_gebur_skirm	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_ceorl_skirm	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_butsecarl	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_select_fyrd_mounted	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_scout	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_thegn_mounted	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_select_fyrd_spear	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_wessex_hero	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_select_fyrd_bow	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_gebur_axe	true	true
+vik_fact_west_seaxe_mp	false	sw_eng_ceorl_axe	true	true

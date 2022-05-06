@@ -1,0 +1,21 @@
+faction	general_unit	unit	siege_unit_attacker	siege_unit_defender
+#units_custom_battle_permissions_tables;4;db/units_custom_battle_permissions_tables/sw_vsk_roster				
+vik_fact_sudreyar_mp	true	sw_est_general	true	true
+vik_fact_sudreyar_mp	true	sw_est_elite_general	true	true
+vik_fact_sudreyar_mp	false	sw_est_karl_spear	true	true
+vik_fact_sudreyar_mp	false	sw_est_karl_axe	true	true
+vik_fact_sudreyar_mp	false	sw_est_sailors	true	true
+vik_fact_sudreyar_mp	false	est_est_hirdmenn_sword	true	true
+vik_fact_sudreyar_mp	false	sw_est_hirdmenn_axe	true	true
+vik_fact_sudreyar_mp	false	sw_est_hirdmenn_spear	true	true
+vik_fact_sudreyar_mp	false	sw_est_hunters	true	true
+vik_fact_sudreyar_mp	false	sw_est_longbowmen	true	true
+vik_fact_sudreyar_mp	false	sw_est_bow_warrior	true	true
+vik_fact_sudreyar_mp	false	sw_est_drengir	true	true
+vik_fact_sudreyar_mp	false	sw_est_long_axes	true	true
+vik_fact_sudreyar_mp	false	sw_est_rekkar	true	true
+vik_fact_sudreyar_mp	false	sw_est_nordmenn_vikingar	true	true
+vik_fact_sudreyar_mp	false	sw_est_skirmisher	true	true
+vik_fact_sudreyar_mp	false	sw_est_hero_nordmenn_sea_king	true	true
+vik_fact_sudreyar_mp	false	sw_est_hero_shield_biter	true	true
+vik_fact_sudreyar_mp	false	sw_est_scout	true	true

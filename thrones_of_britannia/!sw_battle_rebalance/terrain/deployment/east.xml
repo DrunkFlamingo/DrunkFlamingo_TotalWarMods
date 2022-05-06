@@ -1,0 +1,24 @@
+<BATTLE_DEPLOYMENT_AREA_HASH_TABLE>
+	<BATTLE_DEPLOYMENT_AREAS>
+		<ALLIANCE id='0'>
+			<deployment_area id='0' category='DAC_DEFAULT'>
+				<boundary type='standard additive'>
+					<position x='334.000000' y='304.000000'/>
+					<position x='334.000000' y='720.000000'/>
+					<position x='466.000000' y='720.000000'/>
+					<position x='466.000000' y='304.000000'/>
+				</boundary>
+			</deployment_area>
+		</ALLIANCE>
+		<ALLIANCE id='1'>
+			<deployment_area id='0' category='DAC_DEFAULT'>
+				<boundary type='standard additive'>
+					<position x='558.000000' y='304.000000'/>
+					<position x='558.000000' y='720.000000'/>
+					<position x='690.000000' y='720.000000'/>
+					<position x='690.000000' y='304.000000'/>
+				</boundary>
+			</deployment_area>
+		</ALLIANCE>
+	</BATTLE_DEPLOYMENT_AREAS>
+</BATTLE_DEPLOYMENT_AREA_HASH_TABLE>

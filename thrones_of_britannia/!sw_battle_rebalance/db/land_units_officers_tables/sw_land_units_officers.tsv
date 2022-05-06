@@ -1,0 +1,52 @@
+key	officer_1	officer_2	standard_bearer_1	standard_bearer_2	musician_1	musician_2	personality_location
+#land_units_officers_tables;2;db/land_units_officers_tables/sw_land_units_officers							
+dan_general_officer	dan_officer		dan_christian_standard				front
+eng_general_officer	eng_officer		eng_hero_standard_bearer_draco	eng_hero_standard_bearer_draco	eng_kings_standard_bearer		front
+iri_general_officer	iri_officer_elite		iri_celtic_standard	iri_celtic_standard	iri_standard_bearer_elite		front
+sco_general_officer	sco_officer_elite		sco_standard_bearer_king	sco_standard_bearer_king	sco_standard_bearer_general		front
+wel_general_officer	wel_officer_elite		wel_draco_standard	wel_draco_standard	wel_standard_bearer_lord		front
+dan_officer_lesser	dan_officer_lesser		dan_standard_bearer_lesser				front
+berserker_hero	berserker_hero		berserker_dane_axe				front
+dan_hero	dan_hero		dan_hero_standard_bearer				front
+eng_officer_lesser	eng_officer_lesser		eng_standard_bearer_lesser				front
+eng_hero	eng_hero		eng_hero_standard_bearer				front
+eng_hero_spear	eng_hero_spear		eng_hero_standard_bearer				front
+est_general_officer	est_officer_elite		est_standard_bearer_great_banner				front
+est_ulfhednar_hero	est_ulfhednar_hero						front
+est_officer_vikingar	est_officer_vikingar		est_standard_bearer_vikingar				front
+est_sea_king_hero	est_sea_king_hero		est_standard_bearer_sea_king				front
+est_officer_elite	est_officer_elite		est_standard_bearer_elite				front
+est_officer_hunter	est_officer_hunter						front
+wel_officer_elite	wel_officer_elite		wel_standard_bearer_elite				front
+wel_officer_penteulu	wel_officer_penteulu		wel_draco_standard_bearer_penteulu				front
+est_sea_king_hero_dyflin	est_sea_king_hero_dyflin		est_standard_bearer_sea_king				front
+wel_helwyr_officer_dogs	wel_helwyr_officer		wel_standard_bearer_elite				front
+wel_helwyr_officer	wel_helwyr_officer						front
+vik_officer_jomsviking	vik_officer_jomsviking		vik_standard_bearer_jomsviking				front
+iri_officer_hero	iri_officer_hero		iri_standard_bearer_hero				front
+iri_officer_elite	iri_officer_elite		iri_standard_bearer_elite				front
+iri_officer_hunter	iri_officer_hunter						front
+iri_officer_hunter_dogs	iri_officer_hunter		iri_celtic_standard				front
+sco_officer_hunter_dogs	iri_officer_hunter		sco_standard_bearer_elite				front
+sco_officer_elite	sco_officer_elite		sco_standard_bearer_elite				front
+sco_officer_hero	sco_officer_hero		sco_standard_bearer_hero				front
+sco_officer_elite_cav	sco_officer_elite_cav		sco_standard_bearer_cav				front
+sco_officer_cav	sco_officer_cav		sco_standard_bearer_cav				front
+sco_officer_gen_cav	sco_officer_elite_cav		sco_standard_bearer_king_cav	sco_standard_bearer_king_cav	sco_standard_bearer_general_cav		front
+saxon_band_officer	saxon_band_officer		saxon_band_standard				front
+frankish_officer	frankish_officer		frankish_standard				front
+silver_wolf_officer	silver_wolf_officer		silver_wolf_standard				front
+svearvik_officer	svearvik_officer		svearvik_standard_bearer				front
+viking_merc_officer	viking_merc_officer		viking_merc_standard_bearer				front
+old_captain_officer	old_captain_officer		old_captain_standard				front
+sailor_officer	sailor_officer						front
+bandit_officer	bandit_officer						front
+bandit_officer_elite	bandit_officer_elite						front
+dane_captain	dane_captain		dane_captain_standard_bearer				front
+nordmenn_captain	nordmenn_captain		nordmenn_captain_standard_bearer				front
+nor_officer_elite	nor_officer_elite		nor_standard_bearer_elite				front
+nor_officer_general	nor_officer_general		nor_standard_bearer_great	nor_standard_bearer_great	nor_standard_bearer_general		front
+eng_officer_range	eng_officer_range						front
+eng_officer_cav	eng_officer_cav		eng_standard_bearer_cav				front
+eng_officer_lesser_cav	eng_officer_lesser_cav		eng_standard_bearer_lesser_cav				front
+eng_north_hero	eng_north_hero		eng_hero_standard_bearer				front
