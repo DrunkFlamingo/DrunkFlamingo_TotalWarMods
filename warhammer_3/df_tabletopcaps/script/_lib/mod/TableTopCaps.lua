@@ -58,7 +58,7 @@ local mod = {}
 
 mod.ui_settings = {}
 --mod.version = 0 
---:root:units_panel:main_units_panel:recruitment_docker:recruitment_options:recruitment_listbox
+-- :root:units_panel:main_units_panel:recruitment_docker:recruitment_options:recruitment_listbox
 mod.ui_settings.path_to_recruitment_sources = {
   [1] = {"units_panel", "main_units_panel", "recruitment_docker", "recruitment_options", 
     "recruitment_listbox", "recruitment_pool_list", "list_clip", "list_box"},
@@ -89,8 +89,8 @@ mod.ui_settings.groups_to_pips = {
 }
 mod.ui_settings.ttc_meter_prefix = "ttc_points_"
 
---:root:units_panel:main_units_panel:recruitment_docker:recruitment_options:allied_recuitment_display:recruitment_holder:unit_list:listview:list_clip:allied_unit_list
---:root:units_panel:main_units_panel:recruitment_docker:recruitment_options:mercenary_display:frame:listview:list_clip:list_box
+-- :root:units_panel:main_units_panel:recruitment_docker:recruitment_options:allied_recuitment_display:recruitment_holder:unit_list:listview:list_clip:allied_unit_list
+-- :root:units_panel:main_units_panel:recruitment_docker:recruitment_options:mercenary_display:frame:listview:list_clip:list_box
 
 
 ---Who to check for what special rules
@@ -530,7 +530,7 @@ mod.refresh_icons_on_exchange_bars = function()
       local unitCard = UIComponent(armyList:Find(i))
       if unitCard:Id():find("Queued") then -- Queued Unit Card
         unitCard:SimulateMouseOn()
-        --:root:hud_campaign:unit_information_parent:unit_info_panel_holder_parent:unit_info_panel_holder:unit_information
+        -- :root:hud_campaign:unit_information_parent:unit_info_panel_holder_parent:unit_info_panel_holder:unit_information
         local ok, err = pcall(function()
           local experience_icon = find_uicomponent(unitCard, "experience")
           local unitDetailsContextID = experience_icon:GetContextObjectId("CcoUnitDetails")
@@ -567,7 +567,7 @@ mod.refresh_icons_on_army_units_panel = function()
     local unitCard = UIComponent(armyList:Find(i))
     if unitCard:Id():find("Queued") then -- Queued Unit Card
       unitCard:SimulateMouseOn()
-      --:root:hud_campaign:unit_information_parent:unit_info_panel_holder_parent:unit_info_panel_holder:unit_information
+      -- :root:hud_campaign:unit_information_parent:unit_info_panel_holder_parent:unit_info_panel_holder:unit_information
       local ok, err = pcall(function()
         local experience_icon = find_uicomponent(unitCard, "experience")
         local unitDetailsContextID = experience_icon:GetContextObjectId("CcoUnitDetails")
@@ -661,7 +661,7 @@ mod.select_character = function(character, force)
     local unitCard = UIComponent(armyList:Find(i))
     if unitCard:Id():find("Queued") then -- Queued Unit Card
       unitCard:SimulateMouseOn()
-      --:root:hud_campaign:unit_information_parent:unit_info_panel_holder_parent:unit_info_panel_holder:unit_information
+      -- :root:hud_campaign:unit_information_parent:unit_info_panel_holder_parent:unit_info_panel_holder:unit_information
       local ok, err = pcall(function()
         local unitInfo = find_uicomponent(core:get_ui_root(), "hud_campaign", "unit_information_parent", "unit_info_panel_holder_parent",
         "unit_info_panel_holder")
@@ -1700,7 +1700,7 @@ end
 
 
 mod.add_or_get_exchange_panel_meters = function (group_key)
-  --:root:unit_exchange:main_units_panel_1:frame
+  -- :root:unit_exchange:main_units_panel_1:frame
   local uic_key = mod.ui_settings.ttc_meter_prefix..group_key
   local exchange_panel = find_uicomponent(core:get_ui_root(), "unit_exchange")
   --[[
@@ -2033,7 +2033,7 @@ mod.set_unit_browser_card_display = function(unitBrowserCard, visible)
       local cost = tostring(unit_record.weight)
       cost_tooltip_loc = fill_loc(desc_loc_to_fill, group_name, cost, points_name) 
     end
-    --:CcoUnitsCustomBattlePermissionRecordwh3_main_ksl_inf_kossars_0:wh3_main_ksl_kislev:0:experience
+    -- :CcoUnitsCustomBattlePermissionRecordwh3_main_ksl_inf_kossars_0:wh3_main_ksl_kislev:0:experience
     local experience_icon = find_uicomponent(unitBrowserCard, "experience")
     if is_uicomponent(experience_icon) then
       local image_path = (mod.ui_settings.groups_to_pips[unit_record.group] or {})[unit_record.weight]
@@ -2057,14 +2057,14 @@ end
 
 
 mod.display_costs_on_unit_browser = function()
- --:root:spell_browser:panel_clip:units_tab_parent:main_holder:units_listview:list_clip:list_box
+ -- :root:spell_browser:panel_clip:units_tab_parent:main_holder:units_listview:list_clip:list_box
   local ut_parent = find_uicomponent(core:get_ui_root(), "spell_browser", "panel_clip", "units_tab_parent")
   local category_list = find_uicomponent(ut_parent, "main_holder", "units_listview", "list_clip", "list_box")
   
   local should_display = not core:svr_load_registry_bool("spell_browser_cap_toggle")
   for i = 0, category_list:ChildCount() - 1 do
     local this_category = UIComponent(category_list:Find(i))
-    --:CcoGroupList7403738784:roster_list:CcoUnitsCustomBattlePermissionRecordwh3_main_ksl_inf_kossars_0:wh3_main_ksl_kislev:0
+    -- :CcoGroupList7403738784:roster_list:CcoUnitsCustomBattlePermissionRecordwh3_main_ksl_inf_kossars_0:wh3_main_ksl_kislev:0
     local roster_list = find_uicomponent(this_category, "roster_list")
     for j = 0, roster_list:ChildCount() - 1 do
       local this_unit = UIComponent(roster_list:Find(j))
