@@ -2,4 +2,5 @@
 
 My mods for Total War games.
 
-Still being set up.
+You can use the issues tab to see bugs that I'm aware of and things I'm working on. 
+
