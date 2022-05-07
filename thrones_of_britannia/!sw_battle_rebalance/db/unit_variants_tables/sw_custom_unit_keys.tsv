@@ -68,3 +68,5 @@ faction	unit	name	variant	height_variation	height_scale	unit_card
 	sw_dan_general	sw_dan_general	dan_warlords_companions	0.1	1.0	dan_warlords_companions
 	sw_dan_thegn_spear	sw_dan_thegn_spear	dan_northumbrian_thegns	0.1	1.0	dan_northumbrian_thegns
 	sw_dan_thegn_sword	sw_dan_thegn_sword	dan_sword_hersir	0.1	1.0	dan_sword_hersir
+	sw_dan_hunters	sw_dan_hunters	dan_ceorl_archers	0.1	1.0	dan_ceorl_archers
+	sw_dan_archers	sw_dan_archers	dan_archers	0.1	1.0	dan_archers
