@@ -27,7 +27,7 @@ faction	unit	name	variant	height_variation	height_scale	unit_card
 	sw_est_karl_axe	sw_est_karl_axe	est_axemen	0.1	1.0	est_axemen
 	sw_est_sailors	sw_est_sailors	est_marauders	0.1	1.0	est_marauders
 	sw_est_hirdmenn_spear	sw_est_hirdmenn_spear	est_spear_guard	0.1	1.0	est_spear_guard
-	est_est_hirdmenn_sword	est_est_hirdmenn_sword	est_hirdmen	0.1	1.0	est_hirdmen
+	sw_est_hirdmenn_sword	sw_est_hirdmenn_sword	est_hirdmen	0.1	1.0	est_hirdmen
 	sw_est_hirdmenn_axe	sw_est_hirdmenn_axe	est_mailed_axemen	0.1	1.0	est_mailed_axemen
 	sw_wel_cadwr_axe	sw_wel_cadwr_axe	wel_axemen	0.1	1.0	wel_axemen
 	sw_wel_taeog_axe	sw_wel_taeog_axe	wel_levy_axemen	0.1	1.0	wel_levy_axemen
@@ -66,3 +66,5 @@ faction	unit	name	variant	height_variation	height_scale	unit_card
 	sw_dan_danelaw_spears	sw_dan_danelaw_spears	dan_spearmen	0.1	1.0	dan_spearmen
 	sw_dan_elite_general	sw_dan_elite_general	dan_royal_huscarls	0.1	1.0	dan_royal_huscarls
 	sw_dan_general	sw_dan_general	dan_warlords_companions	0.1	1.0	dan_warlords_companions
+	sw_dan_thegn_spear	sw_dan_thegn_spear	dan_northumbrian_thegns	0.1	1.0	dan_northumbrian_thegns
+	sw_dan_thegn_sword	sw_dan_thegn_sword	dan_sword_hersir	0.1	1.0	dan_sword_hersir
