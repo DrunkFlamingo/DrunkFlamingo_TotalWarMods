@@ -13,3 +13,4 @@ faction	unit	name	variant	height_variation	height_scale	unit_card
 	eng_north_champion	eng_north_champion	eng_north_champion	0.1	1.0	eng_north_champion
 	eng_north_hunters	eng_north_hunters	eng_north_hunters	0.1	1.0	eng_north_hunters
 	eng_north_javelinmen	eng_north_javelinmen	eng_north_javelinmen	0.1	1.0	eng_north_javelinmen
+	sw_dan_skirmisher	sw_dan_skirmisher	dan_javelinmen	0.0	1.0	dan_javelinmen

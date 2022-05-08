@@ -9,3 +9,5 @@ sw_wel_strat_clut_comites		0	medium	1	false	sw_wel_strat_clut_comites	48	1	215	v
 sw_wel_penteulu_hero		0	heavy	1	false	sw_wel_penteulu_hero	36	1	375	vik_corwg	1	20	200	0	375			190	super_heavy	-1		false	false	0	15471	true		vo_subculture_celtic_welsh	att_cav_melee_land	att_special_transportship_naval	3
 sw_wel_scout		0	light	1	false	sw_wel_scout	24	0	50	vik_corwg	1	20	200	0	50			30	light	-1		false	false	0	15475	true		vo_subculture_celtic_welsh	att_cav_melee_land	att_special_transportship_naval	1
 sw_wel_uchelwr_mounted		0	heavy	1	false	sw_wel_uchelwr_mounted	48	2	350	vik_corwg	1	20	200	0	350			180	heavy	-1		false	false	0	15513	true		vo_subculture_celtic_welsh	att_cav_melee_land	att_special_transportship_naval	2
+sw_dan_hirdmenn_mounted		0	medium	1	false	sw_dan_hirdmenn_mounted	48	2	340	vik_byrdingr_mis	1	20	200	0	340			170	heavy	-1		false	false	0	14278	true		vo_subculture_viking_nordic	att_cav_melee_land	att_special_transportship_naval	2
+sw_dan_scout		0	light	1	false	sw_dan_scout	24	0	60	vik_byrdingr	1	20	200	0	60			30	light	-1		false	false	0	14324	true		vo_subculture_viking_nordic	att_cav_melee_land	att_special_transportship_naval	1

@@ -5,7 +5,7 @@ vik_fact_west_seaxe_mp	false	sw_eng_fyrd_spear	true	true
 vik_fact_west_seaxe_mp	false	sw_eng_thegn_spear	true	true
 vik_fact_west_seaxe_mp	false	sw_eng_thegn_sword	true	true
 vik_fact_west_seaxe_mp	false	sw_eng_seax	true	true
-vik_fact_west_seaxe_mp	true	sw_mrc_vikingar	true	true
+vik_fact_west_seaxe_mp	false	sw_mrc_vikingar	true	true
 vik_fact_west_seaxe_mp	true	sw_eng_elite_general	true	true
 vik_fact_west_seaxe_mp	true	sw_eng_general	true	true
 vik_fact_west_seaxe_mp	false	sw_eng_gebur_bow	true	true
