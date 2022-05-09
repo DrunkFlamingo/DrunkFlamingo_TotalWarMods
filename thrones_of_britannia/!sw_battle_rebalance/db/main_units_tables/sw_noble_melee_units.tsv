@@ -12,3 +12,5 @@ sw_wel_teulu_spear		0	heavy	1	false	sw_wel_teulu_spear	80	1	300	vik_ddraig	1	20	
 sw_wel_young_sword		0	medium	1	false	sw_wel_young_sword	120	0	175	vik_ddraig	1	20	200	0	175			90	medium	-1		false	false	0	15490	true		vo_subculture_celtic_welsh	att_inf_sword_land	att_special_transportship_naval	1
 sw_dan_thegn_spear		0	medium	1	false	sw_dan_thegn_spear	80	8	215	vik_byrdingr	1	20	200	0	285			110	heavy	-1		false	false	0	14361	true		vo_subculture_viking_nordic	att_inf_spear_land	att_special_transportship_naval	2
 sw_dan_thegn_sword		0	medium	1	false	sw_dan_thegn_sword	80	8	280	vik_byrdingr	1	20	200	0	280			140	heavy	-1		false	false	0	14339	true		vo_subculture_viking_nordic	att_inf_sword_land	att_special_transportship_naval	1
+sw_dan_hirdmenn_sword		0	medium	1	false	sw_dan_hirdmenn_sword	120	2	275	vik_byrdingr	1	20	200	0	305			145	heavy	-1		false	false	0	14347	true		vo_subculture_viking_nordic	att_inf_sword_land	att_special_transportship_naval	2
+sw_dan_rekkar		0	medium	1	false	sw_dan_rekkar	80	0	220	vik_byrdingr	1	20	200	0	220			110	medium	-1		false	false	0	15963	true		vo_subculture_viking_nordic	att_inf_sword_land	att_special_transportship_naval	1

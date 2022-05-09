@@ -75,3 +75,6 @@ faction	unit	name	variant	height_variation	height_scale	unit_card
 	sw_eng_marcher_spear	sw_eng_marcher_spear	eng_marcher_spearmen	0.1	1.0	eng_marcher_spearmen
 	sw_eng_mierce_hero	sw_eng_mierce_hero	eng_earls_spearmen	0.0	1.0	eng_earls_spearmen
 	sw_eng_marcher_mounted	sw_eng_marcher_mounted	eng_mailed_horsemen	0.0	1.0	eng_mailed_horsemen
+	sw_dan_sword_hero	sw_dan_sword_hero	dan_mailed_swordsmen	0.1	1.0	dan_mailed_swordsmen
+	sw_dan_hirdmenn_sword	sw_dan_hirdmenn_sword	dan_sword_hirdmen	0.1	1.0	dan_sword_hirdmen
+	sw_dan_rekkar	sw_dan_rekkar	est_norse_hersir	0.1	1.0	est_norse_hersir
