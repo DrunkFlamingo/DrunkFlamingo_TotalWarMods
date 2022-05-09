@@ -14,7 +14,7 @@ vik_eastmen_banner_1	stat_melee_attack	9.0	add
 vik_hold_firm_1	scalar_bracing	1.4	mult
 vik_focus_fire_1	stat_accuracy	10.0	add
 vik_hold_firm_1	stat_melee_defence	10.0	add
-vik_endurance_1	stat_melee_defence	15.0	add
+vik_endurance_1	stat_melee_defence	25.0	add
 vik_endurance_1	stat_melee_damage_base	0.8	mult
 vik_endurance_1	stat_morale	3.0	add
 vik_endurance_1	stat_melee_damage_ap	0.8	mult

@@ -15,5 +15,6 @@ sw_wel_longbow_hero		0	medium	1	false	sw_wel_longbow_hero	40	1	200	vik_corwg_mis
 sw_wel_longbowmen		0	light	1	false	sw_wel_longbowmen	48	0	115	vik_corwg_mis	1	20	200	0	115			60	medium	-1		false	false	0	15437	true		vo_subculture_celtic_welsh	att_inf_bow_land	att_special_transportship_naval	1
 sw_wel_skirmisher		0	light	1	false	wel_levy_javelinmen	80	0	70	vik_corwg_mis	1	20	200	0	70			20	light	-1		false	false	0	15431	true		vo_subculture_celtic_welsh	att_inf_javelin_land	att_special_transportship_naval	1
 sw_dan_hunters		0	light	1	false	sw_dan_hunters	32	0	120	vik_byrdingr_mis	1	20	200	0	120			60	light	-1		false	false	0	14224	true		vo_subculture_viking_nordic	att_inf_bow_land	att_special_transportship_naval	1
-sw_dan_archers		0	light	1	false	sw_dan_archers	60	0	80	vik_byrdingr_mis	1	20	200	0	80			25	light	-1		false	false	0	14196	true		vo_subculture_viking_nordic	att_inf_bow_land	att_special_transportship_naval	2
+sw_dan_archers		0	light	1	false	sw_dan_archers	64	0	80	vik_byrdingr_mis	1	20	200	0	80			25	light	-1		false	false	0	14196	true		vo_subculture_viking_nordic	att_inf_bow_land	att_special_transportship_naval	2
 sw_dan_skirmisher		0	light	1	false	sw_dan_skirmisher	80	0	110	vik_byrdingr_mis	1	20	200	0	110			60	light	-1		false	false	0	14294	true		vo_subculture_viking_nordic	att_inf_javelin_land	att_special_transportship_naval	1
+sw_eng_marcher_bow		0	light	1	false	sw_eng_marcher_bow	64	0	105	vik_sae_wylfing_mis	1	20	200	0	105			50	medium	-1		false	false	0	14475	true		vo_subculture_viking_english	att_inf_bow_land	att_special_transportship_naval	2

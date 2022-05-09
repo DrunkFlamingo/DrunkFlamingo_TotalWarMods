@@ -8,3 +8,4 @@ sw_est_long_axes		0	heavy	1	false	sw_est_long_axes	80	0	160	vik_byrdingr	1	20	20
 sw_est_rekkar		0	medium	1	false	sw_est_rekkar	80	0	220	vik_byrdingr	1	20	200	0	220			110	medium	-1		false	false	0	15963	true		vo_subculture_viking_nordic	att_inf_sword_land	att_special_transportship_naval	1
 sw_est_nordmenn_vikingar		0	heavy	1	false	sw_est_nordmenn_vikingar	120	0	145	vik_byrdingr	1	20	200	0	145			60	medium	-1		false	false	0	14695	true		vo_subculture_viking_nordic	att_inf_spear_land	att_special_transportship_naval	2
 sw_dan_vikingar		0	medium	1	false	sw_dan_vikingar	120	0	175	vik_byrdingr	1	20	200	0	175			90	medium	-1		false	false	0	14367	true		vo_subculture_viking_nordic	att_inf_axe_land	att_special_transportship_naval	2
+sw_eng_marcher_spear		0	medium	1	false	sw_eng_marcher_spear	120	0	130	vik_sae_wylfing	1	20	200	0	130			70	medium	-1		false	false	0	15907	true		vo_subculture_viking_english	att_inf_spear_land	att_special_transportship_naval	2

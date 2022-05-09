@@ -70,5 +70,8 @@ faction	unit	name	variant	height_variation	height_scale	unit_card
 	sw_dan_thegn_sword	sw_dan_thegn_sword	dan_sword_hersir	0.1	1.0	dan_sword_hersir
 	sw_dan_hunters	sw_dan_hunters	dan_ceorl_archers	0.1	1.0	dan_ceorl_archers
 	sw_dan_archers	sw_dan_archers	dan_archers	0.1	1.0	dan_archers
-	sw_dan_hirdmenn_mounted	sw_dan_hirdmenn_mounted	dan_jarls_horsemen	0.0	1.0	dan_jarls_horsemen
-	sw_dan_scout	sw_dan_scout	dan_scout_horsemen	0.0	1.0	dan_scout_horsemen
+	sw_dan_hirdmenn_mounted	sw_dan_hirdmenn_mounted	dan_jarls_horsemen	0.1	1.0	dan_jarls_horsemen
+	sw_dan_scout	sw_dan_scout	dan_scout_horsemen	0.1	1.0	dan_scout_horsemen
+	sw_eng_marcher_spear	sw_eng_marcher_spear	eng_marcher_spearmen	0.1	1.0	eng_marcher_spearmen
+	sw_eng_mierce_hero	sw_eng_mierce_hero	eng_earls_spearmen	0.0	1.0	eng_earls_spearmen
+	sw_eng_marcher_mounted	sw_eng_marcher_mounted	eng_mailed_horsemen	0.0	1.0	eng_mailed_horsemen

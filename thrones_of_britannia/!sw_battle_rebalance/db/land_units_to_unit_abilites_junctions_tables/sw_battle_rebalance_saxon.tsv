@@ -3,6 +3,7 @@ ability	land_unit
 form_shield_screen	sw_eng_fyrd_spear
 form_shield_screen	sw_eng_thegn_spear
 form_shield_screen	sw_eng_thegn_sword
+form_shield_screen	sw_eng_marcher_spear
 att_gen_fear_02	sw_eng_thegn_spear
 att_gen_fear_02	sw_eng_thegn_sword
 form_shield_screen	sw_eng_general
@@ -14,5 +15,10 @@ att_gen_inspire_02	sw_eng_elite_general
 com_force_concentration	sw_eng_select_fyrd_mounted
 form_shield_screen	sw_eng_select_fyrd_spear
 att_gen_brace_02	sw_eng_select_fyrd_spear
+att_gen_brace_02	sw_eng_wessex_hero
 focus_fire	sw_eng_select_fyrd_bow
 form_shield_screen	sw_eng_wessex_hero
+form_shield_screen	sw_eng_mierce_hero
+att_gen_brace_03	sw_eng_mierce_hero
+att_gen_brace_03	sw_eng_marcher_spear
+rapid_volley	sw_eng_marcher_bow

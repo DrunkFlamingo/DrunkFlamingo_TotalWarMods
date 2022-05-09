@@ -5,7 +5,7 @@ faction	unit	name	variant	height_variation	height_scale	unit_card
 	dan_northumbrian_mailed_thegns	dan_northumbrian_mailed_thegns	dan_northumbrian_mailed_thegns	0.1	1.0	dan_northumbrian_mailed_thegns
 	dan_northumbrian_thegns	dan_northumbrian_thegns	dan_northumbrian_thegns	0.1	1.0	dan_northumbrian_thegns
 	eng_fyrd_archers	eng_fyrd_archers	eng_fyrd_archers	0.1	1.0	eng_fyrd_archers
-	eng_militia_fyrd_archers	eng_militia_fyrd_archers	eng_militia_fyrd_archers	0.1	1.0	eng_militia_fyrd_archers
+	sw_eng_marcher_bow	sw_eng_marcher_bow	eng_militia_fyrd_archers	0.1	1.0	eng_militia_fyrd_archers
 	est_shield_biters	est_shield_biters	est_shield_biters	0.1	1.1	est_shield_biters
 	eng_ceorl_archers	eng_ceorl_archers	eng_ceorl_archers	0.1	1.0	eng_ceorl_archers
 	eng_north_horsemen	eng_north_horsemen	eng_north_horsemen	0.1	1.0	eng_north_horsemen
