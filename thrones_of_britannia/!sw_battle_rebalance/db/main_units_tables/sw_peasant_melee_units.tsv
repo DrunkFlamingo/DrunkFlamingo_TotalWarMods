@@ -14,3 +14,5 @@ sw_wel_taeog_spear		0	light	1	false	sw_wel_taeog_spear	160	0	65	vik_ddraig	1	20	
 sw_wel_pedyt_spear		0	light	1	false	sw_wel_pedyt_spear	160	0	95	vik_ddraig	1	20	200	0	95			50	light	-1		false	false	0	15481	true		vo_subculture_celtic_welsh	att_inf_spear_land	att_special_transportship_naval	1
 sw_dan_leidang		0	light	1	false	sw_dan_leidang	160	0	65	vik_byrdingr	1	20	200	0	65			20	light	-1		false	false	0	14248	true		vo_subculture_viking_nordic	att_inf_spear_land	att_special_transportship_naval	1
 sw_dan_danelaw_spears		0	light	1	false	sw_dan_danelaw_spears	160	0	95	vik_byrdingr	1	20	200	0	95			50	light	-1		false	false	0	14333	true		vo_subculture_viking_nordic	att_inf_spear_land	att_special_transportship_naval	1
+sw_dan_danelaw_axe		0	light	1	false	sw_dan_danelaw_axe	160	0	185	vik_byrdingr	1	20	200	0	185			100	light	-1		false	false	0	14208	true		vo_subculture_viking_nordic	att_inf_axe_land	att_special_transportship_naval	1
+sw_dan_sailors		0	light	1	false	sw_dan_sailors	160	0	110	vik_byrdingr	1	20	200	0	110			60	light	-1		false	false	0	14234	true		vo_subculture_viking_nordic	att_inf_axe_land	att_special_transportship_naval	1

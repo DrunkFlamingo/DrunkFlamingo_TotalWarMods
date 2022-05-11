@@ -1,6 +1,6 @@
 faction	unit	name	variant	height_variation	height_scale	unit_card
 #unit_variants_tables;4;db/unit_variants_tables/sw_unit_variants						
-	dan_berserkers	dan_berserkers	dan_berserkers	0.1	1.1	dan_berserkers
+	sw_dan_hero_berserker	sw_dan_hero_berserker	dan_berserkers	0.1	1.1	dan_berserkers
 	dan_jarls_huscarls	dan_jarls_huscarls	dan_jarls_huscarls	0.1	1.05	dan_jarls_huscarls
 	dan_northumbrian_mailed_thegns	dan_northumbrian_mailed_thegns	dan_northumbrian_mailed_thegns	0.1	1.0	dan_northumbrian_mailed_thegns
 	dan_northumbrian_thegns	dan_northumbrian_thegns	dan_northumbrian_thegns	0.1	1.0	dan_northumbrian_thegns

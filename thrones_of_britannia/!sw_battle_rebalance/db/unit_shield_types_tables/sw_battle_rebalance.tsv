@@ -8,3 +8,4 @@ sw_small	15	4	wood	20
 sw_reinforced	40	11	wood	65
 sw_large	35	10	wood	55
 sw_none	0	0	wood	0
+sw_spear_wall	50	0	wood	0
