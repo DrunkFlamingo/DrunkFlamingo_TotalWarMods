@@ -1,0 +1,8 @@
+faction	general_unit	unit	siege_unit_attacker	siege_unit_defender
+#units_custom_battle_permissions_tables;4;db/units_custom_battle_permissions_tables/sw_bdt_roster				
+vik_fact_bandits_mp	true	sw_bdt_general	true	true
+vik_fact_bandits_mp	false	sw_bdt_brigands	true	true
+vik_fact_bandits_mp	false	sw_bdt_footpads	true	true
+vik_fact_bandits_mp	false	sw_bdt_skirmishers	true	true
+vik_fact_bandits_mp	false	sw_bdt_slingers	true	true
+vik_fact_bandits_mp	false	sw_bdt_reavers	true	true

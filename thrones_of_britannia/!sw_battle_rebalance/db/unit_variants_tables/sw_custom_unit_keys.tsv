@@ -81,3 +81,9 @@ faction	unit	name	variant	height_variation	height_scale	unit_card
 	sw_dan_danelaw_axe	sw_dan_danelaw_axe	dan_axemen	0.1	1.0	dan_axemen
 	sw_dan_sailors	sw_dan_sailors	dan_ceorl_axemen	0.1	1.0	dan_ceorl_axemen
 	sw_dan_long_axes	sw_dan_long_axes	dan_huscarls	0.1	1.0	dan_huscarls
+	sw_bdt_general	sw_bdt_general	wel_armoured_axemen	0.1	1.0	wel_armoured_axemen
+	sw_bdt_brigands	sw_bdt_brigands	est_fighters	0.1	1.0	est_fighters
+	sw_bdt_footpads	sw_bdt_footpads	wel_valley_spearmen	0.1	1.0	wel_valley_spearmen
+	sw_bdt_skirmishers	sw_bdt_skirmishers	dan_ceorl_javelinmen	0.1	1.0	dan_ceorl_javelinmen
+	sw_bdt_slingers	sw_bdt_slingers	dan_fyrd_archers	0.1	1.0	dan_fyrd_archers
+	sw_bdt_reavers	sw_bdt_reavers	est_mailed_horsemen	0.1	1.0	est_mailed_horsemen

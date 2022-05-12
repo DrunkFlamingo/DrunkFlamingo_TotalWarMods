@@ -8,3 +8,4 @@ sw_wel_elite_general		0	heavy	1	false	sw_wel_elite_general	32	1	330	vik_ddraig	1
 sw_wel_general		0	heavy	1	false	sw_wel_general	32	1	280	vik_ddraig	1	20	200	0	240			120	very_heavy	-1		false	false	0	15498	true		vo_subculture_celtic_welsh	att_cav_melee_land	att_special_transportship_naval	3
 sw_dan_elite_general		0	heavy	1	false	sw_dan_elite_general	40	1	350	vik_dreki	1	20	200	0	350			150	very_heavy	-1		false	false	0	14321	true		vo_subculture_viking_nordic	att_inf_axe_land	att_special_transportship_naval	3
 sw_dan_general		0	heavy	1	false	sw_dan_general	40	1	320	vik_dreki	1	20	200	0	320			160	very_heavy	-1		false	false	0	14375	true		vo_subculture_viking_nordic	att_inf_sword_land	att_special_transportship_naval	3
+sw_bdt_general		0	medium	1	false	sw_bdt_general	40	0	155	vik_ddraig	1	20	200	0	155			120	very_light	-1		false	false	0	15361	true		vo_subculture_celtic_welsh	att_inf_axe_land	att_special_transportship_naval	1
