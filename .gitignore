@@ -24,5 +24,6 @@
 **/CAUIDump
 **/input
 **/output
+**/out
 log.txt
 main.lua
