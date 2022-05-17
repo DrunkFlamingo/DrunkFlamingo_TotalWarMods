@@ -165,6 +165,39 @@ local wh3_units = {
     {"wh3_main_dae_inf_chaos_furies_0", "special", 1}
 }
 
+local wh3_ror = {
+    ----------------
+	---- CATHAY ----
+	----------------
+    {"wh3_twa06_cth_inf_dragon_guard_ror_0", "rare", 1},
+	----------------
+	---- KHORNE ----
+	----------------
+    {"wh3_twa06_kho_inf_bloodletters_ror_0", "special", 2},
+	----------------
+	---- KISLEV ----
+	----------------
+    {"wh3_twa06_ksl_inf_tzar_guard_ror_0", "special", 2},
+	----------------
+	---- NURGLE ----
+	----------------
+    {"wh3_twa06_nur_inf_plaguebearers_ror_0", "special", 2},
+	-----------------------
+	---- OGRE KINGDOMS ----
+	-----------------------
+    {"wh3_twa06_ogr_inf_maneaters_ror_0", "special", 2},
+	------------------
+	---- SLAANESH ----
+	------------------
+    {"wh3_twa06_sla_inf_daemonette_ror_0", "special", 2},
+	------------------
+	---- TZEENTCH ----
+	------------------
+    {"wh3_twa06_tze_inf_pink_horrors_ror_0", "special", 2}
+}
+
+
+
 local wh2_units = {
 
     ---------------------------------------------------------------
@@ -195,13 +228,13 @@ local wh2_units = {
     {"wh_dlc04_emp_cav_knights_blazing_sun_0", "special", 2},
     {"wh_dlc04_emp_inf_flagellants_0", "special", 1},
     {"wh2_dlc13_emp_inf_huntsmen_0", "special", 1},
-    {"wh2_dlc13_emp_veh_war_wagon_0", "special", 2}, --< might move wagons to rare.
-    {"wh2_dlc13_emp_veh_war_wagon_1", "special", 3},
     --RARE
     {"wh_main_emp_art_helblaster_volley_gun", "rare", 2},
     {"wh_main_emp_art_helstorm_rocket_battery", "rare", 2},
     {"wh_main_emp_veh_luminark_of_hysh_0", "rare", 3},
     {"wh_main_emp_veh_steam_tank", "rare", 3},
+    {"wh2_dlc13_emp_veh_war_wagon_0", "rare", 1}, 
+    {"wh2_dlc13_emp_veh_war_wagon_1", "rare", 2},
     
     -------ROR-------
     --CORE
@@ -1163,6 +1196,7 @@ local units_with_special_rules = {
 local ttc = core:get_static_object("tabletopcaps")
 ttc.add_setup_callback(function()
    ttc.add_unit_list(wh3_units, true)
+   ttc.add_unit_list(wh3_ror, true)
    ttc.add_unit_list(wh2_units, true)
    for subculture_key, unit_list in pairs(subculture_defaults) do
     ttc.add_replacement_units_for_subculture(subculture_key, unit_list)
