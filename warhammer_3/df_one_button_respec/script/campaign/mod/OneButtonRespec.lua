@@ -1,3 +1,6 @@
+--no changes necessary for update 1.2
+
+
 local out = function(t)
     ModLog("DRUNKFLAMINGO: "..tostring(t).." (One Button Respec)")
 end
@@ -48,7 +51,7 @@ end
 ---@return CHARACTER_SCRIPT_INTERFACE
 local get_selected_character = function()
     local character
-    --:root:character_details_panel:character_context_parent
+    -- :root:character_details_panel:character_context_parent
     local context_parent = find_uicomponent(core:get_ui_root(), "character_details_panel", "character_context_parent")
     if context_parent then
         local character_cqi = context_parent:GetContextObjectId("CcoCampaignCharacter")
@@ -207,7 +210,7 @@ local trigger_respec_dilemma = function(faction, character)
 end
 
 
---:root:character_details_panel:character_context_parent:skill_pts_holder:skill_pts:round_small_button
+-- :root:character_details_panel:character_context_parent:skill_pts_holder:skill_pts:round_small_button
 onebuttonrespec = function()
     local ssm = cm:model():shared_states_manager()
     core:add_listener(
