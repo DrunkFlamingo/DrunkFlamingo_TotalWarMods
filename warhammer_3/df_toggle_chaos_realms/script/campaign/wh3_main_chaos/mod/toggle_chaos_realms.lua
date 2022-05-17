@@ -1,3 +1,5 @@
+--update 1.2: no changes necessary.
+
 ---@param t string
 local out = function(t)
   ModLog("DRUNKFLAMINGO: "..tostring(t).." (toggle realms)")
@@ -66,7 +68,7 @@ function realms_disabled_listeners()
 	end;
 
 
-    --:root:hud_campaign:resources_bar_holder:resources_bar:astral_projection_holder
+    -- :root:hud_campaign:resources_bar_holder:resources_bar:astral_projection_holder
  
     core:add_listener(
         "DisableRealmsUI",
@@ -84,7 +86,7 @@ function realms_disabled_listeners()
         end,
         true)
         if cm:is_new_game() then
-            --:root:events:event_layouts:incident_large:incident_large:background:footer:button_ok
+            -- :root:events:event_layouts:incident_large:incident_large:background:footer:button_ok
             core:add_listener(
                 "BelekorSilentEventClicked",
                 "ComponentLClickUp",
@@ -199,6 +201,10 @@ function setup_realms()
         check_realms_on_resume()
     end
     if print_all_listeners_for_debug then
+
+        ---@class core
+        ---@field event_listeners any
+
         for event_name, listeners in pairs(core.event_listeners) do
             for i = 1, #listeners do
             local l = listeners[i]
