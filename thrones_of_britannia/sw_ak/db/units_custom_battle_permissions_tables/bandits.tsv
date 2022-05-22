@@ -1,0 +1,23 @@
+faction	general_unit	unit	siege_unit_attacker	siege_unit_defender
+#units_custom_battle_permissions_tables;4;db/units_custom_battle_permissions_tables/bandits				
+vik_fact_bandits	true	shp_wel_armoured_axemen	true	true
+vik_fact_bandits	true	wel_armoured_axemen	true	true
+vik_fact_bandits	false	wel_valley_spearmen	true	true
+vik_fact_bandits	false	est_fighters	true	true
+vik_fact_bandits	false	dan_fyrd_archers	true	true
+vik_fact_bandits	false	dan_ceorl_javelinmen	true	true
+vik_fact_bandits	false	est_mailed_horsemen	true	true
+vik_fact_bandits	false	dan_mailed_horsemen	true	true
+vik_fact_bandits	false	dan_anglian_marauders	true	true
+vik_fact_bandits	false	dan_northumbrian_mailed_thegns	true	true
+vik_fact_bandits	false	eng_mailed_thegns	true	true
+vik_fact_bandits	false	vik_jomsvikings	true	true
+vik_fact_bandits	false	wel_mailed_axemen	true	true
+vik_fact_bandits	false	vik_thrall_axemen	true	true
+vik_fact_bandits	false	dan_jarls_huscarls	true	true
+vik_fact_bandits	false	shp_wel_valley_spearmen	true	true
+vik_fact_bandits	false	shp_est_fighters	true	true
+vik_fact_bandits	false	shp_dan_fyrd_archers	true	true
+vik_fact_bandits	false	shp_dan_ceorl_javelinmen	true	true
+vik_fact_bandits	false	dan_shield_biters	true	true
+vik_fact_bandits	false	est_berserkers	true	true

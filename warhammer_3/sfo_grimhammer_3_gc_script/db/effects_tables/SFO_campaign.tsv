@@ -1,0 +1,5 @@
+effect	icon	priority	icon_negative	category	is_positive_value_good
+#effects_tables;0;db/effects_tables/SFO_campaign					
+wh_tax_gdp_all	income.png	1	income.png	campaign	true
+wh_tax_public_order	public_order.png	2	public_order.png	campaign	true
+wh_tax_line_of_sight	agent.png	3	agent.png	campaign	true

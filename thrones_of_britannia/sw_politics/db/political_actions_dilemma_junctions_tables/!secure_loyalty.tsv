@@ -1,0 +1,6 @@
+dilemma	political_action	weighting	optimal_outcome	min_political_difference	max_political_difference
+#political_actions_dilemma_junctions_tables;3;db/political_actions_dilemma_junctions_tables/!secure_loyalty					
+sw_secure_loyalty_wants_money	secure_loyalty	8	false	0	10
+sw_secure_loyalty_wants_influence	secure_loyalty	6	false	0	10
+sw_secure_loyalty_make_an_offer	secure_loyalty	5	false	0	10
+sw_secure_loyalty_break_knees	secure_loyalty	4	false	0	10

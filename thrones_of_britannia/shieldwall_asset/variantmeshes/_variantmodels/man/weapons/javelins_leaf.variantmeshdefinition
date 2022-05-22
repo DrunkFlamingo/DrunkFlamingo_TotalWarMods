@@ -1,0 +1,7 @@
+<VARIANT_MESH>
+	<SLOT name="weapons" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/weapons/javelin_leaf_01.rigid_model_v2" />
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/weapons/javelin_leaf_02.rigid_model_v2" />
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/weapons/javelin_leaf_03.rigid_model_v2" />
+	</SLOT>
+</VARIANT_MESH>

@@ -102,6 +102,8 @@ mod.dilemma_key = "df_gnoblar_snacks_dilemma_"
 mod.dilemma_number = 1
 mod.dilemma_max_number = 2
 
+---Handles alternating between two dilemma to solve a UI bug that occurs when firing the same one multiple times.
+---@return string
 mod.get_dilemma_key = function()
     mod.dilemma_number = mod.dilemma_number + 1
     if mod.dilemma_number > mod.dilemma_max_number then
@@ -120,6 +122,9 @@ mod.ui_trigger_prefix = "gnoblar_snacks_button_pressed_context:"
 
 mod.unit_selection = {}
 
+---Can the character passed use the snack feature
+---@param character CHARACTER_SCRIPT_INTERFACE
+---@return boolean
 mod.has_snacks = function(character)
     return character:has_military_force() and character:faction():name() == cm:get_local_faction_name(true) 
     and character:faction():subculture() == "wh3_main_sc_ogr_ogre_kingdoms" and character:military_force():force_type():key() ~= "OGRE_CAMP"
@@ -155,6 +160,9 @@ mod.panels_open_callback = function(callback, ...)
         false)
 end
 
+---turn a table into a string for transit in MP games.
+---@param tab string[]
+---@return string
 local function serialize_simple_string_list(tab)
     local str = "return {"
     for i = 1, #tab do 
@@ -167,10 +175,17 @@ local function serialize_simple_string_list(tab)
     return str
 end
 
+---load a table from a string for MP games
+---@param serialized_list string
+---@return string[]
 local function restore_serialized_string_list(serialized_list)
     local load = loadstring(serialized_list)
-    local t = load()
-    return t
+    if load then
+        local t = load()
+        return t
+    else
+        return {}
+    end
 end
 
 mod.get_or_create_snack_button = function()
@@ -503,7 +518,7 @@ end
 
 mod.fill_meat_consumption_tooltip = function()
     --do return end
-    --:root:hud_campaign:unit_information_parent:unit_info_panel_holder_parent:unit_info_panel_holder:unit_information:info_parent:info_panel:list:top_bar:dy_food
+    -- :root:hud_campaign:unit_information_parent:unit_info_panel_holder_parent:unit_info_panel_holder:unit_information:info_parent:info_panel:list:top_bar:dy_food
     if mod.is_character_details_open() then
         return
     end

@@ -1,0 +1,7 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/@!override_weights.loc		
+unit_weights_onscreen_text_very_light	Bandit	true
+unit_weights_onscreen_text_heavy	Noble	true
+unit_weights_onscreen_text_medium	Veteran	true
+unit_weights_onscreen_text_very_heavy	Household	true
+unit_weights_onscreen_text_super_heavy	Heroic	true

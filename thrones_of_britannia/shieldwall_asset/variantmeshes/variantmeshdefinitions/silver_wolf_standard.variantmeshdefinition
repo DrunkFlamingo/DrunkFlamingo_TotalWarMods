@@ -1,0 +1,46 @@
+<VARIANT_MESH>
+	<SLOT name="base" >
+		<VARIANT_MESH>
+			<SLOT name="skin" >
+				<VARIANT_MESH_REFERENCE definition="variantmeshes\_variantmodels\man\skin/vik_young_a_01.VariantMeshDefinition" />
+				<VARIANT_MESH_REFERENCE definition="variantmeshes\_variantmodels\man\skin/vik_young_a_02.VariantMeshDefinition" />
+				<VARIANT_MESH_REFERENCE definition="variantmeshes\_variantmodels\man\skin/vik_young_a_03.VariantMeshDefinition" />
+				<VARIANT_MESH_REFERENCE definition="variantmeshes\_variantmodels\man\skin/vik_young_a_04.VariantMeshDefinition" />
+				<VARIANT_MESH_REFERENCE definition="variantmeshes\_variantmodels\man\skin/vik_young_a_05.VariantMeshDefinition" />
+			</SLOT>
+			<SLOT name="facial_hair" >
+				<VARIANT_MESH_REFERENCE definition="variantmeshes\_variantmodels\man\hair_beards/braid1_helm1_goatee2a_black.VariantMeshDefinition" />
+				<VARIANT_MESH_REFERENCE definition="variantmeshes\_variantmodels\man\hair_beards/braid1_helm1_goatee2a_blond.VariantMeshDefinition" />
+				<VARIANT_MESH_REFERENCE definition="variantmeshes\_variantmodels\man\hair_beards/braid1_helm1_black.VariantMeshDefinition" />
+				<VARIANT_MESH_REFERENCE definition="variantmeshes\_variantmodels\man\hair_beards/braid1_helm1_blond.VariantMeshDefinition" />
+				<VARIANT_MESH_REFERENCE definition="variantmeshes\_variantmodels\man\hair_beards/mohawk1_helm1_goatee2a_black.VariantMeshDefinition" />
+				<VARIANT_MESH_REFERENCE definition="variantmeshes\_variantmodels\man\hair_beards/mohawk1_helm1_goatee2a_blond.VariantMeshDefinition" />
+			</SLOT>
+			<SLOT name="helmets" >
+				<VARIANT_MESH_REFERENCE definition="variantmeshes\_variantmodels\man\helmets/vik_conical_nasal.VariantMeshDefinition" />
+			</SLOT>
+			<SLOT name="tops" >
+				<VARIANT_MESH model="variantmeshes\_variantmodels\man\tops\vik_mail_01/vik_mail_01_gamb_01.rigid_model_v2" />
+			</SLOT>
+			<SLOT name="trousers" >
+				<VARIANT_MESH model="variantmeshes\_variantmodels\man\trousers/eastern_noble_trousers_01_cut02.rigid_model_v2" >
+					<TINT red="0.039216" green="0.078431" blue="0.152941" random_range="0.0" />
+				</VARIANT_MESH>
+			</SLOT>
+			<SLOT name="cloaks" >
+				<VARIANT_MESH model="variantmeshes\_variantmodels\man\pelts/wolf_pelt_2.rigid_model_v2" />
+			</SLOT>
+			<SLOT name="shield" attach_point="weapon_03" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/man/shield/vik_shield_round_leather_01/vik_shield_round_leather_01.rigid_model_v2"  decal_diffuse="VariantMeshes/_VariantModels/man/patterns/round/nor_viking_round_05_white_diffuse"  decal_normal="VariantMeshes/_VariantModels/man/patterns/blank/decal_normal"  imposter_model="VariantMeshes/_VariantModels/man/shield/vik_shield_round_leather_01/vik_shield_round_leather_01.rigid_model_v2" >
+					<TINT red="0.427451" green="0.082353" blue="0.082353" random_range="0.0" />
+				</VARIANT_MESH>
+			</SLOT>
+			<SLOT name="weapon_1" attach_point="weapon_01" >
+				<VARIANT_MESH model="variantmeshes\_variantmodels\man\weapons\vik_standard_irish_01/shi_standard_mercenaries_silverwolves.rigid_model_v2" />
+			</SLOT>
+			<SLOT name="weapon_2" attach_point="weapon_02" />
+			<SLOT name="weapon_3" attach_point="weapon_04" />
+			<SLOT name="weapon_4" attach_point="weapon_05" />
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

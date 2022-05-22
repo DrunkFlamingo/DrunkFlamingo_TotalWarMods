@@ -1,0 +1,6 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/@ENGLISHMECHANICS_character_trait_levels.loc		
+character_trait_levels_onscreen_name_shieldwall_english_mechanic_hidden_3	ENGLISH MECHANIC HIDDEN	true
+character_trait_levels_onscreen_name_shieldwall_english_mechanic_hidden_2	ENGLISH MECHANIC HIDDEN	true
+character_trait_levels_colour_text_shieldwall_english_mechanic_hidden_2	NOT SHOWN SHIELDWALL	true
+character_trait_levels_colour_text_shieldwall_english_mechanic_hidden_3	NOT SHOWN SHIELDWALL	true

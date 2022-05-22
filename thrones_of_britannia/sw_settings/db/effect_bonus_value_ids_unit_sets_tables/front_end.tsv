@@ -1,0 +1,9 @@
+bonus_value_id	effect	unit_set
+#effect_bonus_value_ids_unit_sets_tables;0;db/effect_bonus_value_ids_unit_sets_tables/front_end		
+unit_mercenary_unit_set_pool_replenishment_mod	sw_fe_east_engle_2	nobles
+cost_mod	sw_fe_gwined_2	spear_units
+cost_mod	sw_fe_gwined_2	bow_units
+unit_mercenary_unit_set_pool_replenishment_mod	sw_fe_strat_clut_1	cavalry_units
+upkeep_mod	sw_fe_circenn_2	crossbow_units
+upkeep_mod	sw_fe_circenn_2	siege_units
+replenishment_percentage_bonus_multiply	sw_no_slave_replen	thralls

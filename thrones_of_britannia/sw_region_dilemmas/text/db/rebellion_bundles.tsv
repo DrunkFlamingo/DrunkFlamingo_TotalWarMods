@@ -1,0 +1,25 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/rebellion_bundles.loc		
+effect_bundles_localised_title_shield_rebellion_rioting	Peasant Riots	true
+effect_bundles_localised_description_shield_rebellion_rioting	The peasants have thrown down their tools in favour of torches, chaos reigns in this settlement.	true
+effect_bundles_localised_title_shield_rebellion_stoning	Public disorder spreads	true
+effect_bundles_localised_description_shield_rebellion_stoning	The peasants in this province have murdered your governor, further destabilising the area and further spreading unrest.	true
+effect_bundles_localised_title_shield_rebellion_nobles	Public disorder spreads	true
+effect_bundles_localised_description_shield_rebellion_nobles	The peasants are targeting the nobles in this province and murdering them, causing further unrest in the area.	true
+effect_bundles_localised_title_shield_rebellion_food_storage	Public disorder spreads	true
+effect_bundles_localised_description_shield_rebellion_food_storage	The peasants have destroyed the food stores of this province, further causing unrest in the area.	true
+effect_bundles_localised_title_shield_rebellion_bandits	Public disorder spreads	true
+effect_bundles_localised_description_shield_rebellion_bandits	Banditry rises up to fill the vacuum of authority and causes further unrest in the area.	true
+effect_bundles_localised_title_shield_force_harassed_1	Harassed	true
+effect_bundles_localised_description_shield_force_harassed_1	Too small to effectively put the rebellion down, this army is being harassed by the local peasantry!	true
+effect_bundles_localised_title_shield_force_repression_1	Repression	true
+effect_bundles_localised_description_shield_force_repression_1	The army has arrived and the riot has ended. No peasant is foolish enough to stand in the face of a trained force. 	true
+effect_bundles_localised_title_shield_rebellion_crackdown	Repression	true
+effect_bundles_localised_description_shield_rebellion_crackdown	Recently slaughtered by professional soldiers, these peasants are unwilling to take to the streets again. 	true
+effect_bundles_localised_title_sheild_rebellion_chaos	Chaos Reigns	true
+effect_bundles_localised_description_sheild_rebellion_chaos	With the governor retreating from the settlement under threat of violence, administration in this settlement has broken down entirely.	true
+effects_description_shield_no_income_this_turn	No income can be earned from this settlement this turn	true
+effect_bundles_localised_title_shield_force_rebellion_prevention	Peacekeepers	false
+effect_bundles_localised_description_shield_force_rebellion_prevention	This force is currently patrolling a settlement to prevent unrest.	false
+effect_bundles_localised_title_shield_settlement_military_patrols	Imposed Order	false
+effect_bundles_localised_description_shield_settlement_military_patrols	No peasant is foolish enough to stand against a trained force. With troops patroling the streets, peace is slowly returning to this settlement.	false

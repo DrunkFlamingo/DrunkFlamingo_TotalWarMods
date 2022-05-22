@@ -1,0 +1,6 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/event_payload_bundles.loc		
+effect_bundles_localised_description_princely_1	Gained from having the Princely trait before becoming faction leader	false
+effect_bundles_localised_title_princely_1	Kingly	false
+effect_bundles_localised_description_beloved_lord_1	Long Live the King!	false
+effect_bundles_localised_title_beloved_lord_1	Food for the Peasants	false

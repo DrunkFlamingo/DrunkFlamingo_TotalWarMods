@@ -1,0 +1,6 @@
+uniform_name	filename	battle_filename	campaign_porthole_filename	audio_armour_type	audio_weapon_type	audio_shield_type	campaign_politician_filename
+#agent_uniforms_tables;6;db/agent_uniforms_tables/new_character_art							
+ecgberht	ecgberht	ecgberht	ecgberht	chainmail	sword	wood	ecgberht
+ecgberht_30	ecgberht_30	ecgberht_30	ecgberht_30	chainmail	sword	wood	ecgberht_30
+ecgberht_45	ecgberht_45	ecgberht_45	ecgberht_45	chainmail	sword	wood	ecgberht_45
+ecgberht_60	ecgberht_60	ecgberht_60	ecgberht_60	chainmail	sword	wood	ecgberht_60

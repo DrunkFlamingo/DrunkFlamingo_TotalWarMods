@@ -1,0 +1,7 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/pop_dummies				
+sw_dummy_nobles_outnumbered	army_negative.png	1	army_negative.png	false
+sw_dummy_nobles_good	army_positive.png	1	army_positive.png	false
+sw_dummy_foreigners_local	public_order_negative.png	1	public_order_negative.png	false
+sw_dummy_foreigners_viking	army_positive.png	1	army_positive.png	false
+sw_dummy_foreigners_mercenaries	pop_foreign.png	2	pop_foreign.png	false

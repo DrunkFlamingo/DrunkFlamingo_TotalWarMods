@@ -1,0 +1,9 @@
+component	icon
+#campaign_payload_ui_details_tables;0;db/campaign_payload_ui_details_tables/event_payload_customs	
+sw_dont_repent	personality_bad.png
+sw_lose_brutish_and_tyrant_traits	personality_good.png
+sw_do_nothing	personality_bad.png
+sw_king_trait_charitable	personality_good.png
+sw_violent_action	personality_bad.png
+sw_tyranical_action	personality_bad.png
+sw_greedy_action	personality_bad.png

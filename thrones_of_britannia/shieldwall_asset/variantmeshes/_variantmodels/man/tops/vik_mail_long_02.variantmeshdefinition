@@ -1,0 +1,5 @@
+<VARIANT_MESH>
+	<SLOT name="tunics" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\tops\vik_mail_long_01/vik_mail_long_01.rigid_model_v2"  mask0="2"  mask1="0"  mask2="1" />
+	</SLOT>
+</VARIANT_MESH>

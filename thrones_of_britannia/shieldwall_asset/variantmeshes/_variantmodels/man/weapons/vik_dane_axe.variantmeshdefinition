@@ -1,0 +1,11 @@
+<VARIANT_MESH>
+	<SLOT name="weapons" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/weapons/vik_axe_two_handed_01/vik_axe_two_handed_01.rigid_model_v2" >
+			<TINT red="0.137255" green="0.07451" blue="0.047059" random_range="0.2" />
+			<TINT red="0.227451" green="0.184314" blue="0.121569" random_range="0.2" />
+			<TINT red="0.486275" green="0.431373" blue="0.254902" random_range="0.2" />
+			<TINT red="0.745098" green="0.666667" blue="0.392157" random_range="0.2" />
+			<TINT red="0.92549" green="0.823529" blue="0.486275" random_range="0.2" />
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

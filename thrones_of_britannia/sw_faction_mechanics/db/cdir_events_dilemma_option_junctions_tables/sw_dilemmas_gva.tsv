@@ -1,0 +1,22 @@
+id	dilemma_key	option_key	value
+#cdir_events_dilemma_option_junctions_tables;2;db/cdir_events_dilemma_option_junctions_tables/sw_dilemmas_gva			
+32111	shield_invasion_danegeld	VAR_CHANCE	100
+32112	shield_invasion_danegeld_GVA	VAR_CHANCE	100
+32113	shield_training_forging	VAR_CHANCE	100
+32114	shield_training_hunters	VAR_CHANCE	100
+32115	shield_foreign_occupation	VAR_CHANCE	100
+32116	shield_foreign_occupation_here_king	VAR_CHANCE	100
+32117	shield_foreign_port	VAR_CHANCE	100
+32118	shield_foreign_port_GVA	VAR_CHANCE	100
+32119	shield_foreign_mercenaries	VAR_CHANCE	100
+32120	shield_foreign_defeat	VAR_CHANCE	100
+32121	shield_invasion_danegeld	GEN_TARGET_NONE	
+32122	shield_invasion_danegeld_GVA	GEN_TARGET_NONE	
+32123	shield_training_forging	GEN_TARGET_NONE	
+32124	shield_training_hunters	GEN_TARGET_NONE	
+32125	shield_foreign_occupation	GEN_TARGET_NONE	
+32126	shield_foreign_occupation_here_king	GEN_TARGET_NONE	
+32127	shield_foreign_port	GEN_TARGET_NONE	
+32128	shield_foreign_port_GVA	GEN_TARGET_NONE	
+32129	shield_foreign_mercenaries	GEN_TARGET_NONE	
+32130	shield_foreign_defeat	GEN_TARGET_NONE	

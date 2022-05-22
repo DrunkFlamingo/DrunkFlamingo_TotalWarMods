@@ -1,0 +1,33 @@
+campaign_difficulty_handicap	human	effect	effect_scope	effect_value	optional_campaign_key
+#campaign_difficulty_handicap_effects_tables;0;db/campaign_difficulty_handicap_effects_tables/shieldwall_cdh_effects					
+-1	false	vik_replenishment_mod	faction_to_force_own	20.0	
+0	false	vik_replenishment_mod	faction_to_force_own	20.0	
+1	false	vik_replenishment_mod	faction_to_force_own	20.0	
+2	false	vik_replenishment_mod	faction_to_force_own	20.0	
+3	false	vik_replenishment_mod	faction_to_force_own	20.0	
+1	true	vik_replenishment_mod	faction_to_force_own	20.0	
+0	true	vik_replenishment_mod	faction_to_force_own	20.0	
+-1	true	vik_replenishment_mod	faction_to_force_own	10.0	
+-1	false	vik_resistance_to_occupation_mod	faction_to_faction_own	0.0	
+0	false	vik_resistance_to_occupation_mod	faction_to_faction_own	20.0	
+1	false	vik_resistance_to_occupation_mod	faction_to_faction_own	30.0	
+1	true	vik_resistance_to_occupation_mod	faction_to_faction_own	0.0	
+2	false	vik_resistance_to_occupation_mod	faction_to_faction_own	40.0	
+3	false	vik_resistance_to_occupation_mod	faction_to_faction_own	40.0	
+-1	false	vik_corruption_mod	faction_to_faction_own	-40.0	
+0	false	vik_corruption_mod	faction_to_faction_own	-40.0	
+1	false	vik_corruption_mod	faction_to_faction_own	-50.0	
+1	true	vik_corruption_mod	faction_to_faction_own	0.0	
+2	false	vik_corruption_mod	faction_to_faction_own	-60.0	
+3	false	vik_corruption_mod	faction_to_faction_own	-70.0	
+-1	false	vik_allegiance_public_order_mod_negative	faction_to_province_own	-50.0	
+0	false	vik_allegiance_public_order_mod_negative	faction_to_province_own	-50.0	
+1	false	vik_allegiance_public_order_mod_negative	faction_to_province_own	-50.0	
+2	false	vik_allegiance_public_order_mod_negative	faction_to_province_own	-50.0	
+3	false	vik_allegiance_public_order_mod_negative	faction_to_province_own	-50.0	
+1	false	vik_public_order_new_positive_base	faction_to_region_own	2.0	
+0	false	vik_public_order_new_positive_base	faction_to_region_own	2.0	
+1	true	vik_public_order_new_positive_base	faction_to_region_own	2.0	
+0	true	vik_public_order_new_positive_base	faction_to_region_own	2.0	
+2	false	vik_public_order_new_positive_base	faction_to_region_own	4.0	
+3	false	vik_public_order_new_positive_base	faction_to_region_own	6.0	

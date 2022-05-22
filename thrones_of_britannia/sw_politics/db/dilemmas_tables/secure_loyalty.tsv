@@ -1,0 +1,6 @@
+key	generate	localised_description	localised_title	ui_icon	ui_image	prioritized	event_category
+#dilemmas_tables;3;db/dilemmas_tables/secure_loyalty							
+sw_secure_loyalty_wants_money	false			rom_event_document.png	vik_event_subject_arrives	false	political_action_outcome
+sw_secure_loyalty_wants_influence	false			rom_event_document.png	vik_event_subject_arrives	false	political_action_outcome
+sw_secure_loyalty_make_an_offer	false			rom_event_document.png	vik_event_subject_arrives	false	political_action_outcome
+sw_secure_loyalty_break_knees	false			rom_event_document.png	vik_event_subject_arrives	false	political_action_outcome

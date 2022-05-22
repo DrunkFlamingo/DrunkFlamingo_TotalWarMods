@@ -1,0 +1,8 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/riot_region_events_dummy_payloads.loc		
+campaign_payload_ui_details_description_sw_nobles_slaughtered	Lose noble population	false
+campaign_payload_ui_details_description_sw_peasants_slaughtered	Lose peasant population	false
+campaign_payload_ui_details_description_sw_monks_slaughtered	Our Clergy have been murdered!	false
+campaign_payload_ui_details_description_sw_slaves_slaughtered	Slaves lost!	false
+campaign_payload_ui_details_description_sw_bandits_arrive	Bandits are raiding this region!	false
+campaign_payload_ui_details_description_sw_riots_soldiers_stationed	No further negative events will occur while our army remains in this Settlement	false

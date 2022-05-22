@@ -1,0 +1,10 @@
+<VARIANT_MESH>
+	<SLOT name="weapons" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\weapons\vik_spear_leaf_01/vik_spear_leaf_01.rigid_model_v2" >
+			<TINT red="0.705882" green="0.501961" blue="0.321569" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\weapons\vik_spear_winged_01/vik_spear_winged_01.rigid_model_v2" >
+			<TINT red="0.705882" green="0.501961" blue="0.321569" random_range="0.0" />
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

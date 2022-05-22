@@ -1,0 +1,10 @@
+id	dilemma_key	option_key	value
+#cdir_events_dilemma_option_junctions_tables;2;db/cdir_events_dilemma_option_junctions_tables/sw_faction_mechanics_tribute			
+33011	sw_spend_tribute_authority_or_foreigners	GEN_TARGET_NONE	
+33012	sw_spend_tribute_sea_captain	GEN_TARGET_NONE	
+33013	sw_spend_tribute_sea_king	GEN_TARGET_NONE	
+33014	sw_spend_tribute_vikingar	GEN_TARGET_NONE	
+33015	sw_spend_tribute_authority_or_foreigners	VAR_CHANCE	100
+33016	sw_spend_tribute_sea_captain	VAR_CHANCE	100
+33017	sw_spend_tribute_sea_king	VAR_CHANCE	100
+33018	sw_spend_tribute_vikingar	VAR_CHANCE	100

@@ -1,0 +1,15 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/bullet_points.loc		
+ui_unit_bullet_point_enums_onscreen_name_vik_bonecrushing_1	Effective against Infantry	true
+ui_unit_bullet_point_enums_onscreen_name_vik_bonecrushing_2	Excels against Infantry	true
+ui_unit_bullet_point_enums_onscreen_name_vik_bonecrushing_3	Bonecrushing Strikes	true
+ui_unit_groupings_tooltip_att_inf_pike_land	Long Axes allow these men to cleave through shields and bone with ease. They are deadly against infantry, but unable to defend themselves from ranged weapons.	false
+ui_unit_groupings_onscreen_att_inf_pike_land	Long Axe Infantry	false
+ui_unit_groupings_onscreen_inf_pik	Long Axe Infantry	false
+ui_unit_groupings_tooltip_inf_pik	Long Axes allow these men to cleave through shields and bone with ease. They are deadly against infantry, but unable to defend themselves from ranged weapons.	false
+unit_class_tooltip_inf_pik	Long Axes allow these men to cleave through shields and bone with ease. They are deadly against infantry, but unable to defend themselves from ranged weapons.	false
+unit_class_onscreen_inf_pik	Long Axe Infantry	false
+ui_unit_bullet_point_enums_onscreen_name_sw_dane_axe_infantry_bonus_1	Heavy Strikes	false
+ui_unit_bullet_point_enums_onscreen_name_sw_dane_axe_infantry_bonus_2	Bonecrushing Strikes	false
+ui_unit_bullet_point_enums_onscreen_name_sw_sword_infantry_bonus_1	Effective Duelists	false
+ui_unit_bullet_point_enums_onscreen_name_sw_sword_infantry_bonus_2	Expert Duelists	false

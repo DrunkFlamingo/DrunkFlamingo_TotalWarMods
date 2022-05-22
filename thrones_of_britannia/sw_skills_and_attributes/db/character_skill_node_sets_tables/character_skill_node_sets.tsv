@@ -1,0 +1,19 @@
+key	agent_key	campaign_key	faction_key	subculture	for_army	for_navy
+#character_skill_node_sets_tables;1;db/character_skill_node_sets_tables/character_skill_node_sets						
+vik_dummy_army					true	false
+vik_dummy_champion_skills	champion	vik_attila			false	false
+vik_dummy_navy					false	true
+vik_dummy_priest_skills	dignitary	vik_attila			false	false
+vik_dummy_spy_skills	spy	vik_attila			false	false
+vik_general_skills	general	vik_attila			false	false
+vik_general_skills_circenn	general	vik_attila	vik_fact_circenn		false	false
+vik_general_skills_dyflin	general	vik_attila	vik_fact_dyflin		false	false
+vik_general_skills_east_engle	general	vik_attila	vik_fact_east_engle		false	false
+vik_general_skills_gwined	general	vik_attila	vik_fact_gwined		false	false
+vik_general_skills_mide	general	vik_attila	vik_fact_mide		false	false
+vik_general_skills_mierce	general	vik_attila	vik_fact_mierce		false	false
+vik_general_skills_northymbre	general	vik_attila	vik_fact_northymbre		false	false
+vik_general_skills_strat_clut	general	vik_attila	vik_fact_strat_clut		false	false
+vik_general_skills_sudreyar	general	vik_attila	vik_fact_sudreyar		false	false
+vik_general_skills_west_seaxe	general	vik_attila	vik_fact_west_seaxe		false	false
+vik_general_skills_northleode	general	vik_attila	vik_fact_northleode		false	false

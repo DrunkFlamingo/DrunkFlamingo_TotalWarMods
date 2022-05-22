@@ -1,0 +1,22 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/shieldwall_scripted_effects_localisations.loc		
+effects_description_shield_scripted_pop_cap_serf	%+n Peasant Manpower	true
+effects_description_shield_scripted_pop_cap_lord	%+n Noble Manpower	true
+effects_description_shield_scripted_pop_cap_foreign	%+n Foreign Warriors	true
+effects_description_shield_scripted_pop_cap_monk	%+n Clergy Capacity	true
+effects_description_shield_scripted_household_growth	%+n Household Growth (Owner of this Estate)	true
+effects_description_shield_scripted_pop_growth_serf	%+n% Population Growth for Peasants	true
+effects_description_shield_scripted_pop_growth_lord	%+n% Population Growth for Noblemen	true
+effects_description_shield_scripted_pop_growth_monk	%+n% Faster training of Clergy	true
+effects_description_hof_event_blessing	Inspires this settlement with religious blessings	true
+effects_description_archery_event_training	Training Drills can grant additional units	true
+effects_description_athletics_event_training	Training Drills can grant additional units	true
+effects_description_smith_event_training	Smiths may produce items, units or industry bonuses.	true
+effects_description_court_event_tensions	Trials may take place here	true
+effects_description_merchant_event_scams	Merchants offer opportunities to accelerate your earnings	true
+effects_description_resupply_event_supply_lines	%+n Supplies from Supply Lines	true
+effects_description_church_event_conversion	May convert Pagan Characters	true
+effects_description_garrison_event_drills	Drills allow for the training of veteran soldiers	true
+effects_description_garrison_event_sparing	Sparing develops our military skill	true
+effects_description_traits_promotes_eduiated	May grant Scholarly Traits	true
+effects_description_traits_upgrades_educated	%+n Authority for Characters with the Educated Trait	true

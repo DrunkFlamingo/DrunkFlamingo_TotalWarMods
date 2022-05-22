@@ -1,0 +1,20 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/diplomatic_effects				
+sw_diplomacy_all_gva	diplomacy_positive.png	12	diplomacy_negative.png	false
+sw_diplomacy_all_vsk	diplomacy_positive.png	13	diplomacy_negative.png	false
+sw_diplomacy_all_sax	diplomacy_positive.png	14	diplomacy_negative.png	false
+sw_diplomacy_all_iri	diplomacy_positive.png	15	diplomacy_negative.png	false
+sw_diplomacy_all_welsh	diplomacy_positive.png	32	diplomacy_negative.png	false
+sw_diplomacy_all_scots	diplomacy_positive.png	12	diplomacy_negative.png	false
+sw_diplomacy_all_invaders	diplomacy_positive.png	13	diplomacy_negative.png	false
+sw_diplomacy_all_gva_hidden		14		true
+sw_diplomacy_all_vsk_hidden		15		true
+sw_diplomacy_all_sax_hidden		12		true
+sw_diplomacy_all_iri_hidden		13		true
+sw_diplomacy_all_welsh_hidden		32		true
+sw_diplomacy_all_scots_hidden		15		true
+sw_diplomacy_all_invaders_hidden		14		true
+sw_diplomacy_dummy_all_vikings	diplomacy_positive.png	21	diplomacy_negative.png	false
+sw_diplomacy_dummy_all_non_vikings	diplomacy_positive.png	22	diplomacy_negative.png	false
+sw_diplomacy_all_vikings	diplomacy_positive.png	21	diplomacy_negative.png	false
+sw_diplomacy_all_non_vikings	diplomacy_positive.png	22	diplomacy_negative.png	false

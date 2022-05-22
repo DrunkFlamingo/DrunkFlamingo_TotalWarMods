@@ -1,0 +1,10 @@
+<VARIANT_MESH>
+	<SLOT name="tops" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\tops\vik_tunic_03/saka_cata_2.rigid_model_v2" />
+	</SLOT>
+	<SLOT name="tunics" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\tops\vik_tunic_03/eastern_basic_tunic_01_cut02.rigid_model_v2" >
+			<TINT red="0.133333" green="0.023529" blue="0.023529" random_range="0.0" />
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

@@ -1,0 +1,5 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/dummy_food_effects				
+shieldwall_pop_growth	payload_adopt.png	999	payload_adopt_negative.png	false
+shieldwall_pop_famine	attrition.png	998	attrition.png	false
+shieldwall_store_food	vik_mill_effect_bundles.png	997	vik_mill_effect_bundles.png	false

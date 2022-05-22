@@ -1,0 +1,22 @@
+building	effect	effect_scope	value	value_damaged	value_ruined
+#building_effects_junction_tables;3;db/building_effects_junction_tables/building_effect_farm					
+vik_apple_ash_1	vik_public_order_new_positive_buildings	province_to_region_own	3.0	1.0	0.0
+vik_apple_ash_1	vik_siege_region_kill_turn_mod	region_to_region_own_provincewide	1.0	1.0	0.0
+vik_apple_ash_1	vik_supplies_buildings	province_to_army_own	2.0	1.0	0.0
+vik_apple_ash_1	vik_fame	faction_to_faction_own_unseen	5.0	2.0	0.0
+vik_apple_ash_2	vik_public_order_new_positive_buildings	province_to_region_own	4.0	2.0	0.0
+vik_apple_ash_2	vik_siege_region_kill_turn_mod	region_to_region_own_provincewide	1.0	1.0	0.0
+vik_apple_ash_2	vik_supplies_buildings	province_to_army_own	3.0	2.0	0.0
+vik_apple_ash_2	vik_fame	faction_to_faction_own_unseen	10.0	5.0	0.0
+vik_apple_ash_3	vik_public_order_new_positive_buildings	province_to_region_own	5.0	3.0	0.0
+vik_apple_ash_3	vik_siege_region_kill_turn_mod	region_to_region_own_provincewide	1.0	1.0	0.0
+vik_apple_ash_3	vik_supplies_buildings	province_to_army_own	4.0	2.0	0.0
+vik_apple_ash_3	vik_fame	faction_to_faction_own_unseen	20.0	10.0	0.0
+vik_fogou_1	vik_siege_defence_holdout_time	region_to_region_own	1.0	0.0	0.0
+vik_fogou_1	vik_supplies_buildings	province_to_army_own	2.0	1.0	0.0
+vik_fogou_2	vik_siege_defence_holdout_time	region_to_region_own	1.0	0.0	0.0
+vik_fogou_2	vik_siege_region_kill_turn_mod	region_to_region_own	1.0	1.0	0.0
+vik_fogou_2	vik_supplies_buildings	province_to_army_own	3.0	2.0	0.0
+vik_fogou_3	vik_siege_defence_holdout_time	region_to_region_own	2.0	1.0	0.0
+vik_fogou_3	vik_siege_region_kill_turn_mod	region_to_region_own	1.0	1.0	0.0
+vik_fogou_3	vik_supplies_buildings	province_to_army_own	4.0	2.0	0.0

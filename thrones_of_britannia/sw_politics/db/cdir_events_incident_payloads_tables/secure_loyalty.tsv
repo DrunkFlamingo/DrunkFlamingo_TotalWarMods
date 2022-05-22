@@ -1,0 +1,4 @@
+id	incident_key	payload_key	value
+#cdir_events_incident_payloads_tables;2;db/cdir_events_incident_payloads_tables/secure_loyalty			
+41647303	sw_secure_loyalty_fears_brute	LOYALTY	AMOUNT[2]
+41647304	sw_secure_loyalty_fears_tyrant	LOYALTY	AMOUNT[3]

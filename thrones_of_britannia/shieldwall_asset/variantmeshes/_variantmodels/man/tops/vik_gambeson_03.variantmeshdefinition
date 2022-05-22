@@ -1,0 +1,5 @@
+<VARIANT_MESH>
+	<SLOT name="tunics" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/tops/vik_gamb_01/vik_gamb_01.rigid_model_v2"  imposter_model="VariantMeshes/_VariantModels/man/tops/vik_tunic_03/vik_tunic_03.rigid_model_v2"  mask0="1"  mask1="2"  mask2="0" />
+	</SLOT>
+</VARIANT_MESH>

@@ -1,0 +1,4 @@
+id	incident_key	payload_key	value
+#cdir_events_incident_payloads_tables;2;db/cdir_events_incident_payloads_tables/disloyal_traits			
+41647301	sw_politics_becomes_corrupt	GIVE_TRAIT	TRAIT_KEY[shield_brute_corrupt];
+41647302	sw_politics_becomes_treasonous	GIVE_TRAIT	TRAIT_KEY[shield_tyrant_treasonous];

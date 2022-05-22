@@ -1,0 +1,5 @@
+effect_bundle_key	effect_key	effect_scope	value	advancement_stage
+#effect_bundles_to_effects_junctions_tables;2;db/effect_bundles_to_effects_junctions_tables/!!civil_war				
+vik_civil_war_effects	vik_allegiance_usurper	faction_to_faction_own	5.0	start_turn_completed
+vik_civil_war_effects	vik_faction_leader_influence_mod_negative	faction_to_faction_own_unseen	-1.0	start_turn_completed
+vik_civil_war_effects	sw_banditry	faction_to_region_own	1.0	start_turn_completed

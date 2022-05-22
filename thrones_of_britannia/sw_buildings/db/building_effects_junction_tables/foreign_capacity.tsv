@@ -1,0 +1,17 @@
+building	effect	effect_scope	value	value_damaged	value_ruined
+#building_effects_junction_tables;3;db/building_effects_junction_tables/foreign_capacity					
+vik_borough_1	shield_scripted_pop_cap_foreign	region_to_region_own	160.0	160.0	0.0
+vik_borough_2	shield_scripted_pop_cap_foreign	region_to_region_own	200.0	200.0	0.0
+vik_borough_3	shield_scripted_pop_cap_foreign	region_to_region_own	240.0	240.0	0.0
+vik_borough_4	shield_scripted_pop_cap_foreign	region_to_region_own	300.0	300.0	0.0
+vik_borough_5	shield_scripted_pop_cap_foreign	region_to_region_own	450.0	450.0	0.0
+vik_foreigners_1	shield_scripted_pop_cap_foreign	region_to_region_own	80.0	80.0	0.0
+vik_foreigners_2	shield_scripted_pop_cap_foreign	region_to_region_own	120.0	120.0	0.0
+vik_foreigners_3	shield_scripted_pop_cap_foreign	region_to_region_own	160.0	160.0	0.0
+vik_hof_1	shield_scripted_pop_cap_foreign	region_to_region_own	60.0	0.0	0.0
+vik_hof_2	shield_scripted_pop_cap_foreign	region_to_region_own	60.0	0.0	0.0
+vik_longphort_1	shield_scripted_pop_cap_foreign	region_to_region_own	80.0	0.0	0.0
+vik_longphort_2	shield_scripted_pop_cap_foreign	region_to_region_own	100.0	0.0	0.0
+vik_longphort_3	shield_scripted_pop_cap_foreign	region_to_region_own	120.0	0.0	0.0
+vik_longphort_4	shield_scripted_pop_cap_foreign	region_to_region_own	160.0	0.0	0.0
+vik_longphort_5	shield_scripted_pop_cap_foreign	region_to_region_own	200.0	0.0	0.0

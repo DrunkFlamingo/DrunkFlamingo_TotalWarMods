@@ -1,0 +1,10 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/@ENGLISHMECHANICS_decrees.loc		
+decrees_description_shield_decree_saxon_military_4	Requires the Contentment of your Governors	true
+decrees_description_shield_decree_saxon_military_1	Not Enough Peasant Population	true
+decrees_description_shield_decree_saxon_military_3	Not Enough Mercenary Population	true
+decrees_description_shield_decree_saxon_military_2	Not Enough Noble Population	true
+decrees_title_shield_decree_saxon_military_4	Defensive Powerup	true
+decrees_title_shield_decree_saxon_military_3	Hire Foreign Warriors	true
+decrees_title_shield_decree_saxon_military_2	Call Thegns to War	true
+decrees_title_shield_decree_saxon_military_1	Levy the Fyrd	true

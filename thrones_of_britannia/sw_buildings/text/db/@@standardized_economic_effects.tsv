@@ -1,0 +1,10 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/@@standardized_economic_effects.loc		
+effects_description_sw_buildings_abbey_income_mod	%+n% Income from Abbeys	false
+effects_description_sw_buildings_sheep_income_mod	%+n% Income from Grazing Land	false
+effects_description_sw_buildings_cattle_income_mod	%+n% Income from Cattle	false
+effects_description_sw_buildings_beekeeping_income_mod	%+n% Income from Beekeeping	false
+effects_description_sw_income_church_mod	%+n% Income (CHURCH)	false
+effects_description_sw_income_agriculture_mod	%+n% Income (FARMING)	false
+effects_description_sw_income_industry_mod	%+n% Income (INDUSTRY)	false
+effects_description_sw_income_commerce_mod	%+n% Income (COMMERCE)	false

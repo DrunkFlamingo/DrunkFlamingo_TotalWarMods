@@ -1,0 +1,20 @@
+political_action_key	icon	base_cost_percentage	minimum_cost	rank_multiplier	maximum_cost
+#political_actions_tables;3;db/political_actions_tables/political_actions					
+adopt	icons_politics_adopt	400.0	250.0	1.0	1000.0
+assassinate	icons_politics_assassinate	1000.0	675.0	1.0	2000.0
+become_retainer	[PH] - NOT TRANSLATED	100.0	1.0	1.0	100.0
+borrow_family_money	[PH] - NOT TRANSLATED	100.0	1.0	1.0	100.0
+default	[PH] - NOT TRANSLATED	0.0	1.0	1.0	100.0
+diminish_popularity	icons_politics_diminish_pop	400.0	312.0	1.0	600.0
+divorce	icons_politics_divorce	200.0	200.0	1.0	600.0
+embezzle_funds	icons_politics_embezzle	25.0	25.0	3.0	100.0
+gather_support	icons_politics_gather_support	500.0	0.0	1.0	4000.0
+marriage	icons_politics_arrange_marriage	200.0	200.0	1.0	600.0
+return_home	[PH] - NOT TRANSLATED	100.0	1.0	1.0	100.0
+secure_loyalty	icons_politics_secure_loyalty	600.0	500.0	1.0	1000.0
+seek_office	[PH] - NOT TRANSLATED	100.0	0.0	1.0	0.0
+seek_wife	icons_politics_seek_bride	200.0	200.0	1.0	600.0
+strip_estate	[PH] - NOT TRANSLATED	400.0	250.0	1.0	600.0
+strip_estate_agricultural	[PH]	0.0	0.0	1.0	0.0
+strip_estate_estate_building	[PH]	0.0	0.0	1.0	0.0
+strip_estate_religious	[PH]	0.0	0.0	1.0	0.0

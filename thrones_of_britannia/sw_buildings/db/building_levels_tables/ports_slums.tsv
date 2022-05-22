@@ -1,0 +1,39 @@
+level_name	chain	level	create_time	create_cost	upkeep_cost	commodity	commodity_vol	only_in_capital	military_prestige	naval_prestige	economic_prestige	enlightenment_prestige	destruction_terminator	faction_unique	religion_requirement	first_in_world_bundle	resource_requirement	unique_index	can_convert	building_instance_key	audio_building_type	should_show_building_level_in_ui_for_technology	health_override	development_point_cost	has_aqueduct	can_be_damaged	requires_primary_slot_in_group
+#building_levels_tables;11;db/building_levels_tables/ports_slums																											
+att_abandoned_0	att_abandoned	0	1	0	0		0	false	0	0	0	0	false	false				11926	true		town	true	0.0	0	false	false	
+att_slum_0	att_Slum	0	1	0	0		0	false	0	0	0	0	false	false				360	true		town	true	0.0	0	false	true	
+vik_fishing_1	vik_fishing	0	9	600	0		0	false	0	0	0	0	true	false				16336	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_fishing_2	vik_fishing	1	6	700	0		0	false	0	0	0	0	false	false				16337	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_fishing_3	vik_fishing	2	8	800	0		0	false	0	0	0	0	false	false				16343	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_fishing_4	vik_fishing	3	8	900	0		0	false	0	0	0	0	false	false				16350	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_fishing_5	vik_fishing	4	8	1000	0		0	false	0	0	0	0	false	false				16357	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_fishing_b_2	vik_fishing	1	6	800	0		0	false	0	0	0	0	false	false				17396	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_fishing_b_3	vik_fishing	2	8	900	0		0	false	0	0	0	0	false	false				17406	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_fishing_b_4	vik_fishing	3	8	1000	0		0	false	0	0	0	0	false	false				16992	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_fishing_b_5	vik_fishing	4	8	1100	0		0	false	0	0	0	0	false	false				16998	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_port_fish_1	vik_port	0	6	900	0		0	false	0	0	0	0	false	false				15612	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_port_fish_2	vik_port	1	9	1050	0		0	false	0	0	0	0	false	false				15616	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_port_fish_3	vik_port	2	12	1200	0		0	false	0	0	0	0	false	false				15620	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_port_herring_1	vik_herring_port	0	4	1000	0		0	false	0	0	0	0	false	false				15627	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_port_herring_2	vik_herring_port	1	8	1100	0		0	false	0	0	0	0	false	false				15631	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_port_herring_3	vik_herring_port	2	12	1200	0		0	false	0	0	0	0	false	false				15634	true	vik_port	fishing_port	true	0.0	0	false	true	
+vik_port_military_1	vik_viking_port	0	16	1200	0		0	false	0	0	0	0	true	false			res_vik_wood	15577	true	vik_port	military_port	true	0.0	0	false	true	
+vik_port_military_2	vik_viking_port	1	12	1300	0		0	false	0	0	0	0	false	false			res_vik_wood	15621	true	vik_port	military_port	true	0.0	0	false	true	
+vik_port_military_b_2	vik_viking_port	1	12	1300	0		0	false	0	0	0	0	false	false			res_vik_wood	15622	true	vik_port	military_port	true	0.0	0	false	true	
+vik_port_military_3	vik_viking_port	2	16	1400	0		0	false	0	0	0	0	false	false			res_vik_wood	15623	true	vik_port	military_port	true	0.0	0	false	true	
+vik_port_military_b_3	vik_viking_port	2	16	1400	0		0	false	0	0	0	0	false	false			res_vik_wood	15624	true	vik_port	military_port	true	0.0	0	false	true	
+vik_port_trade_1	vik_trade_port	0	8	900	0		0	false	0	0	0	0	false	false				15595	true	vik_port	trade_port	true	0.0	0	false	true	
+vik_port_trade_2	vik_trade_port	1	6	1000	0		0	false	0	0	0	0	false	false				15605	true	vik_port	trade_port	true	0.0	0	false	true	
+vik_port_trade_3	vik_trade_port	2	12	1100	0		0	false	0	0	0	0	false	false				15609	true	vik_port	trade_port	true	0.0	0	false	true	
+vik_trade_1	vik_trade	0	6	1200	0		0	false	0	0	0	0	true	false				16361	true	vik_resource	workshop	true	0.0	0	false	true	
+vik_trade_2	vik_trade	1	12	1400	0		0	false	0	0	0	0	false	false				16366	true	vik_resource	workshop	true	0.0	0	false	true	
+vik_trade_3	vik_trade	2	12	1500	0		0	false	0	0	0	0	false	false				16371	true	vik_resource	workshop	true	0.0	0	false	true	
+vik_trade_4	vik_trade	3	9999	9999	0		0	false	0	0	0	0	false	false				16379	true	vik_resource	workshop	true	0.0	0	false	true	
+vik_trade_5	vik_trade	4	9999	9999	0		0	false	0	0	0	0	false	false				16385	true	vik_resource	workshop	true	0.0	0	false	true	
+vik_trade_b_2	vik_trade	1	9999	9999	0		0	false	0	0	0	0	false	false				17510	true	vik_resource	workshop	true	0.0	0	false	true	
+vik_trade_b_3	vik_trade	2	9999	9999	0		0	false	0	0	0	0	false	false				17518	true	vik_resource	workshop	true	0.0	0	false	true	
+vik_trade_b_4	vik_trade	3	9999	9999	0		0	false	0	0	0	0	false	false				17099	true	vik_resource	workshop	true	0.0	0	false	true	
+vik_trade_b_5	vik_trade	4	9999	9999	0		0	false	0	0	0	0	false	false				17103	true	vik_resource	workshop	true	0.0	0	false	true	
+vik_island_monastery_1	vik_island_monastery	0	5	1200	10		0	false	0	0	0	0	true	false				17564	true	vik_port	church	true	0.0	0	false	true	
+vik_island_monastery_2	vik_island_monastery	1	7	2000	20		0	false	0	0	0	0	false	false				17572	true	vik_port	church	true	0.0	0	false	true	
+vik_island_monastery_3	vik_island_monastery	2	9	4200	30		0	false	0	0	0	0	false	false				17580	true	vik_port	church	true	0.0	0	false	true	

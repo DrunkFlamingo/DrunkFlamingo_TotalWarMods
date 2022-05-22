@@ -1,0 +1,6 @@
+key	localised_description	localised_title	ui_icon	bundle_target
+#effect_bundles_tables;1;db/effect_bundles_tables/northleode_plot				
+sw_northleode_king_of_nothing			personality_bad.png	faction
+sw_northleode_friend_of_mercia			diplomacy.png	faction
+sw_northleode_protector			diplomacy.png	faction
+sw_northumbria_free_army			personality_bad.png	character

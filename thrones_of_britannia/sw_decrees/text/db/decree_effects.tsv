@@ -1,0 +1,29 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/decree_effects.loc		
+effects_description_sw_decree_refresh_movement	Replenish movement points	false
+effects_description_sw_decree_select_fyrd_levy	Adds Select Fyrd units to the recruitment pool	false
+effects_description_sw_decree_fyrd_levy	Adds Fyrd units to the recruitment pool	false
+effects_description_sw_decree_movement_speed_bonus	%+n% campaign movement range	false
+effects_description_sw_decree_decree_cost	%+n% Treasury cost to issue Decrees	false
+effects_description_sw_decree_loyalty	%+n Loyalty	false
+effects_description_sw_decree_level_up_characters	All characters below rank 5 gain 1 rank	false
+effects_description_sw_hoards_loyalty	%+n Loyalty	false
+effects_description_sw_hoards_income	%+n Income per Turn	false
+effects_description_sw_hoards_empty	Your hoards are completely spent!	false
+effects_description_sw_decree_hoard_added	Adds gold to the hoard, granting income every turn but increasing disloyalty in your faction.	false
+effects_description_sw_decree_recruitment_cost	%+n% Recruitment Cost	false
+effects_description_sw_decree_thegns	Adds Thegn units to the recruitment pool	false
+effects_description_sw_hoards_empty_jealous	As your hoard grows your nobles will become jealous of your wealth.	false
+effects_description_sw_hoards_empty_tax	As your hoard grows your tax income will increase.	false
+effects_description_sw_decree_hoard_explained	Hoards can be spent on decrees to purchase support.	false
+effects_description_sw_decree_marcher	Adds Marcher units to the recruitment pool	false
+effects_description_sw_decree_no_penalty_wrong_allegience	%+n% reduction in wrong allegiance penalty	false
+effects_description_sw_decree_morale_against_vikings	%+n morale when fighting against Vikings	false
+effects_description_sw_decree_charge_against_scottish	%+n Charge bonus when fighting the Scottish 	false
+effects_description_sw_decree_skill_against_saxons	%+n Melee Skill when fighting Anglo Saxons	false
+effects_description_sw_decree_enables_confederation	Enables confederation of Anglo Saxon factions	false
+effects_description_sw_decree_unlocks_penteulu	Adds a Penteulu unit to the recruitment pool	false
+effects_description_sw_decree_taeog	Adds Taeog units to the recruitment pool	false
+effects_description_sw_decree_cavalry_except_hero	Adds Cavalry units (except Penteulu) to the recruitment pool	false
+effects_description_sw_decree_ends_riots	Ends all Riots	false
+effects_description_sw_decree_influence_dummy	%+n Influence	false

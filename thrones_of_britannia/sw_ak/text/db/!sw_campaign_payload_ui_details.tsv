@@ -1,0 +1,7 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/!sw_campaign_payload_ui_details.loc		
+campaign_payload_ui_details_description_dummy_payload_viking_take_land_northumbria	Receive a Jórvík region.	true
+campaign_payload_ui_details_description_dummy_vik_incident_ai_anglo_viking	[[col:red]]The Anglo-Saxons in Northanhymbra declare war on Jórvík[[/col]]	true
+campaign_payload_ui_details_description_dummy_vik_incident_ai_anglo_viking_2	[[col:red]]Jórvík annexes Westmoringas and Northanhymbra declares war on Jórvík[[/col]]	true
+campaign_payload_ui_details_description_dummy_payload_viking_peace_northumbria	Peace with the Kingdom of Jórvík.	true
+campaign_payload_ui_details_description_dummy_vik_incident_ai_danelaw_war	[[col:red]]East Engle and Jórvík declare war on each other, and each annexes their Viking vassals[[/col]]	true

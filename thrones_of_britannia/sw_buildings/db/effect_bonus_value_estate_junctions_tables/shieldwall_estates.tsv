@@ -1,0 +1,5 @@
+bonus_value_id	effect	estate
+#effect_bonus_value_estate_junctions_tables;0;db/effect_bonus_value_estate_junctions_tables/shieldwall_estates		
+amount	shield_estates_landed	vik_estate_agricultural
+amount	shield_estates_commerce	vik_estate_estate_building
+amount	shield_estates_hunting	vik_estate_religious

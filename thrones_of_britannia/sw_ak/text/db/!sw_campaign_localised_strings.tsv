@@ -1,0 +1,5 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/!sw_campaign_localised_strings.loc		
+campaign_localised_strings_string_vik_fact_miercna_mission_north_all	Eliminate Jórvík!	true
+campaign_localised_strings_string_vik_fact_east_engle_mission_northymbre_dead	Control the settlements of Jórvík, Loidis, Cetretha, and Northwic.	true
+campaign_localised_strings_string_vik_fact_east_engle_mission_northymbre_alive	Eliminate the Kingdom of Jórvík and control the settlements of Jórvík and Northwic.	true

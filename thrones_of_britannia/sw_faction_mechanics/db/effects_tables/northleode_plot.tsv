@@ -1,0 +1,3 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/northleode_plot				
+sw_break_vassalage_to_remove	diplomacy_negative.png	1	diplomacy_negative.png	false

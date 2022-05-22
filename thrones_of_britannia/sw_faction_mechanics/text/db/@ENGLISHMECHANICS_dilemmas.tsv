@@ -1,0 +1,24 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/@ENGLISHMECHANICS_dilemmas.loc		
+dilemmas_localised_title_shieldwall_english_mechanic_disband_fyrd_2	Harvest - Disband the Fyrd	true
+dilemmas_localised_title_shieldwall_english_mechanic_disband_fyrd_3	Winter - Disband the Fyrd	true
+dilemmas_localised_description_shieldwall_english_mechanic_drill_fyrd	My lord, spring is upon us yet we are blessed to be at peace! Some in the Kingdom wish to allow the peasants a respite, but others advise that we should begin drilling the Fyrd for combat in place of their usual service. 	true
+dilemmas_localised_title_shieldwall_english_mechanic_drill_fyrd	Fyrd: Peacetime Drills	true
+dilemmas_localised_description_shieldwall_english_mechanic_disband_fyrd_3	Denied the chance to return home for Harvest, the Fyrdmen now wish to return home for Winter. We can bribe them to stay, but it will be expensive to maintain their supplies through the Winter. 	true
+dilemmas_localised_description_shieldwall_english_mechanic_disband_fyrd_2	It is time for the Fyrd to return home for the Harvest and reap their crop before Winter. We can bribe them to stay, but it will hurt our Kingdom's food production this Season.	true
+dilemmas_localised_title_sw_northleode_help_against_strat_clut	A Plea from Westernas	false
+dilemmas_localised_title_sw_northleode_help_against_jorvik	A Plea from Westmoringas	false
+dilemmas_localised_title_sw_northleode_betrayal_east_engle	An Offer from the East Anglians	false
+dilemmas_localised_title_sw_northleode_betrayal_mierce	An Offer from Mierce	false
+dilemmas_localised_description_sw_northleode_help_against_strat_clut	Strat Clut, eager to regain their lost glory after the burning of the Alt Clut fortress, have mobilized against Westernas, a fellow Saxon Kingdom in the North. They implore us to petition the king in Jórvík to permit our forces to aid them.	false
+dilemmas_localised_description_sw_northleode_help_against_jorvik	The King of Jórvík has made clear his intention to declare war on the Kingdom of Westmoringas, in a bid to bring the last of the independent north under his control. Westmoringas sends a plea for our King to rise against our Masters in Jórvík and aid them in reclaiming Jórvík from the Vikings. 	false
+dilemmas_localised_description_sw_northleode_betrayal_east_engle	East Engle, long the rivals of the Kings of Jórvík, have sent us an offer: rise against Jórvík and lead our armies into battle. They offer gifts of gold from their wealthy southern Kingdom.	false
+dilemmas_localised_description_sw_northleode_betrayal_mierce	Mierce was once the rival of the Northumbrian Kingdom, but with the rise of Jórvík we have occasion to be their ally once more. They seek to invade the Kingdom, and request that we join their armies in attacking the Vikings!	false
+campaign_payload_ui_details_description_war_with_strat_clut	War with Strat Clut!	false
+campaign_payload_ui_details_description_war_with_jorvik	War with Jórvík!	false
+dilemmas_localised_title_sw_mierce_djurby_capitulates	Djurby Offers Fealty and Peace	false
+dilemmas_localised_description_sw_mierce_djurby_capitulates	With both Ledeborg's army and their own defeated on the battlefield, Djurby now wishes to end their conflict with us. They offer to swear allegiance to us and rule over Deoraby in our name. 	false
+dilemmas_localised_title_sw_mierce_scheme_against_wessex	Noble Uprising in Kent	false
+dilemmas_localised_description_sw_mierce_scheme_against_wessex	With Viking power on the decline our advisors have notified us of a golden opportunity taking place within the realm of West Seaxe. A large group of nobles have risen up against Wessex. Alone, their rebellion stands no chance, but with some help from our forces, this may be an opportunity to permanently weaken Wessex. 	false
+dilemmas_localised_title_sw_gwined_avenge_rhodri	Vengence for Rhodri	false
+dilemmas_localised_description_sw_gwined_avenge_rhodri	The Kingdom of Powis, ruled by your Brother, plans for an invasion of Mierce to raid, take territory, and hopefully to claim the life of their King in revenge for the death of Rhodri the Great. Mierce's power is waning, and they are distracted by Vikings, but they still make a formidable opponent when they bring their full military might to bear. 	false

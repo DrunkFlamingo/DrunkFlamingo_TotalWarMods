@@ -1,0 +1,81 @@
+key	localised_description	localised_title	ui_icon	bundle_target
+#effect_bundles_tables;1;db/effect_bundles_tables/population_bundles				
+sw_pop_serf_1	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_2	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_3	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_4	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_5	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_6	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_7	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_8	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_9	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_10	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_11	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_12	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_13	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_14	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_15	[PH]	[PH]	pop_serf.png	faction
+sw_pop_serf_16	[PH]	[PH]	pop_serf.png	faction
+sw_pop_noble_1	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_2	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_3	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_4	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_5	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_6	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_7	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_8	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_9	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_10	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_11	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_12	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_13	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_14	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_15	[PH]	[PH]	pop_lord.png	faction
+sw_pop_noble_16	[PH]	[PH]	pop_lord.png	faction
+sw_pop_monk_1	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_2	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_3	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_4	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_5	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_6	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_7	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_8	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_9	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_10	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_11	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_12	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_13	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_14	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_15	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_16	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_17	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_18	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_19	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_20	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_21	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_22	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_23	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_24	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_25	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_26	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_27	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_28	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_29	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_30	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_31	[PH]	[PH]	pop_monk.png	faction
+sw_pop_monk_32	[PH]	[PH]	pop_monk.png	faction
+sw_pop_foreign_1			pop_foreign.png	faction
+sw_pop_foreign_2			pop_foreign.png	faction
+sw_pop_foreign_3			pop_foreign.png	faction
+sw_pop_foreign_4			pop_foreign.png	faction
+sw_pop_foreign_5			pop_foreign.png	faction
+sw_pop_foreign_6			pop_foreign.png	faction
+sw_pop_foreign_7			pop_foreign.png	faction
+sw_pop_foreign_8			pop_foreign.png	faction
+sw_pop_foreign_9			pop_foreign.png	faction
+sw_pop_foreign_10			pop_foreign.png	faction
+sw_pop_foreign_11			pop_foreign.png	faction
+sw_pop_foreign_12			pop_foreign.png	faction
+sw_pop_foreign_13			pop_foreign.png	faction
+sw_pop_foreign_14			pop_foreign.png	faction
+sw_pop_foreign_15			pop_foreign.png	faction

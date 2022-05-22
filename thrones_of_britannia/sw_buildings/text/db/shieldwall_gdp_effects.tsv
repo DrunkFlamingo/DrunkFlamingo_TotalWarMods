@@ -1,0 +1,18 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/shieldwall_gdp_effects.loc		
+effects_description_shield_gdp_industry	%+n Monthly Income (INDUSTRY)	true
+effects_description_shield_gdp_commerce	%+n Monthly Income (COMMERCE)	true
+effects_description_shield_gdp_church	%+n Monthly Income (CHURCH)	true
+effects_description_shield_gdp_farm	%+n Monthly Income (FARM)	true
+effects_description_shield_pop_gdp_farm	%+n% Population Income Factor (FARM)	true
+effects_description_shield_pop_gdp_comm	%+n% Population Income Factor (COMMERCE)	true
+effects_description_shield_pop_gdp_church	%+n% Population Income Factor (CHURCH)	true
+effects_description_shield_pop_gdp_industry	%+n% Population Income Factor (INDUSTRY)	true
+resources_onscreen_text_shield_candles	Candles	true
+resources_onscreen_text_shield_steel	Well-Forged Iron	true
+resources_onscreen_text_shield_textiles	Textiles	true
+resources_onscreen_text_shield_jewellery	Jewellery	true
+resources_long_description_shield_candles	[IF YOU SEE THIS TELL AMERICAN CEASAR]	true
+resources_long_description_shield_steel	[IF YOU SEE THIS TELL AMERICAN CEASAR]	true
+resources_long_description_shield_textiles	[IF YOU SEE THIS TELL AMERICAN CEASAR]	true
+resources_long_description_shield_jewellery	[IF YOU SEE THIS TELL AMERICAN CEASAR]	true

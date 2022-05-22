@@ -1,0 +1,425 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/building_short_description_texts.loc		
+building_short_description_texts_short_description_vik_copper_1_short	The red metal of Cyprus can also be found in these parts.	true
+building_short_description_texts_short_description_vik_copper_2_short	To take advantage of copper’s useful qualities, all that is needed is a deep-lying trench.	true
+building_short_description_texts_short_description_vik_copper_3_short	The sulphides extracted from the open-face mines are processed here.	true
+building_short_description_texts_short_description_vik_copper_4_short	All that is copper will bring profits in gold.	true
+building_short_description_texts_short_description_vik_copper_5_short	The bronze age may have long ended, but the alloy remains important for a multitude of applications.	true
+building_short_description_texts_short_description_vik_bard_1_short	"Come, sit, let me tell you stories of the chieftains and kings of yore…"	true
+building_short_description_texts_short_description_vik_bard_2_short	A culture cultivated and protected by the bards will surely prevail.	true
+building_short_description_texts_short_description_vik_bard_3_short	The master performs the bardic rites, echoing the panegyrics and eulogies down the ages.	true
+building_short_description_texts_short_description_vik_farm_1_short	Where space is plentiful and the soil is fertile, even a fool can subsist.	true
+building_short_description_texts_short_description_vik_farm_2_short	Utilised for the benefit of all, arable fields are the nuclei of communities.	true
+building_short_description_texts_short_description_vik_farm_3_short	If the land is taken care of, the land takes care of the people.	true
+building_short_description_texts_short_description_vik_farm_4_short	Selions are worked by the tenants - chiefly for their lord, but also for their own subsistence.	true
+building_short_description_texts_short_description_vik_farm_5_short	Such a sizeable agricultural operation ensures that everyone is fed and a surplus is maintained.	true
+building_short_description_texts_short_description_vik_celi_de_abbey_1_short	Even the most unassuming priory can be at the very centre of communal life.	true
+building_short_description_texts_short_description_vik_celi_de_abbey_2_short	The priory’s teachings emphasise grace and nature as gifts from God.	true
+building_short_description_texts_short_description_vik_celi_de_abbey_3_short	Celtic church life provides the bedrock for the world of monastic asceticism.	true
+building_short_description_texts_short_description_vik_celi_de_abbey_4_short	A central symbol for the regulation and observance of the devout.	true
+building_short_description_texts_short_description_vik_celi_de_abbey_5_short	Within this grand abode, holy figures of Celtic Christianity are commemorated.	true
+building_short_description_texts_short_description_vik_fishing_b_2_short	The fishmonger doesn't just sell the catch, he is also an expert in boning, filleting and generally preparing the fish for table.	true
+building_short_description_texts_short_description_vik_fishing_b_3_short	It may smell suspect, but fresh fish fetches a good price.	true
+building_short_description_texts_short_description_vik_fishing_b_4_short	What you cannot eat or preserve yourselves, can be sold, or bartered for other goods desired.	true
+building_short_description_texts_short_description_vik_fishing_b_5_short	"Whatever the master wants. I am certain I can supply the freshest flounder he has ever tasted - I'll stake my reputation on it, in fact!"	true
+building_short_description_texts_short_description_vik_st_cuthbert_1_short	The sacred relics of Cuthbert embody the oneness of Britain’s Christian diaspora.	true
+building_short_description_texts_short_description_vik_st_cuthbert_2_short	Miraculously preserved remains are housed and safeguarded by a devout few.	true
+building_short_description_texts_short_description_vik_st_cuthbert_3_short	White-washed walls of wattle and daub protect St Cuthbert’s saintly remains from the elements.	true
+building_short_description_texts_short_description_vik_st_cuthbert_4_short	The ‘wonder-worker of England’ has countless devotees, awestruck by tales of his miraculous gift of healing.	true
+building_short_description_texts_short_description_vik_st_cuthbert_5_short	Worshippers come from far and wide, pilgrimaging to pay respects to saintly bodily remains.	true
+building_short_description_texts_short_description_vik_orchard_b_3	No feast is complete without fresh fruit on the table.	true
+building_short_description_texts_short_description_vik_orchard_b_2	"A penny for a pound of apples... Have you lost your mind?"	true
+building_short_description_texts_short_description_vik_orchard_b_5	Only the lushest, firmest, sweetest fruits are sold here.	true
+building_short_description_texts_short_description_vik_orchard_b_4	"Half a pound of these lovely strawberries for a shiny, silver halfpenny - I can't say fairer than that, you'd be robbin' me blind..."	true
+building_short_description_texts_short_description_vik_church_1_short	A focal point for small communities, bustling villages, and thriving towns alike. 	true
+building_short_description_texts_short_description_vik_church_2_short	A grander church grants a grander audience with God.	true
+building_short_description_texts_short_description_vik_church_3_short	Not only for congregation, but also for conversion, coronation, and celebration.	true
+building_short_description_texts_short_description_vik_port_herring_1_short	If you have happen to catch more herring than you can eat, sell them.	true
+building_short_description_texts_short_description_vik_port_herring_2_short	"My herring are so fresh, they are practically still wriggling!"	true
+building_short_description_texts_short_description_vik_port_herring_3_short	A resource of such abundance needs a proper port from which it can be distributed.	true
+building_short_description_texts_short_description_vik_market_fair_1_short	Religious imagery gives secular legitimacy to centres of commerce.	true
+building_short_description_texts_short_description_vik_market_fair_2_short	Where goods are bartered, ideas are exchanged, and arts and crafts put on show.	true
+building_short_description_texts_short_description_vik_market_fair_3_short	Commercial activities on such a scale can only be permitted by royal decree.	true
+building_short_description_texts_short_description_vik_grianan_ailech_1_short	The hegemony of the mighty northern kings is exemplified by their long-held seat of power.	true
+building_short_description_texts_short_description_vik_grianan_ailech_2_short	Only the most foolish assailants dare traverse the ramparts and embankments protecting the great hall. 	true
+building_short_description_texts_short_description_vik_grianan_ailech_3_short	Royalty is legitimised by splendour as well as force.	true
+building_short_description_texts_short_description_vik_grianan_ailech_4_short	Passage into the peninsula means bypassing its rulers, either through diplomacy or force!	true
+building_short_description_texts_short_description_vik_grianan_ailech_5_short	This bastion is a formidable hillfort - a monument to dynastic dominance.	true
+building_short_description_texts_short_description_vik_craft_merchant_1_short	If you've got made-goods to sell, the chances are that this man can find you a buyer.	true
+building_short_description_texts_short_description_vik_craft_merchant_2_short	If you travel far enough, there's always a buyer willing to buy or barter for your wares.	true
+building_short_description_texts_short_description_vik_craft_merchant_3_short	"I have buyers lined up across the kingdom and beyond, and the vessels to get the goods where they need to be."	true
+building_short_description_texts_short_description_vik_market_1_short	Having plentiful amounts of some things but not other things necessitates trade.	true
+building_short_description_texts_short_description_vik_market_2_short	“Fourpence tax on a cart of grain? That’s daylight robbery! Okay, deal.”	true
+building_short_description_texts_short_description_vik_market_3_short	Placed near rivers, harbours, or road-forks, humble trading posts quickly become bustling marketplaces.	true
+building_short_description_texts_short_description_vik_market_4_short	From the mundane to the exotic, all manner of goods are sold here.	true
+building_short_description_texts_short_description_vik_market_5_short	Merchants travel from far and wide knowing that here, there is always a buyer.	true
+building_short_description_texts_short_description_vik_silver_1_short	With its metallic lustre, some consider silver’s aesthetic qualities to be as attractive as gold.	true
+building_short_description_texts_short_description_vik_silver_2_short	Tapping into such a resource enables the fashioning of all manner of valuable items.	true
+building_short_description_texts_short_description_vik_silver_3_short	To smelt silver is to manifest currency, in doing so harnessing wealth and power.	true
+building_short_description_texts_short_description_vik_silver_4_short	A coarse lump of silver is worth more when processed into a quantifiable amount of bullion.	true
+building_short_description_texts_short_description_vik_silver_5_short	Those who work with silver are vital to their economies’ minted coins.	true
+building_short_description_texts_short_description_vik_nunnaminster_1_short	The royal household decrees this nunnery a foremost centre for learning, art, peace, and order.	true
+building_short_description_texts_short_description_vik_lead_1_short	The Church ensures that glasswork remains a profitable tradecraft.	true
+building_short_description_texts_short_description_vik_lead_2_short	As the great abbeys and monasteries rise up, the trade in ornate glasswork burgeons also.	true
+building_short_description_texts_short_description_vik_lead_3_short	Rosary beads, drinking vessels, jewellery and even windows are manufactured here from the highest grade of glass available.	true
+building_short_description_texts_short_description_vik_lead_4_short	“I’m liking these new water ducts. Makes the water taste a bit funny, mind you.”	true
+building_short_description_texts_short_description_vik_lead_5_short	Soft, malleable and easily melted, lead has many practical uses.	true
+building_short_description_texts_short_description_att_bld_all_ruins	The husk of a once-thriving settlement, its inhabitants scattered to the winds.	true
+building_short_description_texts_short_description_vik_rock_caisil_1_short	A mysterious site of legend, where Saint Patrick is said to have fought the devil himself.	true
+building_short_description_texts_short_description_vik_rock_caisil_2_short	The stronghold upon this lump of limestone shall echo the strength of the past kings of Munster.	true
+building_short_description_texts_short_description_vik_rock_caisil_3_short	In service to their leaders on the hill, the men of this land shall fight and obey.	true
+building_short_description_texts_short_description_vik_rock_caisil_4_short	A palace home to those who hold sway here, ruling from atop the age-old rock.	true
+building_short_description_texts_short_description_vik_rock_caisil_5_short	This most sacred place of dynastic conversion is a grand bastion of Christian kings.	true
+building_short_description_texts_short_description_vik_wax_1_short	It takes a heavenly grace to be happy amongst bees.	true
+building_short_description_texts_short_description_vik_wax_2_short	Like workers in the Kingdom of Heaven, the bees go about their work and the hive flourishes.	true
+building_short_description_texts_short_description_vik_wax_3_short	The buzzing civilisations that produce wax goods are the fruits of a divine stewardship of nature.	true
+building_short_description_texts_short_description_vik_estate_1_short	A vestige of an earlier time, still reaping the economic potential of the land.	true
+building_short_description_texts_short_description_vik_estate_2_short	A gruelling day’s work sees little return for a serf, other than the protection of the manor.	true
+building_short_description_texts_short_description_vik_estate_3_short	The sprawling lands of the estate are endlessly toiled for lord and king.	true
+building_short_description_texts_short_description_vik_tanner_1_short	A tanned hide is a valuable hide.	true
+building_short_description_texts_short_description_vik_tanner_2_short	"Here we make the hide durable. You don't want to know how."	true
+building_short_description_texts_short_description_vik_tanner_3_short	Thick skin will serve you well; a thick cuirass better.	true
+building_short_description_texts_short_description_vik_pasture_b_2	Meat is scarce among common men; butchery skills ensure that no part of an animal's carcass goes to waste.	true
+building_short_description_texts_short_description_vik_pasture_b_3	This establishment specialises in exacting the most from a beast and preserving it for market.	true
+building_short_description_texts_short_description_vik_pasture_b_4	If the animal is to be shown the respect it is due, nothing is wasted, right down to the bones and the sinew that connects them.	true
+building_short_description_texts_short_description_vik_pasture_b_5	It takes years to master the butcher's art, ensuring that only the finest cuts make the lord's table.	true
+building_short_description_texts_short_description_vik_pottery_b_3	Clay in your hand; coin in your purse.	true
+building_short_description_texts_short_description_vik_pottery_b_2	Best keep your food off the floor if you want to live.	true
+building_short_description_texts_short_description_vik_pottery_b_5	Beyond the merely functional, there is much craft - and profit - to be made from fired clay.	true
+building_short_description_texts_short_description_vik_pottery_b_4	People will always need plates.	true
+building_short_description_texts_short_description_vik_court_school_1_short	Learning is constant process, but it has to start somewhere.	true
+building_short_description_texts_short_description_vik_court_school_2_short	An uneducated noble is a bane of those who serve him – a smart one is a boon.	true
+building_short_description_texts_short_description_vik_court_school_3_short	The king demands that all in his court be learned and literate, lest they be replaced.	true
+building_short_description_texts_short_description_vik_wood_1_short	Natural shelter from the elements can be found here, as well as precious timber reserves.	true
+building_short_description_texts_short_description_vik_wood_2_short	The forest itself provides the handle for the woodcutter's axe.	true
+building_short_description_texts_short_description_vik_wood_3_short	From which kingdoms are built, fuelled, and transported.	true
+building_short_description_texts_short_description_vik_wood_4_short	From great ships of war to humble homes, wood is present in almost every facet of life.	true
+building_short_description_texts_short_description_vik_wood_5_short	The lumber trader’s business is essential for life and trade, such is the importance of timber.	true
+building_short_description_texts_short_description_vik_iron_1_short	Iron ore is as common as it is useful.	true
+building_short_description_texts_short_description_vik_iron_2_short	The reign of iron is well underway – wherever it can be mined, it absolutely should be.	true
+building_short_description_texts_short_description_vik_iron_3_short	Iron ore, once refined, is used to make myriad items both valuable and lethal.	true
+building_short_description_texts_short_description_vik_iron_4_short	Into the cast, molten iron is poured, before hardening into its final form.	true
+building_short_description_texts_short_description_vik_iron_5_short	Iron has become ubiquitous - it permeates every corner of civilisation, but is chiefly used for armour and weapons.	true
+building_short_description_texts_short_description_vik_martyrs_mint_1_short	The saintly martyrs of the past are gone but not forgotten.	true
+building_short_description_texts_short_description_vik_martyrs_mint_2_short	Mass-producing coins etched with images of the glorified shall help us venerate them.	true
+building_short_description_texts_short_description_vik_martyrs_mint_3_short	It has been decreed that the legacy of those who made the ultimate sacrifice will endure forevermore.	true
+building_short_description_texts_short_description_vik_mint_1_short	Coins hold power beyond wealth. They are legitimacy. They are loyalty.	true
+building_short_description_texts_short_description_vik_mint_2_short	When your face is everywhere, there can be no doubt who rules.	true
+building_short_description_texts_short_description_vik_mint_3_short	The coffers of the state, from which funds are drawn according to need and favour.	true
+building_short_description_texts_short_description_vik_thrall_1_short	A place so crowded, it’s sometimes difficult to tell who’s the merchant and who’s the merchandise.	true
+building_short_description_texts_short_description_vik_thrall_2_short	The lowest born of society are the most valuable of trade commodities.	true
+building_short_description_texts_short_description_vik_thrall_3_short	Exporting the rowdy peasant rabble makes the streets safer and keeps the coffers overflowing.	true
+building_short_description_texts_short_description_vik_gold_1_short	"Great seams of gold, running like rivers through stone…"	true
+building_short_description_texts_short_description_vik_gold_2_short	All that glitters may not be gold, but if it is, you’re probably minted.	true
+building_short_description_texts_short_description_vik_gold_3_short	The lure of pure gold makes even the wisest man forget himself.	true
+building_short_description_texts_short_description_vik_gold_4_short	Liquid gold can be used to create objects that even the most unselfish men desire.	true
+building_short_description_texts_short_description_vik_gold_5_short	A true artisan of gold creates beauty out of the simplest of things.	true
+building_short_description_texts_short_description_vik_mill_1_short	By which the elements themselves grind the corn.	true
+building_short_description_texts_short_description_vik_mill_2_short	The latest technology can be used where it will be most effective.	true
+building_short_description_texts_short_description_vik_mill_3_short	The natural motion of the tides is harnessed to feed the masses.	true
+building_short_description_texts_short_description_vik_salt_1_short	The most modest spring can be a highly concentrated source of salt.	true
+building_short_description_texts_short_description_vik_salt_2_short	In a world where almost everything tastes of mud and taint, salt elevates flavour and makes the unpalatable agreeable.	true
+building_short_description_texts_short_description_vik_salt_3_short	A veritable hive of activity, from which the salt trade burgeons.	true
+building_short_description_texts_short_description_vik_salt_4_short	Everybody needs salt – harvesting it on a large scale is a lucrative enterprise.	true
+building_short_description_texts_short_description_vik_salt_5_short	The most effective food preservative needs the appropriate facilities to process it.	true
+building_short_description_texts_short_description_vik_tin_1_short	Without tin, there would be no bronze age, and by extension little knowledge of metalcraft.	true
+building_short_description_texts_short_description_vik_tin_2_short	A material so rarely mined in this part of the world is extremely valuable indeed.	true
+building_short_description_texts_short_description_vik_tin_3_short	When smelting in paltry wood fires is no longer sufficient, one needs a bigger furnace.	true
+building_short_description_texts_short_description_vik_tin_4_short	Processed on such a grand scale, the market for tin can easily be dominated.	true
+building_short_description_texts_short_description_vik_tin_5_short	The alloy known as “black metal” has many uses, especially for ecclesiastical wares.	true
+building_short_description_texts_short_description_vik_hunting_b_5	The best hides, expertly treated. None of your flea-ridden filth.	true
+building_short_description_texts_short_description_vik_hunting_b_4	There's always a market for pelts in colder climes.	true
+building_short_description_texts_short_description_vik_hunting_b_3	Only the finest, unblemished pelts are deemed saleable, but they can fetch an excellent price.	true
+building_short_description_texts_short_description_vik_hunting_b_2	Hunting puts food on the table and pelts on the people's backs.	true
+building_short_description_texts_short_description_vik_court_1_short	Lawbooks and legal manuscripts mean little without the offices to exercise judicial power.	true
+building_short_description_texts_short_description_vik_court_2_short	The central municipal building from which legal tenets are presided over.	true
+building_short_description_texts_short_description_vik_court_3_short	These walls stand as symbols of fairness, equality, and most importantly, the protection of the people.	true
+building_short_description_texts_short_description_vik_round_tower_1_short	The populace must be watched, lest they take advantage of our fair and righteous rule.	true
+building_short_description_texts_short_description_vik_round_tower_2_short	Seeing the dissidents is only half the task – alerting others is the important bit!	true
+building_short_description_texts_short_description_vik_round_tower_3_short	An immovable sentinel of brickwork surveys the land, keeping close watch over the people.	true
+building_short_description_texts_short_description_vik_cloth_1_short	Open fields are valuable resources, and they are protected fiercely.	true
+building_short_description_texts_short_description_vik_cloth_2_short	One sheep can clothe a family – a herd of sheep can clothe dozens.	true
+building_short_description_texts_short_description_vik_cloth_3_short	Where there’s wool there’s a way.	true
+building_short_description_texts_short_description_vik_cloth_4_short	The fruit of the loom is industry and profit.	true
+building_short_description_texts_short_description_vik_cloth_5_short	Rich tapestries and fabrics are the most conspicuous forms of wealth.	true
+building_short_description_texts_short_description_vik_konungsgurtha_1_short	The kingdom to the north is no longer ruled over by mere puppet kings.	true
+building_short_description_texts_short_description_vik_konungsgurtha_2_short	Within these fortified walls, the power of Viking rule is consolidated.	true
+building_short_description_texts_short_description_vik_konungsgurtha_3_short	The palace of the newly-settled kings stands as a testament to their authority and dominance.	true
+building_short_description_texts_short_description_vik_scoan_abbey_1_short	In this ancient capital of the Picts stands a church of notable importance.	true
+building_short_description_texts_short_description_vik_scoan_abbey_2_short	The abbot’s humble residence also encompasses the hallowed grounds of royal coronation.	true
+building_short_description_texts_short_description_vik_scoan_abbey_3_short	Here the Stone of Destiny shall sit, a most holy relic to the royal dynasties of this land.	true
+building_short_description_texts_short_description_vik_trade_1_short	Traders situated near to coasts and riverbanks find more success than their inland counterparts.	true
+building_short_description_texts_short_description_vik_trade_2_short	A bit of a grimy place, full of smelly peddlers - but you’ll find what you need.	true
+building_short_description_texts_short_description_vik_abbey_1_short	Small but meaningful – an intimate place of worship.	true
+building_short_description_texts_short_description_vik_abbey_2_short	Godliness is only truly achieved under a prior's teaching and guidance.	true
+building_short_description_texts_short_description_vik_abbey_3_short	Not just a place of worship, but also of education.	true
+building_short_description_texts_short_description_vik_abbey_4_short	Ecclesiastical learning and adherence to religious vows go hand in hand. 	true
+building_short_description_texts_short_description_vik_abbey_5_short	Where the tenets of monastic life are lived by to solidify belief.	true
+building_short_description_texts_short_description_vik_church_crafts_1_short	Alongside their devotions, each monk has a skill which can be purposed to increase the Church's coffers.	true
+building_short_description_texts_short_description_vik_church_crafts_2_short	Through careful organisation, artisanal skills can be marshalled to optimise production.	true
+building_short_description_texts_short_description_vik_church_crafts_3_short	A large workshop can greatly increase production, the resultant profit being fed back into the local community.	true
+building_short_description_texts_short_description_vik_forge_1_short	What is wrought by the blacksmith will last a lifetime.	true
+building_short_description_texts_short_description_vik_forge_2_short	The modern world is born of the forge.	true
+building_short_description_texts_short_description_vik_forge_3_short	Incredible temperatures allow metals and alloys to be shaped with the greatest of ease.	true
+building_short_description_texts_short_description_vik_master_forge_1_short	Metalwork is not just pragmatic necessity, but also a decadent art.	true
+building_short_description_texts_short_description_vik_master_forge_2_short	With efforts combined with the goldsmith and jeweller, the master smithy crafts the weapons of the high-born.	true
+building_short_description_texts_short_description_vik_master_forge_3_short	Only the greatest workmanship can forge the weapons of the elite warrior aristocracy.	true
+building_short_description_texts_short_description_vik_port_military_1_short	Here the warriors find safety and rest while they plan their next forays.	true
+building_short_description_texts_short_description_vik_port_military_2_short	The harbourmaster welcomes all ships – as long as they are not enemies of those in charge.	true
+building_short_description_texts_short_description_vik_port_military_3_short	Ports facilitate the day-to-day activities of sea merchants, fishermen, and of course, raiders.	true
+building_short_description_texts_short_description_vik_mountain_hall_1_short	The mighty hall of brave rulers of the past, and the great kings of the future.	true
+building_short_description_texts_short_description_vik_mountain_hall_2_short	“For the men of the Wealthy Mountain, fresh mead was their feast, their poison too.”	true
+building_short_description_texts_short_description_vik_mountain_hall_3_short	The royal fortress at Din Eidyn is a testament to the once-great power of the Brythonic ancients.	true
+building_short_description_texts_short_description_vik_mountain_hall_4_short	Hostile expansionism at the cost of our people shall be defended against to the death.	true
+building_short_description_texts_short_description_vik_mountain_hall_5_short	The struggles of the Old North will be forever remembered by this royal seat of power.	true
+building_short_description_texts_short_description_vik_tools_1_short	The wheels of progress do not turn without the blood, sweat, and tears of the unassuming toolmaker.	true
+building_short_description_texts_short_description_vik_tools_2_short	Civilisation is born out of innovation and invention facilitated in the humble workshop.	true
+building_short_description_texts_short_description_vik_tools_3_short	Mould-casting metal opens up a whole new world of mass-production with profitable applications.	true
+building_short_description_texts_short_description_vik_thing_1_short	A democratic process needs only the simplest of locales.	true
+building_short_description_texts_short_description_vik_thing_2_short	The swift resolution of tribal feuds and social disorder are important steps towards basic civility.	true
+building_short_description_texts_short_description_vik_thing_3_short	Where the most influential members of the Viking community gather to settle all matters of law.	true
+building_short_description_texts_short_description_vik_arena_1_short	It's not over until the crowd sees someone hit the floor – unconscious, preferably.	true
+building_short_description_texts_short_description_vik_arena_2_short	Participants hope their opponent will be a man, and not a bear. Spectators may feel otherwise.	true
+building_short_description_texts_short_description_vik_arena_3_short	Thrilling displays of martial skill are well worth paying to see, and keeps the masses inspired.	true
+building_short_description_texts_short_description_vik_fogou_1_short	Not just a prehistoric hole, but a purpose-built alcove inherited from the ancients.	true
+building_short_description_texts_short_description_vik_fogou_2_short	A short network of tunnels provides an adaptable, multifunctional space.	true
+building_short_description_texts_short_description_vik_fogou_3_short	Used by countless generations for refuge, storage and ritual, this sprawling passageway will continue to endure.	true
+building_short_description_texts_short_description_twr2_rome_rome_Slums_short	The downfall of every empire begins here.	true
+building_short_description_texts_short_description_vik_high_cross_1_short	More than just a cross, but also a blessed palisade for demarcation and religious representation.	true
+building_short_description_texts_short_description_vik_high_cross_2_short	Such holy objects carved with divine imagery are long-living symbols of faith.	true
+building_short_description_texts_short_description_vik_st_ringan_1_short	He who brought the true faith to the pagan north is eternally remembered.	true
+building_short_description_texts_short_description_vik_st_ringan_2_short	Ringan’s divine mission is continued by those who worship here.	true
+building_short_description_texts_short_description_vik_st_ringan_3_short	A church of whitewashed stone is uncommon, but such an unusual sight adds to its holy aura.	true
+building_short_description_texts_short_description_vik_st_ringan_4_short	Like the great saint himself, Ringan’s followers strive always for knowledge.	true
+building_short_description_texts_short_description_vik_st_ringan_5_short	Kings and commoners alike attend to behold Saint Ringan’s great legacy.	true
+building_short_description_texts_short_description_vik_monastery_1_short	Obligations of obedience to God’s tenets are more easily fulfilled in the company of others.	true
+building_short_description_texts_short_description_vik_monastery_2_short	True monasticism starts with living abstinent from attachments and worldly comforts.	true
+building_short_description_texts_short_description_vik_monastery_3_short	A place to dedicate one’s life to true understanding in matters of faith.	true
+building_short_description_texts_short_description_vik_monastery_4_short	Religious learning manifested, preserved, and enhanced for the betterment of all.	true
+building_short_description_texts_short_description_vik_monastery_5_short	Monasteries on this scale aren't just about religion, but also culture, intellectualism, medicine, and politics. 	true
+building_short_description_texts_short_description_vik_longphort_1_short	More raids mean longer stays, and more sturdy camps from which to launch attacks.	true
+building_short_description_texts_short_description_vik_longphort_2_short	When overwintering becomes permanent settlement, a safer place is needed to moor the boats.	true
+building_short_description_texts_short_description_vik_longphort_3_short	Coastal earthwork fortifications keep both the men and the docked ships defendable.	true
+building_short_description_texts_short_description_vik_longphort_4_short	The principal bases of the Norse settlers are where they subsist, trade, and plan their raids.	true
+building_short_description_texts_short_description_vik_longphort_5_short	What was once a humble coastal camp of warriors is now the nucleus of a great port-city.	true
+building_short_description_texts_short_description_vik_trade_b_2	"This robe was made by the best tailors in Constantinople - would I lie to you?"	true
+building_short_description_texts_short_description_vik_trade_b_3	"Bah! I don't care how far it has to come, just get me more!"	true
+building_short_description_texts_short_description_vik_trade_b_4	Since overseas trade is often necessary, there are those who have spied a gap in the market and know just how to exploit it.	true
+building_short_description_texts_short_description_vik_trade_b_5	The volume of goods coming in from abroad, and leaving for the continent, makes such places essential if the kingdom is to prosper.	true
+building_short_description_texts_short_description_vik_warehouse_1_short	Not everything can be sold or consumed straight away, so it's important to have somewhere dry to store it.	true
+building_short_description_texts_short_description_vik_warehouse_2_short	A large, covered space for the storage of goods prior to distribution.	true
+building_short_description_texts_short_description_vik_warehouse_3_short	Here, all manner of goods can be stored, safe from the weather's whims, until they can be sold.	true
+building_short_description_texts_short_description_vik_abbey_b_3	Churches have become hubs for the communities they support; here, business can be conducted safely, and for a very reasonable price.	true
+building_short_description_texts_short_description_vik_abbey_b_2	A pagan trader might wear a cross among Christians, yet turn back to Thor's hammer at home.	true
+building_short_description_texts_short_description_vik_abbey_b_5	The world is in crisis; whilst faith is important, it cannot match the power of wealth.	true
+building_short_description_texts_short_description_vik_abbey_b_4	Abbeys act as regional centres, drawing people from far and wide to worship and conduct business.	true
+building_short_description_texts_short_description_vik_moot_hill_1_short	The laws of the land are more effectively dispensed from a place of sacred importance.	true
+building_short_description_texts_short_description_vik_moot_hill_2_short	Upon this raised, hallowed ground, the sanctity of righteousness is preserved.	true
+building_short_description_texts_short_description_vik_moot_hill_3_short	Facilities of execution ensure that verdicts of condemnation can be effected without delay.	true
+building_short_description_texts_short_description_vik_port_trade_1_short	"Like them or loathe them, those undercutting foreign merchants bring prices RIGHT down!"	true
+building_short_description_texts_short_description_vik_port_trade_2_short	"If we want to keep up in this business, we’re going to need a bigger boat."	true
+building_short_description_texts_short_description_vik_port_trade_3_short	A lucrative maritime gateway to faraway markets across the seas.	true
+building_short_description_texts_short_description_vik_sculptors_1_short	Few art forms survive the ages better than those of the Guvan chisellers.	true
+building_short_description_texts_short_description_vik_sculptors_2_short	The crumbling remains of an ancestral past inspire the hogback workshops of the present.	true
+building_short_description_texts_short_description_vik_sculptors_3_short	Only through a lifetime of learning and apprenticeship can a lowly sculptor gain master status.	true
+building_short_description_texts_short_description_vik_apple_ash_1_short	An ash tree that bears apples is an extraordinary phenomenon indeed.	true
+building_short_description_texts_short_description_vik_apple_ash_2_short	Sprung from a single miracle, this cluster of rare trees is invaluable and must be carefully cultivated.	true
+building_short_description_texts_short_description_vik_apple_ash_3_short	Stretching for acres as far as the eye can see, this wondrous crop must be seen to be believed.	true
+building_short_description_texts_short_description_vik_guildhall_1_short	The most effective answer to organised greed is organised guilds.	true
+building_short_description_texts_short_description_vik_guildhall_2_short	For craftsmen, merchants, and the populace, guilds are a leading force for economic progress.	true
+building_short_description_texts_short_description_vik_guildhall_3_short	Trade practices standardised by royal charter result in better business and higher quality goods.	true
+building_short_description_texts_short_description_vik_st_ciaran_1_short	As firmly as this church stands, Saint Ciaran’s premonitions have been manifested into reality.	true
+building_short_description_texts_short_description_vik_st_ciaran_2_short	The followers of Saint Ciaran believe in his calling, and have flocked to his church’s support.	true
+building_short_description_texts_short_description_vik_st_ciaran_3_short	Like fruits carried by birds, this abbey spreads the word of God far and wide.	true
+building_short_description_texts_short_description_vik_st_ciaran_4_short	Such a great monastery sets the standards by which all monastic behaviour shall be measured.	true
+building_short_description_texts_short_description_vik_st_ciaran_5_short	From the heart of the island, this great cathedral distributes the lifeblood of faith to all.	true
+building_short_description_texts_short_description_vik_achadh_bo_1_short	A saint's diligence can turn a humble field into a notable site of worship.	true
+building_short_description_texts_short_description_vik_achadh_bo_2_short	An unassuming church has the potential for religious grandeur.	true
+building_short_description_texts_short_description_vik_achadh_bo_3_short	A place of great ecclesiastical teaching, where impetus is provided to those destined for greatness.	true
+building_short_description_texts_short_description_vik_achadh_bo_4_short	The fruitful lands upon which God's houses stand provide a living as well as an education.	true
+building_short_description_texts_short_description_vik_achadh_bo_5_short	In the Great Abbey's grounds, those who hold sway here are coronated and buried.	true
+building_short_description_texts_short_description_vik_cloth_b_2	A man on a horse is spiritually, as well as physically, bigger than a man on foot.	true
+building_short_description_texts_short_description_vik_cloth_b_3	I can make a general in five minutes but a good horse is hard to replace.	true
+building_short_description_texts_short_description_vik_cloth_b_4	Quality cloth is reassuringly expensive, but you get what you pay for.	true
+building_short_description_texts_short_description_vik_cloth_b_5	"Import, export - it's all controlled through these parchments. Impressive, no?"	true
+building_short_description_texts_short_description_vik_port_fish_1_short	Mastery of oceans and rivers is crucial to the prosperity of any sea-locked realm. 	true
+building_short_description_texts_short_description_vik_port_fish_2_short	“An impressively large boat. Now we just need a place to moor it...”	true
+building_short_description_texts_short_description_vik_port_fish_3_short	Investment in ports is investment in commerce, fishing, and transport.	true
+building_short_description_texts_short_description_vik_church_2_eng_short	The daily office of prayer is maintained by royal charter.	true
+building_short_description_texts_short_description_vik_st_brigit_1_short	In the shadow of a great tree stands the church of the purest and most pious of saints.	true
+building_short_description_texts_short_description_vik_st_brigit_2_short	Here the abbess ranks higher than the abbot.	true
+building_short_description_texts_short_description_vik_st_brigit_3_short	Attended by both monks and nuns, for the religious betterment of all.	true
+building_short_description_texts_short_description_vik_st_edmund_1_short	A king’s death in staunch defence of his people is the ultimate act of majestic martyrdom.	true
+building_short_description_texts_short_description_vik_st_edmund_2_short	The followers of Edmund uphold his legacy of pious resistance in the face of futility.	true
+building_short_description_texts_short_description_vik_st_edmund_3_short	The saintly king's dutiful spirit is felt by all those who enter here.	true
+building_short_description_texts_short_description_vik_st_edmund_4_short	Few get the chance to die as martyrs, but one can at least live by the principles of self-sacrifice.	true
+building_short_description_texts_short_description_vik_st_edmund_5_short	Here lie the relics of a great king and martyr. May he be remembered forevermore!	true
+building_short_description_texts_short_description_vik_runestone_1_short	Etching images directly into stone requires perseverance and skill in equal measure.	true
+building_short_description_texts_short_description_vik_runestone_2_short	A place of blood and sweat, where the artisans of the runes gather to ply their trade.	true
+building_short_description_texts_short_description_vik_runestone_3_short	Masterfully carved words and patterns serve as everlasting memorials to the dead.	true
+building_short_description_texts_short_description_vik_abbey_comm	Vikigns used churches to sell their stuff.	true
+building_short_description_texts_short_description_%placeholder%	%placeholder%	true
+building_short_description_texts_short_description_vik_lead_b_3	The Church ensures that glasswork remains a profitable tradecraft.	true
+building_short_description_texts_short_description_vik_lead_b_2	Lead has been used for colour and opacity since Roman times, among many other practical uses.	true
+building_short_description_texts_short_description_vik_lead_b_5	As the great abbeys and monasteries rise up, the trade in ornate glasswork burgeons also.	true
+building_short_description_texts_short_description_vik_lead_b_4	Rosary beads, drinking vessels, jewellery and even windows are manufactured here from the highest grade of glass available.	true
+building_short_description_texts_short_description_vik_silver_b_2	In order to be born with a silver spoon in your mouth, your father must first own one.	true
+building_short_description_texts_short_description_vik_silver_b_3	Decorative silver is a status symbol - why else would someone wear it instead of carrying it in coin form?	true
+building_short_description_texts_short_description_vik_silver_b_4	Silver's relative price versus gold enables the wily craftsman to keep a surplus in stock for any eventuality.	true
+building_short_description_texts_short_description_vik_silver_b_5	This master artisan knows the exact ratio of hardening to annealing that guarantees his end-product's enduring quality.	true
+building_short_description_texts_short_description_vik_pasture_1_short	The benefits of the soil not only come from what is grown in it, but also what grazes upon it.	true
+building_short_description_texts_short_description_vik_pasture_2_short	Reared and bred correctly, a cow is a versatile, profitable animal.	true
+building_short_description_texts_short_description_vik_pasture_3_short	The cattle roam the fields with an envied carelessness.	true
+building_short_description_texts_short_description_vik_pasture_4_short	As gormless as they are valuable, cows need to be penned in lest they wander away.	true
+building_short_description_texts_short_description_vik_pasture_5_short	“With these kind of profits, you soon won’t notice the constant smell of cow dung…”	true
+building_short_description_texts_short_description_vik_alehouse_1_short	An intelligent man is sometimes forced to be intoxicated to spend time with fools.	true
+building_short_description_texts_short_description_vik_alehouse_2_short	“I can drink like my uncle, who was the town drunk. That town was Rome…”	true
+building_short_description_texts_short_description_vik_alehouse_3_short	Many a weary traveller has rested their head here and in time, many more shall too.	true
+building_short_description_texts_short_description_vik_artisans_1_short	The rare skills necessary to work precious metals ensure that those who have them are never out of work.	true
+building_short_description_texts_short_description_vik_artisans_2_short	To take the necessary and make it special? Now that takes skill.	true
+building_short_description_texts_short_description_vik_artisans_3_short	As pure function has given way to ornate form, so the artisan jeweller has risen to be master of his craft.	true
+building_short_description_texts_short_description_vik_pottery_1_short	In the right hands, clay is far from just being a type of mud.	true
+building_short_description_texts_short_description_vik_pottery_2_short	“Basketry is all well and good, but a basket can’t hold liquid, can it?”	true
+building_short_description_texts_short_description_vik_pottery_3_short	Clay-craft may not be as important as metalcraft, but still has a place in society.	true
+building_short_description_texts_short_description_vik_pottery_4_short	From out of the kiln comes the decorative as well as the practical, depending on your budget!	true
+building_short_description_texts_short_description_vik_pottery_5_short	Not just receptacles, but highly-valued status symbols to be exported far and wide.	true
+building_short_description_texts_short_description_vik_assembly_1_short	“Friends, subjects, countrymen, lend me your ears…”	true
+building_short_description_texts_short_description_vik_assembly_2_short	A place for all to gather, to listen, and be heard.	true
+building_short_description_texts_short_description_vik_assembly_3_short	When the king speaks, the people listen.	true
+building_short_description_texts_short_description_vik_tin_b_2	Like silver, yet far cheaper and with many, many practical uses.	true
+building_short_description_texts_short_description_vik_tin_b_3	Pewter has been used for both dinner and decoration since Roman times.	true
+building_short_description_texts_short_description_vik_tin_b_4	Without the need for a forge, the smith works the cold metal to produce a variety of useful, everyday implements.	true
+building_short_description_texts_short_description_vik_tin_b_5	It takes up to six years to apprentice, and many, many more to master.	true
+building_short_description_texts_short_description_vik_salt_b_3	Salt is a staple resource, gathered here by the barrel to be traded with anyone.	true
+building_short_description_texts_short_description_vik_salt_b_2	A little salt is useful; a lot of salt is profit.	true
+building_short_description_texts_short_description_vik_salt_b_5	Knowledge of the local rivers and wetlands means this man always has a surplus to be sold or bartered for.	true
+building_short_description_texts_short_description_vik_salt_b_4	Salt can turn the barely edible into a feast for the senses.	true
+building_short_description_texts_short_description_vik_gold_b_3	Trinkets and baubles are worth a lot to those who value their image.	true
+building_short_description_texts_short_description_vik_gold_b_2	Highly-valued, and believed to have magical properties, gold is reserved for the finest items only.	true
+building_short_description_texts_short_description_vik_gold_b_5	Whether for service or ornament, if it's made from metal then this master can cast, cut, file and buff it to the highest possible standard.	true
+building_short_description_texts_short_description_vik_gold_b_4	Valuable enough to covet, rare enough to kill for, exquisite when crafted to perfection.	true
+building_short_description_texts_short_description_vik_hunting_1_short	Stalked in the forest, too close to hide.	true
+building_short_description_texts_short_description_vik_hunting_2_short	The best hunters have limitless patience, camping out for as long as necessary to make the kill.	true
+building_short_description_texts_short_description_vik_hunting_3_short	Extended time spent living on one’s hunting grounds makes for a more successful hunter.	true
+building_short_description_texts_short_description_vik_hunting_4_short	From here, organised hunting expeditions are launched.	true
+building_short_description_texts_short_description_vik_hunting_5_short	A place to meet, rest, and resupply for nobles and lords indulging in the hunt.	true
+building_short_description_texts_short_description_vik_library_1_short	What is a collection of books without a place to keep them?	true
+building_short_description_texts_short_description_vik_library_2_short	Studiousness is a close second to godliness as the most important form of self-improvement.	true
+building_short_description_texts_short_description_vik_library_3_short	Whether Latin, English, or Greek, the finest works ever commited to page can be found here.	true
+building_short_description_texts_short_description_vik_wood_b_3	 Though it is incredibly common for peasant boys to learn how to string a bow as they grow up, any lord seeking to field a unit of archers or crossbowmen will first need to employ a professional Bowyer. Essentially a specialised carpenter, a bowyer has all the equipment needed to shape and treat bow wood, twine and resin for bow strings, as well as a healthy supply of bird feathers, for the rather mundane task of fletching countless arrows.	true
+building_short_description_texts_short_description_vik_wood_b_2	Bird feathers will make a fine fletch for our arrows, but we'll need a team of dedicated fletchers to make them.	true
+building_short_description_texts_short_description_vik_wood_b_5	The master carpenter knows exactly how to get the very best from his chosen material.	true
+building_short_description_texts_short_description_vik_wood_b_4	In a world in which many structures are made from or contain wood, someone must know how best to work it.	true
+building_short_description_texts_short_description_vik_iron_b_3	The ironsmith ensures that weapons and tools provide the sinews of war and progress.	true
+building_short_description_texts_short_description_vik_iron_b_2	Bronze is good for weapon decoration, but malleable iron is the standard for strength.	true
+building_short_description_texts_short_description_vik_iron_b_5	"Forge, forge; bang bang bang; quench... Bosh!"	true
+building_short_description_texts_short_description_vik_iron_b_4	It takes skill and a considerable amount of practice to produce quality iron in sufficient quantities.	true
+building_short_description_texts_short_description_vik_workshop_1_short	Whatever his medium, the craftsman has the skills required to fashion it to a saleable standard.	true
+building_short_description_texts_short_description_vik_workshop_2_short	Organising crafts production into a pipeline is important when mass-producing items for sale at home or for export.	true
+building_short_description_texts_short_description_vik_workshop_3_short	Over time, master craftsmen gain a reputation, which must be maintained if supply and demand are to remain abreast.	true
+building_short_description_texts_short_description_vik_garrison_1_short	Able-bodied townsfolk should never hesitate to take up arms in protection of their homes.	true
+building_short_description_texts_short_description_vik_garrison_2_short	Men who fall short of being worthy of battle are given the unenviable task of guard duty.	true
+building_short_description_texts_short_description_vik_garrison_3_short	Blossoming towns with blossoming wealth are valuable, so need the appropriate security.	true
+building_short_description_texts_short_description_vik_garrison_4_short	A sizeable defensive force of warriors who will hold the line at all costs.	true
+building_short_description_texts_short_description_vik_garrison_5_short	Any settlement worth protecting needs a designated headquarters for its on-duty guardsmen.	true
+building_short_description_texts_short_description_vik_merchant_1_short	He buys, he sells. Sometimes he cheats, always does he profit.	true
+building_short_description_texts_short_description_vik_merchant_2_short	If you've quite a lot of something to sell, chances are that this man can find a buyer… for a fee of course.	true
+building_short_description_texts_short_description_vik_merchant_3_short	"I'll tell you what I've learned; there's nothing - and no one - that can't be bought, sold, or bargained with."	true
+building_short_description_texts_short_description_vik_scribes_1_short	When few can read and write, there is always work for those who can.	true
+building_short_description_texts_short_description_vik_scribes_2_short	When information is power, it is important to conserve it for future use.	true
+building_short_description_texts_short_description_vik_scribes_3_short	Knowledge of the scriptures, and artistic flair, put to the best use.	true
+building_short_description_texts_short_description_vik_fishing_1_short	Fish are more than just food – they are a livelihood.	true
+building_short_description_texts_short_description_vik_fishing_2_short	Fishermen that fish together can find ways to profit together.	true
+building_short_description_texts_short_description_vik_fishing_3_short	“Take the larger hulc – you can go further out, find the REALLY big shoals."	true
+building_short_description_texts_short_description_vik_fishing_4_short	By hook or by net, the fishing quotas will be met.	true
+building_short_description_texts_short_description_vik_fishing_5_short	The bounty of the oceans can be the lifeblood of all.	true
+building_short_description_texts_short_description_vik_copper_b_4	Bronze's innate qualities make it the ideal material for elaborate, decorative designs.	true
+building_short_description_texts_short_description_vik_copper_b_5	More than a mere smith, the master artisan can ask anything of his chosen material and know it will willingly respond.	true
+building_short_description_texts_short_description_vik_copper_b_2	Iron may be the standard, but bronze is more malleable, allowing for intricate decorative detail.	true
+building_short_description_texts_short_description_vik_copper_b_3	While not the finest quality, bronze figures and crests are nonetheless valuable.	true
+building_short_description_texts_short_description_vik_farm_b_2	A thegn is measured by the five hides of his own land.	true
+building_short_description_texts_short_description_vik_farm_b_3	The more grain is reaped, the stronger the kingdom grows.	true
+building_short_description_texts_short_description_vik_farm_b_4	The lord of the manor ensures that crop abundance and wealth are one and the same.	true
+building_short_description_texts_short_description_vik_farm_b_5	To invest in the land is to invest in the kingdom.	true
+building_short_description_texts_short_description_vik_school_ros_1_short	A humble habitation can still be a place of great ecclesiastical education.	true
+building_short_description_texts_short_description_vik_school_ros_2_short	Monastic students will come from across land and sea to learn under eminent religious teachers.	true
+building_short_description_texts_short_description_vik_school_ros_3_short	Through worship and piety, God’s teachings are absorbed by all.	true
+building_short_description_texts_short_description_vik_school_ros_4_short	A communal abode for both the expounders and receivers of sacrosanct knowledge.	true
+building_short_description_texts_short_description_vik_school_ros_5_short	The most celebrated scripture school of the age makes this place the ‘wooded headland of the pilgrims’.	true
+building_short_description_texts_short_description_vik_st_dewi_1_short	Lands diligently ploughed and cultivated will take care of the poor, as well as the monks.	true
+building_short_description_texts_short_description_vik_st_dewi_2_short	To live by Dewi's ways is to worship piously and live modestly at all times.	true
+building_short_description_texts_short_description_vik_st_dewi_3_short	Monastic life, while strict, fulfils the religious needs of those seeking self-imposed penance.	true
+building_short_description_texts_short_description_vik_st_dewi_4_short	A glorious house of God, at one time filled with angels, as Christ received Dewi's soul.	true
+building_short_description_texts_short_description_vik_st_dewi_5_short	Here lies the shrine of he who will one day be the patron saint of all these lands.	true
+building_short_description_texts_short_description_vik_offas_hall_1_short	The first ruthless unifier of the Saxon people is remembered by his famous hall.	true
+building_short_description_texts_short_description_vik_offas_hall_2_short	Upon this site, great power was once wielded over lands aplenty – this shall be again.	true
+building_short_description_texts_short_description_vik_offas_hall_3_short	The authority of the power-hungry is encapsulated in buildings of royal self-indulgence.	true
+building_short_description_texts_short_description_vik_offas_hall_4_short	As in the past, the protection and longevity of leadership needs a stalwart power base.	true
+building_short_description_texts_short_description_vik_offas_hall_5_short	True hegemony is represented by this magnificent dwelling reserved for kings.	true
+building_short_description_texts_short_description_vik_trade_5	If trade is to flourish, there must be capacity enough to process goods coming into and going out of the realm without delay.	true
+building_short_description_texts_short_description_vik_trade_4	A jetty provides both a staging point for sea and river trade and some measure of defence against the elements.	true
+building_short_description_texts_short_description_vil_bullaun_1_short	Such poignant artefacts of the old religions are adopted to bring legitimacy to the new.	true
+building_short_description_texts_short_description_vil_bullaun_2_short	Ancient, man-made relics, once practical but now used for something far more holy.	true
+building_short_description_texts_short_description_vil_bullaun_3_short	Rainwater collected within these divine depressions may bring miraculous wellbeing to those who drink it.	true
+building_short_description_texts_short_description_vik_orchard_1_short	Fruit is both food and drink for many.	true
+building_short_description_texts_short_description_vik_orchard_2_short	A modest crop of orchards can give more than just a modest livelihood.	true
+building_short_description_texts_short_description_vik_orchard_3_short	Apples, grapes, plums, and cherries – as far as the eye can see.	true
+building_short_description_texts_short_description_vik_orchard_4_short	The most abundant fruits of the land shall be cultivated en masse and sent to the marketplace.	true
+building_short_description_texts_short_description_vik_orchard_5_short	Five hundred apples a day keeps the king's reeves away.	true
+building_short_description_texts_short_description_vik_granary_1_short	Grain storage is never just as simple as throwing wheat seeds into a hole.	true
+building_short_description_texts_short_description_vik_granary_2_short	Silo quite literally means 'a place to put corn'.	true
+building_short_description_texts_short_description_vik_granary_3_short	A grain surplus without effective storage is no surplus at all.	true
+building_short_description_texts_short_description_vik_st_swithun_1_short	A most splendid reliquary contains the remains of a most charitable and saintly soul.	true
+building_short_description_texts_short_description_vik_st_swithun_2_short	Very few men are so humble in action but so great in achievement.	true
+building_short_description_texts_short_description_vik_st_swithun_3_short	So venerated are these healing relics, that pilgrims bring gifts of precious metals and jewels from afar.	true
+building_short_description_texts_short_description_vik_st_columbe_1_short	The greatest converter of the Gaels and Picts is forever remembered by his modest church.	true
+building_short_description_texts_short_description_vik_st_columbe_2_short	The keepers of Saint Columbe’s relics oversee this important site of pilgrimage.	true
+building_short_description_texts_short_description_vik_st_columbe_3_short	Like other churches founded by the great Saint Columbe, this abbey is a place of great religious renown.	true
+building_short_description_texts_short_description_vik_st_columbe_4_short	A monastery exuding the spiritual authority of the great founding saint himself.	true
+building_short_description_texts_short_description_vik_st_columbe_5_short	The cathedral of Columbe’s relics is also the burial place of many great kings, at their request.	true
+building_short_description_texts_short_description_vik_great_hall_1_short	Power consolidation through revelry and camaraderie as well as administration.	true
+building_short_description_texts_short_description_vik_great_hall_2_short	Within this grand building, laws are enforced and disputes are settled. 	true
+building_short_description_texts_short_description_vik_great_hall_3_short	For tribes and kingdoms alike, the halls of the ruling class are epitomes of royal status.	true
+building_short_description_texts_short_description_vik_great_hall_4_short	Those granted an audience with the king shall see the dispensation of justice.	true
+building_short_description_texts_short_description_vik_great_hall_5_short	A splendourous structure, conveying royal magnificence to the people.	true
+building_short_description_texts_short_description_vik_souterrain_1_short	A cave provides walls, a ceiling, and space as good as any manmade room.	true
+building_short_description_texts_short_description_vik_souterrain_2_short	When effectively hidden, such places are invaluable to those in the know.	true
+building_short_description_texts_short_description_vik_souterrain_3_short	Away from prying eyes and the light of day, the surplus is kept safe and sound.	true
+building_short_description_texts_short_description_vik_tithe_hall_1_short	The people’s debt to the houses of God paid in supplies and consumable goods is stored here.	true
+building_short_description_texts_short_description_vik_tithe_hall_2_short	Generosity demanded of the masses ensures that God’s generosity is maintained on earth.	true
+building_short_description_texts_short_description_vik_tithe_hall_3_short	Less of an actual barn, more of a great warehouse under religious control.	true
+building_short_description_texts_short_description_vik_benedictine_abbey_1_short	Obedience to Benedictine rule shall be followed, no matter how small the priory.	true
+building_short_description_texts_short_description_vik_benedictine_abbey_2_short	Prayer, manual labour, and study are all part of a well-rounded monastic routine.	true
+building_short_description_texts_short_description_vik_benedictine_abbey_3_short	Even three hundred years after his death, the churches of Saint Benedict have not diminished in importance.	true
+building_short_description_texts_short_description_vik_benedictine_abbey_4_short	A sacred abode for Benedictines to live, learn, and worship under one roof.	true
+building_short_description_texts_short_description_vik_benedictine_abbey_5_short	The greatest abbeys under the Order of Saint Benedict are sizeable buildings of wealth and knowledge.	true
+building_short_description_texts_short_description_vik_st_patraic_1_short	The town which Saint Patraic’s church nucleates is the diocese of the legendary man himself.	true
+building_short_description_texts_short_description_vik_st_patraic_2_short	The followers of the most famous saint of all are zealous spreaders of the faith, as he was.	true
+building_short_description_texts_short_description_vik_st_patraic_3_short	Great abbeys such as these stand as proof of Patraic’s successful mission to convert the masses.	true
+building_short_description_texts_short_description_vik_st_patraic_4_short	The legend of Saint Patraic is never forgotten, living on in the monasteries built in his name.	true
+building_short_description_texts_short_description_vik_st_patraic_5_short	It is said that even non-believers who set foot in Saint Patraic’s cathedral feel his converting influence.	true
+building_short_description_texts_short_description_vik_embroiders_1_short	Vestments and hangings are not just art, but symbols of extravagant wealth.	true
+building_short_description_texts_short_description_vik_embroiders_2_short	Material wealth in the most literal sense can only be weaved by the most experienced hands.	true
+building_short_description_texts_short_description_vik_embroiders_3_short	The most treasured and sought-after works in Europe require unsurpassed standards of technical skill.	true
+building_short_description_texts_short_description_vik_tools_b_2_short	Raw materials pulled from the earth yesterday can be tomorrow's timeless treasures. It's just a matter of concentration.	true
+building_short_description_texts_short_description_vik_tools_b_3_short	The art of mass producing metallurgy always looks simple to saps. But it is only the master who knows the risks and failures that were necessary to finally succeed. 	true
+building_short_description_texts_short_description_vik_craft_merchant_b_2_short	When every blessed thing you have is made of silver, or of gold, you long for simple pewter.	true
+building_short_description_texts_short_description_vik_craft_merchant_b_3_short	Perhaps we have not for food nor clothes, nor comfort nor counsel... but by God, we shall have spoons.	true
+building_short_description_texts_short_description_vik_hof_1_short	Foreigners gather to carry out strange rituals and beg the aid of the Gods of their forefathers.	true
+building_short_description_texts_short_description_vik_archery_1_short	With constant preparation, the people of the Kingdom may make ready for war.	true
+building_short_description_texts_short_description_vik_athletics_1_short	With constant preparation, the people of the Kingdom may make ready for war.	true
+building_short_description_texts_short_description_vik_archery_2_short	Killing, like any other craft, must be taught and practiced.	true
+building_short_description_texts_short_description_vik_athletics_2_short	Killing, like any other craft, must be taught and practiced.	true
+building_short_description_texts_short_description_vik_hof_2_short	The wisdom of the Gothi can be difficult to interpret.	true
+building_short_description_texts_short_description_vik_oxford_1_short	Dominus illuminatio mea	true
+building_short_description_texts_short_description_vik_island_monastery_1_short	"Immense flashes of lightening, and fiery dragons were seen flying in the air. A great famine immediately followed these signs… on the sixth day before the ides of January, the woeful inroads of heathen men destroyed god’s church in Lindisfarne island by fierce robbery and slaughter."	true
+building_short_description_texts_short_description_vik_island_monastery_2_short	"They came to the church of Lindisfarne, laid everything waste with grievous plundering, trampled the holy places with polluted steps, dug up the altars and seized all the treasures of the holy church. They killed some of the brothers, took some away with them in fetters, many they drove out, naked and loaded with insults, some they drowned in the sea…"	true
+building_short_description_texts_short_description_vik_island_monastery_3_short	"What assurance is there for the churches of Britain, if St Cuthbert, with so great a number of saints, defends not its own? Either this is the beginning of greater tribulation, or else the sins of the inhabitants have called it upon them. Truly it has not happened by chance, but is a sign that it was well merited by someone. But now, you who are left, stand manfully, fight bravely, defend the camp of God."	true
+building_short_description_texts_short_description_vik_foreigners_1_short	Some may call it the place of heathens and murderers. My family and I call it home.	true
+building_short_description_texts_short_description_vik_foreigners_2_short	A rustic home: my latest kill roasting on the fire, and my lovely wife massaging my feet, while the little ones play on the floor with the dogs.	true
+building_short_description_texts_short_description_vik_foreigners_3_short	Life takes us all towards unexpected places, love brings us home.	true
+building_short_description_texts_short_description_vik_borough_1_short	"Never walk away from home ahead of your axe and sword. You can't feel a battle in your bones or foresee a fight."	true
+building_short_description_texts_short_description_vik_borough_2_short	This land belongs to us. We've tilled and planted it. We'll water it with our life blood if we must!	true
+building_short_description_texts_short_description_vik_borough_3_short	We spit on our trials we've built homes for our children and a community for our families. 	true
+building_short_description_texts_short_description_vik_borough_4_short	The kigndom we build here will feed our families for generations.	true
+building_short_description_texts_short_description_vik_borough_5_short	Commerce and industry have replaced squalor. Good architecture has replaced the bad and even in Lunden a sudden craving for decency had swept away a great portion of the existing horrors.	true

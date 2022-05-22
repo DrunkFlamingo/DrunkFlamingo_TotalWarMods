@@ -1,0 +1,170 @@
+key	image_path	localised_description	localised_name	pre_battle_speech_parameter	unlocked_at_rank	is_background_skill	is_female_only_background_skill	is_male_only_background_skill	background_weighting
+#character_skills_tables;3;db/character_skills_tables/deprecated_bg_skills									
+vik_general_back_born_commander	commander.png	This warrior has an innate understanding of tactics, making him an inspired choice to lead in battle.	Born Commander		0	false	false	false	0.0
+vik_general_back_born_commander_circenn	commander.png	This warrior has an innate understanding of tactics, making him an inspired choice to lead in battle.	Born Commander		0	false	false	false	0.0
+vik_general_back_born_commander_dyflin	commander.png	This warrior has an innate understanding of tactics, making him an inspired choice to lead in battle.	Born Commander		0	false	false	false	0.0
+vik_general_back_born_commander_east_engle	commander.png	This warrior has an innate understanding of tactics, making him an inspired choice to lead in battle.	Born Commander		0	false	false	false	0.0
+vik_general_back_born_commander_gwined	commander.png	This warrior has an innate understanding of tactics, making him an inspired choice to lead in battle.	Born Commander		0	false	false	false	0.0
+vik_general_back_born_commander_mide	commander.png	This warrior has an innate understanding of tactics, making him an inspired choice to lead in battle.	Born Commander		0	false	false	false	0.0
+vik_general_back_born_commander_mierce	commander.png	This warrior has an innate understanding of tactics, making him an inspired choice to lead in battle.	Born Commander		0	false	false	false	0.0
+vik_general_back_born_commander_northymbre	commander.png	This warrior has an innate understanding of tactics, making him an inspired choice to lead in battle.	Born Commander		0	false	false	false	0.0
+vik_general_back_born_commander_strat_clut	commander.png	This warrior has an innate understanding of tactics, making him an inspired choice to lead in battle.	Born Commander		0	false	false	false	0.0
+vik_general_back_born_commander_sudreyar	commander.png	This warrior has an innate understanding of tactics, making him an inspired choice to lead in battle.	Born Commander		0	false	false	false	0.0
+vik_general_back_born_commander_west_seaxe	commander.png	This warrior has an innate understanding of tactics, making him an inspired choice to lead in battle.	Born Commander		0	false	false	false	0.0
+vik_general_back_cavalry_recruitment	cavalry_recruitment.png	"Look, it doesn't matter if we all die. Death is not the end, anyway - you know that."	Musterer		0	false	false	false	0.0
+vik_general_back_cavalry_recruitment_circenn	cavalry_recruitment.png	Look, it doesn't matter if we all die. Death is not the end, anyway - you know that.	Musterer		0	false	false	false	0.0
+vik_general_back_cavalry_recruitment_dyflin	cavalry_recruitment.png	Look, it doesn't matter if we all die. Death is not the end, anyway - you know that.	Musterer		0	false	false	false	0.0
+vik_general_back_cavalry_recruitment_east_engle	cavalry_recruitment.png	Look, it doesn't matter if we all die. Death is not the end, anyway - you know that.	Musterer		0	false	false	false	0.0
+vik_general_back_cavalry_recruitment_gwined	cavalry_recruitment.png	"Look, it doesn't matter if we all die. Death is not the end, anyway - you know that."	Musterer		0	false	false	false	0.0
+vik_general_back_cavalry_recruitment_mide	cavalry_recruitment.png	Look, it doesn't matter if we all die. Death is not the end, anyway - you know that.	Musterer		0	false	false	false	0.0
+vik_general_back_cavalry_recruitment_mierce	cavalry_recruitment.png	Look, it doesn't matter if we all die. Death is not the end, anyway - you know that.	Musterer		0	false	false	false	0.0
+vik_general_back_cavalry_recruitment_northymbre	cavalry_recruitment.png	Look, it doesn't matter if we all die. Death is not the end, anyway - you know that.	Musterer		0	false	false	false	0.0
+vik_general_back_cavalry_recruitment_strat_clut	cavalry_recruitment.png	Look, it doesn't matter if we all die. Death is not the end, anyway - you know that.	Musterer		0	false	false	false	0.0
+vik_general_back_cavalry_recruitment_sudreyar	cavalry_recruitment.png	Look, it doesn't matter if we all die. Death is not the end, anyway - you know that.	Musterer		0	false	false	false	0.0
+vik_general_back_cavalry_recruitment_west_seaxe	cavalry_recruitment.png	Look, it doesn't matter if we all die. Death is not the end, anyway - you know that.	Musterer		0	false	false	false	0.0
+vik_general_back_cavalry_upkeep	cavalry_upkeep.png	Virtually born in the saddle, this fellow knows how to look after horse and rider on campaign.	Horseman		0	false	false	false	0.0
+vik_general_back_cavalry_upkeep_circenn	cavalry_upkeep.png	Virtually born in the saddle, this fellow knows how to look after horse and rider on campaign.	Horseman		0	false	false	false	0.0
+vik_general_back_cavalry_upkeep_dyflin	cavalry_upkeep.png	Virtually born in the saddle, this fellow knows how to look after horse and rider on campaign.	Horseman		0	false	false	false	0.0
+vik_general_back_cavalry_upkeep_east_engle	cavalry_upkeep.png	Virtually born in the saddle, this fellow knows how to look after horse and rider on campaign.	Horseman		0	false	false	false	0.0
+vik_general_back_cavalry_upkeep_gwined	cavalry_upkeep.png	Virtually born in the saddle, this fellow knows how to look after horse and rider on campaign.	Horseman		0	false	false	false	0.0
+vik_general_back_cavalry_upkeep_mide	cavalry_upkeep.png	Virtually born in the saddle, this fellow knows how to look after horse and rider on campaign.	Horseman		0	false	false	false	0.0
+vik_general_back_cavalry_upkeep_mierce	cavalry_upkeep.png	Virtually born in the saddle, this fellow knows how to look after horse and rider on campaign.	Horseman		0	false	false	false	0.0
+vik_general_back_cavalry_upkeep_northymbre	cavalry_upkeep.png	Virtually born in the saddle, this fellow knows how to look after horse and rider on campaign.	Horseman		0	false	false	false	0.0
+vik_general_back_cavalry_upkeep_strat_clut	cavalry_upkeep.png	Virtually born in the saddle, this fellow knows how to look after horse and rider on campaign.	Horseman		0	false	false	false	0.0
+vik_general_back_cavalry_upkeep_sudreyar	cavalry_upkeep.png	Virtually born in the saddle, this fellow knows how to look after horse and rider on campaign.	Horseman		0	false	false	false	0.0
+vik_general_back_cavalry_upkeep_west_seaxe	cavalry_upkeep.png	Virtually born in the saddle, this fellow knows how to look after horse and rider on campaign.	Horseman		0	false	false	false	0.0
+vik_general_back_champion_rider	champion_rider.png	Whether it be for hunting, sport or battle, this one is a true expert in the saddle.	Champion Rider		0	false	false	false	0.0
+vik_general_back_champion_rider_circenn	champion_rider.png	Whether it be for hunting, sport or battle, this one is a true expert in the saddle.	Champion Rider		0	false	false	false	0.0
+vik_general_back_champion_rider_dyflin	champion_rider.png	Whether it be for hunting, sport or battle, this one is a true expert in the saddle.	Champion Rider		0	false	false	false	0.0
+vik_general_back_champion_rider_east_engle	champion_rider.png	Whether it be for hunting, sport or battle, this one is a true expert in the saddle.	Champion Rider		0	false	false	false	0.0
+vik_general_back_champion_rider_gwined	champion_rider.png	Whether it be for hunting, sport or battle, this one is a true expert in the saddle.	Champion Rider		0	false	false	false	0.0
+vik_general_back_champion_rider_mide	champion_rider.png	Whether it be for hunting, sport or battle, this one is a true expert in the saddle.	Champion Rider		0	false	false	false	0.0
+vik_general_back_champion_rider_mierce	champion_rider.png	Whether it be for hunting, sport or battle, this one is a true expert in the saddle.	Champion Rider		0	false	false	false	0.0
+vik_general_back_champion_rider_northymbre	champion_rider.png	Whether it be for hunting, sport or battle, this one is a true expert in the saddle.	Champion Rider		0	false	false	false	0.0
+vik_general_back_champion_rider_strat_clut	champion_rider.png	Whether it be for hunting, sport or battle, this one is a true expert in the saddle.	Champion Rider		0	false	false	false	0.0
+vik_general_back_champion_rider_sudreyar	champion_rider.png	Whether it be for hunting, sport or battle, this one is a true expert in the saddle.	Champion Rider		0	false	false	false	0.0
+vik_general_back_champion_rider_west_seaxe	champion_rider.png	Whether it be for hunting, sport or battle, this one is a true expert in the saddle.	Champion Rider		0	false	false	false	0.0
+vik_general_back_melee_upkeep	melee_upkeep.png	This man is an expert with an axe, meaning that he is someone to be listened to in training and avoided on the battlefield!	Axeman		0	false	false	false	0.0
+vik_general_back_melee_upkeep_circenn	melee_upkeep.png	This man is an expert with an axe, meaning that he is someone to be listened to in training and avoided on the battlefield!	Axeman		0	false	false	false	0.0
+vik_general_back_melee_upkeep_dyflin	melee_upkeep.png	This man is an expert with an axe, meaning that he is someone to be listened to in training and avoided on the battlefield!	Axeman		0	false	false	false	0.0
+vik_general_back_melee_upkeep_east_engle	melee_upkeep.png	This man is an expert with an axe, meaning that he is someone to be listened to in training and avoided on the battlefield!	Axeman		0	false	false	false	0.0
+vik_general_back_melee_upkeep_gwined	melee_upkeep.png	This man is an expert with an axe, meaning that he is someone to be listened to in training and avoided on the battlefield!	Axeman		0	false	false	false	0.0
+vik_general_back_melee_upkeep_mide	melee_upkeep.png	This man is an expert with an axe, meaning that he is someone to be listened to in training and avoided on the battlefield!	Axeman		0	false	false	false	0.0
+vik_general_back_melee_upkeep_mierce	melee_upkeep.png	This man is an expert with an axe, meaning that he is someone to be listened to in training and avoided on the battlefield!	Axeman		0	false	false	false	0.0
+vik_general_back_melee_upkeep_northymbre	melee_upkeep.png	This man is an expert with an axe, meaning that he is someone to be listened to in training and avoided on the battlefield!	Axeman		0	false	false	false	0.0
+vik_general_back_melee_upkeep_strat_clut	melee_upkeep.png	This man is an expert with an axe, meaning that he is someone to be listened to in training and avoided on the battlefield!	Axeman		0	false	false	false	0.0
+vik_general_back_melee_upkeep_sudreyar	melee_upkeep.png	This man is an expert with an axe, meaning that he is someone to be listened to in training and avoided on the battlefield!	Axeman		0	false	false	false	0.0
+vik_general_back_melee_upkeep_west_seaxe	melee_upkeep.png	This man is an expert with an axe, meaning that he is someone to be listened to in training and avoided on the battlefield!	Axeman		0	false	false	false	0.0
+vik_general_back_merchant	merchant.png	An eye for a bargain and an understanding of your market are essential talents for the budding trader.	Merchant		0	false	false	false	0.0
+vik_general_back_merchant_circenn	merchant.png	An eye for a bargain and an understanding of your market are essential talents for the budding trader.	Merchant		0	false	false	false	0.0
+vik_general_back_merchant_dyflin	merchant.png	An eye for a bargain and an understanding of your market are essential talents for the budding trader.	Merchant		0	false	false	false	0.0
+vik_general_back_merchant_east_engle	merchant.png	An eye for a bargain and an understanding of your market are essential talents for the budding trader.	Merchant		0	false	false	false	0.0
+vik_general_back_merchant_gwined	merchant.png	An eye for a bargain and an understanding of your market are essential talents for the budding trader.	Merchant		0	false	false	false	0.0
+vik_general_back_merchant_mide	merchant.png	An eye for a bargain and an understanding of your market are essential talents for the budding trader.	Merchant		0	false	false	false	0.0
+vik_general_back_merchant_mierce	merchant.png	An eye for a bargain and an understanding of your market are essential talents for the budding trader.	Merchant		0	false	false	false	0.0
+vik_general_back_merchant_northymbre	merchant.png	An eye for a bargain and an understanding of your market are essential talents for the budding trader.	Merchant		0	false	false	false	0.0
+vik_general_back_merchant_strat_clut	merchant.png	An eye for a bargain and an understanding of your market are essential talents for the budding trader.	Merchant		0	false	false	false	0.0
+vik_general_back_merchant_sudreyar	merchant.png	An eye for a bargain and an understanding of your market are essential talents for the budding trader.	Merchant		0	false	false	false	0.0
+vik_general_back_merchant_west_seaxe	merchant.png	An eye for a bargain and an understanding of your market are essential talents for the budding trader.	Merchant		0	false	false	false	0.0
+vik_general_back_miner	miner.png	The treasures of the earth are there for the taking, if you have the knowledge required to exploit them.	Miner		0	false	false	false	0.0
+vik_general_back_miner_circenn	miner.png	The treasures of the earth are there for the taking, if you have the knowledge required to exploit them.	Miner		0	false	false	false	0.0
+vik_general_back_miner_dyflin	miner.png	The treasures of the earth are there for the taking, if you have the knowledge required to exploit them.	Miner		0	false	false	false	0.0
+vik_general_back_miner_east_engle	miner.png	The treasures of the earth are there for the taking, if you have the knowledge required to exploit them.	Miner		0	false	false	false	0.0
+vik_general_back_miner_gwined	miner.png	The treasures of the earth are there for the taking, if you have the knowledge required to exploit them.	Miner		0	false	false	false	0.0
+vik_general_back_miner_mide	miner.png	The treasures of the earth are there for the taking, if you have the knowledge required to exploit them.	Miner		0	false	false	false	0.0
+vik_general_back_miner_mierce	miner.png	The treasures of the earth are there for the taking, if you have the knowledge required to exploit them.	Miner		0	false	false	false	0.0
+vik_general_back_miner_northymbre	miner.png	The treasures of the earth are there for the taking, if you have the knowledge required to exploit them.	Miner		0	false	false	false	0.0
+vik_general_back_miner_strat_clut	miner.png	The treasures of the earth are there for the taking, if you have the knowledge required to exploit them.	Miner		0	false	false	false	0.0
+vik_general_back_miner_sudreyar	miner.png	The treasures of the earth are there for the taking, if you have the knowledge required to exploit them.	Miner		0	false	false	false	0.0
+vik_general_back_miner_west_seaxe	miner.png	The treasures of the earth are there for the taking, if you have the knowledge required to exploit them.	Miner		0	false	false	false	0.0
+vik_general_back_missile_damage	missile_damage.png	This one was hunting his food just as soon as he could walk; in the end, whether targeting man or beast, the skills needed are the same.	Hunter		0	false	false	false	0.0
+vik_general_back_missile_damage_circenn	missile_damage.png	This one was hunting his food just as soon as he could walk; in the end, whether targeting man or beast, the skills needed are the same.	Hunter		0	false	false	false	0.0
+vik_general_back_missile_damage_dyflin	missile_damage.png	This one was hunting his food just as soon as he could walk; in the end, whether targeting man or beast, the skills needed are the same.	Hunter		0	false	false	false	0.0
+vik_general_back_missile_damage_east_engle	missile_damage.png	This one was hunting his food just as soon as he could walk; in the end, whether targeting man or beast, the skills needed are the same.	Hunter		0	false	false	false	0.0
+vik_general_back_missile_damage_gwined	missile_damage.png	This one was hunting his food just as soon as he could walk; in the end, whether targeting man or beast, the skills needed are the same.	Hunter		0	false	false	false	0.0
+vik_general_back_missile_damage_mide	missile_damage.png	This one was hunting his food just as soon as he could walk; in the end, whether targeting man or beast, the skills needed are the same.	Hunter		0	false	false	false	0.0
+vik_general_back_missile_damage_mierce	missile_damage.png	This one was hunting his food just as soon as he could walk; in the end, whether targeting man or beast, the skills needed are the same.	Hunter		0	false	false	false	0.0
+vik_general_back_missile_damage_northymbre	missile_damage.png	This one was hunting his food just as soon as he could walk; in the end, whether targeting man or beast, the skills needed are the same.	Hunter		0	false	false	false	0.0
+vik_general_back_missile_damage_strat_clut	missile_damage.png	This one was hunting his food just as soon as he could walk; in the end, whether targeting man or beast, the skills needed are the same.	Hunter		0	false	false	false	0.0
+vik_general_back_missile_damage_sudreyar	missile_damage.png	This one was hunting his food just as soon as he could walk; in the end, whether targeting man or beast, the skills needed are the same.	Hunter		0	false	false	false	0.0
+vik_general_back_missile_damage_west_seaxe	missile_damage.png	This one was hunting his food just as soon as he could walk; in the end, whether targeting man or beast, the skills needed are the same.	Hunter		0	false	false	false	0.0
+vik_general_back_missile_recruitment	missile_recruitment.png	"I'll teach you to hit your targets from a fair distance, so you never need to draw your swords."	Archer		0	false	false	false	0.0
+vik_general_back_missile_recruitment_circenn	missile_recruitment.png	I'll teach you to hit your targets from a fair distance, so you never need to draw your swords.	Archer		0	false	false	false	0.0
+vik_general_back_missile_recruitment_dyflin	missile_recruitment.png	I'll teach you to hit your targets from a fair distance, so you never need to draw your swords.	Archer		0	false	false	false	0.0
+vik_general_back_missile_recruitment_east_engle	missile_recruitment.png	I'll teach you to hit your targets from a fair distance, so you never need to draw your swords.	Archer		0	false	false	false	0.0
+vik_general_back_missile_recruitment_gwined	missile_recruitment.png	"I'll teach you to hit your targets from a fair distance, so you never need to draw your swords."	Archer		0	false	false	false	0.0
+vik_general_back_missile_recruitment_mide	missile_recruitment.png	I'll teach you to hit your targets from a fair distance, so you never need to draw your swords.	Archer		0	false	false	false	0.0
+vik_general_back_missile_recruitment_mierce	missile_recruitment.png	I'll teach you to hit your targets from a fair distance, so you never need to draw your swords.	Archer		0	false	false	false	0.0
+vik_general_back_missile_recruitment_northymbre	missile_recruitment.png	I'll teach you to hit your targets from a fair distance, so you never need to draw your swords.	Archer		0	false	false	false	0.0
+vik_general_back_missile_recruitment_strat_clut	missile_recruitment.png	I'll teach you to hit your targets from a fair distance, so you never need to draw your swords.	Archer		0	false	false	false	0.0
+vik_general_back_missile_recruitment_sudreyar	missile_recruitment.png	I'll teach you to hit your targets from a fair distance, so you never need to draw your swords.	Archer		0	false	false	false	0.0
+vik_general_back_missile_recruitment_west_seaxe	missile_recruitment.png	I'll teach you to hit your targets from a fair distance, so you never need to draw your swords.	Archer		0	false	false	false	0.0
+vik_general_back_missile_upkeep	missile_upkeep.png	Archery is an important skill if you wish to live until the following harvest.	Bowman		0	false	false	false	0.0
+vik_general_back_missile_upkeep_circenn	missile_upkeep.png	Archery is an important skill if you wish to live until the following harvest.	Bowman		0	false	false	false	0.0
+vik_general_back_missile_upkeep_dyflin	missile_upkeep.png	Archery is an important skill if you wish to live until the following harvest.	Bowman		0	false	false	false	0.0
+vik_general_back_missile_upkeep_east_engle	missile_upkeep.png	Archery is an important skill if you wish to live until the following harvest.	Bowman		0	false	false	false	0.0
+vik_general_back_missile_upkeep_gwined	missile_upkeep.png	Archery is an important skill if you wish to live until the following harvest.	Bowman		0	false	false	false	0.0
+vik_general_back_missile_upkeep_mide	missile_upkeep.png	Archery is an important skill if you wish to live until the following harvest.	Bowman		0	false	false	false	0.0
+vik_general_back_missile_upkeep_mierce	missile_upkeep.png	Archery is an important skill if you wish to live until the following harvest.	Bowman		0	false	false	false	0.0
+vik_general_back_missile_upkeep_northymbre	missile_upkeep.png	Archery is an important skill if you wish to live until the following harvest.	Bowman		0	false	false	false	0.0
+vik_general_back_missile_upkeep_strat_clut	missile_upkeep.png	Archery is an important skill if you wish to live until the following harvest.	Bowman		0	false	false	false	0.0
+vik_general_back_missile_upkeep_sudreyar	missile_upkeep.png	Archery is an important skill if you wish to live until the following harvest.	Bowman		0	false	false	false	0.0
+vik_general_back_missile_upkeep_west_seaxe	missile_upkeep.png	Archery is an important skill if you wish to live until the following harvest.	Bowman		0	false	false	false	0.0
+vik_general_back_seafarer	seafarer.png	A lifetime spent on the waves makes this man a natural choice to lead when fighting at sea.	Seafarer		0	false	false	false	0.0
+vik_general_back_seafarer_circenn	seafarer.png	A lifetime spent on the waves makes this man a natural choice to lead when fighting at sea.	Seafarer		0	false	false	false	0.0
+vik_general_back_seafarer_dyflin	seafarer.png	A lifetime spent on the waves makes this man a natural choice to lead when fighting at sea.	Seafarer		0	false	false	false	0.0
+vik_general_back_seafarer_east_engle	seafarer.png	A lifetime spent on the waves makes this man a natural choice to lead when fighting at sea.	Seafarer		0	false	false	false	0.0
+vik_general_back_seafarer_gwined	seafarer.png	A lifetime spent on the waves makes this man a natural choice to lead when fighting at sea.	Seafarer		0	false	false	false	0.0
+vik_general_back_seafarer_mide	seafarer.png	A lifetime spent on the waves makes this man a natural choice to lead when fighting at sea.	Seafarer		0	false	false	false	0.0
+vik_general_back_seafarer_mierce	seafarer.png	A lifetime spent on the waves makes this man a natural choice to lead when fighting at sea.	Seafarer		0	false	false	false	0.0
+vik_general_back_seafarer_northymbre	seafarer.png	A lifetime spent on the waves makes this man a natural choice to lead when fighting at sea.	Seafarer		0	false	false	false	0.0
+vik_general_back_seafarer_strat_clut	seafarer.png	A lifetime spent on the waves makes this man a natural choice to lead when fighting at sea.	Seafarer		0	false	false	false	0.0
+vik_general_back_seafarer_sudreyar	seafarer.png	A lifetime spent on the waves makes this man a natural choice to lead when fighting at sea.	Seafarer		0	false	false	false	0.0
+vik_general_back_seafarer_west_seaxe	seafarer.png	A lifetime spent on the waves makes this man a natural choice to lead when fighting at sea.	Seafarer		0	false	false	false	0.0
+vik_general_back_spearmen_recruitment	spearmen_recruitment.png	"Listen, and mind that you do, 'else there's a good chance you'll end up on the wrong end of one of these."	Old Hand		0	false	false	false	0.0
+vik_general_back_spearmen_recruitment_circenn	spearmen_recruitment.png	Listen, and mind that you do, 'else there's a good chance you'll end up on the wrong end of one of these.	Old Hand		0	false	false	false	0.0
+vik_general_back_spearmen_recruitment_dyflin	spearmen_recruitment.png	Listen, and mind that you do, 'else there's a good chance you'll end up on the wrong end of one of these.	Old Hand		0	false	false	false	0.0
+vik_general_back_spearmen_recruitment_east_engle	spearmen_recruitment.png	Listen, and mind that you do, 'else there's a good chance you'll end up on the wrong end of one of these.	Old Hand		0	false	false	false	0.0
+vik_general_back_spearmen_recruitment_gwined	spearmen_recruitment.png	"Listen, and mind that you do, 'else there's a good chance you'll end up on the wrong end of one of these."	Old Hand		0	false	false	false	0.0
+vik_general_back_spearmen_recruitment_mide	spearmen_recruitment.png	Listen, and mind that you do, 'else there's a good chance you'll end up on the wrong end of one of these.	Old Hand		0	false	false	false	0.0
+vik_general_back_spearmen_recruitment_mierce	spearmen_recruitment.png	Listen, and mind that you do, 'else there's a good chance you'll end up on the wrong end of one of these.	Old Hand		0	false	false	false	0.0
+vik_general_back_spearmen_recruitment_northymbre	spearmen_recruitment.png	Listen, and mind that you do, 'else there's a good chance you'll end up on the wrong end of one of these.	Old Hand		0	false	false	false	0.0
+vik_general_back_spearmen_recruitment_strat_clut	spearmen_recruitment.png	Listen, and mind that you do, 'else there's a good chance you'll end up on the wrong end of one of these.	Old Hand		0	false	false	false	0.0
+vik_general_back_spearmen_recruitment_sudreyar	spearmen_recruitment.png	Listen, and mind that you do, 'else there's a good chance you'll end up on the wrong end of one of these.	Old Hand		0	false	false	false	0.0
+vik_general_back_spearmen_recruitment_west_seaxe	spearmen_recruitment.png	Listen, and mind that you do, 'else there's a good chance you'll end up on the wrong end of one of these.	Old Hand		0	false	false	false	0.0
+vik_general_back_spearmen_upkeep	spearmen_upkeep.png	This man's skill with the spear has been drilled into him over many years; now, he wishes to pass on what he has learned.	Spearman		0	false	false	false	0.0
+vik_general_back_spearmen_upkeep_circenn	spearmen_upkeep.png	This man's skill with the spear has been drilled into him over many years; now, he wishes to pass on what he has learned.	Spearman		0	false	false	false	0.0
+vik_general_back_spearmen_upkeep_dyflin	spearmen_upkeep.png	This man's skill with the spear has been drilled into him over many years; now, he wishes to pass on what he has learned.	Spearman		0	false	false	false	0.0
+vik_general_back_spearmen_upkeep_east_engle	spearmen_upkeep.png	This man's skill with the spear has been drilled into him over many years; now, he wishes to pass on what he has learned.	Spearman		0	false	false	false	0.0
+vik_general_back_spearmen_upkeep_gwined	spearmen_upkeep.png	This man's skill with the spear has been drilled into him over many years; now, he wishes to pass on what he has learned.	Spearman		0	false	false	false	0.0
+vik_general_back_spearmen_upkeep_mide	spearmen_upkeep.png	This man's skill with the spear has been drilled into him over many years; now, he wishes to pass on what he has learned.	Spearman		0	false	false	false	0.0
+vik_general_back_spearmen_upkeep_mierce	spearmen_upkeep.png	This man's skill with the spear has been drilled into him over many years; now, he wishes to pass on what he has learned.	Spearman		0	false	false	false	0.0
+vik_general_back_spearmen_upkeep_northymbre	spearmen_upkeep.png	This man's skill with the spear has been drilled into him over many years; now, he wishes to pass on what he has learned.	Spearman		0	false	false	false	0.0
+vik_general_back_spearmen_upkeep_strat_clut	spearmen_upkeep.png	This man's skill with the spear has been drilled into him over many years; now, he wishes to pass on what he has learned.	Spearman		0	false	false	false	0.0
+vik_general_back_spearmen_upkeep_sudreyar	spearmen_upkeep.png	This man's skill with the spear has been drilled into him over many years; now, he wishes to pass on what he has learned.	Spearman		0	false	false	false	0.0
+vik_general_back_spearmen_upkeep_west_seaxe	spearmen_upkeep.png	This man's skill with the spear has been drilled into him over many years; now, he wishes to pass on what he has learned.	Spearman		0	false	false	false	0.0
+vik_general_back_warrior	warrior.png	This man markedly is at his best on the field of battle, up to his knees in blood - and preferably other people's!	Warrior		0	false	false	false	0.0
+vik_general_back_warrior_circenn	warrior.png	This man markedly is at his best on the field of battle, up to his knees in blood - and preferably other people's!	Warrior		0	false	false	false	0.0
+vik_general_back_warrior_dyflin	warrior.png	This man markedly is at his best on the field of battle, up to his knees in blood - and preferably other people's!	Warrior		0	false	false	false	0.0
+vik_general_back_warrior_east_engle	warrior.png	This man markedly is at his best on the field of battle, up to his knees in blood - and preferably other people's!	Warrior		0	false	false	false	0.0
+vik_general_back_warrior_gwined	warrior.png	This man markedly is at his best on the field of battle, up to his knees in blood - and preferably other people's!	Warrior		0	false	false	false	0.0
+vik_general_back_warrior_mide	warrior.png	This man markedly is at his best on the field of battle, up to his knees in blood - and preferably other people's!	Warrior		0	false	false	false	0.0
+vik_general_back_warrior_mierce	warrior.png	This man markedly is at his best on the field of battle, up to his knees in blood - and preferably other people's!	Warrior		0	false	false	false	0.0
+vik_general_back_warrior_northymbre	warrior.png	This man markedly is at his best on the field of battle, up to his knees in blood - and preferably other people's!	Warrior		0	false	false	false	0.0
+vik_general_back_warrior_strat_clut	warrior.png	This man markedly is at his best on the field of battle, up to his knees in blood - and preferably other people's!	Warrior		0	false	false	false	0.0
+vik_general_back_warrior_sudreyar	warrior.png	This man markedly is at his best on the field of battle, up to his knees in blood - and preferably other people's!	Warrior		0	false	false	false	0.0
+vik_general_back_warrior_west_seaxe	warrior.png	This man markedly is at his best on the field of battle, up to his knees in blood - and preferably other people's!	Warrior		0	false	false	false	0.0
+vik_general_back_born_commander_northleode	commander.png	This warrior has an innate understanding of tactics, making him an inspired choice to lead in battle.	Born Commander		0	false	false	false	0.0
+vik_general_back_cavalry_recruitment_northleode	cavalry_recruitment.png	Look, it doesn't matter if we all die. Death is not the end, anyway - you know that.	Musterer		0	false	false	false	0.0
+vik_general_back_cavalry_upkeep_northleode	cavalry_upkeep.png	Virtually born in the saddle, this fellow knows how to look after horse and rider on campaign.	Horseman		0	false	false	false	0.0
+vik_general_back_champion_rider_northleode	champion_rider.png	Whether it be for hunting, sport or battle, this one is a true expert in the saddle.	Champion Rider		0	false	false	false	0.0
+vik_general_back_melee_upkeep_northleode	melee_upkeep.png	This man is an expert with an axe, meaning that he is someone to be listened to in training and avoided on the battlefield!	Axeman		0	false	false	false	0.0
+vik_general_back_merchant_northleode	merchant.png	An eye for a bargain and an understanding of your market are essential talents for the budding trader.	Merchant		0	false	false	false	0.0
+vik_general_back_miner_northleode	miner.png	The treasures of the earth are there for the taking, if you have the knowledge required to exploit them.	Miner		0	false	false	false	0.0
+vik_general_back_missile_damage_northleode	missile_damage.png	This one was hunting his food just as soon as he could walk; in the end, whether targeting man or beast, the skills needed are the same.	Hunter		0	false	false	false	0.0
+vik_general_back_missile_recruitment_northleode	missile_recruitment.png	I'll teach you to hit your targets from a fair distance, so you never need to draw your swords.	Archer		0	false	false	false	0.0
+vik_general_back_missile_upkeep_northleode	missile_upkeep.png	Archery is an important skill if you wish to live until the following harvest.	Bowman		0	false	false	false	0.0
+vik_general_back_seafarer_northleode	seafarer.png	A lifetime spent on the waves makes this man a natural choice to lead when fighting at sea.	Seafarer		0	false	false	false	0.0
+vik_general_back_spearmen_recruitment_northleode	spearmen_recruitment.png	Listen, and mind that you do, 'else there's a good chance you'll end up on the wrong end of one of these.	Old Hand		0	false	false	false	0.0
+vik_general_back_spearmen_upkeep_northleode	spearmen_upkeep.png	This man's skill with the spear has been drilled into him over many years; now, he wishes to pass on what he has learned.	Spearman		0	false	false	false	0.0
+vik_general_back_warrior_northleode	warrior.png	This man markedly is at his best on the field of battle, up to his knees in blood - and preferably other people's!	Warrior		0	false	false	false	0.0

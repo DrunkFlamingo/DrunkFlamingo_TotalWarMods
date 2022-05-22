@@ -1,0 +1,37 @@
+key	unit	slot_bed	trade_value	icon_filepath	strategic_value	in_encyclopedia
+#resources_tables;2;db/resources_tables/resources						
+res_vik_abbey	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\abbey.png	500	true
+res_vik_anvil_gold	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\anvil_unique.png	500	false
+res_vik_apple_gold	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\apple_unique.png	500	false
+res_vik_cloth	bundle	settlement_castle	8	data\UI\Campaign UI\effect_bundles\cloth.png	500	true
+res_vik_coin	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\wealth.png	500	false
+res_vik_coin_gold	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\coin_unique.png	500	false
+res_vik_copper	ingot	settlement_castle	5	data\UI\Campaign UI\effect_bundles\copper.png	500	true
+res_vik_crown_gold	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\crown_unique.png	500	false
+res_vik_farm	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\food.png	0	true
+res_vik_fish	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\fish.png	500	false
+res_vik_fort	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\fort.png	500	false
+res_vik_fort_cross_gold	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\forted_abbey_unique.png	500	false
+res_vik_fort_gold	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\fort_unique.png	500	false
+res_vik_gold	chests	settlement_castle	13	data\UI\Campaign UI\effect_bundles\gold.png	500	true
+res_vik_herring	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\fish_unique.png	500	false
+res_vik_iron	ingot	settlement_castle	5	data\UI\Campaign UI\effect_bundles\iron.png	500	true
+res_vik_lead	ingot	settlement_castle	5	data\UI\Campaign UI\effect_bundles\lead.png	500	true
+res_vik_leather	bundle	settlement_castle	4	data\UI\Campaign UI\effect_bundles\furs.png	500	true
+res_vik_market	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\cloth.png	0	true
+res_vik_port	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\port.png	500	false
+res_vik_pottery	kilnful	settlement_castle	6	data\UI\Campaign UI\effect_bundles\pottery.png	500	true
+res_vik_river	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\cloth.png	0	true
+res_vik_saint	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\saint.png	500	true
+res_vik_saint_gold	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\saint_unique.png	500	false
+res_vik_salt	barrels	settlement_castle	9	data\UI\Campaign UI\effect_bundles\salt.png	500	true
+res_vik_ship_gold	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\ship_unique.png	500	false
+res_vik_silver	ingot	settlement_castle	10	data\UI\Campaign UI\effect_bundles\silver.png	500	true
+res_vik_tin	ingot	settlement_castle	8	data\UI\Campaign UI\effect_bundles\tin.png	500	true
+res_vik_trade	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\trade.png	500	false
+res_vik_trade_port	ingot	settlement_castle	0	data\UI\Campaign UI\effect_bundles\trade.png	500	false
+res_vik_wood	logs	settlement_castle	4	data\UI\Campaign UI\effect_bundles\wood.png	500	true
+shield_candles	bundle	settlement_castle	8	data\UI\Campaign UI\effect_bundles\candles.png	0	true
+shield_steel	ingot	settlement_castle	10	data\UI\Campaign UI\effect_bundles\tools.png	600	true
+shield_textiles	bundle	settlement_castle	12	data\UI\Campaign UI\effect_bundles\textiles.png	0	true
+shield_jewellery	chests	settlement_castle	16	data\UI\Campaign UI\effect_bundles\jewellery.png	0	true

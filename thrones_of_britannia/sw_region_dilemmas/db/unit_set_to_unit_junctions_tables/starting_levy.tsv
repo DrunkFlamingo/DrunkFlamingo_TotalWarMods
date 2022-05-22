@@ -1,0 +1,15 @@
+unit_caste	unit_category	unit_class	unit_record	unit_set	exclude
+#unit_set_to_unit_junctions_tables;0;db/unit_set_to_unit_junctions_tables/starting_levy					
+			est_spearband	starting_levy	false
+			est_norse_warriors	starting_levy	false
+			dan_ceorl_spearmen	starting_levy	false
+			dan_ceorl_axemen	starting_levy	false
+			eng_ceorl_spearmen	starting_levy	false
+			eng_ceorl_javelinmen	starting_levy	false
+			dan_axemen	starting_levy	false
+			wel_levy_spearmen	starting_levy	false
+			wel_archers	starting_levy	false
+			iri_freemen_spearmen	starting_levy	false
+			iri_serf_archers	starting_levy	false
+			sco_alban_levy_spearmen	starting_levy	false
+			sco_alban_crossbowmen	starting_levy	false

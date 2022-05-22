@@ -1,0 +1,12 @@
+key	filename	range	rigid
+#warscape_rigid_lod_tables;1;db/warscape_rigid_lod_tables/sw_warscape_rigid_lod			
+997914703	VariantMeshes/_VariantModels/man/weapons/javelin_leaf_01.rigid_model_v2	0	projectiles_javelin_leaf_01
+997914704	VariantMeshes/_VariantModels/man/weapons/javelin_leaf_02.rigid_model_v2	0	projectiles_javelin_leaf_02
+997914705	VariantMeshes/_VariantModels/man/weapons/javelin_leaf_03.rigid_model_v2	0	projectiles_javelin_leaf_03
+997914706	VariantMeshes/_VariantModels/man/weapons/javelin_tip_01.rigid_model_v2	0	projectiles_javelin_tip_01
+997914707	VariantMeshes/_VariantModels/man/weapons/javelin_tip_02.rigid_model_v2	0	projectiles_javelin_tip_02
+997914708	VariantMeshes/_VariantModels/man/weapons/javelin_tip_03.rigid_model_v2	0	projectiles_javelin_tip_03
+997914709	VariantMeshes/_VariantModels/man/weapons/javelin_wood_01.rigid_model_v2	0	projectiles_javelin_wood_01
+997914710	VariantMeshes/_VariantModels/man/weapons/javelin_wood_02.rigid_model_v2	0	projectiles_javelin_wood_02
+997914711	VariantMeshes/_VariantModels/man/weapons/javelin_wood_03.rigid_model_v2	0	projectiles_javelin_wood_03
+997914712	VariantMeshes/_VariantModels/man/weapons/vik_spear_leaf_01/shi_dart_irish.rigid_model_v2	0	projectiles_shi_dart_irish

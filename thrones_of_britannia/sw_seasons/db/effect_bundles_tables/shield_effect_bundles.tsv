@@ -1,0 +1,10 @@
+key	localised_description	localised_title	ui_icon	bundle_target
+#effect_bundles_tables;1;db/effect_bundles_tables/shield_effect_bundles				
+shield_season_winter	Placeholder	Placeholder	season_1.png	province
+shield_season_summer	Placeholder	Placeholder	season_2.png	province
+shield_season_harvest	Placeholder	Placeholder	season_3.png	province
+shield_season_spring	Placeholder	Placeholder	season_4.png	province
+shield_season_winter_bitter	Placeholder	Placeholder	season_11.png	province
+shield_season_summer_drought	Placeholder	Placeholder	season_22.png	province
+shield_season_harvest_cold	Placeholder	Placeholder	season_33.png	province
+shield_season_spring_flood	Placeholder	Placeholder	season_44.png	province

@@ -1,0 +1,13 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/sw_diplomatic_effects.loc		
+effects_description_sw_diplomacy_all_gva	%+n diplomatic relations with the Great Viking Army	false
+effects_description_sw_diplomacy_all_vsk	%+n diplomatic relations with the Viking Sea Kings	false
+effects_description_sw_diplomacy_all_sax	%+n diplomatic relations with the Saxons	false
+effects_description_sw_diplomacy_all_iri	%+n diplomatic relations with the Irish	false
+effects_description_sw_diplomacy_all_scots	%+n diplomatic relations with the Scottish	false
+effects_description_sw_diplomacy_all_invaders	%+n diplomatic relations with the Viking Invaders	false
+effects_description_sw_diplomacy_dummy_all_vikings	%+n diplomatic relations with all Viking factions	false
+effects_description_sw_diplomacy_dummy_all_non_vikings	%+n diplomatic relations with Saxons, Welsh and Gealic factions	false
+effects_description_sw_diplomacy_all_welsh	%+n diplomatic relations with the Welsh	false
+effects_description_sw_diplomacy_all_vikings	%+n diplomatic relations with all Viking factions	false
+effects_description_sw_diplomacy_all_non_vikings	%+n diplomatic relations with Saxons, Welsh, and Gealic factions	false

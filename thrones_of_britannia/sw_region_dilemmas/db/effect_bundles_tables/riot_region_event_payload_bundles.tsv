@@ -1,0 +1,10 @@
+key	localised_description	localised_title	ui_icon	bundle_target
+#effect_bundles_tables;1;db/effect_bundles_tables/riot_region_event_payload_bundles				
+sw_rebellion_bandits	PLACEHOLDER	PLACEHOLDER	loot_raid.png	region
+sw_rebellion_corruption	PLACEHOLDER	PLACEHOLDER	corruption.png	region
+sw_rebellion_food_stores	PLACEHOLDER	PLACEHOLDER	food_negative.png	region
+shield_rebellion_rioting	PLACEHOLDER	PLACEHOLDER	loot_raid.png	region
+sw_rebellion_tyrannical_1			loot_raid.png	region
+sw_rebellion_oppressor_1			loot_raid.png	region
+sw_rebellion_rioting_household_guard_2			loot_raid.png	region
+sw_rebellion_demagogue	PLACEHOLDER	PLACEHOLDER	loot_raid.png	region

@@ -1,0 +1,21 @@
+building	effect	effect_scope	value	value_damaged	value_ruined
+#building_effects_junction_tables;3;db/building_effects_junction_tables/building_effect_port					
+vik_port_trade_1	vik_trade_mod	faction_to_faction_own	2.0	1.0	0.0
+vik_port_trade_2	vik_trade_mod	faction_to_faction_own	5.0	2.0	0.0
+vik_port_trade_3	vik_trade_mod	faction_to_faction_own	10.0	5.0	0.0
+vik_port_fish_2	vik_trade_mod	faction_to_faction_own	4.0	1.0	0.0
+vik_port_fish_3	vik_trade_mod	faction_to_faction_own	8.0	2.0	0.0
+vik_port_military_1	vik_diplomacy_penalty	faction_to_faction_own	-10.0	-5.0	0.0
+vik_port_military_2	vik_diplomacy_penalty	faction_to_faction_own	-20.0	-10.0	0.0
+vik_port_military_3	vik_diplomacy_penalty	faction_to_faction_own	-30.0	-15.0	0.0
+vik_port_military_3	vik_raid_income_mod	faction_to_faction_own	10.0	5.0	0.0
+vik_port_military_2	vik_raid_income_mod	faction_to_faction_own	5.0	1.0	0.0
+vik_fishing_1	vik_trade_mod	faction_to_faction_own	1.0	1.0	0.0
+vik_fishing_2	vik_trade_mod	faction_to_faction_own	2.0	2.0	0.0
+vik_fishing_3	vik_trade_mod	faction_to_faction_own	3.0	3.0	0.0
+vik_fishing_4	vik_trade_mod	faction_to_faction_own	4.0	4.0	0.0
+vik_fishing_5	vik_trade_mod	faction_to_faction_own	5.0	5.0	0.0
+vik_fishing_b_2	vik_trade_mod	faction_to_faction_own	2.0	2.0	0.0
+vik_fishing_b_3	vik_trade_mod	faction_to_faction_own	4.0	4.0	0.0
+vik_fishing_b_4	vik_trade_mod	faction_to_faction_own	6.0	6.0	0.0
+vik_fishing_b_5	vik_trade_mod	faction_to_faction_own	8.0	8.0	0.0

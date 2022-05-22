@@ -1,0 +1,55 @@
+key	localised_description	localised_title	ui_icon	bundle_target
+#effect_bundles_tables;1;db/effect_bundles_tables/faction_effect_bundles				
+vik_faction_trait_caisil	Caisil get the following bonuses:	Caisil	trait_caisil.png	faction
+vik_faction_trait_caisil_campaign	Caisil get the following bonuses:	Caisil	trait_caisil.png	faction
+vik_faction_trait_caisil_separatist	Caisil get the following bonuses:	Caisil	trait_caisil.png	faction
+vik_faction_trait_circenn	Circenn get the following bonuses:	Circenn	trait_circenn.png	faction
+vik_faction_trait_circenn_campaign	Circenn get the following bonuses:	Circenn	trait_circenn.png	faction
+vik_faction_trait_circenn_separatist	Circenn Separatists get the following bonuses:	Circenn Separatists	trait_circenn.png	faction
+vik_faction_trait_dyflin	Dyflin get the following bonuses:	Dyflin	trait_dyflin.png	faction
+vik_faction_trait_dyflin_campaign	Dyflin get the following bonuses:	Dyflin	trait_dyflin.png	faction
+vik_faction_trait_dyflin_separatist	Dyflin Separatists get the following bonuses:	Dyflin Separatists	trait_dyflin.png	faction
+vik_faction_trait_east_engle	East Engle get the following bonuses:	East Engle	trait_east_engle.png	faction
+vik_faction_trait_east_engle_campaign	East Engle get the following bonuses:	East Engle	trait_east_engle.png	faction
+vik_faction_trait_east_engle_separatist	East Engle Separatists get the following bonuses:	East Engle Separatists	trait_east_engle.png	faction
+vik_faction_trait_english	English Kingdoms get the following bonuses:	English Kingdoms	english_kingdoms.png	faction
+vik_faction_trait_gael	Gaelic Kingdoms get the following bonuses:	Gaelic Kingdoms	gaelic_kingdoms.png	faction
+vik_faction_trait_great_viking_army	Great Viking Army get the following bonuses:	Great Viking Army	great_viking_army.png	faction
+vik_faction_trait_gwined	Gwined get the following bonuses:	Gwined	trait_gwined.png	faction
+vik_faction_trait_gwined_campaign	Gwined get the following bonuses:	Gwined	trait_gwined.png	faction
+vik_faction_trait_gwined_separatist	Gwined Separatists get the following bonuses:	Gwined Separatists	trait_gwined.png	faction
+vik_faction_trait_hellirborg	Hellirborg get the following bonuses:	Hellirborg	trait_hellirborg.png	faction
+vik_faction_trait_hellirborg_campaign	Hellirborg get the following bonuses:	Hellirborg	trait_hellirborg.png	faction
+vik_faction_trait_hellirborg_separatist	Hellirborg get the following bonuses:	Hellirborg	trait_hellirborg.png	faction
+vik_faction_trait_hlymrekr	Hlymrekr get the following bonuses:	Hlymrekr	trait_hlymrekr.png	faction
+vik_faction_trait_hlymrekr_campaign	Hlymrekr get the following bonuses:	Hlymrekr	trait_hlymrekr.png	faction
+vik_faction_trait_hlymrekr_separatist	Hlymrekr get the following bonuses:	Hlymrekr	trait_hlymrekr.png	faction
+vik_faction_trait_mide	Mide get the following bonuses:	Mide	trait_mide.png	faction
+vik_faction_trait_mide_campaign	Mide get the following bonuses:	Mide	trait_mide.png	faction
+vik_faction_trait_mide_separatist	Mide Separatists get the following bonuses:	Mide Separatists	trait_mide.png	faction
+vik_faction_trait_mierce	Mierce get the following bonuses:	Mierce	trait_mierce.png	faction
+vik_faction_trait_mierce_campaign	Mierce get the following bonuses:	Mierce	trait_mierce.png	faction
+vik_faction_trait_mierce_separatist	Mierce Separatists get the following bonuses:	Mierce Separatists	trait_mierce.png	faction
+vik_faction_trait_northleode	Northymbre get the following bonuses:	Northymbre	trait_northleode.png	faction
+vik_faction_trait_northleode_campaign	Northymbre get the following bonuses:	Northymbre	trait_northleode.png	faction
+vik_faction_trait_northleode_separatist	Northymbre get the following bonuses:	Northymbre	trait_northleode.png	faction
+vik_faction_trait_northymbre	Northymbre get the following bonuses:	Northymbre	trait_northymbre.png	faction
+vik_faction_trait_northymbre_campaign	Northymbre get the following bonuses:	Northymbre	trait_northymbre.png	faction
+vik_faction_trait_northymbre_separatist	Northymbre Separatists get the following bonuses:	Northymbre Separatists	trait_northymbre.png	faction
+vik_faction_trait_rebels	Rebels get the following bonuses:	Rebels	trait_hunni.png	faction
+vik_faction_trait_seisilwig	Seisilwig get the following bonuses:	Seisilwig	trait_seisilwig.png	faction
+vik_faction_trait_seisilwig_campaign	Seisilwig get the following bonuses:	Seisilwig	trait_seisilwig.png	faction
+vik_faction_trait_seisilwig_separatist	Seisilwig get the following bonuses:	Seisilwig	trait_seisilwig.png	faction
+vik_faction_trait_strat_clut	Strat Clut get the following bonuses:	Strat Clut	trait_strat_clut.png	faction
+vik_faction_trait_strat_clut_campaign	Strat Clut get the following bonuses:	Strat Clut	trait_strat_clut.png	faction
+vik_faction_trait_strat_clut_separatist	Strat Clut Separatists get the following bonuses:	Strat Clut Separatists	trait_strat_clut.png	faction
+vik_faction_trait_sudreyar	Sudreyar get the following bonuses:	Sudreyar	trait_sudreyar.png	faction
+vik_faction_trait_sudreyar_campaign	Sudreyar get the following bonuses:	Sudreyar	trait_sudreyar.png	faction
+vik_faction_trait_sudreyar_separatist	Sudreyar Separatists get the following bonuses:	Sudreyar Separatists	trait_sudreyar.png	faction
+vik_faction_trait_viking_sea_kings	Viking Sea Kings get the following bonuses:	Viking Sea Kings	viking_sea_kings.png	faction
+vik_faction_trait_vikings	Vikings get the following bonuses:	Vikings	trait_hunni.png	faction
+vik_faction_trait_vikings_major	Vikings get the following bonuses:	Vikings	trait_hunni.png	faction
+vik_faction_trait_welsh	Welsh Kingdoms get the following bonuses:	Welsh Kingdoms	welsh_kingdoms.png	faction
+vik_faction_trait_west_seaxe	West Seaxe get the following bonuses:	West Seaxe	trait_west_seaxe.png	faction
+vik_faction_trait_west_seaxe_campaign	West Seaxe get the following bonuses:	West Seaxe	trait_west_seaxe.png	faction
+vik_faction_trait_west_seaxe_separatist	West Seaxe Separatists get the following bonuses:	West Seaxe Separatists	trait_west_seaxe.png	faction

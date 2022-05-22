@@ -1,0 +1,3 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/banditry				
+sw_banditry	vik_religion_banditry.png	3	vik_religion_banditry	false

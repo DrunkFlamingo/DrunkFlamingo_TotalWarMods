@@ -1,0 +1,17 @@
+key	localised_description	localised_title	ui_icon	bundle_target
+#effect_bundles_tables;1;db/effect_bundles_tables/skill_scripted_effects				
+sw_skills_henchmen_cattle_rustling			cattle.png	faction
+sw_gothi_3			icon_pagan.png	force
+sw_gothi_2			icon_pagan.png	force
+sw_gothi_1			icon_pagan.png	force
+sw_priest_1			abbey.png	force
+sw_priest_3			abbey.png	force
+sw_priest_2			abbey.png	force
+sw_skills_skald_allegiance			allegiance.png	force
+sw_skills_skald_morale			morale.png	force
+sw_gothi_1_gov			icon_pagan.png	region
+sw_gothi_2_gov			icon_pagan.png	region
+sw_gothi_3_gov			icon_pagan.png	region
+sw_priest_1_gov			abbey.png	region
+sw_priest_2_gov			abbey.png	region
+sw_priest_3_gov			abbey.png	region

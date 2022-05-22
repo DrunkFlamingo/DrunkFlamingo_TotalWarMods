@@ -1,0 +1,17 @@
+key	baseline_price_per_unit	price_elasticy_of_demand
+#commodities_tables;0;db/commodities_tables/commodities		
+res_vik_cloth	4.0	1.0
+res_vik_copper	4.0	1.0
+res_vik_gold	10.0	1.0
+res_vik_iron	4.0	1.0
+res_vik_lead	4.0	1.0
+res_vik_leather	3.0	1.0
+res_vik_pottery	5.0	1.0
+res_vik_salt	7.0	1.0
+res_vik_silver	8.0	1.0
+res_vik_tin	6.0	1.0
+res_vik_wood	3.0	1.0
+shield_candles	7.0	1.0
+shield_steel	8.0	1.0
+shield_textiles	8.0	1.0
+shield_jewellery	12.0	1.0

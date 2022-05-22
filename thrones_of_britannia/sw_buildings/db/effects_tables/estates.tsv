@@ -1,0 +1,5 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/estates				
+shield_estates_landed	estate_landed.png	101	estates.png	false
+shield_estates_commerce	estate_commerce.png	101	estates.png	false
+shield_estates_hunting	estate_church.png	101	estate_church.png	false

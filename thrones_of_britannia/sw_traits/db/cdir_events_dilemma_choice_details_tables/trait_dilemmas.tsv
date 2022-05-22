@@ -1,0 +1,17 @@
+choice_key	dilemma_key
+#cdir_events_dilemma_choice_details_tables;0;db/cdir_events_dilemma_choice_details_tables/trait_dilemmas	
+FIRST	sw_traits_strange_friends
+SECOND	sw_traits_strange_friends
+FIRST	sw_traits_foreign_settlers
+SECOND	sw_traits_foreign_settlers
+FIRST	sw_traits_beloved
+SECOND	sw_traits_beloved
+FIRST	sw_traits_educating_heir
+FIRST	sw_traits_grooming_heir
+FIRST	sw_traits_treason
+FIRST	sw_traits_collector
+SECOND	sw_traits_educating_heir
+SECOND	sw_traits_grooming_heir
+SECOND	sw_traits_treason
+SECOND	sw_traits_collector
+THIRD	sw_traits_treason

@@ -1,0 +1,10 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/!politics_dilemmas.loc		
+dilemmas_localised_title_sw_secure_loyalty_wants_money	Secure Loyalty	false
+dilemmas_localised_title_sw_secure_loyalty_wants_influence	Secure Loyalty	false
+dilemmas_localised_title_sw_secure_loyalty_make_an_offer	Secure Loyalty	false
+dilemmas_localised_title_sw_secure_loyalty_break_knees	Secure Loyalty	false
+dilemmas_localised_description_sw_secure_loyalty_wants_money	Loyalty comes from many places; from the mind, the heart and often the pocket. This man is demanding more money to ensure his dedication. How shall we respond?	false
+dilemmas_localised_description_sw_secure_loyalty_wants_influence	This person insinuates that they could better serve their King as a loyal subject if they had more influence over his realm. What say you?	false
+dilemmas_localised_description_sw_secure_loyalty_make_an_offer	They do not betray their desires, and leave us guessing as to what they want. What shall we offer them to secure their loyalty?	false
+dilemmas_localised_description_sw_secure_loyalty_break_knees	In this case, securing loyalty is proving quite difficult. Unfortunately, and ugly though it is, more drastic measures may be required…	false

@@ -1,0 +1,10 @@
+key	level	trait	threshold_points
+#character_trait_levels_tables;0;db/character_trait_levels_tables/flag_traits			
+sw_traits_strange_friends_flag	1	sw_traits_strange_friends_flag	1
+sw_traits_foreign_settlers_flag	1	sw_traits_foreign_settlers_flag	1
+sw_traits_beloved_flag	1	sw_traits_beloved_flag	1
+sw_traits_grooming_heir_flag	1	sw_traits_grooming_heir_flag	1
+sw_traits_educating_heir_flag	1	sw_traits_educating_heir_flag	1
+sw_traits_corruption_flag	1	sw_traits_corruption_flag	1
+sw_traits_treason_flag	1	sw_traits_treason_flag	1
+sw_traits_collector_flag	1	sw_traits_collector_flag	1

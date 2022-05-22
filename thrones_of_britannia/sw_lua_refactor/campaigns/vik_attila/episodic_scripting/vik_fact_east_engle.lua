@@ -1,0 +1,13 @@
+--Starting Situation: You've agreed not to attack the Saxons, but will you honour that?
+--Starting Situation: Lunden seized by rebellious danes.
+--Early game decision: Dilemma tempts you to decidedly not honour it.
+--Early game decision: First ship of foreigners in your campaign, tensions flare over it.
+--Midgame Realm Divide: Four groups have dynamic relationships.
+--The more land Saxons lose, the more they will be friendly to eachother.
+--The more land the Saxons or the Great Viking Army takes in the Danelaw Boroughs, the more the Five Boroughs factions will hate them.
+--The more land the Great Viking Army gains, the more likely Jorvik and East Engle are to betray eachother.
+--The more war breaks out between all these groups, the more likely the welsh are to launch their rebellion.
+--Midgame Invasion: Danes Invade. If you're lucky they will support you, but try not to let them get bored.
+--Here King: Escalating likelihood of plots if you are an opressive dick and lose political authority.
+--Lategame Invasion: Norse Invade and they aren't very friendly.
+--Lategame Invasion: Normans

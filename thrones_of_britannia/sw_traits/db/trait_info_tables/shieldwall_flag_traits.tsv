@@ -1,0 +1,10 @@
+trait	applicable_to
+#trait_info_tables;0;db/trait_info_tables/shieldwall_flag_traits	
+sw_traits_strange_friends_flag	agent
+sw_traits_foreign_settlers_flag	agent
+sw_traits_beloved_flag	agent
+sw_traits_grooming_heir_flag	agent
+sw_traits_educating_heir_flag	agent
+sw_traits_corruption_flag	agent
+sw_traits_treason_flag	agent
+sw_traits_collector_flag	agent

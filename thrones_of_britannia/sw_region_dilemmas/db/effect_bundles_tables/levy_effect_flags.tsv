@@ -1,0 +1,6 @@
+key	localised_description	localised_title	ui_icon	bundle_target
+#effect_bundles_tables;1;db/effect_bundles_tables/levy_effect_flags				
+shieldwall_conscription_small	PLACEHOLDER	PLACEHOLDER	replenishment_spear.png	faction
+shieldwall_conscription_medium	PLACEHOLDER	PLACEHOLDER	replenishment_spear.png	faction
+shieldwall_conscription_large	PLACEHOLDER	PLACEHOLDER	replenishment_spear.png	faction
+shieldwall_mercenary_choice	PLACEHOLDER	PLACEHOLDER	upkeep.png	faction

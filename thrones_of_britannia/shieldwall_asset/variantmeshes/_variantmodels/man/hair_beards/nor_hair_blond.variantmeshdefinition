@@ -1,0 +1,13 @@
+<VARIANT_MESH>
+	<SLOT name="hair" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/hair_beards/hair/vik_hair_short_01/vik_hair_short_01.rigid_model_v2"  imposter_model="VariantMeshes/_VariantModels/man/hair_beards/hair/vik_hair_balding_long_01/vik_hair_balding_long_01.rigid_model_v2" >
+			<TINT red="0.792157" green="0.552941" blue="0.258824" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/hair_beards/hair/vik_hair_short_02/vik_hair_short_02.rigid_model_v2"  imposter_model="VariantMeshes/_VariantModels/man/hair_beards/hair/vik_hair_balding_long_01/vik_hair_balding_long_01.rigid_model_v2" >
+			<TINT red="0.792157" green="0.54902" blue="0.258824" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\hair_beards\hair/birka_hair_01.rigid_model_v2" >
+			<TINT red="0.792157" green="0.54902" blue="0.258824" random_range="0.0" />
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

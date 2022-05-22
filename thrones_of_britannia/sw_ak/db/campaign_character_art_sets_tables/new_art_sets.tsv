@@ -1,0 +1,3 @@
+art_set_id	agent_type	culture	subculture	faction	is_custom	is_male	group
+#campaign_character_art_sets_tables;5;db/campaign_character_art_sets_tables/new_art_sets							
+ecgberht	general			vik_fact_northleode	true	true	viking

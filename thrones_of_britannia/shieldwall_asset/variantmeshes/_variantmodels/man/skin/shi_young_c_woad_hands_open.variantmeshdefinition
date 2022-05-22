@@ -1,0 +1,13 @@
+<VARIANT_MESH>
+	<SLOT name="skin" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\skin\vik_head_young_c_01/shi_woadhead_young_c_01.rigid_model_v2" />
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\skin\vik_head_young_c_02/shi_woadhead_young_c_02.rigid_model_v2" />
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\skin\vik_head_young_c_04/shi_woadhead_young_c_04.rigid_model_v2" />
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\skin\vik_head_young_c_05/shi_woadhead_young_c_05.rigid_model_v2" />
+	</SLOT>
+	<SLOT name="hands" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\skin\vik_hands_open_legs_01/shi_woads_open_01.rigid_model_v2" />
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\skin\vik_hands_open_legs_01/shi_woads_open_02.rigid_model_v2" />
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\skin\vik_hands_open_legs_01/shi_woads_open_03.rigid_model_v2" />
+	</SLOT>
+</VARIANT_MESH>

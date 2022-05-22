@@ -1,0 +1,7 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/new_land_units.loc		
+land_units_onscreen_name_eng_north_horsemen	Bernician Horsemen	true
+land_units_onscreen_name_eng_north_spearmen	Ceorl Spearband	true
+land_units_onscreen_name_eng_north_champion	Northleode Gedriht	true
+land_units_onscreen_name_eng_north_hunters	Lothian Hunters	true
+land_units_onscreen_name_eng_north_javelinmen	Ceorl Skirmishers	true

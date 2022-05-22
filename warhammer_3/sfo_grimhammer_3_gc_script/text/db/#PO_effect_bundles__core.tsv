@@ -1,0 +1,310 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/#PO_effect_bundles__core.loc		
+effect_bundles_localised_description_brt_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_brt_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_brt_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_brt_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_brt_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_brt_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_brt_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_def_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_def_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_def_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_def_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_def_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_def_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_def_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_dwf_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_dwf_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_dwf_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_dwf_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_dwf_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_dwf_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_dwf_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_emp_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_emp_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_emp_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_emp_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_emp_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_emp_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_emp_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_grn_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_grn_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_grn_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_grn_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_grn_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_grn_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_grn_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_lzd_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_lzd_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_lzd_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_lzd_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_lzd_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_lzd_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_lzd_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_skv_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_skv_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_skv_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_skv_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_skv_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_skv_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_skv_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_vmp_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_vmp_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_vmp_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_vmp_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_vmp_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_vmp_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_vmp_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_wef_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_wef_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_wef_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_wef_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_wef_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_wef_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_wef_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_title_brt_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_brt_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_brt_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_brt_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_brt_public_order_5_content	Tightened	true
+effect_bundles_localised_title_brt_public_order_6_happy	Strong	true
+effect_bundles_localised_title_brt_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_def_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_def_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_def_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_def_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_def_public_order_5_content	Tightened	true
+effect_bundles_localised_title_def_public_order_6_happy	Strong	true
+effect_bundles_localised_title_def_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_dwf_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_dwf_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_dwf_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_dwf_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_dwf_public_order_5_content	Tightened	true
+effect_bundles_localised_title_dwf_public_order_6_happy	Strong	true
+effect_bundles_localised_title_dwf_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_emp_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_emp_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_emp_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_emp_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_emp_public_order_5_content	Tightened	true
+effect_bundles_localised_title_emp_public_order_6_happy	Strong	true
+effect_bundles_localised_title_emp_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_grn_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_grn_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_grn_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_grn_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_grn_public_order_5_content	Tightened	true
+effect_bundles_localised_title_grn_public_order_6_happy	Strong	true
+effect_bundles_localised_title_grn_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_lzd_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_lzd_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_lzd_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_lzd_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_lzd_public_order_5_content	Tightened	true
+effect_bundles_localised_title_lzd_public_order_6_happy	Strong	true
+effect_bundles_localised_title_lzd_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_skv_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_skv_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_skv_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_skv_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_skv_public_order_5_content	Tightened	true
+effect_bundles_localised_title_skv_public_order_6_happy	Strong	true
+effect_bundles_localised_title_skv_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_vmp_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_vmp_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_vmp_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_vmp_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_vmp_public_order_5_content	Tightened	true
+effect_bundles_localised_title_vmp_public_order_6_happy	Strong	true
+effect_bundles_localised_title_vmp_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_wef_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_wef_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_wef_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_wef_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_wef_public_order_5_content	Tightened	true
+effect_bundles_localised_title_wef_public_order_6_happy	Strong	true
+effect_bundles_localised_title_wef_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_description_tmb_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_tmb_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_tmb_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_tmb_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_tmb_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_tmb_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_tmb_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_title_tmb_public_order_1_outraged	Outraged Populace	true
+effect_bundles_localised_title_tmb_public_order_2_unhappy	Unhappy Populace	true
+effect_bundles_localised_title_tmb_public_order_3_troubled	Troubled Populace	true
+effect_bundles_localised_title_tmb_public_order_4_indifferent	Indifferent Populace	true
+effect_bundles_localised_title_tmb_public_order_5_content	Encouraged Populace	true
+effect_bundles_localised_title_tmb_public_order_6_happy	Motivated Populace	true
+effect_bundles_localised_title_tmb_public_order_7_jubilant	Inspired Populace	true
+effect_bundles_localised_description_nor_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_nor_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_nor_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_nor_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_nor_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_nor_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_nor_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_title_nor_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_nor_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_nor_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_nor_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_nor_public_order_5_content	Tightened	true
+effect_bundles_localised_title_nor_public_order_6_happy	Strong	true
+effect_bundles_localised_title_nor_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_description_cst_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_cst_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_cst_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_cst_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_cst_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_cst_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_cst_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_title_cst_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_cst_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_cst_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_cst_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_cst_public_order_5_content	Tightened	true
+effect_bundles_localised_title_cst_public_order_6_happy	Strong	true
+effect_bundles_localised_title_cst_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_description_hef_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_hef_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_hef_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_hef_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_hef_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_hef_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_hef_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_title_hef_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_hef_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_hef_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_hef_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_hef_public_order_5_content	Tightened	true
+effect_bundles_localised_title_hef_public_order_6_happy	Strong	true
+effect_bundles_localised_title_hef_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_cth_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_cth_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_cth_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_cth_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_cth_public_order_5_content	Tightened	true
+effect_bundles_localised_title_cth_public_order_6_happy	Strong	true
+effect_bundles_localised_title_cth_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_dae_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_dae_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_dae_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_dae_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_dae_public_order_5_content	Tightened	true
+effect_bundles_localised_title_dae_public_order_6_happy	Strong	true
+effect_bundles_localised_title_dae_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_kho_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_kho_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_kho_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_kho_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_kho_public_order_5_content	Tightened	true
+effect_bundles_localised_title_kho_public_order_6_happy	Strong	true
+effect_bundles_localised_title_kho_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_ksl_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_ksl_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_ksl_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_ksl_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_ksl_public_order_5_content	Tightened	true
+effect_bundles_localised_title_ksl_public_order_6_happy	Strong	true
+effect_bundles_localised_title_ksl_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_nur_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_nur_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_nur_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_nur_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_nur_public_order_5_content	Tightened	true
+effect_bundles_localised_title_nur_public_order_6_happy	Strong	true
+effect_bundles_localised_title_nur_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_ogr_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_ogr_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_ogr_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_ogr_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_ogr_public_order_5_content	Tightened	true
+effect_bundles_localised_title_ogr_public_order_6_happy	Strong	true
+effect_bundles_localised_title_ogr_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_sla_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_sla_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_sla_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_sla_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_sla_public_order_5_content	Tightened	true
+effect_bundles_localised_title_sla_public_order_6_happy	Strong	true
+effect_bundles_localised_title_sla_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_title_tze_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_tze_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_tze_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_tze_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_tze_public_order_5_content	Tightened	true
+effect_bundles_localised_title_tze_public_order_6_happy	Strong	true
+effect_bundles_localised_title_tze_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_description_cth_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_cth_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_cth_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_cth_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_cth_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_cth_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_cth_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_dae_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_dae_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_dae_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_dae_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_dae_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_dae_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_dae_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_kho_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_kho_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_kho_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_kho_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_kho_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_kho_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_kho_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_ksl_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_ksl_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_ksl_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_ksl_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_ksl_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_ksl_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_ksl_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_nur_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_nur_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_nur_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_nur_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_nur_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_nur_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_nur_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_ogr_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_ogr_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_ogr_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_ogr_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_ogr_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_ogr_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_ogr_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_sla_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_sla_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_sla_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_sla_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_sla_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_sla_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_sla_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_description_tze_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_tze_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_tze_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_tze_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_tze_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_tze_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_tze_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true
+effect_bundles_localised_title_chs_public_order_1_outraged	Weak	true
+effect_bundles_localised_title_chs_public_order_2_unhappy	Wavering	true
+effect_bundles_localised_title_chs_public_order_3_troubled	Insecure	true
+effect_bundles_localised_title_chs_public_order_4_indifferent	Steady	true
+effect_bundles_localised_title_chs_public_order_5_content	Tightened	true
+effect_bundles_localised_title_chs_public_order_6_happy	Strong	true
+effect_bundles_localised_title_chs_public_order_7_jubilant	Absolute	true
+effect_bundles_localised_description_chs_public_order_1_outraged	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -75 to -100)	true
+effect_bundles_localised_description_chs_public_order_2_unhappy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -50 to -75)	true
+effect_bundles_localised_description_chs_public_order_3_troubled	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to -50)	true
+effect_bundles_localised_description_chs_public_order_4_indifferent	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: -25 to 25)	true
+effect_bundles_localised_description_chs_public_order_5_content	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 25 to 50)	true
+effect_bundles_localised_description_chs_public_order_6_happy	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 50 to 75)	true
+effect_bundles_localised_description_chs_public_order_7_jubilant	([[img:icon_public_order]][[/img]]{{tr:hp_campaign_public_order_term}}: 75 to 100)	true

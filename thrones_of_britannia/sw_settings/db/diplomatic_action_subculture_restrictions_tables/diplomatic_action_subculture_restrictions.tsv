@@ -1,0 +1,9 @@
+subculture	can_make_client_states	can_make_confederations	can_make_vassals
+#diplomatic_action_subculture_restrictions_tables;0;db/diplomatic_action_subculture_restrictions_tables/diplomatic_action_subculture_restrictions			
+vik_sub_cult_anglo_viking	false	false	true
+vik_sub_cult_english	false	true	true
+vik_sub_cult_irish	false	true	true
+vik_sub_cult_scots	false	true	true
+vik_sub_cult_viking	false	false	true
+vik_sub_cult_viking_gael	false	false	true
+vik_sub_cult_welsh	false	false	true

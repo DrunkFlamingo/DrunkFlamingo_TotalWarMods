@@ -1,0 +1,6 @@
+<VARIANT_MESH>
+	<SLOT name="helmets" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/helmets/vik_helmet_norman_nasal_04/vik_helmet_norman_nasal_04.rigid_model_v2"  imposter_model="VariantMeshes/_VariantModels/man/helmets/vik_helmet_nasal_02/vik_helmet_nasal_02.rigid_model_v2"  mask1="2"  mask2="1" />
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/helmets/vik_helmet_norman_nasal_04/vik_helmet_norman_nasal_04.rigid_model_v2"  imposter_model="VariantMeshes/_VariantModels/man/helmets/vik_helmet_nasal_02/vik_helmet_nasal_02.rigid_model_v2"  mask0="2"  mask1="0"  mask2="1" />
+	</SLOT>
+</VARIANT_MESH>

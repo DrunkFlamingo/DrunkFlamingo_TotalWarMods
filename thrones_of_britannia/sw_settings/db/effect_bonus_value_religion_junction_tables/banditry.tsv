@@ -1,0 +1,5 @@
+effect	bonus_value_id	religion
+#effect_bonus_value_religion_junction_tables;0;db/effect_bonus_value_religion_junction_tables/banditry		
+sw_banditry	conversion_events	vik_religion_banditry
+sw_fe_gwined_3	diplomatic_mod	vik_religion_seisilwig
+sw_fe_mide_2	diplomatic_mod	vik_religion_irish

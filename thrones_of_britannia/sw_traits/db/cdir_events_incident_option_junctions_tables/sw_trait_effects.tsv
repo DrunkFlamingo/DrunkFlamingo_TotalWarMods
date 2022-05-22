@@ -1,0 +1,10 @@
+id	incident_key	option_key	value
+#cdir_events_incident_option_junctions_tables;2;db/cdir_events_incident_option_junctions_tables/sw_trait_effects			
+10001	shield_loyalty_event_treaties_broken_vikings	VAR_CHANCE	100
+10002	shield_loyalty_event_treaties_broken_vikings	GEN_TARGET_NONE	
+10003	shield_trait_event_prince_assumes_throne	VAR_CHANCE	100
+10004	shield_trait_event_prince_assumes_throne	GEN_TARGET_NONE	
+10005	shield_loyalty_event_rampant_banditry	VAR_CHANCE	100
+10006	shield_loyalty_event_rampant_banditry	GEN_TARGET_NONE	
+10007	shield_loyalty_event_library	VAR_CHANCE	100
+10008	shield_loyalty_event_library	GEN_TARGET_NONE	

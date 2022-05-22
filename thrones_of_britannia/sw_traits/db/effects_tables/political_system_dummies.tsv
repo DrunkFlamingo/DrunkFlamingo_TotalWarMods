@@ -1,0 +1,9 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/political_system_dummies				
+shieldwall_win_single_combat	civil_war.png	1	civil_war.png	false
+shieldwall_lose_single_combat	civil_war.png	1	civil_war.png	false
+shieldwall_disloyal_plotter_authority	payload_assassinate.png	1	payload_assassinate.png	false
+shieldwall_disloyal_bad_traits	personality_bad.png	1	personality_bad.png	false
+shieldwall_prevents_foreign_conflict	pop_foreign.png	2	pop_foreign.png	false
+shieldwall_put_down_riots	loot_raid.png	0	loot_raid.png	false
+shieldwall_personal_fame	fame.png	1	fame.png	false

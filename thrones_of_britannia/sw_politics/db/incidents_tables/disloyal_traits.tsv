@@ -1,0 +1,4 @@
+key	generate	ui_icon	ui_image	prioritised	event_category
+#incidents_tables;4;db/incidents_tables/disloyal_traits					
+sw_politics_becomes_corrupt	false	message_generic_news.png	vik_event_debate	false	political_action_outcome
+sw_politics_becomes_treasonous	false	message_generic_news.png	vik_event_debate	false	political_action_outcome
