@@ -1,0 +1,20 @@
+key	localised_description	localised_title	ui_icon	bundle_target
+#effect_bundles_tables;1;db/effect_bundles_tables/startpos_dummies				
+vik_fact_west_seaxe_startpos	PH	PH	army.png	faction
+vik_fact_east_engle_startpos	PH	PH	army.png	faction
+vik_fact_mierce_startpos	PH	PH	army.png	faction
+vik_fact_gwined_startpos	PH	PH	army.png	faction
+vik_fact_northymbre_startpos	PH	PH	army.png	faction
+vik_fact_strat_clut_startpos	PH	PH	army.png	faction
+vik_fact_circenn_startpos	PH	PH	army.png	faction
+vik_fact_sudreyar_startpos	PH	PH	army.png	faction
+vik_fact_mide_startpos	PH	PH	army.png	faction
+vik_fact_dyflin_startpos	PH	PH	army.png	faction
+vik_fact_northleode_startpos	PH	PH	army.png	faction
+zsw_diplomacy_all_gva		vik_sub_cult_anglo_viking		faction
+zsw_diplomacy_all_vsk		vik_sub_cult_viking_gael		faction
+zsw_diplomacy_all_sax		vik_sub_cult_english		faction
+zsw_diplomacy_all_iri		vik_sub_cult_irish		faction
+zsw_diplomacy_all_welsh		vik_sub_cult_welsh		faction
+zsw_diplomacy_all_scots		vik_sub_cult_scots		faction
+zsw_diplomacy_all_invaders		vik_sub_cult_viking		faction

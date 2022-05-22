@@ -1,0 +1,5 @@
+component	icon
+#campaign_payload_ui_details_tables;0;db/campaign_payload_ui_details_tables/sw_trait_effects	
+shield_loyalty_event_treaties_broken_vikings	loyalty_negative.png
+shield_loyalty_event_rampant_banditry	loyalty_negative.png
+shield_loyalty_event_library	payload_secure_loyalty.png

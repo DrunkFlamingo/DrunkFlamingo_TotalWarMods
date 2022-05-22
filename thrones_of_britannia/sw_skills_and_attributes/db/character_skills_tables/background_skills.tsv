@@ -1,0 +1,122 @@
+key	image_path	localised_description	localised_name	pre_battle_speech_parameter	unlocked_at_rank	is_background_skill	is_female_only_background_skill	is_male_only_background_skill	background_weighting
+#character_skills_tables;3;db/character_skills_tables/background_skills									
+vik_general_back_born_governor	governor.png	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	Studious		0	true	false	true	4.0
+vik_general_back_born_governor_circenn	governor.png	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	Studious		0	true	false	true	4.0
+vik_general_back_born_governor_dyflin	governor.png	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	Studious		0	true	false	true	4.0
+vik_general_back_born_governor_east_engle	governor.png	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	Studious		0	true	false	true	4.0
+vik_general_back_born_governor_gwined	governor.png	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	Studious		0	true	false	true	4.0
+vik_general_back_born_governor_mide	governor.png	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	Studious		0	true	false	true	4.0
+vik_general_back_born_governor_mierce	governor.png	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	Studious		0	true	false	true	4.0
+vik_general_back_born_governor_northymbre	governor.png	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	Studious		0	true	false	true	4.0
+vik_general_back_born_governor_strat_clut	governor.png	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	Studious		0	true	false	true	4.0
+vik_general_back_born_governor_sudreyar	governor.png	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	Studious		0	true	false	true	4.0
+vik_general_back_born_governor_west_seaxe	governor.png	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	Studious		0	true	false	true	4.0
+vik_general_back_defender	defender.png	He is impartial and completely honest in all his dealings with his fellow man.	Fair-Minded		0	true	false	true	5.0
+vik_general_back_defender_circenn	defender.png	He is impartial and completely honest in all his dealings with his fellow man.	Fair-Minded		0	true	false	true	5.0
+vik_general_back_defender_dyflin	defender.png	He is impartial and completely honest in all his dealings with his fellow man.	Fair-Minded		0	true	false	true	5.0
+vik_general_back_defender_east_engle	defender.png	He is impartial and completely honest in all his dealings with his fellow man.	Fair-Minded		0	true	false	true	5.0
+vik_general_back_defender_gwined	defender.png	He is impartial and completely honest in all his dealings with his fellow man.	Fair-Minded		0	true	false	true	5.0
+vik_general_back_defender_mide	defender.png	He is impartial and completely honest in all his dealings with his fellow man.	Fair-Minded		0	true	false	true	5.0
+vik_general_back_defender_mierce	defender.png	He is impartial and completely honest in all his dealings with his fellow man.	Fair-Minded		0	true	false	true	5.0
+vik_general_back_defender_northymbre	defender.png	He is impartial and completely honest in all his dealings with his fellow man.	Fair-Minded		0	true	false	true	5.0
+vik_general_back_defender_strat_clut	defender.png	He is impartial and completely honest in all his dealings with his fellow man.	Fair-Minded		0	true	false	true	5.0
+vik_general_back_defender_sudreyar	defender.png	He is impartial and completely honest in all his dealings with his fellow man.	Fair-Minded		0	true	false	true	5.0
+vik_general_back_defender_west_seaxe	defender.png	He is impartial and completely honest in all his dealings with his fellow man.	Fair-Minded		0	true	false	true	5.0
+vik_general_back_farmer	farmer.png	This man turns his wounds into wisdom.	Experienced		0	true	false	true	6.0
+vik_general_back_farmer_circenn	farmer.png	This man turns his wounds into wisdom.	Experienced		0	true	false	true	5.0
+vik_general_back_farmer_dyflin	farmer.png	This man turns his wounds into wisdom.	Experienced		0	true	false	true	5.0
+vik_general_back_farmer_east_engle	farmer.png	This man turns his wounds into wisdom.	Experienced		0	true	false	true	5.0
+vik_general_back_farmer_gwined	farmer.png	This man turns his wounds into wisdom.	Experienced		0	true	false	true	5.0
+vik_general_back_farmer_mide	farmer.png	This man turns his wounds into wisdom.	Experienced		0	true	false	true	5.0
+vik_general_back_farmer_mierce	farmer.png	This man turns his wounds into wisdom.	Experienced		0	true	false	true	5.0
+vik_general_back_farmer_northymbre	farmer.png	This man turns his wounds into wisdom.	Experienced		0	true	false	true	5.0
+vik_general_back_farmer_strat_clut	farmer.png	This man turns his wounds into wisdom.	Experienced		0	true	false	true	5.0
+vik_general_back_farmer_sudreyar	farmer.png	This man turns his wounds into wisdom.	Experienced		0	true	false	true	5.0
+vik_general_back_farmer_west_seaxe	farmer.png	This man turns his wounds into wisdom.	Experienced		0	true	false	true	5.0
+vik_general_back_fearless	fearless.png	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	Fearless		0	true	false	true	5.0
+vik_general_back_fearless_circenn	fearless.png	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	Fearless		0	true	false	true	5.0
+vik_general_back_fearless_dyflin	fearless.png	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	Fearless		0	true	false	true	5.0
+vik_general_back_fearless_east_engle	fearless.png	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	Fearless		0	true	false	true	5.0
+vik_general_back_fearless_gwined	fearless.png	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	Fearless		0	true	false	true	5.0
+vik_general_back_fearless_mide	fearless.png	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	Fearless		0	true	false	true	5.0
+vik_general_back_fearless_mierce	fearless.png	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	Fearless		0	true	false	true	5.0
+vik_general_back_fearless_northymbre	fearless.png	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	Fearless		0	true	false	true	5.0
+vik_general_back_fearless_strat_clut	fearless.png	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	Fearless		0	true	false	true	5.0
+vik_general_back_fearless_sudreyar	fearless.png	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	Fearless		0	true	false	true	5.0
+vik_general_back_fearless_west_seaxe	fearless.png	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	Fearless		0	true	false	true	5.0
+vik_general_back_landowner	landowner.png	When this man speaks, people listen.	Respected		0	true	false	true	5.0
+vik_general_back_landowner_circenn	landowner.png	When this man speaks, people listen.	Respected		0	true	false	true	5.0
+vik_general_back_landowner_dyflin	landowner.png	When this man speaks, people listen.	Respected		0	true	false	true	5.0
+vik_general_back_landowner_east_engle	landowner.png	When this man speaks, people listen.	Respected		0	true	false	true	5.0
+vik_general_back_landowner_gwined	landowner.png	When this man speaks, people listen.	Respected		0	true	false	true	5.0
+vik_general_back_landowner_mide	landowner.png	When this man speaks, people listen.	Respected		0	true	false	true	5.0
+vik_general_back_landowner_mierce	landowner.png	When this man speaks, people listen.	Respected		0	true	false	true	5.0
+vik_general_back_landowner_northymbre	landowner.png	When this man speaks, people listen.	Respected		0	true	false	true	5.0
+vik_general_back_landowner_strat_clut	landowner.png	When this man speaks, people listen.	Respected		0	true	false	true	5.0
+vik_general_back_landowner_sudreyar	landowner.png	When this man speaks, people listen.	Respected		0	true	false	true	5.0
+vik_general_back_landowner_west_seaxe	landowner.png	When this man speaks, people listen.	Respected		0	true	false	true	5.0
+vik_general_back_melee_skill	melee.png	This man is quick to anger and even quicker to physical blows.	Short-Tempered		0	true	false	true	5.0
+vik_general_back_melee_skill_circenn	melee.png	This man is quick to anger and even quicker to physical blows.	Short-Tempered		0	true	false	true	5.0
+vik_general_back_melee_skill_dyflin	melee.png	This man is quick to anger and even quicker to physical blows.	Short-Tempered		0	true	false	true	5.0
+vik_general_back_melee_skill_east_engle	melee.png	This man is quick to anger and even quicker to physical blows.	Short-Tempered		0	true	false	true	5.0
+vik_general_back_melee_skill_gwined	melee.png	This man is quick to anger and even quicker to physical blows.	Short-Tempered		0	true	false	true	5.0
+vik_general_back_melee_skill_mide	melee.png	This man is quick to anger and even quicker to physical blows.	Short-Tempered		0	true	false	true	5.0
+vik_general_back_melee_skill_mierce	melee.png	This man is quick to anger and even quicker to physical blows.	Short-Tempered		0	true	false	true	5.0
+vik_general_back_melee_skill_northymbre	melee.png	This man is quick to anger and even quicker to physical blows.	Short-Tempered		0	true	false	true	5.0
+vik_general_back_melee_skill_strat_clut	melee.png	This man is quick to anger and even quicker to physical blows.	Short-Tempered		0	true	false	true	5.0
+vik_general_back_melee_skill_sudreyar	melee.png	This man is quick to anger and even quicker to physical blows.	Short-Tempered		0	true	false	true	5.0
+vik_general_back_melee_skill_west_seaxe	melee.png	This man is quick to anger and even quicker to physical blows.	Short-Tempered		0	true	false	true	5.0
+vik_general_back_negotiator	negotiator.png	If there is an exploit in a system this man can be relied upon to figure that out.	Cunning		0	true	false	true	5.0
+vik_general_back_negotiator_circenn	negotiator.png	If there is an exploit in a system this man can be relied upon to figure that out.	Cunning		0	true	false	true	5.0
+vik_general_back_negotiator_dyflin	negotiator.png	If there is an exploit in a system this man can be relied upon to figure that out.	Cunning		0	true	false	true	5.0
+vik_general_back_negotiator_east_engle	negotiator.png	If there is an exploit in a system this man can be relied upon to figure that out.	Cunning		0	true	false	true	5.0
+vik_general_back_negotiator_gwined	negotiator.png	If there is an exploit in a system this man can be relied upon to figure that out.	Cunning		0	true	false	true	5.0
+vik_general_back_negotiator_mide	negotiator.png	If there is an exploit in a system this man can be relied upon to figure that out.	Cunning		0	true	false	true	5.0
+vik_general_back_negotiator_mierce	negotiator.png	If there is an exploit in a system this man can be relied upon to figure that out.	Cunning		0	true	false	true	5.0
+vik_general_back_negotiator_northymbre	negotiator.png	If there is an exploit in a system this man can be relied upon to figure that out.	Cunning		0	true	false	true	5.0
+vik_general_back_negotiator_strat_clut	negotiator.png	If there is an exploit in a system this man can be relied upon to figure that out.	Cunning		0	true	false	true	5.0
+vik_general_back_negotiator_sudreyar	negotiator.png	If there is an exploit in a system this man can be relied upon to figure that out.	Cunning		0	true	false	true	5.0
+vik_general_back_negotiator_west_seaxe	negotiator.png	If there is an exploit in a system this man can be relied upon to figure that out.	Cunning		0	true	false	true	5.0
+vik_general_back_passionate	devoted.png	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	Honours the Gods		0	true	false	true	4.0
+vik_general_back_passionate_circenn	devoted.png	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	Honours the Gods		0	true	false	true	4.0
+vik_general_back_passionate_dyflin	devoted.png	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	Honours the Gods		0	true	false	true	4.0
+vik_general_back_passionate_east_engle	devoted.png	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	Honours the Gods		0	true	false	true	4.0
+vik_general_back_passionate_gwined	devoted.png	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	Honours the Gods		0	true	false	true	4.0
+vik_general_back_passionate_mide	devoted.png	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	Honours the Gods		0	true	false	true	4.0
+vik_general_back_passionate_mierce	devoted.png	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	Honours the Gods		0	true	false	true	4.0
+vik_general_back_passionate_northymbre	devoted.png	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	Honours the Gods		0	true	false	true	4.0
+vik_general_back_passionate_strat_clut	devoted.png	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	Honours the Gods		0	true	false	true	4.0
+vik_general_back_passionate_sudreyar	devoted.png	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	Honours the Gods		0	true	false	true	4.0
+vik_general_back_passionate_west_seaxe	devoted.png	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	Honours the Gods		0	true	false	true	4.0
+vik_general_back_pastor	pastor.png	God has given me two hands, one with which I receive and the other to give to others.	Godly		0	true	false	true	4.0
+vik_general_back_pastor_circenn	pastor.png	God has given me two hands, one with which I receive and the other to give to others.	Godly		0	true	false	true	4.0
+vik_general_back_pastor_dyflin	pastor.png	God has given me two hands, one with which I receive and the other to give to others.	Godly		0	true	false	true	4.0
+vik_general_back_pastor_east_engle	pastor.png	God has given me two hands, one with which I receive and the other to give to others.	Godly		0	true	false	true	4.0
+vik_general_back_pastor_gwined	pastor.png	God has given me two hands, one with which I receive and the other to give to others.	Godly		0	true	false	true	4.0
+vik_general_back_pastor_mide	pastor.png	God has given me two hands, one with which I receive and the other to give to others.	Godly		0	true	false	true	4.0
+vik_general_back_pastor_mierce	pastor.png	God has given me two hands, one with which I receive and the other to give to others.	Godly		0	true	false	true	4.0
+vik_general_back_pastor_northymbre	pastor.png	God has given me two hands, one with which I receive and the other to give to others.	Godly		0	true	false	true	4.0
+vik_general_back_pastor_strat_clut	pastor.png	God has given me two hands, one with which I receive and the other to give to others.	Godly		0	true	false	true	4.0
+vik_general_back_pastor_sudreyar	pastor.png	God has given me two hands, one with which I receive and the other to give to others.	Godly		0	true	false	true	4.0
+vik_general_back_pastor_west_seaxe	pastor.png	God has given me two hands, one with which I receive and the other to give to others.	Godly		0	true	false	true	4.0
+vik_general_back_spearmen_skill	spearmen_skill.png	"You do not know what to think so I‟ll teach you. Think yourself a baby."	Controlling		0	true	false	true	5.0
+vik_general_back_spearmen_skill_circenn	spearmen_skill.png	"You do not know what to think so I‟ll teach you. Think yourself a baby."	Controlling		0	true	false	true	5.0
+vik_general_back_spearmen_skill_dyflin	spearmen_skill.png	"You do not know what to think so I‟ll teach you. Think yourself a baby."	Controlling		0	true	false	true	5.0
+vik_general_back_spearmen_skill_east_engle	spearmen_skill.png	"You do not know what to think so I‟ll teach you. Think yourself a baby."	Controlling		0	true	false	true	5.0
+vik_general_back_spearmen_skill_gwined	spearmen_skill.png	"You do not know what to think so I‟ll teach you. Think yourself a baby."	Controlling		0	true	false	true	5.0
+vik_general_back_spearmen_skill_mide	spearmen_skill.png	"You do not know what to think so I‟ll teach you. Think yourself a baby."	Controlling		0	true	false	true	5.0
+vik_general_back_spearmen_skill_mierce	spearmen_skill.png	"You do not know what to think so I‟ll teach you. Think yourself a baby."	Controlling		0	true	false	true	5.0
+vik_general_back_spearmen_skill_northymbre	spearmen_skill.png	"You do not know what to think so I‟ll teach you. Think yourself a baby."	Controlling		0	true	false	true	5.0
+vik_general_back_spearmen_skill_strat_clut	spearmen_skill.png	"You do not know what to think so I‟ll teach you. Think yourself a baby."	Controlling		0	true	false	true	5.0
+vik_general_back_spearmen_skill_sudreyar	spearmen_skill.png	"You do not know what to think so I‟ll teach you. Think yourself a baby."	Controlling		0	true	false	true	5.0
+vik_general_back_spearmen_skill_west_seaxe	spearmen_skill.png	"You do not know what to think so I‟ll teach you. Think yourself a baby."	Controlling		0	true	false	true	5.0
+vik_general_back_born_governor_northleode	governor.png	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	Studious		0	true	false	true	4.0
+vik_general_back_defender_northleode	defender.png	He is impartial and completely honest in all his dealings with his fellow man.	Fair-Minded		0	true	false	true	5.0
+vik_general_back_farmer_northleode	farmer.png	This man turns his wounds into wisdom.	Experienced		0	true	false	true	5.0
+vik_general_back_fearless_northleode	fearless.png	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	Fearless		0	true	false	true	5.0
+vik_general_back_landowner_northleode	landowner.png	When this man speaks, people listen.	Respected		0	true	false	true	5.0
+vik_general_back_melee_skill_northleode	melee.png	This man is quick to anger and even quicker to physical blows.	Short-Tempered		0	true	false	true	5.0
+vik_general_back_negotiator_northleode	negotiator.png	If there is an exploit in a system this man can be relied upon to figure that out.	Cunning		0	true	false	true	5.0
+vik_general_back_passionate_northleode	devoted.png	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	Honours the Gods		0	true	false	true	4.0
+vik_general_back_pastor_northleode	pastor.png	God has given me two hands, one with which I receive and the other to give to others.	Godly		0	true	false	true	4.0
+vik_general_back_spearmen_skill_northleode	spearmen_skill.png	You do not know what to think so I‟ll teach you. Think yourself a baby.	Controlling		0	true	false	true	5.0

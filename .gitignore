@@ -1,7 +1,22 @@
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
 *.png
 *.dds
 *.pack
 *.rpfm_reserved.json
+*.meta
+*.anim
+*.bin
+*.psd
+*.rigid_model_v2
+
 
 **/private
 **/tw_lib
@@ -9,5 +24,6 @@
 **/CAUIDump
 **/input
 **/output
+**/out
 log.txt
 main.lua

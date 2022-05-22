@@ -1,0 +1,206 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/@sw_character_trait_levels.loc		
+character_trait_levels_onscreen_name_shield_tyrant_oppressor	Oppressor	true
+character_trait_levels_onscreen_name_shield_heathen_sailor	Tyrant of the Sea	true
+character_trait_levels_onscreen_name_shield_tyrant_legendary_tyrant	Tyrant	true
+character_trait_levels_onscreen_name_shield_scholar_lawyer	Lawyer	true
+character_trait_levels_onscreen_name_shield_scholar_educated	Educated	true
+character_trait_levels_onscreen_name_shield_tyrant_treasonous	Treasonous	true
+character_trait_levels_onscreen_name_shield_elder_husbandman	Husbandman	true
+character_trait_levels_onscreen_name_shield_trait_disloyal	Disloyal	true
+character_trait_levels_onscreen_name_shield_warrior_champion	Champion	true
+character_trait_levels_onscreen_name_shield_magnate_greedy	Greedy	true
+character_trait_levels_onscreen_name_shield_elder_dutifull	Dutiful	true
+character_trait_levels_onscreen_name_shield_noble_princely	Princely	true
+character_trait_levels_onscreen_name_shield_heathen_old_ways	Viking Ways	true
+character_trait_levels_onscreen_name_shield_warrior_natural_leader	Natural Leader	true
+character_trait_levels_onscreen_name_shield_judge_honourable	Honourable	true
+character_trait_levels_onscreen_name_shield_tyrant_subjugator	Subjugator	true
+character_trait_levels_onscreen_name_shield_warrior_proven_warrior	Battle Hardened	true
+character_trait_levels_onscreen_name_shield_elder_storyteller	Storyteller	true
+character_trait_levels_onscreen_name_shield_magnate_seneschal	Seneschal	true
+character_trait_levels_onscreen_name_shield_warrior_legendary_warrior	Great Warrior	true
+character_trait_levels_onscreen_name_shield_magnate_legendary_magnate	Magnate	true
+character_trait_levels_onscreen_name_shield_faithful_legendary_saint	Saint	true
+character_trait_levels_onscreen_name_shield_mood_3	Indifferent	true
+character_trait_levels_onscreen_name_shield_mood_2	Upset	true
+character_trait_levels_onscreen_name_shield_mood_4	Pleased	true
+character_trait_levels_onscreen_name_shield_mood_5	Joyous	true
+character_trait_levels_onscreen_name_shield_mood_1	Angry	true
+character_trait_levels_onscreen_name_shield_magnate_collector	Tax Collector	true
+character_trait_levels_onscreen_name_shield_scholar_legendary_thinker	Great Thinker	true
+character_trait_levels_onscreen_name_shield_noble_high_born	High Born	true
+character_trait_levels_onscreen_name_shield_brute_legendary_brute	Brute	true
+character_trait_levels_onscreen_name_shield_elder_legendary_elder	Elder	true
+character_trait_levels_onscreen_name_shield_judge_legendary_judge	Incorruptible	true
+character_trait_levels_onscreen_name_shield_friendship_2	Indifferent to the King	true
+character_trait_levels_onscreen_name_shield_friendship_3	Friend of the King	true
+character_trait_levels_onscreen_name_shield_friendship_0	Enemy of the King	true
+character_trait_levels_onscreen_name_shield_friendship_1	Rival of the King	true
+character_trait_levels_onscreen_name_shield_friendship_4	Ally of the King	true
+character_trait_levels_onscreen_name_shield_faithful_friend_of_the_church	Friend of the Church	true
+character_trait_levels_onscreen_name_shield_faithful_repentent	Repentant	true
+character_trait_levels_onscreen_name_shield_mood_10	Happy	true
+character_trait_levels_onscreen_name_shield_brute_bloodythirsty	Bloodthirsty	true
+character_trait_levels_onscreen_name_shield_heathen_pagan	Pagan	true
+character_trait_levels_onscreen_name_shield_noble_proud	Proud	true
+character_trait_levels_onscreen_name_shield_trait_loyal	Loyal	true
+character_trait_levels_onscreen_name_shield_heathen_legendary_wolfskin	Berserker	true
+character_trait_levels_onscreen_name_shield_judge_just	Just	true
+character_trait_levels_onscreen_name_shield_scholar_wise	Wise	true
+character_trait_levels_onscreen_name_shield_brute_violent	Violent	true
+character_trait_levels_onscreen_name_shield_heathen_legendary_bearskin	Berserker	true
+character_trait_levels_onscreen_name_shield_noble_hunter	Hunter	true
+character_trait_levels_onscreen_name_shield_faithful_charitable	Charitable	true
+character_trait_levels_onscreen_name_shield_brute_corrupt	Corrupt	true
+character_trait_levels_onscreen_name_shield_noble_legendary_king	Great King	true
+character_trait_levels_onscreen_name_shield_heathen_beast_slayer	Beast Slayer	true
+character_trait_levels_onscreen_name_shield_elder_beloved	Beloved	true
+character_trait_levels_onscreen_name_shield_judge_lawful	Lawful	true
+character_trait_levels_onscreen_name_shield_item_st_oswald	[[rgba:135:189:233:1]]Bones of St Oswald[[/rgba]]	true
+character_trait_levels_onscreen_name_shield_item_stag_rack	[[rgba:135:189:233:1]]White Stag Antlers[[/rgba]]	true
+character_trait_levels_onscreen_name_shield_item_boarskin	[[rgba:135:189:233:1]]Skin of the Twrch Trwyth[[/rgba]]	true
+character_trait_levels_onscreen_name_shield_item_bearskin	[[rgba:135:189:233:1]]Skin of the Scarred Bear[[/rgba]]	true
+character_trait_levels_onscreen_name_shield_item_wolfskin	[[rgba:135:189:233:1]]Skin of a Wolf[[/rgba]]	true
+character_trait_levels_colour_text_vik_politics_cowardly_marry_chuffed	[[rgba:255:215:0:1]]Infatuated[[/rgba]] [[rgba:104:104:104:1]]- one level[[/rgba]]\\n"Matters of state? I care not to hear them today… or any day soon! My love..."\\n[[rgba:104:104:104:1]][Gained from getting married][[/rgba]]	true
+character_trait_levels_onscreen_name_vik_politics_cowardly_marry_chuffed	[[rgba:255:215:0:1]]Chuffed to Bits[[/rgba]]	true
+character_trait_levels_colour_text_vik_bg_general_born_governor	[[rgba:150:82:76:1]]Personality[[/rgba]] [[rgba:104:104:104:1]]- one level[[/rgba]]\\nHe might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.\\n[[rgba:104:104:104:1]][Gained when a noble is hired as a general or governor][[/rgba]]	true
+character_trait_levels_onscreen_name_vik_bg_general_born_governor	[[rgba:150:82:76:1]]Studious[[/rgba]]	true
+character_trait_levels_onscreen_name_vik_bg_general_defender	[[rgba:150:82:76:1]]Fair-Minded[[/rgba]]	true
+character_trait_levels_colour_text_vik_bg_general_defender	[[rgba:150:82:76:1]]Personality[[/rgba]] [[rgba:104:104:104:1]]- one level[[/rgba]]\\nHe is impartial and completely honest in all his dealings with his fellow man.\\n[[rgba:104:104:104:1]][Gained when a noble is hired as a general or governor][[/rgba]]	true
+character_trait_levels_onscreen_name_vik_bg_general_farmer	[[rgba:150:82:76:1]]Experienced[[/rgba]]	true
+character_trait_levels_colour_text_vik_bg_general_farmer	[[rgba:150:82:76:1]]Personality[[/rgba]] [[rgba:104:104:104:1]]- one level[[/rgba]]\\nThis man turns his wounds into wisdom.\\n[[rgba:104:104:104:1]][Gained when a noble is hired as a general or governor][[/rgba]]	true
+character_trait_levels_onscreen_name_vik_bg_general_fearless	[[rgba:150:82:76:1]]Fearless[[/rgba]]	true
+character_trait_levels_colour_text_vik_bg_general_fearless	[[rgba:150:82:76:1]]Personality[[/rgba]] [[rgba:104:104:104:1]]- one level[[/rgba]]\\nMore than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.\\n[[rgba:104:104:104:1]][Gained when a noble is hired as a general or governor][[/rgba]]	true
+character_trait_levels_onscreen_name_vik_bg_general_landowner	[[rgba:150:82:76:1]]Respected[[/rgba]]	true
+character_trait_levels_colour_text_vik_bg_general_landowner	[[rgba:150:82:76:1]]Personality[[/rgba]] [[rgba:104:104:104:1]]- one level[[/rgba]]\\nWhen this man speaks, people listen.\\n[[rgba:104:104:104:1]][Gained when a noble is hired as a general or governor][[/rgba]]	true
+character_trait_levels_colour_text_vik_bg_general_melee_skill	[[rgba:150:82:76:1]]Personality[[/rgba]] [[rgba:104:104:104:1]]- one level[[/rgba]]\\nThis man is quick to anger and even quicker to physical blows.\\n[[rgba:104:104:104:1]][Gained when a noble is hired as a general or governor][[/rgba]]	true
+character_trait_levels_onscreen_name_vik_bg_general_melee_skill	[[rgba:150:82:76:1]]Short-Tempered[[/rgba]]	true
+character_trait_levels_colour_text_vik_bg_general_negotiator	[[rgba:150:82:76:1]]Personality[[/rgba]] [[rgba:104:104:104:1]]- one level[[/rgba]]\\nIf there is an exploit in the system this man can be relied upon to figure that out.\\n[[rgba:104:104:104:1]][Gained when a noble is hired as a general or governor][[/rgba]]	true
+character_trait_levels_onscreen_name_vik_bg_general_negotiator	[[rgba:150:82:76:1]]Cunning[[/rgba]]	true
+character_trait_levels_colour_text_vik_bg_general_passionate	[[rgba:150:82:76:1]]Personality[[/rgba]] [[rgba:104:104:104:1]]- one level[[/rgba]]\\nThese mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.\\n[[rgba:104:104:104:1]][Gained when a noble is hired as a general or governor][[/rgba]]	true
+character_trait_levels_onscreen_name_vik_bg_general_passionate	[[rgba:150:82:76:1]]Honours the Gods[[/rgba]]	true
+character_trait_levels_onscreen_name_vik_bg_general_pastor	[[rgba:150:82:76:1]]Godly[[/rgba]]	true
+character_trait_levels_colour_text_vik_bg_general_pastor	[[rgba:150:82:76:1]]Personality[[/rgba]] [[rgba:104:104:104:1]]- one level[[/rgba]]\\nGod has given me two hands, one with which I receive and the other to give to others.\\n[[rgba:104:104:104:1]][Gained when a noble is hired as a general or governor][[/rgba]]	true
+character_trait_levels_onscreen_name_vik_bg_general_spearmen_skill	[[rgba:150:82:76:1]]Controlling[[/rgba]]	true
+character_trait_levels_colour_text_vik_bg_general_spearmen_skill	[[rgba:150:82:76:1]]Personality[[/rgba]] [[rgba:104:104:104:1]]- one level[[/rgba]]\\n"You do not know what to think so I'll teach you. Think yourself a baby."\\n[[rgba:104:104:104:1]][Gained when a noble is hired as a general or governor][[/rgba]]	true
+character_trait_levels_onscreen_name_shield_general_0	Commander	false
+character_trait_levels_onscreen_name_shield_general_1	General	false
+character_trait_levels_colour_text_shield_warrior_proven_warrior	[[rgba:150:82:76:1]]Warrior[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nTime and time again this man has shown his mettle in battle, complete with a laurel of scars to show for it.\\n[[rgba:104:104:104:1]][Win battles decisively][[/rgba]]	false
+character_trait_levels_colour_text_shield_warrior_natural_leader	[[rgba:150:82:76:1]]Warrior[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nBetter to reign in Hell than serve in Heaven. \\n[[rgba:104:104:104:1]][Capture a historically significant settlement.][[/rgba]]	false
+character_trait_levels_colour_text_shield_warrior_legendary_warrior	[[rgba:255:153:51:1]]Legendary[[/rgba]] [[rgba:104:104:104:1]]- level 100[[/rgba]]\\nThis man not only commands but leads. His ferocity in battle is known by all.\\n[[rgba:104:104:104:1]][Capture the capitals of major factions][[/rgba]]	false
+character_trait_levels_colour_text_shield_warrior_champion	[[rgba:150:82:76:1]]Warrior[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nNot afraid to bloody his knuckles or break a few ribs.\\n[[rgba:104:104:104:1]][Fight battles and Survive Riots with Household Guard][[/rgba]]	false
+character_trait_levels_colour_text_shield_tyrant_treasonous	[[rgba:255:215:0:1]]Tyrannical[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nThe last temptation is the greatest treason: to do the right deed for the wrong reason.\\n[[rgba:104:104:104:1]][Disloyalty and tyranny breed corruption][[/rgba]]	false
+character_trait_levels_colour_text_shield_tyrant_subjugator	[[rgba:255:215:0:1]]Tyrannical[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nOne day, this will all be mine!\\n[[rgba:104:104:104:1]][][[/rgba]]	false
+character_trait_levels_colour_text_shield_tyrant_oppressor	[[rgba:255:215:0:1]]Tyrannical[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nIt is better to be obeyed than to be loved.\\n[[rgba:104:104:104:1]][][[/rgba]]	false
+character_trait_levels_colour_text_shield_tyrant_legendary_tyrant	[[rgba:255:153:51:1]]Legendary[[/rgba]] [[rgba:104:104:104:1]]- level 100[[/rgba]]\\nHis enemies fear him almost as much as his own subjects.\\n[[rgba:104:104:104:1]][Gained through the embrace of despotism][[/rgba]]	false
+character_trait_levels_colour_text_shield_trait_loyal	[[rgba:133:207:144:1]]Loyalty[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nStalwart and brave to his King, to the bitter end.\\n[[rgba:104:104:104:1]][Gained by having 5 or more loyalty.][[/rgba]]	false
+character_trait_levels_colour_text_shield_trait_disloyal	[[rgba:255:215:0:1]]Loyalty[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nThe better interests of the Kingdom are no longer this man's goals.\\n[[rgba:104:104:104:1]][Gained by having 4 or lower loyalty.][[/rgba]]	false
+character_trait_levels_colour_text_shield_scholar_wise	[[rgba:133:207:144:1]]Scholarship[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nThere are some lessons only time and experience can teach.\\n[[rgba:104:104:104:1]][Gained by having the Educated trait for many years.][[/rgba]]	false
+character_trait_levels_colour_text_shield_scholar_legendary_thinker	[[rgba:255:153:51:1]]Legendary[[/rgba]] [[rgba:104:104:104:1]]- level 100[[/rgba]]\\nTruly a national treasure, when this man speaks the commoners listen.\\n[[rgba:104:104:104:1]][Earned through governing the capital.][[/rgba]]	false
+character_trait_levels_colour_text_shield_scholar_lawyer	[[rgba:133:207:144:1]]Scholarship[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nThe keystone to a just society is a legal system which treats all fairly.\\n[[rgba:104:104:104:1]][Gained through training at the Court School.][[/rgba]]	false
+character_trait_levels_colour_text_shield_scholar_educated	[[rgba:133:207:144:1]]Scholarship[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nA mind is a terrible thing to waste.\\n[[rgba:104:104:104:1]][Gained by Tutoring your children][[/rgba]]	false
+character_trait_levels_colour_text_shield_noble_proud	[[rgba:132:122:222:1]]Nobility[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nIn the mouth of the foolish is a rod of pride: but the lips of the wise shall preserve them.\\n[[rgba:104:104:104:1]][Encouraged through a prosperous nobility.][[/rgba]]	false
+character_trait_levels_colour_text_shield_noble_princely	[[rgba:132:122:222:1]]Nobility[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nThis man may one day be king... and he knows it too.\\n[[rgba:104:104:104:1]][Encouraged through grooming your heir][[/rgba]]	false
+character_trait_levels_colour_text_shield_noble_legendary_king	[[rgba:255:153:51:1]]Legendary[[/rgba]] [[rgba:104:104:104:1]]- level 100[[/rgba]]\\nInspired, accomplished, and beloved by his people, this ruler's exploits will live out through song for generations to come.\\n[[rgba:104:104:104:1]][Earned by forming a great Kingdom.][[/rgba]]	false
+character_trait_levels_colour_text_shield_noble_hunter	[[rgba:132:122:222:1]]Nobility[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nPatience and a finely strung bow are all this man requires to fill his plate.\\n[[rgba:104:104:104:1]][Encouraged by the presence of hunting buildings and culture][[/rgba]]	false
+character_trait_levels_colour_text_shield_noble_high_born	[[rgba:132:122:222:1]]Nobility[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nIt is evident to all the high station into which this man was born.\\n[[rgba:104:104:104:1]][Passed down through families and encouraged by Estates.][[/rgba]]	false
+character_trait_levels_colour_text_shield_magnate_seneschal	[[rgba:183:180:179:1]]Magnate[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nNo one ever built a kingdom who couldn't negotiate a deal.\\n[[rgba:104:104:104:1]][Gained through smart politics, and made easier by governing the capital.][[/rgba]]	false
+character_trait_levels_colour_text_shield_magnate_legendary_magnate	[[rgba:255:153:51:1]]Legendary[[/rgba]] [[rgba:104:104:104:1]]- level 100[[/rgba]]\\nFew traits in this world will win you so many friends as having an overabundance in wealth.\\n[[rgba:104:104:104:1]][Gained through political prowess governing the Capital.][[/rgba]]	false
+character_trait_levels_colour_text_shield_magnate_greedy	[[rgba:183:180:179:1]]Magnate[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nGreed, in all of its forms; greed for life, for money, for love, knowledge has marked the upward surge of mankind. And greed, you mark my words, will save our people.\\n[[rgba:104:104:104:1]][Encouraged by permitting profiteering.][[/rgba]]	false
+character_trait_levels_colour_text_shield_magnate_collector	[[rgba:183:180:179:1]]Magnate[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nWe have what it takes to take what you have. \\n[[rgba:104:104:104:1]][Encouraged by setting high taxes.][[/rgba]]	false
+character_trait_levels_colour_text_shield_judge_legendary_judge	[[rgba:255:153:51:1]]Legendary[[/rgba]] [[rgba:104:104:104:1]]- level 100[[/rgba]]\\nThose would fight against corruption must be impeccably clean themselves.\\n[[rgba:104:104:104:1]][Earned through incorruptibility while governing the Capital.][[/rgba]]	false
+character_trait_levels_colour_text_shield_judge_lawful	[[rgba:132:122:222:1]]Judge[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nThe law is law and order is order, this man ensures their tenets will be promptly discharged.\\n[[rgba:104:104:104:1]][Gained or lost through honesty in trials.][[/rgba]]	false
+character_trait_levels_colour_text_shield_judge_just	[[rgba:132:122:222:1]]Judge[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nThis fellow is even-handed and fair in all his dealings, which engenders respect.\\n[[rgba:104:104:104:1]][Gained through governing the Capital.][[/rgba]]	false
+character_trait_levels_colour_text_shield_judge_honourable	[[rgba:132:122:222:1]]Judge[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nThe living embodiment of high-mindedness and noble pursuits.\\n[[rgba:104:104:104:1]][Grained through loyalty ][[/rgba]]	false
+character_trait_levels_colour_text_shield_item_bearskin	[[rgba:135:189:233:1]]Item[[rgba:104:104:104:1]]- level 1[[/rgba]]\\n"Her skin grants its wearer magical strength."\\n\\n[[rgba:104:104:104:1]][Gained while hunting][[/rgba]]	false
+character_trait_levels_colour_text_shield_item_boarskin	[[rgba:135:189:233:1]]Item[[rgba:104:104:104:1]]- level 1[[/rgba]]\\n"Glad to rid our Middle Earth of this foul beast."\\n\\n[[rgba:104:104:104:1]][Gained while hunting][[/rgba]]	false
+character_trait_levels_colour_text_shield_item_st_oswald	[[rgba:135:189:233:1]]Item[[rgba:104:104:104:1]]- level 1[[/rgba]]\\n"We'll find this venerated Saint a new home."\\n\\n[[rgba:104:104:104:1]][Gained from missions][[/rgba]]	false
+character_trait_levels_colour_text_shield_item_stag_rack	[[rgba:135:189:233:1]]Item[[rgba:104:104:104:1]]- level 1[[/rgba]]\\n"I'm sure they have magical properties of some kind."\\n\\n[[rgba:104:104:104:1]][Gained while hunting][[/rgba]]	false
+character_trait_levels_colour_text_shield_item_wolfskin	[[rgba:135:189:233:1]]Item[[rgba:104:104:104:1]]- level 1[[/rgba]]\\n"I am not a wolf in sheep's clothing, I'm a wolf in wolf's clothing."\\n\\n[[rgba:104:104:104:1]][Gained while hunting][[/rgba]]	false
+character_trait_levels_colour_text_shield_heathen_sailor	[[rgba:183:180:179:1]]Heathen[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nThere is no life but to reave and sail for glory's sake.\\n[[rgba:104:104:104:1]][Gained through Seafaring Culture][[/rgba]]	false
+character_trait_levels_colour_text_shield_heathen_pagan	[[rgba:183:180:179:1]]Heathen[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nAccept the universe as the Gods gave it to you. If the Gods wanted to give you something else, they'd have done it.\\n[[rgba:104:104:104:1]][Gained through Pagan Beliefs][[/rgba]]	false
+character_trait_levels_colour_text_shield_heathen_old_ways	[[rgba:183:180:179:1]]Heathen[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nHe still hears the Hammer of Thor in the thunder.\\n[[rgba:104:104:104:1]][Gained through diplomacy with the Vikings.][[/rgba]]	false
+character_trait_levels_colour_text_shield_heathen_legendary_wolfskin	[[rgba:255:153:51:1]]Legendary[[/rgba]] [[rgba:104:104:104:1]]- level 100[[/rgba]]\\nWhen the red mist descends, God help this man's enemies.\\n[[rgba:104:104:104:1]][Gained through feats of inspired violence.][[/rgba]]	false
+character_trait_levels_colour_text_shield_heathen_legendary_bearskin	[[rgba:255:153:51:1]]Legendary[[/rgba]] [[rgba:104:104:104:1]]- level 100[[/rgba]]\\nWhen the red mist descends, God help this man's enemies.\\n[[rgba:104:104:104:1]][Gained through feats of inspired violence.][[/rgba]]	false
+character_trait_levels_colour_text_shield_heathen_beast_slayer	[[rgba:183:180:179:1]]Heathen[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nWhere a beast would have claws, he was born with talent.\\n[[rgba:104:104:104:1]][Gained through legendary feats while hunting.][[/rgba]]	false
+character_trait_levels_colour_text_shield_general_1	\\nThe command of a Kingdom's army is an honour, and gives one considerable sway in matters of politics.\\n[[rgba:104:104:104:1]][Gained through leading the Kingdom's largest army.][[/rgba]]	false
+character_trait_levels_colour_text_shield_general_0	\\nLeading troops into battle is dangerous, but carries respect and authority.\\n[[rgba:104:104:104:1]][Gained through leading a small force into battle.][[/rgba]]	false
+character_trait_levels_colour_text_shield_friendship_4	[[rgba:150:82:76:1]]Politics[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nA close ally and even better friend. I would trust them with my life!\\n[[rgba:104:104:104:1]][Gained through strong of the King's traits.][[/rgba]]	false
+character_trait_levels_colour_text_shield_friendship_3	[[rgba:150:82:76:1]]Politics[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nA warm individual in whom we can more or less confidently rely on.\\n[[rgba:104:104:104:1]][Gained through approval of the King's traits.][[/rgba]]	false
+character_trait_levels_colour_text_shield_friendship_2	[[rgba:150:82:76:1]]Politics[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nNeither here nor there.\\n[[rgba:104:104:104:1]][Gained through a neutral opinion of the King's traits.][[/rgba]]	false
+character_trait_levels_colour_text_shield_friendship_1	[[rgba:150:82:76:1]]Politics[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nWould never let an opportunity pass to cause the King to lose face in public. Annoying, but not treasonous.\\n[[rgba:104:104:104:1]][Gained through disapproval of the King's traits.][[/rgba]]	false
+character_trait_levels_colour_text_shield_friendship_0	[[rgba:150:82:76:1]]Politics[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nWe're no longer sure if they're even on our side.\\n[[rgba:104:104:104:1]][Gained through strong disapproval of the King's traits.][[/rgba]]	false
+character_trait_levels_colour_text_shield_faithful_repentent	[[rgba:3:103:126:1]]Faith[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nOnly the penitent man will pass.\\n[[rgba:104:104:104:1]][Gained through repentance for past sins. Encouraged through religious buildings.][[/rgba]]	false
+character_trait_levels_colour_text_shield_faithful_legendary_saint	[[rgba:255:153:51:1]]Legendary[[/rgba]] [[rgba:104:104:104:1]]- level 100[[/rgba]]\\nA devoutly-religious man, who has sworn to root out evil and corruption wherever it may be found.\\n[[rgba:104:104:104:1]][Encouraged by promoting virtue and Christian piety.][[/rgba]]	false
+character_trait_levels_colour_text_shield_faithful_friend_of_the_church	[[rgba:3:103:126:1]]Faith[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nIf the Kingdom of Heaven can ever be found on Earth, this man will be its mortar.\\n[[rgba:104:104:104:1]][Gained through political intrigue.][[/rgba]]	false
+character_trait_levels_colour_text_shield_faithful_charitable	[[rgba:3:103:126:1]]Faith[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nHappy to share his bread and his coin with those in need.\\n[[rgba:104:104:104:1]][Gained through distributing food Surplus.][[/rgba]]	false
+character_trait_levels_colour_text_shield_elder_storyteller	[[rgba:133:207:144:1]]Elder[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nWhen the Elderly among us passes, a whole library disappears.\\n[[rgba:104:104:104:1]][Gained through administrating Hunting buildings.][[/rgba]]	false
+character_trait_levels_colour_text_shield_elder_legendary_elder	[[rgba:255:153:51:1]]Legendary[[/rgba]] [[rgba:104:104:104:1]]- level 100[[/rgba]]\\nA graceful and honorable old age is the childhood of immortality.\\n[[rgba:104:104:104:1]][Gained through political influence in old age.][[/rgba]]	false
+character_trait_levels_colour_text_shield_elder_husbandman	[[rgba:133:207:144:1]]Elder[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nThe fruits of the Earth can be had if a man is patient enough and unafraid to toil in the sun.\\n[[rgba:104:104:104:1]][Gained through administrating Agricultural buildings.][[/rgba]]	false
+character_trait_levels_colour_text_shield_elder_dutifull	[[rgba:133:207:144:1]]Elder[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nNeither piercing swords nor hails of arrows shall keep me from serving my Lord.\\n[[rgba:104:104:104:1]][Gained serving their lord as a general while young.][[/rgba]]	false
+character_trait_levels_colour_text_shield_elder_beloved	[[rgba:133:207:144:1]]Elder[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nHe has the hearts of his subjects and they have his.\\n[[rgba:104:104:104:1]][Encouraged by governing peacefully and prosperiously.][[/rgba]]	false
+character_trait_levels_colour_text_shield_brute_violent	[[rgba:255:215:0:1]]Brutish[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nBlessed are the peacemaker... after all other options have been thoroughly exhausted.\\n[[rgba:104:104:104:1]][Encouraged by the use of violence for political means.][[/rgba]]	false
+character_trait_levels_colour_text_shield_brute_legendary_brute	[[rgba:255:153:51:1]]Legendary[[/rgba]] [[rgba:104:104:104:1]]- level 100[[/rgba]]\\nThe purpose of torture is not getting information, it's spreading fear.\\n[[rgba:104:104:104:1]][Gained through repeated use of henchmen, assassinations and threats.][[/rgba]]	false
+character_trait_levels_colour_text_shield_brute_corrupt	[[rgba:255:215:0:1]]Brutish[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nNearly all men can withstand adversity, but if you want to test a man’s character, give him power.\\n[[rgba:104:104:104:1]][Gained as an antipathy trait by disloyal, unprincipled characters.][[/rgba]]	false
+character_trait_levels_colour_text_shield_brute_bloodythirsty	[[rgba:255:215:0:1]]Brutish[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nHe's not afraid to break a few eggs in the pursuit of his goals.\\n[[rgba:104:104:104:1]][Gained through carrying out Massacres and leading Pyrrhic Victories.][[/rgba]]	false
+shield_fame_1	Notable	false
+shield_fame_2	Notable	false
+shield_fame_3	Notable	false
+shield_fame_4	Prominent	false
+shield_fame_5	Prominent	false
+shield_fame_6	Prominent	false
+shield_fame_7	Renowned	false
+shield_fame_8	Renowned	false
+shield_fame_9	Renowned	false
+shield_fame_10	Famed	false
+shield_fame_11	Famed	false
+shield_fame_12	Famed	false
+shield_fame_13	Legendary	false
+shield_fame_14	Legendary	false
+shield_fame_15	Legendary	false
+shield_family_fame_1	Notable Lineage	false
+shield_family_fame_2	Notable Lineage	false
+shield_family_fame_3	Notable Lineage	false
+shield_family_fame_4	Prominent Lineage	false
+shield_family_fame_5	Prominent Lineage	false
+shield_family_fame_6	Prominent Lineage	false
+shield_family_fame_7	Renowned Lineage	false
+shield_family_fame_8	Renowned Lineage	false
+shield_family_fame_9	Renowned Lineage	false
+shield_family_fame_10	Famed Lineage	false
+shield_family_fame_11	Famed Lineage	false
+shield_family_fame_12	Famed Lineage	false
+shield_family_fame_13	Legendary Lineage	false
+shield_family_fame_14	Legendary Lineage	false
+shield_family_fame_15	Legendary Lineage	false
+character_trait_levels_onscreen_name_shield_fame_1	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nUnknown to the world, this man seeks to prove himself\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_2	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nThis man's deeds have not escaped notice.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_3	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nThis man's deeds have not escaped notice.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_4	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 2[[/rgba]]\\nThis man's deeds have made him prominent within your Kingdom.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_5	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 2[[/rgba]]\\nThis man's deeds have made him prominent within your Kingdom.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_6	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 2[[/rgba]]\\nThis man's deeds have made him prominent within your Kingdom.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_7	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 3[[/rgba]]\\nThis man's deeds are renowned throughout the Isles.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_8	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 3[[/rgba]]\\nThis man's deeds are renowned throughout the Isles.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_9	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 3[[/rgba]]\\nThis man's deeds are renowned throughout the Isles.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_10	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 4[[/rgba]]\\nWhen they write the histories of these tumultuous years, the deeds of this man will consume whole chapters.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_11	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 4[[/rgba]]\\nWhen they write the histories of these tumultuous years, the deeds of this man will consume whole chapters.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_12	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 4[[/rgba]]\\nWhen they write the histories of these tumultuous years, the deeds of this man will consume whole chapters.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_13	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 5[[/rgba]]\\nThis man's name is spoken in every corner of the world and his deeds recorded in every legend of our times.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_14	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 5[[/rgba]]\\nThis man's name is spoken in every corner of the world and his deeds recorded in every legend of our times.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_onscreen_name_shield_fame_15	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 5[[/rgba]]\\nThis man's name is spoken in every corner of the world and his deeds recorded in every legend of our times.\\n[[rgba:104:104:104:1]][Gain personal fame through Bards, Skalds, Scribes and other Followers.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_1	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nA man from such a family certainly has great things ahead of him.\\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_2	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nA man from such a family certainly has great things ahead of him.\\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_3	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 1[[/rgba]]\\nA man from such a family certainly has great things ahead of him.\\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_4	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 2[[/rgba]]\\nA man from such a family certainly has a lot to live up to.\\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_5	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 2[[/rgba]]\\nA man from such a family certainly has a lot to live up to.\\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_6	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 2[[/rgba]]\\nA man from such a family certainly has a lot to live up to.\\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_7	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 3[[/rgba]]\\nThis man finds himself renowned, not for his own deeds, but for those of his kin.\\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_8	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 3[[/rgba]]\\nThis man finds himself renowned, not for his own deeds, but for those of his kin.\\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_9	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 3[[/rgba]]\\nThis man finds himself renowned, not for his own deeds, but for those of his kin.\\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_10	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 4[[/rgba]]\\nThe greatness of men is laid upon their sons, as are their sins.\\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_11	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 4[[/rgba]]\\nThe greatness of men is laid upon their sons, as are their sins.\\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_12	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 4[[/rgba]]\\nThe greatness of men is laid upon their sons, as are their sins.\\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_13	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 5[[/rgba]]\\nGreatness runs through this mans's blood, and many jealous hearts would relish spilling it. \\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_14	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 5[[/rgba]]\\nGreatness runs through this mans's blood, and many jealous hearts would relish spilling it. \\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false
+character_trait_levels_colour_text_shield_family_fame_15	[[rgba:255:153:51:1]]Fame[[/rgba]] [[rgba:104:104:104:1]]- level 5[[/rgba]]\\nGreatness runs through this mans's blood, and many jealous hearts would relish spilling it. \\n[[rgba:104:104:104:1]][Gained from having a famous father.][[/rgba]]	false

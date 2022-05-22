@@ -1,0 +1,9 @@
+<VARIANT_MESH>
+	<SLOT name="shields" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/shield/att_cha_frankish_decorated_shield.rigid_model_v2"  imposter_model="VariantMeshes/_VariantModels/man/shield/att_cha_frankish_decorated_shield.rigid_model_v2" >
+			<SLOT name="boss" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/man/bosses/att_cha_boss_large_round_spike_bronze.rigid_model_v2" />
+			</SLOT>
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

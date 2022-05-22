@@ -1,0 +1,12 @@
+key	armour_value	bonus_vs_missiles	weak_vs_missiles	audio_material
+#unit_armour_types_tables;1;db/unit_armour_types_tables/sw_unit_armour_types				
+vik_cloth	2	0	2	cloth
+vik_cloth_helmet	3	0	3	cloth
+vik_leather	5	0	0	leather
+vik_leather_helmet	6	0	0	leather
+vik_mail	9	0	0	chainmail
+vik_mail_helmet	10	0	0	chainmail
+vik_mail_heavy	12	0	0	chainmail
+vik_mail_long	15	0	0	chainmail
+vik_scale	17	0	0	chainmail
+vik_scale_heavy	19	0	0	chainmail

@@ -1,0 +1,19 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/loreful_empires_script_text.loc		
+mct_loreful_empires_mod_title	Loreful Empires	true
+mct_loreful_empires_mod_desc	Major faction autoresolve bonuses for lore factions.	true
+mct_loreful_empires_a_enable_txt	Enable Mod	true
+mct_loreful_empires_a_enable_tt	Enables or disables autoresolve influencing for this mod.	true
+mct_loreful_empires_a_autoconfed_txt	Major AI Auto-confederate	true
+mct_loreful_empires_a_autoconfed_tt	When enabled, major factions will confederate any minor factions they have a high enough relationship with automatically.	true
+mct_loreful_empires_b_confed_cd_txt	Auto-confederate Cooldown	true
+mct_loreful_empires_b_confed_cd_tt	The period of time between each confederation that can be automatically triggered for a faction.	true
+mct_loreful_empires_c_defensive_restriction_txt	Defensive Battles Only	true
+mct_loreful_empires_c_defensive_restriction_tt	Makes the mod only support defensive battles.	true
+mct_loreful_empires_d_leader_restriction_txt	Faction Leaders only	true
+mct_loreful_empires_d_leader_restriction_tt	Makes this mod only influence when a legendary lord is involved.	true
+mct_loreful_empires_e_enable_for_allies_txt	Enable script for Allies	true
+mct_loreful_empires_e_enable_for_allies_tt	Enables or disables autoresolve influencing battles where a player's ally is involved.	true
+mct_loreful_empires_f_secondary_factions_txt	Secondary Factions	true
+mct_loreful_empires_f_secondary_factions_tt	Secondary factions are factions who are not given bonuses to their expansion, but who are important to lore and are thus protected from their enemies being given bonuses.	true
+mct_loreful_empires_advanced_options	Advanced - Options	true

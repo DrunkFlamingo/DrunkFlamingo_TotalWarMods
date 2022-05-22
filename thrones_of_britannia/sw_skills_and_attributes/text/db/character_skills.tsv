@@ -1,0 +1,1240 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/character_skills.loc		
+character_skills_localised_name_vik_follower_scribe	Scribe	true
+character_skills_localised_description_vik_back_wife_wealthy_gwined	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	true
+character_skills_localised_description_vik_back_wife_organised_mide	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	true
+character_skills_localised_name_vik_general_back_warrior_strat_clut	Fearless	true
+character_skills_localised_name_vik_back_wife_midwife_gwined	Midwife	true
+character_skills_localised_name_vik_general_back_melee_skill_dyflin	Short-Tempered	true
+character_skills_localised_name_vik_general_back_born_governor_gwined	Studious	true
+character_skills_localised_description_vik_general_back_negotiator_northymbre	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_follower_priest_northymbre	The men of the new religion are frequent companions of the rich and powerful. Favouring the Church is a small price to pay for the legitimacy that they can grant. 	true
+character_skills_localised_description_vik_general_back_farmer_gwined	This man turns his wounds into wisdom.	true
+character_skills_localised_description_vik_follower_pillager_dyflin	Whether it is torturing captives, assassinating rivals, or leading a sack, this man will only ask one question: How much?	true
+character_skills_localised_description_vik_follower_champion_gwined	As a family grows in power, their enemies grow in number. These men stand between their liege lord and the enemy.	true
+character_skills_localised_description_vik_back_wife_unfaithful_east_engle	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	true
+character_skills_localised_name_vik_general_back_spearmen_upkeep_east_engle	Controlling	true
+character_skills_localised_name_vik_general_back_passionate	Honours the Gods	true
+character_skills_localised_description_vik_back_wife_natural_beauty_mierce	This one needs no adornment but the morning sun, so pleasing is her countenance.	true
+character_skills_localised_description_vik_back_wife_natural_beauty_sudreyar	This one needs no adornment but the morning sun, so pleasing is her countenance.	true
+character_skills_localised_description_vik_follower_priest_sudreyar	The followers of the old ways are hard to come by in this strange land, but their presence gives courage to the Nordmenn. 	true
+character_skills_localised_name_vik_back_wife_ambitious_west_seaxe	Ambitious	true
+character_skills_localised_description_vik_follower_scribe_sudreyar	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	true
+character_skills_localised_name_vik_general_back_missile_recruitment_sudreyar	Honours the Gods	true
+character_skills_localised_description_vik_follower_forager_gwined	The wealthiest men in Britannia spare no expense when it comes to equipment. Iron wins battles. 	true
+character_skills_localised_description_vik_back_wife_natural_beauty_dyflin	This one needs no adornment but the morning sun, so pleasing is her countenance.	true
+character_skills_localised_description_vik_follower_champion_circenn	As a family grows in power, their enemies grow in number. These men stand between their liege lord and the enemy.	true
+character_skills_localised_description_vik_follower_pillager_mierce	Whether it is torturing captives, assassinating rivals, or leading a sack, this man will only ask one question: How much?	true
+character_skills_localised_description_vik_follower_pillager	Whether it is torturing captives, assassinating rivals, or leading a sack, this man will only ask one question: How much?	true
+character_skills_localised_description_vik_follower_priest	The men of the new religion are frequent companions of the rich and powerful. Favouring the Church is a small price to pay for the legitimacy that they can grant. 	true
+character_skills_localised_description_vik_back_wife_brutal	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	true
+character_skills_localised_name_vik_follower_quartermaster_sudreyar	Quartermaster	true
+character_skills_localised_description_vik_back_wife_gossip_sudreyar	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	true
+character_skills_localised_name_vik_follower_siege_engineer_circenn	Alban Veteran	true
+character_skills_localised_name_vik_back_wife_brutal_circenn	Brutal	true
+character_skills_localised_description_vik_back_wife_shieldmaiden_strat_clut	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	true
+character_skills_localised_description_vik_back_wife_wealthy_sudreyar	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	true
+character_skills_localised_name_vik_back_wife_loyal_sudreyar	Loyal	true
+character_skills_localised_name_vik_general_back_cavalry_recruitment_gwined	Fair-Minded	true
+character_skills_localised_name_vik_general_back_cavalry_upkeep_northymbre	Experienced	true
+character_skills_localised_description_vik_back_wife_wise_strat_clut	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	true
+character_skills_localised_name_vik_general_back_passionate_sudreyar	Honours the Gods	true
+character_skills_localised_description_vik_back_wife_brutal_sudreyar	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	true
+character_skills_localised_name_vik_general_back_melee_skill_mierce	Short-Tempered	true
+character_skills_localised_description_vik_back_wife_ambitious_mide	This woman is consumed with ambition, for her husband, his faction, and for herself.	true
+character_skills_localised_description_vik_back_wife_faithful	This lady adores her chosen husband and would never cuckold and betray him.	true
+character_skills_localised_description_vik_back_wife_arrogant	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	true
+character_skills_localised_name_vik_general_back_landowner_strat_clut	Respected	true
+character_skills_localised_name_vik_back_wife_ambitious_mide	Ambitious	true
+character_skills_localised_description_vik_back_wife_shieldmaiden_northymbre	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	true
+character_skills_localised_description_vik_general_back_passionate_sudreyar	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_general_back_missile_recruitment_mierce	Honours the Gods	true
+character_skills_localised_description_vik_back_wife_loyal_sudreyar	This lady is utterly loyal to her husband and inspires the same devotion in others.	true
+character_skills_localised_description_vik_general_back_spearmen_skill_dyflin	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_back_wife_faithful_circenn	This lady adores her chosen husband and would never cuckold and betray him.	true
+character_skills_localised_description_vik_back_wife_arrogant_circenn	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	true
+character_skills_localised_description_vik_back_wife_educated_dyflin	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	true
+character_skills_localised_description_vik_follower_priest_circenn	The men of the new religion are frequent companions of the rich and powerful. Favouring the Church is a small price to pay for the legitimacy that they can grant. 	true
+character_skills_localised_description_vik_back_wife_brutal_circenn	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	true
+character_skills_localised_description_vik_back_wife_wise_northymbre	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	true
+character_skills_localised_description_vik_follower_champion	As a family grows in power, their enemies grow in number. These men stand between their liege lord and the enemy.	true
+character_skills_localised_description_vik_follower_pillager_circenn	Whether it is torturing captives, assassinating rivals, or leading a sack, this man will only ask one question: How much?	true
+character_skills_localised_description_vik_back_wife_arrogant_mierce	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	true
+character_skills_localised_name_vik_follower_pillager_mierce	Henchmen	true
+character_skills_localised_name_vik_back_wife_brutal	Brutal	true
+character_skills_localised_name_vik_follower_siege_engineer	Captain	true
+character_skills_localised_name_vik_general_back_cavalry_upkeep_strat_clut	Experienced	true
+character_skills_localised_description_vik_back_wife_organised_mierce	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	true
+character_skills_localised_description_vik_general_back_born_commander_dyflin	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_general_back_landowner_northymbre	Respected	true
+character_skills_localised_description_vik_general_back_champion_rider_dyflin	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_name_vik_general_back_passionate_circenn	Honours the Gods	true
+character_skills_localised_name_vik_general_back_warrior_northymbre	Fearless	true
+character_skills_localised_name_vik_follower_scribe_sudreyar	Scribe	true
+character_skills_localised_description_vik_back_wife_arrogant_dyflin	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	true
+character_skills_localised_name_vik_follower_priest_sudreyar	Gothi	true
+character_skills_localised_description_vik_back_wife_educated_mierce	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	true
+character_skills_localised_name_vik_follower_pillager_dyflin	Henchmen	true
+character_skills_localised_name_vik_follower_champion_gwined	Household Guard	true
+character_skills_localised_description_vik_general_back_champion_rider_mierce	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_follower_priest_strat_clut	The men of the new religion are frequent companions of the rich and powerful. Favouring the Church is a small price to pay for the legitimacy that they can grant. 	true
+character_skills_localised_description_vik_general_back_negotiator_strat_clut	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_back_wife_organised_dyflin	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	true
+character_skills_localised_description_vik_general_back_born_commander_mierce	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_description_vik_general_back_spearmen_recruitment_sudreyar	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_back_wife_unfaithful_west_seaxe	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	true
+character_skills_localised_name_vik_general_back_missile_recruitment_dyflin	Honours the Gods	true
+character_skills_localised_name_vik_follower_scribe_circenn	Scribe	true
+character_skills_localised_name_vik_general_back_spearmen_upkeep_west_seaxe	Controlling	true
+character_skills_localised_name_vik_back_wife_organised_mide	Organised	true
+character_skills_localised_description_vik_back_wife_midwife_gwined	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	true
+character_skills_localised_description_vik_general_back_miner_mide	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_name_vik_back_wife_ambitious_east_engle	Ambitious	true
+character_skills_localised_name_vik_back_wife_wealthy_gwined	Wealthy	true
+character_skills_localised_description_vik_general_back_spearmen_skill_mierce	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_general_back_melee_skill_sudreyar	Short-Tempered	true
+character_skills_localised_name_vik_general_back_missile_recruitment_gwined	Honours the Gods	true
+character_skills_localised_description_vik_back_wife_gossip_circenn	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	true
+character_skills_localised_name_vik_back_wife_noble_sudreyar	Noble	true
+character_skills_localised_description_vik_follower_forager	The wealthiest men in Britannia spare no expense when it comes to equipment. Iron wins battles. 	true
+character_skills_localised_description_vik_back_wife_midwife_dyflin	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	true
+character_skills_localised_name_vik_general_back_pastor_west_seaxe	Godly	true
+character_skills_localised_name_vik_back_wife_demanding_west_seaxe	Demanding	true
+character_skills_localised_name_vik_general_back_missile_damage_mide	Honours the Gods	true
+character_skills_localised_name_vik_back_wife_gossip	Gossip	true
+character_skills_localised_name_vik_back_wife_wealthy_dyflin	Wealthy	true
+character_skills_localised_name_vik_general_back_seafarer_strat_clut	Godly	true
+character_skills_localised_name_vik_general_back_champion_rider_mide	Fearless	true
+character_skills_localised_name_vik_follower_forager_circenn	Master at Arms	true
+character_skills_localised_description_vik_back_wife_demanding_mide	This woman's husband wishes he'd died on campaign years prior.	true
+character_skills_localised_description_vik_general_back_landowner_sudreyar	When this man speaks, people listen.	true
+character_skills_localised_description_vik_back_wife_educated_circenn	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	true
+character_skills_localised_description_vik_back_wife_arrogant_gwined	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	true
+character_skills_localised_description_vik_general_back_negotiator	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_general_back_seafarer_northymbre	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_follower_pillager_gwined	Henchmen	true
+character_skills_localised_name_vik_follower_champion_dyflin	Household Guard	true
+character_skills_localised_name_vik_follower_quartermaster_west_seaxe	Quartermaster	true
+character_skills_localised_description_vik_back_wife_noble_northymbre	It's a matter of breeding, you understand.	true
+character_skills_localised_description_vik_back_wife_organised_gwined	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	true
+character_skills_localised_description_vik_general_back_passionate_northymbre	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_follower_siege_engineer_northymbre	For those with a talent for war and brutality, the invasion of the heathens has been nothing if not a career opportunity. 	true
+character_skills_localised_description_vik_back_wife_educated_gwined	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	true
+character_skills_localised_name_vik_general_back_missile_recruitment	Honours the Gods	true
+character_skills_localised_name_vik_follower_champion_mierce	Household Guard	true
+character_skills_localised_description_vik_back_wife_unfaithful_mide	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	true
+character_skills_localised_description_vik_general_back_missile_recruitment_circenn	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_general_back_born_commander_gwined	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_general_back_melee_upkeep_circenn	Respected	true
+character_skills_localised_description_vik_general_back_fearless_mide	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_follower_pillager_sudreyar	Whether it is torturing captives, assassinating rivals, or leading a sack, this man will only ask one question: How much?	true
+character_skills_localised_description_vik_follower_scribe_strat_clut	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	true
+character_skills_localised_description_vik_general_back_champion_rider_gwined	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_general_back_miner	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_back_wife_midwife_mierce	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	true
+character_skills_localised_description_vik_back_wife_ugly_northymbre	Well, she's rich, which takes the edge off a little.	true
+character_skills_localised_description_vik_general_back_missile_upkeep_mide	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_back_wife_natural_beauty	This one needs no adornment but the morning sun, so pleasing is her countenance.	true
+character_skills_localised_name_vik_back_wife_wealthy_mierce	Wealthy	true
+character_skills_localised_name_vik_back_wife_natural_beauty_circenn	Natural Beauty	true
+character_skills_localised_name_vik_general_back_spearmen_skill_mide	Controlling	true
+character_skills_localised_description_vik_general_back_spearmen_skill_gwined	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_back_wife_peaceful	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	true
+character_skills_localised_description_vik_back_wife_natural_beauty_circenn	This one needs no adornment but the morning sun, so pleasing is her countenance.	true
+character_skills_localised_description_vik_back_wife_wealthy_mierce	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	true
+character_skills_localised_description_vik_general_back_spearmen_skill_mide	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_general_back_cavalry_recruitment_dyflin	Fair-Minded	true
+character_skills_localised_name_vik_back_wife_natural_beauty	Natural Beauty	true
+character_skills_localised_name_vik_general_back_missile_upkeep_mide	Godly	true
+character_skills_localised_name_vik_back_wife_midwife_mierce	Midwife	true
+character_skills_localised_name_vik_general_back_born_governor_mierce	Studious	true
+character_skills_localised_description_vik_back_wife_peaceful_circenn	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	true
+character_skills_localised_description_vik_general_back_farmer_mierce	This man turns his wounds into wisdom.	true
+character_skills_localised_description_vik_follower_scribe_northymbre	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	true
+character_skills_localised_description_vik_back_wife_natural_beauty_gwined	This one needs no adornment but the morning sun, so pleasing is her countenance.	true
+character_skills_localised_name_vik_general_back_missile_recruitment_circenn	Honours the Gods	true
+character_skills_localised_description_vik_follower_forager_dyflin	The wealthiest men in Britannia spare no expense when it comes to equipment. Iron wins battles. 	true
+character_skills_localised_description_vik_follower_champion_mierce	As a family grows in power, their enemies grow in number. These men stand between their liege lord and the enemy.	true
+character_skills_localised_description_vik_general_back_missile_recruitment	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_back_wife_ugly_strat_clut	Well, she's rich, which takes the edge off a little.	true
+character_skills_localised_name_vik_general_back_melee_upkeep	Respected	true
+character_skills_localised_description_vik_general_back_miner_circenn	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_follower_pillager_gwined	Whether it is torturing captives, assassinating rivals, or leading a sack, this man will only ask one question: How much?	true
+character_skills_localised_description_vik_follower_champion_dyflin	As a family grows in power, their enemies grow in number. These men stand between their liege lord and the enemy.	true
+character_skills_localised_name_vik_general_back_pastor_east_engle	Godly	true
+character_skills_localised_description_vik_general_back_negotiator_circenn	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_follower_forager_mierce	The wealthiest men in Britannia spare no expense when it comes to equipment. Iron wins battles. 	true
+character_skills_localised_name_vik_general_back_seafarer_northymbre	Godly	true
+character_skills_localised_name_vik_back_wife_demanding_east_engle	Demanding	true
+character_skills_localised_description_vik_follower_forager_sudreyar	The wealthiest men in Britannia spare no expense when it comes to equipment. Iron wins battles. 	true
+character_skills_localised_description_vik_general_back_champion_rider_mide	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_general_back_seafarer_strat_clut	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_general_back_cavalry_recruitment_mierce	Fair-Minded	true
+character_skills_localised_name_vik_back_wife_demanding_mide	Demanding	true
+character_skills_localised_description_vik_follower_forager_circenn	The wealthiest men in Britannia spare no expense when it comes to equipment. Iron wins battles. 	true
+character_skills_localised_description_vik_back_wife_wealthy_dyflin	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	true
+character_skills_localised_description_vik_general_back_missile_damage_mide	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_back_wife_gossip	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	true
+character_skills_localised_name_vik_follower_forager	Master at Arms	true
+character_skills_localised_name_vik_back_wife_midwife_dyflin	Midwife	true
+character_skills_localised_description_vik_back_wife_noble_sudreyar	It's a matter of breeding, you understand.	true
+character_skills_localised_name_vik_general_back_melee_skill_gwined	Short-Tempered	true
+character_skills_localised_name_vik_back_wife_gossip_circenn	Gossip	true
+character_skills_localised_description_vik_back_wife_educated	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	true
+character_skills_localised_name_vik_follower_quartermaster_east_engle	Quartermaster	true
+character_skills_localised_description_vik_follower_siege_engineer_strat_clut	Crowns, Castles, Titles. To some men those trinkets mean the world, but others live instead for the rush of battle, and the blood they spill 	true
+character_skills_localised_name_vik_general_back_born_governor_dyflin	Studious	true
+character_skills_localised_description_vik_general_back_passionate_strat_clut	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_general_back_melee_upkeep_sudreyar	When this man speaks, people listen.	true
+character_skills_localised_description_vik_general_back_farmer_dyflin	This man turns his wounds into wisdom.	true
+character_skills_localised_description_vik_back_wife_noble_strat_clut	It's a matter of breeding, you understand.	true
+character_skills_localised_name_vik_general_back_spearmen_recruitment_gwined	Controlling	true
+character_skills_localised_description_vik_back_wife_midwife_circenn	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	true
+character_skills_localised_description_vik_follower_scribe	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	true
+character_skills_localised_description_vik_general_back_warrior_strat_clut	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_name_vik_follower_bard_northymbre	Skald	true
+character_skills_localised_description_vik_general_back_melee_skill_dyflin	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_description_vik_back_wife_ambitious_gwined	This woman is consumed with ambition for her husband, his faction, and for herself.	true
+character_skills_localised_description_vik_back_wife_charming	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	true
+character_skills_localised_description_vik_back_wife_strict	This woman is a harpy - she demands that the rules are observed to the very letter.	true
+character_skills_localised_name_vik_general_back_farmer_west_seaxe	Experienced	true
+character_skills_localised_description_vik_general_back_negotiator_sudreyar	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_back_wife_sensible_mierce	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	true
+character_skills_localised_description_vik_back_wife_wasteful_mierce	What? We take what we desire - have you forgotten?	true
+character_skills_localised_name_vik_general_back_missile_upkeep_northymbre	Godly	true
+character_skills_localised_description_vik_general_back_born_commander_mide	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_back_wife_unfaithful_east_engle	Unfaithful	true
+character_skills_localised_description_vik_back_wife_faithful_mierce	This lady adores her chosen husband and would never cuckold and betray him.	true
+character_skills_localised_name_vik_back_wife_natural_beauty_mierce	Natural Beauty	true
+character_skills_localised_description_vik_general_back_passionate	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_general_back_spearmen_upkeep_east_engle	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_back_wife_renowned_gwined	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	true
+character_skills_localised_name_vik_back_wife_strict_circenn	Strict	true
+character_skills_localised_description_vik_follower_bard_strat_clut	Many great houses are patrons of bards, who sing praises of their king in hummable tunes and enticing rhymes. 	true
+character_skills_localised_description_vik_follower_bard_mide	Many great houses are patrons of bards, who sing praises of their king in hummable tunes and enticing rhymes. 	true
+character_skills_localised_name_vik_general_back_miner_mierce	Cunning	true
+character_skills_localised_description_vik_back_wife_wealthy_circenn	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	true
+character_skills_localised_name_vik_back_wife_natural_beauty_dyflin	Natural Beauty	true
+character_skills_localised_name_vik_follower_forager_gwined	Master at Arms	true
+character_skills_localised_description_vik_back_wife_faithful_dyflin	This lady adores her chosen husband and would never cuckold and betray him.	true
+character_skills_localised_description_vik_back_wife_sensible_dyflin	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	true
+character_skills_localised_description_vik_back_wife_wasteful_dyflin	What? We take what we desire - have you forgotten?	true
+character_skills_localised_description_vik_general_back_landowner_east_engle	When this man speaks, people listen.	true
+character_skills_localised_name_vik_follower_priest	Priest	true
+character_skills_localised_description_vik_follower_quartermaster_sudreyar	Gold wins wars, and this man is an expert in spending it well. He keeps the army fed, watered, armed and, most importantly, moving.	true
+character_skills_localised_description_vik_follower_siege_engineer_circenn	Nobody wants to march in the cold, but they wouldn't much like an army of vikings having their wife either. This man makes sure they understand that. 	true
+character_skills_localised_name_vik_general_back_miner_dyflin	Cunning	true
+character_skills_localised_name_vik_back_wife_wise_east_engle	Wise	true
+character_skills_localised_description_vik_back_wife_loyal_northymbre	This lady is utterly loyal to her husband and inspires the same devotion in others.	true
+character_skills_localised_description_vik_general_back_cavalry_recruitment_gwined	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_description_vik_general_back_melee_skill_mierce	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_name_vik_general_back_missile_damage_strat_clut	Honours the Gods	true
+character_skills_localised_name_vik_back_wife_shieldmaiden_east_engle	Shieldmaiden	true
+character_skills_localised_name_vik_general_back_spearmen_recruitment	Controlling	true
+character_skills_localised_description_vik_back_wife_renowned_circenn	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	true
+character_skills_localised_description_vik_general_back_landowner_west_seaxe	When this man speaks, people listen.	true
+character_skills_localised_description_vik_general_back_missile_recruitment_mierce	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_back_wife_charming_dyflin	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	true
+character_skills_localised_description_vik_back_wife_renowned	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	true
+character_skills_localised_name_vik_back_wife_wise_west_seaxe	Wise	true
+character_skills_localised_name_vik_general_back_spearmen_recruitment_circenn	Controlling	true
+character_skills_localised_description_vik_back_wife_loyal_strat_clut	This lady is utterly loyal to her husband and inspires the same devotion in others.	true
+character_skills_localised_name_vik_general_back_missile_damage_northymbre	Honours the Gods	true
+character_skills_localised_name_vik_follower_priest_circenn	Priest	true
+character_skills_localised_description_vik_back_wife_peaceful_mierce	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	true
+character_skills_localised_description_vik_back_wife_wealthy	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	true
+character_skills_localised_description_vik_follower_siege_engineer	It takes skill to get the rabble into line, and have them stand strong when the heathens crash against the Shieldwall. Good leaders learn to appreciate skill. 	true
+character_skills_localised_description_vik_back_wife_demanding_mierce	This woman's husband wishes he'd died on campaign years prior.	true
+character_skills_localised_name_vik_back_wife_shieldmaiden_west_seaxe	Shieldmaiden	true
+character_skills_localised_name_vik_general_back_spearmen_upkeep_mide	Controlling	true
+character_skills_localised_description_vik_general_back_pastor_mierce	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_general_back_warrior_mide	Fearless	true
+character_skills_localised_description_vik_back_wife_peaceful_dyflin	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	true
+character_skills_localised_description_vik_general_back_passionate_circenn	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_follower_bard_strat_clut	Bard	true
+character_skills_localised_description_vik_general_back_warrior_northymbre	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_back_wife_strict_circenn	This woman is a harpy - she demands that the rules are observed to the very letter.	true
+character_skills_localised_name_vik_general_back_born_commander_mide	Studious	true
+character_skills_localised_name_vik_general_back_negotiator_sudreyar	Cunning	true
+character_skills_localised_name_vik_back_wife_strict	Strict	true
+character_skills_localised_description_vik_back_wife_demanding_dyflin	This woman's husband wishes he'd died on campaign years prior.	true
+character_skills_localised_description_vik_general_back_pastor_dyflin	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_follower_scribe_circenn	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	true
+character_skills_localised_description_vik_general_back_missile_recruitment_dyflin	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_back_wife_charming_mierce	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	true
+character_skills_localised_name_vik_back_wife_unfaithful_west_seaxe	Unfaithful	true
+character_skills_localised_description_vik_back_wife_midwife	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	true
+character_skills_localised_description_vik_general_back_spearmen_upkeep_west_seaxe	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_follower_bard_northymbre	Many great houses are patrons of poets, who sing praises of their king in hummable tunes and enticing rhymes. 	true
+character_skills_localised_name_vik_general_back_farmer_east_engle	Experienced	true
+character_skills_localised_name_vik_general_back_miner_mide	Cunning	true
+character_skills_localised_description_vik_general_back_spearmen_recruitment_gwined	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_general_back_missile_upkeep_strat_clut	Godly	true
+character_skills_localised_description_vik_back_wife_charming_circenn	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	true
+character_skills_localised_description_vik_follower_champion_sudreyar	As a family grows in power, their enemies grow in number. These men stand between their liege lord and the enemy.	true
+character_skills_localised_description_vik_follower_quartermaster_northymbre	Gold wins wars, and this man is an expert in spending it well. He keeps the army fed, watered, armed and, most importantly, moving.	true
+character_skills_localised_description_vik_general_back_missile_recruitment_gwined	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_general_back_fearless_strat_clut	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_name_vik_general_back_defender_northymbre	Fair-Minded	true
+character_skills_localised_description_vik_general_back_spearmen_recruitment_dyflin	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_back_wife_organised_west_seaxe	Organised	true
+character_skills_localised_name_vik_general_back_landowner_sudreyar	Respected	true
+character_skills_localised_name_vik_general_back_cavalry_recruitment_sudreyar	Fair-Minded	true
+character_skills_localised_description_vik_general_back_born_governor	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_description_vik_back_wife_peaceful_gwined	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	true
+character_skills_localised_description_vik_general_back_defender_strat_clut	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_name_vik_general_back_fearless_northymbre	Fearless	true
+character_skills_localised_name_vik_general_back_negotiator	Cunning	true
+character_skills_localised_description_vik_back_wife_wasteful	"What? We take what we desire - have you forgotten?"	true
+character_skills_localised_description_vik_back_wife_demanding_gwined	This woman's husband wishes he'd died on campaign years prior.	true
+character_skills_localised_description_vik_general_back_pastor_gwined	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_general_back_pastor_mide	Godly	true
+character_skills_localised_name_vik_general_back_farmer_mide	Experienced	true
+character_skills_localised_description_vik_general_back_merchant_northymbre	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_name_vik_general_back_spearmen_skill_west_seaxe	Controlling	true
+character_skills_localised_name_vik_general_back_cavalry_upkeep_mide	Experienced	true
+character_skills_localised_description_vik_back_wife_well_connected_sudreyar	It's not what you know, but who.	true
+character_skills_localised_description_vik_back_wife_sensible_circenn	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	true
+character_skills_localised_name_vik_back_wife_ugly_west_seaxe	Ugly	true
+character_skills_localised_name_vik_general_back_cavalry_recruitment_circenn	Fair-Minded	true
+character_skills_localised_description_vik_back_wife_charming_gwined	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	true
+character_skills_localised_name_vik_general_back_merchant_strat_clut	Short-Tempered	true
+character_skills_localised_name_vik_general_back_champion_rider_west_seaxe	Fearless	true
+character_skills_localised_description_vik_general_back_cavalry_recruitment	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_description_vik_general_back_spearmen_recruitment_mierce	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_general_back_born_commander_west_seaxe	Studious	true
+character_skills_localised_description_vik_back_wife_midwife_sudreyar	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	true
+character_skills_localised_name_vik_general_back_cavalry_recruitment	Fair-Minded	true
+character_skills_localised_name_vik_general_back_spearmen_recruitment_mierce	Controlling	true
+character_skills_localised_description_vik_general_back_cavalry_recruitment_dyflin	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_description_vik_general_back_merchant_strat_clut	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_name_vik_general_back_spearmen_skill_east_engle	Controlling	true
+character_skills_localised_description_vik_general_back_cavalry_recruitment_circenn	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_name_vik_back_wife_ugly_east_engle	Ugly	true
+character_skills_localised_description_vik_general_back_defender_mide	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_description_vik_back_wife_ambitious_mierce	This woman is consumed with ambition, for her husband, his faction, and for herself.	true
+character_skills_localised_description_vik_general_back_merchant_mide	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_description_vik_back_wife_renowned_mierce	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	true
+character_skills_localised_name_vik_follower_forager_dyflin	Master at Arms	true
+character_skills_localised_description_vik_general_back_cavalry_upkeep_mide	This man turns his wounds into wisdom.	true
+character_skills_localised_name_vik_general_back_merchant_northymbre	Short-Tempered	true
+character_skills_localised_name_vik_back_wife_natural_beauty_gwined	Natural Beauty	true
+character_skills_localised_description_vik_back_wife_faithful_gwined	This lady adores her chosen husband and would never cuckold and betray him.	true
+character_skills_localised_description_vik_back_wife_wasteful_gwined	"What? We take what we desire - have you forgotten?"	true
+character_skills_localised_description_vik_general_back_farmer_mide	This man turns his wounds into wisdom.	true
+character_skills_localised_description_vik_general_back_pastor_mide	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_back_wife_sensible_gwined	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	true
+character_skills_localised_name_vik_general_back_born_commander_east_engle	Studious	true
+character_skills_localised_description_vik_back_wife_strict_sudreyar	This woman is a harpy - she demands that the rules are observed to the very letter.	true
+character_skills_localised_name_vik_general_back_champion_rider_east_engle	Fearless	true
+character_skills_localised_name_vik_general_back_miner_gwined	Cunning	true
+character_skills_localised_description_vik_back_wife_sensible	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	true
+character_skills_localised_name_vik_general_back_negotiator_circenn	Cunning	true
+character_skills_localised_description_vik_back_wife_renowned_dyflin	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	true
+character_skills_localised_name_vik_follower_forager_mierce	Master at Arms	true
+character_skills_localised_description_vik_follower_quartermaster_strat_clut	Gold wins wars, and this man is an expert in spending it well. He keeps the army fed, watered, armed and, most importantly, moving.	true
+character_skills_localised_name_vik_general_back_defender_strat_clut	Fair-Minded	true
+character_skills_localised_description_vik_general_back_fearless_northymbre	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_name_vik_back_wife_organised_east_engle	Organised	true
+character_skills_localised_description_vik_back_wife_wasteful_circenn	What? We take what we desire - have you forgotten?	true
+character_skills_localised_description_vik_general_back_cavalry_recruitment_mierce	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_name_vik_general_back_spearmen_recruitment_dyflin	Controlling	true
+character_skills_localised_name_vik_general_back_fearless_strat_clut	Fearless	true
+character_skills_localised_description_vik_general_back_defender_northymbre	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_description_vik_general_back_melee_skill_gwined	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_description_vik_back_wife_ambitious_dyflin	This woman is consumed with ambition, for her husband, his faction, and for herself.	true
+character_skills_localised_description_vik_general_back_seafarer_mide	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_general_back_born_governor_circenn	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_back_wife_wealthy_mide	Wealthy	true
+character_skills_localised_description_vik_back_wife_shieldmaiden_west_seaxe	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	true
+character_skills_localised_description_vik_general_back_spearmen_upkeep_mide	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_back_wife_wise_sudreyar	Wise	true
+character_skills_localised_description_vik_general_back_warrior_mide	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_name_vik_back_wife_peaceful_mierce	Peaceful	true
+character_skills_localised_name_vik_back_wife_wealthy	Wealthy	true
+character_skills_localised_description_vik_general_back_missile_damage_gwined	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_back_wife_gossip_gwined	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	true
+character_skills_localised_description_vik_back_wife_wise_west_seaxe	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	true
+character_skills_localised_description_vik_general_back_spearmen_recruitment_circenn	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_general_back_cavalry_upkeep_east_engle	Experienced	true
+character_skills_localised_name_vik_back_wife_loyal	Loyal	true
+character_skills_localised_description_vik_back_wife_charming_mide	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	true
+character_skills_localised_name_vik_general_back_landowner_west_seaxe	Respected	true
+character_skills_localised_name_vik_back_wife_charming_dyflin	Charming	true
+character_skills_localised_description_vik_back_wife_well_connected	It's not what you know, but who.	true
+character_skills_localised_name_vik_general_back_warrior_west_seaxe	Fearless	true
+character_skills_localised_name_vik_back_wife_well_connected_circenn	Well Connected	true
+character_skills_localised_name_vik_general_back_born_governor_mide	Studious	true
+character_skills_localised_description_vik_back_wife_sensible_mide	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	true
+character_skills_localised_name_vik_back_wife_midwife	Midwife	true
+character_skills_localised_name_vik_back_wife_charming_mierce	Charming	true
+character_skills_localised_description_vik_general_back_negotiator_east_engle	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_follower_priest_east_engle	The men of the new religion are frequent companions of the rich and powerful. Favouring the Church is a small price to pay for the legitimacy that they can grant. 	true
+character_skills_localised_description_vik_back_wife_unfaithful_northymbre	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	true
+character_skills_localised_name_vik_general_back_spearmen_upkeep_northymbre	Controlling	true
+character_skills_localised_name_vik_back_wife_ambitious_strat_clut	Ambitious	true
+character_skills_localised_name_vik_back_wife_educated_mide	Educated	true
+character_skills_localised_name_vik_back_wife_peaceful_dyflin	Peaceful	true
+character_skills_localised_name_vik_general_back_spearmen_recruitment_mide	Controlling	true
+character_skills_localised_name_vik_back_wife_strict_dyflin	Strict	true
+character_skills_localised_name_vik_general_back_warrior_east_engle	Fearless	true
+character_skills_localised_description_vik_general_back_miner_mierce	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_back_wife_well_connected_gwined	It's not what you know, but who.	true
+character_skills_localised_name_vik_back_wife_sensible_mierce	Sensible	true
+character_skills_localised_name_vik_back_wife_wasteful_mierce	Wasteful	true
+character_skills_localised_name_vik_back_wife_faithful_mierce	Faithful	true
+character_skills_localised_name_vik_back_wife_renowned_gwined	Renowned	true
+character_skills_localised_description_vik_general_back_negotiator_west_seaxe	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_general_back_missile_upkeep_gwined	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_follower_priest_west_seaxe	The men of the new religion are frequent companions of the rich and powerful. Favouring the Church is a small price to pay for the legitimacy that they can grant. 	true
+character_skills_localised_description_vik_back_wife_well_connected_circenn	It's not what you know, but who.	true
+character_skills_localised_name_vik_general_back_spearmen_upkeep_strat_clut	Controlling	true
+character_skills_localised_description_vik_back_wife_unfaithful_strat_clut	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	true
+character_skills_localised_name_vik_back_wife_well_connected	Well Connected	true
+character_skills_localised_name_vik_back_wife_ambitious_northymbre	Ambitious	true
+character_skills_localised_name_vik_back_wife_midwife_circenn	Midwife	true
+character_skills_localised_name_vik_back_wife_loyal_circenn	Loyal	true
+character_skills_localised_description_vik_back_wife_shieldmaiden_east_engle	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	true
+character_skills_localised_description_vik_back_wife_brutal_gwined	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	true
+character_skills_localised_description_vik_general_back_spearmen_recruitment	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_back_wife_strict_mierce	Strict	true
+character_skills_localised_description_vik_general_back_miner_dyflin	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_back_wife_wise_east_engle	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	true
+character_skills_localised_name_vik_general_back_cavalry_upkeep_west_seaxe	Experienced	true
+character_skills_localised_name_vik_back_wife_loyal_gwined	Loyal	true
+character_skills_localised_name_vik_back_wife_wealthy_circenn	Wealthy	true
+character_skills_localised_name_vik_back_wife_faithful_dyflin	Faithful	true
+character_skills_localised_name_vik_back_wife_sensible_dyflin	Sensible	true
+character_skills_localised_name_vik_general_back_landowner_east_engle	Respected	true
+character_skills_localised_name_vik_back_wife_wasteful_dyflin	Wasteful	true
+character_skills_localised_description_vik_general_back_miner_gwined	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_name_vik_follower_quartermaster	Quartermaster	true
+character_skills_localised_name_vik_back_wife_wise_circenn	Wise	true
+character_skills_localised_name_vik_general_back_fearless_sudreyar	Fearless	true
+character_skills_localised_name_vik_follower_pillager_mide	Henchmen	true
+character_skills_localised_name_vik_back_wife_loyal_dyflin	Loyal	true
+character_skills_localised_description_vik_back_wife_well_connected_mierce	It's not what you know, but who.	true
+character_skills_localised_name_vik_back_wife_renowned_mierce	Renowned	true
+character_skills_localised_name_vik_back_wife_faithful_gwined	Faithful	true
+character_skills_localised_name_vik_back_wife_wasteful_gwined	Wasteful	true
+character_skills_localised_name_vik_back_wife_sensible_gwined	Sensible	true
+character_skills_localised_name_vik_back_wife_strict_sudreyar	Strict	true
+character_skills_localised_description_vik_follower_scribe_west_seaxe	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	true
+character_skills_localised_description_vik_general_back_missile_upkeep_mierce	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_back_wife_ugly_east_engle	Well, she's rich, which takes the edge off a little.	true
+character_skills_localised_description_vik_back_wife_brutal_dyflin	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	true
+character_skills_localised_name_vik_back_wife_demanding_strat_clut	Demanding	true
+character_skills_localised_description_vik_back_wife_brutal_mierce	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	true
+character_skills_localised_name_vik_general_back_landowner_circenn	Respected	true
+character_skills_localised_name_vik_general_back_seafarer_west_seaxe	Godly	true
+character_skills_localised_description_vik_follower_siege_engineer_sudreyar	Slaver, Sailor, Murderer, Soldier. Doesn't make much difference what you call it. 	true
+character_skills_localised_name_vik_general_back_pastor_strat_clut	Godly	true
+character_skills_localised_name_vik_back_wife_noble_circenn	Noble	true
+character_skills_localised_name_vik_back_wife_strict_gwined	Strict	true
+character_skills_localised_description_vik_back_wife_well_connected_dyflin	It's not what you know, but who.	true
+character_skills_localised_name_vik_back_wife_peaceful_mide	Peaceful	true
+character_skills_localised_name_vik_back_wife_loyal_mierce	Loyal	true
+character_skills_localised_description_vik_general_back_seafarer_east_engle	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_back_wife_noble_east_engle	It's a matter of breeding, you understand.	true
+character_skills_localised_name_vik_back_wife_renowned_dyflin	Renowned	true
+character_skills_localised_description_vik_general_back_missile_upkeep_dyflin	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_general_back_passionate_east_engle	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_follower_siege_engineer_east_engle	For those with a talent for war and brutality, the invasion of the heathens has been nothing if not a career opportunity. 	true
+character_skills_localised_name_vik_follower_quartermaster_strat_clut	Quartermaster	true
+character_skills_localised_name_vik_general_back_seafarer_east_engle	Godly	true
+character_skills_localised_name_vik_back_wife_noble	Noble	true
+character_skills_localised_name_vik_general_back_pastor_northymbre	Godly	true
+character_skills_localised_name_vik_back_wife_demanding_northymbre	Demanding	true
+character_skills_localised_description_vik_back_wife_faithful_mide	This lady adores her chosen husband and would never cuckold and betray him.	true
+character_skills_localised_description_vik_back_wife_wasteful_mide	What? We take what we desire - have you forgotten?	true
+character_skills_localised_description_vik_back_wife_ugly_sudreyar	Well, she's rich, which takes the edge off a little.	true
+character_skills_localised_name_vik_back_wife_peaceful_gwined	Peaceful	true
+character_skills_localised_description_vik_dummy_navy	You should not be seeing this, please report it to your nearest designer	true
+character_skills_localised_description_vik_general_back_missile_damage_mierce	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_general_back_landowner	Respected	true
+character_skills_localised_description_vik_general_back_cavalry_recruitment_sudreyar	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_name_vik_follower_siege_engineer_sudreyar	Austmenn Veteran	true
+character_skills_localised_description_vik_back_wife_gossip_mierce	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	true
+character_skills_localised_description_vik_general_back_seafarer_west_seaxe	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_general_back_melee_upkeep_mide	Respected	true
+character_skills_localised_name_vik_follower_quartermaster_northymbre	Quartermaster	true
+character_skills_localised_description_vik_back_wife_noble_west_seaxe	It's a matter of breeding, you understand.	true
+character_skills_localised_description_vik_general_back_passionate_west_seaxe	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_follower_siege_engineer_west_seaxe	Convincing a peasant to hold a spear and stand in a line isn't too hard. Convincing him to stay there when a norseman is screaming and swinging an axe at him? That is skill. 	true
+character_skills_localised_description_vik_back_wife_gossip_dyflin	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	true
+character_skills_localised_name_vik_back_wife_charming_gwined	Charming	true
+character_skills_localised_description_vik_follower_scribe_east_engle	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	true
+character_skills_localised_name_vik_follower_quartermaster_circenn	Quartermaster	true
+character_skills_localised_description_vik_back_wife_ugly_west_seaxe	Well, she's rich, which takes the edge off a little.	true
+character_skills_localised_name_vik_back_wife_renowned_mide	Renowned	true
+character_skills_localised_description_vik_back_wife_arrogant_mide	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	true
+character_skills_localised_name_vik_back_wife_shieldmaiden_sudreyar	Shieldmaiden	true
+character_skills_localised_name_vik_back_wife_wise	Wise	true
+character_skills_localised_description_vik_general_back_missile_damage_dyflin	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_back_wife_well_connected_sudreyar	Well Connected	true
+character_skills_localised_description_vik_general_back_landowner_northymbre	When this man speaks, people listen.	true
+character_skills_localised_name_vik_general_back_melee_upkeep_gwined	Respected	true
+character_skills_localised_name_vik_follower_siege_engineer_mierce	Saxon Veteran	true
+character_skills_localised_name_vik_general_back_passionate_mierce	Honours the Gods	true
+character_skills_localised_name_vik_back_wife_ugly	Ugly	true
+character_skills_localised_description_vik_back_wife_wise_sudreyar	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	true
+character_skills_localised_name_vik_back_wife_noble_mierce	Noble	true
+character_skills_localised_name_vik_back_wife_educated_dyflin	Educated	true
+character_skills_localised_name_vik_back_wife_wise_northymbre	Wise	true
+character_skills_localised_description_vik_back_wife_loyal_east_engle	This lady is utterly loyal to her husband and inspires the same devotion in others.	true
+character_skills_localised_name_vik_follower_pillager_circenn	Henchmen	true
+character_skills_localised_name_vik_follower_champion	Household Guard	true
+character_skills_localised_name_vik_back_wife_arrogant_mierce	Arrogant	true
+character_skills_localised_name_vik_general_back_missile_damage_west_seaxe	Honours the Gods	true
+character_skills_localised_name_vik_back_wife_gossip_gwined	Gossip	true
+character_skills_localised_description_vik_back_wife_loyal	This lady is utterly loyal to her husband and inspires the same devotion in others.	true
+character_skills_localised_name_vik_back_wife_charming_mide	Charming	true
+character_skills_localised_name_vik_back_wife_shieldmaiden_northymbre	Shieldmaiden	true
+character_skills_localised_description_vik_general_back_warrior_west_seaxe	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_general_back_melee_skill_sudreyar	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_description_vik_general_back_born_governor_mide	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_follower_bard_east_engle	Skald	true
+character_skills_localised_name_vik_back_wife_sensible_mide	Sensible	true
+character_skills_localised_name_vik_general_back_missile_upkeep_east_engle	Godly	true
+character_skills_localised_name_vik_back_wife_unfaithful_northymbre	Unfaithful	true
+character_skills_localised_name_vik_follower_siege_engineer_dyflin	Nordmann Veteran	true
+character_skills_localised_description_vik_general_back_spearmen_upkeep_northymbre	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_general_back_passionate_dyflin	Honours the Gods	true
+character_skills_localised_description_vik_follower_bard_west_seaxe	Many great houses are patrons of bards, who sing praises of their king in hummable tunes and enticing rhymes. 	true
+character_skills_localised_name_vik_back_wife_noble_dyflin	Noble	true
+character_skills_localised_description_vik_back_wife_educated_mide	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	true
+character_skills_localised_name_vik_general_back_farmer_strat_clut	Experienced	true
+character_skills_localised_name_vik_follower_bard_sudreyar	Skald	true
+character_skills_localised_name_vik_back_wife_arrogant_dyflin	Arrogant	true
+character_skills_localised_name_vik_back_wife_educated_mierce	Educated	true
+character_skills_localised_description_vik_general_back_missile_recruitment_sudreyar	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_general_back_warrior_east_engle	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_back_wife_strict_dyflin	This woman is a harpy - she demands that the rules are observed to the very letter.	true
+character_skills_localised_name_vik_follower_bard_west_seaxe	Bard	true
+character_skills_localised_name_vik_back_wife_well_connected_gwined	Well Connected	true
+character_skills_localised_name_vik_back_wife_natural_beauty_sudreyar	Natural Beauty	true
+character_skills_localised_description_vik_follower_bard_east_engle	Many great houses are patrons of poets, who sing praises of their king in hummable tunes and enticing rhymes. 	true
+character_skills_localised_name_vik_general_back_farmer_northymbre	Experienced	true
+character_skills_localised_name_vik_general_back_negotiator_gwined	Cunning	true
+character_skills_localised_description_vik_general_back_born_governor_gwined	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_general_back_missile_upkeep_west_seaxe	Godly	true
+character_skills_localised_name_vik_follower_scribe_mierce	Scribe	true
+character_skills_localised_name_vik_follower_priest_gwined	Priest	true
+character_skills_localised_description_vik_general_back_spearmen_upkeep_strat_clut	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_follower_champion_mide	Household Guard	true
+character_skills_localised_name_vik_back_wife_unfaithful_strat_clut	Unfaithful	true
+character_skills_localised_description_vik_back_wife_loyal_circenn	This lady is utterly loyal to her husband and inspires the same devotion in others.	true
+character_skills_localised_name_vik_back_wife_brutal_gwined	Brutal	true
+character_skills_localised_name_vik_follower_scribe_dyflin	Scribe	true
+character_skills_localised_description_vik_general_back_landowner_strat_clut	When this man speaks, people listen.	true
+character_skills_localised_description_vik_back_wife_loyal_west_seaxe	This lady is utterly loyal to her husband and inspires the same devotion in others.	true
+character_skills_localised_description_vik_general_back_cavalry_upkeep_gwined	This man turns his wounds into wisdom.	true
+character_skills_localised_name_vik_back_wife_wise_strat_clut	Wise	true
+character_skills_localised_name_vik_back_wife_brutal_sudreyar	Brutal	true
+character_skills_localised_description_vik_back_wife_strict_mierce	This woman is a harpy - she demands that the rules are observed to the very letter.	true
+character_skills_localised_name_vik_general_back_missile_damage_east_engle	Honours the Gods	true
+character_skills_localised_description_vik_general_back_melee_upkeep_gwined	When this man speaks, people listen.	true
+character_skills_localised_name_vik_back_wife_ugly_circenn	Ugly	true
+character_skills_localised_description_vik_dummy_army	You should not be seeing this, please report it to your nearest designer	true
+character_skills_localised_name_vik_follower_pillager	Henchmen	true
+character_skills_localised_name_vik_follower_champion_circenn	Household Guard	true
+character_skills_localised_name_vik_back_wife_gossip_sudreyar	Gossip	true
+character_skills_localised_name_vik_back_wife_shieldmaiden_strat_clut	Shieldmaiden	true
+character_skills_localised_description_vik_general_back_melee_upkeep	When this man speaks, people listen.	true
+character_skills_localised_name_vik_general_back_spearmen_skill_strat_clut	Controlling	true
+character_skills_localised_description_vik_general_back_merchant_east_engle	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_name_vik_back_wife_well_connected_mierce	Well Connected	true
+character_skills_localised_description_vik_general_back_melee_upkeep_dyflin	When this man speaks, people listen.	true
+character_skills_localised_name_vik_back_wife_ugly_strat_clut	Ugly	true
+character_skills_localised_name_vik_general_back_champion_rider_strat_clut	Fearless	true
+character_skills_localised_name_vik_follower_priest_mierce	Priest	true
+character_skills_localised_name_vik_general_back_merchant_west_seaxe	Short-Tempered	true
+character_skills_localised_name_vik_back_wife_brutal_dyflin	Brutal	true
+character_skills_localised_name_vik_follower_scribe_gwined	Scribe	true
+character_skills_localised_description_vik_general_back_born_governor_mierce	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_general_back_negotiator_mierce	Cunning	true
+character_skills_localised_name_vik_back_wife_midwife_mide	Midwife	true
+character_skills_localised_name_vik_general_back_born_commander_strat_clut	Studious	true
+character_skills_localised_description_vik_general_back_cavalry_upkeep_dyflin	This man turns his wounds into wisdom.	true
+character_skills_localised_name_vik_back_wife_organised_strat_clut	Organised	true
+character_skills_localised_name_vik_general_back_defender_east_engle	Fair-Minded	true
+character_skills_localised_name_vik_back_wife_brutal_mierce	Brutal	true
+character_skills_localised_description_vik_follower_quartermaster_east_engle	Gold wins wars, and this man is an expert in spending it well. He keeps the army fed, watered, armed and, most importantly, moving.	true
+character_skills_localised_name_vik_general_back_negotiator_dyflin	Cunning	true
+character_skills_localised_description_vik_general_back_born_governor_dyflin	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_follower_priest_dyflin	Gothi	true
+character_skills_localised_name_vik_back_wife_shieldmaiden_circenn	Shieldmaiden	true
+character_skills_localised_description_vik_general_back_fearless_west_seaxe	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_general_back_cavalry_upkeep_mierce	This man turns his wounds into wisdom.	true
+character_skills_localised_description_vik_back_wife_noble_circenn	It's a matter of breeding, you understand.	true
+character_skills_localised_description_vik_back_wife_strict_gwined	This woman is a harpy - she demands that the rules be observed to the very letter.	true
+character_skills_localised_name_vik_general_back_fearless_east_engle	Fearless	true
+character_skills_localised_name_vik_general_back_melee_skill	Short-Tempered	true
+character_skills_localised_name_vik_back_wife_well_connected_dyflin	Well Connected	true
+character_skills_localised_description_vik_general_back_defender_west_seaxe	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_description_vik_general_back_melee_upkeep_mierce	When this man speaks, people listen.	true
+character_skills_localised_description_vik_general_back_melee_skill_circenn	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_description_vik_back_wife_peaceful_mide	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	true
+character_skills_localised_name_vik_follower_forager_sudreyar	Master at Arms	true
+character_skills_localised_description_vik_follower_quartermaster_west_seaxe	Gold wins wars, and this man is an expert in spending it well. He keeps the army fed, watered, armed and, most importantly, moving.	true
+character_skills_localised_name_vik_general_back_melee_skill_circenn	Short-Tempered	true
+character_skills_localised_name_vik_general_back_passionate_gwined	Honours the Gods	true
+character_skills_localised_name_vik_follower_siege_engineer_gwined	Welsh Champion	true
+character_skills_localised_description_vik_back_wife_noble	It's a matter of breeding, you understand.	true
+character_skills_localised_name_vik_general_back_defender_west_seaxe	Fair-Minded	true
+character_skills_localised_name_vik_general_back_melee_upkeep_mierce	Respected	true
+character_skills_localised_name_vik_back_wife_noble_gwined	Noble	true
+character_skills_localised_name_vik_back_wife_faithful_mide	Faithful	true
+character_skills_localised_description_vik_general_back_fearless_east_engle	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_general_back_melee_skill	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_name_vik_back_wife_organised_northymbre	Organised	true
+character_skills_localised_name_vik_back_wife_ugly_sudreyar	Ugly	true
+character_skills_localised_name_vik_back_wife_wasteful_mide	Wasteful	true
+character_skills_localised_name_vik_back_wife_arrogant_gwined	Arrogant	true
+character_skills_localised_name_vik_general_back_fearless_west_seaxe	Fearless	true
+character_skills_localised_name_vik_back_wife_gossip_mierce	Gossip	true
+character_skills_localised_name_vik_back_wife_shieldmaiden	Shieldmaiden	true
+character_skills_localised_name_vik_general_back_seafarer_sudreyar	Godly	true
+character_skills_localised_description_vik_general_back_defender_east_engle	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_name_vik_back_wife_gossip_dyflin	Gossip	true
+character_skills_localised_name_vik_general_back_defender_sudreyar	Fair-Minded	true
+character_skills_localised_name_vik_general_back_merchant_sudreyar	Short-Tempered	true
+character_skills_localised_description_vik_general_back_merchant_west_seaxe	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_name_vik_general_back_spearmen_skill_northymbre	Controlling	true
+character_skills_localised_name_vik_back_wife_ugly_northymbre	Ugly	true
+character_skills_localised_name_vik_general_back_melee_upkeep_dyflin	Respected	true
+character_skills_localised_description_vik_general_back_melee_upkeep_circenn	When this man speaks, people listen.	true
+character_skills_localised_name_vik_general_back_merchant_east_engle	Short-Tempered	true
+character_skills_localised_name_vik_back_wife_arrogant_mide	Arrogant	true
+character_skills_localised_description_vik_back_wife_renowned_mide	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	true
+character_skills_localised_name_vik_general_back_champion_rider_northymbre	Fearless	true
+character_skills_localised_description_vik_back_wife_shieldmaiden_sudreyar	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	true
+character_skills_localised_name_vik_general_back_born_commander_northymbre	Studious	true
+character_skills_localised_name_vik_back_wife_educated_gwined	Educated	true
+character_skills_localised_name_vik_back_wife_unfaithful_mide	Unfaithful	true
+character_skills_localised_description_vik_general_back_cavalry_upkeep_northymbre	This man turns his wounds into wisdom.	true
+character_skills_localised_name_vik_back_wife_faithful	Faithful	true
+character_skills_localised_name_vik_back_wife_arrogant	Arrogant	true
+character_skills_localised_description_vik_back_wife_charming_sudreyar	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	true
+character_skills_localised_name_vik_general_back_melee_upkeep_strat_clut	Respected	true
+character_skills_localised_description_vik_general_back_seafarer	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_follower_forager_west_seaxe	Master at Arms	true
+character_skills_localised_name_vik_back_wife_brutal_northymbre	Brutal	true
+character_skills_localised_description_vik_general_back_defender_circenn	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_description_vik_general_back_spearmen_upkeep_sudreyar	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_back_wife_gossip_strat_clut	Gossip	true
+character_skills_localised_description_vik_general_back_melee_upkeep_northymbre	When this man speaks, people listen.	true
+character_skills_localised_name_vik_back_wife_wise_mide	Wise	true
+character_skills_localised_description_vik_general_back_warrior_sudreyar	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_name_vik_back_wife_wealthy_sudreyar	Wealthy	true
+character_skills_localised_description_vik_general_back_cavalry_recruitment_west_seaxe	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_description_vik_back_wife_ambitious_west_seaxe	This woman is consumed with ambition, for her husband, his faction, and for herself.	true
+character_skills_localised_name_vik_back_wife_educated_sudreyar	Educated	true
+character_skills_localised_name_vik_back_wife_well_connected_northymbre	Well Connected	true
+character_skills_localised_name_vik_general_back_champion_rider_circenn	Fearless	true
+character_skills_localised_name_vik_general_back_spearmen_recruitment_west_seaxe	Controlling	true
+character_skills_localised_name_vik_general_back_born_governor_sudreyar	Studious	true
+character_skills_localised_description_vik_back_wife_sensible_sudreyar	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	true
+character_skills_localised_description_vik_general_back_spearmen_recruitment_east_engle	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_general_back_farmer_gwined	Experienced	true
+character_skills_localised_name_vik_back_wife_organised_circenn	Organised	true
+character_skills_localised_name_vik_general_back_negotiator_northymbre	Cunning	true
+character_skills_localised_description_vik_general_back_born_governor_northymbre	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_follower_priest_northymbre	Priest	true
+character_skills_localised_description_vik_back_wife_renowned_west_seaxe	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	true
+character_skills_localised_name_vik_back_wife_ugly_mierce	Ugly	true
+character_skills_localised_description_vik_back_wife_ambitious_east_engle	This woman is consumed with ambition, for her husband, his faction, and for herself.	true
+character_skills_localised_name_vik_general_back_spearmen_skill_mierce	Controlling	true
+character_skills_localised_name_vik_back_wife_well_connected_strat_clut	Well Connected	true
+character_skills_localised_name_vik_general_back_spearmen_recruitment_east_engle	Controlling	true
+character_skills_localised_name_vik_back_wife_organised	Organised	true
+character_skills_localised_name_vik_back_wife_organised_dyflin	Organised	true
+character_skills_localised_description_vik_general_back_spearmen_recruitment_west_seaxe	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_general_back_born_commander_mierce	Studious	true
+character_skills_localised_name_vik_general_back_champion_rider_mierce	Fearless	true
+character_skills_localised_name_vik_follower_priest_strat_clut	Priest	true
+character_skills_localised_name_vik_general_back_negotiator_strat_clut	Cunning	true
+character_skills_localised_description_vik_general_back_born_governor_strat_clut	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_back_wife_unfaithful_gwined	Unfaithful	true
+character_skills_localised_name_vik_general_back_spearmen_recruitment_sudreyar	Controlling	true
+character_skills_localised_description_vik_general_back_spearmen_upkeep_gwined	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_back_wife_renowned_east_engle	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	true
+character_skills_localised_name_vik_general_back_champion_rider	Fearless	true
+character_skills_localised_description_vik_general_back_cavalry_upkeep_strat_clut	This man turns his wounds into wisdom.	true
+character_skills_localised_name_vik_back_wife_wise_gwined	Wise	true
+character_skills_localised_name_vik_back_wife_brutal_strat_clut	Brutal	true
+character_skills_localised_name_vik_general_back_champion_rider_dyflin	Fearless	true
+character_skills_localised_name_vik_back_wife_organised_mierce	Organised	true
+character_skills_localised_name_vik_general_back_born_commander_dyflin	Studious	true
+character_skills_localised_description_vik_general_back_landowner_gwined	When this man speaks, people listen.	true
+character_skills_localised_name_vik_general_back_melee_upkeep_northymbre	Respected	true
+character_skills_localised_name_vik_follower_forager_east_engle	Master at Arms	true
+character_skills_localised_name_vik_back_wife_shieldmaiden_gwined	Shieldmaiden	true
+character_skills_localised_name_vik_back_wife_ugly_dyflin	Ugly	true
+character_skills_localised_name_vik_general_back_spearmen_skill_dyflin	Controlling	true
+character_skills_localised_name_vik_back_wife_faithful_circenn	Faithful	true
+character_skills_localised_name_vik_back_wife_arrogant_circenn	Arrogant	true
+character_skills_localised_description_vik_general_back_defender	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_description_vik_general_back_cavalry_recruitment_east_engle	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_name_vik_back_wife_gossip_northymbre	Gossip	true
+character_skills_localised_description_vik_general_back_melee_upkeep_strat_clut	When this man speaks, people listen.	true
+character_skills_localised_description_vik_general_back_seafarer_circenn	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_back_wife_shieldmaiden_dyflin	Shieldmaiden	true
+character_skills_localised_name_vik_back_wife_ugly_gwined	Ugly	true
+character_skills_localised_name_vik_general_back_spearmen_skill_gwined	Controlling	true
+character_skills_localised_name_vik_back_wife_peaceful	Peaceful	true
+character_skills_localised_name_vik_back_wife_demanding_circenn	Demanding	true
+character_skills_localised_name_vik_back_wife_strict_mide	Strict	true
+character_skills_localised_name_vik_back_wife_wise_dyflin	Wise	true
+character_skills_localised_name_vik_back_wife_educated_northymbre	Educated	true
+character_skills_localised_name_vik_general_back_miner_east_engle	Cunning	true
+character_skills_localised_name_vik_general_back_fearless_mide	Fearless	true
+character_skills_localised_name_vik_follower_pillager_sudreyar	Henchmen	true
+character_skills_localised_name_vik_follower_scribe_strat_clut	Scribe	true
+character_skills_localised_name_vik_general_back_champion_rider_gwined	Fearless	true
+character_skills_localised_name_vik_general_back_born_commander_gwined	Studious	true
+character_skills_localised_description_vik_back_wife_wasteful_east_engle	What? We take what we desire - have you forgotten?	true
+character_skills_localised_description_vik_general_back_landowner_dyflin	When this man speaks, people listen.	true
+character_skills_localised_description_vik_back_wife_sensible_east_engle	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	true
+character_skills_localised_name_vik_general_back_miner	Cunning	true
+character_skills_localised_description_vik_general_back_spearmen_skill_circenn	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_general_back_born_commander	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_description_vik_general_back_spearmen_upkeep_mierce	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_back_wife_natural_beauty_east_engle	Natural Beauty	true
+character_skills_localised_description_vik_back_wife_faithful_east_engle	This lady adores her chosen husband and would never cuckold and betray him.	true
+character_skills_localised_description_vik_back_wife_charming_west_seaxe	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	true
+character_skills_localised_name_vik_back_wife_unfaithful_mierce	Unfaithful	true
+character_skills_localised_name_vik_back_wife_arrogant_northymbre	Arrogant	true
+character_skills_localised_name_vik_back_wife_wise_mierce	Wise	true
+character_skills_localised_name_vik_back_wife_noble_northymbre	Noble	true
+character_skills_localised_name_vik_back_wife_organised_gwined	Organised	true
+character_skills_localised_name_vik_back_wife_peaceful_sudreyar	Peaceful	true
+character_skills_localised_name_vik_back_wife_unfaithful_dyflin	Unfaithful	true
+character_skills_localised_description_vik_general_back_missile_recruitment_west_seaxe	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_general_back_spearmen_upkeep_dyflin	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_general_back_passionate_northymbre	Honours the Gods	true
+character_skills_localised_name_vik_follower_siege_engineer_northymbre	Viking Veteran	true
+character_skills_localised_description_vik_general_back_landowner_mierce	When this man speaks, people listen.	true
+character_skills_localised_description_vik_general_back_pastor_west_seaxe	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_back_wife_shieldmaiden_mierce	Shieldmaiden	true
+character_skills_localised_name_vik_follower_bard_circenn	Bard	true
+character_skills_localised_description_vik_back_wife_demanding_west_seaxe	This woman's husband wishes he'd died on campaign years prior.	true
+character_skills_localised_name_vik_back_wife_educated_circenn	Educated	true
+character_skills_localised_description_vik_general_back_melee_skill_east_engle	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_description_vik_follower_siege_engineer_mide	Vikings have no right to Ireland, but they do make great practice. 	true
+character_skills_localised_description_vik_back_wife_strict_strat_clut	This woman is a harpy - she demands that the rules are observed to the very letter.	true
+character_skills_localised_description_vik_back_wife_peaceful_west_seaxe	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	true
+character_skills_localised_description_vik_back_wife_ambitious_circenn	This woman is consumed with ambition, for her husband, his faction, and for herself.	true
+character_skills_localised_name_vik_back_wife_arrogant_strat_clut	Arrogant	true
+character_skills_localised_name_vik_follower_bard	Bard	true
+character_skills_localised_name_vik_follower_siege_engineer_strat_clut	Old North Champion	true
+character_skills_localised_name_vik_general_back_passionate_strat_clut	Honours the Gods	true
+character_skills_localised_name_vik_general_back_melee_upkeep_sudreyar	Respected	true
+character_skills_localised_name_vik_back_wife_educated	Educated	true
+character_skills_localised_name_vik_general_back_farmer_dyflin	Experienced	true
+character_skills_localised_name_vik_back_wife_noble_strat_clut	Noble	true
+character_skills_localised_description_vik_general_back_cavalry_recruitment_mide	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_name_vik_follower_siege_engineer_mide	Veteran Irish Captain	true
+character_skills_localised_description_vik_general_back_missile_recruitment_east_engle	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_back_wife_ambitious	This woman is consumed with ambition, for her husband, his faction, and for herself.	true
+character_skills_localised_description_vik_general_back_pastor_east_engle	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_back_wife_demanding_east_engle	This woman's husband wishes he'd died on campaign years prior.	true
+character_skills_localised_description_vik_back_wife_faithful_sudreyar	This lady adores her chosen husband and would never cuckold and betray him.	true
+character_skills_localised_description_vik_back_wife_wasteful_sudreyar	What? We take what we desire - have you forgotten?	true
+character_skills_localised_description_vik_back_wife_ugly_mide	Well, she's rich, which takes the edge off a little.	true
+character_skills_localised_description_vik_general_back_melee_skill_west_seaxe	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_name_vik_dummy_agent	DUMMY -  NOT USED IF SEEN TELL A DESIGNER	true
+character_skills_localised_description_vik_back_wife_peaceful_east_engle	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	true
+character_skills_localised_description_vik_back_wife_strict_northymbre	This woman is a harpy - she demands that the rules are observed to the very letter.	true
+character_skills_localised_name_vik_back_wife_well_connected_mide	Well Connected	true
+character_skills_localised_description_vik_back_wife_arrogant_sudreyar	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	true
+character_skills_localised_name_vik_back_wife_renowned_sudreyar	Renowned	true
+character_skills_localised_name_vik_back_wife_shieldmaiden_mide	Shieldmaiden	true
+character_skills_localised_description_vik_general_back_spearmen_skill	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_general_back_born_commander_circenn	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_general_back_miner_circenn	Cunning	true
+character_skills_localised_name_vik_back_wife_educated_strat_clut	Educated	true
+character_skills_localised_name_vik_general_back_miner_west_seaxe	Cunning	true
+character_skills_localised_name_vik_back_wife_peaceful_circenn	Peaceful	true
+character_skills_localised_name_vik_back_wife_natural_beauty_west_seaxe	Natural Beauty	true
+character_skills_localised_description_vik_back_wife_faithful_west_seaxe	This lady adores her chosen husband and would never cuckold and betray him.	true
+character_skills_localised_description_vik_back_wife_charming_east_engle	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	true
+character_skills_localised_name_vik_follower_scribe_northymbre	Scribe	true
+character_skills_localised_description_vik_back_wife_wasteful_west_seaxe	What? We take what we desire - have you forgotten?	true
+character_skills_localised_name_vik_back_wife_demanding	Demanding	true
+character_skills_localised_description_vik_back_wife_sensible_west_seaxe	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	true
+character_skills_localised_name_vik_general_back_farmer_mierce	Experienced	true
+character_skills_localised_description_vik_general_back_missile_damage_strat_clut	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_back_wife_charming_sudreyar	Charming	true
+character_skills_localised_name_vik_back_wife_renowned_circenn	Renowned	true
+character_skills_localised_description_vik_follower_forager_west_seaxe	The wealthiest men in Britannia spare no expense when it comes to equipment. Iron wins battles. 	true
+character_skills_localised_description_vik_back_wife_brutal_northymbre	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	true
+character_skills_localised_description_vik_back_wife_gossip_strat_clut	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	true
+character_skills_localised_name_vik_back_wife_loyal_northymbre	Loyal	true
+character_skills_localised_description_vik_back_wife_wise_mide	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	true
+character_skills_localised_description_vik_general_back_fearless_circenn	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_name_vik_general_back_cavalry_recruitment_west_seaxe	Fair-Minded	true
+character_skills_localised_description_vik_general_back_missile_upkeep_northymbre	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_general_back_farmer_west_seaxe	This man turns his wounds into wisdom.	true
+character_skills_localised_name_vik_general_back_born_governor_west_seaxe	Studious	true
+character_skills_localised_name_vik_back_wife_renowned_northymbre	Renowned	true
+character_skills_localised_description_vik_back_wife_educated_sudreyar	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	true
+character_skills_localised_description_vik_back_wife_well_connected_northymbre	It's not what you know, but who.	true
+character_skills_localised_name_vik_back_wife_midwife_west_seaxe	Midwife	true
+character_skills_localised_name_vik_follower_champion_east_engle	Household Guard	true
+character_skills_localised_name_vik_follower_bard_mide	Bard	true
+character_skills_localised_description_vik_general_back_champion_rider_circenn	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_back_wife_wealthy_west_seaxe	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	true
+character_skills_localised_description_vik_general_back_melee_skill_mide	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_name_vik_back_wife_charming	Charming	true
+character_skills_localised_description_vik_general_back_born_governor_sudreyar	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_back_wife_ambitious_gwined	Ambitious	true
+character_skills_localised_name_vik_back_wife_wealthy_east_engle	Wealthy	true
+character_skills_localised_name_vik_back_wife_sensible_sudreyar	Sensible	true
+character_skills_localised_description_vik_back_wife_organised_circenn	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	true
+character_skills_localised_description_vik_back_wife_midwife_east_engle	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	true
+character_skills_localised_description_vik_follower_champion_west_seaxe	As a family grows in power, their enemies grow in number. These men stand between their liege lord and the enemy.	true
+character_skills_localised_description_vik_general_back_farmer_east_engle	This man turns his wounds into wisdom.	true
+character_skills_localised_name_vik_back_wife_renowned_strat_clut	Renowned	true
+character_skills_localised_name_vik_general_back_born_governor_east_engle	Studious	true
+character_skills_localised_name_vik_follower_quartermaster_dyflin	Quartermaster	true
+character_skills_localised_description_vik_general_back_missile_upkeep_strat_clut	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_follower_champion_sudreyar	Household Guard	true
+character_skills_localised_name_vik_back_wife_charming_circenn	Charming	true
+character_skills_localised_name_vik_back_wife_midwife_east_engle	Midwife	true
+character_skills_localised_name_vik_follower_champion_west_seaxe	Household Guard	true
+character_skills_localised_description_vik_back_wife_well_connected_strat_clut	It's not what you know, but who.	true
+character_skills_localised_description_vik_back_wife_wealthy_east_engle	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	true
+character_skills_localised_description_vik_back_wife_organised	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	true
+character_skills_localised_name_vik_back_wife_natural_beauty_mide	Natural Beauty	true
+character_skills_localised_name_vik_back_wife_demanding_dyflin	Demanding	true
+character_skills_localised_name_vik_back_wife_wealthy_west_seaxe	Wealthy	true
+character_skills_localised_description_vik_back_wife_unfaithful_gwined	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	true
+character_skills_localised_name_vik_general_back_spearmen_upkeep_gwined	Controlling	true
+character_skills_localised_description_vik_general_back_champion_rider	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_back_wife_midwife_west_seaxe	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	true
+character_skills_localised_description_vik_follower_champion_east_engle	As a family grows in power, their enemies grow in number. These men stand between their liege lord and the enemy.	true
+character_skills_localised_name_vik_general_back_pastor_dyflin	Godly	true
+character_skills_localised_description_vik_general_back_missile_recruitment_mide	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_back_wife_gossip_mide	Gossip	true
+character_skills_localised_description_vik_general_back_missile_damage_northymbre	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_back_wife_brutal_strat_clut	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	true
+character_skills_localised_name_vik_back_wife_demanding_mierce	Demanding	true
+character_skills_localised_name_vik_general_back_pastor_mierce	Godly	true
+character_skills_localised_description_vik_follower_forager_east_engle	The wealthiest men in Britannia spare no expense when it comes to equipment. Iron wins battles. 	true
+character_skills_localised_description_vik_general_back_fearless	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_name_vik_back_wife_brutal_mide	Brutal	true
+character_skills_localised_name_vik_follower_quartermaster_mierce	Quartermaster	true
+character_skills_localised_name_vik_back_wife_renowned	Renowned	true
+character_skills_localised_description_vik_back_wife_gossip_northymbre	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	true
+character_skills_localised_name_vik_general_back_cavalry_recruitment_east_engle	Fair-Minded	true
+character_skills_localised_name_vik_back_wife_loyal_strat_clut	Loyal	true
+character_skills_localised_name_vik_back_wife_faithful_strat_clut	Faithful	true
+character_skills_localised_name_vik_back_wife_sensible_strat_clut	Sensible	true
+character_skills_localised_name_vik_back_wife_wasteful_strat_clut	Wasteful	true
+character_skills_localised_description_vik_general_back_born_commander_west_seaxe	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_back_wife_charming_northymbre	Charming	true
+character_skills_localised_description_vik_general_back_champion_rider_west_seaxe	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_general_back_miner_strat_clut	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_general_back_merchant	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_description_vik_back_wife_educated_west_seaxe	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	true
+character_skills_localised_description_vik_back_wife_demanding_circenn	This woman's husband wishes he'd died on campaign years prior.	true
+character_skills_localised_name_vik_back_wife_midwife_sudreyar	Midwife	true
+character_skills_localised_description_vik_general_back_spearmen_skill_west_seaxe	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_back_wife_sensible_circenn	Sensible	true
+character_skills_localised_name_vik_general_back_born_commander	Studious	true
+character_skills_localised_name_vik_general_back_spearmen_skill_circenn	Controlling	true
+character_skills_localised_description_vik_back_wife_natural_beauty_east_engle	This one needs no adornment but the morning sun, so pleasing is her countenance.	true
+character_skills_localised_name_vik_general_back_spearmen_upkeep_mierce	Controlling	true
+character_skills_localised_description_vik_back_wife_unfaithful_mierce	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	true
+character_skills_localised_name_vik_follower_forager_mide	Master at Arms	true
+character_skills_localised_name_vik_back_wife_peaceful_northymbre	Peaceful	true
+character_skills_localised_name_vik_back_wife_wasteful	Wasteful	true
+character_skills_localised_name_vik_back_wife_demanding_gwined	Demanding	true
+character_skills_localised_description_vik_back_wife_peaceful_sudreyar	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	true
+character_skills_localised_name_vik_general_back_missile_recruitment_west_seaxe	Honours the Gods	true
+character_skills_localised_description_vik_back_wife_unfaithful_dyflin	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	true
+character_skills_localised_name_vik_general_back_spearmen_upkeep_dyflin	Controlling	true
+character_skills_localised_name_vik_general_back_pastor_gwined	Godly	true
+character_skills_localised_description_vik_follower_pillager_east_engle	Whether it is torturing captives, assassinating rivals, or leading a sack, this man will only ask one question: How much?	true
+character_skills_localised_name_vik_follower_quartermaster_gwined	Quartermaster	true
+character_skills_localised_description_vik_back_wife_organised_west_seaxe	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	true
+character_skills_localised_name_vik_general_back_melee_skill_east_engle	Short-Tempered	true
+character_skills_localised_name_vik_back_wife_strict_strat_clut	Strict	true
+character_skills_localised_name_vik_follower_pillager_west_seaxe	Henchmen	true
+character_skills_localised_name_vik_general_back_born_governor	Studious	true
+character_skills_localised_name_vik_back_wife_ambitious_circenn	Ambitious	true
+character_skills_localised_description_vik_back_wife_arrogant_west_seaxe	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	true
+character_skills_localised_name_vik_back_wife_peaceful_strat_clut	Peaceful	true
+character_skills_localised_name_vik_general_back_born_governor_circenn	Studious	true
+character_skills_localised_name_vik_back_wife_ambitious_dyflin	Ambitious	true
+character_skills_localised_name_vik_general_back_seafarer_mide	Godly	true
+character_skills_localised_description_vik_follower_pillager_west_seaxe	Whether it is torturing captives, assassinating rivals, or leading a sack, this man will only ask one question: How much?	true
+character_skills_localised_name_vik_general_back_missile_recruitment_east_engle	Honours the Gods	true
+character_skills_localised_name_vik_back_wife_ambitious	Ambitious	true
+character_skills_localised_description_vik_back_wife_organised_east_engle	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	true
+character_skills_localised_name_vik_follower_pillager_east_engle	Henchmen	true
+character_skills_localised_name_vik_back_wife_faithful_sudreyar	Faithful	true
+character_skills_localised_name_vik_general_back_melee_skill_west_seaxe	Short-Tempered	true
+character_skills_localised_name_vik_back_wife_ugly_mide	Ugly	true
+character_skills_localised_name_vik_back_wife_wasteful_sudreyar	Wasteful	true
+character_skills_localised_name_vik_back_wife_wasteful_circenn	Wasteful	true
+character_skills_localised_description_vik_dummy_agent	You should not be seeing this, please report it to your nearest designer	true
+character_skills_localised_description_vik_back_wife_arrogant_east_engle	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	true
+character_skills_localised_name_vik_back_wife_strict_northymbre	Strict	true
+character_skills_localised_name_vik_back_wife_charming_strat_clut	Charming	true
+character_skills_localised_name_vik_back_wife_unfaithful_sudreyar	Unfaithful	true
+character_skills_localised_name_vik_back_wife_faithful_northymbre	Faithful	true
+character_skills_localised_description_vik_general_back_champion_rider_east_engle	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_general_back_born_commander_east_engle	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_back_wife_wasteful_northymbre	Wasteful	true
+character_skills_localised_name_vik_back_wife_sensible_northymbre	Sensible	true
+character_skills_localised_description_vik_back_wife_renowned_sudreyar	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	true
+character_skills_localised_name_vik_back_wife_arrogant_sudreyar	Arrogant	true
+character_skills_localised_name_vik_back_wife_sensible	Sensible	true
+character_skills_localised_description_vik_back_wife_shieldmaiden_mide	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	true
+character_skills_localised_description_vik_general_back_miner_northymbre	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_back_wife_educated_east_engle	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	true
+character_skills_localised_name_vik_general_back_born_commander_circenn	Studious	true
+character_skills_localised_name_vik_general_back_spearmen_skill	Controlling	true
+character_skills_localised_description_vik_general_back_spearmen_skill_east_engle	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_general_back_defender_mide	Fair-Minded	true
+character_skills_localised_name_vik_back_wife_ambitious_mierce	Ambitious	true
+character_skills_localised_name_vik_general_back_merchant_mide	Short-Tempered	true
+character_skills_localised_description_vik_back_wife_natural_beauty_west_seaxe	This one needs no adornment but the morning sun, so pleasing is her countenance.	true
+character_skills_localised_description_vik_back_wife_demanding	This woman's husband wishes he'd died on campaign years prior.	true
+character_skills_localised_description_vik_general_back_merchant_circenn	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_description_vik_back_wife_ambitious_strat_clut	This woman is consumed with ambition, for her husband, his faction, and for herself.	true
+character_skills_localised_name_vik_general_back_missile_recruitment_mide	Honours the Gods	true
+character_skills_localised_description_vik_follower_priest_mide	The men of the new religion are frequent companions of the rich and powerful. Favouring the Church is a small price to pay for the legitimacy that they can grant. 	true
+character_skills_localised_description_vik_general_back_spearmen_upkeep_circenn	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_back_wife_natural_beauty_mide	This one needs no adornment but the morning sun, so pleasing is her countenance.	true
+character_skills_localised_description_vik_general_back_merchant_mierce	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_name_vik_general_back_spearmen_recruitment_strat_clut	Controlling	true
+character_skills_localised_description_vik_follower_scribe_mide	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	true
+character_skills_localised_name_vik_back_wife_well_connected_east_engle	Well Connected	true
+character_skills_localised_name_vik_general_back_spearmen_upkeep	Controlling	true
+character_skills_localised_name_vik_general_back_fearless_dyflin	Fearless	true
+character_skills_localised_description_vik_general_back_warrior_gwined	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_back_wife_organised_sudreyar	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	true
+character_skills_localised_description_vik_general_back_spearmen_recruitment_northymbre	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_back_wife_renowned_strat_clut	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	true
+character_skills_localised_name_vik_general_back_negotiator_east_engle	Cunning	true
+character_skills_localised_description_vik_general_back_born_governor_east_engle	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_description_vik_follower_quartermaster_dyflin	Gold wins wars, and this man is an expert in spending it well. He keeps the army fed, watered, armed and, most importantly, moving.	true
+character_skills_localised_name_vik_follower_priest_east_engle	Priest	true
+character_skills_localised_description_vik_follower_bard_gwined	Many great houses are patrons of bards, who sing praises of their king in hummable tunes and enticing rhymes. 	true
+character_skills_localised_name_vik_general_back_defender_dyflin	Fair-Minded	true
+character_skills_localised_description_vik_general_back_cavalry_upkeep_east_engle	This man turns his wounds into wisdom.	true
+character_skills_localised_description_vik_back_wife_brutal_mide	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	true
+character_skills_localised_name_vik_follower_forager_strat_clut	Master at Arms	true
+character_skills_localised_name_vik_general_back_passionate_mide	Honours the Gods	true
+character_skills_localised_description_vik_back_wife_ambitious_sudreyar	This woman is consumed with ambition, for her husband, his faction, and for herself.	true
+character_skills_localised_name_vik_back_wife_loyal_mide	Loyal	true
+character_skills_localised_name_vik_general_back_defender_mierce	Fair-Minded	true
+character_skills_localised_name_vik_general_back_melee_upkeep_west_seaxe	Respected	true
+character_skills_localised_name_vik_back_wife_brutal_east_engle	Brutal	true
+character_skills_localised_description_vik_follower_quartermaster_mierce	Gold wins wars, and this man is an expert in spending it well. He keeps the army fed, watered, armed and, most importantly, moving.	true
+character_skills_localised_description_vik_back_wife_wealthy_mide	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	true
+character_skills_localised_name_vik_general_back_fearless	Fearless	true
+character_skills_localised_description_vik_general_back_warrior_circenn	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_general_back_melee_upkeep_east_engle	When this man speaks, people listen.	true
+character_skills_localised_name_vik_follower_quartermaster_mide	Quartermaster	true
+character_skills_localised_description_vik_back_wife_gossip_mide	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	true
+character_skills_localised_description_vik_general_back_merchant_dyflin	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_description_vik_general_back_cavalry_recruitment_strat_clut	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_name_vik_general_back_missile_damage_gwined	Honours the Gods	true
+character_skills_localised_description_vik_general_back_cavalry_upkeep	This man turns his wounds into wisdom.	true
+character_skills_localised_description_vik_general_back_pastor	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_back_wife_gossip_west_seaxe	Gossip	true
+character_skills_localised_name_vik_general_back_warrior	Fearless	true
+character_skills_localised_name_vik_general_back_fearless_mierce	Fearless	true
+character_skills_localised_description_vik_general_back_cavalry_upkeep_west_seaxe	This man turns his wounds into wisdom.	true
+character_skills_localised_name_vik_general_back_fearless_circenn	Fearless	true
+character_skills_localised_description_vik_back_wife_loyal_gwined	This lady is utterly loyal to her husband and inspires the same devotion in others.	true
+character_skills_localised_description_vik_general_back_fearless_mierce	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_general_back_warrior	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_name_vik_general_back_merchant_dyflin	Short-Tempered	true
+character_skills_localised_name_vik_follower_forager_northymbre	Master at Arms	true
+character_skills_localised_name_vik_back_wife_brutal_west_seaxe	Brutal	true
+character_skills_localised_name_vik_general_back_melee_upkeep_east_engle	Respected	true
+character_skills_localised_name_vik_general_back_warrior_circenn	Fearless	true
+character_skills_localised_description_vik_general_back_cavalry_upkeep_circenn	This man turns his wounds into wisdom.	true
+character_skills_localised_description_vik_general_back_pastor_circenn	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_general_back_defender_mierce	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_description_vik_general_back_melee_upkeep_west_seaxe	When this man speaks, people listen.	true
+character_skills_localised_description_vik_back_wife_loyal_mide	This lady is utterly loyal to her husband and inspires the same devotion in others.	true
+character_skills_localised_name_vik_back_wife_ambitious_sudreyar	Ambitious	true
+character_skills_localised_description_vik_general_back_cavalry_recruitment_northymbre	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_name_vik_back_wife_gossip_east_engle	Gossip	true
+character_skills_localised_description_vik_general_back_passionate_mide	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_general_back_melee_skill_mide	Short-Tempered	true
+character_skills_localised_description_vik_back_wife_ambitious_northymbre	This woman is consumed with ambition, for her husband, his faction, and for herself.	true
+character_skills_localised_description_vik_general_back_miner_sudreyar	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_name_vik_follower_bard_gwined	Bard	true
+character_skills_localised_description_vik_general_back_defender_dyflin	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_name_vik_back_wife_well_connected_west_seaxe	Well Connected	true
+character_skills_localised_name_vik_back_wife_organised_sudreyar	Organised	true
+character_skills_localised_name_vik_general_back_spearmen_recruitment_northymbre	Controlling	true
+character_skills_localised_description_vik_general_back_spearmen_recruitment_mide	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_general_back_fearless_dyflin	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_general_back_spearmen_upkeep	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_general_back_spearmen_recruitment_strat_clut	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_follower_scribe_mide	Scribe	true
+character_skills_localised_name_vik_general_back_negotiator_west_seaxe	Cunning	true
+character_skills_localised_description_vik_general_back_born_governor_west_seaxe	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_general_back_missile_upkeep_gwined	Godly	true
+character_skills_localised_name_vik_follower_priest_mide	Priest	true
+character_skills_localised_name_vik_general_back_spearmen_upkeep_circenn	Controlling	true
+character_skills_localised_name_vik_follower_priest_west_seaxe	Priest	true
+character_skills_localised_name_vik_general_back_merchant_mierce	Short-Tempered	true
+character_skills_localised_description_vik_back_wife_renowned_northymbre	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	true
+character_skills_localised_description_vik_back_wife_loyal_mierce	This lady is utterly loyal to her husband and inspires the same devotion in others.	true
+character_skills_localised_name_vik_back_wife_arrogant_east_engle	Arrogant	true
+character_skills_localised_description_vik_general_back_missile_recruitment_strat_clut	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_back_wife_noble_east_engle	Noble	true
+character_skills_localised_description_vik_general_back_fearless_gwined	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_name_vik_back_wife_unfaithful_circenn	Unfaithful	true
+character_skills_localised_description_vik_back_wife_unfaithful	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	true
+character_skills_localised_description_vik_general_back_missile_upkeep	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_general_back_missile_upkeep_dyflin	Godly	true
+character_skills_localised_name_vik_general_back_passionate_east_engle	Honours the Gods	true
+character_skills_localised_name_vik_general_back_farmer_circenn	Experienced	true
+character_skills_localised_name_vik_follower_siege_engineer_east_engle	Viking Veteran	true
+character_skills_localised_description_vik_general_back_landowner_circenn	When this man speaks, people listen.	true
+character_skills_localised_description_vik_back_wife_demanding_strat_clut	This woman's husband wishes he'd died on campaign years prior.	true
+character_skills_localised_description_vik_general_back_pastor_strat_clut	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_follower_bard_dyflin	Skald	true
+character_skills_localised_description_vik_back_wife_peaceful_strat_clut	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	true
+character_skills_localised_description_vik_general_back_defender_gwined	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_name_vik_general_back_missile_damage_sudreyar	Honours the Gods	true
+character_skills_localised_name_vik_general_back_champion_rider_sudreyar	Fearless	true
+character_skills_localised_description_vik_general_back_melee_skill_northymbre	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_description_vik_back_wife_demanding_sudreyar	This woman's husband wishes he'd died on campaign years prior.	true
+character_skills_localised_description_vik_general_back_landowner_mide	When this man speaks, people listen.	true
+character_skills_localised_name_vik_back_wife_noble_mide	Noble	true
+character_skills_localised_description_vik_back_wife_strict_west_seaxe	This woman is a harpy - she demands that the rules are observed to the very letter.	true
+character_skills_localised_name_vik_general_back_merchant_circenn	Short-Tempered	true
+character_skills_localised_name_vik_follower_bard_mierce	Bard	true
+character_skills_localised_name_vik_general_back_spearmen_skill_sudreyar	Controlling	true
+character_skills_localised_description_vik_general_back_missile_upkeep_sudreyar	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_follower_quartermaster	Gold wins wars, and this man is an expert in spending it well. He keeps the army fed, watered, armed and, most importantly, moving.	true
+character_skills_localised_name_vik_general_back_miner_northymbre	Cunning	true
+character_skills_localised_description_vik_back_wife_wise_circenn	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	true
+character_skills_localised_description_vik_general_back_fearless_sudreyar	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_follower_pillager_mide	Whether it is torturing captives, assassinating rivals, or leading a sack, this man will only ask one question: How much?	true
+character_skills_localised_name_vik_back_wife_educated_east_engle	Educated	true
+character_skills_localised_description_vik_back_wife_loyal_dyflin	This lady is utterly loyal to her husband and inspires the same devotion in others.	true
+character_skills_localised_description_vik_back_wife_unfaithful_sudreyar	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	true
+character_skills_localised_description_vik_back_wife_charming_strat_clut	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	true
+character_skills_localised_name_vik_general_back_merchant_gwined	Short-Tempered	true
+character_skills_localised_name_vik_back_wife_natural_beauty_northymbre	Natural Beauty	true
+character_skills_localised_description_vik_back_wife_faithful_northymbre	This lady adores her chosen husband and would never cuckold and betray him.	true
+character_skills_localised_name_vik_follower_scribe_west_seaxe	Scribe	true
+character_skills_localised_name_vik_general_back_missile_upkeep_mierce	Godly	true
+character_skills_localised_description_vik_back_wife_wasteful_northymbre	What? We take what we desire - have you forgotten?	true
+character_skills_localised_name_vik_general_back_missile_damage	Honours the Gods	true
+character_skills_localised_description_vik_back_wife_sensible_northymbre	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	true
+character_skills_localised_description_vik_follower_quartermaster_circenn	Gold wins wars, and this man is an expert in spending it well. He keeps the army fed, watered, armed and, most importantly, moving.	true
+character_skills_localised_description_vik_back_wife_wise	"Calm yourself, husband, the plan will come to fruition eventually - we just have to wait."	true
+character_skills_localised_description_vik_general_back_merchant_gwined	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_name_vik_general_back_missile_damage_dyflin	Honours the Gods	true
+character_skills_localised_name_vik_general_back_missile_damage_circenn	Honours the Gods	true
+character_skills_localised_description_vik_general_back_warrior_mierce	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_name_vik_general_back_miner_strat_clut	Cunning	true
+character_skills_localised_name_vik_general_back_merchant	Short-Tempered	true
+character_skills_localised_name_vik_back_wife_educated_west_seaxe	Educated	true
+character_skills_localised_description_vik_back_wife_faithful_strat_clut	This lady adores her chosen husband and would never cuckold and betray him.	true
+character_skills_localised_name_vik_back_wife_natural_beauty_strat_clut	Natural Beauty	true
+character_skills_localised_name_vik_general_back_missile_upkeep_sudreyar	Godly	true
+character_skills_localised_description_vik_back_wife_sensible_strat_clut	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	true
+character_skills_localised_description_vik_back_wife_wasteful_strat_clut	What? We take what we desire - have you forgotten?	true
+character_skills_localised_description_vik_general_back_spearmen_skill_sudreyar	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_follower_bard_mierce	Many great houses are patrons of bards, who sing praises of their king in hummable tunes and enticing rhymes. 	true
+character_skills_localised_name_vik_follower_scribe_east_engle	Scribe	true
+character_skills_localised_description_vik_back_wife_charming_northymbre	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	true
+character_skills_localised_description_vik_general_back_landowner	When this man speaks, people listen.	true
+character_skills_localised_name_vik_back_wife_arrogant_west_seaxe	Arrogant	true
+character_skills_localised_description_vik_general_back_melee_upkeep_mide	When this man speaks, people listen.	true
+character_skills_localised_name_vik_back_wife_noble_west_seaxe	Noble	true
+character_skills_localised_description_vik_back_wife_noble_mide	It's a matter of breeding, you understand.	true
+character_skills_localised_description_vik_follower_quartermaster_gwined	Gold wins wars, and this man is an expert in spending it well. He keeps the army fed, watered, armed and, most importantly, moving.	true
+character_skills_localised_description_vik_general_back_champion_rider_sudreyar	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_general_back_missile_recruitment_northymbre	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_general_back_passionate_west_seaxe	Honours the Gods	true
+character_skills_localised_name_vik_back_wife_demanding_sudreyar	Demanding	true
+character_skills_localised_name_vik_follower_siege_engineer_west_seaxe	Saxon Veteran	true
+character_skills_localised_description_vik_follower_bard_dyflin	Many great houses are patrons of poets, who sing praises of their king in hummable tunes and enticing rhymes. 	true
+character_skills_localised_description_vik_general_back_missile_damage_sudreyar	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_general_back_defender_gwined	Fair-Minded	true
+character_skills_localised_description_vik_general_back_pastor_northymbre	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_back_wife_demanding_northymbre	This woman's husband wishes he'd died on campaign years prior.	true
+character_skills_localised_name_vik_dummy_navy	DUMMY -  NOT USED IF SEEN TELL A DESIGNER	true
+character_skills_localised_name_vik_back_wife_unfaithful	Unfaithful	true
+character_skills_localised_description_vik_follower_forager_mide	The wealthiest men in Britannia spare no expense when it comes to equipment. Iron wins battles. 	true
+character_skills_localised_description_vik_back_wife_peaceful_northymbre	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	true
+character_skills_localised_name_vik_general_back_farmer	Experienced	true
+character_skills_localised_description_vik_back_wife_strict_east_engle	This woman is a harpy - she demands that the rules are observed to the very letter.	true
+character_skills_localised_name_vik_general_back_fearless_gwined	Fearless	true
+character_skills_localised_description_vik_back_wife_unfaithful_circenn	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	true
+character_skills_localised_description_vik_general_back_missile_upkeep_circenn	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_general_back_warrior_dyflin	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_general_back_melee_skill_strat_clut	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_name_vik_general_back_missile_damage_mierce	Honours the Gods	true
+character_skills_localised_description_vik_general_back_missile_upkeep_east_engle	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_follower_siege_engineer_dyflin	They are very few old sailors for a reason. 	true
+character_skills_localised_name_vik_general_back_born_governor_strat_clut	Studious	true
+character_skills_localised_description_vik_general_back_passionate_dyflin	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_follower_bard_sudreyar	Many great houses are patrons of poets, who sing praises of their king in hummable tunes and enticing rhymes. 	true
+character_skills_localised_name_vik_back_wife_renowned_east_engle	Renowned	true
+character_skills_localised_description_vik_back_wife_noble_dyflin	It's a matter of breeding, you understand.	true
+character_skills_localised_description_vik_general_back_farmer_strat_clut	This man turns his wounds into wisdom.	true
+character_skills_localised_description_vik_general_back_seafarer_dyflin	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_back_wife_wealthy_strat_clut	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	true
+character_skills_localised_description_vik_back_wife_well_connected_east_engle	It's not what you know, but who.	true
+character_skills_localised_name_vik_follower_champion_northymbre	Household Guard	true
+character_skills_localised_description_vik_general_back_negotiator_mide	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_name_vik_back_wife_midwife_strat_clut	Midwife	true
+character_skills_localised_name_vik_general_back_warrior_gwined	Fearless	true
+character_skills_localised_description_vik_general_back_born_commander_sudreyar	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_description_vik_follower_champion_strat_clut	As a family grows in power, their enemies grow in number. These men stand between their liege lord and the enemy.	true
+character_skills_localised_name_vik_back_wife_wealthy_northymbre	Wealthy	true
+character_skills_localised_description_vik_back_wife_ugly_mierce	Well, she's rich, which takes the edge off a little.	true
+character_skills_localised_description_vik_back_wife_midwife_northymbre	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	true
+character_skills_localised_description_vik_general_back_missile_damage_west_seaxe	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_general_back_defender	Fair-Minded	true
+character_skills_localised_name_vik_general_back_seafarer_circenn	Godly	true
+character_skills_localised_description_vik_follower_forager_strat_clut	The wealthiest men in Britannia spare no expense when it comes to equipment. Iron wins battles. 	true
+character_skills_localised_description_vik_back_wife_shieldmaiden_gwined	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	true
+character_skills_localised_description_vik_back_wife_brutal_east_engle	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	true
+character_skills_localised_description_vik_back_wife_ugly_dyflin	Well, she's rich, which takes the edge off a little.	true
+character_skills_localised_description_vik_follower_siege_engineer_mierce	Convincing a peasant to hold a spear and stand in a line isn't too hard. Convincing him to stay there when a norseman is screaming and swinging an axe at him? That is skill. 	true
+character_skills_localised_description_vik_general_back_passionate_mierce	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_general_back_landowner_gwined	Respected	true
+character_skills_localised_description_vik_back_wife_noble_mierce	It's a matter of breeding, you understand.	true
+character_skills_localised_description_vik_back_wife_ugly	"Well, she's rich, which takes the edge off a little."	true
+character_skills_localised_description_vik_follower_quartermaster_mide	Gold wins wars, and this man is an expert in spending it well. He keeps the army fed, watered, armed and, most importantly, moving.	true
+character_skills_localised_description_vik_general_back_seafarer_mierce	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_back_wife_loyal_east_engle	Loyal	true
+character_skills_localised_name_vik_general_back_cavalry_recruitment_strat_clut	Fair-Minded	true
+character_skills_localised_description_vik_back_wife_gossip_west_seaxe	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	true
+character_skills_localised_name_vik_general_back_cavalry_upkeep	Experienced	true
+character_skills_localised_name_vik_general_back_pastor	Godly	true
+character_skills_localised_description_vik_back_wife_wise_gwined	"Calm yourself, husband, the plan will come to fruition eventually - we just have to wait."	true
+character_skills_localised_description_vik_general_back_missile_damage_east_engle	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_general_back_spearmen_upkeep_sudreyar	Controlling	true
+character_skills_localised_name_vik_general_back_warrior_sudreyar	Fearless	true
+character_skills_localised_description_vik_back_wife_ugly_circenn	Well, she's rich, which takes the edge off a little.	true
+character_skills_localised_name_vik_dummy_army	DUMMY -  NOT USED IF SEEN TELL A DESIGNER	true
+character_skills_localised_name_vik_general_back_seafarer_mierce	Godly	true
+character_skills_localised_description_vik_follower_forager_northymbre	The wealthiest men in Britannia spare no expense when it comes to equipment. Iron wins battles. 	true
+character_skills_localised_description_vik_back_wife_brutal_west_seaxe	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	true
+character_skills_localised_name_vik_general_back_cavalry_upkeep_circenn	Experienced	true
+character_skills_localised_name_vik_general_back_pastor_circenn	Godly	true
+character_skills_localised_description_vik_follower_scribe_dyflin	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	true
+character_skills_localised_name_vik_general_back_seafarer	Godly	true
+character_skills_localised_name_vik_general_back_defender_circenn	Fair-Minded	true
+character_skills_localised_name_vik_back_wife_loyal_west_seaxe	Loyal	true
+character_skills_localised_description_vik_back_wife_gossip_east_engle	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	true
+character_skills_localised_name_vik_general_back_cavalry_recruitment_northymbre	Fair-Minded	true
+character_skills_localised_name_vik_general_back_cavalry_upkeep_gwined	Experienced	true
+character_skills_localised_description_vik_general_back_negotiator_gwined	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_general_back_missile_upkeep_west_seaxe	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_follower_scribe_mierce	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	true
+character_skills_localised_description_vik_follower_priest_gwined	The men of the new religion are frequent companions of the rich and powerful. Favouring the Church is a small price to pay for the legitimacy that they can grant. 	true
+character_skills_localised_description_vik_general_back_farmer_northymbre	This man turns his wounds into wisdom.	true
+character_skills_localised_description_vik_follower_champion_mide	As a family grows in power, their enemies grow in number. These men stand between their liege lord and the enemy.	true
+character_skills_localised_name_vik_general_back_born_governor_northymbre	Studious	true
+character_skills_localised_name_vik_back_wife_renowned_west_seaxe	Renowned	true
+character_skills_localised_name_vik_general_back_miner_sudreyar	Cunning	true
+character_skills_localised_description_vik_back_wife_well_connected_west_seaxe	It's not what you know, but who.	true
+character_skills_localised_name_vik_back_wife_midwife_northymbre	Midwife	true
+character_skills_localised_name_vik_follower_champion_strat_clut	Household Guard	true
+character_skills_localised_description_vik_back_wife_wealthy_northymbre	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	true
+character_skills_localised_name_vik_general_back_born_commander_sudreyar	Studious	true
+character_skills_localised_description_vik_back_wife_midwife_strat_clut	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	true
+character_skills_localised_name_vik_general_back_negotiator_mide	Cunning	true
+character_skills_localised_name_vik_back_wife_wealthy_strat_clut	Wealthy	true
+character_skills_localised_description_vik_follower_champion_northymbre	As a family grows in power, their enemies grow in number. These men stand between their liege lord and the enemy.	true
+character_skills_localised_name_vik_general_back_seafarer_dyflin	Godly	true
+character_skills_localised_name_vik_back_wife_peaceful_east_engle	Peaceful	true
+character_skills_localised_name_vik_general_back_missile_recruitment_strat_clut	Honours the Gods	true
+character_skills_localised_description_vik_follower_pillager_northymbre	Whether it is torturing captives, assassinating rivals, or leading a sack, this man will only ask one question: How much?	true
+character_skills_localised_name_vik_general_back_missile_upkeep	Godly	true
+character_skills_localised_description_vik_general_back_farmer_circenn	This man turns his wounds into wisdom.	true
+character_skills_localised_name_vik_general_back_seafarer_gwined	Godly	true
+character_skills_localised_description_vik_general_back_negotiator_dyflin	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_follower_priest_dyflin	The followers of the old ways are hard to come by in this strange land, but their presence gives courage to the Nordmenn. 	true
+character_skills_localised_description_vik_back_wife_organised_strat_clut	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	true
+character_skills_localised_name_vik_general_back_cavalry_recruitment_mide	Fair-Minded	true
+character_skills_localised_description_vik_back_wife_shieldmaiden_circenn	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	true
+character_skills_localised_description_vik_back_wife_arrogant_strat_clut	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	true
+character_skills_localised_name_vik_general_back_melee_skill_northymbre	Short-Tempered	true
+character_skills_localised_name_vik_general_back_landowner_mide	Respected	true
+character_skills_localised_name_vik_general_back_cavalry_upkeep_mierce	Experienced	true
+character_skills_localised_description_vik_follower_bard	Many great houses are patrons of bards, who sing praises of their king in hummable tunes and enticing rhymes. 	true
+character_skills_localised_name_vik_follower_pillager_strat_clut	Henchmen	true
+character_skills_localised_name_vik_back_wife_strict_west_seaxe	Strict	true
+character_skills_localised_description_vik_back_wife_midwife_mide	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	true
+character_skills_localised_description_vik_general_back_born_commander_strat_clut	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_description_vik_general_back_champion_rider_strat_clut	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_follower_priest_mierce	The men of the new religion are frequent companions of the rich and powerful. Favouring the Church is a small price to pay for the legitimacy that they can grant. 	true
+character_skills_localised_description_vik_follower_scribe_gwined	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	true
+character_skills_localised_description_vik_general_back_negotiator_mierce	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_name_vik_back_wife_charming_east_engle	Charming	true
+character_skills_localised_name_vik_back_wife_faithful_west_seaxe	Faithful	true
+character_skills_localised_name_vik_back_wife_wasteful_west_seaxe	Wasteful	true
+character_skills_localised_name_vik_back_wife_sensible_west_seaxe	Sensible	true
+character_skills_localised_description_vik_back_wife_educated_strat_clut	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	true
+character_skills_localised_description_vik_general_back_miner_west_seaxe	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_name_vik_general_back_cavalry_upkeep_dyflin	Experienced	true
+character_skills_localised_description_vik_general_back_spearmen_skill_strat_clut	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_name_vik_general_back_farmer_sudreyar	Experienced	true
+character_skills_localised_name_vik_general_back_pastor_sudreyar	Godly	true
+character_skills_localised_name_vik_general_back_cavalry_upkeep_sudreyar	Experienced	true
+character_skills_localised_description_vik_back_wife_well_connected_mide	It's not what you know, but who.	true
+character_skills_localised_description_vik_back_wife_natural_beauty_northymbre	This one needs no adornment but the morning sun, so pleasing is her countenance.	true
+character_skills_localised_description_vik_general_back_missile_damage	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_general_back_born_commander_northymbre	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_general_back_landowner_dyflin	Respected	true
+character_skills_localised_name_vik_back_wife_wasteful_east_engle	Wasteful	true
+character_skills_localised_name_vik_back_wife_sensible_east_engle	Sensible	true
+character_skills_localised_name_vik_back_wife_charming_west_seaxe	Charming	true
+character_skills_localised_name_vik_back_wife_faithful_east_engle	Faithful	true
+character_skills_localised_description_vik_general_back_champion_rider_northymbre	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_back_wife_strict_mide	This woman is a harpy - she demands that the rules are observed to the very letter.	true
+character_skills_localised_description_vik_back_wife_wise_dyflin	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	true
+character_skills_localised_description_vik_back_wife_educated_northymbre	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	true
+character_skills_localised_description_vik_general_back_cavalry_upkeep_sudreyar	This man turns his wounds into wisdom.	true
+character_skills_localised_description_vik_general_back_missile_damage_circenn	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_general_back_pastor_sudreyar	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_general_back_farmer_sudreyar	This man turns his wounds into wisdom.	true
+character_skills_localised_description_vik_general_back_miner_east_engle	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_name_vik_general_back_warrior_mierce	Fearless	true
+character_skills_localised_description_vik_general_back_spearmen_skill_northymbre	"You do not know what to think so I’ll teach you. Think yourself a baby."	true
+character_skills_localised_description_vik_general_back_defender_sudreyar	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_description_vik_general_back_merchant_sudreyar	This man is quick to anger and even quicker to physical blows.	true
+character_skills_localised_description_vik_back_wife_natural_beauty_strat_clut	This one needs no adornment but the morning sun, so pleasing is her countenance.	true
+character_skills_localised_description_vik_back_wife_shieldmaiden_dyflin	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	true
+character_skills_localised_description_vik_back_wife_ugly_gwined	"Well, she's rich, which takes the edge off a little."	true
+character_skills_localised_description_vik_back_wife_shieldmaiden	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	true
+character_skills_localised_name_vik_back_wife_peaceful_west_seaxe	Peaceful	true
+character_skills_localised_description_vik_general_back_seafarer_sudreyar	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_follower_pillager_strat_clut	Whether it is torturing captives, assassinating rivals, or leading a sack, this man will only ask one question: How much?	true
+character_skills_localised_name_vik_general_back_missile_recruitment_northymbre	Honours the Gods	true
+character_skills_localised_description_vik_back_wife_shieldmaiden_mierce	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	true
+character_skills_localised_description_vik_follower_bard_circenn	Many great houses are patrons of bards, who sing praises of their king in hummable tunes and enticing rhymes. 	true
+character_skills_localised_description_vik_general_back_passionate_gwined	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_description_vik_follower_siege_engineer_gwined	Crowns, Castles, Titles. To some men those trinkets mean the world, but others live instead for the rush of battle, and the blood they spill 	true
+character_skills_localised_description_vik_back_wife_noble_gwined	It's a matter of breeding, you understand.	true
+character_skills_localised_name_vik_general_back_landowner_mierce	Respected	true
+character_skills_localised_description_vik_back_wife_organised_northymbre	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	true
+character_skills_localised_description_vik_general_back_seafarer_gwined	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_name_vik_follower_pillager_northymbre	Henchmen	true
+character_skills_localised_description_vik_general_back_farmer	This man turns his wounds into wisdom.	true
+character_skills_localised_description_vik_back_wife_arrogant_northymbre	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	true
+character_skills_localised_name_vik_general_back_missile_upkeep_circenn	Godly	true
+character_skills_localised_name_vik_general_back_warrior_dyflin	Fearless	true
+character_skills_localised_name_vik_back_wife_strict_east_engle	Strict	true
+character_skills_localised_description_vik_back_wife_wise_mierce	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	true
+character_skills_localised_name_vik_general_back_melee_skill_strat_clut	Short-Tempered	true

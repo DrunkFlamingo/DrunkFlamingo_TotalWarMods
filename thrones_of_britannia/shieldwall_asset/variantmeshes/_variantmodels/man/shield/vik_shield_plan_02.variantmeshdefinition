@@ -1,0 +1,11 @@
+<VARIANT_MESH>
+	<SLOT name="shields" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/shield/vik_shield_round_plain_02/vik_shield_round_plain_02.rigid_model_v2"  decal_diffuse="VariantMeshes/_VariantModels/man/patterns/blank/decal_diffuse"  decal_normal="VariantMeshes/_VariantModels/man/patterns/blank/decal_normal"  imposter_model="VariantMeshes/_VariantModels/man/shield/vik_shield_round_plain_02/vik_shield_round_plain_02.rigid_model_v2" >
+			<TINT red="0.937255" green="0.843137" blue="0.498039" random_range="0.2" />
+			<TINT red="1.0" green="0.890196" blue="0.52549" random_range="0.2" />
+			<TINT red="0.862745" green="0.760784" blue="0.45098" random_range="0.2" />
+			<TINT red="0.905882" green="0.807843" blue="0.47451" random_range="0.2" />
+			<TINT red="0.827451" green="0.737255" blue="0.435294" random_range="0.2" />
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

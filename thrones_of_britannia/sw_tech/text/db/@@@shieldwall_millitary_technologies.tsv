@@ -1,0 +1,99 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/@@@shieldwall_millitary_technologies.loc		
+technologies_locked_tooltip_vik_mil_cap_1	Achieve a Short Victory to unlock this node.	true
+technologies_onscreen_name_sw_westsexa_mil_fourth_column_2	Archer Organization	true
+technologies_onscreen_name_vik_mil_cap_1	Standardised Mercenary Salaries	true
+technologies_onscreen_name_vik_mil_cap_2	Trade with the Franks	true
+technologies_onscreen_name_vik_mil_cap_3	Martial Law	true
+technologies_onscreen_name_vik_mil_cap_4	Lords of War	true
+technologies_onscreen_name_vik_mil_cavalry_1	Trained Cavalry	true
+technologies_onscreen_name_vik_mil_cavalry_2	Studied Horse Breeders	true
+technologies_onscreen_name_vik_mil_cavalry_3	Mounted Nobles	true
+technologies_onscreen_name_vik_mil_cavalry_4	Trained Companions	true
+technologies_onscreen_name_vik_mil_cavalry_5	Professional Bodyguards	true
+technologies_onscreen_name_vik_mil_cavalry_6	Professional Soldiers	true
+technologies_onscreen_name_vik_mil_land_1	Meade Oath	true
+technologies_onscreen_name_vik_mil_land_2	Offensive Tactics	true
+technologies_onscreen_name_vik_mil_land_3	Guardsmen	true
+technologies_onscreen_name_vik_mil_land_4	Military Careers	true
+technologies_onscreen_name_vik_mil_land_5	Siege Defense Preparations	true
+technologies_onscreen_name_vik_mil_land_6	Y Gododdin	true
+technologies_onscreen_name_vik_mil_land_7	Egill's Poem	true
+technologies_onscreen_name_vik_mil_land_7_here_king	Liðsmannaflokkr	true
+technologies_onscreen_name_vik_mil_melee_1	Formation Drills	true
+technologies_onscreen_name_vik_mil_melee_1_mide	The Death of King Áed mac Domnaill Ua Néil	true
+technologies_onscreen_name_vik_mil_melee_2a	Spear Specialists	true
+technologies_onscreen_name_vik_mil_melee_2b	Siege Masters	true
+technologies_onscreen_name_vik_mil_melee_3a	Rationing	true
+technologies_onscreen_name_vik_mil_melee_3b	Heat and Hammer	true
+technologies_onscreen_name_vik_mil_melee_4a	Battlefield Medicine	true
+technologies_onscreen_name_vik_mil_melee_4b	Militarised Society	true
+technologies_onscreen_name_vik_mil_melee_4b_gaelic	The Land of Brave Men	true
+technologies_onscreen_name_vik_mil_melee_5	Heroes of the Kingdom	true
+technologies_onscreen_name_vik_mil_melee_6	Warrior Society	true
+technologies_onscreen_name_vik_mil_missile_1	Missile Drills & Tactics	true
+technologies_onscreen_name_vik_mil_missile_2	Archer Specialists	true
+technologies_onscreen_name_vik_mil_missile_3	Trained Boyers	true
+technologies_onscreen_name_vik_mil_missile_4	Professional Archers	true
+technologies_onscreen_name_vik_mil_missile_5	Conscripted Hunting	true
+technologies_onscreen_name_vik_mil_missile_6	King's Craftsmen	true
+technologies_onscreen_name_vik_mil_missile_6_here_king	Prepare for Long Hikes	true
+technologies_onscreen_name_vik_mil_siege_1	Provisions	true
+technologies_onscreen_name_vik_mil_siege_2	Military Stores	true
+technologies_onscreen_name_vik_mil_siege_3	Campaign Planning	true
+technologies_onscreen_name_vik_mil_siege_4	Siege Techniques	true
+technologies_onscreen_name_vik_mil_siege_5	Siege Advancements	true
+technologies_onscreen_name_vik_mil_spearmen_1	Sponsored Fights	true
+technologies_onscreen_name_vik_mil_spearmen_2	Mercenary Contracts	true
+technologies_onscreen_name_vik_mil_spearmen_3	Furnace Bellows	true
+technologies_onscreen_name_vik_mil_spearmen_4	Royal Armourer	true
+technologies_onscreen_name_vik_mil_spearmen_5	Prosperous Households	true
+technologies_onscreen_name_vik_mil_spearmen_6	Marching Cadences	true
+technologies_short_description_sw_westsexa_mil_fourth_column_2	Your father may have taught you to shoot but did he teach you to kill a man? We're going to learn the proper way to string a bow and we're all doing it together!	true
+technologies_short_description_vik_mil_cap_1	Codified wages on a contract does a lot to let a sellsword know he will be paid at the end of his labour.	true
+technologies_short_description_vik_mil_cap_2	Expanding our diplomatic influence to the Carolingian Empire on the mainland grants us not only access to their trade markets but also opens up our borders to contracts with the Frankish Cavalry, famous for their usage of heavy armour and Bar horses.	true
+technologies_short_description_vik_mil_cap_3	The most exceptional war leaders are cold, calculating, and ruthless, both on the battlefield and off it. Popularising the harsh reputation of our commanders will make our subjects more compliant with our rule.	true
+technologies_short_description_vik_mil_cap_4	Your name is on the lips of all people in every kingdom! The enemy trembles before your presence on the battlefield. You no longer have allies; you only have those wisely choose not to pick up arms against you. 	true
+technologies_short_description_vik_mil_cavalry_1	The most formidable cavalrymen are trained mounted soldiers of status. Spreading the word of the need for our more learned horse-warriors will bring them forth to take their place in our battle ranks.	true
+technologies_short_description_vik_mil_cavalry_2	A symbol of wealth, a beast of burden, and a tool of war - the horse was one of the most versatile commodities in the ancient world. Equus ferus’ role was tied to its physical form – the small, early horse could only be used to pull primitive chariots. Larger, faster horses were later bred and used by skirmishers to chase down troops, but it was not until the development of more muscular breeds that shock troops came into being. Their long lances and heavy armour made these new-style heavy cavalry units deadly against infantry, fundamentally changing the nature of warfare forever. 	true
+technologies_short_description_vik_mil_cavalry_3	The only place for a mounted fighter is atop his warhorse, riding down his enemies on the battlefield. Granting enlistment opportunities to all available noble riders will enable cavalry troops to be assembled at lower cost.	true
+technologies_short_description_vik_mil_cavalry_4	Only the best of the best are called up to serve by the sides of the greatest battlefield commanders. Affording them the best possible training will see them better carry out their duties as both bodyguards and soldiers.	true
+technologies_short_description_vik_mil_cavalry_5	The most loyal companions receive the greatest rewards for fighting in direct service to lords and royalty. Sending out word of the need for these most illustrious of protectors will ready them to take their rightful place.	true
+technologies_short_description_vik_mil_cavalry_6	Traditionally, the citizen armies of the Dark Ages were supplied by a combination of levies and volunteer troops. Often farmers and landowners, these men ultimately wished to return to their plots and families, comforted by the spoils of war. The professional soldier was a different beast entirely; he gave his life to the army, never thinking too much about what awaited him back home. However, when a state discharged these men without suitable reward, they often turned to their generals for help. If successful in securing spoils for his men, a general could potentially exert huge influence and power.	true
+technologies_short_description_vik_mil_land_1	I swear before this company that I shall fight to the death for my King. If my King or my Lord shall die, I shall take his place and fight as he would have fought.  If any man here see me taken with weak heart and run away he shall remind me of this pledge made here before my kin.	true
+technologies_short_description_vik_mil_land_2	A tactically drilled force will always be better at inflicting casualties than a disorganised one. Putting our swordsmen and axemen through their paces will improve strategies of damage output on the battlefield.	true
+technologies_short_description_vik_mil_land_3	Outside of the standing army, there will always be the need for dedicated men to guard the borders of the Kingdom	true
+technologies_short_description_vik_mil_land_4	War changes priorities and livelihoods. In times of conflict, those who can, fight. Restructuring the hierarchy of the military will enable us to afford the increasing numbers of wartime recruits.	true
+technologies_short_description_vik_mil_land_5	Sieges in the Dark and early Middle Ages were varied affairs - they either ended in a short, bloody battle, or settled into protracted situations of more devious strategies and classic blockade warfare. For the defenders, they were often secure in the knowledge that an enemy assault on the walls would be easy for them to repel. Many powers kept secret supply networks and vast stores of food in preparation for drawn-out assaults. Much of this went unnoticed, allowing their armies to outlast the enemy on each occasion.	true
+technologies_short_description_vik_mil_land_6	He pierced three hundred, most bold,\\nHe cut down the centre and wing.\\nHe was worthy before the noblest host,\\nHe gave from his herd horses in winter.\\nHe fed black ravens on the wall\\nOf the fortress, although he was not Arthur.\\nAmong those powerful in feats\\nIn the front, a pallisade, Gwawrddur.\\n	true
+technologies_short_description_vik_mil_land_7	Thus spake my mother\\nThat for me should they buy\\nA barque and beauteous oars\\nTo go forth with vikings.\\nStand in the stern,\\nSteer a dear vessel,\\nHold course for a haven,\\nHew down many foemen.\\n	true
+technologies_short_description_vik_mil_land_7_here_king	Let us go up, ere the staves of metal-rain\\nlearn that English homelands\\nswarm with shields and hear\\nof great and deadly raids.\\nLet us be valiant in battle.\\nLet us shake the spear and shoot.\\nMany English will flee before our blades.	true
+technologies_short_description_vik_mil_melee_1	Well organized units can form offensive and defensive formations at the bark of a command. The trick is constant drilling in order to perfect the movement so that discipline can be maintained.	true
+technologies_short_description_vik_mil_melee_1_mide	From the day that great Aed was slain\\nFew men on earth but are in want\\nSince he has died that was another Lugh,\\nIt were right to shed tears of blood.\\nTara is deprived of her benefactor,\\nA blight is upon his kindred,\\nTorture is put upon the rays of the sun,\\nGlorious Erin is without Aed.\\n	true
+technologies_short_description_vik_mil_melee_2a	The spear is empowerment, exponentially increasing any man’s chances against a charging warhorse. Recruiting enough spear specialists will spread the word to others to ready themselves for the call to battle.	true
+technologies_short_description_vik_mil_melee_2b	No settlement is impenetrable, although walls and doors built tougher and higher can still present a formidable challenge. Focusing our efforts on developing the most advanced siege engines will neutralise such obstacles.	true
+technologies_short_description_vik_mil_melee_3a	When we are constantly beset by conflict and famine, tenacity and resolve will only keep our warriors alive for so long. Devising methods to carefully structure food reserves will prolong their survival.	true
+technologies_short_description_vik_mil_melee_3b	Blacksmiths through medieval era spent a great deal of time heating and hammering iron before forging it into finished articles. Although they were unaware of the chemical basis, they were aware that the quality of the iron was improved by reducing atmosphere of the forge. Removing oxygen (rust), and soaking more carbon into the iron developed increasingly higher grades of steel as the process was continued.	true
+technologies_short_description_vik_mil_melee_4a	In the 7th century AD, the Greek physician Paul of Aegina wrote the 'Medical Compendium in Seven Books', a compilation of the medical studies and practises of other scholars, including theories and advanced (for the time) surgical procedures. Although surgery did not take hold for many  centuries to come, the techniques discussed and pioneered during the early Middle Ages were used to help bandage up soldiers so they could continue fighting. Rudimentary approaches to amputation, also, were used to remove mangled or infected limbs, although the victim's chances of survival were extremely slim.	true
+technologies_short_description_vik_mil_melee_4b	Rich or poor, old and young - the security of the Kingdom is one that all of the King's loyal subjects should bear. 	true
+technologies_short_description_vik_mil_melee_4b_gaelic	Tir nam Beann, nan Gaisgeach,\\n’s nan Gleann,\\n’S i Tir nan Gaisgeach a th’ann.\\nTranslation:\\nA hero’s land of hill and glen,\\nthis is the Land of Brave Men.	true
+technologies_short_description_vik_mil_melee_5	They are giants among men, heroes of the Kingdom whose names will be sung in meade halls for generations. It's time we honour their deeds!	true
+technologies_short_description_vik_mil_melee_6	Much like the barbarian kingdoms before them, the kingdoms of the early Middle Ages were very much warrior societies at heart and therefore membership of the warrior class was something to aspire to. Members were obligated to fight for the king, and provide troops from their own retinues, whenever he called them to do so. In return, they were given lands and titles under the proviso they enforced the king's laws and offered protection to the peasants who worked them, which basically gave them license to behave in almost any way they liked.	true
+technologies_short_description_vik_mil_missile_1	The Celtic or Anglo-Saxon warrior was exposed on an open, flat battlefield but, when fighting in hills and woodland, he had the advantage. Most were raised as hunters in dense forests, so became expert at stealthy manoeuvres and laying ambush. On the battlefield, archers lined up behind slingers - afforded some protection by the shields of the warriors in front of them.	true
+technologies_short_description_vik_mil_missile_2	With missile exchanges occurring before most melee confrontations, arrows can dictate the course of a battle from the outset. Recruiting enough archers will ready others for the call to battle.	true
+technologies_short_description_vik_mil_missile_3	The fletching of an arrow is what, ultimately, makes an arrow look like an arrow. The preferred fletch was taken from the common goose, though in practice, the wing feathers from any larger bird would suffice. The feathers would be cut to triangular shape by a group of dedicated craftsmen prior to attaching them to the shaft.	true
+technologies_short_description_vik_mil_missile_4	Not all users of bows are ready for official military service. Enlisting and training all novice practitioners of archery will improve their skill and provide cheaper missile troops.	true
+technologies_short_description_vik_mil_missile_5	Hunting in the medieval period was a sport exclusive to nobility, and was more than a pastime. The elaborate rituals of the hunt were an integral part of court etiquette, and skill in hunting was regarded as the peacetime equivalent of prowess in chivalric wars. 	true
+technologies_short_description_vik_mil_missile_6	Creating perfect arrows isn't just a honed skill... it's an art acquired after much toil and love. Only the best for my King!	true
+technologies_short_description_vik_mil_missile_6_here_king	With extra supplies and some extra training, hardy vikingar can withstand any environment without taking attrition... provided we are willing to pay a bit extra for what is needed.	true
+technologies_short_description_vik_mil_siege_1	Well-trained armies may be able to win battles, but well-trained armies that also know how best to use their supplies will win wars. Discovering better ways to manage provisions will improve our resourcefulness.	true
+technologies_short_description_vik_mil_siege_2	We will set aside grain for the 'morrow - grain for wintertime and grain for wartime.	true
+technologies_short_description_vik_mil_siege_3	All aspects of military expeditions must be considered, from the terrain to be traversed to the warriors’ rations and shoes. Ensuring that armies follow the correct procedures when on the move will have them go further for longer.	true
+technologies_short_description_vik_mil_siege_4	Having all the foot-soldiers and cavalry in the land is little help against the walls of a well-defended settlement. Accumulating more experience of besieging our enemies will improve our techniques and capabilities.	true
+technologies_short_description_vik_mil_siege_5	The established norms of siege warfare changed during the Middle Ages. The same general principles of starvation and destruction applied, but as cities became larger and more fortified, the method of cracking these increasingly daunting defences also had to adapt. The onager and ballista were still common sights in a siege engineer's arsenal, but so too were newer, more adventurous weapons like the trebuchet and mangonel. Beam-slung weapons that hurled rocks in gigantic arcs and created enormous amounts of force with which the attacker hoped to smash down walls or fire over them to destroy the city beyond.	true
+technologies_short_description_vik_mil_spearmen_1	Encouraging men to fight each other for sport is one way to make them better at it! Expanding or establishing more garrisons will provide participants for arena events, in turn raising our standards of martial skill.	true
+technologies_short_description_vik_mil_spearmen_2	Wealth and fame can earn the company of men studied in war and death.	true
+technologies_short_description_vik_mil_spearmen_3	Prior to the invention of the bellows the Blacksmith apprentice would be required to blow through hollow tubes into the base of the fire to enable the furnace to reach a high enough temperature to melt iron. The invention of the bellows allowed the blacksmith to control the temperature of the fire better than blowing could, resulting in finer quality steel once carbon was added.	true
+technologies_short_description_vik_mil_spearmen_4	The presence of a great War Leader on the battlefield can even inspire cowards, but losing one can spell disaster. Employing the best armourers to equip their retinues will afford them a higher level of protection.	true
+technologies_short_description_vik_mil_spearmen_5	Flourishing gentry means higher numbers of the hardened, well-equipped warriors of their household retinues. Issuing reminders of their obligation to fight for the cause will see more of them come forward for recruitment.	true
+technologies_short_description_vik_mil_spearmen_6	Chanting while marching keeps the spirits up, the knees high, and all the men marching lock-step. Stragglers will no longer be tolerated!	true

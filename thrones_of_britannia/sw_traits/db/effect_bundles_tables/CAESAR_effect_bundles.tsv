@@ -1,0 +1,27 @@
+key	localised_description	localised_title	ui_icon	bundle_target
+#effect_bundles_tables;1;db/effect_bundles_tables/CAESAR_effect_bundles				
+great_thinker_1	PLACEHOLDER	PLACEHOLDER	melee_skill.png	faction
+great_thinker_2	PLACEHOLDER	PLACEHOLDER	morale.png	province
+princely_1	PLACEHOLDER	PLACEHOLDER	general_negative.png	region
+sailor_2	PLACEHOLDER	PLACEHOLDER	navy_positive.png	faction
+pagan_1	PLACEHOLDER	PLACEHOLDER	icon_pagan.png	faction
+pagan_2	PLACEHOLDER	PLACEHOLDER	icon_pagan.png	faction
+berserker_bear_1	PLACEHOLDER	PLACEHOLDER	icon_pagan.png	faction
+berserker_bear_2	PLACEHOLDER	PLACEHOLDER	icon_pagan.png	faction
+berserker_wolf_1	PLACEHOLDER	PLACEHOLDER	icon_pagan.png	faction
+berserker_wolf_2	PLACEHOLDER	PLACEHOLDER	icon_pagan.png	faction
+friend_church_1	PLACEHOLDER	PLACEHOLDER	public_order_negative.png	faction
+friend_church_2	PLACEHOLDER	PLACEHOLDER	public_order_positive.png	faction
+saint_1	PLACEHOLDER	PLACEHOLDER	public_order_positive.png	force
+violent_1	PLACEHOLDER	PLACEHOLDER	diplomacy_negative.png	faction
+bloodthirsty_1	PLACEHOLDER	PLACEHOLDER	diplomacy_negative.png	faction
+torturer_1	PLACEHOLDER	PLACEHOLDER	loyalty_negative.png	faction
+torturer_2	PLACEHOLDER	PLACEHOLDER	payload_secure_loyalty.png	faction
+oppressor_2	PLACEHOLDER	PLACEHOLDER	public_order_positive.png	faction
+legendary_tyrant_2	PLACEHOLDER	PLACEHOLDER	public_order_positive.png	faction
+honourable_2	PLACEHOLDER	PLACEHOLDER	diplomacy_negative.png	faction
+tax_collector_1	PLACEHOLDER	PLACEHOLDER	public_order_negative.png	faction
+tax_collector_2	PLACEHOLDER	PLACEHOLDER	tax_growth_negative.png	faction
+dutifull_2	PLACEHOLDER	PLACEHOLDER	morale_negative.png	faction
+beloved_lord_1	PLACEHOLDER	PLACEHOLDER	payload_secure_loyalty.png	faction
+old_ways_choice	PLACEHOLDER	PLACEHOLDER	diplomacy.png	faction

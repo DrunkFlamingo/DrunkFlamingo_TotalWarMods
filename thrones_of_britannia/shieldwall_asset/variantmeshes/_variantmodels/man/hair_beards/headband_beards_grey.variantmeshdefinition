@@ -1,0 +1,27 @@
+<VARIANT_MESH>
+	<SLOT name="body" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/hair_beards/hair/vik_hair_headband_01/vik_hair_headband_01.rigid_model_v2"  imposter_model="VariantMeshes/_VariantModels/man/hair_beards/hair/vik_hair_balding_long_01/vik_hair_balding_long_01.rigid_model_v2" >
+			<TINT red="0.392157" green="0.392157" blue="0.392157" random_range="0.0" />
+			<SLOT name="prop_1" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/man/helmets/vik_headband_01/vik_headband_01.rigid_model_v2" />
+			</SLOT>
+			<SLOT name="prop_2" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/man/hair_beards/beards/vik_beard_bushy_04/vik_beard_bushy_04a.rigid_model_v2" >
+					<TINT red="0.392157" green="0.392157" blue="0.392157" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/man/hair_beards/beards/vik_beard_long_bushy/vik_beard_long_bushy_a_01.rigid_model_v2" >
+					<TINT red="0.392157" green="0.392157" blue="0.392157" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/man/hair_beards/beards/vik_beard_bushy_01/vik_beard_bushy_01a.rigid_model_v2" >
+					<TINT red="0.392157" green="0.392157" blue="0.392157" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/man/hair_beards/beards/vik_beard_kingly_01/vik_beard_kingly_01a.rigid_model_v2" >
+					<TINT red="0.392157" green="0.392157" blue="0.392157" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/man/hair_beards/beards/vik_beard_plait_01/vik_beard_plait_01a.rigid_model_v2" >
+					<TINT red="0.392157" green="0.392157" blue="0.392157" random_range="0.0" />
+				</VARIANT_MESH>
+			</SLOT>
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

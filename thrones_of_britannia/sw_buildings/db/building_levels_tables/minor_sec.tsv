@@ -1,0 +1,52 @@
+level_name	chain	level	create_time	create_cost	upkeep_cost	commodity	commodity_vol	only_in_capital	military_prestige	naval_prestige	economic_prestige	enlightenment_prestige	destruction_terminator	faction_unique	religion_requirement	first_in_world_bundle	resource_requirement	unique_index	can_convert	building_instance_key	audio_building_type	should_show_building_level_in_ui_for_technology	health_override	development_point_cost	has_aqueduct	can_be_damaged	requires_primary_slot_in_group
+#building_levels_tables;11;db/building_levels_tables/minor_sec																											
+vik_abbey_1	vik_abbey	0	12	1100	10		0	false	0	0	0	0	true	false				16048	true	vik_resource	church	true	0.0	0	false	true	
+vik_abbey_2	vik_abbey	1	3	1200	20		0	false	0	0	0	0	false	false				16049	true	vik_resource	church	true	0.0	0	false	true	
+vik_abbey_3	vik_abbey	2	99	9999	0		0	false	0	0	0	0	false	false				16053	true	vik_resource	church	true	0.0	0	false	true	
+vik_abbey_4	vik_abbey	3	99	9999	0		0	false	0	0	0	0	false	false				16059	true	vik_resource	church	true	0.0	0	false	true	
+vik_abbey_5	vik_abbey	4	99	9999	0		0	false	0	0	0	0	false	false				16068	true	vik_resource	church	true	0.0	0	false	true	
+vik_abbey_b_2	vik_abbey	1	3	1200	0		0	false	0	0	0	0	false	false				17346	true	vik_resource	church	true	0.0	0	false	true	
+vik_abbey_b_3	vik_abbey	2	99	9999	0		0	false	0	0	0	0	false	false				17352	true	vik_resource	church	true	0.0	0	false	true	
+vik_abbey_b_4	vik_abbey	3	99	9999	0		0	false	0	0	0	0	false	false				17354	true	vik_resource	church	true	0.0	0	false	true	
+vik_abbey_b_5	vik_abbey	4	99	9999	0		0	false	0	0	0	0	false	false				17355	true	vik_resource	church	true	0.0	0	false	true	
+vik_alehouse_1	vik_alehouse	0	6	900	0		0	false	0	0	0	0	true	false				14412	true	vik_agent	mead_hall	true	0.0	0	false	true	
+vik_alehouse_2	vik_alehouse	1	99	9999	0		0	false	0	0	0	0	false	false				14415	true	vik_agent	mead_hall	true	0.0	0	false	true	
+vik_alehouse_3	vik_alehouse	2	99	9999	0		0	false	0	0	0	0	false	false				14425	true	vik_agent	mead_hall	true	0.0	0	false	true	
+vik_benedictine_abbey_1	vik_benedictine_abbey	0	12	1100	10		0	false	0	0	0	0	true	false				16479	true	vik_resource	church	true	0.0	0	false	true	
+vik_benedictine_abbey_2	vik_benedictine_abbey	1	3	1200	20		0	false	0	0	0	0	false	false				16485	true	vik_resource	church	true	0.0	0	false	true	
+vik_benedictine_abbey_3	vik_benedictine_abbey	2	99	9999	0		0	false	0	0	0	0	false	false				16488	true	vik_resource	church	true	0.0	0	false	true	
+vik_benedictine_abbey_4	vik_benedictine_abbey	3	99	9999	0		0	false	0	0	0	0	false	false				16497	true	vik_resource	church	true	0.0	0	false	true	
+vik_benedictine_abbey_5	vik_benedictine_abbey	4	99	9999	0		0	false	0	0	0	0	false	false				16504	true	vik_resource	church	true	0.0	0	false	true	
+vik_benedictine_abbey_b_2	vik_benedictine_abbey	1	3	1200	0		0	false	0	0	0	0	false	false				17528	true	vik_resource	church	true	0.0	0	false	true	
+vik_benedictine_abbey_b_3	vik_benedictine_abbey	2	99	9999	0		0	false	0	0	0	0	false	false				17530	true	vik_resource	church	true	0.0	0	false	true	
+vik_benedictine_abbey_b_4	vik_benedictine_abbey	3	99	9999	0		0	false	0	0	0	0	false	false				17533	true	vik_resource	church	true	0.0	0	false	true	
+vik_benedictine_abbey_b_5	vik_benedictine_abbey	4	99	9999	0		0	false	0	0	0	0	false	false				17537	true	vik_resource	church	true	0.0	0	false	true	
+vik_ceil_de_abbey_b_2	vik_celi_de_abbey	1	3	1200	0		0	false	0	0	0	0	false	false				17540	true	vik_resource	church	true	0.0	0	false	true	
+vik_ceil_de_abbey_b_3	vik_celi_de_abbey	2	99	9999	0		0	false	0	0	0	0	false	false				17547	true	vik_resource	church	true	0.0	0	false	true	
+vik_ceil_de_abbey_b_4	vik_celi_de_abbey	3	99	9999	0		0	false	0	0	0	0	false	false				17553	true	vik_resource	church	true	0.0	0	false	true	
+vik_ceil_de_abbey_b_5	vik_celi_de_abbey	4	99	9999	0		0	false	0	0	0	0	false	false				17557	true	vik_resource	church	true	0.0	0	false	true	
+vik_celi_de_abbey_1	vik_celi_de_abbey	0	18	1100	12		0	false	0	0	0	0	true	false				16511	true	vik_resource	church	true	0.0	0	false	true	
+vik_celi_de_abbey_2	vik_celi_de_abbey	1	3	1200	24		0	false	0	0	0	0	false	false				16515	true	vik_resource	church	true	0.0	0	false	true	
+vik_celi_de_abbey_3	vik_celi_de_abbey	2	99	9999	0		0	false	0	0	0	0	false	false				16518	true	vik_resource	church	true	0.0	0	false	true	
+vik_celi_de_abbey_4	vik_celi_de_abbey	3	99	9999	0		0	false	0	0	0	0	false	false				16522	true	vik_resource	church	true	0.0	0	false	true	
+vik_celi_de_abbey_5	vik_celi_de_abbey	4	99	9999	0		0	false	0	0	0	0	false	false				16524	true	vik_resource	church	true	0.0	0	false	true	
+vik_garrison_1	vik_garrison	0	6	600	80		0	false	0	0	0	0	true	false				14584	true	vik_garrison	military	true	0.0	0	false	true	
+vik_garrison_2	vik_garrison	1	3	1000	140		0	false	0	0	0	0	false	false				14590	true	vik_garrison	military	true	0.0	0	false	true	
+vik_garrison_3	vik_garrison	2	99	9999	200		0	false	0	0	0	0	false	false				14592	true	vik_garrison	military	true	0.0	0	false	true	
+vik_garrison_4	vik_garrison	3	99	9999	250		0	false	0	0	0	0	false	false				14600	true	vik_garrison	military	true	0.0	0	false	true	
+vik_garrison_5	vik_garrison	4	99	9999	300		0	false	0	0	0	0	false	false				16393	true	vik_garrison	military	true	0.0	0	false	true	
+vik_granary_1	vik_granary	0	3	400	5		0	false	0	0	0	0	true	false				14605	true	vik_granary	farm	true	0.0	0	false	true	
+vik_granary_2	vik_granary	1	3	500	10		0	false	0	0	0	0	false	false				14614	true	vik_granary	farm	true	0.0	0	false	true	
+vik_granary_3	vik_granary	2	99	9999	250		0	false	0	0	0	0	false	false				14617	true	vik_granary	farm	true	0.0	0	false	true	
+vik_martyrs_mint_1	vik_martyrs_mint	0	9	625	10		0	false	0	0	0	0	true	false			res_vik_silver	15516	true	vik_martyrs_mint	workshop	true	0.0	0	false	true	
+vik_martyrs_mint_2	vik_martyrs_mint	1	99	9999	0		0	false	0	0	0	0	false	false			res_vik_silver	15517	true	vik_martyrs_mint	workshop	true	0.0	0	false	true	
+vik_martyrs_mint_3	vik_martyrs_mint	2	99	9999	0		0	false	0	0	0	0	false	false			res_vik_silver	15525	true	vik_martyrs_mint	workshop	true	0.0	0	false	true	
+vik_mill_1	vik_mill	0	6	700	10		0	false	0	0	0	0	true	false				15545	true	vik_mill	workshop_stonemasonry	true	0.0	0	false	true	
+vik_mill_2	vik_mill	1	99	9999	0		0	false	0	0	0	0	false	false				15547	true	vik_mill	workshop_stonemasonry	true	0.0	0	false	true	
+vik_mill_3	vik_mill	2	99	9999	0		0	false	0	0	0	0	false	false				15552	true	vik_mill	workshop_stonemasonry	true	0.0	0	false	true	
+vik_souterrain_1	vik_souterrain	0	3	500	5		0	false	0	0	0	0	true	false				15691	true	vik_granary	workshop	true	0.0	0	false	true	
+vik_souterrain_2	vik_souterrain	1	6	700	10		0	false	0	0	0	0	false	false				15693	true	vik_granary	workshop	true	0.0	0	false	true	
+vik_souterrain_3	vik_souterrain	2	9999	9999	999		0	false	0	0	0	0	false	false				15701	true	vik_granary	workshop	true	0.0	0	false	true	
+vik_tanner_1	vik_tanner	0	2	500	0		0	false	0	0	0	0	true	false			res_vik_leather	15939	true	vik_tanner	workshop_weaver	true	0.0	0	false	true	
+vik_tanner_2	vik_tanner	1	999	999	0		0	false	0	0	0	0	false	false			res_vik_leather	15941	true	vik_tanner	workshop_weaver	true	0.0	0	false	true	
+vik_tanner_3	vik_tanner	2	999	999	0		0	false	0	0	0	0	false	false			res_vik_leather	15949	true	vik_tanner	workshop_weaver	true	0.0	0	false	true	

@@ -1,0 +1,675 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/campaign_localised_strings.loc		
+campaign_localised_strings_string_unit_exchange_commanders_invalid	Forces cannot exchange commanders.	true
+campaign_localised_strings_string_vik_fact_gwined_mission_sea_kings_1	Conquer all the ports in the Irish sea.	true
+campaign_localised_strings_string_vik_fact_gwined_mission_sea_kings_2	Destroy Dyflin and Sudreyar.	true
+campaign_localised_strings_string_public_order_rebellion_next_turn	At the current rate, there will be a rebellion next turn!	true
+campaign_localised_strings_string_military_force_morale_bonus_value_politics	Politics	true
+campaign_localised_strings_string_force_not_in_correct_stance_not_enough_ap	This force is currently not in settle stance and doesn't have enough action points to settle.	true
+campaign_localised_strings_string_military_force_growth_tax	Tax	true
+campaign_localised_strings_string_politics_character_cannot_become_governor_wounded	This character cannot be assigned governor whilst wounded.	true
+campaign_localised_strings_string_vik_fact_kingdom_old_north	Yr Hen Ogledd	true
+campaign_localised_strings_string_events_attrition_summary_location	Province:	true
+campaign_localised_strings_string_MPC_cannot_construct_not_your_turn	[[col:red]]You cannot construct buildings during other factions' turns.[[/col]]	true
+campaign_localised_strings_string_politics_character_regent	Regent	true
+campaign_localised_strings_string_political_action_confirm_marriage	Are you sure you want to arrange a marriage for %s?	true
+campaign_localised_strings_string_end_turn_warning_public_order_low	This province has low public order:	true
+campaign_localised_strings_string_province_fertility_factor_buildings	Faction or buildings	true
+campaign_localised_strings_string_vik_fact_dyflin_mission_irish_coast	Capture and hold all ports in Ireland.	true
+campaign_localised_strings_string_public_order_sack	Sack	true
+campaign_localised_strings_string_military_history_battles_victory_decisive	Decisive victory against:	true
+campaign_localised_strings_string_politics_assign_governor	Left-click to assign your character this office.	true
+campaign_localised_strings_string_book_of_traits_description	The Book of Traits displays all traits you have unlocked in the game, sorted by trait groups. Once a trait is gained by a character, it is unlocked in the Book of Traits and will remain unlocked for all future campaigns.	true
+campaign_localised_strings_string_recruit_assassin_tooltip	Recruit Assassin||Skilled in the art of killing, assassins can eliminate hostile generals and agents. Their skills can also be applied to the training of units and the harassment of enemy armies.	true
+campaign_localised_strings_string_details_panel_skills_cannot_select	This character cannot learn this skill:	true
+campaign_localised_strings_string_raise_navy_capped	Cannot raise a fleet.||You have insufficient Fame.	true
+campaign_localised_strings_string_vik_fact_kingdom_england	England	true
+campaign_localised_strings_string_vik_fact_kingdom_danelaw	Danelaw	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_lindcylne	Create a defensive pact or military alliance with the owner of: Lindcylne	true
+campaign_localised_strings_string_raise_legacy_capped	Cannot reinstate legacy.||You have insufficient Fame.	true
+campaign_localised_strings_string_end_turn_warning_not_researching	You are not currently researching any technologies.	true
+campaign_localised_strings_string_politics_action_impossible_target_is_faction_leader	[[col:red]]Political action impossible on Faction Leader.[[/col]]	true
+campaign_localised_strings_string_military_force_growth_technologies	Technologies	true
+campaign_localised_strings_string_development_points_tooltip_hordes_insufficent_development_points_number_expedition	You need %n population surplus.||The expedition will grow over time, but a combination of raiding and settling, along with construction of the appropriate buildings, will help increase that rate of growth.	true
+campaign_localised_strings_string_province_fertility_factor_climate	Climate	true
+campaign_localised_strings_string_development_points_tooltip_hordes_growth	As the horde grows, its population can be used to make it stronger or to spawn new hordes.	true
+campaign_localised_strings_string_imperium_01_description	Your power is of little consequence to the world... yet!	true
+campaign_localised_strings_string_military_force_morale_bonus_value_foreign_territory	Hostile Territory	true
+campaign_localised_strings_string_imperium_02_description	You have established yourself as a worthy power.	true
+campaign_localised_strings_string_character_type_wife	Wife	true
+campaign_localised_strings_string_imperium_03_description	Word of your achievements has travelled far.	true
+campaign_localised_strings_string_imperium_04_description	Your accomplishments are great.	true
+campaign_localised_strings_string_imperium_05_description	Your power is both feared and coveted.	true
+campaign_localised_strings_string_imperium_06_description	The world trembles before you.	true
+campaign_localised_strings_string_imperium_07_description	Your power is supreme.	true
+campaign_localised_strings_string_public_order_food_tooltip	Food	true
+campaign_localised_strings_string_military_history_battles	Battles fought:	true
+campaign_localised_strings_string_politics_power_support_popular_description	Dominion is a measure of your influence over your faction; your power over the people. It is determined by the total influence of your family members versus that of non-family members.\\n\\nCombined with control, it defines your family's overall power.	true
+campaign_localised_strings_string_politics_cannot_assign_age	This character has not come of age and cannot become governor yet.	true
+campaign_localised_strings_string_military_force_morale_unit_transfer	Unit Transfer	true
+campaign_localised_strings_string_recruitment_hire_from_horde	Recruit from Horde	true
+campaign_localised_strings_string_public_order_taxes_tooltip	High taxes do not please people. Low taxes do.	true
+campaign_localised_strings_string_public_order_other_tooltip	Your response to dilemmas and events affects how people view your leadership.	true
+campaign_localised_strings_string_province_contested	Contested province.	true
+campaign_localised_strings_string_vik_fact_kingdom_temhair	Temhair	true
+campaign_localised_strings_string_politics_ministerial_position_required_rank	Required rank:	true
+campaign_localised_strings_string_details_panel_skills_cannot_no_skill_points	They have no skill points.	true
+campaign_localised_strings_string_unit_upgrade_multiple_units	Left-click to upgrade all currently selected units.	true
+campaign_localised_strings_string_raise_force_reinstate_cannot_no_legacies	[[col:red]]You have no military legacies to reinstate.[[/col]]	true
+campaign_localised_strings_string_politics_power_support_political_current	Current control:	true
+campaign_localised_strings_string_vik_fact_miercna_mission_north_all	Eliminate Northymbre!	true
+campaign_localised_strings_string_vik_mission_northymbre_northleode_a	Eliminate Northleode	true
+campaign_localised_strings_string_vik_mission_northymbre_northleode_b	Eliminate Northleode	true
+campaign_localised_strings_string_unlocks_name_building_chain	Unlocks %S building chain	true
+campaign_localised_strings_string_att_eos_religious_mission_build_att_rel_semitic_paganism	Convert to or construct 4 Semitic pagan religious buildings without building any other religious buildings.	true
+campaign_localised_strings_string_public_order_other	Other	true
+campaign_localised_strings_string_public_order_taxes	Taxes	true
+campaign_localised_strings_string_politics_action_impossible_target_retainer_rank_too_high	[[col:red]]Characters may only engage retainers of lower rank than themselves.[[/col]]	true
+campaign_localised_strings_string_unit_details_rank	Rank:	true
+campaign_localised_strings_string_governors_status_province	The governor of the province is now shown in the list on the left. If there is no governor or you want to replace the existing one, you can select and make another character governor instead.	true
+campaign_localised_strings_string_military_history_battles_defeat_decisive	Decisive defeat by:	true
+campaign_localised_strings_string_vik_mission_strat_clut_northleode	Eliminate Northleode	true
+campaign_localised_strings_string_raise_force_navy_no_surplus	Cannot raise a fleet.||You do not have enough population surplus.	true
+campaign_localised_strings_string_zeal_desc	Zeal is affected by traits, followers and offices.	true
+campaign_localised_strings_string_vik_fact_dyflin_mission_control_resources	Capture and hold at least one production building for each trade resource.	true
+campaign_localised_strings_string_military_force_morale_faction_leader_died	Turbulence	true
+campaign_localised_strings_string_raise_army_besieged	Cannot raise an army.||This settlement is under siege.	true
+campaign_localised_strings_string_public_order_food	Food	true
+campaign_localised_strings_string_politics_action_impossible_target_underage	[[col:red]]Characters who have not yet come of age may not be involved in political actions.[[/col]]	true
+campaign_localised_strings_string_vik_fact_east_engle_mission_east_danelaw	Control the provinces of Grantbrycgscir and Fenns.	true
+campaign_localised_strings_string_cannot_migrate_no_armies	Your people cannot migrate without an army.	true
+campaign_localised_strings_string_politics_character_status_scheming	Scheming	true
+campaign_localised_strings_string_politics_character_status_deceased	Deceased	true
+campaign_localised_strings_string_events_attrition_summary_men_lost	Men lost:	true
+campaign_localised_strings_string_military_force_growth_core	Buildings & Food	true
+campaign_localised_strings_string_confirm_post_replacement	A character already occupies this post. Do you want to assign the selected character to it?	true
+campaign_localised_strings_string_public_order_deteriorating	Public order is deteriorating. 	true
+campaign_localised_strings_string_unit_upgrade_single_unit	Left-click to upgrade the currently selected unit with:	true
+campaign_localised_strings_string_character_mentor_of	This character is a mentor of: 	true
+campaign_localised_strings_string_politics_action_impossible_target_candidate	[[col:red]]You cannot take political action against candidates.[[/col]]	true
+campaign_localised_strings_string_governors_status_character	The province this character governs will be shown on the map. If they're not already a governor, you can click on a province icon to make them governor of that province.	true
+campaign_localised_strings_string_details_panel_ancillary_wife_empty	This character has no wife. Your characters may receive marriage proposals from other parties, or you can arrange marriages for characters from other parties by engaging in faction politics.	true
+campaign_localised_strings_string_politics_character_status_wounded	Wounded	true
+campaign_localised_strings_string_vik_fact_dyflin_mission_longphorts	Control the longphorts - Dyflin, Veisafjordr, Vedrafyordr, Corcach and Hlymrekr.	true
+campaign_localised_strings_string_notification_skill	Skills Available	true
+campaign_localised_strings_string_public_order_breakdown_rebellion	Rebels Left	true
+campaign_localised_strings_string_military_history_battles_victory_phyrric	Costly victory against:	true
+campaign_localised_strings_string_military_force_morale_lost_battle	Battle Lost	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_carleol	Create a defensive pact or military alliance with the owner of: Carleol	true
+campaign_localised_strings_string_politics_event_assassination_wife_success	His wife was successfully assassinated!	true
+campaign_localised_strings_string_religion_factor_province	Local traditions	true
+campaign_localised_strings_string_politics_action_impossible_target_not_male	[[col:red]]Female family members may not be targeted in this action.[[/col]]	true
+campaign_localised_strings_string_end_turn_warning_siege_no_equipment	You are besieging a settlement with no assault equipment:	true
+campaign_localised_strings_string_other_nobles_candidates_description	Candidates are characters who are not yet active faction members.||In the absence of other available characters, candidates may be called upon to assume command of forces or assume governorships.\\n\\n[[col:yellow]]Their influence does not affect faction politics and their loyalty will only change once they become active.[[/col]]	true
+campaign_localised_strings_string_details_panel_skills_select	This character may learn an additional skill.\\nLeft-click a skill to learn it.	true
+campaign_localised_strings_string_politics_character_not_politician	[[col:red]]Only statesmen may become governors.[[/col]]	true
+campaign_localised_strings_string_info_panel_effect_summary_general	Commander's effects	true
+campaign_localised_strings_string_recruitment_unavailable_incorrect_stance	Cannot recruit in this stance.	true
+campaign_localised_strings_string_public_order_breakdown_rebellion_tooltip	Rebellion	true
+campaign_localised_strings_string_politics_action_possible	[[col:green]]This political action can be resolved instantly.[[/col]]	true
+campaign_localised_strings_string_politics_event_assassination_wife	Assassination attempt on wife!	true
+campaign_localised_strings_string_vik_fact_east_engle_mission_northymbre_dead	Control the settlements of Eoferwic, Loidis, Cetretha, and Northwic.	true
+campaign_localised_strings_string_unit_upgrade_description	Improves a unit's weapons or armour.	true
+campaign_localised_strings_string_end_turn_warning_legacy_skill_to_be_picked	This force has an unassigned tradition:	true
+campaign_localised_strings_string_growth_characters	Characters	true
+campaign_localised_strings_string_raise_army_capped	Cannot raise an army.||You have insufficient Fame.	true
+campaign_localised_strings_string_next_turn	Next turn:	true
+campaign_localised_strings_string_notification_food	Food Shortage	true
+campaign_localised_strings_string_governors_status_initial	Governors provide bonuses to the province they are assigned, depending on their traits and followers. Select a character from the list on the left, and then click on a province to make them governor of that province. Alternatively, select a province from the map above and then the character you wish to make governor.	true
+campaign_localised_strings_string_politics_character_joined_your_family_from	This character has joined your family from the following faction:	true
+campaign_localised_strings_string_details_panel_character_age	Age:	true
+campaign_localised_strings_string_politics_action_impossible	This political action cannot be carried out:	true
+campaign_localised_strings_string_recruitment_hire_mercenary	Recruit Units	true
+campaign_localised_strings_string_unit_upgrade_retrain_multiple_units	Left-click to retrain all currently selected units.	true
+campaign_localised_strings_string_unit_upgrade_retrain_description	Replaces a unit with a more advanced one.	true
+campaign_localised_strings_string_vik_fact_kingdom_ireland	Ireland	true
+campaign_localised_strings_string_cannot_migrate_under_siege	Your people cannot migrate while one of your settlements is under siege or blockaded.	true
+campaign_localised_strings_string_vik_starting_trait	Starting Trait	true
+campaign_localised_strings_string_warnings_additional_hidden_noclick	There are additional notifications of this type not currently displayed. Resolve or dismiss the existing notifications in order to view the pending notifications.	true
+campaign_localised_strings_string_abandoned_region_rebel_faction_name	Desolate	true
+campaign_localised_strings_string_game_warning_military_force_supplies_low	This military force has low supplies:	true
+campaign_localised_strings_string_notification_order	Low Public Order	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_eidenburg	Create a defensive pact or military alliance with the owner of: Eidenburg	true
+campaign_localised_strings_string_sea_region_control_status_replenishment_rate_mod_garrisoned	(+%d%% in ports)	true
+campaign_localised_strings_string_military_history_defeats	Defeats:	true
+campaign_localised_strings_string_vik_fact_east_engle_mission_wicing	Defeat the Wicing raiders.	true
+campaign_localised_strings_string_unit_upgrade_retrain_single_unit	Left-click to retrain the currently selected unit to:	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_rucestr	Create a defensive pact or military alliance with the owner of: Rucestr	true
+campaign_localised_strings_string_game_warning_no_governor	You may still assign a provincial governor.	true
+campaign_localised_strings_string_game_warning_province_public_order_rebellion_risk	This province is at risk of rebellion:	true
+campaign_localised_strings_string_sanitation_tooltip_header	Public Order	true
+campaign_localised_strings_string_mouse_over_for_cost	Mouse over a target noble to see how much marrying them will cost.	true
+campaign_localised_strings_string_force_not_on_land	Hordes must be on land in order to carry out construction. Disembark to issue construction orders.	true
+campaign_localised_strings_string_vik_sudreyar_assembly_sack	Sack any settlement	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_ceaster	Create a defensive pact or military alliance with the owner of: Ceaster	true
+campaign_localised_strings_string_public_order_units	Units	true
+campaign_localised_strings_string_vik_fact_kingdom_prydein	Prydein	true
+campaign_localised_strings_string_military_force_morale_idle	Own Territory	true
+campaign_localised_strings_string_politics_action_not_family_member	Political actions are not available for characters that are not family members.	true
+campaign_localised_strings_string_sea_region_control_status_replenishment_rate_mod	+%d%% naval replenishment	true
+campaign_localised_strings_string_political_action_confirm_divorce	Are you sure you want to divorce %s?	true
+campaign_localised_strings_string_battle_ambush_you_success	The enemy has failed to spot your ambush. Attack now and the element of surprise will give you the upper hand!	true
+campaign_localised_strings_string_raise_force_army_no_surplus	Cannot raise an army.||You do not have enough population surplus.	true
+campaign_localised_strings_string_politics_has_not_attained_office	This character has not previously attained sufficiently high office to be assigned this position.	true
+campaign_localised_strings_string_vik_fact_sudreyar_mission_bregh_conquest	Conquer the province of Brega in Ireland.	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_loidis	Create a defensive pact or military alliance with the owner of: Loidis	true
+campaign_localised_strings_string_military_force_morale_bonus_value_military_force	Stance	true
+campaign_localised_strings_string_politics_event_assassination_wife_wounded	His wife was merely wounded.	true
+campaign_localised_strings_string_details_panel_skills_unlocked_rank	Unlocked at rank:	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_bedanford	Create a defensive pact or military alliance with the owner of: Bedanford	true
+campaign_localised_strings_string_vik_remove_from_position	Remove from position	true
+campaign_localised_strings_string_politics_action_impossible_treasury_insufficient	[[col:red]]You have insufficient funds in your treasury.[[/col]]\\n\\nFind a way to acquire more.	true
+campaign_localised_strings_string_military_force_morale_casualties	Casualties Suffered	true
+campaign_localised_strings_string_vik_fact_kingdom_norse_gaelic_sea	Norse-Gaelic Sea	true
+campaign_localised_strings_string_politics_action_impossible_target_needed	[[col:red]]This action requires a target family member.[[/col]]	true
+campaign_localised_strings_string_military_history_commanders	Commanders:	true
+campaign_localised_strings_string_events_attrition_summary_force_navy	Fleet:	true
+campaign_localised_strings_string_military_force_growth_characters	Characters	true
+campaign_localised_strings_string_public_order_celebration_next_turn	At the current rate, there will be a celebration next turn!	true
+campaign_localised_strings_string_vik_civ_religion_1_category_title	Community	true
+campaign_localised_strings_string_vik_mission_west_seaxe_east_engle	Eliminate East Engle	true
+campaign_localised_strings_string_religion_factor_buildings	Buildings	true
+campaign_localised_strings_string_military_history_victories	Victories:	true
+campaign_localised_strings_string_vik_fact_sudreyar_mission_dyflin_alliance	Create an alliance with Dyflin.	true
+campaign_localised_strings_string_raise_navy_no_port	Cannot raise a fleet.||This settlement has no port.	true
+campaign_localised_strings_string_politics_cursus_next_level	Next level	true
+campaign_localised_strings_string_confirm_estate_assignment	Do you want to grant one of the leader's estates to the selected character?	true
+campaign_localised_strings_string_religion_factor_anti_state_religion	Usurper Allegiance	true
+campaign_localised_strings_string_tooltip_loyalty_description	Loyalty represents a character's dedication to the faction. If loyalty reaches zero, the character will defect, thereby instigating a civil war.	true
+campaign_localised_strings_string_politics_event_blackmail_success	His reputation has been tarnished by rumours.	true
+campaign_localised_strings_string_vik_mission_northymbre_east_engle	Vassalise or eliminate East Engle	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_alt_clut	Create a defensive pact or military alliance with the owner of: Alt Clut	true
+campaign_localised_strings_string_public_order_technologys	Technologies	true
+campaign_localised_strings_string_recruitment_levy_from_client_state	Levy from Vassal Kingdom	true
+campaign_localised_strings_string_no_posts_available_for_character	This character cannot be assigned to a ministerial position.	true
+campaign_localised_strings_string_migrate_button_selected_expedition	All settlements in your kingdom are being abandoned. [Left-click to cancel.]	true
+campaign_localised_strings_string_vik_mission_northymbre_westmoringas	Eliminate Westmoringas	true
+campaign_localised_strings_string_raise_army_no_funds	Cannot raise an army.||You have insufficient funds.	true
+campaign_localised_strings_string_cannot_migrate_already_migrating_expedition	You are already migrating.	true
+campaign_localised_strings_string_raise_navy_no_funds	Cannot raise a fleet.||You have insufficient funds.	true
+campaign_localised_strings_string_vik_fact_gwined_mission_cerneu_1	Conquer the province of Cerneu.	true
+campaign_localised_strings_string_politics_event_blackmail	Blackmail attempt!	true
+campaign_localised_strings_string_warnings_additional_hidden_click	There are additional notifications of this type not currently displayed. Click this button to see all notifications.	true
+campaign_localised_strings_string_politics_event_choice_invalid_insufficient_gravitas	This character does not have sufficient influence to take this course of action.	true
+campaign_localised_strings_string_vik_mission_strat_clut_westernas	Eliminate Westernas	true
+campaign_localised_strings_string_public_order_technologys_tooltip	An educated, advanced population is a happy one.	true
+campaign_localised_strings_string_development_points_tooltip_hordes	Population surplus||The horde needs people if it is to grow bigger and stronger; population surplus allows this, as well as allowing new hordes to spawn. Encamping and raiding are vital to horde growth.	true
+campaign_localised_strings_string_military_force_morale_bonus_value_fortify_stance	Fortified	true
+campaign_localised_strings_string_politics_action_impossible_actor_not_male	[[col:red]]Only male family members may perform this action.[[/col]]	true
+campaign_localised_strings_string_vik_remove_from_positoin	Remove From position	true
+campaign_localised_strings_string_public_order_stabilising	Public order is stabilising.	true
+campaign_localised_strings_string_estates_status_character	This character’s estates are now highlighted on the map: you cannot reassign their estates as they don’t belong to your faction leader.	true
+campaign_localised_strings_string_migrate_button_active_expedition	Migration causes the abandonment of all settlements in your kingdom and turns your armies into hordes.	true
+campaign_localised_strings_string_confirm_settlement_rename	Are you sure you want to rename this settlement?	true
+campaign_localised_strings_string_edicts_incoming_description	[[col:green]]This edict will take effect at the start of the next turn.[[/col]]	true
+campaign_localised_strings_string_politics_character_not_your_faction	You cannot act against characters not in your family.	true
+campaign_localised_strings_string_invalid_reason_king_or_heir	A king or heir cannot occupy this post	true
+campaign_localised_strings_string_force_not_in_correct_stance	Hordes must be encamped in order to carry out construction. Issuing this order will place the horde into encampment stance.	true
+campaign_localised_strings_string_raise_army	Raise an army.||Establish a new army and appoint a commander to lead it into battle.	true
+campaign_localised_strings_string_political_gravitas_breakdown_political_action_character_modifier_negative	Political actions	true
+campaign_localised_strings_string_politics_action_impossible_actor_married	[[col:red]]This character is already married.[[/col]]	true
+campaign_localised_strings_string_confirm_cancel_migration	Are you sure you wish to cancel the migration?	true
+campaign_localised_strings_string_politics_action_make_heir_heading	[[col:yellow]]Declare Heir[[/col]]	true
+campaign_localised_strings_string_public_order_celebration	At the current rate, there will be a celebration in %n turn(s).	true
+campaign_localised_strings_string_public_order_devastation_tooltip	Destruction breeds death and, more dangerously, unhappiness.	true
+campaign_localised_strings_string_vik_fact_miercna_mission_westsexa	Vassalise or eliminate West Seaxe!	true
+campaign_localised_strings_string_vik_fact_gwined_mission_west_seaxe	Vassalise or eliminate West Seaxe.	true
+campaign_localised_strings_string_politics_action_impossible_feast_cooldown_active	[[col:red]]You can only hold a feast once every 4 turns.[[/col]]	true
+campaign_localised_strings_string_public_order_plague	Disease	true
+campaign_localised_strings_string_politics_action_impossible_no_estates_owned	The character doesn't own any estates to be stripped of.	true
+campaign_localised_strings_string_unit_upgrade_header	Upgrade	true
+campaign_localised_strings_string_politics_action_impossible_actor_already_a_retainer	[[col:red]]This character already is a retainer.[[/col]]	true
+campaign_localised_strings_string_politics_event_assassination_wife_killed	They failed to assassinate him, but managed to kill his wife instead!	true
+campaign_localised_strings_string_public_order_culture_differences	Allegiance Differences	true
+campaign_localised_strings_string_vik_mission_west_seaxe_gliwissig	Vassalise or eliminate Gliwissig	true
+campaign_localised_strings_string_unit_upgrade_cannot	Upgrade not possible:	true
+campaign_localised_strings_string_vik_civ_industry_1_category_title	Industry	true
+campaign_localised_strings_string_imperium_01_title	Insignificant	true
+campaign_localised_strings_string_imperium_02_title	Noteworthy	true
+campaign_localised_strings_string_imperium_03_title	Impressive	true
+campaign_localised_strings_string_imperium_04_title	Inspiring	true
+campaign_localised_strings_string_imperium_05_title	Intimidating	true
+campaign_localised_strings_string_imperium_06_title	Terrifying	true
+campaign_localised_strings_string_imperium_07_title	Supreme	true
+campaign_localised_strings_string_politics_event_promotion_success	Promotion secured.	true
+campaign_localised_strings_string_political_action_confirm_seek_wife	Are you sure you want to seek a wife for %s?	true
+campaign_localised_strings_string_growth_food	Food	true
+campaign_localised_strings_string_army_morale_tooltip	Supplies||If this reaches zero, soldiers will desert the army. Replenish supplies in friendly territory or by sacking and raiding.	true
+campaign_localised_strings_string_politics_action_impossible_target_is_faction_heir	[[col:red]]Political action impossible on Faction Heir.[[/col]]	true
+campaign_localised_strings_string_end_turn_warning_bankrupt	You are on the verge of bankruptcy.	true
+campaign_localised_strings_string_gdp_other	OTHER	true
+campaign_localised_strings_string_confirm_governor_assignment	Do you want to appoint the selected character as governor for this province?	true
+campaign_localised_strings_string_unit_upgrade_cannot_reason_damaged_multiple	One or more units are not at full strength.	true
+campaign_localised_strings_string_notification_repair	Damaged Building	true
+campaign_localised_strings_string_politics_event_promotion	Promotion!	true
+campaign_localised_strings_string_gdp_entertainment	CHURCH	true
+campaign_localised_strings_string_sanitation_tooltip_description_good	\\nLocal public order outweighs revolt risk. This settlement faces no risk of a revolt.\\n	true
+campaign_localised_strings_string_battle_ambush_you_intercept	Your army was spotted by the enemy before it could spring its ambush. You have an opportunity to intercept and engage them in battle!	true
+campaign_localised_strings_string_public_order_devastation	Devastation	true
+campaign_localised_strings_string_end_turn_warning_military_force_morale_low	This force has dangerously low supplies: 	true
+campaign_localised_strings_string_recruitment_unavailable_blockading	Cannot recruit while blockading.	true
+campaign_localised_strings_string_gdp_fertility_agriculture	FARMS (FERTILITY)	true
+campaign_localised_strings_string_public_order_plague_tooltip	Plague	true
+campaign_localised_strings_string_public_order_culture_differences_tooltip	The melting pot of cultures and styles can bind people together, or create friction.	true
+campaign_localised_strings_string_vik_fact_kingdom_north_sea_empire	North Sea Empire	true
+campaign_localised_strings_string_weight_grouping_container	%1 %2	true
+campaign_localised_strings_string_edicts_description	Issue provincial edicts to help control local public order, exploit production and more.\\n\\nExpansion and development will increase your faction's Fame, thereby allowing you to appoint additional governors and issue further edicts.	true
+campaign_localised_strings_string_growth_technologies	Technologies	true
+campaign_localised_strings_string_seconds_abbreviated	s	true
+campaign_localised_strings_string_no_technology_currently_being_researched	Currently no technology is being researched.	true
+campaign_localised_strings_string_military_force_morale_bonus_value_foreign_waters	Hostile Waters	true
+campaign_localised_strings_string_public_order_region	Region	true
+campaign_localised_strings_string_public_order_family_power_tooltip	The political standing of your family affects how people view you.	true
+campaign_localised_strings_string_raise_legacy_no_candidate	Cannot reinstate legacy.||There are no suitable candidates available.	true
+campaign_localised_strings_string_vik_fact_miercna_mission_east_war	Conquer the settlements of Snotingaham and Northhamtun	true
+campaign_localised_strings_string_vik_assign_to_post	Assign a post to character.	true
+campaign_localised_strings_string_sanitation_tooltip_description_bad	\\nLocal revolt risk outweighs public order. Left unchecked, this settlement is at risk from revolt.\\n	true
+campaign_localised_strings_string_edicts_outgoing_description	[[col:red]]This edict will expire at the start of the next turn.[[/col]]	true
+campaign_localised_strings_string_military_force_morale_bonus_value_horde_in_fighting	Rivalry	true
+campaign_localised_strings_string_cannot_migrate_already_migrating	You are already migrating.	true
+campaign_localised_strings_string_character_type_son	Son	true
+campaign_localised_strings_string_public_order_occupy	Occupation	true
+campaign_localised_strings_string_edicts_disabled_province_incomplete	[[col:red]]You cannot issue edicts in provinces that do not have a governor assigned.[[/col]]	true
+campaign_localised_strings_string_public_order_stable	Public order is stable.	true
+campaign_localised_strings_string_sanitation_tooltip_total_sanitation	Total Public Order:	true
+campaign_localised_strings_string_growth_buildings	Buildings	true
+campaign_localised_strings_string_events_attrition_summary_location_region	Region:	true
+campaign_localised_strings_string_vik_fact_sudreyar_mission_dyflin_conquest	Conquer the settlements of Dyflin and Casteltoun, and eliminate Dyflin.	true
+campaign_localised_strings_string_political_gravitas_breakdown_political_action_character_modifier_positive	Political actions	true
+campaign_localised_strings_string_public_order_revolt	At the current rate, the slaves will revolt in %n turns.	true
+campaign_localised_strings_string_military_force_morale_bonus_value_offices	Besieging	true
+campaign_localised_strings_string_military_force_morale_bankruptcy	Bankruptcy	true
+campaign_localised_strings_string_gdp_poor_fertility_bonus	Poor fertility bonus	true
+campaign_localised_strings_string_vik_fact_kingdom_lochlann	Lochlann	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_din_prys	Create a defensive pact or military alliance with the owner of: Din Prys	true
+campaign_localised_strings_string_public_order_occupy_tooltip	The recent occupation of this settlement is causing unrest. This will gradually decrease each turn.	true
+campaign_localised_strings_string_vik_east_engle_sack	Sack a settlement belonging to West Seaxe.	true
+campaign_localised_strings_string_unit_upgrade_cannot_reason_incorrect_stance	The army is not in the correct stance.	true
+campaign_localised_strings_string_gdp_farming	FARMS	true
+campaign_localised_strings_string_politics_ministerial_position_expected_effects_no_selection	Select a character to assign to office.\\n\\nEffects:	true
+campaign_localised_strings_string_vik_fact_gwined_mission_mierce_2	Remove Mierce from Wales.	true
+campaign_localised_strings_string_vik_fact_gwined_mission_mierce_3	Eliminate Mierce!	true
+campaign_localised_strings_string_vik_fact_gwined_mission_mierce_1	Remove all factions from Wales except Mierce and Gwined.	true
+campaign_localised_strings_string_battle_ambush_they_success	Your army failed to spot an enemy ambush. They have launched a surprise attack, surely giving them the upper hand!	true
+campaign_localised_strings_string_military_force_morale_bonus_value_garrison_stance	Garrisoned	true
+campaign_localised_strings_string_att_eos_religious_mission_build_att_rel_church_east	Convert to or construct 4 Eastern Christian religious buildings without building any other religious buildings.	true
+campaign_localised_strings_string_att_eos_tanukhid_mission_1	Raze 5 Roman-controlled regions.	true
+campaign_localised_strings_string_att_eos_tanukhid_mission_3	Settle your faction.	true
+campaign_localised_strings_string_vik_starting_rebels	Eliminate the rebel army!	true
+campaign_localised_strings_string_att_eos_tanukhid_mission_2	Liberate 3 factions.	true
+campaign_localised_strings_string_politics_ministerial_position_required_age	Required age:	true
+campaign_localised_strings_string_character_retainer_of_full	This character is a retainer of:	true
+campaign_localised_strings_string_sanitation_tooltip_current_squalor	Current revolt risk total:	true
+campaign_localised_strings_string_next_office	Next office:	true
+campaign_localised_strings_string_politics_ministerial_position_term	Term in office:	true
+campaign_localised_strings_string_unit_upgrade_retrain_cannot_reason_none_multiple	There is no further training for these units available in this province.	true
+campaign_localised_strings_string_province_fertility_factor_events	Events	true
+campaign_localised_strings_string_public_order_family_power	Political situation	true
+campaign_localised_strings_string_game_warning_character_loyalty_low	This character has low loyalty:	true
+campaign_localised_strings_string_military_history_foundation_founder	Founded by:	true
+campaign_localised_strings_string_game_warning_food_shortage	Your faction is consuming more food than it produces! You can resolve this problem by disbanding units, or by capturing or constructing food-producing buildings.	true
+campaign_localised_strings_string_public_order_uncertainty_tooltip	Uncertainty	true
+campaign_localised_strings_string_vik_fact_kingdom_scotland	Scotland	true
+campaign_localised_strings_string_politics_action_impossible_cannot_secure_loyalty	[[col:red]]You cannot secure the loyalty of this character.[[/col]]	true
+campaign_localised_strings_string_vik_fact_miercna_mission_east_war_2	Eliminate East Engle!	true
+campaign_localised_strings_string_politics_event_type	Intrigue:	true
+campaign_localised_strings_string_military_force_morale_bonus_value_faction	Faction	true
+campaign_localised_strings_string_gdp_mining	!NOT USED!	true
+campaign_localised_strings_string_unit_upgrade_cannot_reason_damaged_single	The unit is not at full strength.	true
+campaign_localised_strings_string_military_force_morale_bonus_value_buildings	Buildings	true
+campaign_localised_strings_string_province_fertility_factor_season	Season	true
+campaign_localised_strings_string_province_fertility_factor_razing	Razing	true
+campaign_localised_strings_string_vik_mission_strat_clut_athfochla	Vassalise or eliminate Athfochla	true
+campaign_localised_strings_string_public_order_vassal	Vassal	true
+campaign_localised_strings_string_public_order_events_tooltip	Recent events have shaped public opinion.	true
+campaign_localised_strings_string_military_force_morale_bonus_value_civil_war	Civil War	true
+campaign_localised_strings_string_unit_upgrade_retrain_cannot	Retraining not possible:	true
+campaign_localised_strings_string_unit_upgrade_cannot_reason_none_multiple	There is no improved equipment available for these units in this province.	true
+campaign_localised_strings_string_public_order_slaves	Slaves	true
+campaign_localised_strings_string_politics_character_already_governor	This character is already a governor.	true
+campaign_localised_strings_string_unit_upgrade_retrain_header	Retrain	true
+campaign_localised_strings_string_events_attrition_summary_force_army	Army:	true
+campaign_localised_strings_string_raise_navy	Raise a fleet.||Establish a new fleet and appoint a commander to lead it into battle.	true
+campaign_localised_strings_string_public_order_events	Events	true
+campaign_localised_strings_string_politics_action_impossible_actor_not_female	[[col:red]]Only female family members may marry non-family characters.[[/col]]	true
+campaign_localised_strings_string_vik_mission_recruit	Recruit a unit	true
+campaign_localised_strings_string_religion_factor_character	Characters	true
+campaign_localised_strings_string_politics_action_impossible_retainer	Political actions cannot be taken against those characters engaged as retainers.	true
+campaign_localised_strings_string_public_order_slaves_tooltip	Slaves are the lowest level of society, but keep the household and economy running.	true
+campaign_localised_strings_string_military_history_foundation	Foundation:	true
+campaign_localised_strings_string_military_force_morale_won_battle	Battle Won	true
+campaign_localised_strings_string_public_order_uncertainty	Uncertainty (-1 per turn)	true
+campaign_localised_strings_string_vik_fact_miercna_mission_north_diplomacy	Ally with the owner of Mameceaster.	true
+campaign_localised_strings_string_tax_exempt_food_description	Provinces exempt from tax do not produce food.	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_cetretha	Create a defensive pact or military alliance with the owner of: Cetretha	true
+campaign_localised_strings_string_military_force_morale_bonus_value_plague	Bankruptcy	true
+campaign_localised_strings_string_edicts_disabled_cap_reached	[[col:red]]You are currently unable to issue additional edicts.[[/col]]\\nExpansion and development will increase your faction's Fame, thereby allowing you to appoint additional governors and issue further edicts.	true
+campaign_localised_strings_string_game_warning_action_explain	Left-click to take action\\nRight-click to dismiss	true
+campaign_localised_strings_string_vik_fact_miercna_mission_wales_2	Control all major settlements in Wales via direct ownership or through your vassals.	true
+campaign_localised_strings_string_vik_fact_miercna_mission_wales_1	Eliminate Powis and conquer at least 1 major settlement in Wales.	true
+campaign_localised_strings_string_att_eos_religious_mission_build_att_rel_judaism	Convert to or construct 4 Jewish religious buildings without building any other religious buildings.	true
+campaign_localised_strings_string_religion_factor_osmosis	Osmosis	true
+campaign_localised_strings_string_politics_character_heir	Heir	true
+campaign_localised_strings_string_end_turn_warning_unused_edicts	You may still issue an edict in one of governed provinces:	true
+campaign_localised_strings_string_growth_faction	Faction	true
+campaign_localised_strings_string_military_force_growth_events	Faction	true
+campaign_localised_strings_string_end_turn_warning_character_loyalty_low	This man has low loyalty:	true
+campaign_localised_strings_string_growth_raiding	Raiding	true
+campaign_localised_strings_string_raise_army_no_valid_location	Cannot raise an army.||There is no valid location.	true
+campaign_localised_strings_string_military_force_growth_stance	Current Stance	true
+campaign_localised_strings_string_cannot_recruit_unit_source_settlement_besieged	Can't recruit this unit||Source settlement is under siege.	true
+campaign_localised_strings_string_politics_ministerial_position_expected_effects	Assign office to character.\\n\\nEach office can only be held by one character at a time. If someone else already has this title they will be removed from office and take a penalty to loyalty.\\n\\nEffects:	true
+campaign_localised_strings_string_military_history_battles_victory_close	Close victory against:	true
+campaign_localised_strings_string_unlocks_name_building	Unlocks %S Building	true
+campaign_localised_strings_string_politics_event_target_family	Target party:	true
+campaign_localised_strings_string_unit_details_xp	Experience:	true
+campaign_localised_strings_string_military_history_years_service	Years of service:	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_wigraceaster	Create a defensive pact or military alliance with the owner of: Wigraceaster 	true
+campaign_localised_strings_string_politics_event_assassination_wounded	They failed to assassinate him, but managed to wound him as he escaped!	true
+campaign_localised_strings_string_politics_character_left_your_family_for	This character has left your family for the following faction:	true
+campaign_localised_strings_string_edicts_incoming	Pending edict: 	true
+campaign_localised_strings_string_info_panel_effect_summary_force	Force's effects	true
+campaign_localised_strings_string_estates_status_initial	Estates help ensure character loyalty; characters will be unhappy if they have fewer estates than their faction leader. You can only move them from your faction leader to another character. To get more for your leader you must construct estate-giving buildings, conquer regions containing those buildings, use the 'strip estate' action to gain them back, or kill an estate-owning character. Select a character from the list to see what estates they hold, or an estate on the map to see who owns it.	true
+campaign_localised_strings_string_edicts_allowed	You may issue an edict here.	true
+campaign_localised_strings_string_vik_fact_gwined_mission_dewet	Conquer Menevia, Haverfordia, and Cair Mirddin	true
+campaign_localised_strings_string_raise_legacy_no_funds	Cannot reinstate legacy.||You have insufficient funds.	true
+campaign_localised_strings_string_military_history_battles_victory_heroic	Heroic victory against:	true
+campaign_localised_strings_string_tooltip_over_landbridge	Land bridge	true
+campaign_localised_strings_string_military_history_battles_defeat_close	Close defeat by:	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_gleawceaster	Create a defensive pact or military alliance with the owner of: Gleawceaster	true
+campaign_localised_strings_string_military_force_morale_bonus_value_raid_stance	Raiding	true
+campaign_localised_strings_string_end_turn_warning_spare_governor_slot	You may still assign a provincial governor.	true
+campaign_localised_strings_string_general_type_politician	Statesman	true
+campaign_localised_strings_string_edicts_heading	Provincial Edicts	true
+campaign_localised_strings_string_cannot_recruit_unit_army_full	Cannot recruit unit||The army is full.	true
+campaign_localised_strings_string_politics_event_adoption	Offer of adoption.	true
+campaign_localised_strings_string_info_panel_effect_summary_agent	Agent's effects	true
+campaign_localised_strings_string_politics_action_impossible_actor_not_married	[[col:red]]One must be married before being able to divorce.[[/col]]	true
+campaign_localised_strings_string_politics_action_impossible_actor_not_general	[[col:red]]This character is not a general.[[/col]]	true
+campaign_localised_strings_string_game_warning_military_force_taking_attrition	This military force is taking attrition:	true
+campaign_localised_strings_string_vik_fact_dyflin_mission_bregh	Own all settlements in the province of Brega.	true
+campaign_localised_strings_string_campaign_morale_title_tooltip	Supplies	true
+campaign_localised_strings_string_politics_event_assassination_success	They have successfully assassinated him!	true
+campaign_localised_strings_string_gdp_manufacture	INDUSTRY	true
+campaign_localised_strings_string_growth_province	Province & Region	true
+campaign_localised_strings_string_tooltip_labour_points	Growth points:	true
+campaign_localised_strings_string_vik_fact_dyflin_mission_conquer_ireland	All major settlements in Ireland must be controlled by you or one of your vassals.	true
+campaign_localised_strings_string_public_order_desolation	Desolation (next turn only)	true
+campaign_localised_strings_string_details_panel_tradition_cannot_no_skill_points	It has no tradition points.	true
+campaign_localised_strings_string_estates_status_estate	The character who owns this estate is shown in the list on the left. You cannot reassign this estate as it does not belong to your faction leader.	true
+campaign_localised_strings_string_politics_action_impossible_different_faction	[[col:red]]Characters belonging to other factions cannot be acted against.[[/col]]	true
+campaign_localised_strings_string_military_force_morale_bonus_value_characters	Characters	true
+campaign_localised_strings_string_vik_fact_east_engle_mission_northymbre_alive	Eliminate Northymbre and control the settlements of Eoferwic and Northwic.	true
+campaign_localised_strings_string_politics_event_bribe_success	He has accepted the offer and has pledged allegiance to his new party. Now he serves their interests.	true
+campaign_localised_strings_string_details_panel_ancillary_remove	Remove the currently assigned household member or object.	true
+campaign_localised_strings_string_att_eos_axum_mission_1	Control 2 or more Spice resources.	true
+campaign_localised_strings_string_att_eos_axum_mission_2	Achieve a monopoly on the Spice resource.	true
+campaign_localised_strings_string_att_eos_axum_mission_3	Control a Gold resource.	true
+campaign_localised_strings_string_vik_fact_sudreyar_mission_dyflin_puppet	Conquer the province of Brega in Ireland.	true
+campaign_localised_strings_string_politics_action_treasury_cost	Treasury cost: 	true
+campaign_localised_strings_string_cannot_migrate_not_migratory	You cannot migrate because your faction is non-migratory.	true
+campaign_localised_strings_string_public_order_desolation_tooltip	The ravages of war leave little to be happy about, and the displaced people aim their ire at you.	true
+campaign_localised_strings_string_endturn_warning_action_explain	Left-click to take action\\nRight-click to dismiss	true
+campaign_localised_strings_string_military_force_morale_change_of_soil	Foreign Soil	true
+campaign_localised_strings_string_politics_character_cannot_become_governor_travelling	This character cannot be assigned positions when in transit.	true
+campaign_localised_strings_string_politics_event_bribe	Bribery attempt!	true
+campaign_localised_strings_string_politics_event_blackmail_discredited	Their demands were refused and so his reputation has been tarnished by rumours.	true
+campaign_localised_strings_string_game_warning_character_unassigned_skill_points	This character has an unassigned skill:	true
+campaign_localised_strings_string_politics_event_acting_family	Instigating party:	true
+campaign_localised_strings_string_politics_event_marriage_failure	He has refused the marriage offer. The balance of power remains unaltered.	true
+campaign_localised_strings_string_politics_event_adoption_success	He has accepted the offer and has pledged allegiance to his new party. Now he serves their interests.	true
+campaign_localised_strings_string_raise_navy_no_valid_location	Cannot raise a fleet.||There is no valid location.	true
+campaign_localised_strings_string_garrison_no_units_no_building	No garrison ||You don't have any buildings that provide garrison units.	true
+campaign_localised_strings_string_politics_action_impossible_target_own_family	[[col:red]]This action may not be targeted against other family members.[[/col]]	true
+campaign_localised_strings_string_gdp_fertility	FERTILITY	true
+campaign_localised_strings_string_politics_event_assassination	Assassination attempt!	true
+campaign_localised_strings_string_public_order_revolt_next_turn	At the current rate, the slaves will revolt next turn!	true
+campaign_localised_strings_string_vik_fact_kingdom_wales	Cymru	true
+campaign_localised_strings_string_politics_action_make_heir_description	The heir will take charge of the faction once the current faction leader has passed on. Choose the candidate who you feel is best suited to the task, but remember that disinheriting an heir will have a drastic effect on their loyalty.\\n\\nDeclaration of heirship takes immediate effect.	true
+campaign_localised_strings_string_public_order_non_state_religion_tooltip	When people do not support you, they may work against you.	true
+campaign_localised_strings_string_military_force_morale_bonus_value_patrol_stance	Patrolling	true
+campaign_localised_strings_string_public_order_technology	Technologies	true
+campaign_localised_strings_string_vik_fact_dyflin_mission_mainland_ports	Capture and hold 3 ports on the mainland of Britannia.	true
+campaign_localised_strings_string_vik_followers	Followers	true
+campaign_localised_strings_string_military_force_morale_bonus_value_own_waters	Friendly Waters	true
+campaign_localised_strings_string_tooltip_loyalty_header	Loyalty	true
+campaign_localised_strings_string_tooltip_levy_unit_recruitment_unit_mouseover	Left-click to add this levied unit to the queue, right-click for further information.||To levy units, left-click the Hire button.	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_cirenceaster	Create a defensive pact or military alliance with the owner of: Cirenceaster	true
+campaign_localised_strings_string_garrison_no_units_momentarily	No garrison ||Units will begin replenishing next turn.	true
+campaign_localised_strings_string_public_order_culture_tooltip	The melting pot of cultures and styles can bind people together, or create friction.	true
+campaign_localised_strings_string_tooltip_gravitas_header	Influence	true
+campaign_localised_strings_string_estates_status_character_leader	Your faction leader's estates are now highlighted on the map. Select one to then re-assign it to another character.	true
+campaign_localised_strings_string_politics_action_impossible_max_actions_per_turn_reached	[[col:red]]You've performed all allowable political actions this turn.\\n\\nNo more can be enacted this turn.[[/col]]	true
+campaign_localised_strings_string_vik_fact_sudreyar_mission_scoan	Eliminate Circenn.	true
+campaign_localised_strings_string_politics_action_impossible_actor_not_politician	[[col:red]]Only statesmen may seek to become another character's retainer.[[/col]]	true
+campaign_localised_strings_string_agent_recruitment_insufficient_money	You have insufficient funds to appoint a governor.	true
+campaign_localised_strings_string_unit_upgrade_retrain_cannot_reason_none_multiple_horde	There is no further training for these units available within this horde.	true
+campaign_localised_strings_string_vik_mission_circenn_athfochla	Vassalise or eliminate Athfochla	true
+campaign_localised_strings_string_details_panel_tradition_select	This force may adopt an additional tradition.\\nLeft-click a tradition to adopt it.	true
+campaign_localised_strings_string_politics_action_impossible_actor_gravitas_insufficient	[[col:red]]The acting character has insufficient influence for this action.[[/col]]\\n\\nCharacters gain influence through their successes in the field as commanders or governors, or gradually while politicking in the capital.	true
+campaign_localised_strings_string_province_shared	Shared province.	true
+campaign_localised_strings_string_resume_campaign	Resume Campaign	true
+campaign_localised_strings_string_politics_character_status_in_transit	Travelling	true
+campaign_localised_strings_string_public_order_non_state_religion	Other Allegiances	true
+campaign_localised_strings_string_military_force_morale_bonus_value_settle_stance	Encampment	true
+campaign_localised_strings_string_politics_action_gravitas_cost	Influence cost: 	true
+campaign_localised_strings_string_politics_action_impossible_actor_faction_leader_only	[[col:red]]Only the faction leader may pursue this political action.[[/col]]	true
+campaign_localised_strings_string_recruitment_unavailable_cannot_switch_stance	Cannot recruit. This force is currently not in settle stance and doesn't have enough action points to settle.	true
+campaign_localised_strings_string_military_force_morale_bonus_value_tax	Tax	true
+campaign_localised_strings_string_recruitment_levy_from_satrapy	Levy from Vassal Kingdom	true
+campaign_localised_strings_string_raise_navy_blockaded	Cannot raise a fleet.||This settlement's port is being blockaded.	true
+campaign_localised_strings_string_raise_navy_no_candidate	Cannot raise a fleet.||There are no suitable candidates available.	true
+campaign_localised_strings_string_raise_army_no_candidate	Cannot raise an army.||There are no suitable candidates available.	true
+campaign_localised_strings_string_retrain_upgrade_header	Retrain	true
+campaign_localised_strings_string_edicts_current	Current edict: 	true
+campaign_localised_strings_string_vik_fact_kingdom_irish_vikings	Irish Vikings	true
+campaign_localised_strings_string_current_office	Currently held highest office:	true
+campaign_localised_strings_string_political_action_confirm_adopt	Are you sure you want to adopt %s?	true
+campaign_localised_strings_string_confirm_governor_unassignment	Do you want to unassign the selected governor?	true
+campaign_localised_strings_string_public_order_culture	Allegiance	true
+campaign_localised_strings_string_politics_action_impossible_for_regent	[[col:red]]Political action not available for regent.[[/col]]	true
+campaign_localised_strings_string_force_not_in_correct_stance_expedition	Expeditions must be encamped in order to construct buildings. Issuing this order will place the expedition into encampment stance.	true
+campaign_localised_strings_string_politics_action_impossible_actor_post_requirement_fail	[[col:red]]The minimum requirements for this office have not been met.[[/col]]	true
+campaign_localised_strings_string_vik_fact_kingdom_anglo_saxon	Anglo-Saxons	true
+campaign_localised_strings_string_public_order_faction_tooltip	Culture, and by extension national identity, exists not in the physical world, but instead resides within the hearts and minds of the people.	true
+campaign_localised_strings_string_estates_status_estate_leader	You can assign this estate to another character by clicking them on the list, or by dragging it onto a character as well.	true
+campaign_localised_strings_string_unit_upgrade_cannot_reason_none_single	There is no improved equipment available for this unit in this province.	true
+campaign_localised_strings_string_public_order_raiding_tooltip	Raiding	true
+campaign_localised_strings_string_authority_desc	Command level is affected by traits, followers, and offices.	true
+campaign_localised_strings_string_vik_mission_west_seaxe_gwent	Vassalise or eliminate Gwent	true
+campaign_localised_strings_string_military_history_battles_defeat_phyrric	Valiant defeat by:	true
+campaign_localised_strings_string_tooltip_mercenary_recruitment_unit_mouseover	Left-click to add this unit to the queue, right-click for further information. To recruit units, left-click the Recruit Units button.	true
+campaign_localised_strings_string_character_type_child	Child	true
+campaign_localised_strings_string_vik_mission_strat_clut_circenn	Vassalise or eliminate Circenn	true
+campaign_localised_strings_string_politics_event_adoption_failure	He has refused the offer and remains loyal to his own party.	true
+campaign_localised_strings_string_public_order_characters_tooltip	Local stability is improved by the presence of friendly generals and governors, but people are frightened by the presence of enemy generals.	true
+campaign_localised_strings_string_politics_event_marriage_success	The marriage has been arranged and the balance of power redressed.	true
+campaign_localised_strings_string_politics_ministerial_position_expected_effects_when_qualified	The selected character does not yet meet the minimum requirements for this office.\\n\\nEffects:	true
+campaign_localised_strings_string_vik_fact_kingdom_alba	Alba	true
+campaign_localised_strings_string_vik_mission_circenn_strat_clut	Vassalise or eliminate Strat Clut	true
+campaign_localised_strings_string_public_order_resistance_to_occupation_tooltip	Decreases by one each turn	true
+campaign_localised_strings_string_politics_event_marriage	Offer of marriage.	true
+campaign_localised_strings_string_politics_power_support_popular_gravitas	%u influence	true
+campaign_localised_strings_string_public_order_characters	Characters	true
+campaign_localised_strings_string_growth_other	Other	true
+campaign_localised_strings_string_politics_event_assassination_failure	They have failed to assassinate him.	true
+campaign_localised_strings_string_public_order_resistance_to_occupation	Instability (-1 per turn)	true
+campaign_localised_strings_string_growth_taxes	Taxes	true
+campaign_localised_strings_string_invalid_reason_already_occupies	This character occupies this post already	true
+campaign_localised_strings_string_gdp_subsistence	Subsistence	true
+campaign_localised_strings_string_gdp_animal_husbandry	FARMS	true
+campaign_localised_strings_string_public_order_faction	Faction 	true
+campaign_localised_strings_string_details_panel_ancillary_select	No household member or object currently assigned.\\nClick on an available one to assign it to this character. It will take effect from the next turn.	true
+campaign_localised_strings_string_tooltip_cancel_unit_recruitment	Left-click to remove unit from recruitment queue||Right-click for further information	true
+campaign_localised_strings_string_eos_empire_of_the_east	Empire of the East	true
+campaign_localised_strings_string_public_order_raiding	Raiding	true
+campaign_localised_strings_string_political_action_confirm_gather_support	Are you sure you want to hold a feast?	true
+campaign_localised_strings_string_military_force_morale_bonus_value_food	Faction Food	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_castletoun	Create a defensive pact or military alliance with the owner of: Castletoun	true
+campaign_localised_strings_string_political_action_confirm_assassinate	Are you sure you want to assassinate %s?	true
+campaign_localised_strings_string_other_nobles_candidates_header	Candidates	true
+campaign_localised_strings_string_politics_action_impossible_target_self	[[col:red]]Characters may not take action against themselves.[[/col]]	true
+campaign_localised_strings_string_development_points_tooltip_hordes_growth_max_expedition	[[col:yellow]]Population surplus for this expedition is at maximum capacity.[[/col]]	true
+campaign_localised_strings_string_military_history_foundation_location	Location:	true
+campaign_localised_strings_string_public_order_faction_province	%PLACEHOLDER% (UNUSED)	true
+campaign_localised_strings_string_confirm_religious_conversion	Are you sure you want to convert to the following religion:	true
+campaign_localised_strings_string_att_slav_venedians_mission_1	Resettle 5 desolate regions.	true
+campaign_localised_strings_string_public_order_buildings	Buildings	true
+campaign_localised_strings_string_character_retainer_of	Retainer of:	true
+campaign_localised_strings_string_politics_event_divorce	Seek divorce!	true
+campaign_localised_strings_string_unit_details_mancount	Men:	true
+campaign_localised_strings_string_politics_ministerial_position_effects	This character is currently occupying this office, thereby granting the following effects:	true
+campaign_localised_strings_string_growth_armies	Armies	true
+campaign_localised_strings_string_notification_supplies	Insuficient Supplies	true
+campaign_localised_strings_string_events_strings_character_type	Character type:	true
+campaign_localised_strings_string_unit_upgrade_retrain_cannot_reason_none_single_horde	There is no further training for this unit available within this horde.	true
+campaign_localised_strings_string_military_force_morale_sacked_settlement	Spoils of War	true
+campaign_localised_strings_string_public_order_resources	Resources	true
+campaign_localised_strings_string_public_order_rebellion	At the current rate, there will be a rebellion in %n turns.	true
+campaign_localised_strings_string_notification_attrition	Attrition	true
+campaign_localised_strings_string_campaign_ambush_success_chance	Ambush success chance: %d%%	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_bathanceaster	Create a defensive pact or military alliance with the owner of: Bathanceaster	true
+campaign_localised_strings_string_cannot_recruit_force_region_under_siege	This settlement is under siege. You may not raise forces here until it has been lifted.	true
+campaign_localised_strings_string_military_force_morale_attrition	Attrition	true
+campaign_localised_strings_string_political_gravitas_breakdown_character_leader_bonus_positive	Events & external influences	true
+campaign_localised_strings_string_politics_event_divorce_success	Marriage annulled.	true
+campaign_localised_strings_string_unit_upgrade_cannot_reason_foreign_territory	The army is in foreign territory.	true
+campaign_localised_strings_string_public_order_buildings_tooltip	Gatherings of warriors, worship, or wine ease the worries of your people, but the squalor caused by industrialisation creates unrest.	true
+campaign_localised_strings_string_confirm_begin_migration	Are you sure you wish to begin migration?	true
+campaign_localised_strings_string_military_force_morale_bonus_value_technologies	Technologies	true
+campaign_localised_strings_string_public_order_resources_tooltip	When wealth and luxury flow through the city gates, the populace tend not to care where it came from.	true
+campaign_localised_strings_string_politics_action_impossible_target_already_has_retainer	[[col:red]]This character already has a retainer.[[/col]]	true
+campaign_localised_strings_string_button_start_migration	Begin Migration||Abandon your remaining settlements and begin migration. Your treasury will be reimbursed and your forces will carry their buildings with them for resettlement, be it recolonising an empty settlement or capturing an existing one. Population surplus is redistributed amongst your existing forces.	true
+campaign_localised_strings_string_att_slav_sclaveneans_mission_2	Do not lose a battle for 20 turns.	true
+campaign_localised_strings_string_att_slav_sclaveneans_mission_1	Defeat the Huns in battle 5 times.	true
+campaign_localised_strings_string_military_force_morale_supplies	Supplies	true
+campaign_localised_strings_string_notification_research	Research Available	true
+campaign_localised_strings_string_political_gravitas_breakdown_character_negative	Base influence	true
+campaign_localised_strings_string_siege_cannot_surrender_without_blockade	This settlement will not surrender as long as it is sustained by a port. Blockade the settlement to starve the populace out.	true
+campaign_localised_strings_string_political_gravitas_breakdown_character_estates_bonus_positive	Estates held	true
+campaign_localised_strings_string_character_neutral_effect_level	Neutral effect level. No negative or positive effects applied.	true
+campaign_localised_strings_string_raise_legacy_besieged	Cannot reinstate legacy.||This settlement is under siege.	true
+campaign_localised_strings_string_battle_ambush_they_intercept	Your army spotted an enemy force waiting to ambush. Undeterred by their discovery, the enemy is moving to intercept.	true
+campaign_localised_strings_string_military_force_morale_kings_own	King's Own	true
+campaign_localised_strings_string_politics_action_cancel	Cancel this political action.	true
+campaign_localised_strings_string_military_force_morale_concurrent_wars	Concurrent Wars	true
+campaign_localised_strings_string_development_points_tooltip_hordes_growth_max	[[col:yellow]]Population surplus for this horde is at maximum capacity.[[/col]]	true
+campaign_localised_strings_string_vik_fact_dyflin_mission_conquer_midhe	Vassalise or eliminate Mide.	true
+campaign_localised_strings_string_game_warning_building_requires_repair	Building requires repair.	true
+campaign_localised_strings_string_political_gravitas_breakdown_character_governor_bonus_negative	Other factors	true
+campaign_localised_strings_string_gdp_fertility_livestock	FARMS (FERTILITY)	true
+campaign_localised_strings_string_imperium_tooltip_03	Impressive||Word of your achievements has travelled far; you are regarded with both respect and caution.	true
+campaign_localised_strings_string_imperium_tooltip_02	Noteworthy||You have estabilished yourself as a worthy power.	true
+campaign_localised_strings_string_imperium_tooltip_01	Insignificant||Your power is of little consequence to the world...yet!	true
+campaign_localised_strings_string_imperium_tooltip_07	Supreme||Your power is supreme.	true
+campaign_localised_strings_string_imperium_tooltip_06	Terrifying||The world trembles before your might.	true
+campaign_localised_strings_string_imperium_tooltip_05	Intimidating||Your power is both feared and coveted by your enemies.	true
+campaign_localised_strings_string_imperium_tooltip_04	Inspiring||Your accomplishments are great; a role model - and challenge - for all.	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_bebbanburg	Create a defensive pact or military alliance with the owner of: Bebbanburg	true
+campaign_localised_strings_string_notification_loyalty	Low Loyalty	true
+campaign_localised_strings_string_religion_factor_faction_traits	Faction Leader	true
+campaign_localised_strings_string_public_order_province	Province	true
+campaign_localised_strings_string_military_force_morale_released_captives	No Captives	true
+campaign_localised_strings_string_military_force_morale_bonus_value_own_territory	Friendly Territory	true
+campaign_localised_strings_string_details_panel_tradition_cannot_select	This force cannot adopt this tradition:	true
+campaign_localised_strings_string_political_gravitas_breakdown_character_bonus_negative	Character traits & offices	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_hagustaldes	Create a defensive pact or military alliance with the owner of: Hagustaldes	true
+campaign_localised_strings_string_gdp_land_trade	!NOT USED!	true
+campaign_localised_strings_string_military_force_morale_bonus_value_march_stance	March Stance	true
+campaign_localised_strings_string_politics_action_impossible_target_dead	[[col:red]]This character is dead! They cannot be acted against.[[/col]]	true
+campaign_localised_strings_string_development_points_tooltip_hordes_insufficent_development_points_number	You need %n population surplus.||The horde will grow in time, but a combination of raiding and settling, along with the appropriate buildings, will help increase its rate.	true
+campaign_localised_strings_string_politics_action_impossible_for_character_performed_it_this_turn	[[col:red]]Unable to perform action. You can only attempt each political action on a character once per turn.[[/col]]	true
+campaign_localised_strings_string_raise_legacy_no_surplus	Cannot reinstate legacy.||You do not have enough population surplus.	true
+campaign_localised_strings_string_raise_legacy	Reinstate a legacy.||Revive the name of one of your defeated or disbanded force.||The new force will retain all the traditions of its predecessor.	true
+campaign_localised_strings_string_unit_upgrade_cannot_reason_none_single_horde	There is no improved equipment available for this unit in this horde.	true
+campaign_localised_strings_string_politics_cursus_current_level	Current level	true
+campaign_localised_strings_string_notification_governor	Governance Available	true
+campaign_localised_strings_string_details_panel_tradition_cannot_low_rank	Its rank is too low.	true
+campaign_localised_strings_string_gdp_local_trade	COMMERCE	true
+campaign_localised_strings_string_raise_force_navy_cannot	Cannot raise fleet	true
+campaign_localised_strings_string_cannot_recruit_agent_region_not_owned	This settlement does not belong to you. You may not recruit an agent here.	true
+campaign_localised_strings_string_military_force_morale_bonus_value_faction_trait	Faction Trait	true
+campaign_localised_strings_string_politics_event_outcome	Consequence	true
+campaign_localised_strings_string_political_gravitas_breakdown_character_leader_bonus_negative	Events & external influences	true
+campaign_localised_strings_string_game_warning_province_public_order_low	This province has low public order:	true
+campaign_localised_strings_string_politics_power_support_popular_current	Current dominion:	true
+campaign_localised_strings_string_cannot_issue_edict_to_unowned_region	[[col:red]]You can only issue edicts within regions that you own.[[/col]]	true
+campaign_localised_strings_string_vik_mission_west_seaxe_cerneu	Vassalise or eliminate Cerneu	true
+campaign_localised_strings_string_politics_event_target_character	Target:	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_doneceaster	Create a defensive pact or military alliance with the owner of: Doneceaster	true
+campaign_localised_strings_string_details_panel_skills_cannot_low_rank	Their rank is too low.	true
+campaign_localised_strings_string_cunning_desc	Governance level is affected by traits, followers, and offices.	true
+campaign_localised_strings_string_cannot_recruit_agent_region_under_siege	This settlement is under siege. You may not recruit an agent here until it has been lifted.	true
+campaign_localised_strings_string_politics_governor_cap_reached	You already have the maximum number of governors.	true
+campaign_localised_strings_string_politics_power_support_political_description	Control is a measure of your mastery of politics; your power over the elite. It fluctuates as your family members engage in political intrigues and as other campaign events unfold.\\n\\nCombined with dominion, it defines your family's overall power.	true
+campaign_localised_strings_string_political_action_confirm_strip_estate	Are you sure you want to strip this estate from %s? This may have political implications.	true
+campaign_localised_strings_string_unit_upgrade_retrain_cannot_reason_none_single	There is no further training for this unit available in this province.	true
+campaign_localised_strings_string_tooltip_gravitas_description	Influence represents a character's political power. Your faction will gain various bonuses and penalties based on the faction leader's influence. Other characters will have a loyalty penalty if they have higher influence than the faction leader.	true
+campaign_localised_strings_string_notification_rebellion	Risk of Rebellion	true
+campaign_localised_strings_string_edicts_cancel	Cancel edict\\nThe current edict will cease to take effect at the start of the next turn.	true
+campaign_localised_strings_string_vik_circenn_stone_of_destiny	Whomsoever possesses the fabled Stone of Destiny controls the throne, and of course who sits upon it. Seek it out and secure your kingdom's future!	true
+campaign_localised_strings_string_raise_legacy_blockaded	Cannot reinstate legacy.||This settlement's port is being blockaded.	true
+campaign_localised_strings_string_garrison_no_units_siege	No garrison ||Garrison cannot replenish while the city is under siege.	true
+campaign_localised_strings_string_military_force_morale_decimated	Decimated	true
+campaign_localised_strings_string_gdp_sea_trade	Maritime Commerce	true
+campaign_localised_strings_string_public_order_improving	Public order is improving. 	true
+campaign_localised_strings_string_end_turn_warning_character_skill_to_be_picked	This character has an unassigned skill:	true
+campaign_localised_strings_string_vik_sudreyar_assembly_blockade	Blockade a port	true
+campaign_localised_strings_string_military_force_morale_ambitious_leader	Ambitious Leader	true
+campaign_localised_strings_string_details_panel_tradition_unlocked_rank	Unlocked at rank:	true
+campaign_localised_strings_string_gdp_learning	!NOT USED!	true
+campaign_localised_strings_string_growth_tooltip_description_expedition	As the expedition grows, its population can be used to strengthen or spawn new expeditions.	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_wintanceaster	Create a defensive pact or military alliance with the owner of: Wintanceaster	true
+campaign_localised_strings_string_unit_upgrade_cannot_reason_insufficient_funds	You have insufficient funds.	true
+campaign_localised_strings_string_political_action_confirm_declare_heir	Are you sure you want to declare %s your heir?	true
+campaign_localised_strings_string_public_order_military_crackdown_tooltip	When civil means fail, order will be maintained with the threat of steel. 	true
+campaign_localised_strings_string_political_gravitas_breakdown_character_bonus_positive	Character traits & offices	true
+campaign_localised_strings_string_unit_upgrade_cannot_reason_none_multiple_horde	There is no improved equipment available for these units in this horde.	true
+campaign_localised_strings_string_public_order_military_activity	Military presence	true
+campaign_localised_strings_string_politics_character_is_faction	This character is a part of the following faction's family:	true
+campaign_localised_strings_string_cannot_recruit_force_region_not_owned	This settlement does not belong to you. You may not raise forces here.	true
+campaign_localised_strings_string_raise_force_navy_cannot_port_required	[[col:red]]You can only raise fleets in port settlements.[[/col]]	true
+campaign_localised_strings_string_vik_mission_northymbre_mierce	Vassalise or eliminate Mierce	true
+campaign_localised_strings_string_public_order_buildings_squalor_tooltip	Revolt Risk	true
+campaign_localised_strings_string_public_order_banditry_tooltip	Vagabonds and ruffians disrupt the natural flow of society, disturbing the peace and sowing unhappiness	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_hwitan_aerne	Create a defensive pact or military alliance with the owner of: Hwitan Aerne	true
+campaign_localised_strings_string_details_panel_ancillary_none	There are currently no household members or objects available for assignment.	true
+campaign_localised_strings_string_public_order_conquest_tooltip	The privations of war and military oppression are making the people rebellious.	true
+campaign_localised_strings_string_public_order_baseline_tooltip	Your campaign difficulty setting will affect public order. 	true
+campaign_localised_strings_string_province_fertility_factor_base	Base fertility	true
+campaign_localised_strings_string_politics_character_cannot_act_wounded	This character cannot perform political actions, or have actions performed on them, whilst wounded.	true
+campaign_localised_strings_string_political_gravitas_breakdown_character_positive	Base influence	true
+campaign_localised_strings_string_vik_mission_circenn_orkneyar_a	Eliminate Orkneyar	true
+campaign_localised_strings_string_vik_mission_circenn_orkneyar_b	Eliminate Orkneyar	true
+campaign_localised_strings_string_public_order_buildings_squalor	Buildings	true
+campaign_localised_strings_string_current_turn	Current turn:	true
+campaign_localised_strings_string_political_gravitas_breakdown_character_estates_bonus_negative	Estates held	true
+campaign_localised_strings_string_vik_fact_gwined_alliance_missions_snotingaham	Create a defensive pact or military alliance with the owner of: Snotingaham	true
+campaign_localised_strings_string_political_action_confirm_diminish_popularity	Are you sure you want to lower the influence of %s?	true
+campaign_localised_strings_string_public_order_banditry	Banditry	true
+campaign_localised_strings_string_game_warning_not_researching	You are not currently researching any technologies.	true
+campaign_localised_strings_string_military_force_morale_bonus_value_guarded_navy	Escorting Transports	true
+campaign_localised_strings_string_vik_civ_market_1_category_title	Trade	true
+campaign_localised_strings_string_military_force_morale_raiding	Raiding	true
+campaign_localised_strings_string_raise_legacy_no_legacy	Cannot reinstate legacy.||You have no military legacies to reinstate.	true
+campaign_localised_strings_string_public_order_garrison	Garrison	true
+campaign_localised_strings_string_politics_character_cannot_be_acted_or_act_travelling	This character cannot act or be acted upon as either they or your faction leader are in transit.	true
+campaign_localised_strings_string_public_order_baseline	Difficulty level	true
+campaign_localised_strings_string_public_order_conquest	Conquest (next turn only)	true
+campaign_localised_strings_string_cannot_recruit_unit_source_settlement_blockaded	Can't recruit this unit||Source settlement is blockaded.	true
+campaign_localised_strings_string_character_type_daughter	Daughter	true
+campaign_localised_strings_string_edicts_issued	Edicts issued:	true
+campaign_localised_strings_string_political_gravitas_breakdown_character_governor_bonus_positive	Other factors	true
+campaign_localised_strings_string_province_owned	Owned province.	true
+campaign_localised_strings_string_general_type_general	General	true
+campaign_localised_strings_string_scripted_rebel_chance	Rebellions can occur if your public order is negative. Your current chance of rebellion is: %n.	true
+campaign_localised_strings_string_political_action_confirm_secure_loyalty	Are you sure you want to secure the loyalty of %s?	true
+campaign_localised_strings_string_public_order_military_crackdown	Military crackdown	true
+campaign_localised_strings_string_vik_civ_leader_1_category_title	Leadership	true
+campaign_localised_strings_string_military_history_battles_defeat_heroic	Crushing defeat by:	true
+campaign_localised_strings_string_details_panel_ancillary_cannot_assign	[[col:yellow]]There are currently no household members or objects available for assignment.[[/col]]	true
+campaign_localised_strings_string_general_type_admiral	Admiral	true
+campaign_localised_strings_string_sanitation_tooltip_current_sanitation	Current public order total:	true
+campaign_localised_strings_string_public_order_military_activity_tooltip	Recent military activity in the region has given the people reason to talk	true
+campaign_localised_strings_string_vik_civ_farm_1_category_title	Agriculture	true
+campaign_localised_strings_string_vik_civ_army_1_category_title	Military Support	true

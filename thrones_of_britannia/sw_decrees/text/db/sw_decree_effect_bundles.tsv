@@ -1,0 +1,42 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/sw_decree_effect_bundles.loc		
+effect_bundles_localised_title_sw_decree_mierce_church	Donate to the Church	false
+effect_bundles_localised_title_sw_decree_mierce_lords	Donate to our Lords	false
+effect_bundles_localised_title_sw_decree_mierce_pay_hoards	Pay into the Hoard	false
+effect_bundles_localised_title_sw_decree_mierce_warriors	Donate to our Warriors	false
+effect_bundles_localised_title_sw_decree_northleode_bebbanburg	Bastion of the Faith	false
+effect_bundles_localised_title_sw_decree_northleode_dun_foither	Northern Conquests	false
+effect_bundles_localised_title_sw_decree_northleode_tamworthige	Bretwalda	false
+effect_bundles_localised_title_sw_decree_northleode_eoferwic	Restoration of the Kingdom	false
+effect_bundles_localised_title_sw_decree_wessex_ad_hoc_levy	Ad Hoc Levy	false
+effect_bundles_localised_title_sw_decree_wessex_fyrd	Raise the Fyrd	false
+effect_bundles_localised_title_sw_decree_wessex_scholarship	Scholarly Works	false
+effect_bundles_localised_title_sw_decree_wessex_witan	Assemble the Witan	false
+effect_bundles_localised_title_sw_hoards_0	Empty Hoard	false
+effect_bundles_localised_title_sw_hoards_1	Small Hoard	false
+effect_bundles_localised_title_sw_hoards_2	Impressive Hoard	false
+effect_bundles_localised_title_sw_hoards_3	Massive Hoard	false
+effect_bundles_localised_description_sw_decree_mierce_church	Donate to the Church	false
+effect_bundles_localised_description_sw_decree_mierce_lords	Donate to our Lords	false
+effect_bundles_localised_description_sw_decree_mierce_pay_hoards	Pay into the Hoard	false
+effect_bundles_localised_description_sw_decree_mierce_warriors	Donate to our Warriors	false
+effect_bundles_localised_description_sw_decree_northleode_bebbanburg	Bastion of the Faith	false
+effect_bundles_localised_description_sw_decree_northleode_dun_foither	Northern Conquests	false
+effect_bundles_localised_description_sw_decree_northleode_tamworthige	Bretwalda	false
+effect_bundles_localised_description_sw_decree_northleode_eoferwic	Restoration of the Kingdom	false
+effect_bundles_localised_description_sw_decree_wessex_ad_hoc_levy	Ad Hoc Levy	false
+effect_bundles_localised_description_sw_decree_wessex_fyrd	Raise the Fyrd	false
+effect_bundles_localised_description_sw_decree_wessex_scholarship	Scholarly Works	false
+effect_bundles_localised_description_sw_decree_wessex_witan	Assemble the Witan	false
+effect_bundles_localised_description_sw_hoards_0	Your Hoard is completely empty! How embarassing. Issue Decrees to hoard our wealth. \\n\\n[[col:green]] The rich get richer. Hoards provide increases to tax income faction wide and can be spent on Decrees to bolster your Kingdom.[[/col]]\\n\\n[[col:yellow]]However, your hoarded wealth will encourage the jealousy of generals and governors, reducing their loyalty.[[/col]]	false
+effect_bundles_localised_description_sw_hoards_1	Your Hoard is modest, in so far as piles of Hoarded gold can be modest.  \\n\\n[[col:green]] The rich get richer. Hoards provide increases to tax income faction wide and can be spent on Decrees to bolster your Kingdom.[[/col]]\\n\\n[[col:yellow]]However, your hoarded wealth will encourage the jealousy of generals and governors, reducing their loyalty.[[/col]]	false
+effect_bundles_localised_description_sw_hoards_2	Your Hoard is quite impressive. Merchants and Vikings from far off lands hear of your wealth and make plans to visit Miercna.  \\n\\n[[col:green]] The rich get richer. Hoards provide increases to tax income faction wide and can be spent on Decrees to bolster your Kingdom.[[/col]]\\n\\n[[col:yellow]]However, your hoarded wealth will encourage the jealousy of generals and governors, reducing their loyalty.[[/col]]	false
+effect_bundles_localised_description_sw_hoards_3	Your Hoard is massive! During the struggles of war and winter, your people can take heart in how rich their King has become. \\n\\n[[col:green]] The rich get richer. Hoards provide increases to tax income faction wide and can be spent on Decrees to bolster your Kingdom.[[/col]]\\n\\n[[col:yellow]]However, your hoarded wealth will encourage the jealousy of generals and governors, reducing their loyalty.[[/col]]	false
+effect_bundles_localised_title_sw_decree_gwined_song_of_mead	Song of Mead	false
+effect_bundles_localised_title_sw_decree_gwined_song_of_horses	Song of the Horses	false
+effect_bundles_localised_title_sw_decree_gwined_song_of_pendragon	Elegy of Ulther Pen	false
+effect_bundles_localised_title_sw_decree_gwined_song_of_thousand_sons	Elegy of a Thousand Sons	false
+effect_bundles_localised_description_sw_decree_gwined_song_of_mead	Song of Mead	false
+effect_bundles_localised_description_sw_decree_gwined_song_of_horses	Song of the Horses	false
+effect_bundles_localised_description_sw_decree_gwined_song_of_pendragon	Elegy of Ulther Pen	false
+effect_bundles_localised_description_sw_decree_gwined_song_of_thousand_sons	Elegy of a Thousand Sons	false

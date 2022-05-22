@@ -1,0 +1,3 @@
+party	animation	uniform	x_offset	y_offset	animation_game	name
+#frontend_faction_leaders_tables;5;db/frontend_faction_leaders_tables/new_character_art						
+vik_politics_northleode_ruler	animations/ROME2/human/campaign/general/gen_battle_idle.anim	UI/Portraits/Portholes/vik_cult/ecgberht_0.png	0.0	0.0	animations/ROME2/human/campaign/general/gen_battle_idle.anim	2147355538

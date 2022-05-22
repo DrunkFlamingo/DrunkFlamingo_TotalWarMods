@@ -1,0 +1,17 @@
+campaign	resource
+#resources_to_campaign_junctions_tables;0;db/resources_to_campaign_junctions_tables/resources_to_campaign_junctions	
+vik_attila	res_vik_cloth
+vik_attila	res_vik_copper
+vik_attila	res_vik_gold
+vik_attila	res_vik_iron
+vik_attila	res_vik_lead
+vik_attila	res_vik_leather
+vik_attila	res_vik_pottery
+vik_attila	res_vik_salt
+vik_attila	res_vik_silver
+vik_attila	res_vik_tin
+vik_attila	res_vik_wood
+vik_attila	shield_candles
+vik_attila	shield_steel
+vik_attila	shield_textiles
+vik_attila	shield_jewellery

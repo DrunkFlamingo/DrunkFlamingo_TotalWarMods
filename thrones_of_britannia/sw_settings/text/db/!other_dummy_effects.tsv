@@ -1,0 +1,32 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/!other_dummy_effects.loc		
+effects_description_sw_dummy_benefits_wise	Traits from this path provide benefits to Research Rate and Governance	true
+effects_description_sw_dummy_benefits_noble	Traits from this path provide benefits to kingship, politics and authority	true
+effects_description_sw_dummy_benefits_sinful	Traits from this path provide benefits to Viking soldiers and culture	true
+effects_description_sw_dummy_benefits_virtuous	Traits from this path provide benefits to Research Rate, Authority and Public Order	true
+effects_description_sw_dummy_benefits_brutish	Traits from this path provide benefits to political actions and public order, but may promote unlawful behaviour.	true
+effects_description_sw_dummy_benefits_malicious	Traits from this path provide bonuses to political actions and control, but may promote scheming.	true
+effects_description_sw_dummy_benefits_foolish	Traits from this path provide bonuses to Public Order and Corruption.	true
+effects_description_sw_dummy_benefits_industrious	Traits from this path provide bonuses to Wealth and Authority, but may promote greed.	true
+effects_description_sw_dummy_benefits_cowardly	Traits from this path provide bonuses to Agriculture and Public Order	true
+effects_description_sw_dummy_benefits_heroic	Traits from this path provide bonuses to Battles and Command.	true
+effects_description_sw_trait_sympathy_wise	When the King follows the Path of the Scholar, loyal characters are more likely to follow the paths of the Scholar, Judge or Saint.	true
+effects_description_sw_trait_sympathy_noble	When the King follows the Path of the Noble, loyal characters are more likely to follow it as well.	true
+effects_description_sw_trait_sympathy_sinful	When the King follows the Path of the Heathen, loyal characters are unlikely to become allied to the Church	true
+effects_description_sw_trait_sympathy_virtuous	When the King follows the Path of the Saint, loyal characters are unlikely to entertain other religions.	true
+effects_description_sw_trait_sympathy_brutish	When the King follows the Path of the Brute, loyal characters are more likely to follow it as well.	true
+effects_description_sw_trait_sympathy_malicious	When the King follows the Path of the Tyrant, loyal characters are more likely to follow it as well.	true
+effects_description_sw_trait_sympathy_foolish	When the King follows the Path of the Judge, loyal characters are more likely to follow the Paths of the Judge, Scholar or Saint.	true
+effects_description_sw_trait_sympathy_industrious	When the King follows the Path of the Magnate, loyal characters are more likely to follow it as well.	true
+effects_description_sw_trait_sympathy_cowardly	When the King follows the Path of the Elder, loyal characters are more likely to follow the Paths of the Judge, Scholar, or Saint.	true
+effects_description_sw_trait_sympathy_heroic	When the King follows the Path of the Warrior, loyal characters are more likely to follow the Paths of the Warrior, Heathen, or Brute.	true
+effects_description_sw_trait_antipathy_wise	When the King follows the Path of the Scholar, disloyal characters are more likely to follow the Path of the Brute.	true
+effects_description_sw_trait_antipathy_noble	When the King follows the Path of the Noble, disloyal characters are more likely to follow the Paths of the Tyrant and the Elder. 	true
+effects_description_sw_trait_antipathy_sinful	When the King follows the Path of the Heathen, disloyal characters are more likely to follow the Path of the Saint.	true
+effects_description_sw_trait_antipathy_virtuous	When the King follows the Path of the Saint, disloyal characters are more likely to follow the Paths of the Heathen, Brute or Magnate.	true
+effects_description_sw_trait_antipathy_brutish	When the King follows the Path of the Brute, disloyal characters are more likely to follow the Paths of the Brute, Tyrant or Judge.	true
+effects_description_sw_trait_antipathy_malicious	When the King follows the Path of the Tyrant, disloyal characters are more likely to follow the Paths of the Brute, Tyrant or Judge.	true
+effects_description_sw_trait_antipathy_foolish	When the King follows the Path of the Judge, disloyal characters are more likely to follow the Path of the Magnate or Noble.	true
+effects_description_sw_trait_antipathy_industrious	When the King follows the Path of the Magnate, disloyal characters are more likely to follow the Paths of the Brute, Tyrant or Judge.	true
+effects_description_sw_trait_antipathy_cowardly	When the King follows the Path of the Elder, disloyal characters are more likely to follow the Paths of the Noble, Magnate or Tyrant.	true
+effects_description_sw_trait_antipathy_heroic	When the King follows the Path of the Warrior, disloyal characters are more likely to follow the Paths of the Judge, Magnate or Saint.	true

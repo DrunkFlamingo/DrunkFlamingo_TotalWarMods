@@ -1,0 +1,27 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/building_effects				
+shieldwall_great_hall_construction	construction.png	25	construction.png	false
+shieldwall_gva_port_bonus	port.png	26	port.png	false
+shieldwall_gva_hidden_farm_income		0		true
+shieldwall_gva_hidden_farm_food		0		false
+shieldwall_gva_farm_tradeoff	food.png	1	food.png	false
+shieldwall_demand_gold		0		true
+shieldwall_demand_silver		0		true
+shieldwall_demand_iron		0		true
+shieldwall_demand_steel		0		true
+shieldwall_demand_copper		0		true
+shieldwall_demand_tin		0		true
+shieldwall_demand_cloth		0		true
+shieldwall_has_variable_income_cloth	cloth.png	3	cloth.png	true
+shieldwall_has_variable_income_iron	iron.png	3	iron.png	true
+shieldwall_has_variable_income_gold_silver	gold.png	3	gold.png	true
+shieldwall_has_variable_income_copper_tin	copper.png	3	copper.png	true
+shieldwall_has_variable_income_church	lead.png	3	lead.png	true
+shieldwall_variable_income_increase_artisans		0		true
+shieldwall_variable_income_increase_textiles		0		true
+shieldwall_variable_income_increase_church		0		true
+shieldwall_variable_income_increase_forge		0		true
+shieldwall_variable_income_increase_jeweller		0		true
+sw_allegience_hidden		0		true
+shieldwall_market_settlement_building_income	income.png	1	income.png	true
+sw_food_per_vassal	food.png	1	food.png	false

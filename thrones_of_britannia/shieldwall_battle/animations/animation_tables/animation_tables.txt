@@ -1,0 +1,712 @@
+version 1
+
+
+animation_table engine_base
+{
+		skeleton_type		engine
+
+
+		fragment		engine_fragment				
+}
+
+
+animation_table fauna_crow
+{
+		skeleton_type		fauna_bird
+
+
+		fragment		fauna_crow_fragment				
+}
+
+
+animation_table fauna_deer
+{
+		skeleton_type		fauna_deer
+
+
+		fragment		fauna_deer_fragment				
+}
+
+
+animation_table fauna_ibis
+{
+		skeleton_type		fauna_bird
+
+
+		fragment		fauna_ibis_fragment				
+}
+
+
+animation_table fauna_lion
+{
+		skeleton_type		lion
+
+
+		fragment		fauna_lion_fragment				
+}
+
+
+animation_table fauna_milan
+{
+		skeleton_type		fauna_bird
+
+
+		fragment		fauna_milan_fragment				
+}
+
+
+animation_table fauna_peasant
+{
+		skeleton_type		rome_man_game
+
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		fauna_peasant_fragment				
+}
+
+
+animation_table fauna_seagull
+{
+		skeleton_type		fauna_bird
+
+
+		fragment		fauna_seagull_fragment				
+}
+
+
+animation_table fauna_turtle_dove
+{
+		skeleton_type		fauna_bird
+
+
+		fragment		fauna_turtle_dove_fragment				
+}
+
+
+animation_table fauna_vulture
+{
+		skeleton_type		fauna_bird
+
+
+		fragment		fauna_vulture_fragment				
+}
+
+
+animation_table fauna_whale
+{
+		skeleton_type		fauna_whale
+
+
+		fragment		fauna_whale_fragment				
+}
+
+
+animation_table fauna_wolf
+{
+		skeleton_type		wolf
+
+
+		fragment		fauna_wolf_fragment				
+}
+
+
+animation_table rome_animal_boar
+{
+		skeleton_type		boar
+
+
+		fragment		rome_animal_boar_fragment				
+		fragment		rome_animal_boar_matched_combat_fragment				
+}
+
+
+animation_table rome_animal_mastiff
+{
+		skeleton_type		bandogge_mastiff
+
+
+		fragment		rome_animal_mastiff_fragment				
+		fragment		rome_animal_mastiff_matched_combat_fragment				
+}
+
+
+animation_table rome_engine_onager
+{
+		skeleton_type		onager
+
+
+		fragment		rome_engine_onager_fragment				
+}
+
+
+animation_table rome_engine_onager_large
+{
+		skeleton_type		onager_large
+
+
+		fragment		rome_engine_onager_large_fragment				
+}
+
+
+animation_table rome_fauna_boar
+{
+		skeleton_type		boar
+
+
+		fragment		rome_animal_boar_fragment				
+}
+
+
+animation_table rome_man_axe_shield_javelin_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_axe_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_axe_shield_fragment				
+		fragment		rome_man_axe_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_axe_shield_fragment				
+		fragment		rome_horse_rider_axe_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_fragment				
+}
+
+
+animation_table rome_man_axe_shield_javelin_precursor_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_axe_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_axe_shield_fragment				
+		fragment		rome_man_axe_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_precursor_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_axe_shield_fragment				
+		fragment		rome_horse_rider_axe_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_precursor_fragment				
+}
+
+
+animation_table rome_man_civilian_spear_2h_foot
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_spear_fragment				
+		fragment		rome_man_spear_matched_combat_fragment				
+		fragment		rome_man_civilian_spear_2h_fragment				
+}
+
+
+animation_table rome_man_civilian_sword_foot
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_sword_fragment				
+		fragment		rome_man_sword_matched_combat_fragment				
+		fragment		rome_man_civilian_sword_fragment				
+}
+
+
+animation_table rome_man_falx_javelin_precursor_foot
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_falx_fragment				
+		fragment		rome_man_falx_matched_combat_fragment				
+		fragment		rome_man_javelin_precursor_fragment				
+}
+
+
+animation_table rome_man_lance_sword_shield_javelin_precursor_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_sword_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_sword_shield_fragment				
+		fragment		rome_man_sword_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_precursor_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_sword_shield_fragment				
+		fragment		rome_horse_rider_sword_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_lance_fragment				
+		fragment		rome_horse_rider_javelin_precursor_fragment				
+		fragment		rome_horse_rider_cancel_raise_shields				
+}
+
+
+animation_table rome_man_spear_shield_javelin_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_spear_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_spear_shield_fragment				
+		fragment		rome_man_spear_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_spear_shield_fragment				
+		fragment		rome_horse_rider_spear_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_fragment				
+}
+
+
+animation_table rome_man_spear_shield_javelin_precursor_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_spear_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_spear_shield_fragment				
+		fragment		rome_man_spear_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_precursor_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_spear_shield_fragment				
+		fragment		rome_horse_rider_spear_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_precursor_fragment				
+}
+
+
+animation_table rome_man_standard_bearer
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_spear_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_standard_bearer_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_standard_bearer_fragment				
+		fragment		rome_horse_rider_spear_shield_matched_combat_fragment				
+}
+
+
+animation_table rome_man_sword_bow_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_sword
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_sword_fragment				
+		fragment		rome_man_sword_matched_combat_fragment				
+		fragment		rome_man_bow_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_sword_fragment				
+		fragment		rome_horse_rider_sword_matched_combat_fragment				
+		fragment		rome_horse_rider_bow_fragment				
+}
+
+
+animation_table rome_man_sword_bow_long_foot
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_sword_fragment				
+		fragment		rome_man_sword_matched_combat_fragment				
+		fragment		rome_man_longbow_fragment				
+}
+
+
+animation_table rome_man_sword_crossbow_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_sword
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_sword_fragment				
+		fragment		rome_man_sword_matched_combat_fragment				
+		fragment		rome_man_crossbow_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_sword_fragment				
+		fragment		rome_horse_rider_sword_matched_combat_fragment				
+		fragment		rome_horse_rider_crossbow_fragment				
+}
+
+
+animation_table rome_man_sword_javelin_precursor_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_sword
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_sword_fragment				
+		fragment		rome_man_sword_matched_combat_fragment				
+		fragment		rome_man_javelin_precursor_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_sword_fragment				
+		fragment		rome_horse_rider_sword_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_precursor_fragment				
+}
+
+
+animation_table rome_man_sword_onager_crew
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_sword_fragment				
+		fragment		rome_man_sword_matched_combat_fragment				
+		fragment		rome_man_onager_crew_fragment				
+}
+
+
+animation_table rome_man_sword_onager_large_crew
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_sword_fragment				
+		fragment		rome_man_sword_matched_combat_fragment				
+		fragment		rome_man_onager_large_crew_fragment				
+}
+
+
+animation_table rome_man_sword_shield_javelin_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_sword_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_sword_shield_fragment				
+		fragment		rome_man_sword_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_sword_shield_fragment				
+		fragment		rome_horse_rider_sword_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_fragment				
+}
+
+
+animation_table rome_man_sword_shield_javelin_precursor_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_sword_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_sword_shield_fragment				
+		fragment		rome_man_sword_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_precursor_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_sword_shield_fragment				
+		fragment		rome_horse_rider_sword_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_precursor_fragment				
+}
+
+
+animation_table rome_man_sword_sling_foot
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_sword_fragment				
+		fragment		rome_man_sword_matched_combat_fragment				
+		fragment		rome_man_sling_fragment				
+}
+
+
+animation_table rome_mount_horse_axe_shield
+{
+		skeleton_type		horse_r2
+
+
+		fragment		rome_horse_fragment				
+		fragment		rome_horse_axe_shield_fragment				
+		fragment		rome_horse_axe_shield_matched_combat_fragment				
+}
+
+
+animation_table rome_mount_horse_spear_shield
+{
+		skeleton_type		horse_r2
+
+
+		fragment		rome_horse_fragment				
+		fragment		rome_horse_spear_shield_fragment				
+		fragment		rome_horse_spear_shield_matched_combat_fragment				
+}
+
+
+animation_table rome_mount_horse_sword
+{
+		skeleton_type		horse_r2
+
+
+		fragment		rome_horse_fragment				
+		fragment		rome_horse_sword_fragment				
+		fragment		rome_horse_sword_matched_combat_fragment				
+}
+
+
+animation_table rome_mount_horse_sword_shield
+{
+		skeleton_type		horse_r2
+
+
+		fragment		rome_horse_fragment				
+		fragment		rome_horse_sword_shield_fragment				
+		fragment		rome_horse_sword_shield_matched_combat_fragment				
+}
+
+
+animation_table vik_man_axe_shield_javelin_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_axe_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		vik_man_axe_shield_fragment				
+		fragment		rome_man_axe_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_axe_shield_fragment				
+		fragment		rome_horse_rider_axe_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_fragment				
+}
+
+
+animation_table vik_man_falx_javelin_precursor_foot
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		vik_man_falx_fragment				
+		fragment		rome_man_falx_matched_combat_fragment				
+		fragment		rome_man_javelin_precursor_fragment				
+}
+
+
+animation_table vik_man_spear_shield_javelin_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_spear_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		vik_man_spear_shield_fragment				
+		fragment		rome_man_spear_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_spear_shield_fragment				
+		fragment		rome_horse_rider_spear_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_fragment				
+}
+
+
+animation_table vik_man_sw_axe_shield_javelin_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_axe_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		vik_man_sw_axe_shield_fragment				
+		fragment		rome_man_axe_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_axe_shield_fragment				
+		fragment		rome_horse_rider_axe_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_fragment				
+}
+
+
+animation_table vik_man_sw_spear_shield_javelin_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_spear_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		vik_man_sw_spear_shield_fragment				
+		fragment		rome_man_spear_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_spear_shield_fragment				
+		fragment		rome_horse_rider_spear_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_fragment				
+}
+
+
+animation_table vik_man_sw_spear_shield_javelin_precursor_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_spear_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		vik_man_sw_spear_shield_fragment				
+		fragment		rome_man_spear_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_spear_shield_fragment				
+		fragment		rome_horse_rider_spear_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_precursor_fragment				
+}
+
+
+animation_table vik_man_sw_sword_shield_javelin_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_sword_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		vik_man_sw_sword_shield_fragment				
+		fragment		rome_man_sword_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_sword_shield_fragment				
+		fragment		rome_horse_rider_sword_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_fragment				
+}
+
+
+animation_table vik_man_sword_shield_javelin_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_sword_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		vik_man_sword_shield_fragment				
+		fragment		rome_man_sword_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_sword_shield_fragment				
+		fragment		rome_horse_rider_sword_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_fragment				
+}
+
+
+animation_table vik_man_sw_axe_shield_javelin_precursor_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_axe_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		vik_man_sw_axe_shield_fragment				
+		fragment		rome_man_axe_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_precursor_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_axe_shield_fragment				
+		fragment		rome_horse_rider_axe_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_precursor_fragment				
+}
+
+
+animation_table vik_man_sw_sword_shield_javelin_precursor_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_sword_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		vik_man_sw_sword_shield_fragment				
+		fragment		rome_man_sword_shield_matched_combat_fragment				
+		fragment		rome_man_javelin_precursor_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_sword_shield_fragment				
+		fragment		rome_horse_rider_sword_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_javelin_precursor_fragment				
+}
+
+
+animation_table rome_man_sword_shield_bow_horse
+{
+		skeleton_type		rome_man_game
+		skeleton_type_cinematic		rome_man
+
+		mount_table		rome_mount_horse_sword_shield
+
+		fragment		rome_man_unarmed_fragment				
+		fragment		rome_man_cinematic_fragment				
+		fragment		rome_man_sword_shield_fragment				
+		fragment		rome_man_sword_shield_matched_combat_fragment				
+		fragment		rome_man_bow_fragment				
+		fragment		rome_horse_rider_fragment				
+		fragment		rome_horse_rider_sword_shield_fragment				
+		fragment		rome_horse_rider_sword_shield_matched_combat_fragment				
+		fragment		rome_horse_rider_bow_fragment				
+}

@@ -1,0 +1,12 @@
+key	generate	localised_description	localised_title	ui_icon	ui_image	prioritized	event_category
+#dilemmas_tables;3;db/dilemmas_tables/sw_dilemmas_gva							
+shield_invasion_danegeld	false	Description	Item Event	message_generic_news.png	vik_event_treasury	true	Ybor
+shield_invasion_danegeld_GVA	false	Description	Item Event	message_generic_news.png	vik_event_treasury	true	Ybor
+shield_training_forging	false	Description	Item Event	message_generic_news.png	vik_event_give_order	true	Ybor
+shield_training_hunters	false	Description	Item Event	message_generic_news.png	vik_event_give_order	true	Ybor
+shield_foreign_occupation	false	Description	Item Event	message_generic_news.png	vik_event_release_subject	true	Ybor
+shield_foreign_occupation_here_king	false	Description	Item Event	message_generic_news.png	vik_event_release_subject	true	Ybor
+shield_foreign_port	false	Description	Item Event	message_generic_news.png	vik_event_trading	true	Ybor
+shield_foreign_port_GVA	false	Description	Item Event	message_generic_news.png	vik_event_trading	true	Ybor
+shield_foreign_mercenaries	false	Description	Item Event	message_generic_news.png	vik_event_kingdom_formed	true	Ybor
+shield_foreign_defeat	false	Description	Item Event	message_generic_news.png	vik_event_faction_subjugated	true	Ybor

@@ -1,0 +1,6 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/army_visits_effects.loc		
+effects_description_sw_dummy_resupply_general_skills	Supply lines can be upgraded by Quartermaster followers and by Warehouse buildings.	true
+effects_description_sw_dummy_resupply_building	Enables military forces that Garrison here to establish Supply Lines	true
+effects_description_sw_dummy_resupply_building_duration	%+n Supply Line Duration	true
+effects_description_sw_supply_lines	%+n Supplies per Month	true

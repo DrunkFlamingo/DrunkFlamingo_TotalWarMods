@@ -1,0 +1,11 @@
+unit_caste	unit_category	unit_class	unit_record	unit_set	exclude
+#unit_set_to_unit_junctions_tables;0;db/unit_set_to_unit_junctions_tables/merc_dummy_sets					
+			dan_anglian_marauders	sw_mercs_available_dan_anglian_marauders	false
+			dan_jarls_huscarls	sw_mercs_available_dan_jarls_huscarls	false
+			dan_mailed_horsemen	sw_mercs_available_dan_mailed_horsemen	false
+			dan_northumbrian_mailed_thegns	sw_mercs_available_dan_northumbrian_mailed_thegns	false
+			eng_long_axemen	sw_mercs_available_eng_long_axemen	false
+			eng_mailed_thegns	sw_mercs_available_eng_mailed_thegns	false
+			vik_jomsvikings	sw_mercs_available_vik_jomsvikings	false
+			vik_thrall_axemen	sw_mercs_available_vik_thrall_axemen	false
+			wel_mailed_axemen	sw_mercs_available_wel_mailed_axemen	false

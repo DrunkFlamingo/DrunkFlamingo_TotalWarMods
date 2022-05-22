@@ -1,0 +1,20 @@
+campaign_difficulty_handicap	human	effect	effect_scope	effect_value	optional_campaign_key
+#campaign_difficulty_handicap_effects_tables;0;db/campaign_difficulty_handicap_effects_tables/!AdaptiveDifficulty					
+-1	false	wh_main_effect_growth_all	faction_to_province_own	0.0	
+0	false	wh_main_effect_growth_all	faction_to_province_own	0.0	
+1	false	wh_main_effect_growth_all	faction_to_province_own	0.0	
+2	false	wh_main_effect_growth_all	faction_to_province_own	0.0	
+3	false	wh_main_effect_growth_all	faction_to_province_own	0.0	
+1	false	wh_main_effect_force_all_campaign_upkeep	faction_to_force_own	0.0	
+2	false	wh_main_effect_force_all_campaign_upkeep	faction_to_force_own	0.0	
+3	false	wh_main_effect_force_all_campaign_upkeep	faction_to_force_own	0.0	
+-1	false	wh_main_effect_hordebuilding_growth_core	faction_to_force_own	0.0	
+0	false	wh_main_effect_hordebuilding_growth_core	faction_to_force_own	0.0	
+1	false	wh_main_effect_hordebuilding_growth_core	faction_to_force_own	0.0	
+2	false	wh_main_effect_hordebuilding_growth_core	faction_to_force_own	0.0	
+3	false	wh_main_effect_hordebuilding_growth_core	faction_to_force_own	0.0	
+-1	false	wh_main_effect_force_all_campaign_recruitment_cost_all	faction_to_force_own	0.0	
+0	false	wh_main_effect_force_all_campaign_recruitment_cost_all	faction_to_force_own	0.0	
+1	false	wh_main_effect_force_all_campaign_recruitment_cost_all	faction_to_force_own	0.0	
+2	false	wh_main_effect_force_all_campaign_recruitment_cost_all	faction_to_force_own	0.0	
+3	false	wh_main_effect_force_all_campaign_recruitment_cost_all	faction_to_force_own	0.0	

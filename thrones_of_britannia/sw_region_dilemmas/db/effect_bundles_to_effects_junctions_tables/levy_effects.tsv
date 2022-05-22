@@ -1,0 +1,4 @@
+effect_bundle_key	effect_key	effect_scope	value	advancement_stage
+#effect_bundles_to_effects_junctions_tables;2;db/effect_bundles_to_effects_junctions_tables/levy_effects				
+shieldwall_conscription_small	vik_public_order_new_negative_events	region_to_region_own	-1.0	start_turn_completed
+shieldwall_conscription_large	vik_public_order_new_negative_events	region_to_region_own	-2.0	start_turn_completed

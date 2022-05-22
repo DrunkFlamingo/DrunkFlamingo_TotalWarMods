@@ -1,0 +1,6 @@
+id	incident_key	option_key	value
+#cdir_events_incident_option_junctions_tables;2;db/cdir_events_incident_option_junctions_tables/sw_seasons			
+2500	sw_winter_explainer	CND_UNIQUE	
+2501	sw_winter_explainer	VAR_CHANCE	100
+2502	sw_winter_explainer	CND_FIRST_ROUND	3
+2503	sw_winter_explainer	GEN_TARGET_NONE	

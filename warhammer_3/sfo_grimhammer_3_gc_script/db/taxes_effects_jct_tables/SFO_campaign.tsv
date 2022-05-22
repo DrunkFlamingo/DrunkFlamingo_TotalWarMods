@@ -1,0 +1,5 @@
+tax_name	effect	ai_only	optional_campaign_key	optional_difficulty_level	effect_scope	value	specific_feature_set
+#taxes_effects_jct_tables;2;db/taxes_effects_jct_tables/SFO_campaign							
+lower_normal	wh_main_effect_public_order_tax_rate	false			province_to_province_own	-10.0	
+lower_normal	wh_main_effect_unit_recruitment_points	false			province_to_province_own	1.0	
+lower_normal	wh3_main_effect_province_growth_level_of_control	false			province_to_province_own	-50.0	

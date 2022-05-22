@@ -1,0 +1,4 @@
+key	night_battles_only
+#campaign_bonus_value_battle_context_specifiers_tables;1;db/campaign_bonus_value_battle_context_specifiers_tables/decrees	
+sw_fighting_against_vikings	false
+sw_fighting_against_scots	false

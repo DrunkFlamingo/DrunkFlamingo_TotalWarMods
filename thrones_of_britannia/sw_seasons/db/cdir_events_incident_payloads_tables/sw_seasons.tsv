@@ -1,0 +1,5 @@
+id	incident_key	payload_key	value
+#cdir_events_incident_payloads_tables;2;db/cdir_events_incident_payloads_tables/sw_seasons			
+2500	sw_winter_explainer	TEXT_DISPLAY	LOOKUP[b_prepare_surplus]
+2501	sw_winter_explainer	TEXT_DISPLAY	LOOKUP[c_prepare_storage]
+2502	sw_winter_explainer	TEXT_DISPLAY	LOOKUP[a_prepare_winter]

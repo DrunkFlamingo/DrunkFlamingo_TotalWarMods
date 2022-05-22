@@ -1,0 +1,6 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/ai_modifiers				
+sw_unit_pool_replenishment_mod_levy_noble_melee		0		true
+sw_unit_pool_replenishment_mod_levy_noble_cavalry_or_ranged		0		true
+sw_unit_pool_replenishment_mod_levy_peasant_ranged		0		true
+sw_unit_pool_replenishment_mod_levy_peasant_melee		0		true

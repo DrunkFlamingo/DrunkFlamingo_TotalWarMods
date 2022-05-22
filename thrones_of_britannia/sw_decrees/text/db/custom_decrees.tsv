@@ -1,0 +1,35 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/custom_decrees.loc		
+decrees_title_vik_decree_west_seaxe_3	Scholarly Works	true
+decrees_title_vik_decree_west_seaxe_2	Raise the Fyrd	true
+decrees_title_vik_decree_west_seaxe_1	Ad Hoc Levy	true
+decrees_title_vik_decree_west_seaxe_4	Assemble the Witan	true
+decrees_title_vik_decree_mierce_4	Hoard our Wealth	true
+decrees_title_vik_decree_mierce_1	Donate to our Warriors	true
+decrees_title_vik_decree_mierce_2	Donate to our Lords	true
+decrees_title_vik_decree_mierce_3	Donate to the Church	true
+decrees_title_vik_decree_northleode_1	Restoration of the Kingdom	true
+decrees_title_vik_decree_northleode_2	Bretwalda	true
+decrees_title_vik_decree_northleode_3	Northern Conquests	true
+decrees_title_vik_decree_northleode_4	Bastion of the Faith	true
+decrees_description_vik_decree_west_seaxe_3	Requires upgrading the Court School in Witanceaster to level III	true
+decrees_description_vik_decree_west_seaxe_2	The Fyrd can only be levied during the Spring and Summer	true
+decrees_description_vik_decree_west_seaxe_1	The Fyrd can only be levied during the Spring and Summer	true
+decrees_description_vik_decree_west_seaxe_4	The Witan can only be called when Burghal is content	true
+decrees_description_vik_decree_mierce_4	The Hoards are overflowing with gold, and cannot be expanded further.	true
+decrees_description_vik_decree_mierce_1	You cannot afford this decree. No Hoards are available.	true
+decrees_description_vik_decree_mierce_2	You cannot afford this decree. No Hoards are available.	true
+decrees_description_vik_decree_mierce_3	You cannot afford this decree. No Hoards are available.	true
+decrees_description_vik_decree_northleode_1	Unlock requirement: Control Jórvík	true
+decrees_description_vik_decree_northleode_2	Unlock requirement: Control Tamworthige	true
+decrees_description_vik_decree_northleode_3	Unlock requirement: Control Dún-Foither	true
+decrees_description_vik_decree_northleode_4	Unlock requirement: Control Bebbanburg	true
+decree_groups_title_vik_decree_group_gwined	Bard Songs	false
+decrees_title_vik_decree_gwined_1	Song of Mead	false
+decrees_title_vik_decree_gwined_2	Song of the Horses	false
+decrees_title_vik_decree_gwined_3	Elegy of Uther Pen	false
+decrees_title_vik_decree_gwined_4	Elegy of a Thousand Sons	false
+decrees_description_vik_decree_gwined_1	NOT IN USE - DO NOT LOC	false
+decrees_description_vik_decree_gwined_2	Unlock requirement: Trained Cavalry Technology	false
+decrees_description_vik_decree_gwined_3	NOT IN USE - DO NOT LOC	false
+decrees_description_vik_decree_gwined_4	NOT IN USE - DO NOT LOC	false

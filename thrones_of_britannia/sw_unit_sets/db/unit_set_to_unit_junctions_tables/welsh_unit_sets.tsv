@@ -1,0 +1,5 @@
+unit_caste	unit_category	unit_class	unit_record	unit_set	exclude
+#unit_set_to_unit_junctions_tables;0;db/unit_set_to_unit_junctions_tables/welsh_unit_sets					
+			wel_levy_spearmen	taeog	false
+			wel_levy_axemen	taeog	false
+			wel_levy_javelinmen	taeog	false

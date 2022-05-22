@@ -1,0 +1,7 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/pop_dummy_effects.loc		
+effects_description_sw_dummy_nobles_outnumbered	You lack the noble manpower necessary to maintain your Kingdom	false
+effects_description_sw_dummy_nobles_good	Your noble manpower is sufficient to effectively administer your Kingdom	false
+effects_description_sw_dummy_foreigners_local	Additional Foreign Warriors will have a negative effect on public order	false
+effects_description_sw_dummy_foreigners_viking	Additional Viking Warriors will have a negative effect on diplomacy, but improve allegience. 	false
+effects_description_sw_dummy_foreigners_mercenaries	Unlocks Recruitment of Foreign Units	false

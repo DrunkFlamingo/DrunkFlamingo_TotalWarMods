@@ -1,0 +1,53 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/skill_events.loc		
+incidents_localised_title_sw_skills_henchmen_1	Henchmen: Slaves Taken	false
+incidents_localised_title_sw_skills_henchmen_2	Henchmen: Captured Merchants	false
+incidents_localised_title_sw_skills_henchmen_3	Henchmen: Cattle Rustling	false
+incidents_localised_title_sw_skills_henchmen_4	Henchmen: Undefended Monasteries	false
+incidents_localised_title_sw_renown_captain_recruited	Viking Captain: An Accord	false
+incidents_localised_title_sw_renown_sailors_recruited	Viking Captain: Able Bodied Crew	false
+incidents_localised_title_sw_renown_vikings_recruited	Viking Captain: Raiding Parties	false
+incidents_localised_title_sw_heroism_champion	Champion: Acts of Valour	false
+incidents_localised_title_sw_heroism_bard	Bard: Tales of Heroism	false
+incidents_localised_title_sw_heroism_bard_2	Bard: Tales of Heroism	false
+incidents_localised_title_sw_heroism_bard_3	Bard: Tales of Heroism	false
+incidents_localised_title_sw_fame_bard	Bard: Popular Songs	false
+incidents_localised_title_sw_fame_scribe	Scribe: Popular Tales	false
+incidents_localised_title_sw_authority_scribe	Scribe: Political Treatise	false
+incidents_localised_title_sw_upgraded_fame_scribe	Scribe: Epic Poem	false
+incidents_localised_title_sw_upgraded_authority_scribe	Scribe: Family Legend	false
+incidents_localised_title_sw_upgraded_money_scribe	Scribe: Popular Accounts	false
+incidents_localised_title_sw_tribute_skald	Skald: Majesty of Power	false
+incidents_localised_title_sw_army_skald	Skald: Glory in War	false
+incidents_localised_title_sw_discoveries_skald	Skald: Where the Sea Touches	false
+incidents_localised_title_sw_morale_skald	Skald: Warlike Spirit	false
+incidents_localised_title_sw_bard_retreat	Bard: A Tactical Retreat	false
+incidents_localised_title_sw_skald_retreat	Skald: A Tactical Retreat	false
+incidents_localised_description_sw_skills_henchmen_1	Our henchmen have brought back a troop of slaves liberated from a local farming village. Thralls for our King!	false
+incidents_localised_description_sw_skills_henchmen_2	Our henchmen have robbed several merchant caravans. Warfare can be a profitable affair.	false
+incidents_localised_description_sw_skills_henchmen_3	Our henchmen have rustled cattle from the herds of our rivals.	false
+incidents_localised_description_sw_skills_henchmen_4	Our henchmen found a monastery belonging to our enemies and robbed it of all its wealth.	false
+incidents_localised_description_sw_renown_captain_recruited	Our Captains have cut a deal with a renowned Viking captain. For a share of our Plunder, and a really big hat, he'll sail his ships under your command. 	false
+incidents_localised_description_sw_renown_sailors_recruited	Our Captains have found an abundance of suitable crew to man their voyages. These talented sailors await your command to sail for glory and plunder! 	false
+incidents_localised_description_sw_renown_vikings_recruited	Our Captains have recruited the services of a large number of Vikings willing to sail with our raiding fleets. These talented killers await your command to sail for glory and plunder!	false
+incidents_localised_description_sw_heroism_champion	The daring feats of our heroes on the field of battle bring honour and glory to our Kingdom!	false
+incidents_localised_description_sw_heroism_bard	Tales of our courage and strength are told throughout the realm by our Bards.	false
+incidents_localised_description_sw_heroism_bard_2	Tales of our stoic determination and patriotic zeal are told throughout the realm by our Bards.	false
+incidents_localised_description_sw_heroism_bard_3	Tales of our Heroic acts are told throughout the realm by our Bards.	false
+incidents_localised_description_sw_fame_bard	Our bards travel far and wide with songs of our Kingdom's glory.	false
+incidents_localised_description_sw_fame_scribe	Our scribes have authored accounts of our Kingdom that are read across the continent.	false
+incidents_localised_description_sw_authority_scribe	Our scribes have authored an account of our governance, demonstrating our just rule.	false
+incidents_localised_description_sw_upgraded_fame_scribe	Our scribes have authored an epic work commemorating our great deeds.	false
+incidents_localised_description_sw_upgraded_authority_scribe	Our scribes have authored an exceptional legend of our Family's ancient Kingship.	false
+incidents_localised_description_sw_upgraded_money_scribe	Our scribes have authored an account of our conquests. It has sold suprisingly well.	false
+incidents_localised_description_sw_tribute_skald	Our Skald has inspired increased fealty from our subjects through his tales of your Glory.	false
+incidents_localised_description_sw_army_skald	Our Skald has inspired increased fealty from our subjects through his tales of your Glory.	false
+incidents_localised_description_sw_discoveries_skald	Our skald has inspired our people's awe with tales of our discoveries.	false
+incidents_localised_description_sw_morale_skald	Our Skald has inspired the people's fury, preparing them for war.	false
+incidents_localised_description_sw_bard_retreat	The enemy with swords drawn and banners unfurled are certainly impressive. It definitely wasn't sheer terror that caused your general to swing his troops about in the opposite direction. Of course not! It was just that he knew that this was not the correct time to fight. It would be far more elegant for the enemy to tire themselves out in pursuit... less wasteful of your mens' lives too. He'd be sure to relay this plan to his captains as soon as he finished his morning jog.	false
+incidents_localised_description_sw_skald_retreat	The enemy with swords drawn and banners unfurled are certainly impressive. It definitely wasn't sheer terror that caused your general to swing his troops about in the opposite direction. Of course not! It was just that he knew that this was not the correct time to fight. It would be far more elegant for the enemy to tire themselves out in pursuit... less wasteful of your mens' lives too. He'd be sure to relay this plan to his captains as soon as he finished his morning jog.	false
+campaign_payload_ui_details_description_bard_retreat	Swiftly taking to his feet\\nHe beat a very brave retreat\\nBravest of the brave, Sir Robin!\\n	false
+incidents_localised_title_sw_drill_select_fyrd	Drills: Selection	false
+incidents_localised_title_sw_drill_marcher	Drills: Men for the Marches	false
+incidents_localised_description_sw_drill_select_fyrd	While our army encamps, our Select Fyrd Captain drills the recruits. From their number, he has selected young men with acceptable martial talents and exceptional resolve to serve in the king's Select Fyrd.	false
+incidents_localised_description_sw_drill_marcher	While our army encamps, our Marcher Veteran drills the recruits. From their number, he has weeded out the weak and the cowardly, and recommends several dozen men to serve as future defenders of our Kingdom's borders.	false

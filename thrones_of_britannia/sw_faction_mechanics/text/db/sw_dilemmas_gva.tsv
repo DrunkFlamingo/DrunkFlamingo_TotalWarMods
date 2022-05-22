@@ -1,0 +1,68 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/sw_dilemmas_gva.loc		
+dilemmas_localised_title_shield_invasion_danegeld	A Danegeld to be Paid	true
+dilemmas_localised_description_shield_invasion_danegeld	Your guardsmen who patrol the border of your kingdom bring a panicked report back to your court that a horde of dangerous looking Northmen have been sighted setting up camp within your lands. Your emissaries are sent out to meet them. They bring back demands that the Northmen will happily accept a danegeld to depart from your lands peacefully, or they will otherwise claim their fortune at the point of their swords. What will be our response?	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_invasion_danegeldFIRST	We will pay the danegeld	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_invasion_danegeldSECOND	We will drive them from our lands	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_invasion_danegeldFIRST	Face and gold are a small price to pay for avoiding a needless war.	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_invasion_danegeldSECOND	Neither bribe nor quarter will be given to invaders!	true
+dilemmas_localised_title_shield_invasion_danegeld_GVA	A Danegeld to be Paid	true
+dilemmas_localised_description_shield_invasion_danegeld_GVA	Your guardsmen who patrol the border of your kingdom bring a panicked report back to your court that a horde of dangerous looking Danes have been sighted setting up camp within your lands. Your emissaries are sent out to meet them. They bring back demands that the warriors will happily accept a danegeld to depart from your lands peacefully, or they will otherwise claim their fortune at the point of their swords. Seeing as we are of common blood, perhaps they could be made to see reason?	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_invasion_danegeld_GVAFIRST	We will pay the danegeld	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_invasion_danegeld_GVASECOND	We will drive them from our lands	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_invasion_danegeld_GVATHIRD	They can attack our enemies	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_invasion_danegeld_GVAFOURTH	They can join our warriors in battle	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_invasion_danegeld_GVAFIRST	Face and gold are a small price to pay for avoiding a needless war.	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_invasion_danegeld_GVASECOND	Neither bribe nor quarter will be given to invaders!	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_invasion_danegeld_GVATHIRD	Perhaps we could turn their aggression to our enemies instead?	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_invasion_danegeld_GVAFOURTH	Their warriors will make a welcome addition to the King's forces	true
+dilemmas_localised_title_shield_training_forging	Forging Focus	true
+dilemmas_localised_description_shield_training_forging	After a period of time the smithies in our kingdom have an excess of resources that can be used for extra projects as directed by the King. What shall we instruct them to focus on?	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_training_forgingFIRST	Focus on gifts for the King	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_training_forgingSECOND	Focus on weapons for the army	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_training_forgingTHIRD	Focus on tools for the workers	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_training_forgingFIRST	Gifts can increase authority and prestige	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_training_forgingSECOND	This will help refill the recruitment pools.	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_training_forgingTHIRD	Provides a nice economic boost.	true
+dilemmas_localised_title_shield_training_hunters	A Plethora of Hunters	true
+dilemmas_localised_description_shield_training_hunters	So many young men in our Kingdom have been hunting from the time they are children and have become adepts with shooting a bow. Perhaps we could find a way to put their skills to good use?	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_training_huntersFIRST	The Kingdom needs warriors	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_training_huntersSECOND	The Kingdom needs food	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_training_huntersFIRST	They will rain death on our enemies!	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_training_huntersSECOND	The extra meat will be welcome	true
+dilemmas_localised_title_shield_foreign_occupation	The Settlement is Occupied by Foreign Warriors	true
+dilemmas_localised_description_shield_foreign_occupation	Our forces moved into the settlement but encountered a small band of foreign mercenaries who have set up camp already. We could easily drive them away but perhaps we could entice them to join our forces?	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_foreign_occupationFIRST	They can stay	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_foreign_occupationSECOND	Drive them away 	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_foreign_occupationFIRST	They will become recruitable as mercenaries	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_foreign_occupationSECOND	This will likely damage our relationship with other Viking factions	true
+dilemmas_localised_title_shield_foreign_occupation_here_king	The Settlement is Occupied by Foreign Warriors	true
+dilemmas_localised_description_shield_foreign_occupation_here_king	Our forces moved into the settlement but encountered a small band of foreign mercenaries who have set up camp already. We could easily drive them away but perhaps we could entice them to join our forces?	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_foreign_occupation_here_kingFIRST	Drive them out	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_foreign_occupation_here_kingSECOND	Appoint some of them is land owners	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_foreign_occupation_here_kingFIRST	The English in our Kingdom will be thankful	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_foreign_occupation_here_kingSECOND	Our army will be thankful	true
+dilemmas_localised_title_shield_foreign_port	Our Ports Swell with Foreigners	true
+dilemmas_localised_description_shield_foreign_port	Word of our recent successes have spread driving traders, slavers, and mercenaries to our ports. The business has certainly been welcome, our docks buzz with activity as ships are constantly coming and going and men toil unloading cargo for trading. But along with increased trading also comes increased drunkenness, burglary, and even murder. The subjects of our kingdom do not enjoy a rising influx of foreigners and their filthy habits. 	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_foreign_portFIRST	Allow the foreigners in our ports	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_foreign_portSECOND	Strict caps on trading	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_foreign_portFIRST	Our coffers will rejoice... our people not as much.	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_foreign_portSECOND	The extra coin is not worth destabilizing the Kingdom	true
+dilemmas_localised_title_shield_foreign_port_GVA	Our Ports Swell with Foreigners	true
+dilemmas_localised_description_shield_foreign_port_GVA	Word of our recent successes have spread driving traders, slavers, and mercenaries to our ports. The business has certainly been welcome, our docks buzz with activity as ships are constantly coming and going and men toil unloading cargo for trading. But along with increased trading also comes increased drunkenness, burglary, and even murder. The subjects of our kingdom do not enjoy a rising influx of foreigners and their filthy habits. 	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_foreign_port_GVAFIRST	Allow the foreigners in our ports	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_foreign_port_GVASECOND	Our army will be thankful	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_foreign_port_GVAFIRST	Strict caps on trading	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_foreign_port_GVASECOND	The English in our Kingdom will be thankful	true
+dilemmas_localised_title_shield_foreign_mercenaries	Foreign Mercenaries	true
+dilemmas_localised_description_shield_foreign_mercenaries	News of war have spread, driving sellswords to our lands, seeking their fortune.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_foreign_mercenariesFIRST	We will hire some of them	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_foreign_mercenariesSECOND	We have no need of mercenaries	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_foreign_mercenariesFIRST	It will be good to hire professional warriors	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_foreign_mercenariesSECOND	Let us hope we don't seem them in the camp of the enemy	true
+dilemmas_localised_title_shield_foreign_defeat	Defeated Viking Warriors	true
+dilemmas_localised_description_shield_foreign_defeat	Despite their defeat at our hands, the remains of the defeated Viking army have splintered and settled in our lands. Perhaps we could convince them to come fight for us instead?	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_foreign_defeatFIRST	They may stay if they fight	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_foreign_defeatSECOND	Banish them from the Kingdom	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_foreign_defeatFIRST	A man will fight to defend his home	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_foreign_defeatSECOND	Our lands will be rid of their filth	true

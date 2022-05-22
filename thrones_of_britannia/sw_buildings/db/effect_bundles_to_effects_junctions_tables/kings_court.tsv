@@ -1,0 +1,7 @@
+effect_bundle_key	effect_key	effect_scope	value	advancement_stage
+#effect_bundles_to_effects_junctions_tables;2;db/effect_bundles_to_effects_junctions_tables/kings_court				
+vik_konungsgurtha_1	vik_food_buildings	region_to_region_own	10.0	start_turn_completed
+vik_konungsgurtha_2	vik_food_buildings	region_to_region_own	20.0	start_turn_completed
+vik_konungsgurtha_3	vik_food_buildings	region_to_region_own	30.0	start_turn_completed
+vik_konungsgurtha_4	vik_food_buildings	region_to_region_own	40.0	start_turn_completed
+vik_konungsgurtha_5	vik_food_buildings	region_to_region_own	50.0	start_turn_completed

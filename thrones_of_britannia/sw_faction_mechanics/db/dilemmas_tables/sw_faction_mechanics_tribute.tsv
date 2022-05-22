@@ -1,0 +1,6 @@
+key	generate	localised_description	localised_title	ui_icon	ui_image	prioritized	event_category
+#dilemmas_tables;3;db/dilemmas_tables/sw_faction_mechanics_tribute							
+sw_spend_tribute_authority_or_foreigners	false			message_generic_news.png	vik_event_treasury	true	Ybor
+sw_spend_tribute_sea_captain	false			message_generic_news.png	vik_event_treasury	true	Ybor
+sw_spend_tribute_sea_king	false			message_generic_news.png	vik_event_treasury	true	Ybor
+sw_spend_tribute_vikingar	false			message_generic_news.png	vik_event_treasury	true	Ybor

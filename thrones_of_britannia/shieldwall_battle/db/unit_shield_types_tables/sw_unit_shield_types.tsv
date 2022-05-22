@@ -1,0 +1,23 @@
+key	shield_defence_value	shield_armour_value	audio_material	missile_block_chance
+#unit_shield_types_tables;3;db/unit_shield_types_tables/sw_unit_shield_types				
+vik_large	40	6	wood	55
+vik_medium	35	4	wood	40
+vik_medium_wood	25	3	wood	30
+vik_reinforced	50	8	wood	60
+vik_small	20	2	wood	25
+vik_small_wood	10	1	wood	10
+vik_none_longspear	50	0	body	0
+vik_none	30	0	body	0
+vik_large_spear	40	10	wood	55
+vik_medium_spear	35	8	wood	40
+vik_medium_wood_spear	25	7	wood	30
+vik_reinforced_spear	50	12	wood	60
+vik_small_spear	20	6	wood	25
+vik_small_wood_spear	10	5	wood	10
+vik_large_sword	55	6	wood	55
+vik_medium_sword	50	4	wood	40
+vik_medium_wood_sword	40	3	wood	30
+vik_reinforced_sword	65	8	wood	60
+vik_small_sword	35	2	wood	25
+vik_small_wood_sword	25	1	wood	10
+vik_none_sword	45	0	body	0

@@ -1,0 +1,5 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/NorseDF_GKdefends.loc		
+effects_description_norse_summon_green_knight_enable	The Green Knight will aid you in this battle!	true
+effect_bundles_localised_description_norse_green_knight_appears	This injustice will not stand, this land is under his protection!	true
+effect_bundles_localised_title_norse_green_knight_appears	The green knight approaches!	true

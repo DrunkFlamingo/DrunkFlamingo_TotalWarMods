@@ -8,13 +8,14 @@
         "tw_lib/wh3/frontend/",
         "tw_lib/wh3/battle/"
     ],
+    "Lua.diagnostics.ignoredFiles": "Disable",
     "Lua.workspace.ignoreDir": [
         "warhammer_3/CAScriptDump",
         ".vscode",
         "lua",
         "twui",
         "warhammer_2",
-        "thrones_of_brittania"
+        "thrones_of_britannia"
     ],
     "Lua.diagnostics.disable": [
         "lowercase-global",

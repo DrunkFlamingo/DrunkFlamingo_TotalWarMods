@@ -1,0 +1,22 @@
+id	duration	effect_type	requested_stance	unbreakable	cant_move	kill_own_unit	freeze_fatigue	fatigue_change_ratio	inspiration_aura_range_mod	ability_recharge_change	minor_casualties	major_casualties	ui_vfx	rally_amount	poison
+#special_ability_phases_tables;13;db/special_ability_phases_tables/sw_shieldwall_abilities															
+vik_rapid_advance_1	16.0	positive	cheer	false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_war_cry_1	16.0	negative		false	false	false	false	0.0	0.0	0.0	false	false	debuff	0	false
+vik_rally_1	30.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_penteulu_banner_1	16.0	positive		false	false	false	false	-0.6	0.0	0.0	false	false	buff	0	false
+vik_inspire_1	30.0	positive	cheer	false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_hold_firm_1	16.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_northmen_banner_1	16.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_eastmen_banner_1	16.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_focus_fire_1	16.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_endurance_1	30.0	positive		false	false	false	false	-0.2	0.0	0.0	false	false	buff	0	false
+vik_extended_range_1	30.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_offensive_frenzy_1	16.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_form_wedge	-1.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_highland_charge	16.0	positive	cheer	false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_stand_and_fight	-1.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_into_the_breach	-1.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_dragoons_mounted	-1.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	debuff	0	false
+vik_gone_berserk	-1.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_swordsmen	-1.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false
+vik_heavy_blades	-1.0	positive		false	false	false	false	0.0	0.0	0.0	false	false	buff	0	false

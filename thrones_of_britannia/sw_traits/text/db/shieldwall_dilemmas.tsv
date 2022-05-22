@@ -1,0 +1,250 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/shieldwall_dilemmas.loc		
+dilemmas_localised_title_sw_traits_educating_heir	Learned	true
+dilemmas_localised_description_sw_traits_educating_heir	According to common law, a boy becomes a man at age sixteen at which point it becomes necessary for him to acquire the skills needful for his transition into adulthood. Perhaps it's time to invest in the education of your heir now that he is old enough,	true
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_educating_heirFIRST	Hire a tutor	true
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_educating_heirSECOND	Do nothing	true
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_educating_heirFIRST	A mind is a terrible thing to waste!	true
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_educating_heirSECOND	Maybe next year	true
+dilemmas_localised_title_shield_scholar_wise_choice	Wise	true
+dilemmas_localised_description_shield_scholar_wise_choice	Today you suddenly realized that there are limits to what the body can do, and perhaps you have reached them. You had often wondered as a younger man what it is like to grow old. Well, now you know. But even as your body slows and creaks, your mind is as sharp as it has ever been. You've learned to relax and trust your instincts. Life for the old is simply a familiar dance that happens every year.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_scholar_wise_choiceFIRST	We can start recording our memoirs	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_scholar_wise_choiceFIRST	Future generations will remember us	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_scholar_wise_choiceSECOND	Maybe later	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_scholar_wise_choiceSECOND	A bit busy kinging at the moment	true
+dilemmas_localised_title_shield_scholar_lawyer_choice	Lawgiver	true
+dilemmas_localised_description_shield_scholar_lawyer_choice	If the Kingdom will be governed by just laws then it becomes incumbent for its rulers to study that law that it may be imparted fairly. Studying law is quite arduous and requires a great deal of time and patience, but it will make you a more effective leader among men. 	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_scholar_lawyer_choiceFIRST	Time to study law	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_scholar_lawyer_choiceSECOND	Do nothing	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_scholar_lawyer_choiceFIRST	A man who knows the law can steal more than a hundred men with swords.	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_scholar_lawyer_choiceSECOND	Maybe next year	true
+dilemmas_localised_title_shield_scholar_legendary_thinker_choice	Great Thinker	true
+dilemmas_localised_description_shield_scholar_legendary_thinker_choice	Becoming one of the most important scholarly minds of the medieval world grants one an interesting perspective on life. Among your peers you have become an intellectual giant. In the dark chambers of your mind, however, the discomforting truth is that as one learns more about the world around him it becomes quite larger than what it was before. The universe didn’t shrink; it became more grand and mysterious than ever before. It calls out to you, but perhaps your energies should be spent to help guide your people...	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_scholar_legendary_thinker_choiceFIRST	Become a philosopher	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_scholar_legendary_thinker_choiceSECOND	Remain a King	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_scholar_legendary_thinker_choiceFIRST	People can benefit from me	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_scholar_legendary_thinker_choiceSECOND	There's life in these old bones yet!	true
+dilemmas_localised_title_sw_traits_grooming_heir	Princely	true
+dilemmas_localised_description_sw_traits_grooming_heir	Your heir is destined to inherit the Kingdom but he does not yet look the part! His appearance is slovenly, he twiddles his fingers, his posture is slightly bowed and his insecurities are all too often displayed in his countenance. Perhaps the time has come for you to begin personally grooming your heir until he is ready?	true
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_grooming_heirFIRST	Groom your heir	true
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_grooming_heirSECOND	I don't have time for this	true
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_grooming_heirFIRST	The future of the Kingdom demands it	true
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_grooming_heirSECOND	Too much to do, never enough time	true
+dilemmas_localised_title_shield_noble_legendary_king_choice	Legendary King	true
+dilemmas_localised_description_shield_noble_legendary_king_choice	Your exploits on this earth are great and your deeds will be sung about for generations to come. You'll never be better than you are today. If you are lucky, by extraordinary effort, you can avoid slipping backwards for a while. But sooner or later, you're going to lose a step, or drop a beat, or miss a detail -- you'll make a fatal error. The pieces you leave behind will one day be picked up by younger men, but today you and your warriors will revel in your victory. 	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_noble_legendary_king_choiceFIRST	We'll build a statue in my honour	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_noble_legendary_king_choiceFIRST	Accomplishments should be acknowledged	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_noble_legendary_king_choiceSECOND	Our legend will live on	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_noble_legendary_king_choiceSECOND	Our actions speak for themselves	true
+dilemmas_localised_title_shield_noble_proud_choice	Proud	true
+dilemmas_localised_description_shield_noble_proud_choice	You can't believe how simple it is. You just have to have a little ambition and boldness and then, suddenly, everything you do turns to gold. Truly you have been blessed by the Gods! Or perhaps you should share credit with those who serve you. After all, what use is the mind without the fingers to do its bidding?	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_noble_proud_choiceFIRST	It was all me	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_noble_proud_choiceSECOND	Together men!	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_noble_proud_choiceFIRST	Your victories are yours alone	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_noble_proud_choiceSECOND	We should share the glory	true
+dilemmas_localised_title_shield_heathen_sailor_choice	Sailor	true
+dilemmas_localised_description_shield_heathen_sailor_choice	Most men view the sea as a barrier, but you see a road. Most men fear the nightmares of the deep, but you see an unexplored frontier. Most men seek shelter from the storm, but you face the wind and the cold as a loved one accepts a familial embrace. 	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_heathen_sailor_choiceFIRST	I am of the sea	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_heathen_sailor_choiceSECOND	I lead seafarers	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_heathen_sailor_choiceFIRST	I was born for the sea!	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_heathen_sailor_choiceSECOND	Er, perhaps just my men	true
+dilemmas_localised_title_shield_heathen_old_ways_choice	Old Ways	true
+dilemmas_localised_description_shield_heathen_old_ways_choice	This noble has become close with the Vikings, drinking and hunting with their Sons. He requests that he be given leave to learn more about the Vikings, so as to negotiate with them on your behalf.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_heathen_old_ways_choiceFIRST	An Excellent Idea	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_heathen_old_ways_choiceSECOND	Refuse	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_heathen_old_ways_choiceFIRST	The Vikings are powerful, and will make for powerful allies.	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_heathen_old_ways_choiceSECOND	Interesting... but we ought to keep to our own.	true
+dilemmas_localised_title_shield_heathen_pagan_choice	Pagan	true
+dilemmas_localised_description_shield_heathen_pagan_choice	The robed clergymen flee from your soldiers like a warren of rabbits. Most are left alone but those who are too ill or too fat to flee are quickly cut down or are bound in fetters to be sold later on the market. The burning of their sanctuary produces a pungent mix of burning wood and incense -- the scattered remains of their parchments float lazily above the flames of the buildings. Your men drag a man towards you who is dressed slightly more extravagantly than the rest.... he must be one of the high priests.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_heathen_pagan_choiceFIRST	Human sacrifice 	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_heathen_pagan_choiceSECOND	Ransom him	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_heathen_pagan_choiceFIRST	Make a sacrifice to Odin!	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_heathen_pagan_choiceSECOND	Ransom this priest back to his people	true
+dilemmas_localised_title_shield_heathen_beast_slayer_choice	Beast Slayer	false
+dilemmas_localised_description_shield_heathen_beast_slayer_choice	One of your men is aware of your religious leanings and inquires if you will be dedicating your kill to Skaði, a jötunn and goddess associated with bowhunting, skiing, winter, and mountains.	false
+cdir_events_dilemma_choice_details_localised_choice_label_shield_heathen_beast_slayer_choiceFIRST	We'll do it	false
+cdir_events_dilemma_choice_details_localised_choice_label_shield_heathen_beast_slayer_choiceSECOND	This kill is mine	false
+cdir_events_dilemma_choice_details_localised_choice_title_shield_heathen_beast_slayer_choiceFIRST	Of course. Our kill came from the Gods.	false
+cdir_events_dilemma_choice_details_localised_choice_title_shield_heathen_beast_slayer_choiceSECOND	The Gods aren't willing to do anything I'm not willing to do for myself.	false
+dilemmas_localised_title_shield_heathen_legendary_bearskin	Berserker	true
+dilemmas_localised_description_shield_heathen_legendary_bearskin	As the darkness of the evening falls on the treetops some of the berserkirs in your army invite you to a small ritual site at the edge of the woods. The bonfire roars as the Gyðja takes an engraved knife and begins her work of opening the throats of many different animals, especially horses. She instructs her followers to catch the blood from the sacrificed animals in bowls and twigs are used to spatter the blood on altars, walls and other participants standing nearby. One of the hofgothi approaches you specifically with a small sample of the blót sacrifice in her hands and a look of expectation in her eyes. The nature of your invitation to the ritual suddenly dawns on you as one of the nearby berserkirs places a brotherly hand on your shoulder.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_heathen_legendary_bearskin_choiceFIRST	Drink the blood	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_heathen_legendary_bearskin_choiceSECOND	Deny the blood	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_heathen_legendary_bearskin_choiceFIRST	Join your brethren!	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_heathen_legendary_bearskin_choiceSECOND	Deny your brethren	true
+dilemmas_localised_title_shield_heathen_legendary_wolfskin	Berserker	true
+dilemmas_localised_description_shield_heathen_legendary_wolfskin	Some of the men in your army invite you to a small site at the edge of the woods. The bonfire roars as the Gyðja takes an engraved knife and begins opening the throat of a horse. Her followers catch the blood and use twigs to spatter the liquid on nearby participants. One of the hofgothi approaches you specifically with a small sample of the blót sacrifice in her hands and a look of expectation in her eyes. The nature of your invitation becomes clear as one of the nearby berserkirs places a brotherly hand on your shoulder.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_heathen_legendary_wolfskin_choiceFIRST	Drink the blood	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_heathen_legendary_wolfskin_choiceSECOND	Deny the blood	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_heathen_legendary_wolfskin_choiceFIRST	Join your brethren!	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_heathen_legendary_wolfskin_choiceSECOND	Deny your brethren	true
+dilemmas_localised_title_shield_faithful_charitable_choice	Charitable	true
+dilemmas_localised_description_shield_faithful_charitable_choice	Looking on your armies causes you to reflect on the state of life for your men. They work all day every day for a loaf of bread and a pot to piss in. Their families die in sickness and hunger, and yet their King still asks them to give up their lives in battle. But when that land is threatened, something stirs in their chest that causes them to turn out and fight. It can only be love. From wretch to warrior, love gives these men strength to defend their home. Perhaps the King can do more to love these men, as they have loved him.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_faithful_charitable_choiceFIRST	Help the people	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_faithful_charitable_choiceSECOND	Status Quo	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_faithful_charitable_choiceFIRST	Let my people keep more of the food that they sow	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_faithful_charitable_choiceSECOND	We all make sacrifices	true
+dilemmas_localised_title_shield_faithful_repentent_choice	Repentant	true
+dilemmas_localised_description_shield_faithful_repentent_choice	You had a dream last night of stumbling through a dark and dreary world -- the darkness is the sorrow that you bring to others, the burden on your shoulders is the weight of your misdeeds in this life. Ghosts of men point at you accusingly as you pass them by, eagerly waiting for the day that you will join them in their misery. The Christian priests claim that all can be forgiven of their sins through the power of the Holy Saints. Perhaps it's time we pay them a visit...	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_faithful_repentent_choiceFIRST	Repent	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_faithful_repentent_choiceSECOND	Bah, nonsense!	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_faithful_repentent_choiceFIRST	Repent and thou shalt be saved!	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_faithful_repentent_choiceSECOND	Nonsense. I did what I had to	true
+dilemmas_localised_title_shield_faithful_friend_of_the_church_choice	Friend of the Church	true
+dilemmas_localised_description_shield_faithful_friend_of_the_church_choice	There have been some grumblings in your Kingdom of late concerning the administering of the Holy Communion under both kinds (consecrated bread and wine) in the church. According to tradition, the clergy have been the only ones who would receive the consecrated wine. There are certain upstarts, however, who claim that Christ passed the cup to fisherman as an example that all were equal under God, and that all should have a chance to drink the holy wine. This dispute has the potential to tear your Kingdom apart and must be resolved.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_faithful_friend_of_the_church_choiceFIRST	Support the Church	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_faithful_friend_of_the_church_choiceSECOND	Share the wine	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_faithful_friend_of_the_church_choiceFIRST	Reassert the authority of the Church	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_faithful_friend_of_the_church_choiceSECOND	Reprimand the clergy and request they share the wine	true
+dilemmas_localised_title_shield_faithful_legendary_saint_choice	Saint	true
+dilemmas_localised_description_shield_faithful_legendary_saint_choice	No earthly pleasures, no kingdoms of this world can benefit me in any way. I prefer death in Christ to power over the farthest limits of the earth. He who died in place of us is the one object of my quest. He who atoned for our sins is my one desire. In this I cannot please both God and the world at the same time. They are utterly opposed to each other in their thoughts, their desires, and their actions.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_faithful_legendary_saint_choiceFIRST	Write a book	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_faithful_legendary_saint_choiceFIRST	We can distribute your teachings	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_faithful_legendary_saint_choiceSECOND	My work is enough	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_faithful_legendary_saint_choiceSECOND	It becometh us to fulfill all righteousness	true
+dilemmas_localised_title_shield_brute_violent_choice	Violent	true
+dilemmas_localised_description_shield_brute_violent_choice	With the remains of the town still smoldering around you, your men bring you a young man with his eyes set in angry defiance. Apparently this is the son of the late Earl and was hiding in a cellar as you were sacking the town. His family may pay a handsome price for his safe return... on the other hand, the son of your enemy will grow up. And when he's grown, he'll remember the man who killed his father and come for revenge. 	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_brute_violent_choiceFIRST	Execute him	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_brute_violent_choiceSECOND	Ransom him	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_brute_violent_choiceFIRST	You can't be too careful nowadays	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_brute_violent_choiceSECOND	His pretty head will fetch a pretty coin	true
+dilemmas_localised_title_shield_brute_bloodythirsty_choice	Bloodthirsty	true
+dilemmas_localised_description_shield_brute_bloodythirsty_choice	Your victim is laid at your feet, shaking and crying. His eyes are full of pain and confusion at the events that have transpired in the last while. He woke up this morning, sure that his life would extend for many years still. He had plans and ambitions; he's still trying to understand what has happened and why everything will suddenly be nothing very soon. But broken men can sometimes be shown reason...	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_brute_bloodythirsty_choiceFIRST	Execute him	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_brute_bloodythirsty_choiceSECOND	Grant mercy	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_brute_bloodythirsty_choiceFIRST	I do what I want, the consequences be damned!	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_brute_bloodythirsty_choiceSECOND	We've broken him, now let's reshape him	true
+dilemmas_localised_title_shield_brute_legendary_brute_choice	Torturer	true
+dilemmas_localised_description_shield_brute_legendary_brute_choice	On a chilly morning, your guards bring your treacherous subject to your hall, kicking and screaming. The man has been spreading lies and other poisonous rumours about you behind your back. Even now, he curses your name and spits on your feet. He will not beg nor will he stand to be indebted to you. An example must be made of him so that your subjects will know what happens when they seek to overthrow their King. It's an unfortunate business... we can do it quick, or we can have some fun.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_brute_legendary_brute_choiceFIRST	Public torture	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_brute_legendary_brute_choiceSECOND	Public execution	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_brute_legendary_brute_choiceFIRST	Let us end this traitor nice and slow	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_brute_legendary_brute_choiceSECOND	A public execution will remind everyone who the King is!	true
+dilemmas_localised_title_shield_tyrant_subjugator_choice	Subjugator	true
+dilemmas_localised_description_shield_tyrant_subjugator_choice	Ruling a kingdom is like being a tree. The bigger it gets the more it needs to eat, and thus its roots must spread out further than ever before. 	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_tyrant_subjugator_choiceFIRST	More wars	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_tyrant_subjugator_choiceSECOND	End the wars	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_tyrant_subjugator_choiceFIRST	We need more land	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_tyrant_subjugator_choiceSECOND	Let us improve on what we have for now	true
+dilemmas_localised_title_shield_tyrant_oppressor_choice	Oppressor	true
+dilemmas_localised_description_shield_tyrant_oppressor_choice	The recent peasant uprisings are a direct challenge to your authority. Perhaps being kind was the wrong approach before; perhaps you were too trusting of those around you. Perhaps it's time to twist the screws and become the nasty ruler they make you out to be. The security of the Kingdom demands you take action!	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_tyrant_oppressor_choiceFIRST	Time to crack down	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_tyrant_oppressor_choiceSECOND	Forgive and forget.	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_tyrant_oppressor_choiceFIRST	Let's remind them who rules this Kingdom	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_tyrant_oppressor_choiceSECOND	Maybe we've been a bit too harsh	true
+dilemmas_localised_title_shield_tyrant_treasonous_choice	Treasonous	false
+dilemmas_localised_description_shield_tyrant_treasonous_choice	A man from another Kingdom approaches you at court and claims to represent a "concerned friend" who has taken an interest in your situation. His friend wishes to help restore your reputation and is prepared to fully utilize his resources in spreading your good works among your people in order that they will again recognize you for the great leader you are. The only request is that we feed him yearly information about the movements of our armies as well as those of our allies. Will you honour this man’s request?	false
+cdir_events_dilemma_choice_details_localised_choice_label_shield_tyrant_treasonous_choiceFIRST	I, painfully, accept	false
+cdir_events_dilemma_choice_details_localised_choice_label_shield_tyrant_treasonous_choiceSECOND	My honour is not for sale	false
+cdir_events_dilemma_choice_details_localised_choice_title_shield_tyrant_treasonous_choiceFIRST	No one will ever know anyways	false
+cdir_events_dilemma_choice_details_localised_choice_title_shield_tyrant_treasonous_choiceSECOND	That which is done in the dark, will always be brought into the light	false
+dilemmas_localised_title_shield_tyrant_legendary_tyrant_choice	Legendary Tyrant	true
+dilemmas_localised_description_shield_tyrant_legendary_tyrant_choice	What shall I do with subjects who are so openly hostile to their King and determined to upset the safety of our lands? If the crew of a ship seeks to burn their own vessel and sink her, is it not incumbent on the captain to sacrifice everything needful to ensure they don't sink? When the fox is at the door, shall the chicks scorn their mother who has only sought their protection and throw her out? No more! My nobles may not love me or respect me -- but, by God, they shall obey me!	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_tyrant_legendary_tyrant_choiceFIRST	End all politics	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_tyrant_legendary_tyrant_choiceSECOND	Keep trying	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_tyrant_legendary_tyrant_choiceFIRST	The nobles will be made to listen	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_tyrant_legendary_tyrant_choiceSECOND	Let's give them another chance	true
+dilemmas_localised_title_shield_judge_just_choice	Just/Greed	true
+dilemmas_localised_description_shield_judge_just_choice	Your advisor approaches you with troubling news about the finances of our Kingdom -- we're spending far more than our coffers can withstand. We need to either cut back on expenditures... or ahem, find more creative ways to make ends meet. Taking bribes, embezzling royal funds, charging extortionary amounts of interest on loans; these, of course, are just temporary solutions until we can get back on steady ground.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_judge_just_choiceFIRST	Take the bribe	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_judge_just_choiceSECOND	Deny the bribe	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_judge_just_choiceFIRST	We do what we must	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_judge_just_choiceSECOND	How dare you suggest the King take a bribe!	true
+dilemmas_localised_title_shield_judge_lawful_choice	Lawful	true
+dilemmas_localised_description_shield_judge_lawful_choice	Your advisors bring you reports of highwaymen throughout your kingdom who terrorize the roads for travellers and farmers. Their presence is a scourge on your people and the peace of the Kingdom! Rooting them out takes considerable time and resources. Or perhaps there is a more cost-effective solution to dealing with these ruffians?	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_judge_lawful_choiceFIRST	Destroy them	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_judge_lawful_choiceSECOND	Guard the roads	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_judge_lawful_choice_THIRD	Nothing right now	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_judge_lawful_choiceFIRST	Root them all out. I am the law!	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_judge_lawful_choiceSECOND	Perhaps guard tolls would be helpful?	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_judge_lawful_choice_THIRD	We can't afford it. 	true
+dilemmas_localised_title_shield_judge_honourable_choice	Honourable	true
+dilemmas_localised_description_shield_judge_honourable_choice	One of your nobles approaches you with an offer: apparently they have captured a wealthy family member from a rival kingdom and wish to ransom them back. They wish to do so under your protection and promise you half of the bounty if they can close a deal with the royal family. It will be a rather large sum of money that we definitely come in handy. 	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_judge_honourable_choiceFIRST	Return them	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_judge_honourable_choiceSECOND	Ransom them	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_judge_honourable_choiceFIRST	Maybe we'll gain a friend	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_judge_honourable_choiceSECOND	The ransom will be worth quite a bit of gold	true
+dilemmas_localised_title_shield_judge_legendary_judge_choice	Legendarily Incorruptible	true
+dilemmas_localised_description_shield_judge_legendary_judge_choice	To be able to stand upright and honourable in the eyes of your peers is truly one of the most satisfying experiences a man can have. Even those who are your enemies know of your integrity and respect you for it.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_judge_legendary_judge_choiceFIRST	I stand as judge of this Kingdom	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_judge_legendary_judge_choiceFIRST	I pass judgment like the Solomon the Wise	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_judge_legendary_judge_choiceSECOND	We'll write a manuscript on law instead	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_judge_legendary_judge_choiceSECOND	We can still pass our influence on, and make a tidy sum in the process	true
+dilemmas_localised_title_shield_magnate_seneschal_choice	Seneschal	true
+dilemmas_localised_description_shield_magnate_seneschal_choice	Of all your many talents mercantilism was never your strongest suite, but it would seem in your best interest to improve your skills. After all if something was to happen to you, your family will still need to be taken care of, debts will need to be paid off and, dare I say, it will be nice to have an extra jingle in your pockets as well. With all of these merchants and traders walking around surely there can be one from whom we can glean some business wisdom.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_magnate_seneschal_choiceFIRST	Learn the trade	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_magnate_seneschal_choiceSECOND	Maybe later	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_magnate_seneschal_choiceFIRST	Let's hire someone who can teach us	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_magnate_seneschal_choiceSECOND	We have other matters to attend to	true
+dilemmas_localised_title_shield_magnate_collector_choice	Tax Collector	false
+dilemmas_localised_description_shield_magnate_collector_choice	Your nobles approach you at court, insisting that the tax rate be lowered immediately. They also subtly hint as some "unfortunate incident" that might possibly occur if the situation does not soon change. The nerve of these men, openly making threats against their King! The Kingdom only asks what is needed to provide for their safety, and these men have clearly allowed their personal holdings sway their loyalty to the King. We could take them at their word and acquiesce... then again; few men were ever remembered for playing it safe.	false
+cdir_events_dilemma_choice_details_localised_choice_label_shield_magnate_collector_choiceFIRST	Let's punish these men	false
+cdir_events_dilemma_choice_details_localised_choice_label_shield_magnate_collector_choiceSECOND	We'll lower the taxes	false
+cdir_events_dilemma_choice_details_localised_choice_title_shield_magnate_collector_choiceFIRST	They will pay for their arrogance	false
+cdir_events_dilemma_choice_details_localised_choice_title_shield_magnate_collector_choiceSECOND	Perhaps they have a point	false
+dilemmas_localised_title_shield_elder_dutifull_choice	Dutiful	true
+dilemmas_localised_description_shield_elder_dutifull_choice	Some of the captains in your army approach you with a somewhat nervous look. After a quick bow they disclose that the men in your army have been extra concerned about the harvest this year and ensuring that their families will have enough support. The year is assumed to be extra worse weather-wise and it is distracting them from their military duties. Will we lend a helping hand to support our men?	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_elder_dutifull_choiceFIRST	Support them	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_elder_dutifull_choiceSECOND	Deny them	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_elder_dutifull_choiceFIRST	Here's an early pay	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_elder_dutifull_choiceSECOND	Our families will just have to manage on their own	true
+dilemmas_localised_title_shield_elder_husbandman_choice	Husbandman	true
+dilemmas_localised_description_shield_elder_husbandman_choice	We can host a regular farmer's market if you fund the gathering place in town for it.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_elder_husbandman_choiceFIRST	Host market	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_elder_husbandman_choiceSECOND	Maybe later	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_elder_husbandman_choiceFIRST	We will bring the farmer's together	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_elder_husbandman_choiceSECOND	Too expensive for now	true
+dilemmas_localised_title_shield_elder_storyteller_choice	Storyteller	false
+dilemmas_localised_description_shield_elder_storyteller_choice	Men amuse themselves nightly around the campfire at night with tales of local folklore... but on this night the men ask you for tales of your own exploits. Such an act might be viewed as vain and self-serving... usually in such matters it is best to rely on a modest tale which is easily relatable to others. But perhaps it wouldn't come off badly to share on your more "colourful" adventures.	false
+cdir_events_dilemma_choice_details_localised_choice_label_shield_elder_storyteller_choiceFIRST	We'll play it safe	false
+cdir_events_dilemma_choice_details_localised_choice_label_shield_elder_storyteller_choiceSECOND	No need to hold back	false
+cdir_events_dilemma_choice_details_localised_choice_title_shield_elder_storyteller_choiceFIRST	Modesty is a virtue, after all	false
+cdir_events_dilemma_choice_details_localised_choice_title_shield_elder_storyteller_choiceSECOND	The man asked you first and the current spirit is good for a an exciting story	false
+dilemmas_localised_title_shield_elder_beloved_choice	Beloved Lord	true
+dilemmas_localised_description_shield_elder_beloved_choice	Your people love you, and you them. Even when your body is cold and buried your memory will live on in the tales sung by parents to their children about their Beloved King.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_elder_beloved_choiceFIRST	Let us discuss gifts for all of your nobles	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_elder_beloved_choiceFIRST	Everyone loves a ring giver	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_elder_beloved_choiceSECOND	Gifts aren't needed	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_elder_beloved_choiceSECOND	My reputation speaks for itself	true
+dilemmas_localised_title_shield_warrior_legendary_warrior_choice	Warrior King	true
+dilemmas_localised_description_shield_warrior_legendary_warrior_choice	Life isn't over. You can still get smarter, cleverer, more experienced, or meaner -- but your body and soul just aren't going to get any younger. The challenge now is to stay at the peak as long as you can. You may be as strong today as any man, but there's always someone younger, a new challenger who wants to take down the old man.	true
+cdir_events_dilemma_choice_details_localised_choice_label_shield_warrior_legendary_warrior_choiceFIRST	Great news!	true
+cdir_events_dilemma_choice_details_localised_choice_title_shield_warrior_legendary_warrior_choiceFIRST	It may be time to retire soon…	true
+dilemmas_localised_title_sw_traits_strange_friends	Friends with Strange Hair	false
+dilemmas_localised_description_sw_traits_strange_friends	This noble has become close with the Vikings, drinking and hunting with their Sons. He requests that he be given leave to learn more about the Vikings, so as to negotiate with them on your behalf.	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_strange_friendsFIRST	Grant him leave	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_strange_friendsSECOND	Refuse him	false
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_strange_friendsFIRST	What could go wrong?	false
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_strange_friendsSECOND	Let him tend to his normal duties.	false
+dilemmas_localised_title_sw_traits_foreign_settlers	Foreign Settlers	false
+dilemmas_localised_description_sw_traits_foreign_settlers	This noble has invited a group of foreigners to settle in his lands. They would make useful mercenaries, but their presence would lend significant authority to their favoured lord.	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_foreign_settlersFIRST	Allow them in	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_foreign_settlersSECOND	Pay them to leave	false
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_foreign_settlersFIRST	Good soldiers are hard to find, we shouldn't turn them away out of fear that our nobles might betray us.	false
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_foreign_settlersSECOND	It is dangerous to allow our nobles to hire foreigners. We will pay them a small sum to find employment outside of our Kingdom.	false
+dilemmas_localised_title_sw_traits_beloved	Beloved by the People	false
+dilemmas_localised_description_sw_traits_beloved	This noble is becoming very popular with the peasants. Luckily for us, they're peasants.\\n	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_belovedFIRST	Long live the King!	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_belovedSECOND	A harmless development	false
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_belovedFIRST	We will overshadow his contributions with our own charity	false
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_belovedSECOND	If he wishes to waste his coin on the peasantry, so be it.	false
+dilemmas_localised_title_sw_traits_corruption	Corruption	false
+dilemmas_localised_description_sw_traits_corruption	Word reaches you that this noble has been misusing funds intended to pay soldiers and maintain fortifications. Such immoral behaviour weakens our Kingdom from within, yet it may be politically inconvienient for you to put a stop to it.	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_corruptionFIRST	Look the other way	false
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_corruptionFIRST	Troublesome as this noble has become, their services are still necessary.	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_corruptionSECOND	Denouce His Actions	false
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_corruptionSECOND	A very public reprimand will convince this general to change his ways, but he isn't going to be happy about it.	false
+dilemmas_localised_title_sw_traits_treason	Whispers of Treason	false
+dilemmas_localised_description_sw_traits_treason	Word reaches you that this noble, long disloyal to your rule, has been associating with known traitors and making suspicious deals with unsavoury thugs. 	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_treasonFIRST	Let him plot	false
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_treasonFIRST	This man is a spineless coward, he poses no threat to us.	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_treasonSECOND	Order his death	false
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_treasonSECOND	Those who defy their King have a habit of disappearing.	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_treasonTHIRD	Denouce him	false
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_treasonTHIRD	Publicly exposing his disloyalty will cause other nobles to stay clear of his influence.	false
+dilemmas_localised_title_sw_traits_collector	Fervent Collection	false
+dilemmas_localised_description_sw_traits_collector	The merchants and lesser nobles governed by this noble have petitioned you to intervene in his tax collection, which has become increasingly demanding in recent months, and is causing increasing anger in our Kingdom. They ask for a repreive.	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_collectorFIRST	Congratulate the Governor	false
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_collectorFIRST	Such efforts strengthen our Kingdom.	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_traits_collectorSECOND	Appease the locals	false
+cdir_events_dilemma_choice_details_localised_choice_title_sw_traits_collectorSECOND	We will ask our Governor to relax his efforts, and give the merchants a reasonable sum to compensate them for their trouble.	false

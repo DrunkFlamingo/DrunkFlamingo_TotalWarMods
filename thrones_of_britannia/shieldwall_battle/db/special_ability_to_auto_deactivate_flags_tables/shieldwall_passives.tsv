@@ -1,0 +1,5 @@
+deactivate_flag	special_ability
+#special_ability_to_auto_deactivate_flags_tables;0;db/special_ability_to_auto_deactivate_flags_tables/shieldwall_passives	
+officer_dead	com_into_the_breach
+dismounted	com_force_concentration
+officer_dead	com_battle_rhythm

@@ -1,0 +1,4 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/!!food_storage_rnd_texts.loc		
+random_localisation_strings_string_FACTION_PROVINCE_FOOD_FACTOR_TECHNOLOGIES	Stockpiles	true
+random_localisation_strings_string_FACTION_FOOD_FACTOR_TECHNOLOGIES	Stockpiles	true

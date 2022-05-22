@@ -1,0 +1,37 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/@sw_faction_mechanics_tribute.loc		
+random_localisation_strings_string_factor_vassals_tribute	Vassals	false
+random_localisation_strings_string_factor_raiding_tribute	Raiding	false
+random_localisation_strings_string_factor_gifts_to_other_factions_tribute	Tribute to Other Factions	false
+random_localisation_strings_string_factor_looting_tribute	Looting Settlements	false
+random_localisation_strings_string_factor_oppression_tribute	Interal Oppression	false
+random_localisation_strings_string_factor_decay_tribute	Decay	false
+dilemmas_localised_title_sw_spend_tribute_authority_or_foreigners	Tribute: Displays of Wealth	false
+dilemmas_localised_title_sw_spend_tribute_sea_captain	Tribute: Sea Captain	false
+dilemmas_localised_title_sw_spend_tribute_sea_king	Tribute: Saekonungr 	false
+dilemmas_localised_description_sw_spend_tribute_authority_or_foreigners	What use is wealth if you cannot spend it ostentatiously? The only question is where we ought to display our great fortunes. 	false
+dilemmas_localised_description_sw_spend_tribute_sea_captain	A veteran captain has arrived in your capital seeking men to raid the shores of Brittania. The allegiance of this man will not be given cheaply, but their experience leading men may be valuable to your armies.	false
+dilemmas_localised_description_sw_spend_tribute_sea_king	Word reaches you that an exceptional bad of Viking warriors, famous for their daring raids, are drinking in your port. The allegiance of such men does not come cheaply, but it may be worth your while.	false
+campaign_payload_ui_details_dummy_spend_culture_tribute_20	[[col:red]]-8 Tribute[[/col]]	false
+campaign_payload_ui_details_dummy_spend_culture_tribute_25	[[col:red]]-10 Tribute[[/col]]	false
+campaign_payload_ui_details_dummy_spend_culture_tribute_30	[[col:red]]-12 Tribute[[/col]]	false
+campaign_payload_ui_details_dummy_spend_culture_tribute_35	[[col:red]]-15 Tribute[[/col]]	false
+campaign_payload_ui_details_dummy_spend_culture_tribute_50	[[col:red]]-20 Tribute[[/col]]	false
+random_localisation_strings_string_factor_events_tribute	Events	false
+dilemmas_localised_title_sw_spend_tribute_vikingar	Tribute: Bands of Vikings	false
+dilemmas_localised_description_sw_spend_tribute_vikingar	Word reaches you that a large number of Vikings have stopped at your port on their way to raid monasteries in Frankia. With enough incentive, they could sail under your banners and against your enemies.	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_spend_tribute_authority_or_foreignersFIRST	Demonstrate our wealth to local nobles	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_spend_tribute_sea_captainFIRST	Hire the Captain	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_spend_tribute_sea_kingFIRST	Hire the Saekonungr	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_spend_tribute_vikingarFIRST	Hire the Vikings	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_spend_tribute_authority_or_foreignersSECOND	Demonstrate our wealth in Norway	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_spend_tribute_sea_captainSECOND	Our Plunder is Ours	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_spend_tribute_sea_kingSECOND	Our Plunder is Ours	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_spend_tribute_vikingarSECOND	Our Plunder is Ours	false
+cdir_events_dilemma_choice_details_localised_choice_label_sw_spend_tribute_authority_or_foreignersTHIRD	Our Plunder is Ours	false
+effects_description_sw_no_slave_replen	Thrall units cannot Replenish	false
+effects_description_sw_no_slave_market_income	No Income from Thrall Markets	false
+effects_description_sw_sold_at_markets	%+n Income (SLAVES) from Slave Markets	false
+effects_description_sw_slave_rebellion_risk	Maintain Public Order to avoid the potential for Slave Rebellions	false
+effects_description_shieldwall_unlocks_sea_king	Tribute may be spent to acquire Vikingar, Hero Units, and other benefits.	true
+random_localisation_strings_string_factor_looting_slaves	Looting Settlements	false

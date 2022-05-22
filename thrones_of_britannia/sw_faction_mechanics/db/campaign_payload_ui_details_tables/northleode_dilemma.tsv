@@ -1,0 +1,17 @@
+component	icon
+#campaign_payload_ui_details_tables;0;db/campaign_payload_ui_details_tables/northleode_dilemma	
+war_with_strat_clut	civil_war.png
+war_with_jorvik	civil_war.png
+djurby_war_continues	civil_war.png
+djurby_becomes_vassal	faction_leader.png
+welsh_invasion_soon	cult_welsh_heroism.png
+welsh_infighting	civil_war.png
+welsh_attack	civil_war.png
+gwined_attack	civil_war.png
+seisilwig_neighbours	civil_war.png
+seisilwig_help	civil_war.png
+seisilwig_betrayal	civil_war.png
+breaks_powis_alliance	diplomacy_negative.png
+powis_declares_war_soon	civil_war.png
+ai_welsh_attack	civil_war.png
+ai_welsh_infight	civil_war.png

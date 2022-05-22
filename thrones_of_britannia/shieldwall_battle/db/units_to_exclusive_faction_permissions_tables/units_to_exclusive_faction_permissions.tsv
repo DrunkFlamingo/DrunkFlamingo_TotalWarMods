@@ -1,0 +1,6 @@
+key	faction	allowed
+#units_to_exclusive_faction_permissions_tables;0;db/units_to_exclusive_faction_permissions_tables/units_to_exclusive_faction_permissions		
+eng_marcher_armoured_spearmen	vik_fact_circenn	true
+est_warband	vik_fact_dyflin	true
+vik_mailed_archers	vik_fact_sudreyar	true
+est_spear_hirdmen	vik_fact_sudreyar	true

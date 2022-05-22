@@ -1,0 +1,14 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/!!new_standardized_economy_effects				
+sw_buildings_abbey_income_mod	wealth.png	80	wealth_negative.png	false
+sw_buildings_sheep_income_mod	wealth.png	81	wealth_negative.png	false
+sw_buildings_cattle_income_mod	wealth.png	82	wealth_negative.png	false
+sw_buildings_beekeeping_income_mod	wealth.png	83	wealth_negative.png	false
+sw_income_church_mod	wealth.png	84	wealth_negative.png	false
+sw_income_agriculture_mod	wealth.png	85	wealth_negative.png	false
+sw_income_industry_mod	wealth.png	86	wealth_negative.png	false
+sw_income_commerce_mod	wealth.png	87	wealth_negative.png	false
+shield_gdp_industry	wealth.png	30	this_is_never_ok.png	false
+shield_gdp_church	wealth.png	31	this_is_never_ok.png	false
+shield_gdp_commerce	wealth.png	32	this_is_never_ok.png	false
+shield_gdp_farm	wealth.png	33	this_is_never_ok.png	false

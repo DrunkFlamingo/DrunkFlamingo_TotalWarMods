@@ -1,0 +1,4 @@
+effect	bonus_value_id
+#effect_bonus_value_basic_junction_tables;0;db/effect_bonus_value_basic_junction_tables/supplies	
+sw_supply_lines	military_force_morale_modifier_faction_trait
+shield_no_income_this_turn	gdp_mod_all

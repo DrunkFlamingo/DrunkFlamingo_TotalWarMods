@@ -1,0 +1,9 @@
+key	localised_description	localised_title	ui_icon	bundle_target
+#effect_bundles_tables;1;db/effect_bundles_tables/army_visits				
+sw_sea_king_port_visit_2	PLACEHOLDER	PLACEHOLDER		faction
+sw_sea_king_port_visit_1	PLACEHOLDER	PLACEHOLDER		faction
+sw_warehouse_resupply_3	PLACEHOLDER	PLACEHOLDER	vik_warehouse_effect_bundles.png	faction
+sw_warehouse_resupply_2	PLACEHOLDER	PLACEHOLDER	vik_warehouse_effect_bundles.png	faction
+sw_alehouse_drinks_1	PLACEHOLDER	PLACEHOLDER		faction
+sw_warehouse_resupply_1	PLACEHOLDER	PLACEHOLDER	vik_warehouse_effect_bundles.png	faction
+sw_irish_saint_visit_1	PLACEHOLDER	PLACEHOLDER		faction

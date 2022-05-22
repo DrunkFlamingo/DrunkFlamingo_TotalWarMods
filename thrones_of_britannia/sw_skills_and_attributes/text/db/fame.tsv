@@ -1,0 +1,5 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/fame.loc		
+campaign_payload_ui_details_description_clan_fame	Fame: %+1%	false
+campaign_payload_ui_details_description_clan_fame_change	Fame: %+1%	false
+campaign_payload_ui_details_description_personal_fame	Character's Personal Fame Increases	false

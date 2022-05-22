@@ -1,0 +1,12 @@
+<VARIANT_MESH>
+	<SLOT name="hair" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/hair_beards/hair/vik_hair_kingly_01/vik_hair_kingly_01_helm_01.rigid_model_v2" >
+			<TINT red="0.792157" green="0.619608" blue="0.270588" random_range="0.0" />
+					<SLOT name="facial_hair" >
+				<VARIANT_MESH_REFERENCE definition="VariantMeshes/_VariantModels/man/hair_beards/vik_beard_jaw_a_blonde_01.VariantMeshDefinition" />
+				<VARIANT_MESH_REFERENCE definition="VariantMeshes/_VariantModels/man/hair_beards/vik_beard_jaw_a_blonde_02.VariantMeshDefinition" />
+				<VARIANT_MESH_REFERENCE definition="VariantMeshes/_VariantModels/man/hair_beards/vik_moustache_jaw_a_blonde_01.VariantMeshDefinition" />
+			</SLOT>
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

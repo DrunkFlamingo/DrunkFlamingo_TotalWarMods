@@ -1,0 +1,19 @@
+<VARIANT_MESH>
+	<SLOT name="weapons" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/weapons/att_cha_basic_war_scythe.rigid_model_v2" >
+			<TINT red="0.223529" green="0.145098" blue="0.066667" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/weapons/att_cha_grip_war_scythe.rigid_model_v2" >
+			<TINT red="0.666667" green="0.407843" blue="0.184314" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/weapons/att_cha_basic_war_scythe.rigid_model_v2" >
+			<TINT red="0.129412" green="0.070588" blue="0.027451" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/weapons/att_cha_basic_war_scythe.rigid_model_v2" >
+			<TINT red="0.278431" green="0.152941" blue="0.039216" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/weapons/att_cha_grip_war_scythe.rigid_model_v2" >
+			<TINT red="0.152941" green="0.082353" blue="0.035294" random_range="0.0" />
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

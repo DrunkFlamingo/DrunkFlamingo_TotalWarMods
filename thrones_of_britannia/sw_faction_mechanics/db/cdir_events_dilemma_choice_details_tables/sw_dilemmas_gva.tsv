@@ -1,0 +1,25 @@
+choice_key	dilemma_key
+#cdir_events_dilemma_choice_details_tables;0;db/cdir_events_dilemma_choice_details_tables/sw_dilemmas_gva	
+FIRST	shield_invasion_danegeld
+SECOND	shield_invasion_danegeld
+FIRST	shield_invasion_danegeld_GVA
+SECOND	shield_invasion_danegeld_GVA
+THIRD	shield_invasion_danegeld_GVA
+FOURTH	shield_invasion_danegeld_GVA
+FIRST	shield_training_forging
+SECOND	shield_training_forging
+THIRD	shield_training_forging
+FIRST	shield_training_hunters
+SECOND	shield_training_hunters
+FIRST	shield_foreign_occupation
+SECOND	shield_foreign_occupation
+FIRST	shield_foreign_occupation_here_king
+SECOND	shield_foreign_occupation_here_king
+FIRST	shield_foreign_port
+SECOND	shield_foreign_port
+FIRST	shield_foreign_port_GVA
+SECOND	shield_foreign_port_GVA
+FIRST	shield_foreign_mercenaries
+SECOND	shield_foreign_mercenaries
+FIRST	shield_foreign_defeat
+SECOND	shield_foreign_defeat

@@ -1,0 +1,6 @@
+attribute	phase
+#special_ability_phase_attribute_effects_tables;0;db/special_ability_phase_attribute_effects_tables/sw_shieldwall_abilities	
+berserk	vik_offensive_frenzy_1
+scare_all	vik_offensive_frenzy_1
+scare_all	vik_highland_charge
+scare_immune	att_gen_brace_02

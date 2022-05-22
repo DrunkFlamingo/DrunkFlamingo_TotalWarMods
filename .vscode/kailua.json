@@ -1,0 +1,7 @@
+{
+    "start_path": "thrones_of_britannia/sw_kailua/entry.lua",
+    "preload": {
+        "open": ["lua51"],
+        "require": ["thrones_of_britannia/sw_kailua/ca_types", "thrones_of_britannia/sw_kailua/mod_types"]
+    }
+}

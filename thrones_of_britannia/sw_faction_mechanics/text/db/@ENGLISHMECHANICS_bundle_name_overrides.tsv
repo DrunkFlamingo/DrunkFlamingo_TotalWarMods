@@ -1,0 +1,48 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/@ENGLISHMECHANICS_bundle_name_overrides.loc		
+effect_bundles_localised_description_vik_burghal_0_2	"The Fyrd are not a standing army, and they expect to spend the Winters at home. Maintaining Fyrd units during this time will be increasing expensive. "	true
+effect_bundles_localised_description_vik_burghal_1_2	"The Fyrd are not a standing army, and they expect to spend the Winters at home. Maintaining Fyrd units during this time will be increasing expensive. "	true
+effect_bundles_localised_description_vik_burghal_2_2	"The Fyrd are not a standing army, and they expect to spend the Winters at home. Maintaining Fyrd units during this time will be increasing expensive. "	true
+effect_bundles_localised_description_vik_burghal_3_2	"The Fyrd are not a standing army, and they expect to spend the Winters at home. Maintaining Fyrd units during this time will be increasing expensive. "	true
+effect_bundles_localised_description_vik_burghal_4_2	"The Fyrd are not a standing army, and they expect to spend the Winters at home. Maintaining Fyrd units during this time will be increasing expensive. "	true
+effect_bundles_localised_description_vik_burghal_0_0	"The Fyrd are not a standing army, and they expect to be disbanded in peace times. As a result, maintaining Fyrd units during peace time will incur extra costs. "	true
+effect_bundles_localised_description_vik_burghal_1_0	"The Fyrd fight in larger battles on behalf of the King, but their more important function is in smaller levied forces that ward off raiders and keep the King's peace throughout England."	true
+effect_bundles_localised_description_vik_burghal_2_0	"We are at war! During the best months of the year Fyrdmen as expected to serve their Thegns in military campaigns. \\n\\n However, the Fyrd are not at their full number. Obtaining the loyalty of the governors in your Kingdom will allow you to access Fyrd units with further reduced cost. "	true
+effect_bundles_localised_description_vik_burghal_3_0	"We are at war! During the best months of the year Fyrdmen as expected to serve their Thegns in military campaigns. \\n\\n However, the Fyrd are not at their full number. Obtaining the loyalty of the governors in your Kingdom will allow you to access Fyrd units with further reduced cost. \\n\\n Since our Kingdom focuses heavily on the Fyrd, we benefit from improved experience for Fyrd recruits. "	true
+effect_bundles_localised_description_vik_burghal_4_0	"War has reached our borders! During the best months of the year Fyrdmen as expected to serve their Thegns in military campaigns. \\n\\n  We have the people's support, and the Fyrd can be levied at a reduced cost "	true
+effect_bundles_localised_description_vik_burghal_0_1	"The Fyrd are not a standing army, and they must return to their farms each Autumn to reap the year’s Harvest. As a result, maintaining Fyrd units during Harvest time will incur a large food upkeep per Fyrd unit maintained. "	true
+effect_bundles_localised_description_vik_burghal_1_1	"The Fyrd are not a standing army, and they must return to their farms each Autumn to reap the year’s Harvest. As a result, maintaining Fyrd units during Harvest time will incur a large food upkeep per Fyrd unit maintained. "	true
+effect_bundles_localised_description_vik_burghal_2_1	"The Fyrd are not a standing army, and they must return to their farms each Autumn to reap the year’s Harvest. As a result, maintaining Fyrd units during Harvest time will incur a large food upkeep per Fyrd unit maintained. "	true
+effect_bundles_localised_description_vik_burghal_3_1	"The Fyrd are not a standing army, and they must return to their farms each Autumn to reap the year’s Harvest. As a result, maintaining Fyrd units during Harvest time will incur a large food upkeep per Fyrd unit maintained. "	true
+effect_bundles_localised_description_vik_burghal_4_1	"The Fyrd are not a standing army, and they must return to their farms each Autumn to reap the year’s Harvest. As a result, maintaining Fyrd units during Harvest time will incur a large food upkeep per Fyrd unit maintained. "	true
+effect_bundles_localised_title_vik_burghal_0_2	Major War - War Fervor	true
+effect_bundles_localised_title_vik_burghal_1_2	Major War - War Support	true
+effect_bundles_localised_title_vik_burghal_2_2	Major War - Indifference	true
+effect_bundles_localised_title_vik_burghal_3_2	Major War - War Weariness	true
+effect_bundles_localised_title_vik_burghal_4_2	Major War - War Exhaustion	true
+effect_bundles_localised_title_vik_burghal_0_0	At Peace - War Fervor	true
+effect_bundles_localised_title_vik_burghal_1_0	At Peace - War Support	true
+effect_bundles_localised_title_vik_burghal_2_0	At Peace - Indifference	true
+effect_bundles_localised_title_vik_burghal_3_0	At Peace - War Weariness	true
+effect_bundles_localised_title_vik_burghal_4_0	At Peace - War Exhaustion	true
+effect_bundles_localised_title_vik_burghal_0_1	Minor War - War Fervor	true
+effect_bundles_localised_title_vik_burghal_1_1	Minor War - War Support	true
+effect_bundles_localised_title_vik_burghal_2_1	Minor War - Indifference	true
+effect_bundles_localised_title_vik_burghal_3_1	Minor War - War Weariness	true
+effect_bundles_localised_title_vik_burghal_4_1	Minor War - War Exhaustion	true
+effect_bundles_localised_description_vik_english_peasant_positive	The people are contented with your stewardship. You benefit from reduced costs to upkeep and recruit Fyrd units during the Spring and Summer months. 	true
+effect_bundles_localised_description_vik_english_peasant_negative	Without stability, the land cannot prosper. Improve the happiness of your provincial Governors to gain benefits to your Fyrd units. 	true
+effect_bundles_localised_title_vik_english_peasant_positive	Contented Burghal	true
+effect_bundles_localised_title_vik_english_peasant_negative	Discontented Burghal	true
+effect_bundles_localised_title_vik_heroism_5	Heroism	false
+effect_bundles_localised_title_vik_heroism_4	Heroism	false
+effect_bundles_localised_title_vik_heroism_1	Heroism	false
+effect_bundles_localised_title_vik_heroism_0	Heroism	false
+effect_bundles_localised_title_vik_heroism_3	Heroism	false
+effect_bundles_localised_title_vik_heroism_2	Heroism	false
+effect_bundles_localised_description_vik_heroism_4	Bravery and fortitude are the very best qualities in man, and can both be found among the heroes of the Welsh!\\n\\n[[col:yellow]]Increase heroism through heroic victories, character followers, and missions. Rioting, uncontrolled banditry, and military defeats will reduce heroism. Heroism may be spent on Bard Songs. [[/col]]	false
+effect_bundles_localised_description_vik_heroism_5	There are now more heroes in this land than blood being spilled in its defence!	false
+effect_bundles_localised_description_vik_heroism_2	Bravery and fortitude are the very best qualities in man, and can both be found among the heroes of the Welsh!\\n\\n[[col:yellow]]Increase heroism through heroic victories, character followers, and missions. Rioting, uncontrolled banditry, and military defeats will reduce heroism. Heroism may be spent on Bard Songs. [[/col]]	false
+effect_bundles_localised_description_vik_heroism_3	Bravery and fortitude are the very best qualities in man, and can both be found among the heroes of the Welsh!\\n\\n[[col:yellow]]Increase heroism through heroic victories, character followers, and missions. Rioting, uncontrolled banditry, and military defeats will reduce heroism. Heroism may be spent on Bard Songs. [[/col]]	false
+effect_bundles_localised_description_vik_heroism_0	Where are the men of legend, whose noble blood has quenched this great land?\\n\\n[[col:yellow]]Increase heroism through heroic victories, character followers, and missions. Rioting, uncontrolled banditry, and military defeats will reduce heroism. Heroism may be spent on Bard Songs. [[/col]]	false
+effect_bundles_localised_description_vik_heroism_1	Bravery and fortitude are the very best qualities in man, and can both be found among the heroes of the Welsh!\\n\\n[[col:yellow]]Increase heroism through heroic victories, character followers, and missions. Rioting, uncontrolled banditry, and military defeats will reduce heroism. Heroism may be spent on Bard Songs. [[/col]]	false

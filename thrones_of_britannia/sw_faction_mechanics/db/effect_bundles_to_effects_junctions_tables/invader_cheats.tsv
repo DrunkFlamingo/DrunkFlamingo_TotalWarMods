@@ -1,0 +1,4 @@
+effect_bundle_key	effect_key	effect_scope	value	advancement_stage
+#effect_bundles_to_effects_junctions_tables;2;db/effect_bundles_to_effects_junctions_tables/invader_cheats				
+sw_invasion_faction	vik_upkeep_costs_mercenary	faction_to_force_own	-50.0	start_turn_completed
+sw_invasion_faction	vik_unit_food_upkeep	faction_to_force_own	-5.0	start_turn_completed

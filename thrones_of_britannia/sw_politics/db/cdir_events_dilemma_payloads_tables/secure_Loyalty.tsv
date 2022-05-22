@@ -1,0 +1,18 @@
+id	choice_key	dilemma_key	payload_key	value
+#cdir_events_dilemma_payloads_tables;2;db/cdir_events_dilemma_payloads_tables/secure_Loyalty				
+41647301	FIRST	sw_secure_loyalty_wants_money	LOYALTY	AMOUNT[2]
+41647302	FIRST	sw_secure_loyalty_wants_influence	LOYALTY	AMOUNT[2]
+41647303	FIRST	sw_secure_loyalty_make_an_offer	TREASURY	AMOUNT[-750]
+41647304	FIRST	sw_secure_loyalty_make_an_offer	LOYALTY	AMOUNT[2]
+41647305	FIRST	sw_secure_loyalty_break_knees	GIVE_TRAIT	TRAIT_KEY[shield_brute_violent];TARGET_ACTOR
+41647306	FIRST	sw_secure_loyalty_break_knees	LOYALTY	AMOUNT[2]
+41647307	FIRST	sw_secure_loyalty_wants_money	TREASURY	AMOUNT[-750]
+41647308	FIRST	sw_secure_loyalty_wants_influence	GIVE_TRAIT	TRAIT_KEY[shield_noble_high_born];
+41647310	SECOND	sw_secure_loyalty_make_an_offer	CHANGE_GRAVITAS	AMOUNT[2];POLITICAL_ACTION
+41647311	SECOND	sw_secure_loyalty_make_an_offer	LOYALTY	AMOUNT[2]
+41647312	THIRD	sw_secure_loyalty_make_an_offer	GIVE_TRAIT	TRAIT_KEY[shield_brute_violent];TARGET_ACTOR
+41647313	THIRD	sw_secure_loyalty_make_an_offer	LOYALTY	AMOUNT[2]
+41647314	FOURTH	sw_secure_loyalty_make_an_offer	TEXT_DISPLAY	LOOKUP[sw_do_nothing]
+41647315	SECOND	sw_secure_loyalty_wants_money	TEXT_DISPLAY	LOOKUP[sw_do_nothing]
+41647316	SECOND	sw_secure_loyalty_wants_influence	TEXT_DISPLAY	LOOKUP[sw_do_nothing]
+41647317	SECOND	sw_secure_loyalty_break_knees	TEXT_DISPLAY	LOOKUP[sw_do_nothing]

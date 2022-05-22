@@ -1,0 +1,4 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/front_end.loc		
+effects_description_sw_front_end_faster_peasant_levy	[[col:green]]Motivated Populace:[[/col]] %+n turns to levy peasant units	true
+effects_description_sw_front_end_bernician_horses	[[col:green]]Bernician Horses:[[/col]] %+n turns to levy cavalry units	false

@@ -1,0 +1,13 @@
+campaign_difficulty_handicap	human	effect	effect_scope	effect_value	optional_campaign_key
+#campaign_difficulty_handicap_effects_tables;0;db/campaign_difficulty_handicap_effects_tables/shieldwall_cdh_supplies					
+-3	true	vik_supplies_faction	faction_to_force_own	0.0	
+-2	true	vik_supplies_faction	faction_to_force_own	0.0	
+-1	false	vik_supplies_faction	faction_to_force_own	6.0	
+-1	true	vik_supplies_faction	faction_to_force_own	0.0	
+0	false	vik_supplies_faction	faction_to_force_own	6.0	
+1	false	vik_supplies_faction	faction_to_force_own	6.0	
+1	true	vik_supplies_faction	faction_to_force_own	2.0	
+2	false	vik_supplies_faction	faction_to_force_own	6.0	
+2	true	vik_supplies_faction	faction_to_force_own	2.0	
+3	false	vik_supplies_faction	faction_to_force_own	6.0	
+3	true	vik_supplies_faction	faction_to_force_own	3.0	

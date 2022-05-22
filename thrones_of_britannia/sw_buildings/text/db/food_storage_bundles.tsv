@@ -1,0 +1,802 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/food_storage_bundles.loc		
+effect_bundles_localised_title_shield_food_storage_bundle_205	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_225	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_245	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_265	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_285	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_305	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_325	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_345	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_365	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_385	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_204	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_224	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_244	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_264	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_284	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_304	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_324	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_344	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_364	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_384	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_207	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_227	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_247	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_267	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_287	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_307	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_327	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_347	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_367	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_387	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_206	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_226	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_246	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_266	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_286	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_306	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_326	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_346	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_366	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_386	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_201	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_221	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_241	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_261	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_281	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_301	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_321	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_341	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_361	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_381	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_200	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_220	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_240	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_260	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_280	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_300	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_320	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_340	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_360	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_380	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_400	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_203	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_223	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_243	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_263	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_283	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_303	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_323	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_343	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_363	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_383	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_202	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_222	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_242	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_262	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_282	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_302	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_322	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_342	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_362	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_382	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_213	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_233	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_253	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_273	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_293	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_313	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_333	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_353	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_373	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_393	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_212	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_232	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_252	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_272	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_292	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_312	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_332	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_352	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_372	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_392	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_215	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_235	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_255	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_275	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_295	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_315	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_335	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_355	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_375	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_395	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_214	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_234	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_254	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_274	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_294	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_314	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_334	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_354	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_374	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_394	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_209	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_229	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_249	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_269	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_289	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_309	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_329	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_349	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_369	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_389	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_208	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_228	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_248	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_268	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_288	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_308	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_328	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_348	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_368	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_388	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_211	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_231	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_251	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_271	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_291	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_311	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_331	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_351	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_371	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_391	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_210	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_230	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_250	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_270	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_290	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_310	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_330	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_350	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_370	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_390	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_217	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_237	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_257	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_277	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_297	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_317	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_337	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_357	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_377	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_397	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_216	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_236	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_256	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_276	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_296	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_316	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_336	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_356	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_376	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_396	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_219	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_239	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_259	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_279	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_299	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_319	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_339	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_359	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_379	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_399	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_218	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_238	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_258	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_278	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_298	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_318	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_338	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_358	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_378	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_398	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_1	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_9	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_8	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_11	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_10	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_13	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_12	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_15	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_14	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_3	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_2	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_5	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_4	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_7	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_6	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_17	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_16	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_19	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_18	Food Stores	true
+effect_bundles_localised_description_shield_food_storage_bundle_1	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_208	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_228	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_248	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_268	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_288	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_308	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_328	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_348	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_368	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_388	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_209	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_229	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_249	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_269	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_289	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_309	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_329	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_349	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_369	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_389	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_210	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_230	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_250	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_270	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_290	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_310	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_330	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_350	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_370	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_390	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_211	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_231	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_251	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_271	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_291	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_311	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_331	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_351	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_371	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_391	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_212	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_232	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_252	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_272	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_292	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_312	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_332	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_352	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_372	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_392	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_213	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_233	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_253	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_273	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_293	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_313	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_333	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_353	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_373	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_393	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_214	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_234	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_254	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_274	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_294	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_314	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_334	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_354	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_374	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_394	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_215	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_235	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_255	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_275	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_295	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_315	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_335	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_355	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_375	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_395	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_200	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_220	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_240	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_260	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_280	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_300	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_320	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_340	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_360	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_380	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_400	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_201	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_221	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_241	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_261	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_281	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_301	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_321	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_341	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_361	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_381	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_39	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_59	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_79	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_99	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_119	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_139	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_159	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_179	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_199	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_38	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_58	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_78	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_98	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_118	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_138	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_158	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_178	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_198	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_202	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_222	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_242	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_262	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_282	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_302	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_322	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_342	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_362	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_382	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_203	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_223	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_243	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_263	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_283	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_303	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_323	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_343	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_363	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_383	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_37	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_57	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_77	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_97	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_117	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_137	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_157	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_177	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_197	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_36	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_56	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_76	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_96	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_116	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_136	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_156	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_176	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_196	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_204	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_224	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_244	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_264	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_284	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_304	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_324	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_344	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_364	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_384	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_205	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_225	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_245	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_265	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_285	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_305	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_325	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_345	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_365	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_385	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_206	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_226	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_246	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_266	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_286	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_306	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_326	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_346	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_366	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_386	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_207	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_227	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_247	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_267	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_287	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_307	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_327	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_347	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_367	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_387	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_31	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_51	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_71	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_91	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_111	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_131	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_151	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_171	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_191	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_30	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_50	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_70	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_90	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_110	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_130	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_150	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_170	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_190	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_29	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_49	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_69	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_89	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_109	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_129	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_149	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_169	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_189	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_28	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_48	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_68	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_88	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_108	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_128	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_148	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_168	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_188	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_35	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_55	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_75	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_95	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_115	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_135	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_155	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_175	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_195	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_34	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_54	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_74	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_94	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_114	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_134	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_154	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_174	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_194	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_33	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_53	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_73	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_93	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_113	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_133	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_153	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_173	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_193	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_32	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_52	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_72	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_92	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_112	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_132	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_152	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_172	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_192	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_216	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_236	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_256	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_276	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_296	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_316	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_336	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_356	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_376	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_396	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_217	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_237	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_257	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_277	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_297	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_317	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_337	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_357	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_377	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_397	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_23	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_43	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_63	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_83	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_103	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_123	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_143	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_163	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_183	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_22	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_42	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_62	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_82	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_102	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_122	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_142	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_162	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_182	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_218	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_238	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_258	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_278	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_298	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_318	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_338	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_358	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_378	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_398	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_219	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_239	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_259	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_279	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_299	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_319	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_339	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_359	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_379	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_399	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_21	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_41	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_61	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_81	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_101	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_121	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_141	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_161	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_181	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_20	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_40	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_60	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_80	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_100	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_120	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_140	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_160	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_180	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_27	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_47	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_67	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_87	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_107	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_127	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_147	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_167	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_187	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_26	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_46	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_66	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_86	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_106	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_126	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_146	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_166	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_186	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_25	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_45	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_65	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_85	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_105	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_125	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_145	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_165	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_185	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_24	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_44	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_64	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_84	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_104	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_124	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_144	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_164	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_184	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_title_shield_food_storage_bundle_32	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_52	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_72	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_92	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_112	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_132	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_152	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_172	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_192	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_33	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_53	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_73	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_93	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_113	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_133	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_153	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_173	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_193	Food Stores	true
+effect_bundles_localised_description_shield_food_storage_bundle_7	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_6	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_title_shield_food_storage_bundle_34	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_54	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_74	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_94	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_114	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_134	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_154	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_174	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_194	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_35	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_55	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_75	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_95	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_115	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_135	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_155	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_175	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_195	Food Stores	true
+effect_bundles_localised_description_shield_food_storage_bundle_5	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_4	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_title_shield_food_storage_bundle_28	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_48	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_68	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_88	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_108	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_128	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_148	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_168	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_188	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_29	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_49	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_69	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_89	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_109	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_129	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_149	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_169	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_189	Food Stores	true
+effect_bundles_localised_description_shield_food_storage_bundle_3	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_2	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_title_shield_food_storage_bundle_30	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_50	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_70	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_90	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_110	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_130	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_150	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_170	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_190	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_31	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_51	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_71	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_91	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_111	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_131	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_151	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_171	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_191	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_24	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_44	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_64	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_84	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_104	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_124	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_144	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_164	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_184	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_25	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_45	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_65	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_85	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_105	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_125	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_145	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_165	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_185	Food Stores	true
+effect_bundles_localised_description_shield_food_storage_bundle_15	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_14	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_title_shield_food_storage_bundle_26	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_46	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_66	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_86	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_106	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_126	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_146	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_166	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_186	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_27	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_47	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_67	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_87	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_107	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_127	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_147	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_167	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_187	Food Stores	true
+effect_bundles_localised_description_shield_food_storage_bundle_13	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_12	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_title_shield_food_storage_bundle_20	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_40	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_60	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_80	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_100	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_120	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_140	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_160	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_180	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_21	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_41	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_61	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_81	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_101	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_121	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_141	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_161	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_181	Food Stores	true
+effect_bundles_localised_description_shield_food_storage_bundle_11	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_10	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_title_shield_food_storage_bundle_22	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_42	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_62	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_82	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_102	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_122	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_142	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_162	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_182	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_23	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_43	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_63	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_83	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_103	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_123	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_143	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_163	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_183	Food Stores	true
+effect_bundles_localised_description_shield_food_storage_bundle_9	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_8	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_19	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_18	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_17	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_description_shield_food_storage_bundle_16	When Winter comes in Brittainia, fools starve. Many great conquerors have been defeated by no more than their own belly. 	true
+effect_bundles_localised_title_shield_food_storage_bundle_36	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_56	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_76	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_96	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_116	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_136	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_156	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_176	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_196	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_37	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_57	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_77	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_97	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_117	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_137	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_157	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_177	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_197	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_38	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_58	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_78	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_98	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_118	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_138	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_158	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_178	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_198	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_39	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_59	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_79	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_99	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_119	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_139	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_159	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_179	Food Stores	true
+effect_bundles_localised_title_shield_food_storage_bundle_199	Food Stores	true

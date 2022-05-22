@@ -1,0 +1,12 @@
+campaign_difficulty_handicap	human	effect	effect_scope	effect_value	optional_campaign_key
+#campaign_difficulty_handicap_effects_tables;0;db/campaign_difficulty_handicap_effects_tables/shieldwall_cdh_treasury					
+1	false	vik_upkeep_costs_mercenary	faction_to_force_own	-12.0	
+1	true	vik_upkeep_costs_mercenary	faction_to_force_own	-20.0	
+2	false	vik_upkeep_costs_mercenary	faction_to_force_own	-16.0	
+3	false	vik_upkeep_costs_mercenary	faction_to_force_own	-20.0	
+1	false	vik_recruitment_cost_mercenary	faction_to_force_own	-35.0	
+2	false	vik_recruitment_cost_mercenary	faction_to_force_own	-50.0	
+3	false	vik_recruitment_cost_mercenary	faction_to_force_own	-65.0	
+1	false	vik_construction_cost_mod	faction_to_region_own	-50.0	
+2	false	vik_construction_cost_mod	faction_to_region_own	-70.0	
+3	false	vik_construction_cost_mod	faction_to_region_own	-80.0	

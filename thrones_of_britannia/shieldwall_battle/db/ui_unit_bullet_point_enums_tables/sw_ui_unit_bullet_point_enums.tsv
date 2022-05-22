@@ -1,0 +1,11 @@
+key	state	sort_order
+#ui_unit_bullet_point_enums_tables;2;db/ui_unit_bullet_point_enums_tables/sw_ui_unit_bullet_point_enums		
+att_excellent	very_positive	6
+att_has_ranged_weapon	very_positive	2
+vik_bonecrushing_1	positive	1
+vik_bonecrushing_2	very_positive	1
+vik_bonecrushing_3	very_positive	1
+sw_dane_axe_infantry_bonus_1	positive	10
+sw_dane_axe_infantry_bonus_2	very_positive	10
+sw_sword_infantry_bonus_1	positive	10
+sw_sword_infantry_bonus_2	very_positive	10

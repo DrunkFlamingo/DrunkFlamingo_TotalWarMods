@@ -1,0 +1,7 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/front_end_english				
+sw_front_end_no_harvest_season	replenishment_negative.png	42	replenishment_negative.png	false
+shieldwall_saxons_free_fyrd	cult_english_fyrd.png	41	cult_english_fyrd.png	false
+sw_front_end_hunter_society	farm_resource.png	41	farm_resource.png	false
+sw_front_end_holy_isle	abbey_unique.png	42	abbey_unique.png	false
+sw_front_end_light_rations	food_positive.png	34	food_positive.png	false

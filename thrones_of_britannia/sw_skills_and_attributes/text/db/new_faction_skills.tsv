@@ -1,0 +1,114 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/new_faction_skills.loc		
+character_skills_localised_description_vik_general_back_warrior_northleode	This man markedly is at his best on the field of battle, up to his knees in blood - and preferably other people's!	true
+character_skills_localised_description_vik_follower_bard_northleode	Everyone stops to hear his hummable tunes and enticing rhymes.	true
+character_skills_localised_name_vik_general_back_missile_damage_northleode	Hunter	true
+character_skills_localised_description_vik_back_wife_loyal_northleode	This lady is utterly loyal to her husband and inspires the same devotion in others.	true
+character_skills_localised_name_vik_follower_bard_northleode	Bard	true
+character_skills_localised_name_vik_general_back_missile_upkeep_northleode	Bowman	true
+character_skills_localised_description_vik_general_back_fearless_northleode	More than stout-hearted and beyond intrepid, this natural-born warrior is afraid of nothing in this world.	true
+character_skills_localised_description_vik_general_back_defender_northleode	He is impartial and completely honest in all his dealings with his fellow man.	true
+character_skills_localised_name_vik_general_back_merchant_northleode	Merchant	true
+character_skills_localised_description_vik_general_back_merchant_northleode	An eye for a bargain and an understanding of your market are essential talents for the budding trader.	true
+character_skills_localised_name_vik_general_back_defender_northleode	Fair-Minded	true
+character_skills_localised_description_vik_follower_quartermaster_northleode	This fellow is essential - he keeps the army fed, watered, armed and, most importantly, moving.	true
+character_skills_localised_name_vik_general_back_fearless_northleode	Fearless	true
+character_skills_localised_name_vik_general_back_warrior_northleode	Warrior	true
+character_skills_localised_description_vik_back_wife_shieldmaiden_northleode	This woman has chosen to bear arms and fight alongside her warrior husband on the battlefield.	true
+character_skills_localised_description_vik_back_wife_wise_northleode	Calm yourself, husband, the plan will come to fruition eventually - we just have to wait.	true
+character_skills_localised_name_vik_general_back_landowner_northleode	Respected	true
+character_skills_localised_name_vik_general_back_cavalry_upkeep_northleode	Horseman	true
+character_skills_localised_description_vik_general_back_negotiator_northleode	If there is an exploit in a system this man can be relied upon to figure that out.	true
+character_skills_localised_description_vik_follower_priest_northleode	This man has heard the Word and wishes to pass it on to others.	true
+character_skills_localised_name_vik_general_back_seafarer_northleode	Seafarer	true
+character_skills_localised_description_vik_follower_scribe_northleode	In this increasingly complex world, there is an ever-increasing number of documents to be created, copied and preserved.	true
+character_skills_localised_description_vik_back_wife_ugly_northleode	Well, she's rich, which takes the edge off a little.	true
+character_skills_localised_description_vik_general_back_seafarer_northleode	A lifetime spent on the waves makes this man a natural choice to lead when fighting at sea.	true
+character_skills_localised_description_vik_back_wife_noble_northleode	It's a matter of breeding, you understand.	true
+character_skills_localised_description_vik_follower_siege_engineer_northleode	Many armies meet their fate at the hands of the thick forests of the north.	true
+character_skills_localised_description_vik_general_back_passionate_northleode	These mad Christians command their own God to come down that they may eat him and drink his blood. And yet they call us heathens.	true
+character_skills_localised_name_vik_general_back_farmer_northleode	Experienced	true
+character_skills_localised_name_vik_back_wife_unfaithful_northleode	Unfaithful	true
+character_skills_localised_description_vik_general_back_spearmen_upkeep_northleode	This man's skill with the spear has been drilled into him over many years; now, he wishes to pass on what he has learned.	true
+character_skills_localised_description_vik_general_back_landowner_northleode	When this man speaks, people listen.	true
+character_skills_localised_name_vik_back_wife_wise_northleode	Wise	true
+character_skills_localised_name_vik_back_wife_shieldmaiden_northleode	Shieldmaiden	true
+character_skills_localised_name_vik_general_back_spearmen_skill_northleode	Controlling	true
+character_skills_localised_name_vik_back_wife_ugly_northleode	Ugly	true
+character_skills_localised_name_vik_general_back_born_commander_northleode	Born Commander	true
+character_skills_localised_name_vik_general_back_champion_rider_northleode	Champion Rider	true
+character_skills_localised_name_vik_back_wife_organised_northleode	Organised	true
+character_skills_localised_name_vik_back_wife_ambitious_northleode	Ambitious	true
+character_skills_localised_description_vik_back_wife_unfaithful_northleode	This one is an adulterer; her husband may not be aware, but her dalliances are common knowledge among the people.	true
+character_skills_localised_name_vik_general_back_spearmen_upkeep_northleode	Spearman	true
+character_skills_localised_name_vik_general_back_pastor_northleode	Godly	true
+character_skills_localised_name_vik_back_wife_demanding_northleode	Demanding	true
+character_skills_localised_name_vik_follower_quartermaster_northleode	Quartermaster	true
+character_skills_localised_description_vik_general_back_missile_damage_northleode	This one was hunting his food just as soon as he could walk; in the end, whether targeting man or beast, the skills needed are the same.	true
+character_skills_localised_description_vik_back_wife_gossip_northleode	Unhelpfully, she speaks when she should stay silent, spreading rumours that may not even be true.	true
+character_skills_localised_description_vik_general_back_missile_upkeep_northleode	Archery is an important skill if you wish to live until the following harvest.	true
+character_skills_localised_name_vik_back_wife_renowned_northleode	Renowned	true
+character_skills_localised_description_vik_back_wife_well_connected_northleode	It's not what you know, but who.	true
+character_skills_localised_description_vik_back_wife_brutal_northleode	This woman is every bit the savage, with a taste for blood that's difficult to sate. People obey her husband for fear of what her influence might mean for them.	true
+character_skills_localised_name_vik_back_wife_loyal_northleode	Loyal	true
+character_skills_localised_name_vik_back_wife_sensible_northleode	Sensible	true
+character_skills_localised_name_vik_back_wife_wasteful_northleode	Wasteful	true
+character_skills_localised_name_vik_back_wife_faithful_northleode	Faithful	true
+character_skills_localised_description_vik_general_back_miner_northleode	The treasures of the earth are there for the taking, if you have the knowledge required to exploit them.	true
+character_skills_localised_name_vik_back_wife_strict_northleode	Strict	true
+character_skills_localised_name_vik_back_wife_peaceful_northleode	Peaceful	true
+character_skills_localised_name_vik_back_wife_charming_northleode	Charming	true
+character_skills_localised_name_vik_general_back_melee_upkeep_northleode	Axeman	true
+character_skills_localised_name_vik_back_wife_gossip_northleode	Gossip	true
+character_skills_localised_name_vik_back_wife_well_connected_northleode	Well Connected	true
+character_skills_localised_description_vik_general_back_born_governor_northleode	He might be a better conversationalist if his mind wasn't always buried in his manuscripts and studies.	true
+character_skills_localised_name_vik_general_back_negotiator_northleode	Cunning	true
+character_skills_localised_name_vik_follower_priest_northleode	Priest	true
+character_skills_localised_description_vik_general_back_cavalry_upkeep_northleode	Virtually born in the saddle, this fellow knows how to look after horse and rider on campaign.	true
+character_skills_localised_name_vik_back_wife_brutal_northleode	Brutal	true
+character_skills_localised_description_vik_general_back_melee_upkeep_northleode	This man is an expert with an axe, meaning that he is someone to be listened to in training and avoided on the battlefield!	true
+character_skills_localised_name_vik_follower_scribe_northleode	Scribe	true
+character_skills_localised_description_vik_back_wife_strict_northleode	This woman is a harpy - she demands that the rules are observed to the very letter.	true
+character_skills_localised_name_vik_back_wife_arrogant_northleode	Arrogant	true
+character_skills_localised_name_vik_back_wife_noble_northleode	Noble	true
+character_skills_localised_name_vik_follower_siege_engineer_northleode	Lothian Huntmaster	true
+character_skills_localised_name_vik_general_back_passionate_northleode	Honours the Gods	true
+character_skills_localised_name_vik_back_wife_educated_northleode	Educated	true
+character_skills_localised_description_vik_general_back_farmer_northleode	This man turns his wounds into wisdom.	true
+character_skills_localised_name_vik_general_back_born_governor_northleode	Studious	true
+character_skills_localised_name_vik_back_wife_midwife_northleode	Midwife	true
+character_skills_localised_description_vik_back_wife_wealthy_northleode	This woman has somehow accumulated much gold. No one knows for sure how, but they have some very nasty suspicions!	true
+character_skills_localised_description_vik_follower_champion_northleode	Powerful men attract enemies; this one ensures they never get close enough to strike.	true
+character_skills_localised_description_vik_follower_forager_northleode	When campaigning, it makes sense to bring someone who knows how to find provisions anywhere and everywhere.	true
+character_skills_localised_name_vik_general_back_cavalry_recruitment_northleode	Musterer	true
+character_skills_localised_name_vik_follower_champion_northleode	Household Guard	true
+character_skills_localised_name_vik_back_wife_wealthy_northleode	Wealthy	true
+character_skills_localised_description_vik_back_wife_midwife_northleode	She understands how to nurse pregnant mothers to successful births, considerably decreasing the chances that their offspring will be stillborn.	true
+character_skills_localised_name_vik_general_back_missile_recruitment_northleode	Archer	true
+character_skills_localised_description_vik_back_wife_organised_northleode	She knows how to keep her head cool and stick to the plan when all around are floundering in panic.	true
+character_skills_localised_name_vik_follower_pillager_northleode	Henchmen	true
+character_skills_localised_description_vik_back_wife_arrogant_northleode	This woman has an inflated sense of her own importance and abilities, which has proved unhelpful to her husband's career.	true
+character_skills_localised_description_vik_general_back_champion_rider_northleode	Whether it be for hunting, sport or battle, this one is a true expert in the saddle.	true
+character_skills_localised_description_vik_general_back_born_commander_northleode	This warrior has an innate understanding of tactics, making him an inspired choice to lead in battle.	true
+character_skills_localised_description_vik_back_wife_educated_northleode	Unusually for the times, this lady has been taught well, which has bestowed advantage upon her husband and his men.	true
+character_skills_localised_description_vik_general_back_spearmen_skill_northleode	You do not know what to think so I‟ll teach you. Think yourself a baby.	true
+character_skills_localised_description_vik_back_wife_natural_beauty_northleode	This one needs no adornment but the morning sun, so pleasing is her countenance.	true
+character_skills_localised_description_vik_follower_pillager_northleode	In war, there is no time for niceties - this man will ruthlessly strip the area for money or goods, using violence where necessary.	true
+character_skills_localised_name_vik_general_back_melee_skill_northleode	Short-Tempered	true
+character_skills_localised_description_vik_back_wife_ambitious_northleode	This woman is consumed with ambition, for her husband, his faction, and for herself.	true
+character_skills_localised_name_vik_general_back_spearmen_recruitment_northleode	Old Hand	true
+character_skills_localised_description_vik_back_wife_renowned_northleode	This lady is well known and liked by her husband's people, which has considerably smoothed his passage through life.	true
+character_skills_localised_name_vik_follower_forager_northleode	Master at Arms	true
+character_skills_localised_description_vik_general_back_cavalry_recruitment_northleode	Look, it doesn't matter if we all die. Death is not the end, anyway - you know that.	true
+character_skills_localised_description_vik_general_back_spearmen_recruitment_northleode	Listen, and mind that you do, 'else there's a good chance you'll end up on the wrong end of one of these.	true
+character_skills_localised_description_vik_general_back_missile_recruitment_northleode	I'll teach you to hit your targets from a fair distance, so you never need to draw your swords.	true
+character_skills_localised_description_vik_general_back_pastor_northleode	God has given me two hands, one with which I receive and the other to give to others.	true
+character_skills_localised_description_vik_back_wife_demanding_northleode	This woman's husband wishes he'd died on campaign years prior.	true
+character_skills_localised_description_vik_back_wife_peaceful_northleode	This lady believes that the way forward lies in putting aside the implements of war and living peacefully.	true
+character_skills_localised_description_vik_back_wife_charming_northleode	Her warm, pleasant nature and natural charm do much to improve her husband's stature.	true
+character_skills_localised_name_vik_general_back_miner_northleode	Miner	true
+character_skills_localised_description_vik_back_wife_sensible_northleode	Prudent, good sense abounds when this woman is present - she calms hot heads with her cool words.	true
+character_skills_localised_description_vik_back_wife_wasteful_northleode	What? We take what we desire - have you forgotten?	true
+character_skills_localised_name_vik_back_wife_natural_beauty_northleode	Natural Beauty	true
+character_skills_localised_description_vik_back_wife_faithful_northleode	This lady adores her chosen husband and would never cuckold and betray him.	true
+character_skills_localised_description_vik_general_back_melee_skill_northleode	This man is quick to anger and even quicker to physical blows.	true

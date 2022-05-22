@@ -1,0 +1,37 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/unit_set_effects				
+shieldwall_tech_noble_armour	armour.png	2	armour.png	false
+shieldwall_formation_unlock_wedge	infantry.png	0	infantry.png	false
+shieldwall_formation_unlock_castle	bulwark.png	0	bulwark.png	false
+shield_mercenary_recruitment_cost	upkeep_cost_negative.png	4	upkeep_cost.png	false
+shield_mercenary_replenishment	replenishment.png	5	replenishment_negative.png	false
+shieldwall_foot_noble_melee_skill	melee_skill.png	5	melee_skill.png	false
+shieldwall_noble_levy_cap	replenishment_pools.png	6	replenishment_pools.png	false
+shieldwall_horsemen_levy_cap	replenishment_cavalry.png	7	replenishment_cavalry.png	false
+shieldwall_noble_infantry_levy_cap	replenishment_pools.png	8	replenishment_pools.png	false
+shieldwall_hero_levy_cap	raise_banner.png	9	raise_banner.png	false
+shieldwall_fyrd_levy_upkeep	cult_english_fyrd.png	8	cult_english_fyrd.png	false
+shieldwall_fyrd_levy_cost	cult_english_fyrd.png	8	cult_english_fyrd.png	false
+shieldwall_fyrd_levy_cost_hidden		0		true
+shieldwall_english_peasant_replenishment_hidden		0		true
+shieldwall_fyrd_levy_replenishment_hidden		0		true
+shieldwall_fyrd_levy_replenishment	replenishment.png	9	replenishment.png	false
+shieldwall_fyrd_levy_cap	cult_english_fyrd.png	10	cult_english_fyrd.png	false
+shieldwall_thegn_levy_cap	replenishment_pools.png	11	replenishment_pools.png	false
+shieldwall_hird_levy_cap	cult_vik_army_army.png	12	replenishment_axe.png	false
+shieldwall_cavalry_melee_skill	melee_skill.png	14	melee_skill_negative.png	false
+shieldwall_cavalry_levy_cap	replenishment_cavalry.png	14	replenishment_cavalry.png	false
+shieldwall_bowmen_accuracy	accuracy.png	15	accuracy.png	false
+shieldwall_bowmen_recruit_exp	experience.png	15	experience.png	false
+shieldwall_bowmen_levy_cap	replenishment_ranged.png	18	replenishment_ranged.png	false
+shieldwall_penteulu_levy_cap	cult_welsh_heroism.png	19	cult_welsh_heroism.png	false
+shieldwall_thrall_levy_cap	slaves.png	21	slaves.png	false
+shieldwall_irish_thrall_levy_cap	cult_sea_kings_tribute.png	22	cult_sea_kings_tribute.png	false
+shieldwall_difficulty_mods_generation_rate		0		true
+shieldwall_heroism_noble_morale	morale.png	8	morale_negative.png	false
+shieldwall_peasants_recruitment_cost	upkeep_cost_negative.png	9	upkeep_cost.png	false
+shieldwall_vikingar_recruitment_cost	upkeep_cost_negative.png	8	upkeep_cost.png	true
+shieldwall_vikingar_capacity	cult_sea_kings_tribute.png	7	cult_sea_kings_tribute.png	true
+shieldwall_peasants_upkeep	upkeep_cost_negative.png	10	upkeep_cost.png	false
+shieldwall_taeog_upkeepand_recruitment_cost	upkeep_cost.png	1	upkeep_cost.png	false
+shieldwall_cavalry_charge_bonus	charge.png	2	charge.png	false

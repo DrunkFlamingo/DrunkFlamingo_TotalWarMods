@@ -1,0 +1,115 @@
+<VARIANT_MESH>
+	<SLOT name="bodyparts" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bodyparts/default_horse_a.rigid_model_v2"  imposter_model="VariantMeshes/_VariantModels/horse/bodyparts/default_horse_a.rigid_model_v2" >
+			<SLOT name="bridle" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/celtic_bridle_02_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/roman_bridle_01_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/roman_bridle_02_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+			</SLOT>
+			<SLOT name="saddle" >
+				<VARIANT_MESH model="variantmeshes\_variantmodels\horse\saddles/eastern_saddle.rigid_model_v2" >
+					<TINT red="0.231373" green="0.164706" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="variantmeshes\_variantmodels\horse\saddles/nomadic_saddle.rigid_model_v2"  mask0="1"  mask1="2"  mask2="0" />
+			</SLOT>
+			<SLOT name="armour" />
+			<SLOT name="reins" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/saddles/reins.rigid_model_v2" />
+			</SLOT>
+		</VARIANT_MESH>
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bodyparts/default_horse_b.rigid_model_v2"  imposter_model="VariantMeshes/_VariantModels/horse/bodyparts/default_horse_a.rigid_model_v2" >
+			<SLOT name="bridle" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/celtic_bridle_02_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/roman_bridle_01_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/roman_bridle_02_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+			</SLOT>
+			<SLOT name="saddle" >
+				<VARIANT_MESH model="variantmeshes\_variantmodels\horse\saddles/nomadic_saddle.rigid_model_v2"  mask0="2"  mask1="0"  mask2="1" />
+			</SLOT>
+			<SLOT name="armour" />
+			<SLOT name="reins" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/saddles/reins.rigid_model_v2" />
+			</SLOT>
+		</VARIANT_MESH>
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bodyparts/default_horse_c.rigid_model_v2"  imposter_model="VariantMeshes/_VariantModels/horse/bodyparts/default_horse_a.rigid_model_v2" >
+			<SLOT name="bridle" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/celtic_bridle_02_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/roman_bridle_01_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/roman_bridle_02_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+			</SLOT>
+			<SLOT name="saddle" >
+				<VARIANT_MESH model="variantmeshes\_variantmodels\horse\saddles/nomadic_saddle.rigid_model_v2"  mask0="2"  mask1="0"  mask2="1" />
+				<VARIANT_MESH model="variantmeshes\_variantmodels\horse\saddles/eastern_saddle.rigid_model_v2" >
+					<TINT red="0.231373" green="0.168627" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+			</SLOT>
+			<SLOT name="armour" />
+			<SLOT name="reins" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/saddles/reins.rigid_model_v2" />
+			</SLOT>
+		</VARIANT_MESH>
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bodyparts/default_horse_d.rigid_model_v2"  imposter_model="VariantMeshes/_VariantModels/horse/bodyparts/default_horse_a.rigid_model_v2" >
+			<SLOT name="bridle" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/celtic_bridle_02_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.168627" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/roman_bridle_01_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/roman_bridle_02_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+			</SLOT>
+			<SLOT name="saddle" >
+				<VARIANT_MESH model="variantmeshes\_variantmodels\horse\saddles/eastern_saddle.rigid_model_v2" >
+					<TINT red="0.231373" green="0.164706" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="variantmeshes\_variantmodels\horse\saddles/nomadic_saddle.rigid_model_v2"  mask0="1"  mask1="2"  mask2="0" />
+			</SLOT>
+			<SLOT name="armour" />
+			<SLOT name="reins" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/saddles/reins.rigid_model_v2" />
+			</SLOT>
+		</VARIANT_MESH>
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bodyparts/default_horse_e.rigid_model_v2"  imposter_model="VariantMeshes/_VariantModels/horse/bodyparts/default_horse_a.rigid_model_v2" >
+			<SLOT name="bridle" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/celtic_bridle_02_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/roman_bridle_01_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/bridles/roman_bridle_02_lod1.rigid_model_v2" >
+					<TINT red="0.231373" green="0.172549" blue="0.109804" random_range="0.0" />
+				</VARIANT_MESH>
+			</SLOT>
+			<SLOT name="saddle" >
+				<VARIANT_MESH model="variantmeshes\_variantmodels\horse\saddles/celtic_saddle_01c_cloth.rigid_model_v2" />
+			</SLOT>
+			<SLOT name="armour" >
+				<VARIANT_MESH model="variantmeshes\_variantmodels\horse\armour/mount_full_scale_half_body_armour_iron.rigid_model_v2" />
+			</SLOT>
+			<SLOT name="reins" >
+				<VARIANT_MESH model="VariantMeshes/_VariantModels/horse/saddles/reins.rigid_model_v2" />
+			</SLOT>
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

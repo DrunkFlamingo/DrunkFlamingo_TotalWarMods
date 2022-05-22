@@ -1,0 +1,65 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/supply_line_skill_effects.loc		
+effects_description_vik_general_bodyguard_damage_mod	%+n% Weapon Damage for the Generals Bodyguard	true
+effects_description_sw_supply_lines_governor_effect	Establishes Supply Lines for local armies (governed province)	true
+effects_description_sw_supply_lines_general_effect	Establishes Supply Lines when garrisoning at a settlement (commanded army)	true
+effects_description_sw_scribes_chronicles	Scribes create books, tapestries, and other items for your character.	true
+effects_description_sw_scribes_chronicles_upgraded	Chronicles great victories and achievements with inspiring words and brilliant wit, earning significant fame for your Kingdom.	false
+effects_description_sw_household_guard_protection	Protected from Riots and Coups (While Governing)	false
+effects_description_sw_henchmen_bonus	Raiding Events grant additional benefits	false
+effects_description_sw_blessings	Encourages soldiers with religious blessings	false
+effects_description_sw_stops_gothi	Prevents the Gothi Follower from providing blessings	false
+effects_description_sw_gothi	Provides Pagan Blessings to soldiers	false
+effects_description_sw_church_influence	Increases the church's influence in your Kingdom	false
+effects_description_sw_blacksmith_item	Blacksmiths can craft rare items for your characters.	false
+effects_description_sw_veteran_drills	Encamped Armies can drill to gain access to Veteran Units.	false
+effects_description_sw_explorer_missions	Explorer Missions allow you to search for Rare Items	false
+effects_description_sw_recruit_sailors	Loyal Sailors recruit Captains to our cause. 	false
+effects_description_sw_thralls_skill	Victories grant additional Thralls.	false
+effects_description_sw_champion	Completing battles with Penteulu units in this character's army grants additional Heroism	false
+effects_description_sw_heroic_songs	Victories may grant additional Heroism	false
+effects_description_sw_tribute_per_victory	%+n Tribute per Victory	false
+effects_description_sw_skald_songs	Victories grant additional benefits to army effectiveness.	false
+effects_description_sw_clan_heroes	Victories grant additional Legitimacy	false
+effects_description_sw_lothian_hunter_train_rate	%+n Turns to Replenish Recruitment Pool for Hunters	false
+effects_description_sw_lothian_hunter_cap	%+n Recruitment Pool Capacity for Hunters	false
+effects_description_vik_allegiance_priest	%+n Allegiance (Songs)	false
+effects_description_sw_stops_priest	Prevents the Priest Follower from Providing Blessings	false
+campaign_payload_ui_details_description_slaves_100	+100 Thralls	false
+effects_description_sw_skills_henchmen_cattle_rustling	%+n% Food Production from Cattle Pasture buildings	false
+effect_bundles_localised_title_sw_skills_henchmen_cattle_rustling	Cattle Rustling	false
+effect_bundles_localised_description_sw_skills_henchmen_cattle_rustling	Our theft of cattle from our rivals has provided a boon to our own herds.	false
+campaign_payload_ui_details_description_heroism_2	+2 Heroism	false
+campaign_payload_ui_details_description_heroism_3	+3 Heroism	false
+campaign_payload_ui_details_description_heroism_5	+5 Heroism	false
+effect_bundles_localised_title_sw_skills_skald_allegiance	Improved Allegiance	false
+effect_bundles_localised_description_sw_skills_skald_allegiance	Our followers have boosted the spread of our allegiance!	false
+effect_bundles_localised_title_sw_gothi_3	Blessings of the Gothi	false
+effect_bundles_localised_title_sw_gothi_2	Blessings of the Gothi	false
+effect_bundles_localised_title_sw_gothi_1	Blessings of the Gothi	false
+effect_bundles_localised_title_sw_priest_1	Holy Words	false
+effect_bundles_localised_title_sw_priest_3	Holy Words	false
+effect_bundles_localised_title_sw_priest_2	Holy Words	false
+effect_bundles_localised_description_sw_gothi_3	The Gothi provides his blessings to the soldiers	false
+effect_bundles_localised_description_sw_gothi_2	The Gothi provides his blessings to the soldiers	false
+effect_bundles_localised_description_sw_gothi_1	The Gothi provides his blessings to the soldiers	false
+effect_bundles_localised_description_sw_priest_1	The Word of the Lord gives the soldiers hope	false
+effect_bundles_localised_description_sw_priest_3	The Word of the Lord gives the soldiers hope	false
+effect_bundles_localised_description_sw_priest_2	The Word of the Lord gives the soldiers hope	false
+effect_bundles_localised_title_sw_skills_skald_morale	Improved Morale	false
+effect_bundles_localised_description_sw_skills_skald_morale	Our followers have boosted our people's will to fight!	false
+effect_bundles_localised_title_sw_gothi_3_gov	Blessings of the Gothi	false
+effect_bundles_localised_title_sw_gothi_2_gov	Blessings of the Gothi	false
+effect_bundles_localised_title_sw_gothi_1_gov	Blessings of the Gothi	false
+effect_bundles_localised_title_sw_priest_1_gov	Holy Words	false
+effect_bundles_localised_title_sw_priest_3_gov	Holy Words	false
+effect_bundles_localised_title_sw_priest_2_gov	Holy Words	false
+effect_bundles_localised_description_sw_gothi_3_gov	The Gothi provides his blessings to the soldiers	false
+effect_bundles_localised_description_sw_gothi_2_gov	The Gothi provides his blessings to the soldiers	false
+effect_bundles_localised_description_sw_gothi_1_gov	The Gothi provides his blessings to the soldiers	false
+effect_bundles_localised_description_sw_priest_1_gov	The Word of the Lord gives the soldiers hope	false
+effect_bundles_localised_description_sw_priest_3_gov	The Word of the Lord gives the soldiers hope	false
+effect_bundles_localised_description_sw_priest_2_gov	The Word of the Lord gives the soldiers hope	false
+effects_description_sw_lothian_hunter_accuracy	%+n Accuracy for Lothian Hunters	false
+effects_description_sw_supply_lines_duration	%+n Supply Line Duration (governed province and commanded army)	false
+effects_description_sw_champion_strat_clut	Completing battles with Hen Ogledd Comites units in this character's army grants additional Heroism	false

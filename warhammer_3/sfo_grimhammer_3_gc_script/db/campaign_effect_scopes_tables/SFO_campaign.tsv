@@ -1,0 +1,14 @@
+key	location	ownership	source	target	territory
+#campaign_effect_scopes_tables;2;db/campaign_effect_scopes_tables/SFO_campaign					
+character_to_force_own_regionwide_any	regionwide	yours	character	force	any
+ability_mount_only	regionwide	yours	region	region	any
+faction_to_force_own_owned_territory	factionwide	yours	faction	force	yours
+faction_to_force_own_enemy_territory	factionwide	yours	faction	force	enemy
+faction_to_character_own_factionwide_text	factionwide	yours	faction	character	any
+general_to_force_own_characters_only_hidden	forcewide_when_commanding	yours	character	character	any
+faction_to_character_own_increasing	factionwide	yours	faction	character	any
+faction_to_character_own_decreasing	factionwide	yours	faction	character	any
+wh_dummy_scope	regionwide	yours	region	region	any
+province_to_region_own_provincewide_unseen	provincewide	yours	province	region	any
+province_to_character_own_unseen	provincewide	yours	province	character	any
+force_to_force_own_owned_territory	forcewide	yours	force	force	yours

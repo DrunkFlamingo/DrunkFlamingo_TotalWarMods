@@ -1,0 +1,12 @@
+key	damaged_display_model	display_model	impact	launch_fx	trail_fx	stationary_fx	skeleton	airborne_anim	landing_anim
+#projectile_displays_tables;3;db/projectile_displays_tables/sw_projectile_displays									
+javelin_leaf_01		projectiles_javelin_leaf_01	arrow		trail_vfx_javelin				
+javelin_leaf_02		projectiles_javelin_leaf_02	arrow		trail_vfx_javelin				
+javelin_leaf_03		projectiles_javelin_leaf_03	arrow		trail_vfx_javelin				
+javelin_tip_01		projectiles_javelin_tip_01	arrow		trail_vfx_javelin				
+javelin_tip_02		projectiles_javelin_tip_02	arrow		trail_vfx_javelin				
+javelin_tip_03		projectiles_javelin_tip_03	arrow		trail_vfx_javelin				
+javelin_wood_01		projectiles_javelin_wood_01	arrow		trail_vfx_javelin				
+javelin_wood_02		projectiles_javelin_wood_02	arrow		trail_vfx_javelin				
+javelin_wood_03		projectiles_javelin_wood_03	arrow		trail_vfx_javelin				
+vik_dart		projectiles_shi_dart_irish	arrow		trail_vfx_javelin				

@@ -1,0 +1,4 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/banditry_and_rebellion				
+shield_causes_further_negative_events	personality_bad.png	2	personality_bad.png	false
+shield_no_income_this_turn	corruption.png	3	corruption.png	false

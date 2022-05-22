@@ -1,0 +1,16 @@
+id	dilemma_key	option_key	value
+#cdir_events_dilemma_option_junctions_tables;2;db/cdir_events_dilemma_option_junctions_tables/northleode_events			
+90210	sw_northleode_help_against_strat_clut	GEN_TARGET_NONE	
+90211	sw_northleode_help_against_jorvik	GEN_TARGET_NONE	
+90212	sw_northleode_betrayal_east_engle	GEN_TARGET_NONE	
+90213	sw_northleode_betrayal_mierce	GEN_TARGET_NONE	
+90214	sw_northleode_help_against_strat_clut	VAR_CHANCE	100
+90215	sw_northleode_help_against_jorvik	VAR_CHANCE	100
+90216	sw_northleode_betrayal_east_engle	VAR_CHANCE	100
+90217	sw_northleode_betrayal_mierce	VAR_CHANCE	100
+90218	sw_mierce_djurby_capitulates	VAR_CHANCE	100
+90219	sw_mierce_scheme_against_wessex	VAR_CHANCE	100
+90220	sw_mierce_djurby_capitulates	GEN_TARGET_NONE	
+90221	sw_mierce_scheme_against_wessex	GEN_TARGET_NONE	
+90222	sw_gwined_avenge_rhodri	VAR_CHANCE	100
+90223	sw_gwined_avenge_rhodri	GEN_TARGET_NONE	

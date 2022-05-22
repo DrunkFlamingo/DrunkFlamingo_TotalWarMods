@@ -1,0 +1,14 @@
+<VARIANT_MESH>
+	<SLOT name="weapons" >
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/weapons/att_slv_downturned_axe_01.rigid_model_v2"  decal_diffuse="VariantMeshes/_VariantModels/man/patterns/blank/decal_diffuse"  decal_normal="VariantMeshes/_VariantModels/man/patterns/blank/decal_normal"  imposter_model="VariantMeshes/_VariantModels/man/weapons/att_khanda_01.rigid_model_v2" >
+			<TINT red="0.133333" green="0.117647" blue="0.113725" random_range="0.0" />
+			<TINT red="0.105882" green="0.07451" blue="0.066667" random_range="0.0" />
+			<TINT red="0.203922" green="0.168627" blue="0.14902" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="VariantMeshes/_VariantModels/man/weapons/att_slv_slavic_axe_01.rigid_model_v2"  decal_diffuse="VariantMeshes/_VariantModels/man/patterns/blank/decal_diffuse"  decal_normal="VariantMeshes/_VariantModels/man/patterns/blank/decal_normal"  imposter_model="VariantMeshes/_VariantModels/man/weapons/att_khanda_01.rigid_model_v2" >
+			<TINT red="0.133333" green="0.117647" blue="0.113725" random_range="0.0" />
+			<TINT red="0.105882" green="0.07451" blue="0.066667" random_range="0.0" />
+			<TINT red="0.203922" green="0.168627" blue="0.14902" random_range="0.0" />
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

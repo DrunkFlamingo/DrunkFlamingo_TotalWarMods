@@ -1,0 +1,12 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/wec_unit_caps_text.loc		
+ttc_group_name_core	Core	false
+ttc_group_name_special	Special	false
+ttc_group_name_rare	Rare	false
+ttc_measurement_name	points	false
+ttc_army_limited	Armies may have up to 0000 1111 worth of 2222 units.	false
+ttc_unit_cost	This unit is a 0000 unit and costs	false
+ttc_army_unlimited	Armies may have an unlimited number of 0000 units. 	false
+ttc_unit_no_cost	This unit is a 0000 unit.	false
+ttc_meter_tooltip	You have used 0000 of the 1111 2222 3333 available to this force!\\n	false
+ttc_restriction_tooltip	This cost costs 0000 1111 2222, but this army only has 3333 4444 available.	false

@@ -1,0 +1,25 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/@shield_unit_abilities.loc		
+unit_abilities_tooltip_text_focus_fire	Focus Fire || A good archer is known not by his arrows but by his ability to hit the target.	true
+unit_abilities_tooltip_text_second_wind	Second Wind || "We must hold the line... just a little while longer."	true
+unit_abilities_tooltip_text_frenzy	Warp Spasm || Let the blood rage take control.	true
+unit_abilities_tooltip_text_att_gen_raise_05	Stand and Fight || A fierce warrior never worries about his fear."\\n\\n [[col:red]]Units cannot move whilst in this formation.[[/col]]	true
+unit_abilities_tooltip_text_fire_volley	Flaming Arrows || Like a maniac shooting flaming arrows of death...	true
+unit_abilities_tooltip_text_att_gen_rally_02	Rally || The presence of the general gives encouragement to the men who die for him.	true
+unit_abilities_tooltip_text_rapid_advance	Rapid Advice || "On my command… Forwarrrrrrd!"	true
+unit_abilities_tooltip_text_att_gen_raise_03	Sea King's Banner || "Flock to our standard, brave lads!"	true
+unit_abilities_tooltip_text_att_gen_brace_02	Hold Firm || "Dig your heels in!"	true
+unit_abilities_tooltip_text_frenzied_charge	Highland Charge || "No tactics or maneuvres... just straight at 'em!"	true
+unit_abilities_tooltip_text_att_gen_brace_03	Resolve || "Any man found retreating will be summarily executed."	true
+unit_abilities_tooltip_text_att_gen_raise_02	Sea King's Banner || "Show them the true power of the Norse!"	true
+unit_abilities_tooltip_text_rapid_volley	Marksmenship || "Our arrows will blot out the sun!"	true
+unit_abilities_tooltip_text_att_gen_inspire_02	Inspire || War requires resilience of spirit and the strength of character to see things through to the end.	true
+unit_abilities_tooltip_text_att_gen_raise_01	Hero's Banner || "Men of Wales take heart, the Sons of Arthur ride with you!"	true
+unit_abilities_tooltip_text_att_gen_fear_02	Warcry || "You don't frighten us, pig-dogs. We'll split you in two and use your gizzards for a football!"	true
+unit_abilities_tooltip_text_com_into_the_breach	Devoted Crew || These men would follow their captain anywhere, and fight almost anyone on his behalf. [[col:green]]Active until the Champion falls.[[/col]]	true
+unit_abilities_tooltip_text_com_force_concentration	Mounted Infantry || Trained to fight on foot, these men must dismount to be effective. \\n\\n[[col:red]]Debuff active while Mounted.[[/col]]	true
+unit_abilities_tooltip_text_form_pike_square	Schiltron || "Together lads, we'll stop them on all sides!"\\n\\n[[col:red]]Units cannot move in this formation.[[/col]]	true
+unit_abilities_tooltip_text_headhunt	Battle Trance || Mad as dogs, strong as bears, the Berserker kill without hesitation until the last enemy falls. \\n\\n[[col:green]]Active until the Champion falls.[[/col]]	true
+unit_abilities_tooltip_text_form_wedge	Wedge Formation || Even the strongest line infantry cannot stand up to a reinforced point.	true
+unit_abilities_tooltip_text_trample	Bonesplitting Strikes || Heavy strikes cleave through bone and flesh.	true
+unit_abilities_tooltip_text_com_relentless	Parry || Bladesmenship is a rewarding form of art.	true

@@ -1,0 +1,8 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/army_visit_bundles.loc		
+effect_bundles_localised_title_sw_warehouse_resupply_3	Supply Lines	true
+effect_bundles_localised_title_sw_warehouse_resupply_2	Supply Lines	true
+effect_bundles_localised_title_sw_warehouse_resupply_1	Supply Lines	true
+effect_bundles_localised_description_sw_warehouse_resupply_3	Our stocks will be full for the foreseeable future.	true
+effect_bundles_localised_description_sw_warehouse_resupply_2	We have adequate stores... for now. But be wary.	true
+effect_bundles_localised_description_sw_warehouse_resupply_1	Our stores will soon run out if something isn't done. 	true

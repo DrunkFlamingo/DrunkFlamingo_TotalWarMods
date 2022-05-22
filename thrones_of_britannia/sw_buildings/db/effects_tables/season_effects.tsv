@@ -1,0 +1,8 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/season_effects				
+shield_seasons_food_farms	food_positive.png	1	food_negative.png	false
+shield_seasons_commerce	market_resource.png	3	resource_negative.png	false
+shield_seasons_supplies	supplies.png	4	supplies.png	false
+shield_seasons_movement_speed	campaign_movement_negative.png	5	campaign_movement_negative.png	false
+shield_seasons_farming_income	food_negative.png	2	food_negative.png	false
+shield_seasons_hunting_event	farm_resource.png	2	farm_resource.png	false

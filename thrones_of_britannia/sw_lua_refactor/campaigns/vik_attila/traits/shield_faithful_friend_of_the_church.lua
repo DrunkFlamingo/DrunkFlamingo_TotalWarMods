@@ -1,0 +1,1 @@
+local tm = trait_manager.new("shield_faithful_friend_of_the_church")

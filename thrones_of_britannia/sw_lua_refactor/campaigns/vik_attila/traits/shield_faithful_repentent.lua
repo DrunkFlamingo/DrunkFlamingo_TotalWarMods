@@ -1,0 +1,1 @@
+local tm = trait_manager.new("shield_faithful_repentent")

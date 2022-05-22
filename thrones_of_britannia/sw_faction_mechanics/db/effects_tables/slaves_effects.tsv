@@ -1,0 +1,6 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/slaves_effects				
+sw_no_slave_replen	replenishment_negative.png	1	replenishment_negative.png	false
+sw_no_slave_market_income	wealth_negative.png	2	wealth_negative.png	false
+sw_sold_at_markets	slaves.png	3	slaves.png	false
+sw_slave_rebellion_risk	loot_raid.png	2	loot_raid.png	false

@@ -1,0 +1,9 @@
+effect	icon	priority	icon_negative	is_hidden
+#effects_tables;3;db/effects_tables/scripted_effects				
+shield_scripted_pop_cap_serf	pop_serf_positive.png	9	pop_serf_negative.png	false
+shield_scripted_pop_cap_lord	pop_lord_positive.png	10	pop_lord_negative.png	false
+shield_scripted_pop_cap_foreign	pop_foreign_positive.png	11	pop_foreign_negative.png	false
+shield_scripted_pop_cap_monk	pop_monk_positive.png	12	pop_monk_negative.png	false
+shield_scripted_household_growth	household_wealth.png	15	household_wealth.png	false
+shield_scripted_pop_growth_serf	pop_serf_positive.png	9	pop_serf_negative.png	false
+shield_scripted_pop_growth_lord	pop_lord_positive.png	10	pop_lord_negative.png	false

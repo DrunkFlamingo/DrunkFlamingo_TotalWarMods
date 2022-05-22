@@ -1,0 +1,16 @@
+<VARIANT_MESH>
+	<SLOT name="weapons" >
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\weapons\vik_axe_broad_01/shi_axe_01_lunow.rigid_model_v2" >
+			<TINT red="0.705882" green="0.501961" blue="0.321569" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\weapons\vik_axe_broad_01/shi_axe_02_common.rigid_model_v2" >
+			<TINT red="0.705882" green="0.501961" blue="0.321569" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\weapons\vik_axe_broad_01/shi_axe_03_common.rigid_model_v2" >
+			<TINT red="0.705882" green="0.501961" blue="0.321569" random_range="0.0" />
+		</VARIANT_MESH>
+		<VARIANT_MESH model="variantmeshes\_variantmodels\man\weapons\vik_axe_broad_01/shi_axe_04_common.rigid_model_v2" >
+			<TINT red="0.705882" green="0.501961" blue="0.321569" random_range="0.0" />
+		</VARIANT_MESH>
+	</SLOT>
+</VARIANT_MESH>

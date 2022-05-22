@@ -1,0 +1,10 @@
+building	effect	effect_scope	value	value_damaged	value_ruined
+#building_effects_junction_tables;3;db/building_effects_junction_tables/warehouse_dummy_effects					
+vik_warehouse_1	sw_dummy_resupply_building	building_to_building_own	2.0	2.0	0.0
+vik_warehouse_2	sw_dummy_resupply_building_duration	building_to_building_own	2.0	4.0	0.0
+vik_warehouse_2	sw_dummy_resupply_building	building_to_building_own	4.0	4.0	0.0
+vik_warehouse_3	sw_dummy_resupply_building_duration	building_to_building_own	4.0	6.0	0.0
+vik_warehouse_3	sw_dummy_resupply_building	building_to_building_own	6.0	6.0	0.0
+vik_merchant_1	sw_unlocks_merchant_events	building_to_building_own	1.0	0.0	0.0
+vik_merchant_2	sw_unlocks_merchant_events	building_to_building_own	1.0	0.0	0.0
+vik_merchant_3	sw_unlocks_merchant_events	building_to_building_own	1.0	0.0	0.0
