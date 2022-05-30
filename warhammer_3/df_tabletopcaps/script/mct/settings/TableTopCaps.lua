@@ -31,7 +31,7 @@ local rare_points = ttc:add_new_option("b_rare_points", "slider")
 rare_points:set_text(loc_prefix.."b_rare_points_txt", true)
 rare_points:set_tooltip_text(loc_prefix.."b_rare_points_tt", true)
 rare_points:slider_set_min_max(-5, 5)
-rare_points:set_default_value(5)
+rare_points:set_default_value(0)
 rare_points:slider_set_step_size(1)
 
 
