@@ -1197,17 +1197,19 @@ mod.add_listeners = function()
         end
       end,
       true);
+
     --refresh the budget after character skills change - these may affect the budget or the special rules available to the character
     core:add_listener(
       "TTCMainListeners",
-      "TTCMainListeners", 
+      "CharacterSkillPointAllocated", 
       function(context)
-        return context:character():faction():is_human() (not not mod.characters[context:character():command_queue_index()])
+        return context:character():faction():is_human() and (not not mod.characters[context:character():command_queue_index()])
       end,
       function(context)
         local character = mod.characters[context:character():command_queue_index()]
         character:refresh_budget()
         character:refresh_special_rules()
+        core:trigger_event("ModScriptEventRefreshUnitCards")
       end,
       false
     );
