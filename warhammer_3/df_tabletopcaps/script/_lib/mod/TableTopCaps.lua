@@ -2203,6 +2203,77 @@ end
 --------------------------------------------------------------------------------------------------------------
 
 
+--- load a lua file with the correct environment
+--- ie. load_module("test", "script/my_folder/") to load script/my_folder/test.lua
+---@param file_name string
+---@param file_path string
+---@return any
+local function load_module(file_name, file_path)
+  local full_path = file_path.. file_name.. ".lua"
+  local file, load_error = loadfile(full_path)
+
+  if not file then
+      out("Attempted to load module with name ["..file_name.."], but loadfile had an error: ".. load_error .."")
+  else
+      out("Loading module with name [" .. file_name.. ".lua]")
+
+      local global_env = core:get_env()
+      setfenv(file, global_env)
+      local lua_module = file(file_name)
+
+      if lua_module ~= false then
+          out("[" .. file_name.. ".lua] loaded successfully!")
+      end
+
+      return lua_module
+  end
+
+  -- run "require" to see what the specific error is
+  local ok, msg = pcall(function() require(file_path .. file_name) end)
+
+  if not ok then
+      out("Tried to load module with name [" .. file_name .. ".lua], failed on runtime. Error below:")
+      out(msg)
+      return false
+  end
+end
+
+---load all of the lua files from a specific folder
+--- ie. load_modules("script/my_folder/") to load everything in ?.pack/script/my_folder/
+--- code shamelessly stolen from Vandy <3
+---@param path string
+local function load_modules(path)
+local search_override = "*.lua" -- search for all files that end in .lua within this path
+local file_str = common.filesystem_lookup(path, search_override)
+
+  for filename in string.gmatch(file_str, '([^,]+)') do
+      local filename_for_out = filename
+
+      local pointer = 1
+      while true do
+          local next_sep = string.find(filename, "\\", pointer) or string.find(filename, "/", pointer)
+
+          if next_sep then
+              pointer = next_sep + 1
+          else
+              if pointer > 1 then
+                  filename = string.sub(filename, pointer)
+              end
+              break
+          end
+      end
+
+      local suffix = string.sub(filename, string.len(filename) - 3)
+
+      if string.lower(suffix) == ".lua" then
+          filename = string.sub(filename, 1, string.len(filename) -4)
+      end
+
+
+      load_module(filename, string.gsub(filename_for_out, filename..".lua", ""))
+  end
+end
+
 
 mod.setup = {}
 
@@ -2300,7 +2371,10 @@ end
 
 ---@param callback fun()
 mod.add_post_setup_callback = function(callback)
-  --table.insert(mod.setup.post_callbacks, callback)
+  local calling_file = debug.getinfo(2).source
+  local pos = #mod.setup.post_callbacks+1
+  out("Post Setup Callback "..tostring(pos).." being added from "..tostring(calling_file))
+  table.insert(mod.setup.post_callbacks, callback)
 end
 
 ---@param subculture string
@@ -2333,7 +2407,16 @@ mod.add_unit_list = function(unit_list, prioritized)
   end
 end
 
+---load all of the files within the script/ttc folder 
+mod.load_ttc_folder = function ()
+  load_modules("script/ttc/")
+end
+
+
 mod.finish_setup = function()
+  out("Finishing setup!")
+  out("Loading modules from the TTC folder")
+  mod.load_ttc_folder()
   out("TTC running callbacks")
   for i = 1, #mod.setup.callbacks do
     local callback = mod.setup.callbacks[i]
@@ -2346,9 +2429,16 @@ mod.finish_setup = function()
   for key, entry in pairs(mod.setup.entries) do
     mod.units[key] = ttc_unit.new(entry[1], entry[2], entry[3], true)
   end
+  out("TTC Running post setup callbacks")
   for i = 1, #mod.setup.post_callbacks do
-    --mod.setup.post_callbacks[i]()
+    local callback = mod.setup.post_callbacks[i]
+    if type(callback) == "function" then
+      callback()
+    else
+      out("Callback #"..tostring(i).." is not a function! It is a "..tostring(type(callback)))
+    end
   end
+  out("TTC Setup successful, clearing setup data")
   mod.setup = {}
 end
 
