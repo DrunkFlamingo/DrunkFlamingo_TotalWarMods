@@ -12,11 +12,11 @@ function ttc_mct_init()
   --refresh the settings for point caps when they get changed.
   core:add_listener(
     "ttc_MctFinalized",
-    "MCTFinalized",
+    "MctFinalized",
     true,
     function (context)
       local ttc_settings = mct:get_mod_by_key("ttc")
-      local enable_ttc = ttc_settings:get_option_by_key("a_enable")
+      local enable_ttc = ttc_settings:get_option_by_key("a_enable") 
       if enable_ttc:get_finalized_setting() == true then
         --set up the special points
         local special_point_setting = ttc_settings:get_option_by_key("b_special_points")
@@ -24,18 +24,22 @@ function ttc_mct_init()
         local rare_point_setting = ttc_settings:get_option_by_key("b_rare_points")
         local rare_points = rare_point_setting:get_finalized_setting()
         local points_callback = function()
-          local humans = cm:get_human_factions()
-          for i = 1, #humans do
+          local faction_list = cm:model():world():faction_list()
+          for i = 0, faction_list:num_items() - 1 do 
+            local current_faction = faction_list:item_at(i)
             --remove any effect bundle we have
-            cm:remove_effect_bundle("ttc_mct_settings", humans[i])
+            cm:remove_effect_bundle("ttc_mct_settings", current_faction:name())
             --construct a new bundle with the current settings                
             local bundle = cm:create_new_custom_effect_bundle("ttc_mct_settings")
             if special_points then
+              --out("bundle:add_effect(ttc_capacity_special, faction_to_character_own_unseen, "..special_points..")")
               bundle:add_effect("ttc_capacity_special", "faction_to_character_own_unseen", special_points)
             end
             if rare_points then
+              --out("bundle:add_effect(ttc_capacity_rare, faction_to_character_own_unseen, "..rare_points..")")
               bundle:add_effect("ttc_capacity_rare", "faction_to_character_own_unseen", rare_points)
             end
+            cm:apply_custom_effect_bundle_to_faction(bundle, current_faction)
           end
         end
         if cm:is_game_running() then
@@ -87,20 +91,22 @@ function ttc_mct_init()
             local rare_point_setting = ttc_settings:get_option_by_key("b_rare_points")
             local rare_points = rare_point_setting:get_finalized_setting()
             cm:add_first_tick_callback(function()
-              local humans = cm:get_human_factions()
-              for i = 1, #humans do
+              local faction_list = cm:model():world():faction_list()
+              for i = 0, faction_list:num_items() - 1 do 
+                local current_faction = faction_list:item_at(i)
                 --remove any effect bundle we have
-                cm:remove_effect_bundle("ttc_mct_settings", humans[i])
+                cm:remove_effect_bundle("ttc_mct_settings", current_faction:name())
                 --construct a new bundle with the current settings                
                 local bundle = cm:create_new_custom_effect_bundle("ttc_mct_settings")
                 if special_points then
-                  out("bundle:add_effect(ttc_capacity_special, faction_to_character_own_unseen, "..special_points..")")
+                  --out("bundle:add_effect(ttc_capacity_special, faction_to_character_own_unseen, "..special_points..")")
                   bundle:add_effect("ttc_capacity_special", "faction_to_character_own_unseen", special_points)
                 end
                 if rare_points then
-                  out("bundle:add_effect(ttc_capacity_rare, faction_to_character_own_unseen, "..rare_points..")")
+                  --out("bundle:add_effect(ttc_capacity_rare, faction_to_character_own_unseen, "..rare_points..")")
                   bundle:add_effect("ttc_capacity_rare", "faction_to_character_own_unseen", rare_points)
                 end
+                cm:apply_custom_effect_bundle_to_faction(bundle, current_faction)
               end
             end)
         else
