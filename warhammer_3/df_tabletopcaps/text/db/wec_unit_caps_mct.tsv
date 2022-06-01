@@ -4,10 +4,10 @@ mct_ttc_mod_title	Tabletop Caps	true
 mct_ttc_mod_desc	Adds a cap system to the game which limts the number of Special and Rare units each army can field. Settings for this mod can only be changed at Campaign Start.	true
 mct_ttc_a_enable_txt	Enable Mod	true
 mct_ttc_a_enable_tt	Enables or disables the mod.	true
-mct_ttc_b_special_points_tt	Set the number of Special Points available to the player and AI.	true
-mct_ttc_b_rare_points_tt	Set the number of Rare Points available to the player and AI.	true
-mct_ttc_b_special_points_txt	Special Points	true
-mct_ttc_b_rare_points_txt	Rare Points	true
-mct_ttc_points_allowed	Points Allowed Per Army	true
-mct_ttc_c_ai_tt	If disabled, the AI will not be limited by the cap system.	true
-mct_ttc_c_ai_txt	Cap AI Armies	true
+mct_ttc_b_special_points_tt	Changes the number of Special Points available to both the player and AI by the set amount.	true
+mct_ttc_b_rare_points_tt	Changes the number of Rare Points available to both the player and AI by the set amount.	true
+mct_ttc_b_special_points_txt	Extra Special Points	true
+mct_ttc_b_rare_points_txt	Extra Rare Points	true
+mct_ttc_points_allowed	Extra Points	true
+mct_ttc_c_ai_tt	When disabled, neither the AI nor armies spawned by faction mechanics will be limited by the TTC system.	true
+mct_ttc_c_ai_txt	Cap AI and Spawned Armies	true

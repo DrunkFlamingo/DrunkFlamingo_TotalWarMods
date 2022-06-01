@@ -104,6 +104,12 @@ mod.budget_bonus_values = {
   ["ttc_capacity_special"] = "special"
 } ---@type table<string, string>
 
+-- values used for offsetting dynamic budgets according to MCT settings
+mod.budget_offsets = {
+  ["ttc_capacity_rare"] = 0,
+  ["ttc_capacity_special"] = 0
+} ---@type table<string, integer>
+
 -- bonus values used for overwriting the groups on a unit for special rules
 mod.special_rule_bonus_value_prefix = "ttc_special_rule_"
 mod.special_rule_group_override_suffixes = {
@@ -253,6 +259,12 @@ end
 
 ttc_character.log = function(self, t)
   ModLog("DRUNFLAMINGO: "..tostring(t).." (tabletopcaps:character"..tostring(self.cqi)..")")
+end
+
+---get the command queue index
+---@return integer
+ttc_character.command_queue_index = function(self)
+  return self.cqi
 end
 
 ---@param self ttc_character
@@ -1185,17 +1197,19 @@ mod.add_listeners = function()
         end
       end,
       true);
+
     --refresh the budget after character skills change - these may affect the budget or the special rules available to the character
     core:add_listener(
       "TTCMainListeners",
-      "TTCMainListeners", 
+      "CharacterSkillPointAllocated", 
       function(context)
-        return context:character():faction():is_human() (not not mod.characters[context:character():command_queue_index()])
+        return context:character():faction():is_human() and (not not mod.characters[context:character():command_queue_index()])
       end,
       function(context)
         local character = mod.characters[context:character():command_queue_index()]
         character:refresh_budget()
         character:refresh_special_rules()
+        core:trigger_event("ModScriptEventRefreshUnitCards")
       end,
       false
     );
@@ -1307,6 +1321,7 @@ end
 
 mod.core_unit_replacements = {} ---@type table<string, string[]>
 
+
 mod.get_core_replacement_unit = function(character, unit_key)
   --TODO make this smarter using the cco main unit record
   local subculture = character:faction():subculture()
@@ -1317,6 +1332,8 @@ mod.get_core_replacement_unit = function(character, unit_key)
   return core_units_list[cm:random_number(#core_units_list)]
 end
 
+---counts the units in an army, compares with the character's budget.
+---if the character is over their budget, removes units.
 ---@param character CHARACTER_SCRIPT_INTERFACE
 ---@param read_only boolean|nil
 mod.check_ai_character = function(character, read_only)
@@ -1398,12 +1415,66 @@ mod.check_ai_character = function(character, read_only)
   end
 end
 
+mod.adjustment_queue = {} ---@type CHARACTER_SCRIPT_INTERFACE[]
+mod.characters_in_adjustment_queue = {} ---@type table<integer, boolean>
+
+---called repeatedly while the adjustment queue has characters in it.
+mod.adjustment_callback = function()
+    local i = #mod.adjustment_queue
+    local character = mod.adjustment_queue[i]
+    if character:has_military_force() and mod.force_has_caps(character:military_force()) then
+      mod.check_ai_character(character, false)
+    else
+      out("Character "..character:command_queue_index().." in the adjustment queue has no force, or a force which is not capped")
+    end
+    mod.characters_in_adjustment_queue[character:command_queue_index()] = false
+    table.remove(mod.adjustment_queue, i)
+    --if there is still a character in the queue, call this again
+    if #mod.adjustment_queue > 0 then
+      out("Queued the next force for adjustment")
+      cm:callback(mod.adjustment_callback, 0.1, "ttc_ai_adjustments")
+    end
+end
+
+---adds a character to the adjustment queue and starts the recurring callback if it hasn't already happened.
+---@param character CHARACTER_SCRIPT_INTERFACE
+---@param delay boolean|nil
+mod.add_character_to_adjustment_queue = function(character, delay)
+  if mod.characters_in_adjustment_queue[character:command_queue_index()] then
+    return
+  end
+  out("Added character: "..character:command_queue_index().." to the adjustments Queue")
+  mod.characters_in_adjustment_queue[character:command_queue_index()] = true
+  table.insert(mod.adjustment_queue, character)
+  if #mod.adjustment_queue == 1 then
+    local t = 0
+    if delay then
+      t = 0.1
+    end
+    cm:callback(mod.adjustment_callback, t, "ttc_ai_adjustments")
+  end
+end
+
+
 
 
 mod.add_ai_listeners = function()
-    --listen for the AI starting its turn and adjust units.
 
-    core:add_listener(
+  --listen for recruitment
+  core:add_listener(
+    "TTCAIListeners",
+    "UnitTrained",
+    function (context)
+      return context:unit():military_force():has_general() and not context:unit():faction():is_human() 
+      and mod.force_has_caps(context:unit():military_force())
+    end,
+    function (context)
+      mod.add_character_to_adjustment_queue(context:unit():force_commander(), true)
+    end,
+    true)
+
+  --listen for the AI starting its turn and adjust units.
+  core:add_listener(
     "TTCAIListeners",
     "CharacterTurnStart",
     function(context)
@@ -1411,10 +1482,11 @@ mod.add_ai_listeners = function()
         return (not character:faction():is_human()) and character:has_military_force() and mod.force_has_caps(character:military_force())
     end,
     function(context)
-      mod.check_ai_character(context:character())
+      mod.add_character_to_adjustment_queue(context:character())
     end,
     true)
-  out("TTC AI listeners active")
+
+
   -- disciple armies spawn
   --this actually effects humans too, I just put it here because it can reuse the AI code.
 	core:add_listener(
@@ -1427,17 +1499,15 @@ mod.add_ai_listeners = function()
       out("Force created being checked by TTC")
       local force = context:military_force_created() ---@type MILITARY_FORCE_SCRIPT_INTERFACE
 			local character_cqi = force:general_character():command_queue_index()
-      local original_character = mod.selected_character
-      cm:callback(function ()
-        local character = cm:get_character_by_cqi(character_cqi)
-        mod.check_ai_character(character)
-        if cm:get_local_faction_name(true) == character:faction():name() then
+      local character = cm:get_character_by_cqi(character_cqi)
+      mod.add_character_to_adjustment_queue(character, true)
+      if cm:get_local_faction_name(true) == character:faction():name() then
+        cm:callback(function()
           if mod.is_units_panel_open() then
             core:trigger_event("ModScriptEventRefreshUnitCards")
           end
-        end
-      end, 0.1)
-
+        end, 0.1)
+      end
 		end,
 		true);
   --same deal for army spawns in general.
@@ -1451,19 +1521,18 @@ mod.add_ai_listeners = function()
       out("Force created being checked by TTC")
       local force = context:military_force_created() ---@type MILITARY_FORCE_SCRIPT_INTERFACE
 			local character_cqi = force:general_character():command_queue_index()
-      local original_character = mod.selected_character
-      cm:callback(function ()
-        local character = cm:get_character_by_cqi(character_cqi)
-        mod.check_ai_character(character)
-        if cm:get_local_faction_name(true) == character:faction():name() then
-          if mod.is_units_panel_open() then
-            core:trigger_event("ModScriptEventRefreshUnitCards")
-          end
-        end
-      end, 0.1)
-
+      local character = cm:get_character_by_cqi(character_cqi)
+      mod.add_character_to_adjustment_queue(character, true)
+      if cm:get_local_faction_name(true) == character:faction():name() then
+        cm:callback(function ()
+            if mod.is_units_panel_open() then
+              core:trigger_event("ModScriptEventRefreshUnitCards")
+            end
+        end, 0.1)
+      end
 		end,
 		true);
+    out("TTC AI listeners active")
 end
 
 -----------------------------------------------------------------------------------------------------------
@@ -2145,6 +2214,77 @@ end
 --------------------------------------------------------------------------------------------------------------
 
 
+--- load a lua file with the correct environment
+--- ie. load_module("test", "script/my_folder/") to load script/my_folder/test.lua
+---@param file_name string
+---@param file_path string
+---@return any
+local function load_module(file_name, file_path)
+  local full_path = file_path.. file_name.. ".lua"
+  local file, load_error = loadfile(full_path)
+
+  if not file then
+      out("Attempted to load module with name ["..file_name.."], but loadfile had an error: ".. load_error .."")
+  else
+      out("Loading module with name [" .. file_name.. ".lua]")
+
+      local global_env = core:get_env()
+      setfenv(file, global_env)
+      local lua_module = file(file_name)
+
+      if lua_module ~= false then
+          out("[" .. file_name.. ".lua] loaded successfully!")
+      end
+
+      return lua_module
+  end
+
+  -- run "require" to see what the specific error is
+  local ok, msg = pcall(function() require(file_path .. file_name) end)
+
+  if not ok then
+      out("Tried to load module with name [" .. file_name .. ".lua], failed on runtime. Error below:")
+      out(msg)
+      return false
+  end
+end
+
+---load all of the lua files from a specific folder
+--- ie. load_modules("script/my_folder/") to load everything in ?.pack/script/my_folder/
+--- code shamelessly stolen from Vandy <3
+---@param path string
+local function load_modules(path)
+local search_override = "*.lua" -- search for all files that end in .lua within this path
+local file_str = common.filesystem_lookup(path, search_override)
+
+  for filename in string.gmatch(file_str, '([^,]+)') do
+      local filename_for_out = filename
+
+      local pointer = 1
+      while true do
+          local next_sep = string.find(filename, "\\", pointer) or string.find(filename, "/", pointer)
+
+          if next_sep then
+              pointer = next_sep + 1
+          else
+              if pointer > 1 then
+                  filename = string.sub(filename, pointer)
+              end
+              break
+          end
+      end
+
+      local suffix = string.sub(filename, string.len(filename) - 3)
+
+      if string.lower(suffix) == ".lua" then
+          filename = string.sub(filename, 1, string.len(filename) -4)
+      end
+
+
+      load_module(filename, string.gsub(filename_for_out, filename..".lua", ""))
+  end
+end
+
 
 mod.setup = {}
 
@@ -2242,7 +2382,10 @@ end
 
 ---@param callback fun()
 mod.add_post_setup_callback = function(callback)
-  --table.insert(mod.setup.post_callbacks, callback)
+  local calling_file = debug.getinfo(2).source
+  local pos = #mod.setup.post_callbacks+1
+  out("Post Setup Callback "..tostring(pos).." being added from "..tostring(calling_file))
+  table.insert(mod.setup.post_callbacks, callback)
 end
 
 ---@param subculture string
@@ -2275,7 +2418,16 @@ mod.add_unit_list = function(unit_list, prioritized)
   end
 end
 
+---load all of the files within the script/ttc folder 
+mod.load_ttc_folder = function ()
+  load_modules("script/ttc/")
+end
+
+
 mod.finish_setup = function()
+  out("Finishing setup!")
+  out("Loading modules from the TTC folder")
+  mod.load_ttc_folder()
   out("TTC running callbacks")
   for i = 1, #mod.setup.callbacks do
     local callback = mod.setup.callbacks[i]
@@ -2288,9 +2440,16 @@ mod.finish_setup = function()
   for key, entry in pairs(mod.setup.entries) do
     mod.units[key] = ttc_unit.new(entry[1], entry[2], entry[3], true)
   end
+  out("TTC Running post setup callbacks")
   for i = 1, #mod.setup.post_callbacks do
-    --mod.setup.post_callbacks[i]()
+    local callback = mod.setup.post_callbacks[i]
+    if type(callback) == "function" then
+      callback()
+    else
+      out("Callback #"..tostring(i).." is not a function! It is a "..tostring(type(callback)))
+    end
   end
+  out("TTC Setup successful, clearing setup data")
   mod.setup = {}
 end
 
