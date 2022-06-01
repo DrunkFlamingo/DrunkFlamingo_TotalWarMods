@@ -1422,25 +1422,36 @@ mod.characters_in_adjustment_queue = {} ---@type table<integer, boolean>
 mod.adjustment_callback = function()
     local i = #mod.adjustment_queue
     local character = mod.adjustment_queue[i]
+    if character:has_military_force() and mod.force_has_caps(character:military_force()) then
+      mod.check_ai_character(character, false)
+    else
+      out("Character "..character:command_queue_index().." in the adjustment queue has no force, or a force which is not capped")
+    end
     mod.characters_in_adjustment_queue[character:command_queue_index()] = false
-    mod.check_ai_character(character, false)
     table.remove(mod.adjustment_queue, i)
     --if there is still a character in the queue, call this again
     if #mod.adjustment_queue > 0 then
+      out("Queued the next force for adjustment")
       cm:callback(mod.adjustment_callback, 0.1, "ttc_ai_adjustments")
     end
 end
 
 ---adds a character to the adjustment queue and starts the recurring callback if it hasn't already happened.
 ---@param character CHARACTER_SCRIPT_INTERFACE
-mod.add_character_to_adjustment_queue = function(character)
+---@param delay boolean|nil
+mod.add_character_to_adjustment_queue = function(character, delay)
   if mod.characters_in_adjustment_queue[character:command_queue_index()] then
     return
   end
+  out("Added character: "..character:command_queue_index().." to the adjustments Queue")
   mod.characters_in_adjustment_queue[character:command_queue_index()] = true
   table.insert(mod.adjustment_queue, character)
   if #mod.adjustment_queue == 1 then
-    cm:callback(mod.adjustment_callback)
+    local t = 0
+    if delay then
+      t = 0.1
+    end
+    cm:callback(mod.adjustment_callback, t, "ttc_ai_adjustments")
   end
 end
 
@@ -1454,10 +1465,11 @@ mod.add_ai_listeners = function()
     "TTCAIListeners",
     "UnitTrained",
     function (context)
-      return context:unit():has_force_commander() and not context:unit():force_commander():faction():is_human()
+      return context:unit():military_force():has_general() and not context:unit():faction():is_human() 
+      and mod.force_has_caps(context:unit():military_force())
     end,
     function (context)
-      mod.add_character_to_adjustment_queue(context:unit():force_commander())
+      mod.add_character_to_adjustment_queue(context:unit():force_commander(), true)
     end,
     true)
 
@@ -1474,7 +1486,7 @@ mod.add_ai_listeners = function()
     end,
     true)
 
-  out("TTC AI listeners active")
+
   -- disciple armies spawn
   --this actually effects humans too, I just put it here because it can reuse the AI code.
 	core:add_listener(
@@ -1487,16 +1499,15 @@ mod.add_ai_listeners = function()
       out("Force created being checked by TTC")
       local force = context:military_force_created() ---@type MILITARY_FORCE_SCRIPT_INTERFACE
 			local character_cqi = force:general_character():command_queue_index()
-      cm:callback(function ()
-        local character = cm:get_character_by_cqi(character_cqi)
-        mod.add_character_to_adjustment_queue(character)
-        if cm:get_local_faction_name(true) == character:faction():name() then
+      local character = cm:get_character_by_cqi(character_cqi)
+      mod.add_character_to_adjustment_queue(character, true)
+      if cm:get_local_faction_name(true) == character:faction():name() then
+        cm:callback(function()
           if mod.is_units_panel_open() then
             core:trigger_event("ModScriptEventRefreshUnitCards")
           end
-        end
-      end, 0.1)
-
+        end, 0.1)
+      end
 		end,
 		true);
   --same deal for army spawns in general.
@@ -1510,18 +1521,18 @@ mod.add_ai_listeners = function()
       out("Force created being checked by TTC")
       local force = context:military_force_created() ---@type MILITARY_FORCE_SCRIPT_INTERFACE
 			local character_cqi = force:general_character():command_queue_index()
-      cm:callback(function ()
-        local character = cm:get_character_by_cqi(character_cqi)
-        mod.add_character_to_adjustment_queue(character)
-        if cm:get_local_faction_name(true) == character:faction():name() then
-          if mod.is_units_panel_open() then
-            core:trigger_event("ModScriptEventRefreshUnitCards")
-          end
-        end
-      end, 0.1)
-
+      local character = cm:get_character_by_cqi(character_cqi)
+      mod.add_character_to_adjustment_queue(character, true)
+      if cm:get_local_faction_name(true) == character:faction():name() then
+        cm:callback(function ()
+            if mod.is_units_panel_open() then
+              core:trigger_event("ModScriptEventRefreshUnitCards")
+            end
+        end, 0.1)
+      end
 		end,
 		true);
+    out("TTC AI listeners active")
 end
 
 -----------------------------------------------------------------------------------------------------------
