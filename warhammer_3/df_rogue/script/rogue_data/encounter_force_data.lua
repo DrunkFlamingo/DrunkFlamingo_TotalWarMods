@@ -10,9 +10,9 @@
         }
     },
     generated_fragments = { --from each set, one key is selected and a fragment is generated. 
-        {"fragment_key", "fragment_key"},
+        {"fragment_key", "fragment_key"}, ---@type string[]
         {}
-    },
+    }, 
     difficulty_details = {
         difficulty_level = 0, --0 to 50
         special_point_offset = 0,

@@ -12,15 +12,102 @@ local playable_factions = {
 ---@class rogue_game_data
 local data = {}
 
-data.encounters = {}
+
+data.force_templates = {} ---@type table<string, ROGUE_FORCE_DATA>
+data.force_fragments = {} ---@type table<string, ROGUE_FORCE_FRAGMENT_DATA>
+data.reward_templates = {} ---@type table<string, ROGUE_REWARD_DATA>
+data.name_sets = require("script/rogue_data/encounter_named_commander_set_data")
+
+
+local function load_data()
+    local force_fragment_data = require("script/rogue_data/encounter_force_fragments")
+    local force_data = require("script/rogue_data/encounter_force_data")
+    local reward_data = require("script/rogue_data/encounter_reward_data")
+
+
+    local reused_keys = {}
+
+    for i = 1, #force_data do
+        local current_data = force_data[i]
+        if reused_keys[current_data.id] then
+            out("Duplicate force template id: "..current_data.id)
+        else
+            reused_keys[current_data.id] = true
+            data.force_templates[current_data.id] = current_data
+        end
+    end
+
+    local reused_keys = {}
+    for i = 1, #force_fragment_data do
+        local current_data = force_fragment_data[i]
+        if reused_keys[current_data.id] then
+            out("Duplicate force fragment template id: "..current_data.id)
+        else
+            reused_keys[current_data.id] = true
+            data.force_fragments[current_data.id] = current_data
+        end
+    end
+
+    local reused_keys = {}
+    for i = 1, #reward_data do
+        local current_data = reward_data[i]
+        if reused_keys[current_data.id] then
+            out("Duplicate reward template id: "..current_data.id)
+        else
+            reused_keys[current_data.id] = true
+            data.reward_templates[current_data.id] = current_data
+        end
+    end
+end
+
 
 ---loads encounters from the data file
 ---Verifies that the forces, force fragments, and reward data referenced by the encounter exist.
-local function load_encounter_data()
-    --TODO load encounter data from file
-    local quest_data = require("script/rogue_data/worldmap_encounter_data")
-    for _, encounter in pairs(quest_data) do
-        data.encounters[encounter.id] = encounter
+function verify_encounter_data()
+
+    local reused_keys = {}
+    local errors = {}
+    local function log(t)
+        table.insert(errors, t)
+    end
+    
+    local encounter_data = require("script/rogue_data/worldmap_encounter_data")
+    for _, encounter in pairs(encounter_data) do
+        if reused_keys[encounter.id] then
+            log("Duplicate encounter id: "..encounter.id)
+        else
+            reused_keys[encounter.id] = true
+
+            for _, force in pairs(encounter.force_keys) do
+                if not data.force_templates[force] then
+                    log("Force template "..force.." does not exist in encounter "..encounter.id)
+                else
+                    local force_template = data.force_templates[force] ---@type ROGUE_FORCE_DATA
+                    for _, force_fragment_set in pairs(force_template.generated_fragments) do
+                        for i = 1, #force_fragment_set do
+                            local force_fragment = force_fragment_set[i]
+                            if not data.force_fragments[force_fragment] then
+                                log("Force fragment template "..force_fragment.." does not exist in force template "..force.." in encounter "..encounter.id)
+                            end
+                        end
+                    end
+                end
+            end
+
+            for _, reward in pairs(encounter.reward_set_keys) do
+                if not data.reward_templates[reward] then
+                    log("Reward template "..reward.." does not exist in encounter "..encounter.id)
+                end
+            end
+        end
+    end
+    if #errors == 0 then
+        out("No missing data objects")
+    else
+        out("Missing data objects:")
+        for i = 1, #errors do
+            out("\t"..errors[i])
+        end
     end
 end
 
@@ -28,7 +115,15 @@ end
 ----Generators
 ----The functions in this section take the definitions of an encounter from the encounter data and generate the actual encounter
 
-local function generate_encounter_from_data(encounter_key)
+encounters = {} ---@class rogue_game_encounter
+
+---comment
+---@param encounter_data ROGUE_ENCOUNTER_DATA
+local function generate_encounter_from_data(encounter_data)
+    local self = {} ---@class rogue_game_encounter
+    setmetatable(self, {__index = encounters})
+
+    self.encounter_key = encounter_data.id
 
 
 end
@@ -117,3 +212,6 @@ function rogue_main()
     add_event_callback("RogueEncounterSelected", on_encounter_selected_event)
     add_event_callback("RogueEncounterConfirmed", on_encounter_confirmed_event)
 end
+
+load_data()
+verify_encounter_data()

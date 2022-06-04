@@ -2,14 +2,15 @@
 
 ---@class ROGUE_ENCOUNTER_DATA
 local template_encounter = 
-{
+{  
+    
     id = "template_encounter",
-    encounter_kind = "NO_GEN", --no gen is ignored, used for this template
+    encounter_kind = "NO_GEN", ---@type encounter_kind
     encounter_settlement_location = "", --the settlement where the encounter worldspace icon will be placed
     is_unknown_encounter = true, --should the player have forewarning of what will happen in this encounter?
-    force_keys = {}, --randomized between these keys
-    dilemma_keys = {}, --randomized between these keys
-    reward_set_keys = {}, --randomized between these keys,
+    force_keys = {}, ---@string[] ---randomized between these keys
+    dilemma_keys = {},---@string[] --randomized between these keys
+    reward_set_keys = {}, ---@string[] --randomized between these keys,
     requires_completed_encounters = {
         ["preceeding_encounter_key"] = true
     }, --encounters that must be completed before this encounter can be generated

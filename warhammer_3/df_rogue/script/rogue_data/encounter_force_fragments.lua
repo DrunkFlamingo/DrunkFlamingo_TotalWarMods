@@ -1,6 +1,6 @@
 --fragments should be between 2 and 4 units.
 
----@class ROGUE_FRAGMENT_DATA
+---@class ROGUE_FORCE_FRAGMENT_DATA
 template_fragment_key = {
     id = template_fragment_key,
     internal_description = "this is the template entry for a fragment",
@@ -101,4 +101,4 @@ return {
 
         }
     }
-}---@type ROGUE_FRAGMENT_DATA[]
+}---@type ROGUE_FORCE_FRAGMENT_DATA[]
