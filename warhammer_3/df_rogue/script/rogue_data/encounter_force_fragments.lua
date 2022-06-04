@@ -1,24 +1,30 @@
 --fragments should be between 2 and 4 units.
-return {
-    ----template
-    ["template_fragment_key"] = {
-        internal_description = "this is the template entry for a fragment",
-        mandatory_units = {
-            {
-                unit_key = "",
-                quantity = 0,
-                unit_upgradable_effect_keys = {} 
-            },
+
+---@class ROGUE_FRAGMENT_DATA
+template_fragment_key = {
+    id = template_fragment_key,
+    internal_description = "this is the template entry for a fragment",
+    mandatory_units = {
+        {
+            unit_key = "",
+            quantity = 0,
+            unit_upgradable_effect_keys = {} 
         },
-        fragment_members = {
-            {"unit_key", "unit_key"},
-            {}
-        }
     },
+    fragment_members = {
+        {"unit_key", "unit_key"},
+        {}
+    }
+}
+
+
+return {
+
 
     ----Slaanesh
     --core units
-    ["sla_marauder_infantry"] = {
+{
+        id = "sla_marauder_infantry",
         internal_description = "Varied Slaneshi Marauder Infantry",
         mandatory_units = {
             {
@@ -37,7 +43,8 @@ return {
             {"wh3_main_sla_inf_marauders_0", "wh3_main_sla_inf_marauders_1", "wh3_main_sla_inf_marauders_2"}
         }
     },
-    ["sla_marauder_cavalry"] = {
+    {
+        id = "sla_marauder_cavalry",
         internal_description = "Varied Slaneshi Marauder Cavalry",
         mandatory_units = {
 
@@ -47,7 +54,8 @@ return {
             {"wh3_main_sla_cav_hellstriders_0", "wh3_main_sla_cav_hellstriders_0", "wh3_main_sla_cav_hellstriders_1"}
         }
     },
-    ["sla_marauder_cultist"] = {
+    {
+        id = "sla_marauder_cultist",
         internal_description = "A cultist with only basic abilities and no mount, supported by two marauder units",
         mandatory_units = {
             {
@@ -64,7 +72,8 @@ return {
     },
     ----Khorne
     --core units
-    ["kho_chaos_warriors"] = {
+    {
+        id = "kho_chaos_warriors",
         internal_description = "Varied Khorne Chaos Warriors",
         mandatory_units = {
 
@@ -77,7 +86,8 @@ return {
         }
     },
     --characters
-    ["kho_cultist_easy"] = {
+    {   
+        id = "kho_cultist_easy",
         internal_description = "A cultist with only basic abilities and no mount",
         mandatory_units = {
             {
@@ -91,4 +101,4 @@ return {
 
         }
     }
-}
+}---@type ROGUE_FRAGMENT_DATA[]

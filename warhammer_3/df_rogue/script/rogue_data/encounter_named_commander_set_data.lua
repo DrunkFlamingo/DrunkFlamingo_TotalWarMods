@@ -11,4 +11,4 @@ return {
     ["empty_name_set"] = {
         ""
     }
-}
+}---@type table<string, string[]>
