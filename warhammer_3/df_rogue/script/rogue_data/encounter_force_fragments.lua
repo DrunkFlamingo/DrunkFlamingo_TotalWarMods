@@ -1,5 +1,8 @@
 --fragments should be between 2 and 4 units.
 
+
+local mandatory_unit_entry = {unit_key = "", quantity = 0, unit_upgradable_effect_keys = {}} ---@class ROGUE_MANDATORY_UNIT_DATA
+
 ---@class ROGUE_FORCE_FRAGMENT_DATA
 template_fragment_key = {
     id = template_fragment_key,
@@ -10,11 +13,11 @@ template_fragment_key = {
             quantity = 0,
             unit_upgradable_effect_keys = {} 
         },
-    },
+    }, ---@class ROGUE_MANDATORY_UNIT_DATA[]
     fragment_members = {
         {"unit_key", "unit_key"},
         {}
-    }
+    } ---@type string[][]
 }
 
 

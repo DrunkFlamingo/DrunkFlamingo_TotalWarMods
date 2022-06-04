@@ -116,16 +116,49 @@ end
 ----The functions in this section take the definitions of an encounter from the encounter data and generate the actual encounter
 
 encounters = {} ---@class rogue_game_encounter
+ 
 
 ---comment
 ---@param encounter_data ROGUE_ENCOUNTER_DATA
-local function generate_encounter_from_data(encounter_data)
+local function generate_field_battle_encounter_from_data(encounter_data)
     local self = {} ---@class rogue_game_encounter
     setmetatable(self, {__index = encounters})
 
     self.encounter_key = encounter_data.id
+    self.kind = encounter_data.encounter_kind
 
 
+
+
+
+    self.encounter_units = {} ---@type string[]
+    self.upgrades_to_grant = {} ---@type string[][]
+
+    --pick a random force key.
+    self.force_key = encounter_data.force_keys[cm:random_number(#encounter_data.force_keys)]
+    --use it to build the force
+    local force_template = data.force_templates[self.force_key] ---@type ROGUE_FORCE_DATA
+    for i = 1, #force_template.generated_fragments do
+        local force_fragment_set = force_template.generated_fragments[i]
+        local force_fragment_key = force_fragment_set[cm:random_number(#force_fragment_set)]
+        local force_fragment_template = data.force_fragments[force_fragment_key] ---@type ROGUE_FORCE_FRAGMENT_DATA
+        for j = 1, #force_fragment_template.mandatory_units do
+            local unit_data = force_fragment_template.mandatory_units[j] ---@type ROGUE_MANDATORY_UNIT_DATA
+            for k = 1, #unit_data.quantity do
+                table.insert(self.encounter_units, unit_data.unit_key)
+                
+            end
+            for k = 1, #unit_data.unit_upgradable_effect_keys do
+                table.insert(self.upgrades_to_grant, {unit_data.unit_upgradable_effect_keys[k], unit_data.unit_key, unit_data.quantity})
+            end
+        end
+        for j = 1, #force_fragment_template.fragment_members do
+            local member = force_fragment_template.fragment_members[j]
+            local unit_key = member[cm:random_number(#member)]
+            table.insert(self.encounter_units, unit_key)
+        end
+    end
+    
 end
 
 
@@ -134,8 +167,13 @@ end
 
 ---create a WorldSpaceComponent UI Element and attach the relevant settlement CCO to position it.
 local function get_or_create_worldspace_encounter_icon_at_settlement(encounter, settlement)
+    --get or create worldspace holder dummy element
 
+    --create the worldspace component as its child with the settlement name as the id
 
+    --get the CcoCampaignSettlement
+
+    --attach it to the worldspace component
 end
 
 local function setup_encounter_selection_ui()
