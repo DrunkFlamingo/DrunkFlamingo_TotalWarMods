@@ -9,6 +9,8 @@ local template_encounter =
     encounter_settlement_location = "", --the settlement where the encounter worldspace icon will be placed
     is_unknown_encounter = true, --should the player have forewarning of what will happen in this encounter?
     force_keys = {}, ---@string[] ---randomized between these keys
+    offensive_battle = false, --should the player attack the enemy? or vice versa?
+    ambush_battle = false, --should the attacker get an ambush?
     dilemma_keys = {},---@string[] --randomized between these keys
     reward_set_keys = {}, ---@string[] --randomized between these keys,
     requires_completed_encounters = {
@@ -26,6 +28,8 @@ return {
         encounter_settlement_location = "wh3_main_chaos_region_doomkeep", --the settlement where the encounter worldspace icon will be placed
         is_unknown_encounter = false, --should the player have no forewarning of what will happen in this encounter?
         force_keys = {"sla_marauder_cult_easy"}, --randomized between these keys
+        offensive_battle = false, --should the player attack the enemy? or vice versa?
+        ambush_battle = false, --should the attacker get an ambush?
         dilemma_keys = {}, --randomized between these keys
         reward_set_keys = {}, --randomized between these keys,
         requires_completed_encounters = {
