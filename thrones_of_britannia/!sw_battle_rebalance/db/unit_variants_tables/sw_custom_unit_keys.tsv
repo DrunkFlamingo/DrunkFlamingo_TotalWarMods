@@ -87,3 +87,4 @@ faction	unit	name	variant	height_variation	height_scale	unit_card
 	sw_bdt_skirmishers	sw_bdt_skirmishers	dan_ceorl_javelinmen	0.1	1.0	dan_ceorl_javelinmen
 	sw_bdt_slingers	sw_bdt_slingers	dan_fyrd_archers	0.1	1.0	dan_fyrd_archers
 	sw_bdt_reavers	sw_bdt_reavers	est_mailed_horsemen	0.1	1.0	est_mailed_horsemen
+	sw_sco_pikes	sw_sco_pikes	sco_schiltron	0.0	1.0	sco_schiltron

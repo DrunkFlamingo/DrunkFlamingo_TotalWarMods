@@ -1,6 +1,7 @@
 key	armour_penetrating	armour_piercing	bonus_v_cavalry	bonus_v_elephants	bonus_v_infantry	damage	ap_damage	first_strike	shield_piercing	weapon_length	melee_weapon_type	audio_material	building_damage
 #melee_weapons_tables;7;db/melee_weapons_tables/sw_battle_rebalance													
 sw_spear_levy	false	false	10	0	0	1	5	0	false	3.0	spear	spear	0.5
+sw_pike	false	false	20	0	0	1	5	0	false	5.0	spear	spear	0.5
 sw_spear_vikingar	false	false	12	0	0	1	8	0	false	3.0	spear	spear	0.5
 sw_spear_noble	false	false	16	0	0	2	11	0	false	3.0	spear	spear	0.5
 sw_spear_hero	false	false	24	0	0	3	14	0	false	3.0	spear	spear	0.5
