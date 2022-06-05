@@ -11,6 +11,7 @@
     "Lua.diagnostics.ignoredFiles": "Disable",
     "Lua.workspace.ignoreDir": [
         "warhammer_3/CAScriptDump",
+        "warhammer_3/CAUIDump",
         ".vscode",
         "lua",
         "twui",
@@ -30,7 +31,6 @@
     "Lua.IntelliSense.traceLocalSet": true,
     "Lua.IntelliSense.traceReturn": true,
     "Lua.workspace.ignoreSubmodules": false,
-    "Lua.workspace.preloadFileSize": 1500
-
+    "Lua.workspace.preloadFileSize": 2500
 }
 
