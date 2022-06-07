@@ -1,0 +1,8 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/df_gnoblar_snacks_mct.loc		
+mct_df_gnoblar_snacks_mod_title	Gnoblar Snacks	true
+mct_df_gnoblar_snacks_mod_desc	Allows Ogre Kingdoms factions to eat their own Gnoblar units, turning them into [[img:icon_ogr_meat]][[/img]]Meat for their armies.	true
+mct_df_gnoblar_snacks_a_enable_txt	Enable Mod	true
+mct_df_gnoblar_snacks_a_enable_tt	Enables or Disables the mod.	true
+mct_df_gnoblar_snacks_b_meat_value_txt	[[img:icon_ogr_meat]][[/img]]Meat per Gnoblar	true
+mct_df_gnoblar_snacks_b_meat_value_tt	How much [[img:icon_ogr_meat]][[/img]]Meat is gained for each unit you devour.	true

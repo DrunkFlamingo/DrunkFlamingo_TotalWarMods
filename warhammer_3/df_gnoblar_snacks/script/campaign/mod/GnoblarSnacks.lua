@@ -39,7 +39,10 @@ mod.ogre_pooled_resource_costs = {
 	["wh3_main_ogr_veh_ironblaster_0"] = { ["unit"] = "wh3_main_ogr_veh_ironblaster_0", ["upkeep_resource_cost"] = 1 }
 }
 
-
+mod.gnoblar_units = {
+    wh3_main_ogr_inf_gnoblars_0 = true,
+    wh3_main_ogr_inf_gnoblars_1 = true
+}
 
 
 mod.flavour_events = {
@@ -118,6 +121,7 @@ mod.fearful_gnoblar_chance = 20
 
 mod.button_name = "button_gnoblar_snack"
 mod.per_unit_food_gain = 10
+mod.character_bonus_food_factor = 2
 mod.ui_trigger_prefix = "gnoblar_snacks_button_pressed_context:"
 
 mod.unit_selection = {}
@@ -235,11 +239,8 @@ end
 
 
 mod.is_gnoblar = function(unit_key)
-    local gnoblars = {
-        wh3_main_ogr_inf_gnoblars_0 = true,
-        wh3_main_ogr_inf_gnoblars_1 = true
-    }
-    return not not gnoblars[unit_key]
+
+    return not not mod.gnoblar_units[unit_key]
 end
 
 
@@ -279,6 +280,8 @@ mod.check_validity_and_gather_payload_info = function(unitContexts)
     local is_valid = true
     local unit_value = 0
     local allied_factions = {}
+    local immortal_character = false
+    local entire_army = false
     if #unitContexts == 0 then
         return false, 0, {}
     end 
@@ -286,6 +289,7 @@ mod.check_validity_and_gather_payload_info = function(unitContexts)
         local unitContextId = unitContexts[i][2]
         local campaignUnitContext = cco("CcoCampaignUnit", unitContextId)
         local main_unit_key = campaignUnitContext:Call("UnitRecordContext.Key")
+        local is_character = campaignUnitContext:Call("IsCharacter")
         local strength = campaignUnitContext:Call("HealthPercent")
         local ally = false
         local ok, err = pcall(function()
@@ -296,7 +300,26 @@ mod.check_validity_and_gather_payload_info = function(unitContexts)
             is_valid = false
             break
         elseif mod.is_gnoblar(main_unit_key) then
-            unit_value  = unit_value + math.ceil(mod.per_unit_food_gain*strength)
+            if is_character then
+                --we can only eat mortal characters
+                local char_cqi = campaignUnitContext:Call("CharacterContext.CQI")
+                local character = cm:get_character_by_cqi(char_cqi)
+                if character and not character:is_null_interface() and character:character_details():is_immortal() == false then
+                    if character:military_force():unit_list():num_items() == #unitContexts then
+                        entire_army = true
+                        is_valid = false
+                        break
+                    else
+                        unit_value  = unit_value + math.ceil(mod.per_unit_food_gain*strength*mod.character_bonus_food_factor)
+                    end
+                else
+                    immortal_character = true
+                    is_valid = false
+                    break
+                end
+            else
+                unit_value  = unit_value + math.ceil(mod.per_unit_food_gain*strength)
+            end
         elseif ally then
             table.insert(allied_factions, ally)
             unit_value = unit_value + math.ceil(mod.per_unit_food_gain*strength)
@@ -305,7 +328,7 @@ mod.check_validity_and_gather_payload_info = function(unitContexts)
             break
         end
     end
-    return is_valid, unit_value, allied_factions
+    return is_valid, unit_value, allied_factions, immortal_character, entire_army 
 end
 
 mod.create_mp_trigger_table = function()
@@ -342,7 +365,7 @@ mod.check_units_and_populate_snack_button = function()
         local loc_str = title_string..common.get_localised_string("mod_snack_button_unit_limit")
         SnackButton:SetTooltipText(loc_str, true)
     else
-        local is_valid, food_gain, allied_factions = mod.check_validity_and_gather_payload_info(mod.unit_selection)
+        local is_valid, food_gain, allied_factions, has_immortal_character, entire_army = mod.check_validity_and_gather_payload_info(mod.unit_selection)
         if is_valid and #allied_factions > 0 then
             SnackButton:SetState("active")
             local loc_str = title_string..common.get_localised_string("mod_snack_button_food_gain") .. tostring(food_gain)
@@ -351,6 +374,14 @@ mod.check_units_and_populate_snack_button = function()
         elseif is_valid then
             SnackButton:SetState("active")
             local loc_str = title_string..common.get_localised_string("mod_snack_button_food_gain") .. tostring(food_gain)
+            SnackButton:SetTooltipText(loc_str, true)
+        elseif has_immortal_character then
+            SnackButton:SetState("inactive")
+            local loc_str = title_string..common.get_localised_string("mod_snack_button_immortal_character_selected")
+            SnackButton:SetTooltipText(loc_str, true)
+        elseif entire_army then
+            SnackButton:SetState("inactive")
+            local loc_str = title_string..common.get_localised_string("mod_snack_button_entire_army")
             SnackButton:SetTooltipText(loc_str, true)
         else
             SnackButton:SetState("inactive")
@@ -386,7 +417,6 @@ mod.eat_gnoblars = function(faction, char_cqi, trigger_table)
     payload_builder:clear()
 
     dilemma_builder:add_target(character:military_force())
-
     local event_to_show 
     for i = 1, #unitContexts do
         local index = unitContexts[i][1]
@@ -400,10 +430,22 @@ mod.eat_gnoblars = function(faction, char_cqi, trigger_table)
                 end
             end
         end
+        if campaignUnitContext:Call("IsCharacter") then
+            local char_cqi = campaignUnitContext:Call("CharacterContext.CQI")
+            local char = cm:get_character_by_cqi(char_cqi)
+            if char and not char:is_null_interface() then
+                --table.insert(characters_to_kill, char_cqi)
+                payload_builder:character_to_kill(char)
+                --dilemma_builder:add_target(char:family_member())
+            else
+                out("WTF? Asked the script to eat a character on character cqi "..char_cqi.. " but couldn't get that character")
+            end
+        end
         local unit_interface = character:military_force():unit_list():item_at(tonumber(index))
         if unit_interface and not unit_interface:is_null_interface() then
             payload_builder:destroy_unit(unit_interface)
         end
+        
     end
 
     out("Adding a pooled resource gain of "..tostring(food_gain).." to the payload!")
@@ -444,7 +486,7 @@ mod.eat_gnoblars = function(faction, char_cqi, trigger_table)
                     out("Showing event: "..event_to_show)
                     --cm:trigger_incident_with_targets(faction:command_queue_index(), event_to_show, 0, 0, 0, character:military_force():command_queue_index(), 0, 0)
                     --events currently disabled: I need to finish them and program this part better
-                    --for IME
+                    --TODO for IME
                 end
                 --notify script.
                 core:trigger_event("ModScriptEventGnoblarsEatenByFaction", faction, character)
@@ -659,6 +701,21 @@ mod.add_listeners = function()
                 mod.refresh_script_notifiers()
             end,
             true)
+        --when the character details panel closes, check whether the units panel is open, and if it is, refresh script notifiers and call the show or hide function.
+        --necessary because the character might get an immortal skill while this panel is open.
+        core:add_listener(
+            "GnoblarSnacks",
+            "PanelClosedCampaign",
+            function(context)
+                return context.string == "character_details_panel"
+            end,
+            function(context)
+                if mod.is_units_panel_open() then
+                    mod.refresh_script_notifiers()
+                    mod.hide_or_show_snack_button(cm:get_character_by_cqi(cm:get_campaign_ui_manager():get_char_selected_cqi()))
+                end
+            end,
+            true)
 
         --listen for the panel opening, create the snack button and add script event reporters to unit cards
         core:add_listener(
@@ -740,9 +797,69 @@ mod.add_listeners = function()
     )
 end
 
+local mct = core:get_static_object("mod_configuration_tool")
+
+mct_gnoblarsnacks = function ()
+    local function apply_mct()
+        out("Applying MCT settings")
+        local settings = mct:get_mod_by_key("df_gnoblar_snacks")
+        local enabled = settings:get_option_by_key("a_enable")
+        if enabled:get_finalized_setting() == true then
+            out("Mod Enabled")
+            mod.add_listeners()
+            local meat_setting = settings:get_option_by_key("b_meat_value")
+            local meat_value = meat_setting:get_finalized_setting()
+            if is_integer(meat_value) and meat_value ~= mod.per_unit_food_gain then
+                out("Meat value changed from "..mod.per_unit_food_gain.." to "..meat_value)
+                mod.per_unit_food_gain = meat_value
+            end
+            local uim = cm:get_campaign_ui_manager()
+            local char_selected_cqi = uim:get_char_selected_cqi()
+            if cm:get_character_by_cqi(char_selected_cqi) then
+                local characterContext = cco("CcoCampaignCharacter", char_selected_cqi)
+                characterContext:Call("Select(false)")
+            end
+        else
+            out("Mod disabled")
+            core:remove_listener("GnoblarSnacks")
+            local button = find_uicomponent(mod.button_name)
+            if button then
+                button:SetVisible(false)
+            end
+        end
+    end
+    core:add_listener(
+        "GnoblarSnacks_MctFinalized",
+        "MctFinalized",
+        true,
+        function (context)
+            apply_mct()
+        end,
+        true)
+    apply_mct()
+end
+
 gnoblarsnacks = function()
+    
+    --if mct is active, use the mct version of this script to apply settings
+    if mct then
+        mct_gnoblarsnacks()
+        return mod
+    end
+    --otherwise, add listeners as normal.
     mod.add_listeners()
+
     return mod
 end
 
 
+local public_functions = {
+    add_unit_meat_upkeep_display = function(unit_key, food_upkeep_cost)
+        mod.ogre_pooled_resource_costs[unit_key] = {unit = unit_key, upkeep_resource_cost = food_upkeep_cost}
+    end,
+    set_unit_is_gnoblar = function (unit_key)
+        mod.gnoblar_units[unit_key] = true
+    end
+}
+--allow other scripts to access the public functions
+core:add_static_object("df_gnoblar_snacks", public_functions)
