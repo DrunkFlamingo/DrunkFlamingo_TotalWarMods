@@ -39,7 +39,10 @@ mod.ogre_pooled_resource_costs = {
 	["wh3_main_ogr_veh_ironblaster_0"] = { ["unit"] = "wh3_main_ogr_veh_ironblaster_0", ["upkeep_resource_cost"] = 1 }
 }
 
-
+mod.gnoblar_units = {
+    wh3_main_ogr_inf_gnoblars_0 = true,
+    wh3_main_ogr_inf_gnoblars_1 = true
+}
 
 
 mod.flavour_events = {
@@ -235,11 +238,8 @@ end
 
 
 mod.is_gnoblar = function(unit_key)
-    local gnoblars = {
-        wh3_main_ogr_inf_gnoblars_0 = true,
-        wh3_main_ogr_inf_gnoblars_1 = true
-    }
-    return not not gnoblars[unit_key]
+
+    return not not mod.gnoblar_units[unit_key]
 end
 
 
@@ -740,9 +740,58 @@ mod.add_listeners = function()
     )
 end
 
-gnoblarsnacks = function()
-    mod.add_listeners()
-    return mod
+
+local public_functions = {
+    add_unit_meat_upkeep_display = function(unit_key, food_upkeep_cost)
+        mod.ogre_pooled_resource_costs[unit_key] = {unit = unit_key, upkeep_resource_cost = food_upkeep_cost}
+    end,
+    set_unit_is_gnoblar = function (unit_key)
+        mod.gnoblar_units[unit_key] = true
+    end
+}
+
+local mct = core:get_static_object("mod_configuration_tool")
+
+mct_gnoblarsnacks = function ()
+    local function apply_mct()
+        out("Applying MCT settings")
+        local settings = mct:get_mod_by_key("df_gnoblar_snacks")
+        local enabled = settings:get_option_by_key("a_enable")
+        if enabled:get_finalized_setting() == true then
+            out("Mod Enabled")
+            mod.add_listeners()
+            local meat_setting = settings:get_option_by_key("b_meat_value")
+            local meat_value = meat_setting:get_finalized_setting()
+            if is_integer(meat_value) and meat_value ~= mod.per_unit_food_gain then
+                out("Meat value changed from "..mod.per_unit_food_gain.." to "..meat_value)
+                mod.per_unit_food_gain = meat_value
+            end
+        else
+            out("Mod disabled")
+            core:remove_listener("GnoblarSnacks")
+        end
+    end
+    core:add_listener(
+        "GnoblarSnacks_MctFinalized",
+        "MctFinalized",
+        true,
+        function (context)
+            apply_mct()
+        end,
+        true)
+    apply_mct()
 end
 
+gnoblarsnacks = function()
+    --allow other scripts to access the public functions
+    core:add_static_object("df_gnoblar_snacks", public_functions)
+    --if mct is active, use the mct version of this script to apply settings
+    if mct then
+        mct_gnoblarsnacks()
+        return
+    end
+    --otherwise, add listeners as normal.
+    mod.add_listeners()
 
+    return mod
+end
