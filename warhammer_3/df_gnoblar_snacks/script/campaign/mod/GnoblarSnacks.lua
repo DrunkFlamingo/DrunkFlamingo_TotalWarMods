@@ -766,9 +766,19 @@ mct_gnoblarsnacks = function ()
                 out("Meat value changed from "..mod.per_unit_food_gain.." to "..meat_value)
                 mod.per_unit_food_gain = meat_value
             end
+            local uim = cm:get_campaign_ui_manager()
+            local char_selected_cqi = uim:get_char_selected_cqi()
+            if cm:get_character_by_cqi(char_selected_cqi) then
+                local characterContext = cco("CcoCampaignCharacter", char_selected_cqi)
+                characterContext:Call("Select(false)")
+            end
         else
             out("Mod disabled")
             core:remove_listener("GnoblarSnacks")
+            local button = find_uicomponent(mod.button_name)
+            if button then
+                button:SetVisible(false)
+            end
         end
     end
     core:add_listener(
