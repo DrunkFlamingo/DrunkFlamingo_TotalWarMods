@@ -11,8 +11,6 @@ enable:set_default_value(true)
 enable:set_text(loc_prefix.."a_enable_txt", true)
 enable:set_tooltip_text(loc_prefix.."a_enable_tt", true)
 
-local meat_value = mod:add_new_option()
-
 
 local meat_value = mod:add_new_option("b_meat_value", "slider")
 meat_value:set_text(loc_prefix.."b_meat_value_txt", true)
