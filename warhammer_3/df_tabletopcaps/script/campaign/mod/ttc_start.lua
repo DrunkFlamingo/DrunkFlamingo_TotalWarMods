@@ -4,7 +4,8 @@ local out = function(t)
 end
 
 local mod = core:get_static_object("tabletopcaps")
-local mct = get_mct()
+
+local mct = core:get_static_object("mod_configuration_tool")
 
 function ttc_mct_init()
   out("MCT Active: Preparing callbacks to launch with options")
