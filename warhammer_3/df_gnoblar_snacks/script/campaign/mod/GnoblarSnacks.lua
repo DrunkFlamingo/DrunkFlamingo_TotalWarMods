@@ -740,16 +740,6 @@ mod.add_listeners = function()
     )
 end
 
-
-local public_functions = {
-    add_unit_meat_upkeep_display = function(unit_key, food_upkeep_cost)
-        mod.ogre_pooled_resource_costs[unit_key] = {unit = unit_key, upkeep_resource_cost = food_upkeep_cost}
-    end,
-    set_unit_is_gnoblar = function (unit_key)
-        mod.gnoblar_units[unit_key] = true
-    end
-}
-
 local mct = core:get_static_object("mod_configuration_tool")
 
 mct_gnoblarsnacks = function ()
@@ -793,8 +783,7 @@ mct_gnoblarsnacks = function ()
 end
 
 gnoblarsnacks = function()
-    --allow other scripts to access the public functions
-    core:add_static_object("df_gnoblar_snacks", public_functions)
+    
     --if mct is active, use the mct version of this script to apply settings
     if mct then
         mct_gnoblarsnacks()
@@ -805,3 +794,15 @@ gnoblarsnacks = function()
 
     return mod
 end
+
+
+local public_functions = {
+    add_unit_meat_upkeep_display = function(unit_key, food_upkeep_cost)
+        mod.ogre_pooled_resource_costs[unit_key] = {unit = unit_key, upkeep_resource_cost = food_upkeep_cost}
+    end,
+    set_unit_is_gnoblar = function (unit_key)
+        mod.gnoblar_units[unit_key] = true
+    end
+}
+--allow other scripts to access the public functions
+core:add_static_object("df_gnoblar_snacks", public_functions)
