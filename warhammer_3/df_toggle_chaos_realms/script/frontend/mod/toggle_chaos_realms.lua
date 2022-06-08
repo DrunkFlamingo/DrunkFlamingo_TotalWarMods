@@ -3,7 +3,12 @@ local out = function(t)
   ModLog("DRUNKFLAMINGO: "..tostring(t).." (toggle realms)")
 end
 
---:root:sp_grand_campaign:centre_docker:lord_details_panel:lord_info:tab_settings:options:campaign:label_tx
+-- :root:sp_grand_campaign:centre_docker:lord_details_panel:lord_info:tab_settings:options:campaign:label_tx
+
+local mct 
+if get_mct then
+  mct = get_mct()
+end
 
 local set_narrative_enabled = function(enable)
   out("Front end set narrative enabled: "..tostring(enable))
@@ -11,7 +16,11 @@ local set_narrative_enabled = function(enable)
 end
 
 
-local get_registered_narrative_preference = function ()
+local get_registered_narrative_preference = function (ignore_mct)
+  if mct and not ignore_mct then
+    local settings = mct:get_mod_by_key("toggle_chaos_realms")
+    return settings:get_option_by_key("a_enable"):get_selected_setting()
+  end
   if not core:svr_load_registry_bool("rbool_chaos_realm_preference_set") then
     return true
   end 
@@ -195,8 +204,51 @@ core:add_listener(
   true
 );
 
---TODO coop multiplayer
---[[[ui] <450.5s>   root > mp_grand_campaign > ready_parent > center_holder > settings_parent > settings_list > checkbox_load_lord
-[ui] <450.5s>   root > mp_grand_campaign > ready_parent > center_holder > settings_parent > settings_list > checkbox_load_lord > dy_label
+if mct then
+  
+  local mod_settings = mct:register_mod("toggle_chaos_realms")
+  local loc_prefix = "mct_df_toggle_realms_"
+  mod_settings:set_title(loc_prefix.."mod_title", true)
+  mod_settings:set_author("Drunk Flamingo")
+  mod_settings:set_description(loc_prefix.."mod_desc", true)
 
-]]
+  local enable = mod_settings:add_new_option("a_enable", "checkbox")
+  enable:set_default_value(get_registered_narrative_preference(true))
+  enable:set_text(loc_prefix.."a_enable_txt", true)
+  enable:set_tooltip_text(loc_prefix.."a_enable_tt", true)
+  --when this toggle gets changed, also change the in menu toggle to match
+  enable:add_option_set_callback(function (option)
+    local val = option:get_selected_setting() 
+    set_narrative_enabled(val)
+    local uic_grand_campaign = find_uicomponent("sp_grand_campaign");
+    if uic_grand_campaign then
+      local campaign_options = find_uicomponent(uic_grand_campaign, "centre_docker", "lord_details_panel", "lord_info", "tab_settings", "options", "campaign")
+      local existing_checkbox = find_uicomponent(campaign_options, "checkbox_chaos_realms")
+      if existing_checkbox then
+        if val then
+          existing_checkbox:SetState("selected")
+        else
+          existing_checkbox:SetState("active")
+        end
+      end
+    end
+  end)
+  core:add_listener(
+    "MctPanelOpened_ToggleChaosRealms",
+    "MctPanelOpened",
+    true,
+    function (context)
+      local uic_grand_campaign = find_uicomponent("sp_grand_campaign");
+      local campaign_options = find_uicomponent(uic_grand_campaign, "centre_docker", "lord_details_panel", "lord_info", "tab_settings", "options", "campaign")
+      local existing_checkbox = find_uicomponent(campaign_options, "checkbox_chaos_realms")
+      if existing_checkbox then
+        out("Found the checkbox state on campaign starting")
+        out("existing_checkbox state " ..existing_checkbox:CurrentState())
+        local is_enabled = not not string.find(existing_checkbox:CurrentState(), "selected")
+        enable:set_selected_setting(is_enabled)
+      elseif uic_grand_campaign then
+        out("MCT panel opened but we couldn't find any checkbox for the realms toggle despite UIC grand campaign existing!")
+      end
+    end,
+    true)
+end
