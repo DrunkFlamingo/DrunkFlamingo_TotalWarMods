@@ -1,9 +1,9 @@
 ---@class ROGUE_COMMANDER_DATA
 local template_commander = {               
     agent_subtype_key = "",
-    forename_set = "",
-    surname_set = "",
-    effect_bundle = ""
+    --forename_set = "",
+    --surname_set = "",
+    effect_bundles = {} --one is selected at random
 }
 
 
@@ -35,8 +35,6 @@ return {
         commanding_characters = { --one random character from the list is selected to lead the force.
             {               
                 agent_subtype_key = "wh3_main_sla_herald_of_slaanesh_slaanesh",
-                forename_set = "sla_herald_names",
-                surname_set = "empty_name_set",
                 effect_bundles = {}
             }
         },

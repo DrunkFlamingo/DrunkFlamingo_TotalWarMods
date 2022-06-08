@@ -111,6 +111,9 @@ function verify_encounter_data()
     end
 end
 
+---savable tables
+local player_completed_encounters = {} ---@type table<string, boolean>
+
 
 ----Generators
 ----The functions in this section take the definitions of an encounter from the encounter data and generate the actual encounter
@@ -161,9 +164,9 @@ local function generate_field_battle_encounter_from_data(encounter_data)
     self.character_details = {}
     local character_template = force_template.commanding_characters[cm:random_number(#force_template.commanding_characters)] ---@type ROGUE_COMMANDER_DATA
     self.character_details.subtype = character_template.agent_subtype_key
-    self.character_details.effect_bundle = character_template.effect_bundle
-    
-    
+    self.character_details.effect_bundle = character_template.effect_bundles[cm:random_number(#character_template.effect_bundles)]
+    encounters[self.encounter_key] = self
+    return self
 end
 
 
@@ -191,6 +194,24 @@ local function setup_encounter_selection_ui()
 
     --loop through all encounters, and determine whether they are currently available to access.
     --if so, build their details from data and create a worldspace icon for them.
+    local encounter_data = require("script/rogue_data/worldmap_encounter_data")
+    for _, encounter in pairs(encounter_data) do
+        local missing_required_encounter = false
+        for i = 1, #encounter.requires_completed_encounters do
+            if not player_completed_encounters[encounter.requires_completed_encounters[i]] then
+                missing_required_encounter = true
+            end
+        end
+        for i = 1, #encounter.requires_not_completed_encounters do
+            if player_completed_encounters[encounter.requires_not_completed_encounters[i]] then
+                missing_required_encounter = true
+            end
+        end
+        if not missing_required_encounter then
+            local encounter_object = generate_field_battle_encounter_from_data(encounter)
+            get_or_create_worldspace_encounter_icon_at_settlement(encounter_object, encounter.encounter_settlement_location)
+        end
+    end
 end
 
 ----event Callbacks

@@ -26,7 +26,5 @@ local template_reward =
 
 
 return {
-
-    
-
+    template_reward
 }---@type ROGUE_REWARD_DATA[]

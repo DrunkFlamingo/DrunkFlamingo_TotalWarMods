@@ -14,11 +14,11 @@ local template_encounter =
     dilemma_keys = {},---@string[] --randomized between these keys
     reward_set_keys = {}, ---@string[] --randomized between these keys,
     requires_completed_encounters = {
-        ["preceeding_encounter_key"] = true
-    }, --encounters that must be completed before this encounter can be generated
+        "preceeding_encounter_key"
+    }, ---@type string[] --encounters that must be completed before this encounter can be generated
     requires_not_completed_encounters = {
-        ["mutually_exclusive_encounter_key"] = true
-    } --encounters that must not be completed for this encounter to be generated
+        "mutually_exclusive_encounter_key"
+    } ---@type string[] --encounters that must not be completed for this encounter to be generated
 } 
 
 return {
@@ -33,10 +33,10 @@ return {
         dilemma_keys = {}, --randomized between these keys
         reward_set_keys = {}, --randomized between these keys,
         requires_completed_encounters = {
-            ["preceeding_encounter_key"] = true
+            "preceeding_encounter_key"
         }, --encounters that must be completed before this encounter can be generated
         requires_not_completed_encounters = {
-            ["mutually_exclusive_encounter_key"] = true
+            "mutually_exclusive_encounter_key"
         } --encounters that must not be completed for this encounter to be generated
     }  
 } ---@type ROGUE_ENCOUNTER_DATA[]

@@ -8,25 +8,21 @@ template_fragment_key = {
     id = template_fragment_key,
     internal_description = "this is the template entry for a fragment",
     mandatory_units = {
-        {
-            unit_key = "",
-            quantity = 0,
-            unit_upgradable_effect_keys = {} 
-        },
+        mandatory_unit_entry
     }, ---@class ROGUE_MANDATORY_UNIT_DATA[]
     fragment_members = {
         {"unit_key", "unit_key"},
         {}
     } ---@type string[][]
 }
-
+ 
 
 return {
 
 
     ----Slaanesh
     --core units
-{
+    {
         id = "sla_marauder_infantry",
         internal_description = "Varied Slaneshi Marauder Infantry",
         mandatory_units = {
