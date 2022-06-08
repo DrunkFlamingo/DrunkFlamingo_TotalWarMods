@@ -390,6 +390,13 @@ mod.get_unit_if_existing = function(unit_key)
   return mod.units[unit_key] 
 end
 
+---is this unit already in the caps system?
+---@param unit_key string
+---@return boolean
+mod.does_unit_exist = function(unit_key)
+  return mod.units[unit_key] ~= nil
+end
+
 ---@return ttc_character
 mod.get_selected_character_record = function()
   return mod.characters[cm:get_campaign_ui_manager():get_char_selected_cqi()] or 
@@ -1364,9 +1371,12 @@ mod.check_ai_character = function(character, read_only)
       out("Adjusting AI character ["..tostring(character:command_queue_index()).."] "..group_key.." balance "..balance)
       local sortable_list = {} ---@type ttc_unit[]
       for i = 0, unit_list:num_items() -1 do
-        local unit_record = mod.get_unit(unit_list:item_at(i):unit_key(), character_record)
-        if unit_record.group == group_key then
-          sortable_list[#sortable_list+1] = unit_record
+        local unit_key = unit_list:item_at(i):unit_key()
+        if mod.does_unit_exist(unit_key) then
+          local unit_record = mod.get_unit(unit_key, character_record)
+          if unit_record.group == group_key then
+            sortable_list[#sortable_list+1] = unit_record
+          end
         end
       end
       table.sort(sortable_list, function (a, b)
@@ -1411,28 +1421,30 @@ mod.check_ai_character = function(character, read_only)
   if character:faction():is_human() then
     --we don't want to delete a human's record in case they're currently using the UI
   else
-    mod.characters[character:command_queue_index()] = nil
+    local char_cqi = character:command_queue_index()
+    out("Checked AI Character: "..char_cqi)
+    mod.characters[char_cqi] = nil
   end
 end
 
-mod.adjustment_queue = {} ---@type CHARACTER_SCRIPT_INTERFACE[]
+mod.adjustment_queue = {} ---@type integer[]
 mod.characters_in_adjustment_queue = {} ---@type table<integer, boolean>
 
 ---called repeatedly while the adjustment queue has characters in it.
 mod.adjustment_callback = function()
     local i = #mod.adjustment_queue
-    local character = mod.adjustment_queue[i]
-    if character:has_military_force() and mod.force_has_caps(character:military_force()) then
+    local character = cm:get_character_by_cqi(mod.adjustment_queue[i])
+    if character and character:has_military_force() and mod.force_has_caps(character:military_force()) then
       mod.check_ai_character(character, false)
     else
-      out("Character "..character:command_queue_index().." in the adjustment queue has no force, or a force which is not capped")
+      out("Character "..mod.adjustment_queue[i].." in the adjustment queue has no force, or a force which is not capped")
     end
-    mod.characters_in_adjustment_queue[character:command_queue_index()] = false
+    mod.characters_in_adjustment_queue[mod.adjustment_queue[i]] = false
     table.remove(mod.adjustment_queue, i)
     --if there is still a character in the queue, call this again
     if #mod.adjustment_queue > 0 then
-      out("Queued the next force for adjustment")
-      cm:callback(mod.adjustment_callback, 0.1, "ttc_ai_adjustments")
+      out("Queued the next force for adjustment; "..#mod.adjustment_queue.." remaining")
+      cm:callback(mod.adjustment_callback, 0)
     end
 end
 
@@ -1440,12 +1452,13 @@ end
 ---@param character CHARACTER_SCRIPT_INTERFACE
 ---@param delay boolean|nil
 mod.add_character_to_adjustment_queue = function(character, delay)
-  if mod.characters_in_adjustment_queue[character:command_queue_index()] then
+  local char_cqi = character:command_queue_index()
+  if mod.characters_in_adjustment_queue[char_cqi] then
     return
   end
-  out("Added character: "..character:command_queue_index().." to the adjustments Queue")
-  mod.characters_in_adjustment_queue[character:command_queue_index()] = true
-  table.insert(mod.adjustment_queue, character)
+  out("Added character: "..char_cqi.." to the adjustments Queue")
+  mod.characters_in_adjustment_queue[char_cqi] = true
+  table.insert(mod.adjustment_queue, char_cqi)
   if #mod.adjustment_queue == 1 then
     local t = 0
     if delay then
