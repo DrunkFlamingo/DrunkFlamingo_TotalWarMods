@@ -1,24 +1,49 @@
+--"C:/Total War Modding/DrunkFlamingo_TotalWarMods/lua/?.lua"
+package.path = package.path .. ";C:/Total War Modding/DrunkFlamingo_TotalWarMods/lua/input/shieldwall_event_input/?.lua"
+
+
 local region_sets = {
-    ["MAJOR_SETTLEMENTS"] = "",
-    ["MINOR_SETTLEMENTS"] = "",
-    ["ALL_SETTLEMENTS"] = "",
-    ["FOREIGNERS"] = "",
-    ["BOROUGHS"] = "",
-    ["LONGPHORTS"] = "",
-    ["MARKETS"] = "",
-    ["MONASTERIES"] = ""
+    ["MAJOR_SETTLEMENTS"] = require("region_sets/MAJOR_SETTLEMENTS"),
+    ["MINOR_SETTLEMENTS"] = require("region_sets/MINOR_SETTLEMENTS"),
+    ["ALL_SETTLEMENTS"] = require("region_sets/ALL_SETTLEMENTS"),
+    ["FOREIGNERS"] = false,
+    ["BOROUGHS"] = false,
+    ["LONGPHORTS"] = false,
+    ["MARKETS"] = false,
+    ["MONASTERIES"] = false
 }
 
 local faction_sets = {
-    ["ANY_FACTION"] = "",
-    ["ENG_FACTIONS"] = "",
-    ["DAN_FACTIONS"] = "",
-    ["VSK_FACTIONS"] = "",
-    ["IRI_FACTIONS"] = "",
-    ["SCO_FACTIONS"] = "",
-    ["WEL_FACTIONS"] = "",
-    ["VIK_FACTIONS"] = "",
+    ["ANY_FACTION"] = false,
+    ["ENG_FACTIONS"] = false,
+    ["DAN_FACTIONS"] = false,
+    ["VSK_FACTIONS"] = false,
+    ["IRI_FACTIONS"] = false,
+    ["SCO_FACTIONS"] = false,
+    ["WEL_FACTIONS"] = false,
+    ["VIK_FACTIONS"] = false
 }
+
+---returns the list of objects, the key to replace with their names, and whether the object is a faction.
+---@param event_name string
+---@return table
+---@return string
+---@return boolean
+local find_object_set_for_event = function (event_name)
+    for key, object_set in pairs(region_sets) do
+        if string.find(event_name, key) then
+            return object_set or {}, key, false
+        end
+    end
+    for key, object_set in pairs(faction_sets) do
+        if string.find(event_name, key) then
+            return object_set or {}, key, true
+        end
+    end
+    return {}, "", false
+end
+
+
 
 local localisation_keys = { 
     ["title"] = {"dilemmas_localised_title_", "incidents_localised_title_"},
@@ -32,6 +57,32 @@ local function uid()
     iuid = iuid +1 return tostring(iuid-1) 
 end
 
+local loc_data = {}
+do
+    --unload the data from the vector of pairs into a key value table
+    local loc_raw_data = require("region_loc")
+    for i = 1, #loc_raw_data do
+        local loc_entry = loc_raw_data[i]
+        local loc_key = loc_entry[1]
+        local loc_value = loc_entry[2]
+        loc_data[loc_key] = loc_value
+    end
+end
+
+---comment
+---@param region_or_faction_key string
+---@return string
+local function get_loc_for_region_or_faction(region_or_faction_key)
+    return loc_data[region_or_faction_key] or "MISSING LOC KEY FOR " .. region_or_faction_key
+end
+
+---@param str string
+---@param loc string
+---@return string
+local function fill_loc_string(str, loc)
+    local ret = str:gsub("{{%u+}}", loc)
+    return ret
+end
 
 ---@class payload_detail
 local payload_detail = {}
@@ -276,37 +327,61 @@ end
 ---print the newly created events
 
 local function output_events()
-    local dilemmas_table = io.open("lua/output/shieldwall_event_output/dilemmas_tables/shieldwall_generated_events.tsv", "w+")
+    local dilemmas_table = io.open("lua/output/shieldwall_event_output/db/dilemmas_tables/shieldwall_generated_events.tsv", "w+")
     dilemmas_table:write("key\tgenerate\tlocalised_description\tlocalised_title\tui_icon\tui_image\tprioritized\tevent_category\n")
     dilemmas_table:write("#dilemmas_tables;3;db/dilemmas_tables/shieldwall_generated_events\t\t\t\t\t\t\t\n")
 
-    local dilemmas_payloads = io.open("lua/output/shieldwall_event_output/cdir_events_dilemma_payloads_tables/shieldwall_generated_events.tsv", "w+")
+    local dilemmas_payloads = io.open("lua/output/shieldwall_event_output/db/cdir_events_dilemma_payloads_tables/shieldwall_generated_events.tsv", "w+")
     dilemmas_payloads:write("id\tchoice_key\tdilemma_key\tpayload_key\tvalue\n")
-    dilemmas_payloads:write("#cdir_events_dilemma_payloads_tables;2;db/cdir_events_dilemma_payloads_tables/sw_pop_update_new_region_dilemmas\t\t\t\t\n")
+    dilemmas_payloads:write("#cdir_events_dilemma_payloads_tables;2;db/cdir_events_dilemma_payloads_tables/shieldwall_generated_events\t\t\t\t\n")
 
     local dilemmas_loc = io.open("lua/output/shieldwall_event_output/text/db/shieldwall_generated_dilemmas.tsv", "w+")
     dilemmas_loc:write("key\ttext\ttooltip\n")
     dilemmas_loc:write("#Loc PackedFile;1;text/db/hof_events.loc\t\t\n")
 
-    --TODO add options, choice details
+    local dilemma_choice_details = io.open("lua/output/shieldwall_event_output/db/cdir_events_dilemma_choice_details_tables/shieldwall_generated_events.tsv", "w+")
+    dilemma_choice_details:write("choice_key\tdilemma_key\n")
+    dilemma_choice_details:write("#cdir_events_dilemma_choice_details_tables;0;db/cdir_events_dilemma_choice_details_tables/shieldwall_generated_events\t\n")
+    --TODO add options
+
+    local dilemma_options = io.open("lua/output/shieldwall_event_output/db/cdir_events_dilemma_option_junctions_tables/shieldwall_generated_events.tsv", "w+")
+    dilemma_options:write("id\tdilemma_key\toption_key\tvalue\n")
+    dilemma_options:write("#cdir_events_dilemma_option_junctions_tables;2;db/cdir_events_dilemma_option_junctions_tables/shieldwall_generated_events\t\t\t\n")
 
     ---write a dilemma
     ---@param event_key string
     ---@param event_info game_event
-    local function output_dilemma(event_key, event_info, is_factional)
+    ---@param object_name string
+    ---@param opt_is_factional boolean|nil
+    local function output_dilemma(event_key, event_info, object_name, opt_is_factional)
+
         --write main table
         dilemmas_table:write(
             as_tab_seperated_values(event_key, "false", "", "", event_info.ui_icon, event_info.ui_image, "true", event_info.event_category) .. "\n"
         )
+
         --write localization
         dilemmas_loc:write(
-            as_tab_seperated_values("dilemmas_localised_title_"..event_key, event_info.localised_title, "true") .. "\n"
-            .. as_tab_seperated_values("dilemmas_localised_description_"..event_key, event_info.localised_description, "true") .. "\n"
+            as_tab_seperated_values("dilemmas_localised_title_"..event_key, fill_loc_string(event_info.localised_title, get_loc_for_region_or_faction(object_name)), "true") .. "\n"
+            .. as_tab_seperated_values("dilemmas_localised_description_"..event_key, fill_loc_string(event_info.localised_description, get_loc_for_region_or_faction(object_name)), "true") .. "\n"
         )
+        if is_factional then
+            --TODO add factional dilemma generation
+        else
+            dilemma_options:write(
+                as_tab_seperated_values(uid(), event_key, "GEN_TARGET_REGION", "") .. "\n"
+                .. as_tab_seperated_values(uid(), event_key, "GEN_CND_REGION", object_name) .. "\n"
+                .. as_tab_seperated_values(uid(), event_key, "VAR_CHANCE", "100") .. "\n"
+                .. as_tab_seperated_values(uid(), event_key, "GEN_CND_OWNS", "") .. "\n"
+            )
+        end
+
         --write options table
         for choice_key, payload_info in pairs(event_info.payload_details) do
             --write choice details
-
+            dilemma_choice_details:write(
+                as_tab_seperated_values(choice_key, event_key) .. "\n"
+            )
             --write localisation
             dilemmas_loc:write(
                 as_tab_seperated_values(
@@ -325,17 +400,23 @@ local function output_events()
     end
 
 
-
+    --for each event
     for event_key, event_info in pairs(game_events) do
-        if event_info.EVENT_TYPE == "dilemmmas" then
-            --TODO: pass the same event info with concates added
-           output_dilemma(event_key, event_info)
-        elseif event_info.EVENT_TYPE == "missions" then
-            
-        elseif event_info.EVENT_TYPE == "incidents" then
-
+        local object_set, key_to_replace, is_factional = find_object_set_for_event(event_key)
+        --for each object that the event needs to be generated for
+        for i = 1, #object_set do
+            local key_to_use = object_set[i]
+            local actual_event_key = event_key:gsub(key_to_replace, key_to_use)
+            if event_info.EVENT_TYPE == "dilemmmas" then
+                output_dilemma(actual_event_key, event_info, key_to_use, is_factional)
+            elseif event_info.EVENT_TYPE == "missions" then
+                --TODO support missions
+            elseif event_info.EVENT_TYPE == "incidents" then
+                --TODO support incidents
+            end
         end
     end
+
 end
 
 local function generate_events_from_files(...)
