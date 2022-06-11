@@ -1,0 +1,5 @@
+faction	general_unit	unit	siege_unit_attacker	siege_unit_defender
+#units_custom_battle_permissions_tables;4;db/units_custom_battle_permissions_tables/sw_sco_roster				
+vik_fact_circenn_mp	true	sw_sco_general	true	true
+vik_fact_circenn_mp	true	sw_sco_elite_general	true	true
+vik_fact_circenn_mp	false	sw_sco_pikes	true	true
