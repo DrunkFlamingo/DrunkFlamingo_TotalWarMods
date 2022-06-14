@@ -5,3 +5,9 @@ incidents_localised_title_df_chaos_realms_off	Ursun Falls Silent	true
 incidents_localised_description_df_chaos_realms_off	The promises of your new advisor come to nothing - the God of Kislev falls silent. Without his mighty roar, penetrating the maelstrom is all but impossible.\\n\\nYet the Tome of Fate still binds the old man to your service; a divine punishment for his scheming. With his great foresight, who is to say what feats you may yet accomplish.	true
 uied_component_texts_localised_string_fe_chaos_realm_checkbox_text	Enable Campaign Narrative	true
 uied_component_texts_localised_string_fe_chaos_realm_checkbox_tooltip	Enable this option to play the campaign with the Realm of Chaos narrative. \\n\\n[[col:yellow]]If this option is disabled the Rifts to the Chaos Realms will never open, and the campaign will remain a sandbox.[[/col]]	true
+mct_df_toggle_realms_mod_title	Toggle Chaos Realms	true
+mct_df_toggle_realms_mod_desc	Allows you to disable or enable the Chaos Realms Narrative.	true
+mct_df_toggle_realms_a_enable_txt	Enable Campaign Narrative	true
+mct_df_toggle_realms_a_enable_tt	Enable this option to play the campaign with the Realm of Chaos narrative. \\n\\n[[col:yellow]]If this option is disabled the Rifts to the Chaos Realms will never open, and the campaign will remain a sandbox.[[/col]]	true
+mct_df_toggle_realms_mod_desc_campaign	[[col:red]]WARNING: Changing these settings during the campaign will immediately save and then exit your campaign. You must reload the campaign for the setting to apply.[[/col]]	true
+mct_df_toggle_realms_a_enable_tt_campaign	Avoid disabling the rifts while they are open, as this will likely cause stability issues or other bugs in your campaign.	true
