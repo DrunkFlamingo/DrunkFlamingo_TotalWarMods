@@ -17,7 +17,7 @@ local set_registered_narrative_preference = function(enable)
     core:svr_save_registry_bool("rbool_chaos_realm_preference_set", true)
 end
   
-  
+local mct = core:get_static_object("mod_configuration_tool")
 
 
 local ca_setup_realms = setup_realms
@@ -38,6 +38,13 @@ function show_intro_story_panel(faction_key)
         old_story_panel(faction_key)
     else
         out("Skipping story intro")
+    end
+end
+
+local function toggle_realms_ui(enable)
+    local RealmsHolder = find_uicomponent(core:get_ui_root(), "hud_campaign", "resources_bar_holder", "resources_bar", "astral_projection_holder")
+    if is_uicomponent(RealmsHolder) then
+        RealmsHolder:SetVisible(enable)
     end
 end
 
@@ -78,10 +85,7 @@ function realms_disabled_listeners()
         end,
         function(context)
             cm:real_callback(function ()
-                local RealmsHolder = find_uicomponent(core:get_ui_root(), "hud_campaign", "resources_bar_holder", "resources_bar", "astral_projection_holder")
-                if is_uicomponent(RealmsHolder) then
-                    RealmsHolder:SetVisible(false)
-                end
+                toggle_realms_ui(false)
             end, 100)
         end,
         true)
@@ -97,10 +101,7 @@ function realms_disabled_listeners()
                     cm:real_callback(function ()
                         local cinematic = cm:cinematic()
                         cinematic:stop_cindy_playback(true)
-                        local RealmsHolder = find_uicomponent(core:get_ui_root(), "hud_campaign", "resources_bar_holder", "resources_bar", "astral_projection_holder")
-                        if is_uicomponent(RealmsHolder) then
-                            RealmsHolder:SetVisible(false)
-                        end
+                        toggle_realms_ui(false)
                     end, 200)
                 end)
                 core:add_listener(
@@ -111,35 +112,28 @@ function realms_disabled_listeners()
                         cm:real_callback(function ()
                             local cinematic = cm:cinematic()
                             cinematic:stop_cindy_playback(true)
-                            local RealmsHolder = find_uicomponent(core:get_ui_root(), "hud_campaign", "resources_bar_holder", "resources_bar", "astral_projection_holder")
-                            if is_uicomponent(RealmsHolder) then
-                                RealmsHolder:SetVisible(false)
-                            end
+                            toggle_realms_ui(false)
                         end, 200)
                     end)
             core:progress_on_loading_screen_dismissed(function ()
                 cm:real_callback(function ()
-                    local RealmsHolder = find_uicomponent(core:get_ui_root(), "hud_campaign", "resources_bar_holder", "resources_bar", "astral_projection_holder")
-                    if is_uicomponent(RealmsHolder) then
-                        RealmsHolder:SetVisible(false)
-                    end
+                    toggle_realms_ui(false)
                     local movies = find_uicomponent("movie_overlay_intro_movie")
                     if movies then
                         movies:Destroy()
                     end
                 end, 100)
             end)
-        else
+        elseif core:is_loading_screen_visible() then
             core:progress_on_loading_screen_dismissed(function ()
                 cm:real_callback(function ()
-                    local RealmsHolder = find_uicomponent(core:get_ui_root(), "hud_campaign", "resources_bar_holder", "resources_bar", "astral_projection_holder")
-                    if is_uicomponent(RealmsHolder) then
-                        RealmsHolder:SetVisible(false)
-                    end
+                    toggle_realms_ui(false)
                 end, 100)
             end)
-
-
+        else
+            cm:real_callback(function ()
+                toggle_realms_ui(false)
+            end, 100)
         end
 end
 
@@ -200,6 +194,34 @@ function setup_realms()
     else
         check_realms_on_resume()
     end
+
+    
+    if mct then
+        core:add_listener(
+            "MctFinalized_ToggleChaosRealms",
+            "MctFinalized",
+            true,
+            function (context)
+                out("Player changed MCT settings!")
+                local settings = mct:get_mod_by_key("toggle_chaos_realms")
+                local realms_enabled = settings:get_option_by_key("a_enable"):get_finalized_setting()
+                local enabled_from_campaign_save = cm:get_saved_value("are_chaos_realms_enabled_ongoing_campaign")
+                if realms_enabled and not enabled_from_campaign_save then
+                    out("Player enabled realms: saving and exiting")
+                    cm:set_saved_value("was_chaos_realm_toggle_set_from_front_end", true)
+                    cm:set_saved_value("are_chaos_realms_enabled_ongoing_campaign", true)
+                    cm:save(function () cm:quit()  end)
+                elseif enabled_from_campaign_save and not realms_enabled then
+                    out("Player disabled realms: saving and exiting")
+                    cm:set_saved_value("was_chaos_realm_toggle_set_from_front_end", true)
+                    cm:set_saved_value("are_chaos_realms_enabled_ongoing_campaign", false)
+                    cm:save(function () cm:quit()  end)
+                else
+                    out("The setting is the same as the one saved in the savegame. No need to do anything.")
+                end
+            end,
+            true)
+    end
     if print_all_listeners_for_debug then
 
         ---@class core
@@ -249,3 +271,32 @@ core:add_listener(
         check_realms_on_resume()
     end,
     true)
+
+if mct then
+    local mod_settings = mct:register_mod("toggle_chaos_realms")
+    local loc_prefix = "mct_df_toggle_realms_"
+    mod_settings:set_title(loc_prefix.."mod_title", true)
+    mod_settings:set_author("Drunk Flamingo")
+    mod_settings:set_description(loc_prefix.."mod_desc_campaign", true)
+  
+    local enable = mod_settings:add_new_option("a_enable", "checkbox")
+    --default value is only used if the option is not set in the savegame, in which case we default to realms active,
+    --same handling as when we load into a save not created with this mod active.
+    enable:set_default_value(true)
+    enable:set_text(loc_prefix.."a_enable_txt", true)
+    enable:set_tooltip_text(loc_prefix.."a_enable_tt_campaign", true)
+    core:add_listener(
+        "MctPanelOpened_ToggleChaosRealms",
+        "MctPanelOpened",
+        true,
+        function (context)
+            if cm:get_saved_value("was_chaos_realm_toggle_set_from_front_end") then
+                local is_enabled = cm:get_saved_value("are_chaos_realms_enabled_ongoing_campaign")
+                local is_enabled_in_mct = enable:get_finalized_setting()
+                if is_enabled ~= is_enabled_in_mct then
+                    enable:set_finalized_setting(is_enabled, true)
+                end
+            end
+        end,
+        true)
+end
