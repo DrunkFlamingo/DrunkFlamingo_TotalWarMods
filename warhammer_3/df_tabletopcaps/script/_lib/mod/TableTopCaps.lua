@@ -1,4 +1,4 @@
----@param t string
+---@param t string|any
 local out = function(t)
   ModLog("DRUNKFLAMINGO: "..tostring(t).." (tabletopcaps)")
 end
@@ -15,7 +15,7 @@ end
 ---@return string
 local  fill_loc = function(loc, ...)
   local output = loc
-  for i = 1, arg.n do
+  for i = 1, #arg do
       local f = i - 1
       local gsub_text = f..f..f..f
       output = string.gsub(output, gsub_text, arg[i])
@@ -207,7 +207,7 @@ mod.characters = {}---@type table<integer, ttc_character>
 
 ---@param unit_key string
 ---@param group_name string|nil
----@param unit_weight string|nil
+---@param unit_weight integer|nil
 ---@param is_special_rule boolean|nil
 ---@return ttc_unit
 ttc_unit.new = function(unit_key, group_name, unit_weight, is_special_rule, suppress_log)
@@ -226,18 +226,22 @@ end
 
 
 ---@param character CHARACTER_SCRIPT_INTERFACE
----@return ttc_character
+---@return ttc_character|nil
 ttc_character.new = function(character)
   local self = {} ---@class ttc_character
   setmetatable(self, {
     __index = ttc_character
   })
-
+  if not character or character:is_null_interface() then
+    out("WTF? Character is null")
+    return 
+  end
   self.cqi = character:command_queue_index()
   self.interface = character
   self.force = character:military_force()
   if self.force:is_null_interface() then
     out("WTF? Character "..self.cqi.." was sent to TTC character constructor but has no military_force")
+    return
   end
   mod.characters[self.cqi] = self
 
@@ -304,7 +308,7 @@ ttc_character.refresh_budget = function(self)
 
   self:log("Building budget from bonus values")
   for effect_bonus_value_key, group_key in pairs(mod.budget_bonus_values) do
-    local bonus_value = get_characters_bonus_value(self.interface, effect_bonus_value_key)
+    local bonus_value = cm:get_characters_bonus_value(self.interface, effect_bonus_value_key)
     self:log("Bonus value ["..effect_bonus_value_key.."] value ["..tostring(bonus_value).."] applies to group "..group_key)
     self.budget[group_key] = bonus_value
   end
@@ -319,14 +323,14 @@ ttc_character.refresh_special_rules = function(self)
     local new_group
     for suffix, group in pairs(mod.special_rule_group_override_suffixes) do
       local group_override_key = mod.special_rule_bonus_value_prefix .. unit_key .. suffix
-      local group_override = get_characters_bonus_value(self.interface, group_override_key)
+      local group_override = cm:get_characters_bonus_value(self.interface, group_override_key)
       self:log("Checking bonus values ["..group_override_key.."] = ["..tostring(group_override).."]")
       if group_override ~= 0 and group ~= old_info.group then
         new_group = group
       end
     end
     local weight_override_key = mod.special_rule_bonus_value_prefix .. unit_key ..mod.special_rule_weight_override_suffix
-    local weight_change = get_characters_bonus_value(self.interface, weight_override_key)
+    local weight_change = cm:get_characters_bonus_value(self.interface, weight_override_key)
     self:log(" Weight change  ["..weight_override_key.."] = ["..tostring(weight_change).."] ")
     if new_group then
       --this special rule is a group override
@@ -1291,10 +1295,10 @@ mod.add_listeners = function()
           local component = UIComponent(context.component)
           local component_id = tostring(component:Id())
           if string.find(component_id, "temp_merc_") then
-              local position = component_id:gsub("temp_merc_", "")
+              local position = component_id:gsub("temp_merc_", "") 
               out("Component Clicked was a Queued Mercenary Unit @ ["..position.."]!")
               local character_record = mod.get_selected_character_record()
-              local int_pos = tonumber(position)+1 
+              local int_pos = math.floor(tonumber(position)+1)
               local unit_record = mod.mercenaries_in_queue[int_pos]
               character_record:refund_cost_of_unit(unit_record)
               table.remove(mod.mercenaries_in_queue, int_pos)
@@ -1345,7 +1349,9 @@ end
 ---@param read_only boolean|nil
 mod.check_ai_character = function(character, read_only)
   local character_record = ttc_character.new(character)
-
+  if not character_record then
+    return
+  end
   character_record:refresh_budget()
   character_record:refresh_special_rules()
 
@@ -1555,7 +1561,7 @@ end
 
 
 ---@param group_key "special"|"rare"
----@return UIC
+---@return UIC|nil
 mod.get_or_create_group_meter = function(group_key)
   if not mod.is_units_panel_open() then
     out("Asked for the recruitment meters but the units panel isnt open")
@@ -1595,12 +1601,16 @@ end
 
 ---comment
 ---@param group_key string
----@param group_meter UIC
+---@param group_meter UIC|nil
 ---@param character_record ttc_character
 ---@param dont_show boolean|nil
 mod.populate_group_meter_text = function(group_key, group_meter, character_record, dont_show)
   if not group_meter then
     out("Group meter not created - cannot be populated. Was this event fired before the panel was open?")
+    return
+  end
+  if not character_record then
+    out("No character record provided - cannot populate group meter.")
     return
   end
   --local character_record = mod.get_selected_character_record()
@@ -1615,11 +1625,15 @@ mod.populate_group_meter_text = function(group_key, group_meter, character_recor
 end
 
 ---@param group_key string
----@param group_meter UIC
+---@param group_meter UIC|nil
 ---@param character_record ttc_character
 mod.populate_group_meter_tooltip_and_text = function(group_key, group_meter, character_record)
   if not group_meter then
     out("Group meter not created - cannot be populated. Was this event fired before the panel was open?")
+    return
+  end
+  if not character_record then
+    out("No character record provided - cannot populate group meter.")
     return
   end
   local ok, err = pcall(function()
@@ -1758,6 +1772,7 @@ mod.add_ui_meter_listeners = function ()
       function(context)
         local character_record = mod.get_selected_character_record()
         local character = cm:get_character_by_cqi(cm:get_campaign_ui_manager():get_char_selected_cqi())
+        if not character or character:is_null_interface() then return end
         local suppress = character:faction():name() ~= cm:get_local_faction_name(true) or (not character:has_military_force()) or (not mod.force_has_caps(character:military_force()))
         mod.populate_group_meter_text( "special", mod.get_or_create_group_meter("special"), character_record, suppress)
         mod.populate_group_meter_text( "rare", mod.get_or_create_group_meter("rare"), character_record, suppress)
@@ -1891,7 +1906,7 @@ end
 
 
 ---Creates and fills a character record for the second army in an exchange`
----@return ttc_character
+---@return ttc_character|nil
 mod.get_other_character_in_exchange = function()
   out("Getting exchange army")
   local exchange_panel = find_uicomponent(core:get_ui_root(), "unit_exchange")
@@ -1983,6 +1998,10 @@ mod.setup_exchange = function ()
   mod.add_listeners_to_exchange_meter("special", meters_special[1], currently_selected_cqi)
   mod.add_listeners_to_exchange_meter("rare", meters_rare[1], currently_selected_cqi)
   local character_record_2 = mod.get_other_character_in_exchange()
+  if not character_record_2 then
+    out("Failed to get the other character in exchange, exchange setup failed!")
+    return
+  end
   mod.character_exchanging_with = character_record_2.interface:command_queue_index()
   mod.add_listeners_to_exchange_meter("special", meters_special[2], mod.character_exchanging_with)
   mod.add_listeners_to_exchange_meter("rare", meters_rare[2], mod.character_exchanging_with)
@@ -2194,18 +2213,33 @@ mod.display_costs_on_unit_browser = function()
 
 mod.unit_browser_listeners = function()
 
+  if __game_mode == __lib_type_campaign then
+    core:add_listener(
+      "TTCUnitBrowser",
+      "ComponentLClickUp",
+      function(context)
+        return mod.is_spell_browser_open() 
+      end,
+      function(context)
+        cm:callback(function() mod.display_costs_on_unit_browser() end, 0.1)
+      end,
+      true
+    )
+  else
+    local tm = core:get_tm()
+    core:add_listener(
+      "TTCUnitBrowser",
+      "ComponentLClickUp",
+      function(context)
+        return mod.is_spell_browser_open() 
+      end,
+      function(context)
+        tm:real_callback(function() mod.display_costs_on_unit_browser() end, 100)
+      end,
+      true
+    )
 
-  core:add_listener(
-    "TTCUnitBrowser",
-    "ComponentLClickUp",
-    function(context)
-      return mod.is_spell_browser_open() 
-    end,
-    function(context)
-      cm:callback(function() mod.display_costs_on_unit_browser() end, 0.1)
-    end,
-    true
-  )
+  end
   --[[
     This doesn't fire for this panel.
   core:add_listener(
@@ -2470,7 +2504,6 @@ end
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 
-if __game_mode == __lib_type_campaign then
-  core:add_static_object("tabletopcaps", mod)
-end
+core:add_static_object("tabletopcaps", mod)
+
 
