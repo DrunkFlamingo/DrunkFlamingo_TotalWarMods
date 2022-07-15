@@ -170,31 +170,44 @@ local wh3_ror = {
 	---- CATHAY ----
 	----------------
     {"wh3_twa06_cth_inf_dragon_guard_ror_0", "rare", 1},
+    {"wh3_twa07_cth_cav_jade_longma_riders_ror_0", "rare", 2},
 	----------------
 	---- KHORNE ----
 	----------------
     {"wh3_twa06_kho_inf_bloodletters_ror_0", "special", 2},
+    {"wh3_twa07_kho_cav_bloodcrushers_ror_0", "special", 2},
 	----------------
 	---- KISLEV ----
 	----------------
     {"wh3_twa06_ksl_inf_tzar_guard_ror_0", "special", 2},
+    {"wh3_twa07_ksl_cav_war_bear_riders_ror_0", "special", 3},
 	----------------
 	---- NURGLE ----
 	----------------
     {"wh3_twa06_nur_inf_plaguebearers_ror_0", "special", 2},
+    {"wh3_twa07_nur_cav_pox_riders_of_nurgle_ror_0", "special", 2},
 	-----------------------
 	---- OGRE KINGDOMS ----
 	-----------------------
     {"wh3_twa06_ogr_inf_maneaters_ror_0", "special", 2},
+    {"wh3_twa07_ogr_cav_crushers_ror_0", "rare", 2},
 	------------------
 	---- SLAANESH ----
 	------------------
     {"wh3_twa06_sla_inf_daemonette_ror_0", "special", 2},
+    {"wh3_twa07_sla_cav_heartseekers_of_slaanesh_ror_0", "rare", 2},
 	------------------
 	---- TZEENTCH ----
 	------------------
-    {"wh3_twa06_tze_inf_pink_horrors_ror_0", "special", 2}
+    {"wh3_twa06_tze_inf_pink_horrors_ror_0", "special", 2},
+    {"wh3_twa07_tze_cav_doom_knights_ror_0", "rare", 2}
 }
+
+
+
+
+
+
 
 
 
@@ -1187,7 +1200,7 @@ local subculture_defaults = {
 ---multiple flags are OR, not AND. For example: {subculture = wh3_main_sc_ksl_kislev, subtype = wh3_main_ksl_katarin} would apply to anyone who is from the kislev subculture because it means "Is from kislev OR is katarin"
 ---Special rules *do* affect the AI.
 local units_with_special_rules = {
-    {"wh3_main_ksl_mon_snow_leopard_0", {subtype = "wh3_main_ksl_katarin"}}
+    {"wh2_main_skv_inf_plague_monks", {subtype = "wh2_main_skv_lord_skrolk"}}
 }
 
 
