@@ -1,4 +1,4 @@
----@param t string
+---@param t string|any
 local out = function(t)
   ModLog("DRUNKFLAMINGO: "..tostring(t).." (tabletopcaps)")
 end
@@ -9,13 +9,17 @@ local out_if = function(statement, message)
   end
 end
 
+local ttc_error = function()
+  script_error("DRUNKFLAMINGO TableTopCaps Error, see log")
+end
+
 ---fills the localisation with the provided strings
 ---@param loc string
 ---@param ... string
 ---@return string
 local  fill_loc = function(loc, ...)
   local output = loc
-  for i = 1, arg.n do
+  for i = 1, #arg do
       local f = i - 1
       local gsub_text = f..f..f..f
       output = string.gsub(output, gsub_text, arg[i])
@@ -207,7 +211,7 @@ mod.characters = {}---@type table<integer, ttc_character>
 
 ---@param unit_key string
 ---@param group_name string|nil
----@param unit_weight string|nil
+---@param unit_weight integer|nil
 ---@param is_special_rule boolean|nil
 ---@return ttc_unit
 ttc_unit.new = function(unit_key, group_name, unit_weight, is_special_rule, suppress_log)
@@ -226,18 +230,22 @@ end
 
 
 ---@param character CHARACTER_SCRIPT_INTERFACE
----@return ttc_character
+---@return ttc_character|nil
 ttc_character.new = function(character)
   local self = {} ---@class ttc_character
   setmetatable(self, {
     __index = ttc_character
   })
-
+  if not character or character:is_null_interface() then
+    out("WTF? Character is null")
+    return 
+  end
   self.cqi = character:command_queue_index()
   self.interface = character
   self.force = character:military_force()
   if self.force:is_null_interface() then
     out("WTF? Character "..self.cqi.." was sent to TTC character constructor but has no military_force")
+    return
   end
   mod.characters[self.cqi] = self
 
@@ -390,7 +398,14 @@ mod.get_unit_if_existing = function(unit_key)
   return mod.units[unit_key] 
 end
 
----@return ttc_character
+---is this unit already in the caps system?
+---@param unit_key string
+---@return boolean
+mod.does_unit_exist = function(unit_key)
+  return mod.units[unit_key] ~= nil
+end
+
+---@return ttc_character|nil
 mod.get_selected_character_record = function()
   return mod.characters[cm:get_campaign_ui_manager():get_char_selected_cqi()] or 
   ttc_character.new(cm:get_character_by_cqi(cm:get_campaign_ui_manager():get_char_selected_cqi()))
@@ -422,6 +437,9 @@ end
 ---Typically called only from the lua script console
 mod.clock_bonus_value_refresh = function()
   local character_record = mod.get_selected_character_record()
+  if not character_record then
+    return
+  end
   out("CLOCK STARTING")
   local nClock = os.clock()
   for i = 1, 50 do
@@ -606,13 +624,17 @@ mod.refresh_icons_on_army_units_panel = function()
       unitCard:SimulateMouseOff()
     elseif unitCard:Id() ~= "LandUnit 0" then --regular unit_card that is not the general character
       local unitContextId = unitCard:GetContextObjectId("CcoCampaignUnit")
-      local campaignUnitContext = cco("CcoCampaignUnit", unitContextId)
-      local unit_key = campaignUnitContext:Call("UnitRecordContext.Key")
-      if campaignUnitContext:Call("IsCharacter") then
-        --nothing  
+      if not unitContextId then
+        out("No context id for unit card "..unitCard:Id())
       else
-        local unit_record = mod.get_unit(unit_key, character_record)
-        mod.add_listeners_to_army_unit_card(unitCard, character_record, unit_record)
+        local campaignUnitContext = cco("CcoCampaignUnit", unitContextId)
+        local unit_key = campaignUnitContext:Call("UnitRecordContext.Key")
+        if campaignUnitContext:Call("IsCharacter") then
+          --nothing  
+        else
+          local unit_record = mod.get_unit(unit_key, character_record)
+          mod.add_listeners_to_army_unit_card(unitCard, character_record, unit_record)
+        end
       end
     end
   end
@@ -743,6 +765,9 @@ mod.add_listeners_to_recruitable_unit_card = function(unitCard)
   local mainUnitContext = cco("CcoMainUnitRecord", this_card_context_id)
   local unit_key = mainUnitContext:Call("Key")
   local character_record = mod.get_selected_character_record()
+  if not character_record then
+    return false
+  end
   local unit_record = mod.get_unit(unit_key, character_record)
   local is_merc = string.find(unitCard:Id(), "_mercenary")
   local cost_tooltip_loc
@@ -792,7 +817,7 @@ mod.add_listeners_to_recruitable_unit_card = function(unitCard)
             lockedOverlay:SetTooltipText(cost_tooltip_loc, true)
           end
       end
-      local card_tt = unitCard:GetTooltipText()
+      local card_tt = unitCard:GetTooltipText() or ""
       if character_record:can_afford_unit(unit_record) then
         unitCard:SetDisabled(false)
         if not string.find(card_tt, "[[col:red]]") then
@@ -1098,6 +1123,12 @@ mod.add_listeners = function()
       end,
       function(context)
         local character_record = mod.get_selected_character_record()
+        if not character_record then
+          out("The player recruited a unit but has no character selected?")
+          out("This is an error")
+          ttc_error()
+          return
+        end
         local unit_record = mod.get_unit(context:main_unit_record(), character_record)
         out("Player started recruitment of "..unit_record.key)
         character_record:apply_cost_of_unit(unit_record)
@@ -1118,6 +1149,12 @@ mod.add_listeners = function()
       end,
       function(context)
         local character_record = mod.get_selected_character_record()
+        if not character_record then
+          out("The player cancelled a unit but has no character selected?")
+          out("This is an error")
+          ttc_error()
+          return
+        end
         local unit_record = mod.get_unit(context:main_unit_record(), character_record)
         out("Player cancelled recruitment of "..unit_record.key)
         character_record:refund_cost_of_unit(unit_record)
@@ -1138,6 +1175,12 @@ mod.add_listeners = function()
       end,
       function(context)
         local character_record = mod.get_selected_character_record()
+        if not character_record then
+          out("The player disbanded a unit but has no character selected?")
+          out("This is an error")
+          ttc_error()
+          return
+        end
         local unit_record = mod.get_unit(context:unit():unit_key(), character_record)
         out("Player disbanded "..unit_record.key)
         character_record:refund_cost_of_unit(unit_record)
@@ -1157,6 +1200,12 @@ mod.add_listeners = function()
       end,
       function(context)
         local character_record = mod.get_selected_character_record()
+        if not character_record then
+          out("The player merged a unit but has no character selected?")
+          out("This is an error")
+          ttc_error()
+          return
+        end
         local unit_record = mod.get_unit(context:new_unit():unit_key(), character_record)
         out("Player merged and destroyed "..unit_record.key)
         character_record:refund_cost_of_unit(unit_record)
@@ -1252,6 +1301,12 @@ mod.add_listeners = function()
             out("Component Clicked was a mercenary")
             local unit_key = string.gsub(component_id, "_mercenary", "")
             local character_record = mod.get_selected_character_record()
+            if not character_record then
+              out("The player clicked a mercenary but has no character selected?")
+              out("This is an error")
+              ttc_error()
+              return
+            end
             local unit_record = mod.get_unit(unit_key, character_record)
             mod.mercenaries_in_queue[#mod.mercenaries_in_queue+1] = unit_record
             local armyList = find_uicomponent_from_table(core:get_ui_root(), {"units_panel", "main_units_panel", "units"})
@@ -1284,10 +1339,16 @@ mod.add_listeners = function()
           local component = UIComponent(context.component)
           local component_id = tostring(component:Id())
           if string.find(component_id, "temp_merc_") then
-              local position = component_id:gsub("temp_merc_", "")
+              local position = component_id:gsub("temp_merc_", "") 
               out("Component Clicked was a Queued Mercenary Unit @ ["..position.."]!")
               local character_record = mod.get_selected_character_record()
-              local int_pos = tonumber(position)+1 
+              if not character_record then
+                out("The player cancelled a mercenary but has no character selected?")
+                out("This is an error")
+                ttc_error()
+                return
+              end
+              local int_pos = math.floor(tonumber(position)+1)
               local unit_record = mod.mercenaries_in_queue[int_pos]
               character_record:refund_cost_of_unit(unit_record)
               table.remove(mod.mercenaries_in_queue, int_pos)
@@ -1338,7 +1399,9 @@ end
 ---@param read_only boolean|nil
 mod.check_ai_character = function(character, read_only)
   local character_record = ttc_character.new(character)
-
+  if not character_record then
+    return
+  end
   character_record:refresh_budget()
   character_record:refresh_special_rules()
 
@@ -1364,9 +1427,12 @@ mod.check_ai_character = function(character, read_only)
       out("Adjusting AI character ["..tostring(character:command_queue_index()).."] "..group_key.." balance "..balance)
       local sortable_list = {} ---@type ttc_unit[]
       for i = 0, unit_list:num_items() -1 do
-        local unit_record = mod.get_unit(unit_list:item_at(i):unit_key(), character_record)
-        if unit_record.group == group_key then
-          sortable_list[#sortable_list+1] = unit_record
+        local unit_key = unit_list:item_at(i):unit_key()
+        if mod.does_unit_exist(unit_key) then
+          local unit_record = mod.get_unit(unit_key, character_record)
+          if unit_record.group == group_key then
+            sortable_list[#sortable_list+1] = unit_record
+          end
         end
       end
       table.sort(sortable_list, function (a, b)
@@ -1411,28 +1477,30 @@ mod.check_ai_character = function(character, read_only)
   if character:faction():is_human() then
     --we don't want to delete a human's record in case they're currently using the UI
   else
-    mod.characters[character:command_queue_index()] = nil
+    local char_cqi = character:command_queue_index()
+    out("Checked AI Character: "..char_cqi)
+    mod.characters[char_cqi] = nil
   end
 end
 
-mod.adjustment_queue = {} ---@type CHARACTER_SCRIPT_INTERFACE[]
+mod.adjustment_queue = {} ---@type integer[]
 mod.characters_in_adjustment_queue = {} ---@type table<integer, boolean>
 
 ---called repeatedly while the adjustment queue has characters in it.
 mod.adjustment_callback = function()
     local i = #mod.adjustment_queue
-    local character = mod.adjustment_queue[i]
-    if character:has_military_force() and mod.force_has_caps(character:military_force()) then
+    local character = cm:get_character_by_cqi(mod.adjustment_queue[i])
+    if character and character:has_military_force() and mod.force_has_caps(character:military_force()) then
       mod.check_ai_character(character, false)
     else
-      out("Character "..character:command_queue_index().." in the adjustment queue has no force, or a force which is not capped")
+      out("Character "..mod.adjustment_queue[i].." in the adjustment queue has no force, or a force which is not capped")
     end
-    mod.characters_in_adjustment_queue[character:command_queue_index()] = false
+    mod.characters_in_adjustment_queue[mod.adjustment_queue[i]] = false
     table.remove(mod.adjustment_queue, i)
     --if there is still a character in the queue, call this again
     if #mod.adjustment_queue > 0 then
-      out("Queued the next force for adjustment")
-      cm:callback(mod.adjustment_callback, 0.1, "ttc_ai_adjustments")
+      out("Queued the next force for adjustment; "..#mod.adjustment_queue.." remaining")
+      cm:callback(mod.adjustment_callback, 0)
     end
 end
 
@@ -1440,12 +1508,13 @@ end
 ---@param character CHARACTER_SCRIPT_INTERFACE
 ---@param delay boolean|nil
 mod.add_character_to_adjustment_queue = function(character, delay)
-  if mod.characters_in_adjustment_queue[character:command_queue_index()] then
+  local char_cqi = character:command_queue_index()
+  if mod.characters_in_adjustment_queue[char_cqi] then
     return
   end
-  out("Added character: "..character:command_queue_index().." to the adjustments Queue")
-  mod.characters_in_adjustment_queue[character:command_queue_index()] = true
-  table.insert(mod.adjustment_queue, character)
+  out("Added character: "..char_cqi.." to the adjustments Queue")
+  mod.characters_in_adjustment_queue[char_cqi] = true
+  table.insert(mod.adjustment_queue, char_cqi)
   if #mod.adjustment_queue == 1 then
     local t = 0
     if delay then
@@ -1542,7 +1611,7 @@ end
 
 
 ---@param group_key "special"|"rare"
----@return UIC
+---@return UIC|nil
 mod.get_or_create_group_meter = function(group_key)
   if not mod.is_units_panel_open() then
     out("Asked for the recruitment meters but the units panel isnt open")
@@ -1582,12 +1651,16 @@ end
 
 ---comment
 ---@param group_key string
----@param group_meter UIC
----@param character_record ttc_character
+---@param group_meter UIC|nil
+---@param character_record ttc_character|nil
 ---@param dont_show boolean|nil
 mod.populate_group_meter_text = function(group_key, group_meter, character_record, dont_show)
   if not group_meter then
     out("Group meter not created - cannot be populated. Was this event fired before the panel was open?")
+    return
+  end
+  if not character_record then
+    out("No character record provided - cannot populate group meter.")
     return
   end
   --local character_record = mod.get_selected_character_record()
@@ -1602,11 +1675,15 @@ mod.populate_group_meter_text = function(group_key, group_meter, character_recor
 end
 
 ---@param group_key string
----@param group_meter UIC
----@param character_record ttc_character
+---@param group_meter UIC|nil
+---@param character_record ttc_character|nil
 mod.populate_group_meter_tooltip_and_text = function(group_key, group_meter, character_record)
   if not group_meter then
     out("Group meter not created - cannot be populated. Was this event fired before the panel was open?")
+    return
+  end
+  if not character_record then
+    out("No character record provided - cannot populate group meter.")
     return
   end
   local ok, err = pcall(function()
@@ -1745,6 +1822,7 @@ mod.add_ui_meter_listeners = function ()
       function(context)
         local character_record = mod.get_selected_character_record()
         local character = cm:get_character_by_cqi(cm:get_campaign_ui_manager():get_char_selected_cqi())
+        if not character or character:is_null_interface() then return end
         local suppress = character:faction():name() ~= cm:get_local_faction_name(true) or (not character:has_military_force()) or (not mod.force_has_caps(character:military_force()))
         mod.populate_group_meter_text( "special", mod.get_or_create_group_meter("special"), character_record, suppress)
         mod.populate_group_meter_text( "rare", mod.get_or_create_group_meter("rare"), character_record, suppress)
@@ -1878,7 +1956,7 @@ end
 
 
 ---Creates and fills a character record for the second army in an exchange`
----@return ttc_character
+---@return ttc_character|nil
 mod.get_other_character_in_exchange = function()
   out("Getting exchange army")
   local exchange_panel = find_uicomponent(core:get_ui_root(), "unit_exchange")
@@ -1970,6 +2048,10 @@ mod.setup_exchange = function ()
   mod.add_listeners_to_exchange_meter("special", meters_special[1], currently_selected_cqi)
   mod.add_listeners_to_exchange_meter("rare", meters_rare[1], currently_selected_cqi)
   local character_record_2 = mod.get_other_character_in_exchange()
+  if not character_record_2 then
+    out("Failed to get the other character in exchange, exchange setup failed!")
+    return
+  end
   mod.character_exchanging_with = character_record_2.interface:command_queue_index()
   mod.add_listeners_to_exchange_meter("special", meters_special[2], mod.character_exchanging_with)
   mod.add_listeners_to_exchange_meter("rare", meters_rare[2], mod.character_exchanging_with)
@@ -2181,18 +2263,33 @@ mod.display_costs_on_unit_browser = function()
 
 mod.unit_browser_listeners = function()
 
+  if __game_mode == __lib_type_campaign then
+    core:add_listener(
+      "TTCUnitBrowser",
+      "ComponentLClickUp",
+      function(context)
+        return mod.is_spell_browser_open() 
+      end,
+      function(context)
+        cm:callback(function() mod.display_costs_on_unit_browser() end, 0.1)
+      end,
+      true
+    )
+  else
+    local tm = core:get_tm()
+    core:add_listener(
+      "TTCUnitBrowser",
+      "ComponentLClickUp",
+      function(context)
+        return mod.is_spell_browser_open() 
+      end,
+      function(context)
+        tm:real_callback(function() mod.display_costs_on_unit_browser() end, 100)
+      end,
+      true
+    )
 
-  core:add_listener(
-    "TTCUnitBrowser",
-    "ComponentLClickUp",
-    function(context)
-      return mod.is_spell_browser_open() 
-    end,
-    function(context)
-      cm:callback(function() mod.display_costs_on_unit_browser() end, 0.1)
-    end,
-    true
-  )
+  end
   --[[
     This doesn't fire for this panel.
   core:add_listener(
@@ -2457,7 +2554,6 @@ end
 --------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
 
-if __game_mode == __lib_type_campaign then
-  core:add_static_object("tabletopcaps", mod)
-end
+core:add_static_object("tabletopcaps", mod)
+
 

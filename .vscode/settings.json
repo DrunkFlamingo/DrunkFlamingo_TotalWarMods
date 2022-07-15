@@ -1,9 +1,7 @@
 {
     "Lua.runtime.version": "Lua 5.1",
     "Lua.workspace.library": [
-        "tw_lib/wh3/all.lua",
-        "tw_lib/wh3/global.lua",
-        "tw_lib/wh3/tw_events_and_interfaces.lua",
+        "tw_lib/wh3/global/",
         "tw_lib/wh3/campaign/",
         "tw_lib/wh3/frontend/",
         "tw_lib/wh3/battle/"
