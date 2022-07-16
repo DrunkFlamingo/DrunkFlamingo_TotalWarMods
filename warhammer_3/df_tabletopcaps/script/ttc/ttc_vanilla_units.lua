@@ -195,6 +195,54 @@ local wh3_ror = {
 	------------------
     {"wh3_twa06_tze_inf_pink_horrors_ror_0", "special", 2}
 }
+--[[
+    wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes
+wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes
+wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins
+wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins
+wh3_dlc20_chs_inf_chosen_mkho
+wh3_dlc20_chs_inf_chosen_mkho_dualweapons
+wh3_dlc20_chs_inf_chosen_mnur
+wh3_dlc20_chs_inf_chosen_mnur_greatweapons
+wh3_dlc20_chs_inf_chosen_msla
+wh3_dlc20_chs_inf_chosen_msla_hellscourges
+wh3_dlc20_chs_inf_chosen_mtze
+wh3_dlc20_chs_inf_chosen_mtze_halberds
+wh3_dlc20_chs_inf_forsaken_mkho
+wh3_dlc20_chs_inf_forsaken_msla
+wh3_dlc20_chs_mon_giant_mnur_ror
+wh3_dlc20_chs_mon_warshrine
+wh3_dlc20_chs_mon_warshrine_mkho
+wh3_dlc20_chs_mon_warshrine_mnur
+wh3_dlc20_chs_mon_warshrine_msla
+wh3_dlc20_chs_mon_warshrine_mtze
+wh3_dlc20_kho_cav_skullcrushers_mkho_ror
+]]
+local dlc20_units = {
+    {"wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes", "core", 1},
+    {"wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes", "core", 1},
+    {"wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins", "core", 1},
+    {"wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins", "core", 1},
+    {"wh3_dlc20_chs_inf_forsaken_mkho", "core", 1},
+    {"wh3_dlc20_chs_inf_forsaken_msla", "core", 1},
+    ---special
+    {"wh3_dlc20_chs_inf_chosen_mkho", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_mkho_dualweapons", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_mnur", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_mnur_greatweapons", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_msla", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_msla_hellscourges", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_mtze", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_mtze_halberds", "special", 2},
+    {"wh3_dlc20_chs_mon_warshrine", "special", 2},
+    {"wh3_dlc20_chs_mon_warshrine_mkho", "special", 2},
+    {"wh3_dlc20_chs_mon_warshrine_mnur", "special", 2},
+    {"wh3_dlc20_chs_mon_warshrine_msla", "special", 2},
+    {"wh3_dlc20_chs_mon_warshrine_mtze", "special", 2},
+    ---rare
+    {"wh3_dlc20_chs_mon_giant_mnur_ror", "rare", 2},
+    {"wh3_dlc20_kho_cav_skullcrushers_mkho_ror", "rare", 2}
+}
 
 
 
@@ -1187,7 +1235,7 @@ local subculture_defaults = {
 ---multiple flags are OR, not AND. For example: {subculture = wh3_main_sc_ksl_kislev, subtype = wh3_main_ksl_katarin} would apply to anyone who is from the kislev subculture because it means "Is from kislev OR is katarin"
 ---Special rules *do* affect the AI.
 local units_with_special_rules = {
-    {"wh3_main_ksl_mon_snow_leopard_0", {subtype = "wh3_main_ksl_katarin"}}
+    {"wh2_main_skv_inf_plague_monks", {subtype = "wh2_main_skv_lord_skrolk"}}
 }
 
 
@@ -1198,6 +1246,7 @@ ttc.add_setup_callback(function()
    ttc.add_unit_list(wh3_units, true)
    ttc.add_unit_list(wh3_ror, true)
    ttc.add_unit_list(wh2_units, true)
+   ttc.add_unit_list(dlc20_units, true)
    for subculture_key, unit_list in pairs(subculture_defaults) do
     ttc.add_replacement_units_for_subculture(subculture_key, unit_list)
    end

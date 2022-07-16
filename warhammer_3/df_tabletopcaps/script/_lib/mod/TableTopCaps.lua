@@ -9,6 +9,10 @@ local out_if = function(statement, message)
   end
 end
 
+local ttc_error = function()
+  script_error("DRUNKFLAMINGO TableTopCaps Error, see log")
+end
+
 ---fills the localisation with the provided strings
 ---@param loc string
 ---@param ... string
@@ -401,7 +405,7 @@ mod.does_unit_exist = function(unit_key)
   return mod.units[unit_key] ~= nil
 end
 
----@return ttc_character
+---@return ttc_character|nil
 mod.get_selected_character_record = function()
   return mod.characters[cm:get_campaign_ui_manager():get_char_selected_cqi()] or 
   ttc_character.new(cm:get_character_by_cqi(cm:get_campaign_ui_manager():get_char_selected_cqi()))
@@ -433,6 +437,9 @@ end
 ---Typically called only from the lua script console
 mod.clock_bonus_value_refresh = function()
   local character_record = mod.get_selected_character_record()
+  if not character_record then
+    return
+  end
   out("CLOCK STARTING")
   local nClock = os.clock()
   for i = 1, 50 do
@@ -617,13 +624,17 @@ mod.refresh_icons_on_army_units_panel = function()
       unitCard:SimulateMouseOff()
     elseif unitCard:Id() ~= "LandUnit 0" then --regular unit_card that is not the general character
       local unitContextId = unitCard:GetContextObjectId("CcoCampaignUnit")
-      local campaignUnitContext = cco("CcoCampaignUnit", unitContextId)
-      local unit_key = campaignUnitContext:Call("UnitRecordContext.Key")
-      if campaignUnitContext:Call("IsCharacter") then
-        --nothing  
+      if not unitContextId then
+        out("No context id for unit card "..unitCard:Id())
       else
-        local unit_record = mod.get_unit(unit_key, character_record)
-        mod.add_listeners_to_army_unit_card(unitCard, character_record, unit_record)
+        local campaignUnitContext = cco("CcoCampaignUnit", unitContextId)
+        local unit_key = campaignUnitContext:Call("UnitRecordContext.Key")
+        if campaignUnitContext:Call("IsCharacter") then
+          --nothing  
+        else
+          local unit_record = mod.get_unit(unit_key, character_record)
+          mod.add_listeners_to_army_unit_card(unitCard, character_record, unit_record)
+        end
       end
     end
   end
@@ -754,6 +765,9 @@ mod.add_listeners_to_recruitable_unit_card = function(unitCard)
   local mainUnitContext = cco("CcoMainUnitRecord", this_card_context_id)
   local unit_key = mainUnitContext:Call("Key")
   local character_record = mod.get_selected_character_record()
+  if not character_record then
+    return false
+  end
   local unit_record = mod.get_unit(unit_key, character_record)
   local is_merc = string.find(unitCard:Id(), "_mercenary")
   local cost_tooltip_loc
@@ -803,7 +817,7 @@ mod.add_listeners_to_recruitable_unit_card = function(unitCard)
             lockedOverlay:SetTooltipText(cost_tooltip_loc, true)
           end
       end
-      local card_tt = unitCard:GetTooltipText()
+      local card_tt = unitCard:GetTooltipText() or ""
       if character_record:can_afford_unit(unit_record) then
         unitCard:SetDisabled(false)
         if not string.find(card_tt, "[[col:red]]") then
@@ -1109,6 +1123,12 @@ mod.add_listeners = function()
       end,
       function(context)
         local character_record = mod.get_selected_character_record()
+        if not character_record then
+          out("The player recruited a unit but has no character selected?")
+          out("This is an error")
+          ttc_error()
+          return
+        end
         local unit_record = mod.get_unit(context:main_unit_record(), character_record)
         out("Player started recruitment of "..unit_record.key)
         character_record:apply_cost_of_unit(unit_record)
@@ -1129,6 +1149,12 @@ mod.add_listeners = function()
       end,
       function(context)
         local character_record = mod.get_selected_character_record()
+        if not character_record then
+          out("The player cancelled a unit but has no character selected?")
+          out("This is an error")
+          ttc_error()
+          return
+        end
         local unit_record = mod.get_unit(context:main_unit_record(), character_record)
         out("Player cancelled recruitment of "..unit_record.key)
         character_record:refund_cost_of_unit(unit_record)
@@ -1149,6 +1175,12 @@ mod.add_listeners = function()
       end,
       function(context)
         local character_record = mod.get_selected_character_record()
+        if not character_record then
+          out("The player disbanded a unit but has no character selected?")
+          out("This is an error")
+          ttc_error()
+          return
+        end
         local unit_record = mod.get_unit(context:unit():unit_key(), character_record)
         out("Player disbanded "..unit_record.key)
         character_record:refund_cost_of_unit(unit_record)
@@ -1168,6 +1200,12 @@ mod.add_listeners = function()
       end,
       function(context)
         local character_record = mod.get_selected_character_record()
+        if not character_record then
+          out("The player merged a unit but has no character selected?")
+          out("This is an error")
+          ttc_error()
+          return
+        end
         local unit_record = mod.get_unit(context:new_unit():unit_key(), character_record)
         out("Player merged and destroyed "..unit_record.key)
         character_record:refund_cost_of_unit(unit_record)
@@ -1263,6 +1301,12 @@ mod.add_listeners = function()
             out("Component Clicked was a mercenary")
             local unit_key = string.gsub(component_id, "_mercenary", "")
             local character_record = mod.get_selected_character_record()
+            if not character_record then
+              out("The player clicked a mercenary but has no character selected?")
+              out("This is an error")
+              ttc_error()
+              return
+            end
             local unit_record = mod.get_unit(unit_key, character_record)
             mod.mercenaries_in_queue[#mod.mercenaries_in_queue+1] = unit_record
             local armyList = find_uicomponent_from_table(core:get_ui_root(), {"units_panel", "main_units_panel", "units"})
@@ -1298,6 +1342,12 @@ mod.add_listeners = function()
               local position = component_id:gsub("temp_merc_", "") 
               out("Component Clicked was a Queued Mercenary Unit @ ["..position.."]!")
               local character_record = mod.get_selected_character_record()
+              if not character_record then
+                out("The player cancelled a mercenary but has no character selected?")
+                out("This is an error")
+                ttc_error()
+                return
+              end
               local int_pos = math.floor(tonumber(position)+1)
               local unit_record = mod.mercenaries_in_queue[int_pos]
               character_record:refund_cost_of_unit(unit_record)
@@ -1602,7 +1652,7 @@ end
 ---comment
 ---@param group_key string
 ---@param group_meter UIC|nil
----@param character_record ttc_character
+---@param character_record ttc_character|nil
 ---@param dont_show boolean|nil
 mod.populate_group_meter_text = function(group_key, group_meter, character_record, dont_show)
   if not group_meter then
@@ -1626,7 +1676,7 @@ end
 
 ---@param group_key string
 ---@param group_meter UIC|nil
----@param character_record ttc_character
+---@param character_record ttc_character|nil
 mod.populate_group_meter_tooltip_and_text = function(group_key, group_meter, character_record)
   if not group_meter then
     out("Group meter not created - cannot be populated. Was this event fired before the panel was open?")
