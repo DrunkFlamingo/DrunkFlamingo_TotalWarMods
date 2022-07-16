@@ -1,0 +1,9 @@
+key	image_path
+#ui_tagged_images_tables;0;db/ui_tagged_images_tables/df_tabletopcaps	
+core_1	ui/custom/recruitment_controls/common_units.png
+special_1	ui/custom/recruitment_controls/special_units_1.png
+special_2	ui/custom/recruitment_controls/special_units_2.png
+special_3	ui/custom/recruitment_controls/special_units_3.png
+rare_1	ui/custom/recruitment_controls/rare_units_1.png
+rare_2	ui/custom/recruitment_controls/rare_units_2.png
+rare_3	ui/custom/recruitment_controls/rare_units_3.png
