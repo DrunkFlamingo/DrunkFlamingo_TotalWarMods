@@ -1,0 +1,7 @@
+id	mission_key	option_key	value	target
+#cdir_events_mission_option_junctions_tables;2;db/cdir_events_mission_option_junctions_tables/df_teclis				
+416901	df_teclis_start_mission	GEN_CND_REGION	wh3_main_combi_region_fortress_of_dawn	default
+416902	df_teclis_start_mission	VAR_MISSION_LENGTH_INFINITE		default
+416903	df_teclis_start_mission	GEN_TARGET_REGION		default
+416904	df_teclis_start_mission	CND_UNIQUE		default
+416905	df_teclis_start_mission	VAR_CHANCE	100	default
