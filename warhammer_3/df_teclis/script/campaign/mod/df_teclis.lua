@@ -43,9 +43,13 @@ local function transfer_multiple_regions(regions, faction_key)
 end
 
 local function start_ui_listeners()
+    if cm:get_local_faction_name(true) ~= mod.teclis_faction_key then
+        return
+    end
     local whose_turn = cm:model():world():whose_turn_is_it()
     for i = 0, whose_turn:num_items() - 1 do
-        if whose_turn:item_at(i):name() == mod.teclis_faction_key then
+        local who = whose_turn:item_at(i)
+        if who:is_human() and who:name() == mod.teclis_faction_key then
             update_feature_button_mission_counter(get_or_create_feature_button())
         end
     end
@@ -74,9 +78,13 @@ local function new_game_setup()
     --have teclis declare war on kairos
     cm:force_declare_war(mod.teclis_faction_key, "wh3_main_tze_oracles_of_tzeentch", false, false)
     --TODO grant Kairos additional units based on the difficulty level.
-    --issue the mission to rescue the fortress of dawn.
+
     if mod.get_teclis_faction():is_human() then
+            --issue the mission to rescue the fortress of dawn.
         cm:trigger_mission(mod.teclis_faction_key, starting_mission, true)
+        --grant diplomatic visibility of the Empire and Tyrion
+        cm:make_diplomacy_available(mod.teclis_faction_key, "wh_main_emp_empire")
+        cm:make_diplomacy_available(mod.teclis_faction_key, "wh2_main_hef_lothern")
     end
 end
 
@@ -89,3 +97,9 @@ df_teclis = function ()
     end
     start_ui_listeners()
 end
+
+
+--[[notes
+ precache condition for ui
+  PlayersFaction.FactionRecordContext.Key == &quot;wh2_main_hef_order_of_loremasters&quot;  
+--]]
