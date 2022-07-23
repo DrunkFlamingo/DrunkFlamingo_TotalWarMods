@@ -4,14 +4,18 @@
 	comment=""
 	precache_condition="PlayersFaction.IsCampaignFeatureAvailable(&quot;winds_of_magic_manipulation&quot;)">
 	<hierarchy>
-		<root this="92A43EE9-518D-4029-98BC3A2F2E3A38B2">
-			<teclis_teleportation this="E2606795-F19E-4703-98F7D8C9ECD19DE6">
-				<province_overlay_list this="5A45D384-4AAD-4AA2-81019FDE16C4F8D4">
-					<template_province this="63194DE7-4371-4D76-9E6D14619AE16854">
-						<magic_effect_outer this="6CE84C8B-4F47-4CC6-999FA3D5E3C80905"/>
-						<dy_name this="AD73F31B-0686-41A7-96B98D48E5CF6E38">
-							<info_bar this="5821D3DB-6C33-4854-BBE1B0EB9DFE79EC">
-								<dy_province_name this="75B26A63-B472-41FD-AE9C46F7213D0C9A"/>
+		<root this="161C82CC-4426-33AE-278FFF2DC8FA9C62">
+			<teclis_teleportation this="2453F0AA-25A1-7987-37136F1D783984F1">
+				<province_overlay_list this="F037B1BC-A36E-0164-34B2643B127AC52E">
+					<template_province this="93FB86DC-5A97-8FA4-3BD0B7B39E8EA526">
+						<magic_effect_outer this="24FE5588-7E71-DB4F-27DD75489D43BCAA"/>
+						<teclis_activate_teleport_button this="50C363A8-2F62-4CA3-AD3831159D65C6D5">
+							<button_flame this="B2B65BC8-48AF-41D4-3A5E7BE8E6D01096"/>
+							<icon this="AD55E8DB-7CA9-A64D-09BC5A089A7DF803"/>
+						</teclis_activate_teleport_button>
+						<dy_name this="301C497A-3DC2-7E2F-0EFC044254153317">
+							<info_bar this="5493DFA7-A26A-0BF2-1688140AECCFB418">
+								<dy_province_name this="AD544C08-C01E-F4D5-BA165719947FC2ED"/>
 							</info_bar>
 						</dy_name>
 					</template_province>
@@ -21,31 +25,31 @@
 	</hierarchy>
 	<components>
 		<root
-			this="92A43EE9-518D-4029-98BC3A2F2E3A38B2"
+			this="161C82CC-4426-33AE-278FFF2DC8FA9C62"
 			id="root"
 			tooltipslocalised="true"
-			uniqueguid="92A43EE9-518D-4029-98BC3A2F2E3A38B2"
-			currentstate="E7DDA554-95C0-462D-A26FFC1E72C24EF4"
-			defaultstate="E7DDA554-95C0-462D-A26FFC1E72C24EF4">
+			uniqueguid="161C82CC-4426-33AE-278FFF2DC8FA9C62"
+			currentstate="669CCC93-5B08-980A-99EB850902A62E3B"
+			defaultstate="669CCC93-5B08-980A-99EB850902A62E3B">
 			<componentimages>
 				<component_image
-					this="9A753046-E81F-4A96-9979D53F5AE44CA1"
-					uniqueguid="9A753046-E81F-4A96-9979D53F5AE44CA1"/>
+					this="DED2EEC2-078A-1495-5120A95932F467A7"
+					uniqueguid="DED2EEC2-078A-1495-5120A95932F467A7"/>
 			</componentimages>
 			<states>
 				<default
-					this="E7DDA554-95C0-462D-A26FFC1E72C24EF4"
+					this="669CCC93-5B08-980A-99EB850902A62E3B"
 					name="default"
 					width="1600"
 					height="900"
 					texthbehaviour="Never split"
 					interactive="true"
-					uniqueguid="E7DDA554-95C0-462D-A26FFC1E72C24EF4">
+					uniqueguid="669CCC93-5B08-980A-99EB850902A62E3B">
 					<imagemetrics>
 						<image
-							this="8AF6A359-CBC3-4FDA-AF9DB3910C6BAE8E"
-							uniqueguid="8AF6A359-CBC3-4FDA-AF9DB3910C6BAE8E"
-							componentimage="9A753046-E81F-4A96-9979D53F5AE44CA1"
+							this="54B456D3-DBF9-415C-5759397D5A4C5698"
+							uniqueguid="54B456D3-DBF9-415C-5759397D5A4C5698"
+							componentimage="DED2EEC2-078A-1495-5120A95932F467A7"
 							width="1600"
 							height="900"
 							colour="#848484FF"/>
@@ -54,7 +58,7 @@
 			</states>
 		</root>
 		<teclis_teleportation
-			this="E2606795-F19E-4703-98F7D8C9ECD19DE6"
+			this="2453F0AA-25A1-7987-37136F1D783984F1"
 			id="teclis_teleportation"
 			offset="748.00,398.00"
 			allowhorizontalresize="false"
@@ -63,9 +67,9 @@
 			component_anchor_point="0.50,0.50"
 			tooltipslocalised="true"
 			soundcategory="UI_CAM_HUD_Tzeentch_WoM_Manipulation_Browser"
-			uniqueguid="E2606795-F19E-4703-98F7D8C9ECD19DE6"
-			currentstate="FF5B9223-01C0-49C4-929CDADA56CCE808"
-			defaultstate="FF5B9223-01C0-49C4-929CDADA56CCE808">
+			uniqueguid="2453F0AA-25A1-7987-37136F1D783984F1"
+			currentstate="1C11B612-E61E-4818-533569AE2FA2FB1C"
+			defaultstate="1C11B612-E61E-4818-533569AE2FA2FB1C">
 			<callbackwithcontextlist>
 				<callback_with_context callback_id="TacticalViewHUDPanel">
 					<child_m_user_properties>
@@ -74,38 +78,38 @@
 							value=""/>
 						<property
 							name="overlay_parent_id"
-							value="overlay_winds_of_magic"/>
+							value="overlay_diplomatic_status"/>
 					</child_m_user_properties>
 				</callback_with_context>
 			</callbackwithcontextlist>
 			<states>
 				<default
-					this="FF5B9223-01C0-49C4-929CDADA56CCE808"
+					this="1C11B612-E61E-4818-533569AE2FA2FB1C"
 					name="default"
 					width="104"
 					height="104"
 					texthbehaviour="Never split"
-					uniqueguid="FF5B9223-01C0-49C4-929CDADA56CCE808"/>
+					uniqueguid="1C11B612-E61E-4818-533569AE2FA2FB1C"/>
 			</states>
 		</teclis_teleportation>
 		<dy_province_name
-			this="75B26A63-B472-41FD-AE9C46F7213D0C9A"
+			this="AD544C08-C01E-F4D5-BA165719947FC2ED"
 			id="dy_province_name"
 			offset="40.00,0.00"
 			allowverticalresize="false"
 			tooltipslocalised="true"
-			uniqueguid="75B26A63-B472-41FD-AE9C46F7213D0C9A"
-			currentstate="C6FC9825-5BA4-4B32-9A8F080AD444E128">
+			uniqueguid="AD544C08-C01E-F4D5-BA165719947FC2ED"
+			currentstate="A04899CE-EC6C-E8AC-91338431BF63B26C">
 			<callbackwithcontextlist>
 				<callback_with_context callback_id="ProvinceInfoPanelTooltipHandler"/>
 				<callback_with_context
 					callback_id="ContextTextLabel"
-					context_object_id="CcoCampaignProvince"
+					context_object_id="CcoCampaignSettlement"
 					context_function_id="Name"/>
 			</callbackwithcontextlist>
 			<states>
 				<newstate
-					this="C6FC9825-5BA4-4B32-9A8F080AD444E128"
+					this="A04899CE-EC6C-E8AC-91338431BF63B26C"
 					name="NewState"
 					width="82"
 					height="24"
@@ -120,21 +124,21 @@
 					fontcat_name="ingame_text"
 					disabled="true"
 					textshadervars="0.00,1.00,2.00,0.00"
-					uniqueguid="C6FC9825-5BA4-4B32-9A8F080AD444E128"/>
+					uniqueguid="A04899CE-EC6C-E8AC-91338431BF63B26C"/>
 			</states>
 		</dy_province_name>
 		<info_bar
-			this="5821D3DB-6C33-4854-BBE1B0EB9DFE79EC"
+			this="5493DFA7-A26A-0BF2-1688140AECCFB418"
 			id="info_bar"
 			offset="0.00,10.00"
 			allowverticalresize="false"
 			tooltipslocalised="true"
-			uniqueguid="5821D3DB-6C33-4854-BBE1B0EB9DFE79EC"
+			uniqueguid="5493DFA7-A26A-0BF2-1688140AECCFB418"
 			updatewhennotvisible="true"
-			currentstate="D4E1EB7E-D77E-4109-B83B44ED1835C085">
+			currentstate="E168B3C6-A562-5E40-CD7D3D4CDBA2376E">
 			<states>
 				<newstate
-					this="D4E1EB7E-D77E-4109-B83B44ED1835C085"
+					this="E168B3C6-A562-5E40-CD7D3D4CDBA2376E"
 					name="NewState"
 					width="162"
 					height="24"
@@ -144,7 +148,7 @@
 					font_m_colour="#FFF8D7FF"
 					font_m_leading="1"
 					fontcat_name="fe_default_text"
-					uniqueguid="D4E1EB7E-D77E-4109-B83B44ED1835C085"/>
+					uniqueguid="E168B3C6-A562-5E40-CD7D3D4CDBA2376E"/>
 			</states>
 			<LayoutEngine
 				type="HorizontalList"
@@ -153,7 +157,7 @@
 				margins="40.00,40.00"/>
 		</info_bar>
 		<dy_name
-			this="AD73F31B-0686-41A7-96B98D48E5CF6E38"
+			this="301C497A-3DC2-7E2F-0EFC044254153317"
 			id="dy_name"
 			offset="-23.00,61.00"
 			allowverticalresize="false"
@@ -161,18 +165,18 @@
 			dock_offset="0.00,15.00"
 			component_anchor_point="0.50,1.00"
 			tooltipslocalised="true"
-			uniqueguid="AD73F31B-0686-41A7-96B98D48E5CF6E38"
+			uniqueguid="301C497A-3DC2-7E2F-0EFC044254153317"
 			updatewhennotvisible="true"
-			currentstate="E606E961-C5C2-446E-888442393BBF828C">
+			currentstate="D395CD2B-F506-6CE1-0FBD4CA3DC6AF219">
 			<componentimages>
 				<component_image
-					this="D0F65A90-6725-47D0-811A51135563C483"
-					uniqueguid="D0F65A90-6725-47D0-811A51135563C483"
+					this="203F467D-CA71-9B26-34CB3155C2513FA9"
+					uniqueguid="203F467D-CA71-9B26-34CB3155C2513FA9"
 					imagepath="ui/skins/default/city_info_scroll_under_small.png"/>
 			</componentimages>
 			<states>
 				<newstate
-					this="E606E961-C5C2-446E-888442393BBF828C"
+					this="D395CD2B-F506-6CE1-0FBD4CA3DC6AF219"
 					name="NewState"
 					width="162"
 					height="40"
@@ -182,12 +186,12 @@
 					font_m_colour="#FFF8D7FF"
 					font_m_leading="1"
 					fontcat_name="fe_default_text"
-					uniqueguid="E606E961-C5C2-446E-888442393BBF828C">
+					uniqueguid="D395CD2B-F506-6CE1-0FBD4CA3DC6AF219">
 					<imagemetrics>
 						<image
-							this="A0B38525-32DC-4E79-BDDA0272D36D22F6"
-							uniqueguid="A0B38525-32DC-4E79-BDDA0272D36D22F6"
-							componentimage="D0F65A90-6725-47D0-811A51135563C483"
+							this="E5F9371B-5CDF-9A17-282FB69A06C086B3"
+							uniqueguid="E5F9371B-5CDF-9A17-282FB69A06C086B3"
+							componentimage="203F467D-CA71-9B26-34CB3155C2513FA9"
 							width="162"
 							height="40"
 							tile="true"
@@ -208,7 +212,7 @@
 							targetmetrics_m_offset="0.00,30.00">
 							<triggers>
 								<trigger
-									trigger_component="AD73F31B-0686-41A7-96B98D48E5CF6E38"
+									trigger_component="301C497A-3DC2-7E2F-0EFC044254153317"
 									trigger_property="Visibility true"/>
 							</triggers>
 						</frame>
@@ -235,7 +239,7 @@
 							easing_curve_type="Quadratic In">
 							<triggers>
 								<trigger
-									trigger_component="AD73F31B-0686-41A7-96B98D48E5CF6E38"
+									trigger_component="301C497A-3DC2-7E2F-0EFC044254153317"
 									trigger_property="Visibility false"/>
 							</triggers>
 						</frame>
@@ -252,69 +256,58 @@
 			</LayoutEngine>
 		</dy_name>
 		<template_province
-			this="63194DE7-4371-4D76-9E6D14619AE16854"
+			this="93FB86DC-5A97-8FA4-3BD0B7B39E8EA526"
 			id="template_province"
 			tooltipslocalised="true"
-			uniqueguid="63194DE7-4371-4D76-9E6D14619AE16854"
-			currentstate="071C5B4E-56FB-4A3D-A26D6C8E521B7BE4"
-			defaultstate="071C5B4E-56FB-4A3D-A26D6C8E521B7BE4">
+			uniqueguid="93FB86DC-5A97-8FA4-3BD0B7B39E8EA526"
+			currentstate="24785A11-0626-9E1E-CABA959F0547D073"
+			defaultstate="24785A11-0626-9E1E-CABA959F0547D073">
 			<callbackwithcontextlist>
 				<callback_with_context
 					callback_id="ContextWorldSpaceComponent"
-					context_object_id="CcoCampaignProvince"
-					context_function_id="CapitalSettlementContext.Position">
+					context_object_id="CcoCampaignSettlement"
+					context_function_id="Position">
 					<child_m_user_properties>
 						<property
 							name="depth_disabled"
 							value="1"/>
 					</child_m_user_properties>
 				</callback_with_context>
-				<callback_with_context
-					callback_id="ContextPropagator"
-					context_object_id="CcoCampaignProvince"
-					context_function_id="WindsOfMagicAreaContext"/>
-				<callback_with_context
-					callback_id="ContextObjectStore"
-					context_object_id="CcoCampaignWindsOfMagicArea"/>
 			</callbackwithcontextlist>
 			<states>
 				<default
-					this="071C5B4E-56FB-4A3D-A26D6C8E521B7BE4"
+					this="24785A11-0626-9E1E-CABA959F0547D073"
 					name="default"
 					width="115"
 					height="86"
 					texthbehaviour="Never split"
 					interactive="true"
-					uniqueguid="071C5B4E-56FB-4A3D-A26D6C8E521B7BE4"/>
+					uniqueguid="24785A11-0626-9E1E-CABA959F0547D073"/>
 			</states>
 		</template_province>
 		<province_overlay_list
-			this="5A45D384-4AAD-4AA2-81019FDE16C4F8D4"
+			this="F037B1BC-A36E-0164-34B2643B127AC52E"
 			id="province_overlay_list"
 			offset="-17.00,2.00"
 			tooltipslocalised="true"
-			uniqueguid="5A45D384-4AAD-4AA2-81019FDE16C4F8D4"
-			currentstate="B826E72D-EA31-41E2-A05484DB8B492A02"
-			defaultstate="B826E72D-EA31-41E2-A05484DB8B492A02">
+			uniqueguid="F037B1BC-A36E-0164-34B2643B127AC52E"
+			currentstate="20980891-1EDE-7D03-64F346B260FDFE90"
+			defaultstate="20980891-1EDE-7D03-64F346B260FDFE90">
 			<callbackwithcontextlist>
 				<callback_with_context
 					callback_id="ContextList"
 					context_object_id="CcoCampaignRoot"
-					context_function_id="ProvinceList.Filter(CapitalSettlementContext.EffectBundleUnfilteredList.Any(Key == &quot;df_teclis_teleport_node&quot;))"/>
+					context_function_id="SettlementList.Filter(EffectBundleUnfilteredList.Any(Key == &quot;df_teclis_teleport_node&quot;))"/>
 				<callback_with_context callback_id="ContextInitCampaignRoot"/>
-				<callback_with_context
-					callback_id="ContextPropagator"
-					context_object_id="CcoCampaignRoot"
-					context_function_id="WindsOfMagicSystem"/>
 			</callbackwithcontextlist>
 			<states>
 				<default
-					this="B826E72D-EA31-41E2-A05484DB8B492A02"
+					this="20980891-1EDE-7D03-64F346B260FDFE90"
 					name="default"
 					width="138"
 					height="100"
 					texthbehaviour="Never split"
-					uniqueguid="B826E72D-EA31-41E2-A05484DB8B492A02"/>
+					uniqueguid="20980891-1EDE-7D03-64F346B260FDFE90"/>
 			</states>
 			<LayoutEngine type="List">
 				<columnwidths>
@@ -324,7 +317,7 @@
 		</province_overlay_list>
 		
 		<magic_effect_outer
-			this="6CE84C8B-4F47-4CC6-999FA3D5E3C80905"
+			this="24FE5588-7E71-DB4F-27DD75489D43BCAA"
 			id="magic_effect_outer"
 			offset="-38.00,-53.00"
 			allowhorizontalresize="false"
@@ -332,28 +325,28 @@
 			docking="Center"
 			component_anchor_point="0.50,0.50"
 			tooltipslocalised="true"
-			uniqueguid="6CE84C8B-4F47-4CC6-999FA3D5E3C80905"
-			currentstate="8464191D-3303-489B-95D8667D541AE6CA"
-			defaultstate="8464191D-3303-489B-95D8667D541AE6CA">
+			uniqueguid="24FE5588-7E71-DB4F-27DD75489D43BCAA"
+			currentstate="CB9637B6-275C-394C-60E9F598D2951DD0"
+			defaultstate="CB9637B6-275C-394C-60E9F598D2951DD0">
 			<componentimages>
 				<component_image
-					this="1BFAE5C9-140E-43C3-8BF560B0BFFF2AEA"
-					uniqueguid="1BFAE5C9-140E-43C3-8BF560B0BFFF2AEA"/>
+					this="B255E44B-E947-D5DF-4911CAEEB5908D85"
+					uniqueguid="B255E44B-E947-D5DF-4911CAEEB5908D85"/>
 			</componentimages>
 			<states>
 				<default
-					this="8464191D-3303-489B-95D8667D541AE6CA"
+					this="CB9637B6-275C-394C-60E9F598D2951DD0"
 					name="default"
 					width="192"
 					height="192"
 					texthbehaviour="Never split"
 					material_name="ui/effects/materials/magic_flame.xml.material"
-					uniqueguid="8464191D-3303-489B-95D8667D541AE6CA">
+					uniqueguid="CB9637B6-275C-394C-60E9F598D2951DD0">
 					<imagemetrics>
 						<image
-							this="DC1EE675-64B5-41C0-9B195196D9F60207"
-							uniqueguid="DC1EE675-64B5-41C0-9B195196D9F60207"
-							componentimage="1BFAE5C9-140E-43C3-8BF560B0BFFF2AEA"
+							this="3A20D593-AEEF-29DC-63982DF017FDD1A2"
+							uniqueguid="3A20D593-AEEF-29DC-63982DF017FDD1A2"
+							componentimage="B255E44B-E947-D5DF-4911CAEEB5908D85"
 							width="192"
 							height="192"
 							colour="#1C6BA7FF"/>
@@ -488,7 +481,7 @@
 							targetmetrics_m_offset="0.00,-40.00">
 							<triggers>
 								<trigger
-									trigger_component="6CE84C8B-4F47-4CC6-999FA3D5E3C80905"
+									trigger_component="24FE5588-7E71-DB4F-27DD75489D43BCAA"
 									trigger_property="visibility true"/>
 								<trigger trigger_animation="show"/>
 							</triggers>
@@ -513,7 +506,7 @@
 							material_param_id="heat_percent">
 							<triggers>
 								<trigger
-									trigger_component="6CE84C8B-4F47-4CC6-999FA3D5E3C80905"
+									trigger_component="24FE5588-7E71-DB4F-27DD75489D43BCAA"
 									trigger_animation="hide"/>
 								<trigger trigger_animation="hide"/>
 							</triggers>
@@ -543,5 +536,1309 @@
 				</hide>
 			</animations>
 		</magic_effect_outer>
+		<teclis_activate_teleport_button
+			this="50C363A8-2F62-4CA3-AD3831159D65C6D5"
+			id="teclis_activate_teleport_button"
+			offset="816.00,216.00"
+			allowhorizontalresize="false"
+			allowverticalresize="false"
+			tooltipslocalised="true"
+			docking="Center"
+			soundcategory="UI_GBL_TMP_Round_Small_Button"
+			uniqueguid="50C363A8-2F62-4CA3-AD3831159D65C6D5"
+			currentstate="63A760D8-4448-03BB-47672902732F0755"
+			defaultstate="63A760D8-4448-03BB-47672902732F0755">
+			<callbackwithcontextlist>
+				<callback_with_context callback_id="Button"/>
+				<callback_with_context callback_id="StatePropagatorCallback">
+					<child_m_user_properties>
+						<property
+							name="use_transitions"
+							value=""/>
+					</child_m_user_properties>
+				</callback_with_context>
+			</callbackwithcontextlist>
+			<userproperties>
+				<property
+					name="disable_override"
+					value="resizable"/>
+				<property
+					name="disable_override1"
+					value="StatePropagatorCallback"/>
+				<property
+					name="dynamic_image"
+					value="0"/>
+			</userproperties>
+			<componentimages>
+				<component_image
+					this="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+					uniqueguid="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+					imagepath="ui/skins/default/icon_teleport_withdraw.png"/>
+				<component_image
+					this="53788485-F6A0-7927-31FDDE07A038EE1F"
+					uniqueguid="53788485-F6A0-7927-31FDDE07A038EE1F"
+					imagepath="ui/skins/default/button_round_large_selected_inactive.png"/>
+				<component_image
+					this="0C321E15-1FC6-FE83-DC5AD820C9ECCE6B"
+					uniqueguid="0C321E15-1FC6-FE83-DC5AD820C9ECCE6B"
+					imagepath="ui/skins/default/button_round_large_pressed.png"/>
+				<component_image
+					this="0267429C-7083-F5B7-E57A587254A38B27"
+					uniqueguid="0267429C-7083-F5B7-E57A587254A38B27"
+					imagepath="ui/skins/default/button_round_large_selected_hover.png"/>
+				<component_image
+					this="977F52E7-D05D-546B-D8EFBAC3534C0336"
+					uniqueguid="977F52E7-D05D-546B-D8EFBAC3534C0336"
+					imagepath="ui/skins/default/button_round_large_hover.png"/>
+				<component_image
+					this="865B1629-8F42-6900-99B6F1703FD0C001"
+					uniqueguid="865B1629-8F42-6900-99B6F1703FD0C001"
+					imagepath="ui/skins/default/button_round_large_active.png"/>
+				<component_image
+					this="2295EF3D-76D8-2C4E-8791796EFB0FD1AD"
+					uniqueguid="2295EF3D-76D8-2C4E-8791796EFB0FD1AD"
+					imagepath="ui/skins/default/button_round_large_inactive.png"/>
+				<component_image
+					this="351D7847-E33D-D9A6-759B341C0F01AF73"
+					uniqueguid="351D7847-E33D-D9A6-759B341C0F01AF73"
+					imagepath="ui/skins/default/button_round_large_selected.png"/>
+				<component_image
+					this="F36D2223-BEC7-68C1-F157AF4E5E854B55"
+					uniqueguid="F36D2223-BEC7-68C1-F157AF4E5E854B55"
+					imagepath="ui/skins/default/button_round_large_selected_pressed.png"/>
+				<component_image
+					this="2676C404-38A4-272E-CEE0AB5372942BDF"
+					uniqueguid="2676C404-38A4-272E-CEE0AB5372942BDF"
+					imagepath="ui/skins/default/spell_dial_frame.png"/>
+			</componentimages>
+			<states>
+				<active
+					this="63A760D8-4448-03BB-47672902732F0755"
+					name="active"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					interactive="true"
+					pixelcollision="true"
+					uniqueguid="63A760D8-4448-03BB-47672902732F0755"
+					stateeditordisplaypos="40.00,24.00">
+					<imagemetrics>
+						<image
+							this="AE4D947C-3EE7-532B-BB6D907125DB36EA"
+							uniqueguid="AE4D947C-3EE7-532B-BB6D907125DB36EA"
+							componentimage="2676C404-38A4-272E-CEE0AB5372942BDF"
+							offset="-3.00,-3.00"
+							width="69"
+							height="69"
+							dockpoint="Center"/>
+						<image
+							this="79B11572-5099-042F-584EE3007BF721CC"
+							uniqueguid="79B11572-5099-042F-584EE3007BF721CC"
+							componentimage="865B1629-8F42-6900-99B6F1703FD0C001"
+							width="63"
+							height="63"/>
+						<image
+							this="9B661922-28CD-2DBD-19D4EE752D6BC3BC"
+							uniqueguid="9B661922-28CD-2DBD-19D4EE752D6BC3BC"
+							componentimage="865B1629-8F42-6900-99B6F1703FD0C001"
+							width="63"
+							height="63"/>
+						<image
+							this="5ED47F5F-B2A7-4668-78E529DCDF2BE4DE"
+							uniqueguid="5ED47F5F-B2A7-4668-78E529DCDF2BE4DE"
+							componentimage="977F52E7-D05D-546B-D8EFBAC3534C0336"
+							width="63"
+							height="63"
+							colour="#FFFFFF00"/>
+						<image
+							this="34CCF1CD-300D-7ECF-04CC38205605F761"
+							uniqueguid="34CCF1CD-300D-7ECF-04CC38205605F761"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shader_name="brighten_t0"/>
+						<image
+							this="3CC4147C-321E-C361-BA6D6B89AB3A5AB4"
+							uniqueguid="3CC4147C-321E-C361-BA6D6B89AB3A5AB4"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							colour="#FFFFFF00"
+							dockpoint="Center"
+							shadertechnique_vars="0.50,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+						<image
+							this="7DBA185C-7EB0-19FC-CD20C9FF28540414"
+							uniqueguid="7DBA185C-7EB0-19FC-CD20C9FF28540414"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shader_name="brighten_t0"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition
+							transition_m_target_state="6B32F54B-2C3E-E11D-A1F426A88AC107DD"
+							transition_m_transition_time="200"
+							transition_m_interpolation_property_mask="64"/>
+					</transitionmap>
+				</active>
+				<down
+					this="79B9589B-BA31-F2F0-8C1A3C18ADE56DB8"
+					name="down"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					interactive="true"
+					pixelcollision="true"
+					textshadervars="0.30,0.00,0.00,0.00"
+					uniqueguid="79B9589B-BA31-F2F0-8C1A3C18ADE56DB8"
+					stateeditordisplaypos="145.00,219.00">
+					<imagemetrics>
+						<image
+							this="C036A056-968A-978E-2D3120B8B247DF49"
+							uniqueguid="C036A056-968A-978E-2D3120B8B247DF49"
+							componentimage="2676C404-38A4-272E-CEE0AB5372942BDF"
+							offset="-3.00,-3.00"
+							width="69"
+							height="69"
+							dockpoint="Center"/>
+						<image
+							this="9856A778-68FD-3FF7-4BF14F63C22305E2"
+							uniqueguid="9856A778-68FD-3FF7-4BF14F63C22305E2"
+							componentimage="865B1629-8F42-6900-99B6F1703FD0C001"
+							width="63"
+							height="63"/>
+						<image
+							this="01AA64BB-9176-D920-76B996D96E47CA1E"
+							uniqueguid="01AA64BB-9176-D920-76B996D96E47CA1E"
+							componentimage="0C321E15-1FC6-FE83-DC5AD820C9ECCE6B"
+							width="63"
+							height="63"/>
+						<image
+							this="DCC01A37-628A-11D0-3D91135A2D0E0A43"
+							uniqueguid="DCC01A37-628A-11D0-3D91135A2D0E0A43"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							offset="0.00,3.00"
+							width="63"
+							height="63"
+							colour="#6E6E6EFF"
+							dockpoint="Center"
+							dock_offset="0.00,3.00"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition
+							index="3"
+							transition_m_target_state="CCEBB713-3136-6AFB-700AAC353A669B06"/>
+						<transition
+							index="1"
+							transition_m_target_state="AD7C4078-B520-5673-6BA9FDDD6D25279C"/>
+					</transitionmap>
+				</down>
+				<down_off
+					this="AD7C4078-B520-5673-6BA9FDDD6D25279C"
+					name="down_off"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					interactive="true"
+					pixelcollision="true"
+					uniqueguid="AD7C4078-B520-5673-6BA9FDDD6D25279C"
+					stateeditordisplaypos="40.00,319.00">
+					<imagemetrics>
+						<image
+							this="99D9B0E6-9AE2-7F8A-9793015CD99B6702"
+							uniqueguid="99D9B0E6-9AE2-7F8A-9793015CD99B6702"
+							componentimage="2676C404-38A4-272E-CEE0AB5372942BDF"
+							offset="-3.00,-3.00"
+							width="69"
+							height="69"
+							dockpoint="Center"/>
+						<image
+							this="628D8A92-7C1E-C3EB-236F5CE005E0511A"
+							uniqueguid="628D8A92-7C1E-C3EB-236F5CE005E0511A"
+							componentimage="865B1629-8F42-6900-99B6F1703FD0C001"
+							width="63"
+							height="63"/>
+						<image
+							this="DEF7922F-C11E-AAD7-E319BA331D7EBFC2"
+							uniqueguid="DEF7922F-C11E-AAD7-E319BA331D7EBFC2"
+							componentimage="865B1629-8F42-6900-99B6F1703FD0C001"
+							width="63"
+							height="63"/>
+						<image
+							this="066DA11C-43ED-489A-FC2291FE2127151A"
+							uniqueguid="066DA11C-43ED-489A-FC2291FE2127151A"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							dockpoint="Center"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition transition_m_target_state="79B9589B-BA31-F2F0-8C1A3C18ADE56DB8"/>
+						<transition
+							index="8"
+							transition_m_target_state="63A760D8-4448-03BB-47672902732F0755"/>
+					</transitionmap>
+				</down_off>
+				<hover
+					this="6B32F54B-2C3E-E11D-A1F426A88AC107DD"
+					name="hover"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					interactive="true"
+					pixelcollision="true"
+					textshadervars="0.30,0.00,0.00,0.00"
+					uniqueguid="6B32F54B-2C3E-E11D-A1F426A88AC107DD"
+					stateeditordisplaypos="137.00,126.00">
+					<imagemetrics>
+						<image
+							this="6A91778B-107A-CCFC-76BA6D3EDFB12949"
+							uniqueguid="6A91778B-107A-CCFC-76BA6D3EDFB12949"
+							componentimage="2676C404-38A4-272E-CEE0AB5372942BDF"
+							offset="-3.00,-3.00"
+							width="69"
+							height="69"
+							dockpoint="Center"/>
+						<image
+							this="AFBB80C5-7D43-2829-DB8570AF926252C3"
+							uniqueguid="AFBB80C5-7D43-2829-DB8570AF926252C3"
+							componentimage="865B1629-8F42-6900-99B6F1703FD0C001"
+							width="63"
+							height="63"/>
+						<image
+							this="894E5D7F-49BC-A7C9-AA0451B2814DD4EB"
+							uniqueguid="894E5D7F-49BC-A7C9-AA0451B2814DD4EB"
+							componentimage="865B1629-8F42-6900-99B6F1703FD0C001"
+							width="63"
+							height="63"
+							colour="#FFFFFF00"/>
+						<image
+							this="99E821C0-E629-2683-7051FDA945DBBB37"
+							uniqueguid="99E821C0-E629-2683-7051FDA945DBBB37"
+							componentimage="977F52E7-D05D-546B-D8EFBAC3534C0336"
+							width="63"
+							height="63"/>
+						<image
+							this="B2CDEAB1-C7A7-F94B-30FC0CD0F5EBAE2C"
+							uniqueguid="B2CDEAB1-C7A7-F94B-30FC0CD0F5EBAE2C"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shader_name="brighten_t0"/>
+						<image
+							this="09884185-A4B9-7FD4-1B2A3175F0E54E4D"
+							uniqueguid="09884185-A4B9-7FD4-1B2A3175F0E54E4D"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shadertechnique_vars="0.50,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+						<image
+							this="E769E861-9677-B32F-896BB8F4C3E5D71A"
+							uniqueguid="E769E861-9677-B32F-896BB8F4C3E5D71A"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							colour="#FFFFFF00"
+							dockpoint="Center"
+							shader_name="brighten_t0"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition
+							index="1"
+							transition_m_target_state="63A760D8-4448-03BB-47672902732F0755"
+							transition_m_transition_time="200"
+							transition_m_interpolation_property_mask="64"/>
+						<transition
+							index="2"
+							transition_m_target_state="79B9589B-BA31-F2F0-8C1A3C18ADE56DB8"/>
+					</transitionmap>
+				</hover>
+				<inactive
+					this="7E379ABF-CB81-07D0-5BCE85C436104B89"
+					name="inactive"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					interactive="true"
+					disabled="true"
+					uniqueguid="7E379ABF-CB81-07D0-5BCE85C436104B89">
+					<imagemetrics>
+						<image
+							this="6451A943-5B70-BCAB-BA0E265B9728FDBC"
+							uniqueguid="6451A943-5B70-BCAB-BA0E265B9728FDBC"
+							componentimage="2676C404-38A4-272E-CEE0AB5372942BDF"
+							offset="-3.00,-3.00"
+							width="69"
+							height="69"
+							dockpoint="Center"/>
+						<image
+							this="C2EF194A-DF4B-7C26-D8A64195C2F2B1A7"
+							uniqueguid="C2EF194A-DF4B-7C26-D8A64195C2F2B1A7"
+							componentimage="865B1629-8F42-6900-99B6F1703FD0C001"
+							width="63"
+							height="63"/>
+						<image
+							this="D98D463D-F2EF-09B3-D031A4B8103D8F43"
+							uniqueguid="D98D463D-F2EF-09B3-D031A4B8103D8F43"
+							componentimage="2295EF3D-76D8-2C4E-8791796EFB0FD1AD"
+							width="63"
+							height="63"/>
+						<image
+							this="68E51AD7-36EB-F4DD-90B325A8957F4BB9"
+							uniqueguid="68E51AD7-36EB-F4DD-90B325A8957F4BB9"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							colour="#FFFFFF46"
+							dockpoint="Center"/>
+					</imagemetrics>
+				</inactive>
+				<selected
+					this="B2457CE2-7D58-8AEB-58E96337ADB383F1"
+					name="selected"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					interactive="true"
+					pixelcollision="true"
+					uniqueguid="B2457CE2-7D58-8AEB-58E96337ADB383F1"
+					stateeditordisplaypos="401.00,333.00">
+					<imagemetrics>
+						<image
+							this="BB0CE5A0-CC75-3510-3BF430D33E0EBB1C"
+							uniqueguid="BB0CE5A0-CC75-3510-3BF430D33E0EBB1C"
+							componentimage="2676C404-38A4-272E-CEE0AB5372942BDF"
+							offset="-3.00,-3.00"
+							width="69"
+							height="69"
+							dockpoint="Center"/>
+						<image
+							this="1FDC6E88-502A-46B4-894DC454B5EA4B59"
+							uniqueguid="1FDC6E88-502A-46B4-894DC454B5EA4B59"
+							componentimage="351D7847-E33D-D9A6-759B341C0F01AF73"
+							width="63"
+							height="63"/>
+						<image
+							this="53C3FC75-4BD1-9675-3E81B6202A7415DB"
+							uniqueguid="53C3FC75-4BD1-9675-3E81B6202A7415DB"
+							componentimage="351D7847-E33D-D9A6-759B341C0F01AF73"
+							width="63"
+							height="63"/>
+						<image
+							this="D941DBCC-5EF6-F965-898D2C0615FA4F35"
+							uniqueguid="D941DBCC-5EF6-F965-898D2C0615FA4F35"
+							componentimage="0267429C-7083-F5B7-E57A587254A38B27"
+							width="63"
+							height="63"
+							colour="#FFFFFF00"/>
+						<image
+							this="14722120-BD89-0CE6-1CD6F7901061B796"
+							uniqueguid="14722120-BD89-0CE6-1CD6F7901061B796"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shadertechnique_vars="1.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+						<image
+							this="CAE3E102-D0C0-4727-9B77D19747F337BF"
+							uniqueguid="CAE3E102-D0C0-4727-9B77D19747F337BF"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shadertechnique_vars="1.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+						<image
+							this="14CA95F3-80D9-EB86-5C015FC4CBA323BC"
+							uniqueguid="14CA95F3-80D9-EB86-5C015FC4CBA323BC"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							colour="#FFFFFF00"
+							dockpoint="Center"
+							shadertechnique_vars="2.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition
+							transition_m_target_state="CCEBB713-3136-6AFB-700AAC353A669B06"
+							transition_m_transition_time="200"
+							transition_m_interpolation_property_mask="64"/>
+					</transitionmap>
+				</selected>
+				<selected_down
+					this="74B4763F-F6C8-B208-D53F33AD2E2F6493"
+					name="selected_down"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					interactive="true"
+					pixelcollision="true"
+					textshadervars="0.30,0.00,0.00,0.00"
+					uniqueguid="74B4763F-F6C8-B208-D53F33AD2E2F6493"
+					stateeditordisplaypos="268.00,120.00">
+					<imagemetrics>
+						<image
+							this="04D2CCCB-89CA-D2A0-1A99D4D57F6D96F6"
+							uniqueguid="04D2CCCB-89CA-D2A0-1A99D4D57F6D96F6"
+							componentimage="2676C404-38A4-272E-CEE0AB5372942BDF"
+							offset="-3.00,-3.00"
+							width="69"
+							height="69"
+							dockpoint="Center"/>
+						<image
+							this="46007BDA-B22D-7D3F-C059A9619AFBEA67"
+							uniqueguid="46007BDA-B22D-7D3F-C059A9619AFBEA67"
+							componentimage="351D7847-E33D-D9A6-759B341C0F01AF73"
+							width="63"
+							height="63"/>
+						<image
+							this="296CB6B9-1789-1546-DB8AB174E87D73C4"
+							uniqueguid="296CB6B9-1789-1546-DB8AB174E87D73C4"
+							componentimage="F36D2223-BEC7-68C1-F157AF4E5E854B55"
+							width="63"
+							height="63"/>
+						<image
+							this="3FDC1C02-CE7E-B16A-EE5E76FD2464CC36"
+							uniqueguid="3FDC1C02-CE7E-B16A-EE5E76FD2464CC36"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							offset="0.00,3.00"
+							width="63"
+							height="63"
+							colour="#808080FF"
+							dockpoint="Center"
+							dock_offset="0.00,3.00"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition
+							index="3"
+							transition_m_target_state="6B32F54B-2C3E-E11D-A1F426A88AC107DD"/>
+						<transition
+							index="1"
+							transition_m_target_state="A9565D90-5A73-B071-B0AADF8FE89411C5"/>
+					</transitionmap>
+				</selected_down>
+				<selected_down_off
+					this="A9565D90-5A73-B071-B0AADF8FE89411C5"
+					name="selected_down_off"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					interactive="true"
+					pixelcollision="true"
+					uniqueguid="A9565D90-5A73-B071-B0AADF8FE89411C5"
+					stateeditordisplaypos="384.00,21.00">
+					<imagemetrics>
+						<image
+							this="7F225DA0-C17F-12BE-90DB80CFCE354CB4"
+							uniqueguid="7F225DA0-C17F-12BE-90DB80CFCE354CB4"
+							componentimage="2676C404-38A4-272E-CEE0AB5372942BDF"
+							offset="-3.00,-3.00"
+							width="69"
+							height="69"
+							dockpoint="Center"/>
+						<image
+							this="A49F9A57-AEF9-B5E4-EAB7B086DEDE0486"
+							uniqueguid="A49F9A57-AEF9-B5E4-EAB7B086DEDE0486"
+							componentimage="351D7847-E33D-D9A6-759B341C0F01AF73"
+							width="63"
+							height="63"/>
+						<image
+							this="03656105-3AB2-8FE3-5642564FF7E37FDB"
+							uniqueguid="03656105-3AB2-8FE3-5642564FF7E37FDB"
+							componentimage="351D7847-E33D-D9A6-759B341C0F01AF73"
+							width="63"
+							height="63"/>
+						<image
+							this="68D2ECDC-34B0-FEBA-E05674425E6E8E51"
+							uniqueguid="68D2ECDC-34B0-FEBA-E05674425E6E8E51"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shadertechnique_vars="1.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition transition_m_target_state="74B4763F-F6C8-B208-D53F33AD2E2F6493"/>
+						<transition
+							index="8"
+							transition_m_target_state="B2457CE2-7D58-8AEB-58E96337ADB383F1"/>
+					</transitionmap>
+				</selected_down_off>
+				<selected_hover
+					this="CCEBB713-3136-6AFB-700AAC353A669B06"
+					name="selected_hover"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					interactive="true"
+					pixelcollision="true"
+					textshadervars="0.30,0.00,0.00,0.00"
+					uniqueguid="CCEBB713-3136-6AFB-700AAC353A669B06"
+					stateeditordisplaypos="269.00,216.00">
+					<imagemetrics>
+						<image
+							this="1935BD3A-B3F3-EFD0-B1900095139D739F"
+							uniqueguid="1935BD3A-B3F3-EFD0-B1900095139D739F"
+							componentimage="2676C404-38A4-272E-CEE0AB5372942BDF"
+							offset="-3.00,-3.00"
+							width="69"
+							height="69"
+							dockpoint="Center"/>
+						<image
+							this="BBE5028B-9D99-0691-196BE68B81241AC6"
+							uniqueguid="BBE5028B-9D99-0691-196BE68B81241AC6"
+							componentimage="351D7847-E33D-D9A6-759B341C0F01AF73"
+							width="63"
+							height="63"/>
+						<image
+							this="E117E2FB-DC91-5C8C-4253A4DDE1A0C205"
+							uniqueguid="E117E2FB-DC91-5C8C-4253A4DDE1A0C205"
+							componentimage="351D7847-E33D-D9A6-759B341C0F01AF73"
+							width="63"
+							height="63"
+							colour="#FFFFFF00"/>
+						<image
+							this="2074EB23-95AA-18F8-DF9B866DDFA10263"
+							uniqueguid="2074EB23-95AA-18F8-DF9B866DDFA10263"
+							componentimage="0267429C-7083-F5B7-E57A587254A38B27"
+							width="63"
+							height="63"/>
+						<image
+							this="3F66780B-20E9-0C8A-95EABE295921EF25"
+							uniqueguid="3F66780B-20E9-0C8A-95EABE295921EF25"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shadertechnique_vars="1.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+						<image
+							this="28C2BF37-49F8-D3A5-9C914C1FA0DF756D"
+							uniqueguid="28C2BF37-49F8-D3A5-9C914C1FA0DF756D"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							colour="#FFFFFF00"
+							dockpoint="Center"
+							shadertechnique_vars="1.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+						<image
+							this="49F29FAD-EE3A-15DC-3E74CA2A37CF6D6D"
+							uniqueguid="49F29FAD-EE3A-15DC-3E74CA2A37CF6D6D"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shadertechnique_vars="2.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition
+							index="1"
+							transition_m_target_state="B2457CE2-7D58-8AEB-58E96337ADB383F1"
+							transition_m_transition_time="200"
+							transition_m_interpolation_property_mask="64"/>
+						<transition
+							index="2"
+							transition_m_target_state="74B4763F-F6C8-B208-D53F33AD2E2F6493"/>
+					</transitionmap>
+				</selected_hover>
+				<selected_inactive
+					this="E005ECBE-5DFC-F294-F5934B4C577B2640"
+					name="selected_inactive"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					interactive="true"
+					disabled="true"
+					uniqueguid="E005ECBE-5DFC-F294-F5934B4C577B2640">
+					<imagemetrics>
+						<image
+							this="67A21A18-EF3D-1113-BA1DAC2DC63E499C"
+							uniqueguid="67A21A18-EF3D-1113-BA1DAC2DC63E499C"
+							componentimage="2676C404-38A4-272E-CEE0AB5372942BDF"
+							offset="-3.00,-3.00"
+							width="69"
+							height="69"
+							dockpoint="Center"/>
+						<image
+							this="3592B17B-37AF-D68F-9CE256C51AA13FCD"
+							uniqueguid="3592B17B-37AF-D68F-9CE256C51AA13FCD"
+							componentimage="351D7847-E33D-D9A6-759B341C0F01AF73"
+							width="63"
+							height="63"/>
+						<image
+							this="DF9E78E3-3ABF-206E-E5F4218A8B31A474"
+							uniqueguid="DF9E78E3-3ABF-206E-E5F4218A8B31A474"
+							componentimage="53788485-F6A0-7927-31FDDE07A038EE1F"
+							width="63"
+							height="63"/>
+						<image
+							this="1A77D7BC-4C15-FD9A-97813FD0148DD878"
+							uniqueguid="1A77D7BC-4C15-FD9A-97813FD0148DD878"
+							componentimage="4B18BABA-95F2-2722-2E28779A8E8E41B8"
+							width="63"
+							height="63"
+							colour="#FFFFFF46"
+							dockpoint="Center"
+							shadertechnique_vars="1.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+					</imagemetrics>
+				</selected_inactive>
+			</states>
+		</teclis_activate_teleport_button>
+		<button_flame
+			this="B2B65BC8-48AF-41D4-3A5E7BE8E6D01096"
+			id="button_flame"
+			offset="2.00,2.00"
+			allowhorizontalresize="false"
+			allowverticalresize="false"
+			docking="Center"
+			component_anchor_point="0.50,0.50"
+			priority="100"
+			tooltipslocalised="true"
+			uniqueguid="B2B65BC8-48AF-41D4-3A5E7BE8E6D01096"
+			isaspectratiolocked="true"
+			currentstate="97FF0569-83D0-0F95-0D65836BBDC380AB"
+			defaultstate="97FF0569-83D0-0F95-0D65836BBDC380AB">
+			<callbackwithcontextlist>
+				<callback_with_context
+					callback_id="ContextVisibilitySetter"
+					context_object_id="CcoStaticObject"
+					context_function_id="self.ParentContext.IsMouseOver &amp;&amp; self.ParentContext.IsDisabled == false &amp;&amp; IsSkinActive(&quot;warhammer3&quot;) == true">
+					<child_m_user_properties>
+						<property
+							name="update_constant"
+							value=""/>
+					</child_m_user_properties>
+				</callback_with_context>
+			</callbackwithcontextlist>
+			<userproperties>
+				<property
+					name="disable_override"
+					value="callbacks"/>
+			</userproperties>
+			<componentimages>
+				<component_image
+					this="2F6D798A-2369-F71D-72CCD6A4031452CA"
+					uniqueguid="2F6D798A-2369-F71D-72CCD6A4031452CA"/>
+			</componentimages>
+			<states>
+				<default
+					this="97FF0569-83D0-0F95-0D65836BBDC380AB"
+					name="default"
+					width="58"
+					height="58"
+					texthbehaviour="Never split"
+					material_name="ui/effects/materials/magic_flame.xml.material"
+					uniqueguid="97FF0569-83D0-0F95-0D65836BBDC380AB">
+					<imagemetrics>
+						<image
+							this="CA168C47-4AB9-66A3-C2F7E69EC0301CF2"
+							uniqueguid="CA168C47-4AB9-66A3-C2F7E69EC0301CF2"
+							componentimage="2F6D798A-2369-F71D-72CCD6A4031452CA"
+							width="58"
+							height="58"/>
+					</imagemetrics>
+					<material_m_parameter_overrides>
+						<property
+							name="distortion_strength"
+							x="0.200000003"
+							y="0"
+							z="0"
+							w="0"
+							is_override_of_default="false"/>
+						<property
+							name="flow_speed"
+							x="0.5"
+							y="0"
+							z="0"
+							w="0"
+							is_override_of_default="true"/>
+						<property
+							name="sparkle_distortion"
+							x="0.100000001"
+							y="0"
+							z="0"
+							w="0"
+							is_override_of_default="false"/>
+						<property
+							name="sparkle_ro"
+							x="0"
+							y="0"
+							z="0"
+							w="0"
+							is_override_of_default="false"/>
+						<property
+							name="sparkle_speed1"
+							x="0.150000006"
+							y="0"
+							z="0"
+							w="0"
+							is_override_of_default="false"/>
+						<property
+							name="sparkle_speed2"
+							x="0.100000001"
+							y="0"
+							z="0"
+							w="0"
+							is_override_of_default="false"/>
+						<property
+							name="sparkle_strength"
+							x="0"
+							y="0"
+							z="0"
+							w="0"
+							is_override_of_default="true"/>
+						<property
+							name="sparkle_tiling"
+							x="2"
+							y="0"
+							z="0"
+							w="0"
+							is_override_of_default="false"/>
+						<property
+							name="uv_distortion_pan"
+							x="0.100000001"
+							y="0.200000003"
+							z="0"
+							w="0"
+							is_override_of_default="false"/>
+						<property
+							name="u_tiling"
+							x="16"
+							y="0"
+							z="0"
+							w="0"
+							is_override_of_default="true"/>
+						<property
+							name="v_tiling"
+							x="5"
+							y="0"
+							z="0"
+							w="0"
+							is_override_of_default="false"/>
+						<property
+							name="heat_percent"
+							x="1"
+							y="0"
+							z="0"
+							w="0"
+							is_override_of_default="false"/>
+					</material_m_parameter_overrides>
+					<material_m_texture_overrides>
+						<property
+							slot_id="t_xml_effect_colours"
+							filepath="ui\effects\textures\effect_fire.dds"
+							is_override_of_default="false"/>
+						<property
+							slot_id="t_xml_heat_mask"
+							filepath="ui\effects\textures\magic_flame_heat_UD.dds"
+							is_override_of_default="true"/>
+						<property
+							slot_id="t_xml_shape_flow"
+							filepath="ui\effects\textures\magic_flame_flow_UD.dds"
+							is_override_of_default="true"/>
+						<property
+							slot_id="t_xml_uv_distortion"
+							filepath="commontextures\cloud_shadow_02.dds"
+							is_override_of_default="false"/>
+						<property
+							slot_id="t_xml_uv_element"
+							filepath="commontextures\default_noise1.dds"
+							is_override_of_default="false"/>
+						<property
+							slot_id="t_xml_general_mask"
+							filepath="ui\effects\textures\magic_flame_mask_round.dds"
+							is_override_of_default="true"/>
+						<property
+							slot_id="t_xml_sparkle1"
+							filepath="commontextures\volumetric_noise.dds"
+							is_override_of_default="false"/>
+					</material_m_texture_overrides>
+				</default>
+			</states>
+			<animations>
+				<show id="show">
+					<frames>
+						<frame
+							interpolationtime="0"
+							interpolationpropertymask="8"
+							targetmetrics_m_height="100"
+							targetmetrics_m_width="100">
+							<triggers>
+								<trigger
+									trigger_component="B2B65BC8-48AF-41D4-3A5E7BE8E6D01096"
+									trigger_property="Visibility true"/>
+							</triggers>
+						</frame>
+						<frame
+							interpolationtime="300"
+							interpolationpropertymask="1032"
+							targetmetrics_m_height="100"
+							targetmetrics_m_width="100"
+							targetmetrics_m_shadervars="0.70,0.00,0.00,0.00"
+							material_param_id="heat_percent"/>
+					</frames>
+				</show>
+				<hide id="hide">
+					<frames>
+						<frame
+							interpolationtime="300"
+							interpolationpropertymask="1032"
+							targetmetrics_m_height="100"
+							targetmetrics_m_width="100"
+							material_param_id="heat_percent">
+							<triggers>
+								<trigger
+									trigger_component="B2B65BC8-48AF-41D4-3A5E7BE8E6D01096"
+									trigger_property="Visibility false"/>
+							</triggers>
+						</frame>
+					</frames>
+				</hide>
+			</animations>
+		</button_flame>
+		<icon
+			this="AD55E8DB-7CA9-A64D-09BC5A089A7DF803"
+			id="icon"
+			allowhorizontalresize="false"
+			allowverticalresize="false"
+			docking="Bottom Left"
+			component_anchor_point="0.00,1.00"
+			tooltipslocalised="true"
+			soundcategory="UI_GBL_TMP_Round_Small_Button"
+			uniqueguid="AD55E8DB-7CA9-A64D-09BC5A089A7DF803"
+			currentstate="05477E9C-8956-DFFE-878D587F598FD40F"
+			defaultstate="05477E9C-8956-DFFE-878D587F598FD40F">
+			<callbackwithcontextlist>
+				<callback_with_context
+					callback_id="ContextImageSetter"
+					context_object_id="CcoStaticObject"
+					context_function_id="self.ParentContext.ImagePath(0)"/>
+			</callbackwithcontextlist>
+			<userproperties>
+				<property
+					name="disable_override"
+					value="resizable"/>
+				<property
+					name="disable_override0"
+					value="callbacks"/>
+				<property
+					name="dynamic_image"
+					value="0"/>
+			</userproperties>
+			<componentimages>
+				<component_image
+					this="09D8A06C-EB8F-95D6-0E334629634BE718"
+					uniqueguid="09D8A06C-EB8F-95D6-0E334629634BE718"
+					imagepath="ui/skins/default/icon_finance.png"/>
+			</componentimages>
+			<states>
+				<active
+					this="05477E9C-8956-DFFE-878D587F598FD40F"
+					name="active"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					uniqueguid="05477E9C-8956-DFFE-878D587F598FD40F"
+					stateeditordisplaypos="40.00,24.00">
+					<imagemetrics>
+						<image
+							this="C47718C1-914D-029D-AD193988B505291B"
+							uniqueguid="C47718C1-914D-029D-AD193988B505291B"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shader_name="brighten_t0"/>
+						<image
+							this="F7DB193D-1182-E88C-BB88BC0370CF63BF"
+							uniqueguid="F7DB193D-1182-E88C-BB88BC0370CF63BF"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							colour="#FFFFFF00"
+							dockpoint="Center"
+							shadertechnique_vars="0.50,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+						<image
+							this="6324F010-C172-B40A-43BFB0C30CD1EF80"
+							uniqueguid="6324F010-C172-B40A-43BFB0C30CD1EF80"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shader_name="brighten_t0"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition
+							transition_m_target_state="282BB607-62A1-1772-44C2FACE62CD6178"
+							transition_m_transition_time="200"
+							transition_m_interpolation_property_mask="64"/>
+					</transitionmap>
+				</active>
+				<down
+					this="BB908F94-7A70-5E63-B5529498F37B0C65"
+					name="down"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					textshadervars="0.30,0.00,0.00,0.00"
+					uniqueguid="BB908F94-7A70-5E63-B5529498F37B0C65"
+					stateeditordisplaypos="145.00,219.00">
+					<imagemetrics>
+						<image
+							this="3A0013DC-9844-3E39-EE7C19C31B9098AF"
+							uniqueguid="3A0013DC-9844-3E39-EE7C19C31B9098AF"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							offset="0.00,3.00"
+							width="63"
+							height="63"
+							colour="#6E6E6EFF"
+							dockpoint="Center"
+							dock_offset="0.00,3.00"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition
+							index="3"
+							transition_m_target_state="3C98B617-A8DB-4EB8-B4E078C4A1DBDC3A"/>
+						<transition
+							index="1"
+							transition_m_target_state="7CD87F17-F03B-C679-64A38969A2FEB2A2"/>
+					</transitionmap>
+				</down>
+				<down_off
+					this="7CD87F17-F03B-C679-64A38969A2FEB2A2"
+					name="down_off"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					uniqueguid="7CD87F17-F03B-C679-64A38969A2FEB2A2"
+					stateeditordisplaypos="40.00,319.00">
+					<imagemetrics>
+						<image
+							this="E8612AF4-0638-8D97-D48BEB52DADCC0C6"
+							uniqueguid="E8612AF4-0638-8D97-D48BEB52DADCC0C6"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							dockpoint="Center"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition transition_m_target_state="BB908F94-7A70-5E63-B5529498F37B0C65"/>
+						<transition
+							index="8"
+							transition_m_target_state="05477E9C-8956-DFFE-878D587F598FD40F"/>
+					</transitionmap>
+				</down_off>
+				<hover
+					this="282BB607-62A1-1772-44C2FACE62CD6178"
+					name="hover"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					textshadervars="0.30,0.00,0.00,0.00"
+					uniqueguid="282BB607-62A1-1772-44C2FACE62CD6178"
+					stateeditordisplaypos="137.00,126.00">
+					<imagemetrics>
+						<image
+							this="E4FFB3A4-59BD-AE21-C3CFE7E2D63AF94C"
+							uniqueguid="E4FFB3A4-59BD-AE21-C3CFE7E2D63AF94C"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shader_name="brighten_t0"/>
+						<image
+							this="1F6DA232-2794-AE1E-F16EE8414CD59E55"
+							uniqueguid="1F6DA232-2794-AE1E-F16EE8414CD59E55"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shadertechnique_vars="0.50,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+						<image
+							this="8E16DF4A-1321-3185-E1CBA642CE71E7AF"
+							uniqueguid="8E16DF4A-1321-3185-E1CBA642CE71E7AF"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							colour="#FFFFFF00"
+							dockpoint="Center"
+							shader_name="brighten_t0"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition
+							index="1"
+							transition_m_target_state="05477E9C-8956-DFFE-878D587F598FD40F"
+							transition_m_transition_time="200"
+							transition_m_interpolation_property_mask="64"/>
+						<transition
+							index="2"
+							transition_m_target_state="BB908F94-7A70-5E63-B5529498F37B0C65"/>
+					</transitionmap>
+				</hover>
+				<inactive
+					this="5143D2B6-3CEB-DCE7-FC7D3B3F7072E4EA"
+					name="inactive"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					uniqueguid="5143D2B6-3CEB-DCE7-FC7D3B3F7072E4EA">
+					<imagemetrics>
+						<image
+							this="C252284A-EBEF-A359-215E7DA79F73B52A"
+							uniqueguid="C252284A-EBEF-A359-215E7DA79F73B52A"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							colour="#FFFFFF46"
+							dockpoint="Center"/>
+					</imagemetrics>
+				</inactive>
+				<selected
+					this="805609AD-040E-BE38-B0E4325D13AEACA5"
+					name="selected"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					uniqueguid="805609AD-040E-BE38-B0E4325D13AEACA5"
+					stateeditordisplaypos="401.00,333.00">
+					<imagemetrics>
+						<image
+							this="D95D186C-AFD0-C8B1-13CCAB503C4D0017"
+							uniqueguid="D95D186C-AFD0-C8B1-13CCAB503C4D0017"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shadertechnique_vars="1.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+						<image
+							this="472592EB-E5DF-2DEC-A7F87ABCB9C770D4"
+							uniqueguid="472592EB-E5DF-2DEC-A7F87ABCB9C770D4"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shadertechnique_vars="1.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+						<image
+							this="4234DAF6-956F-A0F6-B96433CAB2B3EB45"
+							uniqueguid="4234DAF6-956F-A0F6-B96433CAB2B3EB45"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							colour="#FFFFFF00"
+							dockpoint="Center"
+							shadertechnique_vars="2.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition
+							transition_m_target_state="3C98B617-A8DB-4EB8-B4E078C4A1DBDC3A"
+							transition_m_transition_time="200"
+							transition_m_interpolation_property_mask="64"/>
+					</transitionmap>
+				</selected>
+				<selected_down
+					this="C81BA830-352A-45A8-8E67FA530CBDDF40"
+					name="selected_down"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					textshadervars="0.30,0.00,0.00,0.00"
+					uniqueguid="C81BA830-352A-45A8-8E67FA530CBDDF40"
+					stateeditordisplaypos="268.00,120.00">
+					<imagemetrics>
+						<image
+							this="69047658-07A5-69C5-96AC261FA00390C1"
+							uniqueguid="69047658-07A5-69C5-96AC261FA00390C1"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							offset="0.00,3.00"
+							width="63"
+							height="63"
+							colour="#808080FF"
+							dockpoint="Center"
+							dock_offset="0.00,3.00"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition
+							index="3"
+							transition_m_target_state="282BB607-62A1-1772-44C2FACE62CD6178"/>
+						<transition
+							index="1"
+							transition_m_target_state="3861AAAC-E9C6-BAD5-57E36A54B5A4C7E8"/>
+					</transitionmap>
+				</selected_down>
+				<selected_down_off
+					this="3861AAAC-E9C6-BAD5-57E36A54B5A4C7E8"
+					name="selected_down_off"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					uniqueguid="3861AAAC-E9C6-BAD5-57E36A54B5A4C7E8"
+					stateeditordisplaypos="384.00,21.00">
+					<imagemetrics>
+						<image
+							this="9DCEDF11-0A46-6A4A-0BD80AB1D63B6632"
+							uniqueguid="9DCEDF11-0A46-6A4A-0BD80AB1D63B6632"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shadertechnique_vars="1.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition transition_m_target_state="C81BA830-352A-45A8-8E67FA530CBDDF40"/>
+						<transition
+							index="8"
+							transition_m_target_state="805609AD-040E-BE38-B0E4325D13AEACA5"/>
+					</transitionmap>
+				</selected_down_off>
+				<selected_hover
+					this="3C98B617-A8DB-4EB8-B4E078C4A1DBDC3A"
+					name="selected_hover"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					textshadervars="0.30,0.00,0.00,0.00"
+					uniqueguid="3C98B617-A8DB-4EB8-B4E078C4A1DBDC3A"
+					stateeditordisplaypos="269.00,216.00">
+					<imagemetrics>
+						<image
+							this="F74AFECF-5D6C-9A41-778C9452DB06C2F6"
+							uniqueguid="F74AFECF-5D6C-9A41-778C9452DB06C2F6"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shadertechnique_vars="1.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+						<image
+							this="BF89166C-8533-285F-01E73241295830BF"
+							uniqueguid="BF89166C-8533-285F-01E73241295830BF"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							colour="#FFFFFF00"
+							dockpoint="Center"
+							shadertechnique_vars="1.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+						<image
+							this="AC2F0076-B252-1FF4-2C43C20A1A72D6DD"
+							uniqueguid="AC2F0076-B252-1FF4-2C43C20A1A72D6DD"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							dockpoint="Center"
+							shadertechnique_vars="2.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+					</imagemetrics>
+					<transitionmap>
+						<transition
+							index="1"
+							transition_m_target_state="805609AD-040E-BE38-B0E4325D13AEACA5"
+							transition_m_transition_time="200"
+							transition_m_interpolation_property_mask="64"/>
+						<transition
+							index="2"
+							transition_m_target_state="C81BA830-352A-45A8-8E67FA530CBDDF40"/>
+					</transitionmap>
+				</selected_hover>
+				<selected_inactive
+					this="A82FBC93-BF9A-F3CC-C6128E75C4DE23D9"
+					name="selected_inactive"
+					width="63"
+					height="63"
+					font_m_size="12"
+					font_m_colour="#000000FF"
+					font_m_leading="3"
+					fontcat_name="ingame_text"
+					uniqueguid="A82FBC93-BF9A-F3CC-C6128E75C4DE23D9">
+					<imagemetrics>
+						<image
+							this="2FFB72D1-132D-43E4-E86ED7628AE486DA"
+							uniqueguid="2FFB72D1-132D-43E4-E86ED7628AE486DA"
+							componentimage="09D8A06C-EB8F-95D6-0E334629634BE718"
+							width="63"
+							height="63"
+							colour="#FFFFFF46"
+							dockpoint="Center"
+							shadertechnique_vars="1.00,0.00,0.00,0.00"
+							shader_name="brighten_t0"/>
+					</imagemetrics>
+				</selected_inactive>
+			</states>
+		</icon>
 	</components>
 </layout>
