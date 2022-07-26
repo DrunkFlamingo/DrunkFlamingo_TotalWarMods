@@ -1,3 +1,4 @@
 key	localised_description	localised_title	bundle_target	priority	ui_icon	is_global_effect	show_in_3d_space	owner_only
 #effect_bundles_tables;4;db/effect_bundles_tables/df_teclis_flag_bundles								
 df_teclis_teleport_node			region	0	ph.png	false	false	false
+df_teclis_node_locked			region	0	ph.png	false	false	false

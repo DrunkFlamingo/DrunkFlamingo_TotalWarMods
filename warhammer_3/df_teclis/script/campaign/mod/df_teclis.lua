@@ -18,6 +18,10 @@ mod.panels_hidden = {}
 
 mod.high_elf_colony_factions = {"wh2_main_hef_fortress_of_dawn", "wh2_main_hef_citadel_of_dusk", "wh2_main_hef_tor_elasor"}
 
+mod.narrative_flags = {}
+cm:add_saving_game_callback(function(context) cm:save_named_value("teclis_narative_flags", mod.narrative_flags, context) end)
+cm:add_loading_game_callback(function(context) mod.narrative_flags = cm:load_named_value("teclis_narative_flags", {}, context) end)
+
 --wh3_main_combi_region_great_turtle_isle
 --wh3_main_combi_region_the_star_tower
 --wh3_main_combi_region_arnheim
@@ -25,6 +29,101 @@ mod.high_elf_colony_regions = {"wh3_main_combi_region_great_turtle_isle",
 "wh3_main_combi_region_the_star_tower", "wh3_main_combi_region_arnheim",
 "wh3_main_combi_region_fortress_of_dawn", "wh3_main_combi_region_citadel_of_dusk", "wh3_main_combi_region_tower_of_the_sun"
 }
+
+mod.high_elf_teleportable_colonies = {
+    ["wh3_main_combi_region_great_turtle_isle"] = {},
+    ["wh3_main_combi_region_the_star_tower"] = {},
+    ["wh3_main_combi_region_arnheim"] = {},
+    ["wh3_main_combi_region_fortress_of_dawn"] = {},
+    ["wh3_main_combi_region_citadel_of_dusk"] = {},
+    ["wh3_main_combi_region_tower_of_the_sun"] = {}
+}
+
+mod.lord_bounty_counts = {}
+cm:add_saving_game_callback(function(context) cm:save_named_value("teclis_lord_bounty_counts", mod.lord_bounty_counts, context) end)
+cm:add_loading_game_callback(function(context) mod.lord_bounty_counts = cm:load_named_value("teclis_lord_bounty_counts", {}, context) end)
+
+---checks if the lord is valid for a bounty mission increment by comparing them to Teclis and to the ally they just defeated.
+---@param character CHARACTER_SCRIPT_INTERFACE
+---@param teclis_ally FACTION_SCRIPT_INTERFACE
+---@return boolean
+local function is_lord_valid_for_bounty_mission(character, teclis_ally)
+    out("Checking if "..character:command_queue_index().." is strong enough to warrant a bounty")
+    local enemy_value = cm:force_gold_value(character:military_force():command_queue_index())
+    local teclis_char = mod.get_teclis_faction():faction_leader()
+    if teclis_char:has_military_force() then
+        local teclis_value = cm:force_gold_value(teclis_char:military_force():command_queue_index())
+        if enemy_value < teclis_value * 0.8 then
+            out("Character "..character:command_queue_index().." is not strong enough to warrant a bounty")
+            out("Teclis force*08 was greater than their gold value")
+            return false
+        end
+    end
+    local ally_character_list = teclis_ally:character_list()
+    for i = 0, ally_character_list:num_items() - 1 do
+        local ally_char = ally_character_list:item_at(i)
+        if cm:char_is_mobile_general_with_army(ally_char) then
+            local ally_value = cm:force_gold_value(ally_char:military_force():command_queue_index())
+            if enemy_value < ally_value * 0.8 then
+                out("Character "..character:command_queue_index().." is not strong enough to warrant a bounty")
+                out("Ally force*08 was greater than their gold value")
+                return false
+            end
+        end
+    end
+    return true
+end
+
+local function teclis_ally_defeated_by_character(character, teclis_ally)
+    local has_valid_cost = is_lord_valid_for_bounty_mission(character, teclis_ally)
+    if has_valid_cost then
+        mod.lord_bounty_counts[character:command_queue_index()] = (mod.lord_bounty_counts[character:command_queue_index()] or 0) + 1
+        if mod.lord_bounty_counts[character:command_queue_index()] > 1 then
+            out("Character "..character:command_queue_index().." has met the bounty threshold")
+            if mod.get_teclis_faction():at_war_with(character:faction()) then
+                --TODO trigger a mission to defeat this character's force  
+            else
+                --TODO triger a mission to join your allies war against this character's faction.
+            end            
+        end
+    end
+end
+
+local function bounty_mission_listeners()
+    core:add_listener(
+        "TeclisMissionGenerators",
+        "CharacterCompletedBattle",
+        function (context)
+            return context:character():won_battle()
+        end,
+        function (context)
+            local character = context:character() ---@type CHARACTER_SCRIPT_INTERFACE
+            local enemies = cm:pending_battle_cache_get_enemies_of_char(character)
+            for i = 1, #enemies do
+                local enemy_char = enemies[i]
+                if enemy_char:faction():is_ally_vassal_or_client_state_of(mod.get_teclis_faction()) then
+                    teclis_ally_defeated_by_character(character, enemy_char:faction())
+                end
+            end
+        end)
+    core:add_listener(
+        "TeclisMissionGenerators",
+        "CharacterCompletedBattle",
+        function (context)
+            return mod.lord_bounty_counts[context:character():command_queue_index()] and not context:character():won_battle()
+        end,
+        function (context)
+            out("Character "..context:character():command_queue_index().." has lost a battle, resetting their bounty count")
+            mod.lord_bounty_counts[context:character():command_queue_index()] = 0
+        end)
+end
+
+
+
+
+
+
+
 
 ---grabs the visible 3DUI elements currently displayed on the screen and populates them with contextual infromation.
 -----Consider doing this with CCO instead of Lua.
@@ -44,7 +143,8 @@ local function open_teleport_feature()
     uim:add_all_characters_for_faction_selection_whitelist(mod.teclis_faction_key)
     uim:enable_settlement_selection_whitelist()
     cm:override_ui("disable_settlement_labels", true);
-    cm:repeat_real_callback(teleport_feature_callback, 200, "teclis_teleport_feature_callback")
+    teleport_feature_callback()
+    cm:repeat_real_callback(teleport_feature_callback, 500, "teclis_teleport_feature_callback")
     local teleport_feature_address = core:get_ui_root():CreateComponent("teclis_teleport_feature", "ui/campaign ui/teclis_teleport_panel")
     local teleport_feature_panel = UIComponent(teleport_feature_address)
     teleport_feature_panel:SetContextObject(cco("CcoCampaignRoot", ""))
@@ -202,8 +302,15 @@ df_teclis = function ()
         new_game_setup()
     end
     start_ui_listeners()
+    --mechanics
+    local helf_subculture = mod.get_teclis_faction():subculture()
+    local colonies = {}
+    for i = 1, #mod.high_elf_colony_regions do
+        colonies[mod.high_elf_colony_regions[i]] = true
+    end
+    bounty_mission_listeners()
     core:add_listener(
-        "Teclis_FactionTurnStart",
+        "Teclis_OtherFactionTurnStart",
         "FactionTurnStart",
         function (context)
             return context:faction():name() ~= mod.teclis_faction_key and context:faction():has_home_region()
@@ -211,6 +318,10 @@ df_teclis = function ()
         function(context)
             local faction = context:faction() ---@type FACTION_SCRIPT_INTERFACE
             local home_region = faction:home_region() 
+            if colonies[home_region:name()] and faction:subculture() == helf_subculture then
+                out("Teclis_FactionTurnStart: "..faction:name().." capital is in a colony, so they can be teleported to regardless of alliance status.")
+                return
+            end
             local is_allied = faction:is_ally_vassal_or_client_state_of(mod.get_teclis_faction())
             if is_allied and not home_region:has_effect_bundle(mod.teleport_node_bundle) then
                 out("Teclis_FactionTurnStart updating home region effect bundle for ally "..faction:name())
@@ -220,12 +331,85 @@ df_teclis = function ()
                 cm:remove_effect_bundle_from_region(mod.teleport_node_bundle, home_region:name())
             end
         end, true)
+    local discovery_mission_regions = {
+        ["wh3_main_combi_region_great_turtle_isle"] = true, 
+        ["wh3_main_combi_region_the_star_tower"] = true,
+        ["wh3_main_combi_region_arnheim"] = true,
+        ["wh3_main_combi_region_gronti_mingol"] = true
+    }
+    core:add_listener(
+        "Teclis_OwnFactionTurnStart",
+        "FactionTurnStart",
+        function (context)
+            return context:faction():name() == mod.teclis_faction_key and context:faction():is_human()
+        end,
+        function (context)
+            local teclis = context:faction() ---@type FACTION_SCRIPT_INTERFACE
+            local vision_list = teclis:get_foreign_visible_regions_for_player()
+            for i = 0, vision_list:num_items() -  1 do
+                local region = vision_list:item_at(i)
+                local region_key = region:name()
+                if discovery_mission_regions[region_key] and not mod.narrative_flags["discovery_mission_issued_"..region_key] then
+                    out("Checkign discovery mission for "..region_key)
+                    local mission_type
+                    if region:is_abandoned() then
+                        out("region is abandoned")
+                        mission_type = "settle_"
+                    elseif region:owning_faction():subculture() ~= helf_subculture then
+                        if teclis:diplomatic_standing_with(region:owning_faction():name()) > 25 then
+                            out("region occupied, diplomatic standign > 25")
+                        else
+                            out("region occupied, diplomatic standing < 25")
+                            mission_type = "reclaim_"
+                        end
+                        
+                    end
+                    if mission_type then
+                        out("Teclis_OwnFactionTurnStart: issuing discovery mission for "..region_key)
+                        cm:trigger_mission(mod.teclis_faction_key, "df_teclis_"..mission_type..region_key, true)
+                        mod.narrative_flags["discovery_mission_issued_"..region_key] = true
+                    end
+                end
+                mod.narrative_flags["discovery_mission_issued_"..region_key] = true
+
+            end
+        end,
+        true)
 end
 
 
 --[[notes
  precache condition for ui
   PlayersFaction.FactionRecordContext.Key == &quot;wh2_main_hef_order_of_loremasters&quot;  
+
+    - 'chapter mission' after the completion of the starting mission: ally with X factions
+
+    SettlementList.Filter(IsPlayerOwned == false &amp;&amp; ((ResourceList.Any(Key == &quot;res_location_colony&quot;) &amp;&amp; (IsProvinceCapital == true || ProvinceContext.CapitalSettlementContext.ResourceList.Any(Key == &quot;res_location_colony&quot;) == false)) || (IsFactionCapital &amp;&amp; FactionContext.IsAlly)))
+
+    SettlementList.Filter(EffectBundleUnfilteredList.Any(Key == &quot;df_teclis_teleport_node&quot;))
+
+SettlementList.Filter(
+        IsPlayerOwned == false 
+        &amp;&amp; (
+            (
+                ResourceList.Any(Key == &quot;res_location_colony&quot;) 
+                &amp;&amp;
+                (
+                    IsProvinceCapital == true
+                    ||
+                    ProvinceContext.CapitalSettlementContext.ResourceList.Any(Key == &quot;res_location_colony&quot;) == false
+                )
+            ) 
+            ||
+            (
+                IsFactionCapital
+                &amp;&amp;
+                (
+                    FactionContext.IsAlly
+                )
+            )
+        )
+    )
 
   TODO
     - replace faction and culture effects.

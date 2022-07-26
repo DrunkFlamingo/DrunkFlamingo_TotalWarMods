@@ -297,7 +297,7 @@
 				<callback_with_context
 					callback_id="ContextList"
 					context_object_id="CcoCampaignRoot"
-					context_function_id="SettlementList.Filter(EffectBundleUnfilteredList.Any(Key == &quot;df_teclis_teleport_node&quot;))"/>
+					context_function_id="SettlementList.Filter(IsPlayerOwned == false &amp;&amp; ((ResourceList.Any(Key == &quot;res_location_colony&quot;) &amp;&amp; (IsProvinceCapital == true || ProvinceContext.CapitalSettlementContext.ResourceList.Any(Key == &quot;res_location_colony&quot;) == false)) || (IsFactionCapital &amp;&amp; FactionContext.IsAlly)))"/>
 				<callback_with_context callback_id="ContextInitCampaignRoot"/>
 			</callbackwithcontextlist>
 			<states>
