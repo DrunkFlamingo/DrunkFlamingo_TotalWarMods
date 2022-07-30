@@ -55,7 +55,7 @@ function table_to_string(t, indent)
     for i = 1, indent do
         prefix = prefix .. "\t"
     end
-    local result = "{"
+    local result = "{" .. "".."\n"
     local first_result = false 
     for k, v in pairs(t) do
         if not first_result then
@@ -63,6 +63,7 @@ function table_to_string(t, indent)
         else
             result = result .. ",\n" 
         end
+        local layer_indent = "\t"
         if type(k) == "string" then
             k = string.format("%q", k)
         end
@@ -75,9 +76,9 @@ function table_to_string(t, indent)
         elseif type(v) == "table" then
             v = table_to_string(v, indent + 1)
         end
-        result = result .. prefix.."[" .. k .. "]=" .. v
+        result = result ..layer_indent..prefix.."[" .. k .. "] = " .. v
     end
-    result = result .. "}"
+    result = result .. "\n"..prefix.."}"
     return result
 end
 

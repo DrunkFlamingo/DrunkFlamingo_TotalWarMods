@@ -239,7 +239,7 @@ function rogue_daniel_loader.load_all_data()
         else
             local list_index = tonumber(this_row.LIST_INDEX)
             if not list_index then
-               --this should never happen because of the select_set_validation check above
+               --the only value which can trigger this is MANDATORY, which is handled above.
             else
                 MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT_KEY].generated_unit_slots[list_index] = 
                 MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT_KEY].generated_unit_slots[list_index] or {}
@@ -291,10 +291,14 @@ function rogue_daniel_loader.load_all_data()
             error("invalid force key: "..this_row.FORCE_KEY.. " on row "..row_index.." of force_to_force_fragments")
         elseif not MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT_KEY] then
             error("invalid force fragment key: "..this_row.FORCE_FRAGMENT_KEY.. " on row "..row_index.." of force_to_force_fragments")
+        elseif this_row.SELECTION_SET == "MANDATORY" then
+            MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[this_row.SELECTION_SET] = 
+            MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[this_row.SELECTION_SET] or {}
+            table.insert(MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[this_row.SELECTION_SET], MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT_KEY])
         else
             local list_index = tonumber(this_row.SELECTION_SET)
             if not list_index then
-                --this should never happen because of the select_set_validation check above
+                --the value which can trigger this is MANDATORY, which is handled above.
             else
                 MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[list_index] = 
                 MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[list_index] or {}
@@ -307,5 +311,5 @@ function rogue_daniel_loader.load_all_data()
 end
 
 local output_file = io.open("lua/output/rogue_daniel_db/".."test_case.lua", "w+")
-output_file:write("return ".. table_to_string(rogue_daniel_loader.load_all_data()))
+output_file:write("return ".. table_to_string(rogue_daniel_loader.load_all_data(), 1))
 --lua\output\rogue_daniel_db\forces.lua
