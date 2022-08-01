@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<layout
+	version="137"
+	comment=""
+	precache_condition="PlayersFaction.FactionRecordContext.Key == &quot;wh3_main_dae_daemon_prince&quot;)">
+	<hierarchy>
+		<root this="4C979458-66D9-8697-388CBA977C5F2214">
+            <settlement_list this="0E1C640C-DC86-7D5C-C2F923170C08BA19">
+                <template_settlement_overlay this="F5209CF2-AD51-52DB-216DAE176EC78A19"/>
+                <!-- </template_settlement_overlay>-->
+            </settlement_list>
+		</root>
+	</hierarchy>
+	<components>
+		<root
+			this="4C979458-66D9-8697-388CBA977C5F2214"
+			id="root"
+			tooltipslocalised="true"
+			uniqueguid="4C979458-66D9-8697-388CBA977C5F2214"
+			currentstate="45524C03-F9A5-C79E-9B5E2A054B84A28F"
+			defaultstate="45524C03-F9A5-C79E-9B5E2A054B84A28F">
+			<componentimages>
+				<component_image
+					this="4E20C881-BDFA-40DE-2FD4F2BFF4D130CA"
+					uniqueguid="4E20C881-BDFA-40DE-2FD4F2BFF4D130CA"/>
+			</componentimages>
+			<states>
+				<default
+					this="45524C03-F9A5-C79E-9B5E2A054B84A28F"
+					name="default"
+					width="1600"
+					height="900"
+					texthbehaviour="Never split"
+					interactive="true"
+					uniqueguid="45524C03-F9A5-C79E-9B5E2A054B84A28F">
+					<imagemetrics>
+						<image
+							this="3B626FA8-9590-9F56-24368E6ED3F1ECAA"
+							uniqueguid="3B626FA8-9590-9F56-24368E6ED3F1ECAA"
+							componentimage="4E20C881-BDFA-40DE-2FD4F2BFF4D130CA"
+							width="1600"
+							height="900"
+							colour="#848484FF"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</root>
+        <settlement_list
+			this="0E1C640C-DC86-7D5C-C2F923170C08BA19"
+			id="settlement_list"
+			offset="840.00,404.00"
+			allowhorizontalresize="false"
+			allowverticalresize="false"
+			tooltipslocalised="true"
+			uniqueguid="0E1C640C-DC86-7D5C-C2F923170C08BA19"
+			isaspectratiolocked="true"
+			currentstate="60518AFF-A3C8-2653-424C5729B5BC7030"
+			defaultstate="60518AFF-A3C8-2653-424C5729B5BC7030">
+			<callbackwithcontextlist>
+                <callback_with_context callback_id="ContextInitCampaignRoot"/>
+				<callback_with_context
+					callback_id="ContextList"
+					context_object_id="CcoCampaignRoot"
+					context_function_id="SettlementList.Filter(ScriptObjectContext(&quot;rogue_active_encounters&quot;).TableValue.HasValueForKey(SettlementKey, false))">
+                    <child_m_user_properties>
+                        <property
+                            name="event0"
+                            value="ScriptObjectValueUpdatedrogue_active_encounters"/>
+                    </child_m_user_properties>
+                </callback_with_context>
+			</callbackwithcontextlist>
+			<states>
+				<default
+					this="60518AFF-A3C8-2653-424C5729B5BC7030"
+					name="default"
+					width="90"
+					height="73"
+					texthbehaviour="Never split"
+					uniqueguid="60518AFF-A3C8-2653-424C5729B5BC7030"/>
+			</states>
+			<LayoutEngine type="List">
+				<columnwidths>
+					<column width="90"/>
+				</columnwidths>
+			</LayoutEngine>
+		</settlement_list>
+        <template_settlement_overlay
+			this="F5209CF2-AD51-52DB-216DAE176EC78A19"
+			id="template_settlement_overlay"
+			allowhorizontalresize="false"
+			allowverticalresize="false"
+			tooltipslocalised="true"
+			uniqueguid="F5209CF2-AD51-52DB-216DAE176EC78A19"
+			isaspectratiolocked="true"
+			currentstate="28614C27-F1CE-DC06-425F966B006FEF3D"
+			defaultstate="28614C27-F1CE-DC06-425F966B006FEF3D">
+			<callbackwithcontextlist>
+				<callback_with_context
+					callback_id="ContextWorldSpaceComponent"
+					context_object_id="CcoCampaignSettlement"
+					context_function_id="Position">
+					<child_m_user_properties>
+						<property
+							name="depth_disabled"
+							value="1"/>
+					</child_m_user_properties>
+				</callback_with_context>
+			</callbackwithcontextlist>
+			<states>
+				<default
+					this="28614C27-F1CE-DC06-425F966B006FEF3D"
+					name="default"
+					width="90"
+					height="73"
+					texthbehaviour="Never split"
+					interactive="true"
+					uniqueguid="28614C27-F1CE-DC06-425F966B006FEF3D"/>
+			</states>
+		</template_settlement_overlay>
+	</components>
+</layout>
