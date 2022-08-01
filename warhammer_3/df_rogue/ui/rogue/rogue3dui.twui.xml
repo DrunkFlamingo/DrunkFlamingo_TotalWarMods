@@ -143,21 +143,6 @@
 			uniqueguid="33C447A6-36CB-E081-8D4B5E923114DB73"
 			currentstate="7B8C808C-5184-6C21-523C7E0B9312E1DD"
 			defaultstate="7B8C808C-5184-6C21-523C7E0B9312E1DD">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextVisibilitySetter"
-					context_object_id="CcoCampaignInitiativeSet"
-					context_function_id="IsContextValid(ActiveInitiativeForSlot(self.ParentContext.ParentContext.ChildIndex))">
-					<child_m_user_properties>
-						<property
-							name="event0"
-							value="FactionInitiativeActivationChanged"/>
-					</child_m_user_properties>
-				</callback_with_context>
-				<callback_with_context
-					callback_id="ContextObjectStore"
-					context_object_id="CcoCampaignInitiative"/>
-			</callbackwithcontextlist>
 			<states>
 				<default
 					this="7B8C808C-5184-6C21-523C7E0B9312E1DD"
@@ -179,18 +164,6 @@
 			uniqueguid="D92C296A-B766-1406-6DE34B8CA494AE5A"
 			currentstate="CA5FD266-0BBE-6A86-A33741A023F1857E"
 			defaultstate="CA5FD266-0BBE-6A86-A33741A023F1857E">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextVisibilitySetter"
-					context_object_id="CcoCampaignInitiativeSet"
-					context_function_id="IsContextValid(ActiveInitiativeForSlot(self.ParentContext.ParentContext.ChildIndex)) == false">
-					<child_m_user_properties>
-						<property
-							name="event0"
-							value="FactionInitiativeActivationChanged"/>
-					</child_m_user_properties>
-				</callback_with_context>
-			</callbackwithcontextlist>
 			<states>
 				<default
 					this="CA5FD266-0BBE-6A86-A33741A023F1857E"
@@ -212,65 +185,6 @@
 			maskimage="BDF02318-D4FA-9FC1-7607FA4CB5F88F68"
 			currentstate="3AEBA80D-A625-A2C8-DD20F239AC3BB85D"
 			defaultstate="3AEBA80D-A625-A2C8-DD20F239AC3BB85D">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextSelectableItem"
-					context_object_id="CcoComponent">
-					<child_m_user_properties>
-						<property
-							name="selection_parent"
-							value="slot_selection_manager"/>
-					</child_m_user_properties>
-				</callback_with_context>
-				<callback_with_context
-					callback_id="ContextPropagator"
-					context_object_id="CcoCampaignInitiativeSet"
-					context_function_id="self"/>
-				<callback_with_context
-					callback_id="ContextInactiveStateSetter"
-					context_object_id="CcoCampaignInitiativeSet"
-					context_function_id="Component(&quot;^3&quot;).ChildIndex &lt; ActiveInitiativeLimit">
-					<child_m_user_properties>
-						<property
-							name="event0"
-							value="FactionInitiativeActivationChanged"/>
-					</child_m_user_properties>
-				</callback_with_context>
-				<callback_with_context
-					callback_id="ContextTooltipSetter"
-					context_object_id="CcoStaticObject">
-					<child_m_user_properties>
-						<property
-							name="different_text_per_state"
-							value=""/>
-					</child_m_user_properties>
-				</callback_with_context>
-				<callback_with_context
-					callback_id="ContextImageGroupSetter"
-					context_object_id="CcoCampaignInitiativeSet"
-					context_function_id="StringReplace(StringReplace(InitiativeSetContext.CategoryContext.Key, &quot;DLC20_&quot;, &quot;&quot;), &quot;_INITIATIVES&quot;, &quot;&quot;).ToLower">
-					<child_m_user_properties>
-						<property
-							name="image_index0"
-							value="ui/skins/default/chaos_gifts/ritual_empty_slot_%S"/>
-						<property
-							name="image_index1"
-							value="ui/skins/default/chaos_gifts/ritual_empty_slot_hover_%S"/>
-						<property
-							name="image_index2"
-							value="ui/skins/default/chaos_gifts/ritual_empty_slot_selected_%S"/>
-						<property
-							name="image_index5"
-							value="ui/skins/default/chaos_gifts/ritual_slot_locked_objective_%S"/>
-						<property
-							name="image_index6"
-							value="ui/skins/default/chaos_gifts/ritual_slot_locked_objective_hover_%S"/>
-						<property
-							name="image_index8"
-							value="ui/skins/default/chaos_gifts/ritual_empty_slot_%S"/>
-					</child_m_user_properties>
-				</callback_with_context>
-			</callbackwithcontextlist>
 			<componentimages>
 				<component_image
 					this="D3EC718B-9163-1E98-B535FE9C7AADAB0B"
@@ -551,18 +465,6 @@
 			uniqueguid="5CF38484-7C04-5FD4-8113888748FBC9F9"
 			currentstate="29BC2097-1BDC-FA4E-87494FE695F94871"
 			defaultstate="29BC2097-1BDC-FA4E-87494FE695F94871">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextPropagator"
-					context_object_id="CcoCampaignInitiativeSet"
-					context_function_id="ActiveInitiativeForSlot(self.ParentContext.ChildIndex)">
-					<child_m_user_properties>
-						<property
-							name="event0"
-							value="FactionInitiativeActivationChanged"/>
-					</child_m_user_properties>
-				</callback_with_context>
-			</callbackwithcontextlist>
 			<states>
 				<default
 					this="29BC2097-1BDC-FA4E-87494FE695F94871"
