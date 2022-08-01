@@ -337,7 +337,7 @@ function rogue_daniel_loader.load_all_data()
         elseif not MOD_DATABASE.forces[this_row.FORCE_KEY] then
             error("invalid force key: "..this_row.FORCE_KEY.. " on row "..i.." of force_set_to_forces")
         else
-            table.insert(MOD_DATABASE.force_sets[this_row.FORCE_SET_KEY], MOD_DATABASE.forces[this_row.FORCE_KEY])
+            table.insert(MOD_DATABASE.force_sets[this_row.FORCE_SET_KEY], this_row.FORCE_KEY)
         end
     end
 
@@ -378,7 +378,7 @@ function rogue_daniel_loader.load_all_data()
         else
             local encounter = {
                 key = this_row.ENCOUNTER_KEY,
-                region = this_row.REGION,
+                region = "settlement:"..this_row.REGION,
                 force_set = MOD_DATABASE.force_sets[this_row.FORCE_SET],
                 battle_type = this_row.BATTLE_TYPE,
                 increments_progress_gate = this_row.INCREMENTS_PROGRESS_GATE,
