@@ -2,6 +2,22 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "luaVersion": "5.1",
+            "name": "GUIDScrambler",
+            "program": "${workspaceFolder}/lua/ReplaceGUID.lua",
+            "request": "launch",
+            "type": "lua",
+            "path": "${workspaceFolder}/lua/?.lua"
+        },
+        {
+            "luaVersion": "5.1",
+            "name": "generateRogueDanielDB",
+            "program": "${workspaceFolder}/lua/createRogueDanielTables.lua",
+            "request": "launch",
+            "type": "lua",
+            "path": "${workspaceFolder}/lua/?.lua"
+        },
+        {
             "type": "lua",
             "request": "launch",
             "name": "Launch",
