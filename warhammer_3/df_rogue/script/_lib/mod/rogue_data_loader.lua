@@ -68,6 +68,8 @@ function rogue_daniel_loader.load_all_data()
             force_fragments  > force_fragment_to_main_units
 
             forces > force_to_force_fragments
+            force_sets > force_set_to_forces
+            progress_gates > encounters
     ]]
 
     --upe_sets > upe_sets_to_upe
@@ -197,7 +199,7 @@ function rogue_daniel_loader.load_all_data()
         else
             local list_index = tonumber(this_row.LIST_INDEX)
             if not list_index then
-               --this should never happen because of the select_set_validation check above
+               --the only value which can trigger this is MANDATORY, which is handled above.
             else
                 MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT_KEY].generated_unit_slots[list_index] = 
                 MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT_KEY].generated_unit_slots[list_index] or {}
@@ -209,7 +211,7 @@ function rogue_daniel_loader.load_all_data()
     end
 
     --forces > force_to_force_fragments
-    local forces_data = req_data("forces")
+    local forces_data = req_data("forces") 
     MOD_DATABASE.forces = {}
     for row_index = 1, #forces_data do
         local this_row = forces_data[row_index]
@@ -236,7 +238,7 @@ function rogue_daniel_loader.load_all_data()
     end
     local force_to_force_fragments_data = req_data("force_to_force_fragments")
     for row_index = 1, #force_to_force_fragments_data do
-        this_row = force_to_force_fragments_data[row_index]
+        local this_row = force_to_force_fragments_data[row_index]
         --[[FORCE_KEY: forces]]
         --[[FORCE_FRAGMENT_KEY: force_fragments]]
         --[[SELECTION_SET: selection_set_enum]]
@@ -249,14 +251,100 @@ function rogue_daniel_loader.load_all_data()
             error("invalid force key: "..this_row.FORCE_KEY.. " on row "..row_index.." of force_to_force_fragments")
         elseif not MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT_KEY] then
             error("invalid force fragment key: "..this_row.FORCE_FRAGMENT_KEY.. " on row "..row_index.." of force_to_force_fragments")
+        elseif this_row.SELECTION_SET == "MANDATORY" then
+            MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[this_row.SELECTION_SET] = 
+            MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[this_row.SELECTION_SET] or {}
+            table.insert(MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[this_row.SELECTION_SET], MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT_KEY])
         else
             local list_index = tonumber(this_row.SELECTION_SET)
             if not list_index then
-                --this should never happen because of the select_set_validation check above
+                --the value which can trigger this is MANDATORY, which is handled above.
             else
                 MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[list_index] = 
                 MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[list_index] or {}
                 table.insert(MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[list_index], MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT_KEY])
+            end
+        end
+    end
+
+    --force_sets > force_set_to_forces
+    local force_sets_data = req_data("force_sets")
+    MOD_DATABASE.force_sets = {}
+    for i = 1, #force_sets_data do
+        local this_row = force_sets_data[i]
+        --[[FORCE_SET_KEY: string]]
+        MOD_DATABASE.force_sets[this_row.FORCE_SET_KEY] = {}
+    end
+    local force_set_to_forces_data = req_data("force_set_to_forces")
+    for i = 1, #force_set_to_forces_data do
+        local this_row = force_set_to_forces_data[i]
+        --[[FORCE_SET_KEY: force_sets]]
+        --[[FORCE_KEY: forces]]
+        if this_row.FORCE_SET_KEY == "" or this_row.FORCE_KEY == "" then
+            --skip this row, its blank.
+        elseif not MOD_DATABASE.force_sets[this_row.FORCE_SET_KEY] then
+            error("invalid force set key: "..this_row.FORCE_SET_KEY.. " on row "..i.." of force_set_to_forces")
+        elseif not MOD_DATABASE.forces[this_row.FORCE_KEY] then
+            error("invalid force key: "..this_row.FORCE_KEY.. " on row "..i.." of force_set_to_forces")
+        else
+            table.insert(MOD_DATABASE.force_sets[this_row.FORCE_SET_KEY], MOD_DATABASE.forces[this_row.FORCE_KEY])
+        end
+    end
+
+    --progress gates > encounters
+    local progress_gates_data = req_data("progress_gates")
+    MOD_DATABASE.progress_gates = {}
+    for i = 1, #progress_gates_data do
+        local this_row = progress_gates_data[i]
+        --[[PROGRESS_GATE_KEY: string]]
+        --[[ACTIVATION_THRESHOLD: string->number]]
+        MOD_DATABASE.progress_gates[this_row.PROGRESS_GATE_KEY] = {
+            activation_threshold = tonumber(this_row.ACTIVATION_THRESHOLD) or 0,
+            generates_encounters = {}, 
+            forces_encounters = {},
+            displaces_encounters = {}
+        }
+    end
+    local encounters_data = req_data("encounters")
+    MOD_DATABASE.encounters = {}
+    for i = 1, #encounters_data do
+        local this_row = encounters_data[i]
+        --[[ENCOUNTER_KEY: string]]
+        --[[REGION: string]]
+        --[[FORCE_SET: force_sets]]
+        --[[BATTLE_TYPE: string]]
+        --[[GENERATED_AT_PROGRESS_GATE: progress_gates]]
+        --[[FORCED_AT_PROGRESS_GATE: progress_gates]]
+        --[[DISPLACED_AT_PROGRESS_GATE: progress_gates]]
+        --[[PROGRESS_GATE_SELECTION_SET: selection_set_enum]]
+        --[[INCREMENTS_PROGRESS_GATE: progress_gates]]
+        --[[GATE_INCREMENT_WEIGHT: string->number]]
+        --TODO add the remaining fields to the encounter table.
+        --TODO properly use the selection set enum.
+        if this_row.ENCOUNTER_KEY == "" or this_row.REGION == "" or this_row.BATTLE_TYPE == "" or this_row.FORCE_SET == "" 
+        or this_row.PROGRESS_GATE_SELECTION_SET == "" or this_row.GATE_INCREMENT_WEIGHT == "" then
+            --skip this row, its blank.
+        elseif #MOD_DATABASE.force_sets[this_row.FORCE_SET] == 0 then
+            error("force set "..this_row.FORCE_SET.." has no forces, but is used on row "..i.." of encounters")
+        else
+            local encounter = {
+                key = this_row.ENCOUNTER_KEY,
+                region = this_row.REGION,
+                force_set = MOD_DATABASE.force_sets[this_row.FORCE_SET],
+                battle_type = this_row.BATTLE_TYPE,
+                increments_progress_gate = this_row.INCREMENTS_PROGRESS_GATE,
+                gate_increment_weight = tonumber(this_row.GATE_INCREMENT_WEIGHT) or 0,
+                progress_gate_selection_set = this_row.PROGRESS_GATE_SELECTION_SET
+            }
+            MOD_DATABASE.encounters[this_row.ENCOUNTER_KEY] = encounter
+            if this_row.GENERATED_AT_PROGRESS_GATE ~= "NEVER" then
+                table.insert(MOD_DATABASE.progress_gates[this_row.GENERATED_AT_PROGRESS_GATE].generates_encounters, encounter)
+            end
+            if this_row.FORCED_AT_PROGRESS_GATE ~= "NEVER" then
+                table.insert(MOD_DATABASE.progress_gates[this_row.FORCED_AT_PROGRESS_GATE].forces_encounters, encounter)
+            end
+            if this_row.DISPLACED_AT_PROGRESS_GATE ~= "NEVER" then
+                table.insert(MOD_DATABASE.progress_gates[this_row.DISPLACED_AT_PROGRESS_GATE].displaces_encounters, encounter)
             end
         end
     end
