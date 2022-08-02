@@ -1,4 +1,4 @@
-
+require("common")
 
 math.randomseed(os.time())
 
@@ -32,6 +32,7 @@ function replace_GUID(...)
     for i = 1, #arg do
         local file = io.open("lua/input/"..arg[i], "r+")
         local file_text = file:read("*a")
+        file:close()
         for MATCHED_GUID in string.gmatch(file_text, guid_find_pattern) do
             log("Matched GUID: "..MATCHED_GUID)
             if UUID_CREATED[MATCHED_GUID] then
@@ -51,11 +52,9 @@ function replace_GUID(...)
         local new_file_path = "lua/output/" .. arg[i] 
         local new_file = io.open(new_file_path, "w+")
         new_file:write(file_text)
+        new_file:flush()
+        new_file:close()
     end
 end
 
-
-return {
-    convert_files = replace_GUID,
-    log = log
-}
+replace_GUID("file_to_convert.twui.xml")
