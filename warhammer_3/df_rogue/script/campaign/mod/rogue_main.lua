@@ -128,6 +128,25 @@ local function ui_callback(call, time, name)
 end
 
 ---comment
+---@param button_name string
+---@param call fun(context: any)
+local function ui_click_callback(button_name, call)
+    core:add_listener(
+        button_name.."ComponentLClickUp",
+        "ComponentLClickUp",
+        function(context) return context.string == button_name end,
+        function(context) 
+            out("Click callback for "..button_name)
+            local ok, err = pcall(call, context)
+            if not ok then 
+                out("Error in callback for "..button_name)
+                out(err)
+                out(debug.traceback())
+            end
+        end, true)
+end
+
+---comment
 ---@param call fun()
 ---@param time number
 ---@param name string
@@ -444,7 +463,10 @@ end
     SettlementList.Filter(ScriptObjectContext("rogue_active_encounters").TableValue.HasValueForKey(SettlementKey, false))
 --]]
 
-
+local function send_selected_encounter_to_ui(settlement_key)
+    out("Selected encounter in region "..tostring(settlement_key))
+    common.set_context_value("rogue_selected_encounter", settlement_key)
+end
 
 ---comment
 ---@param settlement_key string
@@ -465,7 +487,24 @@ local function get_3dui_child_for_settlement(settlement_key)
     end
 end
 
+function dev_ui()
+    local out = function (t)
+        ModLog("ROGUEDEV: "..tostring(t))
+    end
+
+    core:add_listener(
+        "ComponentLClickUp",
+        "ComponentLClickUp",
+        true,
+        function(context) 
+            out("Clicked: "..tostring(context.string))
+        end, true)
+end
+
 function start_ui()
+
+    dev_ui()
+
     out("Creating the Rogue Daniel UI!")
     --3D UI Parent creation and propogation of the root context object
     local worldspace_parent = UIComponent(core:get_ui_root():CreateComponent("rogue3dui", "ui/rogue/rogue3dui"))
@@ -476,8 +515,19 @@ function start_ui()
         out("The Worldspace Parent Failed to Create! Check the rogue3dui.twui.xml file!")
     end
 
+    
+
+    ui_click_callback("encounter_slot", function (context)
+        local slot = UIComponent(context.component)
+        local context_id = slot:GetContextObjectId("CcoCampaignSettlement")
+        -- note to self: this is a weird case, usually you shouldn't need to modify the context_id for get_context_value. CcoCampaignSettlement requires it.
+        local settlement_key = common.get_context_value("CcoCampaignSettlement", "settlement:"..context_id, "SettlementKey")
+        send_selected_encounter_to_ui(settlement_key)
+    end)
+
     --scripted context objects.
     send_encounters_to_ui()
+    send_selected_encounter_to_ui("")
 end
 
 
@@ -503,13 +553,14 @@ function rogue_main()
         for i = 0, faction_list:num_items() - 1 do
             local faction = faction_list:item_at(i)
             if faction:is_human() == false then
-                cm:callback(function ()
-                    cm:kill_all_armies_for_faction(faction)
-                end, math.ceil(i+1/10)/10)
+                cm:kill_all_armies_for_faction(faction)
             end
         end
     end
 
+    --disable the event feed
+    cm:disable_event_feed_events(true, "wh_event_category_diplomacy", "", "")
+    cm:disable_event_feed_events(true, "wh_event_category_character", "", "")
 
     --wait for the loading screen to finish, then set up the UI.
     core:progress_on_loading_screen_dismissed(function ()
@@ -569,7 +620,47 @@ rogue_console = {
     generate_encounter = generate_encounter,
     commence_encounter = commence_encounter
 }
---[[
+--[[UI Notebook:
+
+    -- steal this and the other glory elements to get deamonic favour icons
+    --:root:hud_campaign:resources_bar_holder:resources_bar:daemonic_glory_holder:dy_tzeentch_points:icon
+
+    --character panel
+    --:root:character_details_panel
+    ----delete black_background_4k
+    ----delete panel_frame_wh3
+    ----delete character_name
+    ----delete tabgroup
+    ----delete holder_br
+    ----delete tl_holder
+    ----delete button_bottom_holder
+    ----delete frame_4k
+    ----delete_char_select_list
+    ----skill_pts_holder
+    ----Extract seperately: :root:character_details_panel:character_context_parent:tab_panels:character_details_subpanel:daemon_gifts_holder:body_parts_listview:list_clip:list_box
+    -------rework ContextList callback to list equipped items
+    -------replace images to hard appearence.
+    ----Extract seperately :root:character_details_panel:character_context_parent:tab_panels:stats_effects_holder:unit_information_listview:list_clip:list_box
+    ------for previewing daniel's stats
+    ------delete row_details
+    ------delete details_traits_effects_holder
+    ----Extract seperately :root:character_details_panel:general_selection_panel
+    ------might be useful for a reward panel
+
+
+    -- this makes a great resource icon
+    :root:daemonic_progression:symbols_holder:list_box:CcoCampaignPooledResourcewh3_main_dae_slaanesh_points_0000000069d7e920:upgrade_row_entry:race_symbol_holder
+
+    --!! for encounter title
+    --:root:3d_ui_parent:label_5:list_parent:dy_name 
+
+    --can maybe use this to create a progress bar before you are forced to fight the boss.
+    --:root:3d_ui_parent:label_5:list_parent:status_docker:status_bar:realm_pts_khorne_holder
+
+    --A faction icon with a number next to it - maybe good for telegraphing the rewards?
+    :root:3d_ui_parent:label_5:list_parent:status_docker:status_bar:icon_loan
+
+
     local ok, err = pcall(function()
         rogue_console.commence_encounter("settlement:wh3_main_chaos_region_doomkeep")
     end)
@@ -577,4 +668,15 @@ rogue_console = {
         ModLog(tostring(err))
         ModLog(debug.traceback())
     end
+--]]
+
+--[[Gameplay Notebook:
+
+    --should players have an inventory of Parts? Or should they be given the opportunity to swap them out as a reward which they have to leave or take?
+
+    --start game with a dilemma to select a starting army.
+
+    --make encounter generation use select sets
+
+    --create the god favour resources
 --]]
