@@ -8,12 +8,12 @@
             <settlement_list this="0E1C640C-DC86-7D5C-C2F923170C08BA19">
                 <template_settlement_overlay this="F5209CF2-AD51-52DB-216DAE176EC78A19">
                     <encounter_token this="5CF38484-7C04-5FD4-8113888748FBC9F9">
+						<elite_enemy_background this="709B933A-3E64-2099-408E069D17F312C6"/>
                         <empty_slot this="D92C296A-B766-1406-6DE34B8CA494AE5A">
                             <encounter_slot this="9116E3CD-DE1D-A11C-546F0C2A8BB445EB"/>
                         </empty_slot>
                         <equipped_slot this="33C447A6-36CB-E081-8D4B5E923114DB73">
-                            <elite_enemy_background this="709B933A-3E64-2099-408E069D17F312C6"/>
-                            <equipped_encounter_slot this="36F47708-474F-8874-E34294DF9AA02440"/>
+                            <selected_encounter_slot this="36F47708-474F-8874-E34294DF9AA02440"/>
                         </equipped_slot>
                         <encounter_icons_list this="32D92EDA-DFE6-64EE-AA03FBE849EFC159">
                             <set_cooldown this="4F6867D3-6325-E7A9-F6A0C7D180A450E2"/>
@@ -117,6 +117,9 @@
 							value="1"/>
 					</child_m_user_properties>
 				</callback_with_context>
+				<callback_with_context
+					callback_id="ContextListPropagator"
+					context_object_id="CcoCampaignSettlement"/>
 			</callbackwithcontextlist>
 			<states>
 				<default
@@ -135,7 +138,7 @@
 			offset="0.00,1.00"
 			allowhorizontalresize="false"
 			allowverticalresize="false"
-			visible="true"
+			visible="false"
 			docking="Center"
 			dock_offset="0.00,1.00"
 			component_anchor_point="0.50,0.50"
@@ -143,6 +146,18 @@
 			uniqueguid="33C447A6-36CB-E081-8D4B5E923114DB73"
 			currentstate="7B8C808C-5184-6C21-523C7E0B9312E1DD"
 			defaultstate="7B8C808C-5184-6C21-523C7E0B9312E1DD">
+			<callbackwithcontextlist>
+				<callback_with_context
+					callback_id="ContextVisibilitySetter"
+					context_object_id="CcoCampaignSettlement"
+					context_function_id="ScriptObjectContext(&quot;rogue_selected_encounter&quot;).StringValue == SettlementKey">
+					<child_m_user_properties>
+						<property
+							name="event0"
+							value="ScriptObjectValueUpdatedrogue_selected_encounter"/>
+					</child_m_user_properties>
+				</callback_with_context>
+			</callbackwithcontextlist>
 			<states>
 				<default
 					this="7B8C808C-5184-6C21-523C7E0B9312E1DD"
@@ -185,6 +200,11 @@
 			maskimage="BDF02318-D4FA-9FC1-7607FA4CB5F88F68"
 			currentstate="3AEBA80D-A625-A2C8-DD20F239AC3BB85D"
 			defaultstate="3AEBA80D-A625-A2C8-DD20F239AC3BB85D">
+			<callbackwithcontextlist>
+				<callback_with_context
+					callback_id="ContextObjectStore"
+					context_object_id="CcoCampaignSettlement"/>
+			</callbackwithcontextlist>
 			<componentimages>
 				<component_image
 					this="D3EC718B-9163-1E98-B535FE9C7AADAB0B"
@@ -502,9 +522,9 @@
 				margins="10.00,0.00"
 				vertical_alignment="Center"/>
 		</encounter_icons_list>
-		<equipped_encounter_slot
+		<selected_encounter_slot
 			this="36F47708-474F-8874-E34294DF9AA02440"
-			id="equipped_encounter_slot"
+			id="selected_encounter_slot"
 			allowhorizontalresize="false"
 			allowverticalresize="false"
 			docking="Center"
@@ -592,7 +612,7 @@
 					</imagemetrics>
 				</selected>
 			</states>
-		</equipped_encounter_slot>
+		</selected_encounter_slot>
 		<elite_enemy_background
 			this="709B933A-3E64-2099-408E069D17F312C6"
 			id="elite_enemy_background"
@@ -605,6 +625,7 @@
 			isaspectratiolocked="true"
 			currentstate="70EC9F5A-0E29-CED4-CBC9211ACE164AD1"
 			defaultstate="70EC9F5A-0E29-CED4-CBC9211ACE164AD1">
+
 			<componentimages>
 				<component_image
 					this="66C3DAFE-CD89-0809-7CA9DD6115372E13"
