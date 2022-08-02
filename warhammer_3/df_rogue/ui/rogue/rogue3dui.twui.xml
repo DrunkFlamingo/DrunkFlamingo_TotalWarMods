@@ -15,9 +15,12 @@
                         <equipped_slot this="33C447A6-36CB-E081-8D4B5E923114DB73">
                             <selected_encounter_slot this="36F47708-474F-8874-E34294DF9AA02440"/>
                         </equipped_slot>
-                        <encounter_icons_list this="32D92EDA-DFE6-64EE-AA03FBE849EFC159">
-                            <set_cooldown this="4F6867D3-6325-E7A9-F6A0C7D180A450E2"/>
-                        </encounter_icons_list>
+						<set_cooldown this="4F6867D3-6325-E7A9-F6A0C7D180A450E2"/>
+                        <encounter_icons_list this="32D92EDA-DFE6-64EE-AA03FBE849EFC159"/>
+                        <!--</encounter_icons_list> -->
+						<encounter_name_bar_holder this="D35E8836-C9BF-C03D-B9838F5EDD7BB9F9">
+							<dy_name this="DCE94F57-9DC4-01C0-3C66627446545765"/>
+						</encounter_name_bar_holder>
                     </encounter_token>
                 </template_settlement_overlay>
             </settlement_list>
@@ -498,7 +501,7 @@
 		<encounter_icons_list
 			this="32D92EDA-DFE6-64EE-AA03FBE849EFC159"
 			id="encounter_icons_list"
-			offset="-13.00,76.00"
+			offset="-13.00,105.00"
 			allowverticalresize="false"
 			docking="Bottom Center"
 			dock_offset="0.00,10.00"
@@ -840,6 +843,8 @@
 			offset="10.00,0.00"
 			allowverticalresize="false"
 			priority="60"
+			docking="Bottom Left"
+			dock_offset="2.00,-4.00"
 			tooltipslocalised="true"
 			componentleveltooltip="Cooldown duration"
 			tooltiplabel="ComponentTooltip_a6c1eda2"
@@ -894,5 +899,200 @@
 				</text>
 			</states>
 		</set_cooldown>
+		<encounter_name_bar_holder
+			this="D35E8836-C9BF-C03D-B9838F5EDD7BB9F9"
+			id="encounter_name_bar_holder"
+			offset="-13.00,76.00"
+			allowverticalresize="false"
+			docking="Top Center"
+			dock_offset="-4.00,-18.00"
+			component_anchor_point="0.50,1.00"
+			tooltipslocalised="true"
+			uniqueguid="D35E8836-C9BF-C03D-B9838F5EDD7BB9F9"
+			currentstate="65AA6CD7-BB98-F540-195D43F9FE6EB0A4"
+			defaultstate="65AA6CD7-BB98-F540-195D43F9FE6EB0A4">
+			<states>
+				<default
+					this="65AA6CD7-BB98-F540-195D43F9FE6EB0A4"
+					name="default"
+					width="126"
+					height="34"
+					texthbehaviour="Never split"
+					uniqueguid="65AA6CD7-BB98-F540-195D43F9FE6EB0A4"/>
+			</states>
+			<LayoutEngine
+				type="HorizontalList"
+				sizetocontent="true"
+				margins="10.00,0.00"
+				vertical_alignment="Center"/>
+		</encounter_name_bar_holder>
+		<dy_name
+			this="DCE94F57-9DC4-01C0-3C66627446545765"
+			id="dy_name"
+			offset="-23.00,120.00"
+			allowverticalresize="false"
+			tooltipslocalised="true"
+			uniqueguid="DCE94F57-9DC4-01C0-3C66627446545765"
+			currentstate="96797E11-AF84-F4F0-7E6BB2F9A3408CC4"
+			defaultstate="96797E11-AF84-F4F0-7E6BB2F9A3408CC4">
+			<componentimages>
+				<component_image
+					this="B500AA02-FEE6-4711-EC04C5AAE86AD84C"
+					uniqueguid="B500AA02-FEE6-4711-EC04C5AAE86AD84C"
+					imagepath="ui/skins/default/floating_name_frame.png"/>
+			</componentimages>
+			<states>
+				<allied
+					this="86E9F66A-9615-E1EA-DA192A8BE1F3209B"
+					name="allied"
+					width="162"
+					height="28"
+					text="dy_name"
+					textvalign="Center"
+					texthalign="Center"
+					textxoffset="50.00,50.00"
+					texthbehaviour="Resize"
+					textlabel="dy_name_allied_Text_7a003f"
+					font_m_size="12"
+					font_m_colour="#55AFE6FF"
+					font_m_leading="1"
+					fontcat_name="alliance_ally"
+					text_shader_name="text_outline_t0"
+					textshadervars="0.00,0.00,0.00,1.00"
+					uniqueguid="86E9F66A-9615-E1EA-DA192A8BE1F3209B">
+					<imagemetrics>
+						<image
+							this="27E9542A-6CF0-AFF6-22F89C3B7F5C8918"
+							uniqueguid="27E9542A-6CF0-AFF6-22F89C3B7F5C8918"
+							componentimage="B500AA02-FEE6-4711-EC04C5AAE86AD84C"
+							width="162"
+							height="28"
+							tile="true"
+							dockpoint="Center"
+							margin="0.00,60.00,0.00,60.00"/>
+					</imagemetrics>
+				</allied>
+				<allied_def
+					this="8D39F0DB-E5AC-C819-C242BAFA36C952B7"
+					name="allied_def"
+					width="162"
+					height="28"
+					text="dy_name"
+					textvalign="Center"
+					texthalign="Center"
+					textxoffset="50.00,50.00"
+					texthbehaviour="Resize"
+					textlabel="dy_name_allied_def_Text_7a003f"
+					font_m_size="12"
+					font_m_colour="#55AFE6FF"
+					font_m_leading="1"
+					fontcat_name="alliance_ally"
+					text_shader_name="text_outline_t0"
+					textshadervars="0.00,0.00,0.00,1.00"
+					uniqueguid="8D39F0DB-E5AC-C819-C242BAFA36C952B7">
+					<imagemetrics>
+						<image
+							this="F535B78F-D29C-7013-7DD2F4FF04A5720D"
+							uniqueguid="F535B78F-D29C-7013-7DD2F4FF04A5720D"
+							componentimage="B500AA02-FEE6-4711-EC04C5AAE86AD84C"
+							width="162"
+							height="28"
+							tile="true"
+							dockpoint="Center"
+							margin="0.00,60.00,0.00,60.00"/>
+					</imagemetrics>
+				</allied_def>
+				<enemy
+					this="96797E11-AF84-F4F0-7E6BB2F9A3408CC4"
+					name="enemy"
+					width="162"
+					height="28"
+					text="dy_name"
+					textvalign="Center"
+					texthalign="Center"
+					textxoffset="50.00,50.00"
+					texthbehaviour="Resize"
+					textlabel="dy_name_enemy_Text_7a003f"
+					font_m_size="12"
+					font_m_colour="#C41400FF"
+					font_m_leading="1"
+					fontcat_name="alliance_enemy"
+					text_shader_name="text_outline_t0"
+					textshadervars="0.00,0.00,0.00,1.00"
+					uniqueguid="96797E11-AF84-F4F0-7E6BB2F9A3408CC4">
+					<imagemetrics>
+						<image
+							this="F819B32A-C3DF-0C5C-3137033F92E8F1A3"
+							uniqueguid="F819B32A-C3DF-0C5C-3137033F92E8F1A3"
+							componentimage="B500AA02-FEE6-4711-EC04C5AAE86AD84C"
+							width="162"
+							height="28"
+							tile="true"
+							dockpoint="Center"
+							margin="0.00,60.00,0.00,60.00"/>
+					</imagemetrics>
+				</enemy>
+				<neutral
+					this="DE085DBF-936E-A527-ADCAE5473F6C4AC0"
+					name="neutral"
+					width="162"
+					height="28"
+					text="dy_name"
+					textvalign="Center"
+					texthalign="Center"
+					textxoffset="50.00,50.00"
+					texthbehaviour="Resize"
+					textlabel="dy_name_neutral_Text_7a003f"
+					font_m_size="12"
+					font_m_colour="#FFFFFFFF"
+					font_m_leading="1"
+					fontcat_name="alliance_neutral"
+					text_shader_name="text_outline_t0"
+					textshadervars="0.00,0.00,0.00,1.00"
+					uniqueguid="DE085DBF-936E-A527-ADCAE5473F6C4AC0">
+					<imagemetrics>
+						<image
+							this="D411ACBD-A387-F756-C47D0FACA4280736"
+							uniqueguid="D411ACBD-A387-F756-C47D0FACA4280736"
+							componentimage="B500AA02-FEE6-4711-EC04C5AAE86AD84C"
+							width="162"
+							height="28"
+							tile="true"
+							dockpoint="Center"
+							margin="0.00,60.00,0.00,60.00"/>
+					</imagemetrics>
+				</neutral>
+				<player_owned
+					this="2CB5D020-338B-4747-3DAE1BF183256654"
+					name="player_owned"
+					width="162"
+					height="28"
+					text="dy_name"
+					textvalign="Center"
+					texthalign="Center"
+					textxoffset="50.00,50.00"
+					texthbehaviour="Resize"
+					textlabel="dy_name_player_owned_Text_7a003f"
+					font_m_size="12"
+					font_m_colour="#00FF00FF"
+					font_m_leading="1"
+					fontcat_name="alliance_player"
+					text_shader_name="text_outline_t0"
+					textshadervars="0.00,0.00,0.00,1.00"
+					uniqueguid="2CB5D020-338B-4747-3DAE1BF183256654">
+					<imagemetrics>
+						<image
+							this="8965C82E-2112-E9EF-C58A264C1315B9FB"
+							uniqueguid="8965C82E-2112-E9EF-C58A264C1315B9FB"
+							componentimage="B500AA02-FEE6-4711-EC04C5AAE86AD84C"
+							width="162"
+							height="28"
+							tile="true"
+							dockpoint="Center"
+							margin="0.00,60.00,0.00,60.00"/>
+					</imagemetrics>
+				</player_owned>
+			</states>
+		</dy_name>
 	</components>
 </layout>
