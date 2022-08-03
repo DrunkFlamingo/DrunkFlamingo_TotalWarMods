@@ -21,7 +21,7 @@
 				</encounter_info_panel>
 				<small_bar this="E6573DB7-B97A-5FCA-23F3A1E027FC8CD4">
 					<button_set_holder this="21BC8133-6E19-198E-BE4931AAFB199A09">
-						<button_teleport_confirm this="3F9E97D6-B88C-CF21-835E906B2D65363E">
+						<button_commence_encounter this="3F9E97D6-B88C-CF21-835E906B2D65363E">
 							<button_flame this="0685A382-76CC-E8DE-DB4F795F46BF92C3"/>
 							<eye_right this="6C71FFAF-44C6-3D4B-62D50D55C4D7DC1B"/>
 							<eye_left this="1235EE4E-515A-B48D-25A31E706895A496"/>
@@ -32,13 +32,13 @@
 								<dy_cost this="324F209E-1CA9-04CB-D4E66728B51D954C"/>
 							</costs>
 							<tx this="E89A485A-D5E0-522E-B9BAAAD60D46FAD5"/>
-						</button_teleport_confirm>
-						<button_decline this="883F3209-D082-27D3-CF9E7BD9092B64EC">
+						</button_commence_encounter>
+						<button_decline_encounter this="883F3209-D082-27D3-CF9E7BD9092B64EC">
 							<button_flame this="E00BE21B-7618-2D13-EEEB3F74748B1513"/>
 							<eye_right this="06461EC6-F878-5119-39A9CCFC6792311F"/>
 							<eye_left this="07A50B52-F134-BCE5-E93AF69EDECA5B6C"/>
 							<tx this="2A1BAFFD-23EB-AD7D-415EE46A1146D867"/>
-						</button_decline>
+						</button_decline_encounter>
 					</button_set_holder>
 				</small_bar>
 			</encounter_preview>
@@ -77,15 +77,15 @@
 				</default>
 			</states>
 		</root>
-		<button_decline
+		<button_decline_encounter
 			this="DD1CB6B2-AA3D-9F84-7C22DA99220E5C90"
-			id="button_decline"
+			id="button_decline_encounter"
 			template_id="round_small_button"
 			part_of_template="true"
 			uniqueguid_in_template="82F58892-7F49-4844-B36443AED497BEEF"
 			uniqueguid="DD1CB6B2-AA3D-9F84-7C22DA99220E5C90"
 			dimensions="38.00,38.00"
-			is_visible="false"
+			is_visible="true"
 			offset="0.00,1.00"
 			priority="60"
 			sound_category="UI_GBL_HUD_Generic_Cancel_Decline">
@@ -167,10 +167,10 @@
 				<element value="ui\skins\default\button_round_small_underlay.png"/>
 				<element value=""/>
 			</override_images>
-		</button_decline>
-		<button_teleport_confirm
+		</button_decline_encounter>
+		<button_commence_encounter
 			this="3F9E97D6-B88C-CF21-835E906B2D65363E"
-			id="button_teleport_confirm"
+			id="button_commence_encounter"
 			template_id="fe_square_large_text_tab_toggle"
 			part_of_template="true"
 			uniqueguid_in_template="528B2929-90BF-41F1-8BFA429B5D453BFF"
@@ -267,7 +267,7 @@
 				<element value="ui\skins\default\fe_tab_text_underlay.png"/>
 				<element value="ui\skins\default\fe_tab_text_selected_underlay.png"/>
 			</override_images>
-		</button_teleport_confirm>
+		</button_commence_encounter>
 		<button_flame
 			this="91308192-6B2B-44F4-A4A792235F446323"
 			id="button_flame"
@@ -609,7 +609,20 @@
 			updatewhennotvisible="true"
 			currentstate="BE8F8611-B531-67B5-07383657BE0636B8"
 			defaultstate="BE8F8611-B531-67B5-07383657BE0636B8">
-						<states>
+            <callbackwithcontextlist>
+                <callback_with_context callback_id="ContextInitCampaignRoot"/>
+				<callback_with_context
+					callback_id="ContextPropagator"
+					context_object_id="CcoStaticObject"
+					context_function_id="Join(ScriptObjectContext(&quot;rogue_active_encounters&quot;).TableValue.Value).Filter(Key == ScriptObjectContext(&quot;rogue_selected_encounter&quot;).StringValue).FirstContext">
+                    <child_m_user_properties>
+                        <property
+                            name="event0"
+                            value="ScriptObjectValueUpdatedrogue_selected_encounter"/>
+                    </child_m_user_properties>
+                </callback_with_context>
+			</callbackwithcontextlist>
+			<states>
 				<newstate
 					this="BE8F8611-B531-67B5-07383657BE0636B8"
 					name="NewState"
@@ -1029,6 +1042,18 @@
 			uniqueguid="606150C1-E40B-F8E8-E2337ACD414B8D05"
 			currentstate="00A96B4F-7DA2-F188-73DFAC7B45219BFF"
 			defaultstate="00A96B4F-7DA2-F188-73DFAC7B45219BFF">
+            <callbackwithcontextlist>
+				<callback_with_context
+					callback_id="ContextTextLabel"
+					context_object_id="CcoScriptTableNode"
+					context_function_id="Join(Value).Filter(Key == &quot;localised_name&quot;).FirstContext.Value">
+					<child_m_user_properties>
+						<property
+							name="suppress_localise_asserts"
+							value=""/>
+					</child_m_user_properties>
+				</callback_with_context>
+			</callbackwithcontextlist>
 			<userproperties>
 				<property
 					name="dynamic_child"
@@ -1357,6 +1382,7 @@
 			docking="Bottom Right"
 			dock_offset="-15.00,2.00"
 			component_anchor_point="1.00,1.00"
+            visible="false"
 			priority="50"
 			tooltipslocalised="true"
 			uniqueguid="03539053-F296-F441-FAD8FC980D6D9A7B"
