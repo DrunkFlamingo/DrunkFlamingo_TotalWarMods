@@ -1,5 +1,15 @@
+local log_tab = ""
+local function tab_log(n)
+    log_tab = log_tab.."\t"
+end
+local function untab_log(n)
+    log_tab = string.gsub(log_tab, "\t", "", 1)
+end
+local function reset_log_tab()
+    log_tab = ""
+end
 local out = function(t)
-    ModLog("DRUNKFLAMINGO: "..tostring(t).." (rogue_main.lua)")
+    ModLog("DRUNKFLAMINGO:"..log_tab.." "..tostring(t).." (rogue_main.lua)")
 end
 
 --- load a lua file with the correct environment
@@ -231,7 +241,6 @@ local template_fragment_entry = {
     ["allowed_as_reward"] = true ---@type boolean
 }
 
----@module 'rogue_data_loader'
 
 local mod_database = rogue_daniel_loader.load_all_data()
 
@@ -283,9 +292,12 @@ end
 ---@param fragment ROGUE_DATA_FRAGMENT_ENTRY
 ---@return ROGUE_DATA_UNIT_ENTRY_LIST
 local function generate_units_from_force_fragment(fragment)
+    --TODO might need to rework this to be able to hide unit fragments in the preview screen.
     local unit_list = {}
     add_list_into_list(unit_list, fragment.mandatory_units)
+    out("Fragment had "..#fragment.mandatory_units.." mandatory units")
     local gen_slots = fragment.generated_unit_slots
+    out("Fragment had "..#gen_slots.." generated unit slots")
     for i = 1, #gen_slots do
         local slot_options = gen_slots[i]
         table.insert(unit_list, slot_options[cm:random_number(#slot_options)])
@@ -300,26 +312,37 @@ local function generate_force(force_key)
     ---@class GENERATED_FORCE
     local force = {} 
     local force_data = mod_database.forces[force_key]
-
+    out("Generating force: "..force_key)
     force.key = force_key
 
     local faction_options = force_data.faction_set
     force.faction = faction_options[cm:random_number(#faction_options)]
-
+    tab_log(1)
+    out("Selected faction: "..force.faction)
     force.difficulty = force_data.base_difficulty ---@type integer
     force.units = {} ---@type ROGUE_DATA_UNIT_ENTRY_LIST
     local fragment_list = force_data.force_fragments
     local mandatory_fragments = fragment_list["MANDATORY"] or {}
+    out("Adding "..#mandatory_fragments.." mandatory fragments")
     for i = 1, #mandatory_fragments do
         local fragment = mandatory_fragments[i]
+        tab_log(1)
+        out("Adding fragment: "..fragment.force_fragment_key)
         add_list_into_list(force.units, generate_units_from_force_fragment(fragment))
         force.difficulty = force.difficulty + fragment.difficulty_delta
+        out("Difficulty increased to "..force.difficulty)
+        untab_log(1)
     end
+    out(" Adding "..#fragment_list.." generated fragment slots")
     for i = 1, #fragment_list do
         local fragment_options = fragment_list[i]
         local fragment = fragment_options[cm:random_number(#fragment_options)]
+        tab_log(1)
+        out("Adding fragment: "..fragment.force_fragment_key)
         add_list_into_list(force.units, generate_units_from_force_fragment(fragment))
         force.difficulty = force.difficulty + fragment.difficulty_delta
+        out("Difficulty increased to "..force.difficulty)
+        untab_log(1)
     end
     force.unit_string = force.units[1].unit_key
     for i = 2, #force.units do
@@ -329,9 +352,14 @@ local function generate_force(force_key)
 
     local commander_options = force_data.commander_set
     force.commander = commander_options[cm:random_number(#commander_options)] ---@type ROGUE_DATA_COMMANDER_ENTRY
+    out("Selected commander: "..force.commander.commander_key.." of subtype "..force.commander.agent_subtype)
     force.difficulty = force.difficulty + force.commander.difficulty_delta
+    tab_log(1)
+    out("Difficulty increased to "..force.difficulty)
+    untab_log(1)
 
 
+    untab_log(1)
     return force
 end
 
@@ -347,28 +375,40 @@ local function generate_encounter(encounter_key, is_forced_encounter)
         out("Displacing this encounter!") 
         --TODO - handle this case
     end
-
+    out("generating encounter: "..encounter_key.. " in region: "..encounter_data.region.." is forced: "..tostring(is_forced_encounter or false))
+    tab_log(1)
     ---@class GENERATED_ENCOUNTER
     local encounter = {}
 
     encounter.key = encounter_key ---@type string
+
+    --TODO localize this
+    encounter.localised_name = encounter_key
+
     --create a force for the encounter
     local force_set = encounter_data.force_set
+    out("Selecting a force from "..#force_set.." options")
     local selected_force_key = force_set[cm:random_number(#force_set)]
     local force = generate_force(selected_force_key)
     encounter.force = force ---@type GENERATED_FORCE
 
+    --TODO battle type
+    out("DEV/ BATTLE TYPE NOT IMPLEMENTED YET, DEFAULTS TO LAND_ATTACK")
+    encounter.battle_type = "LAND_ATTACK" ---@type string
+
     --TODO - generate rewards
+    out("DEV/ REWARDS NOT IMPLEMENTED YET, DEFAULTS TO NONE")
 
     active_encounters[encounter_data.region] = encounter
 
+    untab_log(1)
     return encounter
 end
 
 local function progress_gate_activated(progress_gate)
     out("Progress gate "..progress_gate.." activated!")
     local gate_data = mod_database.progress_gates[progress_gate]
-
+    tab_log(1)
     --loop through the encounters displaced by this gate and, if they are active, remove them.
     local displaces_encounters = gate_data.displaces_encounters
     for i = 1, #displaces_encounters do
@@ -390,7 +430,7 @@ local function progress_gate_activated(progress_gate)
         local encounter_key = forces_encounters[cm:random_number(#forces_encounters)].key
         queue_forced_encounter(generate_encounter(encounter_key, true))
     end
-
+    untab_log(1)
     send_encounters_to_ui()
 end 
 
@@ -463,9 +503,49 @@ end
     SettlementList.Filter(ScriptObjectContext("rogue_active_encounters").TableValue.HasValueForKey(SettlementKey, false))
 --]]
 
+---send a command from UI code to gameplay code
+---@param command_key string
+---@param ... any
+local function ui_command(command_key, ...)
+    --TODO rewrite this function to use UITrigger for multiplayer safety.
+    --not sure this mod will ever be multiplayer compatible, but maybe one day.
+    local commands = {
+        ["commence_encounter"] = commence_encounter
+    }
+    local command = commands[command_key]
+    if not command then
+        error("No UI command found for key "..command_key)
+    else
+        command(...)
+    end
+end
+
+
+---@return UIC
+local function get_or_create_encounter_preview()
+    local panel_name = "rogue_encounter_preview"
+    local existing_panel = find_uicomponent(core:get_ui_root(), panel_name)
+    if existing_panel then
+        return existing_panel
+    else
+        local new_panel = UIComponent(core:get_ui_root():CreateComponent(panel_name, "ui/rogue/rogue_encounter_preview"))
+        new_panel:SetContextObject(cco("CcoCampaignRoot", ""))
+        return new_panel
+    end
+end
+
 local function send_selected_encounter_to_ui(settlement_key)
     out("Selected encounter in region "..tostring(settlement_key))
     common.set_context_value("rogue_selected_encounter", settlement_key)
+    if settlement_key ~= "" then
+        get_or_create_encounter_preview()
+    end
+end
+
+local function clear_encounter_selection()
+    get_or_create_encounter_preview():DestroyChildren()
+    get_or_create_encounter_preview():Destroy()
+    common.set_context_value("rogue_selected_encounter", "")
 end
 
 ---comment
@@ -515,14 +595,29 @@ function start_ui()
         out("The Worldspace Parent Failed to Create! Check the rogue3dui.twui.xml file!")
     end
 
-    
-
+    --select encounter
     ui_click_callback("encounter_slot", function (context)
         local slot = UIComponent(context.component)
         local context_id = slot:GetContextObjectId("CcoCampaignSettlement")
         -- note to self: this is a weird case, usually you shouldn't need to modify the context_id for get_context_value. CcoCampaignSettlement requires it.
         local settlement_key = common.get_context_value("CcoCampaignSettlement", "settlement:"..context_id, "SettlementKey")
         send_selected_encounter_to_ui(settlement_key)
+    end)
+
+    --commence encounter
+    ui_click_callback("button_commence_encounter", function (context)
+        local selected_encounter = common.get_context_value("ScriptObjectContext(\"rogue_selected_encounter\").StringValue")
+        out("Commence encounter button clicked with UI context "..tostring(selected_encounter))
+        if active_encounters[selected_encounter] then
+            ui_command("commence_encounter", selected_encounter)
+        else
+            error("ERROR - no encounter selected to commence!")
+        end
+    end)
+
+    --cancel encounter
+    ui_click_callback("button_decline_encounter", function (context)
+        clear_encounter_selection()
     end)
 
     --scripted context objects.
@@ -668,6 +763,13 @@ rogue_console = {
         ModLog(tostring(err))
         ModLog(debug.traceback())
     end
+
+    --Join(ScriptObjectContext("rogue_active_encounters").TableValue.ValueForKey(StoredContext("CcoCampaignSettlement").SettlementKey)).FirstContext
+    --Join(ScriptObjectContext("rogue_active_encounters").TableValue.ValueForKey(StoredContext("CcoCampaignSettlement").SettlementKey)).Any(HasValueForKey("localised_name", false))
+    Join(ScriptObjectContext("rogue_active_encounters").TableValue.ValueForKey(StoredContext("CcoCampaignSettlement").SettlementKey)).Filter(HasValueForKey("localised_name", false)).FirstContext
+
+Join(ScriptObjectContext("rogue_active_encounters").TableValue.Value).Filter(Key =="settlement:wh3_main_chaos_region_doomkeep").FirstContext
+Join(ScriptObjectContext(&quot;rogue_active_encounters&quot;).TableValue.Value).Filter(Key == this.SettlementKey).FirstContext
 --]]
 
 --[[Gameplay Notebook:
