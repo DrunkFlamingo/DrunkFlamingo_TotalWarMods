@@ -26,10 +26,29 @@ function export_tag(line, n)
     if tag_guid then
         local tag_name = GUID_to_tag_name[tag_guid]
         if tag_name then
-
-            local tag_start_index = string.find(file_text, tag_name, hierarchy_end_index)
+            log("Searching for "..tag_name.." with GUID "..tag_guid)
+            local guid_found_index = string.find(file_text, escape_string(tag_guid), hierarchy_end_index) 
+            log("We found the guid on line "..tostring(guid_found_index))
+            --we're looking for a start tag which is between the end of the hiarchy and the guid
+            local search_start_index = hierarchy_end_index
+            log("Starting to search for the start tag at index "..tostring(search_start_index))
             local tag_end_search = string.gsub(tag_name, "<", "") .. ">"
-            local tag_end_index = string.find(file_text, tag_end_search, hierarchy_end_index) 
+            local timeout = 500
+            while string.find(file_text, tag_end_search, search_start_index) < guid_found_index do
+                local st, en = string.find(file_text, tag_end_search, search_start_index)
+                log("There was an end tag from index "..tostring(st).." to "..tostring(en))
+                log("that is before the guid, so we're going to search after that")
+                search_start_index = en
+                timeout = timeout - 1
+                if timeout == 0 then
+                    log("We timed out looking for the start tag")
+                    error("We timed out looking for the start tag")
+                end
+            end
+            local tag_end_index = string.find(file_text, tag_end_search, guid_found_index) 
+            log("The end of the tag is at index "..tostring(tag_end_index))
+            local tag_start_index = string.find(file_text, tag_name, search_start_index)
+
             local tag_text = string.sub(file_text, tag_start_index, tag_end_index+string.len(tag_end_search))
             file_text, c = string.gsub(file_text, escape_string(tag_text), "")
             log("Removed tag "..tag_name.." "..tag_guid.." on line "..n.." "..c.." times: "..tag_text)
