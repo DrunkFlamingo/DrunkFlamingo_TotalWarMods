@@ -4,7 +4,7 @@
 ---@alias DEMAND_RETURN_DETAIL {player: string, region: string, conqueror: string, elector_faction: string}
 
 
---faction states:
+--faction states: 
 ---@alias EOM_FACTION_STATE "emperor"|"normal"|"civil_war_leader"|"civil_war_enemy"|"civil_war_ally"|"rebel"|"minor" 
 --[[
     Emperor: This is Karl Franz by default. 
@@ -15,7 +15,28 @@
     Rebel: This faction is outside of the Empire.
     Minor: This faction obeys the emperor (for demanding region swaps, demanding peace, etc.) but otherwise does not act as an elector count. 
 --]]
+--faction event tags
+---@alias EOM_EVENT_TAG "sigmar"|"ulric"|"morr"|"taal"|"undead"|"expansionist"|"secessionist"|"industrialist"|"naturalist"|"impoverished"|"wealthy"|"diplomatic"|"aggressive"
+--[[
+    Sigmar: This faction is a Sigmarite.
+    Ulric: This faction is a Ulrican.
+    Morr: This faction worships Morr.
+    Taal: This faction worships Taal and other minor gods.
+    Undead: This faction is an undead faction.
+    Expansionist: This faction favours the reclaimation of the Empire.
+    Secessionist: This faction favours a weak empire and is likely to seceed.
+    Industrialist: This faction has significant industrial capacity.
+    Naturalist: This faction has to contend with untamed forest.
+    Impoverished: This faction is a poor and under-populated faction.
+    Wealthy: This faction is a wealthy faction.
+    Diplomatic: This faction will broker deals with others
+    Aggressive: This faction will seek war with others.
+]]
 ---@alias EOM_FACTION {key: string, state: EOM_FACTION_STATE, rival: string}
+
+---@alias EOM_TARGETTED_EVENT_FACTION {tags: table<string, boolean>}
+---@alias EOM_INSTANTIATED_EVENT {target_1: FACTION_SCRIPT_INTERFACE, target_2: FACTION_SCRIPT_INTERFACE, region_target: REGION_SCRIPT_INTERFACE}
+
 
 ---Section: Utility Functions
 
@@ -105,7 +126,30 @@ local function load_module(file_name, file_path)
     end
   end
   
+---Saves the fields of an object in the campaign save file.
+---@param save_key string
+---@param object table
+---@param ... string
+local function load_and_save_fields_from_object(save_key, object, ...)
+    cm:add_saving_game_callback(function(context)
+        for i = 1, #arg do
+            local field_name = arg[i]
+            local field_value = object[field_name]
+            cm:save_named_value(save_key..field_name, field_value, context)
+        end
+    end)
 
+    cm:add_loading_game_callback(function(context)
+        if cm:is_new_game() then
+            return
+        end
+        for i = 1, #arg do
+            local field_name = arg[i]
+            local field_value = cm:load_named_value(save_key..field_name, context)
+            object[field_name] = field_value
+        end
+    end)
+end
 ---Section: Database entries
 
 local fealty_resource_key = ""
@@ -133,12 +177,20 @@ function eom.init()
     self.civil_war_turn_occured = -1 ---@type integer
 
     --event supression - plot events use these fields to suppress other events.
-    self.civil_war_supressors = {}
-    self.feud_supressors = {}
-    self.border_war_supressors = {}
+    self.civil_war_supressors = {} ---@type table<string, boolean>
+    self.feud_supressors = {} ---@type table<string, boolean>
+    self.border_war_supressors = {} ---@type table<string, boolean>
 
+    --confederations - save a list of factions who are permanently integrated into the player's faction and should not be revived.
+    self.confederated_electors = {} ---@type table<string, boolean>
+
+    load_and_save_fields_from_object("eom_", self, "factions", "emperor_key", "demand_return_queue", "demand_return_details",
+     "is_civil_war_active", "civil_war_leader_faction_key", "civil_war_turn_occured", "civil_war_supressors", "feud_supressors",
+      "border_war_supressors", "confederated_electors")
     return self
 end
+
+---factions
 
 ---Get the EOM_FACTION entry for a given faction by key or by Game Interface Object.
 ---@param faction_key_or_object string|FACTION_SCRIPT_INTERFACE
@@ -184,6 +236,8 @@ function eom:get_civil_war_leader()
         return nil
     end
 end
+
+---fealty
 
 ---get the fealty resource object for a given faction
 ---@param faction_arg string|EOM_FACTION|FACTION_SCRIPT_INTERFACE
@@ -252,6 +306,8 @@ function eom:modify_fealty(faction_arg, factor, value)
     return true
 end
 
+---imperial authority
+
 ---get the authority resource object for a given faction
 ---@param faction_arg string|EOM_FACTION|FACTION_SCRIPT_INTERFACE
 ---@return POOLED_RESOURCE_SCRIPT_INTERFACE
@@ -318,6 +374,9 @@ function eom:modify_authority(faction_arg, factor, value)
     out("authority modified for faction ["..faction_key.."] by ["..value.."] with factor ["..factor.."]")
     return true
 end
+
+
+---diplomatic permissions
 
 ---gets the intended diplomatic permission for the given faction to the given target faction based on their state.
 ---@param first_faction EOM_FACTION
@@ -473,6 +532,8 @@ function eom:update_all_diplomacy_permissions()
     end
 end
 
+---state changing functions
+
 --changes a factions state to civil war enemy, aligning them with the civil war leader.
 ---@param faction EOM_FACTION
 function eom:set_faction_to_civil_war_enemy(faction)
@@ -524,8 +585,51 @@ function eom:change_state_to_emperor(faction)
     --TODO civil war resolution
 end
 
+--Subobject: Generatable Events
+
+---@class EOM_EVENT
+local eom_event = {}
+
+---create a new EOM_EVENT object.
+---@param key string
+---@return EOM_EVENT
+function eom:new_event(key, player_tags)
+    local this_event = {} ---@class EOM_EVENT
+    setmetatable(this_event, {__index = eom_event})
+
+    this_event.model = self
+    this_event.key = key
+    this_event.last_occured = -1
+    this_event.player_tags = player_tags
+
+    this_event.faction_targets = {} ---@type EOM_TARGETTED_EVENT_FACTION[]
+    this_event.region_target = "" ---@type string|integer
+
+    this_event.condition = function(event, event_instance, model)
+        return true
+    end---@type fun(EOM_EVENT, EOM_MODEL): boolean
+
+    this_event.payload_generator  = function ()
+        
+    end---@type fun()
+
+    return this_event
+end
+
+---Defines a faction which can be generated as the target of this event.
+---@param tags table<string, boolean>
+function eom_event:add_target_faction(tags)
+    if #self.faction_targets >= 2 then
+        out("Cannot add more than two faction targets to an event.")
+        return
+    end
+    table.insert(self.faction_targets, {tags = tags})
+end
+
+---Tries to find valid factions for this event and checks the condition using them.
 
 
+---core functions
 
 ---called on FirstTickAfterWorldCreated, only in new campaigns.
 ---loads data from the /eom folder to set the starting scenario.
@@ -567,8 +671,7 @@ function eom:setup_new_game()
         self.factions[this_faction_object.key] = this_faction_object
         out("Faction "..this_faction_object.key.." created successfully!")
     end
-    --update all diplomacy permissions
-    self:update_all_diplomacy_permissions()
+
 end
 
 ---called at FirstTickAfterWorldCreated
@@ -577,6 +680,8 @@ function eom:start()
     if cm:is_new_game() then
         eom.setup_new_game()
     end
+    --update all diplomacy permissions
+    self:update_all_diplomacy_permissions()
 end
 
 function eom:add_first_tick_callback()
