@@ -122,8 +122,9 @@
 					</child_m_user_properties>
 				</callback_with_context>
 				<callback_with_context
-					callback_id="ContextListPropagator"
-					context_object_id="CcoCampaignSettlement"/>
+					callback_id="ContextPropagator"
+					context_object_id="CcoCampaignSettlement"
+					context_function_id="Join(ScriptObjectContext(&quot;rogue_active_encounters&quot;).TableValue.Value).Filter(Key == this.SettlementKey).FirstContext"/>
 			</callbackwithcontextlist>
 			<states>
 				<default
@@ -936,6 +937,18 @@
 			uniqueguid="DCE94F57-9DC4-01C0-3C66627446545765"
 			currentstate="96797E11-AF84-F4F0-7E6BB2F9A3408CC4"
 			defaultstate="96797E11-AF84-F4F0-7E6BB2F9A3408CC4">
+			<callbackwithcontextlist>
+				<callback_with_context
+					callback_id="ContextTextLabel"
+					context_object_id="CcoScriptTableNode"
+					context_function_id="Join(Value).Filter(Key == &quot;localised_name&quot;).FirstContext.Value">
+					<child_m_user_properties>
+						<property
+							name="suppress_localise_asserts"
+							value=""/>
+					</child_m_user_properties>
+				</callback_with_context>
+			</callbackwithcontextlist>
 			<componentimages>
 				<component_image
 					this="B500AA02-FEE6-4711-EC04C5AAE86AD84C"
