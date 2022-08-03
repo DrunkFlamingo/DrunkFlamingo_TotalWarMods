@@ -7,16 +7,19 @@ local guid_find_pattern ='(%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%
 
 local hierarchy_end_tag = "</hierarchy>"
 new_file_text = ""
-local GUID_to_tag_name = {}
-local seen_hierarchy_end = false
+GUID_to_tag_name = {}
+seen_hierarchy_end = false
 tag_level_of_last_tag = 0
 
 local file = io.open("lua/input/extract_hierarchy.xml", "r+")
-local file_text = file:read("*a")
-local backup_file_text = file_text
+file_text = file:read("*a")
+backup_file_text = file_text
 
 local function escape_string(str)
     return str:gsub("([%(%)%.%%%+%-%*%?%[%^%$%]])", "%%%1")
+end
+local function breakpoint()
+    
 end
 
 
@@ -47,7 +50,7 @@ function export_tag(line, n)
             end
             local tag_end_index = string.find(file_text, tag_end_search, guid_found_index) 
             log("The end of the tag is at index "..tostring(tag_end_index))
-            local tag_start_index = string.find(file_text, tag_name, search_start_index)
+            local tag_start_index = string.find(file_text, tag_name.."[\n\t%s]+", search_start_index)
 
             local tag_text = string.sub(file_text, tag_start_index, tag_end_index+string.len(tag_end_search))
             file_text, c = string.gsub(file_text, escape_string(tag_text), "")
@@ -96,6 +99,8 @@ for line in string.gmatch(file_text, "[^\n]+") do
     table.insert(file_lines, line)
 end
 handle_lines(file_lines)
+
+breakpoint()
 
 local function output_result()
     file:close()
