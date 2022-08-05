@@ -222,6 +222,15 @@ local template_unit_entry = {
     unit_key = "" ---@type string
 }
 ---@alias ROGUE_DATA_UNIT_ENTRY_LIST ROGUE_DATA_UNIT_ENTRY[]
+---@alias ROGUE_SELECTION_SET "MANDATORY"|integer
+---@alias ROGUE_BATTLE_TYPE "LAND_ATTACK"|"LAND_DEFEND"|"SIEGE_ATTACK"|"SIEGE_DEFEND"|"AMBUSH_ATTACK"|"AMBUSH_DEFEND"|"REINFORCE_ALLY"|"NONE"
+---@alias DILEMMA_CHOICE_KEY "FIRST"|"SECOND"|"THIRD"| "FOURTH"
+local DILEMMA_CHOICE_KEYS = {
+    "FIRST",
+    "SECOND",
+    "THIRD",
+    "FOURTH"
+} ---@type DILEMMA_CHOICE_KEY[]
 
 ---@class ROGUE_DATA_COMMANDER_ENTRY
 local template_commander_entry = {
@@ -241,8 +250,81 @@ local template_fragment_entry = {
     ["allowed_as_reward"] = true ---@type boolean
 }
 
+---@class ROGUE_DATA_FORCE_TEMPLATE
+local template_force_entry = {
+    ["base_difficulty"] = 0, ---@type integer
+    ["force_fragments"] = {}, ---@type ROGUE_DATA_FRAGMENT_ENTRY[]
+    ["force_key"] = "", ---@type string
+    ["commander_set"] = {}, ---@type ROGUE_DATA_COMMANDER_ENTRY[]
+    ["faction_set"] = {} ---@type string[]
+}
 
-local mod_database = rogue_daniel_loader.load_all_data()
+
+---@class ROGUE_DATA_ENCOUNTER_ENTRY
+local template_encounter_entry = {
+    ["region"] = "", ---@type string
+    ["duration"] = 0, ---@type integer
+    ["increments_progress_gate"] = "INTRODUCTION", ---@type string
+    ["gate_increment_weight"] = 1, ---@type integer
+    ["boss_overlay"] = false, ---@type boolean
+    ["reward_set"] = "", ---@type string
+    ["key"] = "starting_battle", ---@type string
+    ["inciting_incident_key"] = "", ---@type string
+    ["post_battle_dilemma_override"] = "", ---@type string
+    ["battle_type"] = "LAND_ATTACK", ---@type ROGUE_BATTLE_TYPE
+    ["progress_gate_selection_set"] = "MANDATORY",  ---@type ROGUE_SELECTION_SET
+    ["force_set"] = {} ---@type string[]
+}
+
+---@class ROGUE_DATA_ARMORY_PART_SET_ENTRY
+local template_armory_part_set_entry = {
+    mandatory_parts = {}, ---@type string[]
+    generated_part_slots = {} ---@type string[][]
+}
+
+---@class ROGUE_DATA_REWARD_ENTRY
+local template_reward_entry = {
+        costs_resource = "", ---@type string
+        costs = 0, ---@type integer
+        force_fragment_key = "", ---@type string
+        armory_part_set = {} ---@type ROGUE_DATA_ARMORY_PART_SET_ENTRY[]
+}
+
+---@class ROGUE_DATA_CHOICE_DETAIL_ENTRY
+local template_choice_detail_ENTRY = {
+    mandatory_reward_components = {}, ---@type ROGUE_DATA_REWARD_ENTRY[]
+    generated_reward_components = {} ---@type ROGUE_DATA_REWARD_ENTRY[][]
+}
+
+ ---@class ROGUE_DATA_PLAYER_CHARACTER_ENTRY
+ local template_player_character = {
+    ["start_gate"] = "", ---@type string
+    ["start_reward_set"] = "" ---@type string
+ }
+
+ ---@class ROGUE_DATA_PROGRESS_GATE_ENTRY
+ local template_progress_gate = {
+    ["activation_threshold"] = 9999,
+    ["generates_encounters"] = {}, ---@type ROGUE_DATA_ENCOUNTER_ENTRY[]
+    ["displaces_encounters"] = {}, ---@type ROGUE_DATA_ENCOUNTER_ENTRY[]
+    ["forces_encounters"] = {} ---@type ROGUE_DATA_ENCOUNTER_ENTRY[]
+ }
+
+---@class ROGUE_MOD_DATABASE
+local template_mod_database = {
+    ["forces"] = {}, ---@type table<string, ROGUE_DATA_FORCE_TEMPLATE>
+    ["force_sets"] = {}, ---@type string[]
+    ["encounters"] = {}, ---@type table<string, ROGUE_DATA_ENCOUNTER_ENTRY>
+    ["choice_detail"] = {}, ---@type ROGUE_DATA_CHOICE_DETAIL_ENTRY[]
+    ["reward_sets"] = {}, ---@type table<string, ROGUE_DATA_REWARD_ENTRY[]>
+    ["player_chararacters"] = {}, ---@type table<string, ROGUE_DATA_PLAYER_CHARACTER_ENTRY>
+    ["reward_dilemma_choice_details"] = {}, ---@type table<string, table<DILEMMA_CHOICE_KEY, ROGUE_DATA_CHOICE_DETAIL_ENTRY[]>>
+    ["progress_gates"] = {} ---@type table<string, ROGUE_DATA_PROGRESS_GATE_ENTRY>
+}
+
+
+local mod_database = rogue_daniel_loader.load_all_data() ---@type ROGUE_MOD_DATABASE
+local state = {}
 
 if not Forced_Battle_Manager then
     load_module("wh2_campaign_forced_battle_manager", "script/campaign/")
@@ -278,8 +360,71 @@ local function send_rewards_to_ui()
     common.set_context_value("rogue_pending_rewards", pending_rewards)
 end
 
+---SECTION: GENERATION FUNCTIONS FOR REWARDS
 
----SECTION: GENERATION FUNCTIONS
+---comment
+---TODO make a template for the details table
+---@param payload CAMPAIGN_PAYLOAD_BUILDER_SCRIPT_INTERFACE
+---@param details any
+---@return CAMPAIGN_PAYLOAD_BUILDER_SCRIPT_INTERFACE
+local function generate_dilemma_payload_from_details(payload, details)
+
+    return payload
+end
+
+
+
+---comment
+---@param dilemma string
+---@return CAMPAIGN_DILEMMA_BUILDER_SCRIPT_INTERFACE
+local function generate_reward_dilemma(dilemma)
+    local dilemma_details = mod_database.reward_dilemma_choice_details[dilemma]
+    local dilemma_builder = cm:create_dilemma_builder(dilemma)
+
+    for i = 1, #DILEMMA_CHOICE_KEYS do
+        local choice_key = DILEMMA_CHOICE_KEYS[i]
+        local choice_details = dilemma_details[choice_key]
+        if choice_details then
+            dilemma_builder:add_choice_payload(choice_key, generate_dilemma_payload_from_details(cm:create_payload(), choice_details))
+        end
+    end
+
+    --TODO add player details to the dilemma
+    return dilemma_builder
+end
+
+---comment
+
+
+---TODO make a template for the reward_set table
+---why does this function exist?
+---comment
+
+---@return CAMPAIGN_DILEMMA_BUILDER_SCRIPT_INTERFACE
+local function generate_reward_for_encounter(encounter)
+    local reward_sets = mod_database.reward_sets[encounter.reward_set]
+    out("generating reward for encounter "..encounter.key.." with reward set "..encounter.reward_set)
+    tab_log(1)
+    local dilemma_options = {}
+    local reward_set = reward_sets[cm:random_number(#reward_sets)]
+    out("filtering the reward set")
+    tab_log(1)
+    for i = 1, #reward_set do
+        local reward = reward_set[i]
+            --TODO add resource and resource thresholds filters
+        table.insert(dilemma_options, reward.dilemma)
+        out("dilemma "..reward.dilemma.." is valid")
+    end
+    untab_log(1)
+    local selected_dilemma = dilemma_options[cm:random_number(#dilemma_options)]
+    out("selected dilemma "..selected_dilemma)
+    local reward_dilemma = generate_reward_dilemma(selected_dilemma) 
+    untab_log(1)
+    return reward_dilemma
+end
+
+
+---SECTION: GENERATION FUNCTIONS FOR ENEMIES
 ---These functions are used to generate randomized forces, commanders, rewards, and encounters
 
 
@@ -368,7 +513,7 @@ end
 ---@param is_forced_encounter boolean
 ---@return GENERATED_ENCOUNTER
 local function generate_encounter(encounter_key, is_forced_encounter)
-    local encounter_data = mod_database.encounters[encounter_key]
+    local encounter_data = mod_database.encounters[encounter_key] ---@type ROGUE_DATA_ENCOUNTER_ENTRY
 
     if active_encounters[encounter_data.region] then
         out("There is already an encounter "..tostring(active_encounters[encounter_data.region].key).. "  in this region: "..encounter_data.region)
@@ -625,6 +770,7 @@ function start_ui()
     send_selected_encounter_to_ui("")
 end
 
+---SECTION: MAIN
 
 ---called by the system on FirstTick
 function rogue_main()
@@ -690,7 +836,7 @@ function rogue_main()
         out("Game Starting Callback")
         create_event_handlers()
         if cm:is_new_game() then
-            increment_progress_gate_progress("NEW_GAME", 1)
+            increment_progress_gate_progress("NEW_GAME_DANIEL", 1)
         end
     end, 0.1, "GAMESTARTCALLBACK")
 end
@@ -709,11 +855,28 @@ local function generate_and_print_force_with_key(key)
     out("Commander: "..force.commander.commander_key)
 end
 
+---comment
+---@param encounter_key string
+---@param tries integer
+local function test_encounter_force_generation(encounter_key, tries)
+    local encounter_data = mod_database.encounters[encounter_key] ---@type ROGUE_DATA_ENCOUNTER_ENTRY
+    local force_set = mod_database.force_sets[encounter_data.force_set] 
+    for i = 1, #force_set do 
+        local forces = mod_database.forces[force_set]
+        for j = 1, #forces do
+            for _ = 1, #(tries or 3) do
+                generate_and_print_force_with_key(forces[j])
+            end
+        end
+    end
+end
+
 
 rogue_console = {
     generate_and_print_force_with_key = generate_and_print_force_with_key,
+    test_encounter_force_generation = test_encounter_force_generation,
     generate_encounter = generate_encounter,
-    commence_encounter = commence_encounter
+    commence_encounter = commence_encounter,
 }
 --[[UI Notebook:
 

@@ -31,5 +31,20 @@ return {
 	},
 	[11] = {
 		["COMMANDER_SET_KEY"] = "kho_skarbrand_easy"
+	},
+	[12] = {
+		["COMMANDER_SET_KEY"] = "chs_prince"
+	},
+	[13] = {
+		["COMMANDER_SET_KEY"] = "kho_starting_enemy"
+	},
+	[14] = {
+		["COMMANDER_SET_KEY"] = "tze_starting_enemy"
+	},
+	[15] = {
+		["COMMANDER_SET_KEY"] = "sla_starting_enemy"
+	},
+	[16] = {
+		["COMMANDER_SET_KEY"] = "nur_starting_enemy"
 	}
 }

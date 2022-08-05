@@ -31,5 +31,11 @@ return {
 	},
 	[11] = {
 		["FORCE_SET_KEY"] = "tze_nurgle_norm"
+	},
+	[12] = {
+		["FORCE_SET_KEY"] = "kho_nur_norm"
+	},
+	[13] = {
+		["FORCE_SET_KEY"] = "valkia_intro"
 	}
 }

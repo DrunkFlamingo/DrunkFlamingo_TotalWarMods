@@ -1,48 +1,63 @@
 require("common")
 --[[
-    Rogue Daniel Database - commander_set_to_commanders.tsv
-    Rogue Daniel Database - commander_sets.tsv
-    Rogue Daniel Database - commanders.tsv
-    Rogue Daniel Database - effect_bundle_lists.tsv
-    Rogue Daniel Database - effect_bundle_lists_to_effect_bundles.tsv
-    Rogue Daniel Database - faction_sets.tsv
-    Rogue Daniel Database - faction_sets_to_factions.tsv
-    Rogue Daniel Database - force_fragment_to_main_units.tsv
-    Rogue Daniel Database - force_fragments.tsv
-    Rogue Daniel Database - force_to_force_fragments.tsv
-    Rogue Daniel Database - forces.tsv
-    Rogue Daniel Database - upe_sets.tsv
-    Rogue Daniel Database - upe_sets_to_upe.tsv
-    Rogue Daniel Database - progress_gates.tsv
-    Rogue Daniel Database - encounters.tsv
-    Rogue Daniel Database - force_set_to_forces.tsv
-    Rogue Daniel Database - force_sets.tsv
+armory_part_sets.txt
+commander_set_to_commanders.tsv
+commander_sets.tsv
+commanders.tsv
+effect_bundle_lists.lua
+effect_bundle_lists_to_effect_bundles.lua
+encounters.tsv
+faction_sets.tsv
+faction_sets_to_factions.tsv
+force_fragment_to_main_units.tsv
+force_fragments.tsv
+force_set_to_forces.tsv
+force_sets.tsv
+force_to_force_fragments.tsv
+forces.tsv
+player_characters.tsv
+progress_gates.tsv
+reward_dilemma_choice_details.tsv
+reward_sets.tsv
+reward_sets_to_dilemmas.tsv
+upe_sets.lua
+upe_sets_to_upe.lua
     ]]
 local rogue_daniel_file_inputs = {
-    "Rogue Daniel Database - commander_set_to_commanders.tsv",
-    "Rogue Daniel Database - commander_sets.tsv",
-    "Rogue Daniel Database - commanders.tsv",
-    "Rogue Daniel Database - effect_bundle_lists.tsv",
-    "Rogue Daniel Database - effect_bundle_lists_to_effect_bundles.tsv",
-    "Rogue Daniel Database - faction_sets.tsv",
-    "Rogue Daniel Database - faction_sets_to_factions.tsv",
-    "Rogue Daniel Database - force_fragment_to_main_units.tsv",
-    "Rogue Daniel Database - force_fragments.tsv",
-    "Rogue Daniel Database - force_to_force_fragments.tsv",
-    "Rogue Daniel Database - forces.tsv",
-    "Rogue Daniel Database - upe_sets.tsv",
-    "Rogue Daniel Database - upe_sets_to_upe.tsv",
-    "Rogue Daniel Database - progress_gates.tsv",
-    "Rogue Daniel Database - encounters.tsv",
-    "Rogue Daniel Database - force_set_to_forces.tsv",
-    "Rogue Daniel Database - force_sets.tsv"
+    "armory_part_sets",
+    "armory_part_sets_to_armory_parts",
+    "commander_set_to_commanders",
+    "commander_sets",
+    "commanders",
+    "effect_bundle_lists",
+    "effect_bundle_lists_to_effect_bundles",
+    "encounters",
+    "faction_sets",
+    "faction_sets_to_factions",
+    "force_fragment_to_main_units",
+    "force_fragments",
+    "force_set_to_forces",
+    "force_sets",
+    "force_to_force_fragments",
+    "forces",
+    "player_characters",
+    "progress_gates",
+    "reward_dilemma_choice_details",
+    "reward_sets",
+    "reward_sets_to_dilemmas",
+    "upe_sets",
+    "upe_sets_to_upe"
 }
 
 --for each file, parse the TSV format and create a string representing a valid .lua table.
 --print the string to a file in the output folder.
 for i = 1, #rogue_daniel_file_inputs do
-    local file = io.open("lua/input/rogue_daniel_db/"..rogue_daniel_file_inputs[i], "r+")
+    local file = io.open("lua/input/rogue_daniel_db/"..rogue_daniel_file_inputs[i]..".tsv", "r+")
+    if not file then
+        error("Could not read file: "..rogue_daniel_file_inputs[i])
+    end
     local file_text = file:read("*a")
+
     local file_lines = {}
     for line in string.gmatch(file_text, "[^\n]+") do
         table.insert(file_lines, line)
@@ -62,8 +77,7 @@ for i = 1, #rogue_daniel_file_inputs do
             this_row[header_fields[j]] = field
         end
     end
-    local output_file_name = string.gsub(rogue_daniel_file_inputs[i], "Rogue Daniel Database %- ", "")
-    local output_file = io.open("lua/output/rogue_daniel_db/"..string.gsub(output_file_name, ".tsv", ".lua"), "w+")
+    local output_file = io.open("lua/output/rogue_daniel_db/"..rogue_daniel_file_inputs[i]..".lua", "w+")
     output_file:write("return "..table_to_string(retval))
     output_file:flush()
     output_file:close()
@@ -84,6 +98,7 @@ for i = 1, #selection_set_enum do
     select_set_validation[selection_set_enum[i]] = true
 end
 
+
 local req_data = function (file)
     return require("output/rogue_daniel_db/"..file)
 end
@@ -92,21 +107,6 @@ local rogue_daniel_loader = {}
 function rogue_daniel_loader.load_all_data()
     local MOD_DATABASE = {} --this is the table that will be returned.
 
-    local rogue_daniel_file_inputs = {
-        "upe_sets_to_upe",
-        "commander_set_to_commanders",
-        "commander_sets",
-        "commanders",
-        "effect_bundle_lists",
-        "effect_bundle_lists_to_effect_bundles",
-        "faction_sets",
-        "faction_sets_to_factions",
-        "force_fragment_to_main_units",
-        "force_fragments",
-        "force_to_force_fragments",
-        "forces",
-        "upe_sets"
-    }
     --[[
         Files must be loaded in the following hierarchy
 
@@ -119,7 +119,11 @@ function rogue_daniel_loader.load_all_data()
 
             forces > force_to_force_fragments
             force_sets > force_set_to_forces
+            armory_part_sets > armory_part_sets_to_armory_parts
+            reward_dilemma_choice_details
+            reward_sets > reward_set_to_dilemmas
             progress_gates > encounters
+            player_characters
     ]]
 
     --upe_sets > upe_sets_to_upe
@@ -162,8 +166,6 @@ function rogue_daniel_loader.load_all_data()
         --TODO load these once we actually create some
         --MOD_DATABASE.effect_bundle_lists[this_row.EFFECT_BUNDLE_LIST_KEY] = {}
     end
-
-    --commander_sets > commanders > commander_set_to_commanders
     local commander_sets_data = req_data("commander_sets")
     MOD_DATABASE.commander_sets = {}
     for row_index = 1, #commander_sets_data do
@@ -171,6 +173,7 @@ function rogue_daniel_loader.load_all_data()
         --[[COMMANDER_SET_KEY: string]]
         MOD_DATABASE.commander_sets[this_row.COMMANDER_SET_KEY] = {}
     end
+    --commander_sets > commanders > commander_set_to_commanders
     local commanders_data = req_data("commanders")
     MOD_DATABASE.commanders = {}
     for row_index = 1, #commanders_data do
@@ -211,10 +214,8 @@ function rogue_daniel_loader.load_all_data()
     for row_index = 1, #force_fragments_data do
         local this_row = force_fragments_data[row_index]
         --[[FORCE_FRAGMENT_KEY: string]]
-        --[[LOCALISED_NAME: string]]
         --[[DIFFICULTY_DELTA: string->number]]
-        --[[ALLOWED_AS_REWARD: string->boolean]]
-        --[[INTERNAL_DESCRIPTION: string]]
+        --[[LOCALISED_NAME: string]]
         if this_row.FORCE_FRAGMENT_KEY == "" then
             --skip this row, its blank.
         else
@@ -222,8 +223,6 @@ function rogue_daniel_loader.load_all_data()
                 force_fragment_key = this_row.FORCE_FRAGMENT_KEY,
                 localised_name = this_row.LOCALISED_NAME or "",
                 difficulty_delta = tonumber(this_row.DIFFICULTY_DELTA) or 0,
-                allowed_as_reward = this_row.ALLOWED_AS_REWARD == "TRUE",
-                internal_description = this_row.INTERNAL_DESCRIPTION or "",
                 mandatory_units = {},
                 generated_unit_slots = {}
             }
@@ -341,6 +340,120 @@ function rogue_daniel_loader.load_all_data()
         end
     end
 
+    
+    --armory_part_sets > armory_part_set_to_armory_parts
+    local armory_part_sets_data = req_data("armory_part_sets")
+    MOD_DATABASE.armory_part_sets = {}
+    for i = 1, #armory_part_sets_data do
+        local this_row = armory_part_sets_data[i]
+        --[[ARMORY_PART_SET_KEY: string]]
+        MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET_KEY] = {
+            mandatory_parts = {},
+            generated_part_slots = {}
+        }
+    end
+    local armory_part_sets_to_armory_parts = req_data("armory_part_sets_to_armory_parts")
+    for i = 1, #armory_part_sets_to_armory_parts do
+        local this_row = armory_part_sets_to_armory_parts[i]
+        --[[ARMORY_PART_SET: armory_part_sets]]
+        --[[ARMORY_PART: armory_parts]]
+        --[[SELECTION_SET: selection_sets]]
+        if this_row.ARMORY_PART_SET == "" or this_row.ARMORY_PART == "" then
+            --skip this row, its blank.
+        elseif not MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET] then
+            error("invalid armory part set key: "..this_row.ARMORY_PART_SET.. " on row "..i.." of armory_part_set_to_armory_parts")
+        elseif this_row.SELECTION_SET == "MANDATORY" then
+            table.insert(MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET].mandatory_parts, this_row.ARMORY_PART)
+        else
+            local list_index = tonumber(this_row.SELECTION_SET)
+            if not list_index then
+                --the value which can trigger this is MANDATORY, which is handled above.
+            else
+                MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET].generated_part_slots[list_index] = 
+                MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET].generated_part_slots[list_index] or {}
+                table.insert(MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET].generated_part_slots[list_index], this_row.ARMORY_PART)
+            end
+        end
+    end
+
+    --reward_dilemma_choice_details
+    local reward_dilemma_choice_details_data = req_data("reward_dilemma_choice_details")
+    MOD_DATABASE.reward_dilemma_choice_details = {}
+    for i = 1, #reward_dilemma_choice_details_data do
+        local this_row = reward_dilemma_choice_details_data[i]
+        --[[REWARD_DILEMMA: string]]
+        --[[DILEMMA_CHOICE_KEY: string]]
+        --[[SELECTION_SET: selection_sets]]
+        --[[COSTS_RESOURCE: string]]
+        --[[COSTS: string->number]]
+        --[[FORCE_FRAGMENT: force_fragments]]
+        --[[ARMORY_PART_SET: armory_part_sets]]
+        if this_row.REWARD_DILEMMA == "" or this_row.DILEMMA_CHOICE_KEY == "" then
+            --skip this row, its blank.
+        elseif this_row.FORCE_FRAGMENT ~= "" and not MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT] then
+            error("invalid force fragment key: "..this_row.FORCE_FRAGMENT.. " on row "..i.." of reward_dilemma_choice_details")
+        elseif this_row.ARMORY_PART_SET ~= "" and MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET] then
+            error("invalid armory part set key: "..this_row.ARMORY_PART_SET.. " on row "..i.." of reward_dilemma_choice_details")
+        else
+            MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA] = 
+            MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA] or {}
+            MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY] =
+            MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY] or {
+                mandatory_reward_components = {},
+                generated_reward_components = {}
+            }
+            if this_row.SELECTION_SET == "MANDATORY" then
+                table.insert(MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY].mandatory_reward_components, {
+                    costs_resource = this_row.COSTS_RESOURCE,
+                    costs = this_row.COSTS,
+                    force_fragment_key = this_row.FORCE_FRAGMENT,
+                    armory_part_set = MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET]
+                })
+            else
+                local list_index = tonumber(this_row.SELECTION_SET)
+                if not list_index then
+                    
+                else
+                    table.insert(MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY].generated_reward_components[this_row.SELECTION_SET], {
+                        costs_resource = this_row.COSTS_RESOURCE,
+                        costs = this_row.COSTS,
+                        force_fragment_key = this_row.FORCE_FRAGMENT,
+                        armory_part_set = MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET]
+                    })
+                end
+            end
+        end
+    end
+
+    --reward_sets > reward_set_to_dilemmas
+    local reward_sets_data = req_data("reward_sets")
+    MOD_DATABASE.reward_sets = {}
+    for i = 1, #reward_sets_data do
+        local this_row = reward_sets_data[i]
+        --[[REWARD_SET_KEY: string]]
+        MOD_DATABASE.reward_sets[this_row.REWARD_SET_KEY] = {}
+    end
+    local reward_sets_to_dilemmas = req_data("reward_sets_to_dilemmas")
+    for i = 1, #reward_sets_to_dilemmas do
+        local this_row = reward_sets_to_dilemmas[i]
+        --[[REWARD_SET: reward_sets]]
+        --[[DILEMMA: string]]
+        --[[REQUIRES_RESOURCE: string]]
+        --[[RESOURCE_THRESHOLD: string->number]]
+        if this_row.REWARD_SET == "" or this_row.DILEMMA == "" then
+            --skip this row, its blank.
+        elseif not MOD_DATABASE.reward_sets[this_row.REWARD_SET] then
+            error("invalid reward set key: "..this_row.REWARD_SET.. " on row "..i.." of reward_set_to_dilemmas")
+        else
+            table.insert(MOD_DATABASE.reward_sets[this_row.REWARD_SET], {
+                dilemma = this_row.DILEMMA,
+                requires_resource = this_row.REQUIRES_RESOURCE,
+                resource_threshold = tonumber(this_row.RESOURCE_THRESHOLD) or 0
+            })
+        end
+    end
+
+
     --progress gates > encounters
     local progress_gates_data = req_data("progress_gates")
     MOD_DATABASE.progress_gates = {}
@@ -361,6 +474,8 @@ function rogue_daniel_loader.load_all_data()
         local this_row = encounters_data[i]
         --[[ENCOUNTER_KEY: string]]
         --[[REGION: string]]
+        --[[LOCALISED_NAME: string]]
+        --[[LOCALISED_DESCRIPTION: string]]
         --[[FORCE_SET: force_sets]]
         --[[BATTLE_TYPE: string]]
         --[[GENERATED_AT_PROGRESS_GATE: progress_gates]]
@@ -369,12 +484,18 @@ function rogue_daniel_loader.load_all_data()
         --[[PROGRESS_GATE_SELECTION_SET: selection_set_enum]]
         --[[INCREMENTS_PROGRESS_GATE: progress_gates]]
         --[[GATE_INCREMENT_WEIGHT: string->number]]
-        --TODO add the remaining fields to the encounter table.
+        --[[DURATION: string->number]]
+        --[[REWARD_SET: reward_sets]]
+        --[[BOSS_OVERLAY: string->boolean]]
+        --[[POST_BATTLE_DILEMMA_OVERRIDE: string]]
+        --[[INCITING_INCIDENT_KEY: string]]
         if this_row.ENCOUNTER_KEY == "" or this_row.REGION == "" or this_row.BATTLE_TYPE == "" or this_row.FORCE_SET == "" 
-        or this_row.PROGRESS_GATE_SELECTION_SET == "" or this_row.GATE_INCREMENT_WEIGHT == "" then
+        or this_row.PROGRESS_GATE_SELECTION_SET == "" or this_row.GATE_INCREMENT_WEIGHT == "" or this_row.REWARD_SET == "" then
             --skip this row, its blank.
         elseif #MOD_DATABASE.force_sets[this_row.FORCE_SET] == 0 then
             error("force set "..this_row.FORCE_SET.." has no forces, but is used on row "..i.." of encounters")
+        elseif #MOD_DATABASE.reward_sets[this_row.REWARD_SET] == 0 then
+            error("reward set "..this_row.REWARD_SET.." has no members, but is used on row "..i.." of encounters")
         else
             local encounter = {
                 key = this_row.ENCOUNTER_KEY,
@@ -383,7 +504,12 @@ function rogue_daniel_loader.load_all_data()
                 battle_type = this_row.BATTLE_TYPE,
                 increments_progress_gate = this_row.INCREMENTS_PROGRESS_GATE,
                 gate_increment_weight = tonumber(this_row.GATE_INCREMENT_WEIGHT) or 0,
-                progress_gate_selection_set = this_row.PROGRESS_GATE_SELECTION_SET
+                progress_gate_selection_set = this_row.PROGRESS_GATE_SELECTION_SET,
+                duration = tonumber(this_row.DURATION) or 0,
+                reward_set = this_row.REWARD_SET,
+                boss_overlay = this_row.BOSS_OVERLAY == "TRUE",
+                post_battle_dilemma_override = this_row.POST_BATTLE_DILEMMA_OVERRIDE,
+                inciting_incident_key = this_row.INCITING_INCIDENT_KEY
             }
             MOD_DATABASE.encounters[this_row.ENCOUNTER_KEY] = encounter
             if this_row.GENERATED_AT_PROGRESS_GATE ~= "NEVER" then
@@ -395,6 +521,29 @@ function rogue_daniel_loader.load_all_data()
             if this_row.DISPLACED_AT_PROGRESS_GATE ~= "NEVER" then
                 table.insert(MOD_DATABASE.progress_gates[this_row.DISPLACED_AT_PROGRESS_GATE].displaces_encounters, encounter)
             end
+        end
+    end
+    --player_characters
+    local player_characters_data = req_data("player_characters")
+    MOD_DATABASE.player_characters = {}
+    for i = 1, #player_characters_data do
+        local this_row = player_characters_data[i]
+        --[[PLAYABLE_FACTION: string]]
+        --[[START_GATE: progress_gates]]
+        --[[START_REWARD_SET: reward_sets]]
+        if this_row.PLAYABLE_FACTION == "" or this_row.START_GATE == "" or this_row.START_REWARD_SET == "" then
+            --skip this row, its blank.
+        elseif not MOD_DATABASE.progress_gates[this_row.START_GATE] then
+            error("start gate "..this_row.START_GATE.." does not exist, but is used on row "..i.." of player_characters")
+        elseif not MOD_DATABASE.reward_sets[this_row.START_REWARD_SET] then
+            error("start reward set "..this_row.START_REWARD_SET.." does not exist, but is used on row "..i.." of player_characters")
+        elseif #MOD_DATABASE.reward_sets[this_row.START_REWARD_SET] == 0 then
+            error("start reward set "..this_row.START_REWARD_SET.." has no members, but is used on row "..i.." of player_characters")
+        else
+            MOD_DATABASE.player_characters[this_row.PLAYABLE_FACTION] = {
+                start_gate = this_row.START_GATE,
+                start_reward_set = this_row.START_REWARD_SET
+            }
         end
     end
 
