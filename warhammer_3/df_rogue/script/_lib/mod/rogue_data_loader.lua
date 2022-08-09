@@ -51,8 +51,8 @@ function rogue_daniel_loader.load_all_data()
 
             commander_sets > commanders > commander_set_to_commanders
             force_fragments  > force_fragment_to_main_units
-
-            forces > force_to_force_fragments
+            force_fragment_sets > force_fragment_sets_to_force_fragments
+            forces 
             force_sets > force_set_to_forces
             armory_part_sets > armory_part_sets_to_armory_parts
             reward_dilemma_choice_details
@@ -194,6 +194,57 @@ function rogue_daniel_loader.load_all_data()
         end
     end
 
+    --force_fragment_sets > force_fragment_sets_to_force_fragments
+    local force_fragment_sets_data = req_data("force_fragment_sets")
+    MOD_DATABASE.force_fragment_sets = {}
+    for row_index = 1, #force_fragment_sets_data do
+        local this_row = force_fragment_sets_data[row_index]
+        --[[FORCE_FRAGMENT_SET: string]]
+        if this_row.FORCE_FRAGMENT_SET == "" then
+            --skip this row, its blank.
+        else
+            MOD_DATABASE.force_fragment_sets[this_row.FORCE_FRAGMENT_SET] = {
+                key = this_row.FORCE_FRAGMENT_SET,
+                mandatory_fragments = {},
+                generated_fragment_slots = {}
+            }
+        end
+    end
+    local force_fragment_set_to_force_fragments_data = req_data("force_fragment_sets_to_force_fragments")
+    for row_index = 1, #force_fragment_set_to_force_fragments_data do
+        local this_row = force_fragment_set_to_force_fragments_data[row_index]
+        --[[FORCE_FRAGMENT_SET: force_fragment_sets]]
+        --[[FORCE_FRAGMENT_KEY: force_fragments]]
+        --[[HIDE_FRAGMENT: string->boolean]]
+        --[[SELECTION_SET: selection_set_enum]]
+        if this_row.FORCE_FRAGMENT_SET == "" or this_row.FORCE_FRAGMENT_KEY == "" then
+            --skip this row, its blank.
+        elseif not select_set_validation[this_row.SELECTION_SET] then
+            error("invalid selection set enum: "..this_row.SELECTION_SET.. " on row "..row_index.." of force_fragment_set_to_force_fragments")
+        elseif not MOD_DATABASE.force_fragment_sets[this_row.FORCE_FRAGMENT_SET] then
+            error("invalid force fragment set key: "..this_row.FORCE_FRAGMENT_SET.. " on row "..row_index.." of force_fragment_set_to_force_fragments")
+        elseif not MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT_KEY] then
+            error("invalid force fragment key: "..this_row.FORCE_FRAGMENT_KEY.. " on row "..row_index.." of force_fragment_set_to_force_fragments")
+        elseif this_row.SELECTION_SET == "MANDATORY" then
+            table.insert(MOD_DATABASE.force_fragment_sets[this_row.FORCE_FRAGMENT_SET].mandatory_fragments, {
+                force_fragment_key = this_row.FORCE_FRAGMENT_KEY,
+                hidden_fragment = this_row.HIDE_FRAGMENT == "true"
+            })
+        else
+            local list_index = tonumber(this_row.SELECTION_SET)
+            if not list_index then
+               --the only value which can trigger this is MANDATORY, which is handled above.
+            else
+                MOD_DATABASE.force_fragment_sets[this_row.FORCE_FRAGMENT_SET].generated_fragment_slots[list_index] = 
+                MOD_DATABASE.force_fragment_sets[this_row.FORCE_FRAGMENT_SET].generated_fragment_slots[list_index] or {}
+                table.insert(MOD_DATABASE.force_fragment_sets[this_row.FORCE_FRAGMENT_SET].generated_fragment_slots[list_index], {
+                    force_fragment_key = this_row.FORCE_FRAGMENT_KEY,
+                    hidden_fragment = this_row.HIDE_FRAGMENT == "true"
+                })
+            end
+        end
+    end
+
     --forces > force_to_force_fragments
     local forces_data = req_data("forces") 
     MOD_DATABASE.forces = {}
@@ -203,6 +254,7 @@ function rogue_daniel_loader.load_all_data()
         --[[COMMANDER_SET: commander_sets]]
         --[[BASE_DIFFICULTY: string->number]]
         --[[FACTION_SET: faction_sets]]
+        --[[FORCE_FRAGMENT_SET: force_fragment_sets]]
         
         if this_row.FORCE_KEY == "" then
             --skip this row, its blank.
@@ -210,44 +262,16 @@ function rogue_daniel_loader.load_all_data()
             error("Invalid Commander Set key ["..this_row.COMMANDER_SET.."] on row "..row_index.." of forces")
         elseif MOD_DATABASE.faction_sets[this_row.FACTION_SET] == nil then
             error("Invalid Faction Set key ["..this_row.FACTION_SET.."] on row "..row_index.." of forces")
+        elseif not MOD_DATABASE.force_fragment_sets[this_row.FORCE_FRAGMENT_SET] then
+            error("Invalid Force Fragment Set key ["..this_row.FORCE_FRAGMENT_SET.."] on row "..row_index.." of forces")
         else
             MOD_DATABASE.forces[this_row.FORCE_KEY] = {
                 force_key = this_row.FORCE_KEY,
                 commander_set = MOD_DATABASE.commander_sets[this_row.COMMANDER_SET],
                 base_difficulty = tonumber(this_row.BASE_DIFFICULTY) or 0,
                 faction_set = MOD_DATABASE.faction_sets[this_row.FACTION_SET],
-                force_fragments = {}
+                force_fragment_set = MOD_DATABASE.force_fragment_sets[this_row.FORCE_FRAGMENT_SET]
             }
-        end
-    end
-    local force_to_force_fragments_data = req_data("force_to_force_fragments")
-    for row_index = 1, #force_to_force_fragments_data do
-        local this_row = force_to_force_fragments_data[row_index]
-        --[[FORCE_KEY: forces]]
-        --[[FORCE_FRAGMENT_KEY: force_fragments]]
-        --[[SELECTION_SET: selection_set_enum]]
-
-        if this_row.FORCE_KEY == "" or this_row.FORCE_FRAGMENT_KEY == "" then
-            --skip this row, its blank.
-        elseif not select_set_validation[this_row.SELECTION_SET] then
-            error("invalid selection set enum: "..this_row.SELECTION_SET.. " on row "..row_index.." of force_to_force_fragments")
-        elseif not MOD_DATABASE.forces[this_row.FORCE_KEY] then
-            error("invalid force key: "..this_row.FORCE_KEY.. " on row "..row_index.." of force_to_force_fragments")
-        elseif not MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT_KEY] then
-            error("invalid force fragment key: "..this_row.FORCE_FRAGMENT_KEY.. " on row "..row_index.." of force_to_force_fragments")
-        elseif this_row.SELECTION_SET == "MANDATORY" then
-            MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[this_row.SELECTION_SET] = 
-            MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[this_row.SELECTION_SET] or {}
-            table.insert(MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[this_row.SELECTION_SET], MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT_KEY])
-        else
-            local list_index = tonumber(this_row.SELECTION_SET)
-            if not list_index then
-                --the value which can trigger this is MANDATORY, which is handled above.
-            else
-                MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[list_index] = 
-                MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[list_index] or {}
-                table.insert(MOD_DATABASE.forces[this_row.FORCE_KEY].force_fragments[list_index], MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT_KEY])
-            end
         end
     end
 
@@ -321,13 +345,13 @@ function rogue_daniel_loader.load_all_data()
         --[[SELECTION_SET: selection_sets]]
         --[[COSTS_RESOURCE: string]]
         --[[COSTS: string->number]]
-        --[[FORCE_FRAGMENT: force_fragments]]
+        --[[FORCE_FRAGMENT_SET: force_fragment_sets]]
         --[[ARMORY_PART_SET: armory_part_sets]]
         if this_row.REWARD_DILEMMA == "" or this_row.DILEMMA_CHOICE_KEY == "" then
             --skip this row, its blank.
-        elseif this_row.FORCE_FRAGMENT ~= "" and not MOD_DATABASE.force_fragments[this_row.FORCE_FRAGMENT] then
-            error("invalid force fragment key: "..this_row.FORCE_FRAGMENT.. " on row "..i.." of reward_dilemma_choice_details")
-        elseif this_row.ARMORY_PART_SET ~= "" and MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET] then
+        elseif this_row.FORCE_FRAGMENT_SET ~= "" and not MOD_DATABASE.force_fragment_sets[this_row.FORCE_FRAGMENT_SET] then
+            error("invalid force fragment set key: "..this_row.FORCE_FRAGMENT_SET.. " on row "..i.." of reward_dilemma_choice_details")
+        elseif this_row.ARMORY_PART_SET ~= "" and not MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET] then
             error("invalid armory part set key: "..this_row.ARMORY_PART_SET.. " on row "..i.." of reward_dilemma_choice_details")
         else
             MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA] = 
@@ -341,7 +365,7 @@ function rogue_daniel_loader.load_all_data()
                 table.insert(MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY].mandatory_reward_components, {
                     costs_resource = this_row.COSTS_RESOURCE,
                     costs = this_row.COSTS,
-                    force_fragment_key = this_row.FORCE_FRAGMENT,
+                    force_fragment_set = this_row.FORCE_FRAGMENT_SET,
                     armory_part_set = MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET]
                 })
             else
@@ -352,7 +376,7 @@ function rogue_daniel_loader.load_all_data()
                     table.insert(MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY].generated_reward_components[this_row.SELECTION_SET], {
                         costs_resource = this_row.COSTS_RESOURCE,
                         costs = this_row.COSTS,
-                        force_fragment_key = this_row.FORCE_FRAGMENT,
+                        force_fragment_set = this_row.FORCE_FRAGMENT_SET,
                         armory_part_set = MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET]
                     })
                 end

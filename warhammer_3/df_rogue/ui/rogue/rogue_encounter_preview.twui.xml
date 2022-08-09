@@ -861,7 +861,7 @@
 					name="active"
 					width="310"
 					height="51"
-					text="Traverse Rift"
+					text="[PH Start Encounter]"
 					textvalign="Center"
 					texthalign="Center"
 					texthbehaviour="Never split"
@@ -878,7 +878,7 @@
 					name="inactive"
 					width="310"
 					height="51"
-					text="Traverse Rift"
+					text="[PH Start Encounter]"
 					textvalign="Center"
 					texthalign="Center"
 					texthbehaviour="Never split"
@@ -1140,7 +1140,7 @@
 			this="9DFC5EC6-EBEC-2BE2-40F05336BD0B3967"
 			id="encounter_info_panel"
 			offset="171.00,391.00"
-			visible="false"
+			visible="true"
 			docking="Bottom Center"
 			component_anchor_point="0.50,1.00"
 			priority="10"
@@ -1149,7 +1149,7 @@
 			updatewhennotvisible="true"
 			currentstate="865DEDAE-5B0B-95F0-535DA5FA2F07C704"
 			defaultstate="865DEDAE-5B0B-95F0-535DA5FA2F07C704">
-						<componentimages>
+			<componentimages>
 				<component_image
 					this="E4FD3F60-CDA3-F787-2FF34101F92E636A"
 					uniqueguid="E4FD3F60-CDA3-F787-2FF34101F92E636A"
@@ -1273,11 +1273,10 @@
 					name="default"
 					width="606"
 					height="60"
-					text="[PH] Rift short flavour text"
+					text="[PH] Localised Encounter Description"
 					textvalign="Center"
 					texthalign="Center"
 					texthbehaviour="Never split"
-					textlabel="tx_descr_default_Text_d99d4ca8"
 					font_m_font_name="georgia_italic"
 					font_m_size="12"
 					font_m_colour="#A99989FF"
@@ -1350,18 +1349,17 @@
 			uniqueguid="173C72CD-9D2F-A30C-AEFBBACB45E84384"
 			currentstate="91498FA4-AE5E-A3EB-1EA203BA6B886E6E"
 			defaultstate="91498FA4-AE5E-A3EB-1EA203BA6B886E6E">
-						<states>
+			<states>
 				<default
 					this="91498FA4-AE5E-A3EB-1EA203BA6B886E6E"
 					name="default"
 					width="606"
 					height="40"
-					text="Select a Rift in order to traverse to it."
+					text="[PH] Select an encounter, hoe"
 					textvalign="Center"
 					texthalign="Center"
 					texthbehaviour="Never split"
-					textlocalised="true"
-					textlabel="no_node_selected_default_Text_bf5a73e9"
+
 					font_m_size="12"
 					font_m_colour="#A99989FF"
 					font_m_leading="3"

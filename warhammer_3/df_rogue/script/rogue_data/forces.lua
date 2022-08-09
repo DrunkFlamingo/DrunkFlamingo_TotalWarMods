@@ -1,98 +1,44 @@
 return {
 	[1] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "chs_prince",
+		["FORCE_FRAGMENT_SET"] = "SPECIAL_MIRROR",
 		["FACTION_SET"] = "mirror_match",
-		["FORCE_KEY"] = "SPECIAL_MIRROR"
+		["FORCE_KEY"] = "SPECIAL_MIRROR",
+		["COMMANDER_SET"] = "chs_prince",
+		["BASE_DIFFICULTY"] = "0"
 	},
 	[2] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "kho_lord_easy",
+		["FORCE_FRAGMENT_SET"] = "kho_chaos_warband_easy",
 		["FACTION_SET"] = "kho_minor_factions",
-		["FORCE_KEY"] = "kho_chaos_warband_easy"
+		["FORCE_KEY"] = "kho_chaos_warband_easy",
+		["COMMANDER_SET"] = "kho_lord_easy",
+		["BASE_DIFFICULTY"] = "0"
 	},
 	[3] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "kho_starting_enemy",
+		["FORCE_FRAGMENT_SET"] = "starting_battle_kho",
 		["FACTION_SET"] = "kho_minor_factions",
-		["FORCE_KEY"] = "starting_battle_kho"
+		["FORCE_KEY"] = "starting_battle_kho",
+		["COMMANDER_SET"] = "kho_starting_enemy",
+		["BASE_DIFFICULTY"] = "0"
 	},
 	[4] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "nur_starting_enemy",
+		["FORCE_FRAGMENT_SET"] = "starting_battle_nur",
 		["FACTION_SET"] = "nur_minor_factions",
-		["FORCE_KEY"] = "starting_battle_nur"
+		["FORCE_KEY"] = "starting_battle_nur",
+		["COMMANDER_SET"] = "nur_starting_enemy",
+		["BASE_DIFFICULTY"] = "0"
 	},
 	[5] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "sla_starting_enemy",
+		["FORCE_FRAGMENT_SET"] = "starting_battle_sla",
 		["FACTION_SET"] = "sla_minor_factions",
-		["FORCE_KEY"] = "starting_battle_sla"
+		["FORCE_KEY"] = "starting_battle_sla",
+		["COMMANDER_SET"] = "sla_starting_enemy",
+		["BASE_DIFFICULTY"] = "0"
 	},
 	[6] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "tze_starting_enemy",
+		["FORCE_FRAGMENT_SET"] = "starting_battle_tze",
 		["FACTION_SET"] = "tze_minor_factions",
-		["FORCE_KEY"] = "starting_battle_tze"
-	},
-	[7] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "",
-		["FACTION_SET"] = "",
-		["FORCE_KEY"] = ""
-	},
-	[8] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "",
-		["FACTION_SET"] = "",
-		["FORCE_KEY"] = ""
-	},
-	[9] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "",
-		["FACTION_SET"] = "",
-		["FORCE_KEY"] = ""
-	},
-	[10] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "",
-		["FACTION_SET"] = "",
-		["FORCE_KEY"] = ""
-	},
-	[11] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "",
-		["FACTION_SET"] = "",
-		["FORCE_KEY"] = ""
-	},
-	[12] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "",
-		["FACTION_SET"] = "",
-		["FORCE_KEY"] = ""
-	},
-	[13] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "",
-		["FACTION_SET"] = "",
-		["FORCE_KEY"] = ""
-	},
-	[14] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "",
-		["FACTION_SET"] = "",
-		["FORCE_KEY"] = ""
-	},
-	[15] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "",
-		["FACTION_SET"] = "",
-		["FORCE_KEY"] = ""
-	},
-	[16] = {
-		["BASE_DIFFICULTY"] = "0",
-		["COMMANDER_SET"] = "",
-		["FACTION_SET"] = "",
-		["FORCE_KEY"] = ""
+		["FORCE_KEY"] = "starting_battle_tze",
+		["COMMANDER_SET"] = "tze_starting_enemy",
+		["BASE_DIFFICULTY"] = "0"
 	}
 }

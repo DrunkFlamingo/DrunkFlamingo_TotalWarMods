@@ -171,9 +171,6 @@ local function game_callback(call, time, name)
     end, time, name)
 end
 
-local playable_factions = {
-    ["wh3_main_dae_daemon_prince"] = true
-}
 
 local function add_list_into_list(list, list_to_add)
     for i = 1, #list_to_add do
@@ -207,10 +204,25 @@ end
 
 ---Save a table to the save file.
 ---@param table_name string
----@param table any
-local function persist_table(table_name, table)
-    cm:add_saving_game_callback(function(context) cm:save_named_value("rogue_"..table_name, table, context) end)
-    cm:add_loading_game_callback(function(context) table = cm:load_named_value("rogue_"..table_name, {}, context) end)
+---@param t table
+---@param load_func fun(t: table)
+local function persist_table(table_name, t, load_func)
+    if not load_func then
+        error("No load_func passed to persist_table")
+    elseif not t then
+        error("No table passed to persist_table")
+    elseif not table_name then
+        error("No table_name passed to persist_table")
+    elseif type(table_name) ~= "string" then
+        error("table_name passed to persist_table is not a string")
+    end
+    cm:add_saving_game_callback(function(context) cm:save_named_value("rogue_"..table_name, t, context) end)
+    cm:add_loading_game_callback(function(context) 
+        local loaded_table = cm:load_named_value("rogue_"..table_name, t, context) 
+        out("Loaded Rogue table "..table_name)
+        out(table_to_string(loaded_table))
+        load_func(loaded_table)
+    end)
 end
 
 ---SECTION: type Checker Definitions:
@@ -241,40 +253,52 @@ local template_commander_entry = {
 
 ---@class ROGUE_DATA_FRAGMENT_ENTRY
 local template_fragment_entry = {
-    ["difficulty_delta"] = 0, ---@type integer
-    ["localised_name"] = "", ---@type string
-    ["generated_unit_slots"] = {}, ---@type ROGUE_DATA_UNIT_ENTRY_LIST[]
-    ["force_fragment_key"] = "", ---@type string
-    ["mandatory_units"] = {}, ---@type ROGUE_DATA_UNIT_ENTRY[]
-    ["internal_description"] = "", ---@type string
-    ["allowed_as_reward"] = true ---@type boolean
+    difficulty_delta = 0, ---@type integer
+    localised_name = "", ---@type string
+    generated_unit_slots = {}, ---@type ROGUE_DATA_UNIT_ENTRY_LIST[]
+    force_fragment_key = "", ---@type string
+    mandatory_units = {}, ---@type ROGUE_DATA_UNIT_ENTRY[]
+}
+
+---@class ROGUE_DATA_FRAGMENT_SET_MEMBER_ENTRY 
+local template_fragment_set_member_entry = {
+    force_fragment_key = "", ---@type string
+    hidden_fragment = false ---@type boolean
+}
+
+---@class ROGUE_DATA_FRAGMENT_SET_ENTRY
+local template_fragment_set_entry = {
+    key = "", ---@type string
+    mandatory_fragments = {}, ---@type ROGUE_DATA_FRAGMENT_SET_MEMBER_ENTRY[]
+    generated_fragment_slots = {}, ---@type ROGUE_DATA_FRAGMENT_SET_MEMBER_ENTRY[][]
 }
 
 ---@class ROGUE_DATA_FORCE_TEMPLATE
 local template_force_entry = {
-    ["base_difficulty"] = 0, ---@type integer
-    ["force_fragments"] = {}, ---@type ROGUE_DATA_FRAGMENT_ENTRY[]
-    ["force_key"] = "", ---@type string
-    ["commander_set"] = {}, ---@type ROGUE_DATA_COMMANDER_ENTRY[]
-    ["faction_set"] = {} ---@type string[]
+    base_difficulty = 0, ---@type integer
+    force_fragment_set = {}, ---@type ROGUE_DATA_FRAGMENT_SET_ENTRY
+    force_key = "", ---@type string
+    commander_set = {}, ---@type ROGUE_DATA_COMMANDER_ENTRY[]
+    faction_set = {} ---@type string[]
 }
 
 
 ---@class ROGUE_DATA_ENCOUNTER_ENTRY
 local template_encounter_entry = {
-    ["region"] = "", ---@type string
-    ["duration"] = 0, ---@type integer
-    ["increments_progress_gate"] = "INTRODUCTION", ---@type string
-    ["gate_increment_weight"] = 1, ---@type integer
-    ["boss_overlay"] = false, ---@type boolean
-    ["reward_set"] = "", ---@type string
-    ["key"] = "starting_battle", ---@type string
-    ["inciting_incident_key"] = "", ---@type string
-    ["post_battle_dilemma_override"] = "", ---@type string
-    ["battle_type"] = "LAND_ATTACK", ---@type ROGUE_BATTLE_TYPE
-    ["progress_gate_selection_set"] = "MANDATORY",  ---@type ROGUE_SELECTION_SET
-    ["force_set"] = {} ---@type string[]
+    region = "", ---@type string
+    duration = 0, ---@type integer
+    increments_progress_gate = "INTRODUCTION", ---@type string
+    gate_increment_weight = 1, ---@type integer
+    boss_overlay = false, ---@type boolean
+    reward_set = "", ---@type string
+    key = "starting_battle", ---@type string
+    inciting_incident_key = "", ---@type string
+    post_battle_dilemma_override = "", ---@type string
+    battle_type = "LAND_ATTACK", ---@type ROGUE_BATTLE_TYPE
+    progress_gate_selection_set = "MANDATORY",  ---@type ROGUE_SELECTION_SET
+    force_set = {} ---@type string[]
 }
+
 
 ---@class ROGUE_DATA_ARMORY_PART_SET_ENTRY
 local template_armory_part_set_entry = {
@@ -282,49 +306,59 @@ local template_armory_part_set_entry = {
     generated_part_slots = {} ---@type string[][]
 }
 
----@class ROGUE_DATA_REWARD_ENTRY
-local template_reward_entry = {
+---@class ROGUE_DATA_CHOICE_PAYLOAD_ENTRY
+local template_choice_payload = {
         costs_resource = "", ---@type string
         costs = 0, ---@type integer
-        force_fragment_key = "", ---@type string
+        force_fragment_set = "", ---@type string
         armory_part_set = {} ---@type ROGUE_DATA_ARMORY_PART_SET_ENTRY[]
 }
 
+
 ---@class ROGUE_DATA_CHOICE_DETAIL_ENTRY
 local template_choice_detail_ENTRY = {
-    mandatory_reward_components = {}, ---@type ROGUE_DATA_REWARD_ENTRY[]
-    generated_reward_components = {} ---@type ROGUE_DATA_REWARD_ENTRY[][]
+    mandatory_reward_components = {}, ---@type ROGUE_DATA_CHOICE_PAYLOAD_ENTRY[]
+    generated_reward_components = {} ---@type ROGUE_DATA_CHOICE_PAYLOAD_ENTRY[][]
 }
 
  ---@class ROGUE_DATA_PLAYER_CHARACTER_ENTRY
  local template_player_character = {
-    ["start_gate"] = "", ---@type string
-    ["start_reward_set"] = "" ---@type string
+    start_gate = "", ---@type string
+    start_reward_set = "" ---@type string
  }
 
  ---@class ROGUE_DATA_PROGRESS_GATE_ENTRY
  local template_progress_gate = {
-    ["activation_threshold"] = 9999,
-    ["generates_encounters"] = {}, ---@type ROGUE_DATA_ENCOUNTER_ENTRY[]
-    ["displaces_encounters"] = {}, ---@type ROGUE_DATA_ENCOUNTER_ENTRY[]
-    ["forces_encounters"] = {} ---@type ROGUE_DATA_ENCOUNTER_ENTRY[]
+    activation_threshold = 9999,
+    generates_encounters = {}, ---@type ROGUE_DATA_ENCOUNTER_ENTRY[]
+    displaces_encounters = {}, ---@type ROGUE_DATA_ENCOUNTER_ENTRY[]
+    forces_encounters = {} ---@type ROGUE_DATA_ENCOUNTER_ENTRY[]
  }
+
+ ---@class ROGUE_DATA_REWARD_ENTRY
+local template_reward_entry = {
+    dilemma = "", ---@type string
+    resource_threshold = 0, ---@type integer
+    requires_resource = "" ---@type string
+}
 
 ---@class ROGUE_MOD_DATABASE
 local template_mod_database = {
-    ["forces"] = {}, ---@type table<string, ROGUE_DATA_FORCE_TEMPLATE>
-    ["force_sets"] = {}, ---@type string[]
-    ["encounters"] = {}, ---@type table<string, ROGUE_DATA_ENCOUNTER_ENTRY>
-    ["choice_detail"] = {}, ---@type ROGUE_DATA_CHOICE_DETAIL_ENTRY[]
-    ["reward_sets"] = {}, ---@type table<string, ROGUE_DATA_REWARD_ENTRY[]>
-    ["player_chararacters"] = {}, ---@type table<string, ROGUE_DATA_PLAYER_CHARACTER_ENTRY>
-    ["reward_dilemma_choice_details"] = {}, ---@type table<string, table<DILEMMA_CHOICE_KEY, ROGUE_DATA_CHOICE_DETAIL_ENTRY[]>>
-    ["progress_gates"] = {} ---@type table<string, ROGUE_DATA_PROGRESS_GATE_ENTRY>
+    forces = {}, ---@type table<string, ROGUE_DATA_FORCE_TEMPLATE>
+    force_sets = {}, ---@type string[]
+    encounters = {}, ---@type table<string, ROGUE_DATA_ENCOUNTER_ENTRY>
+    choice_detail = {}, ---@type ROGUE_DATA_CHOICE_DETAIL_ENTRY[]
+    reward_sets = {}, ---@type table<string, ROGUE_DATA_REWARD_ENTRY[]>
+    player_characters = {}, ---@type table<string, ROGUE_DATA_PLAYER_CHARACTER_ENTRY>
+    reward_dilemma_choice_details = {}, ---@type table<string, table<DILEMMA_CHOICE_KEY, ROGUE_DATA_CHOICE_DETAIL_ENTRY>>
+    progress_gates = {}, ---@type table<string, ROGUE_DATA_PROGRESS_GATE_ENTRY>
+    force_fragment_sets = {}, ---@type table<string, ROGUE_DATA_FRAGMENT_SET_ENTRY>
+    force_fragments = {} ---@type table<string, ROGUE_DATA_FRAGMENT_ENTRY>
 }
 
 
 local mod_database = rogue_daniel_loader.load_all_data() ---@type ROGUE_MOD_DATABASE
-local state = {}
+local player = {}
 
 if not Forced_Battle_Manager then
     load_module("wh2_campaign_forced_battle_manager", "script/campaign/")
@@ -333,7 +367,7 @@ end
 ---SECTION: Persistent Data
 
 local progress_gates = {} ---@type table<string, integer>
-persist_table("progress_gates", progress_gates)
+persist_table("progress_gates", progress_gates, function(t) active_encounters = t end)
 
 local function was_progress_gate_reached(gate)
     if not progress_gates[gate] then
@@ -344,7 +378,7 @@ end
 
 
 local active_encounters = {} ---@type table<string, GENERATED_ENCOUNTER>
-persist_table("active_encounter_details", active_encounters)
+persist_table("active_encounter", active_encounters, function(t) active_encounters = t end)
 local function send_encounters_to_ui()
     common.set_context_value("rogue_active_encounters", active_encounters)
 end
@@ -352,22 +386,109 @@ end
 --dev, for now, just set a dummy value
 
 local pending_forced_encounters = {} ---@type GENERATED_ENCOUNTER[]
-persist_table("pending_forced_encounters", pending_forced_encounters)
+persist_table("pending_forced_encounters", pending_forced_encounters,  function(t) pending_forced_encounters = t end)
 
 local pending_rewards = {}
-persist_table("pending_rewards", pending_rewards)
+persist_table("pending_rewards", pending_rewards,  function(t) pending_rewards = t end)
 local function send_rewards_to_ui()
     common.set_context_value("rogue_pending_rewards", pending_rewards)
 end
 
+
+
+
+---comment
+---@param fragment ROGUE_DATA_FRAGMENT_ENTRY
+---@return ROGUE_DATA_UNIT_ENTRY_LIST
+local function generate_units_from_force_fragment(fragment)
+    local unit_list = {}
+    add_list_into_list(unit_list, fragment.mandatory_units)
+    out("Fragment had "..#fragment.mandatory_units.." mandatory units")
+    local gen_slots = fragment.generated_unit_slots
+    out("Fragment had "..#gen_slots.." generated unit slots")
+    for i = 1, #gen_slots do
+        local slot_options = gen_slots[i]
+        table.insert(unit_list, slot_options[cm:random_number(#slot_options)])
+    end
+    return unit_list 
+end
+
+local function generate_unit_list_from_force_fragment_set(fragment_set)
+    out("Generating unit list for fragment set: "..fragment_set.key)
+    local unit_list = {}
+    local mandatory_fragments = fragment_set.mandatory_fragments
+    out("Adding "..#mandatory_fragments.." mandatory fragments")
+    for i = 1, #mandatory_fragments do
+        local fragment_set_member = mandatory_fragments[i]
+        tab_log(1)
+        out("Adding fragment: "..fragment_set_member.force_fragment_key)
+        local fragment = mod_database.force_fragments[fragment_set_member.force_fragment_key]
+        add_list_into_list(unit_list, generate_units_from_force_fragment(fragment))
+        untab_log(1)
+    end
+    local generated_fragments = fragment_set.generated_fragment_slots
+    out(" Adding "..#generated_fragments.." generated fragment slots")
+    for i = 1, #generated_fragments do
+        local fragment_options = generated_fragments[i]
+        local fragment_set_member = fragment_options[cm:random_number(#fragment_options)]
+        tab_log(1)
+        out("Adding fragment: "..fragment_set_member.force_fragment_key)
+        local fragment = mod_database.force_fragments[fragment_set_member.force_fragment_key]
+        add_list_into_list(unit_list, generate_units_from_force_fragment(fragment))
+        untab_log(1)
+    end
+    return unit_list 
+end
+
+
+
+
 ---SECTION: GENERATION FUNCTIONS FOR REWARDS
 
 ---comment
----TODO make a template for the details table
 ---@param payload CAMPAIGN_PAYLOAD_BUILDER_SCRIPT_INTERFACE
----@param details any
+---@param reward_component ROGUE_DATA_CHOICE_PAYLOAD_ENTRY
+local function add_reward_component_to_payload(payload, reward_component)
+    --add units to the payload
+    local fragment_set_key = reward_component.force_fragment_set
+    local fragment_set = mod_database.force_fragment_sets[fragment_set_key]
+    if fragment_set then
+        local unit_list = generate_unit_list_from_force_fragment_set(fragment_set)
+        for i = 1, #unit_list do
+            local unit = unit_list[i]
+            payload:add_unit(player.force, unit.unit_key, 1, 0)
+        end
+    else
+        out("No fragment set for this payload")
+    end
+    --TODO, the rest of the reward shit.
+end
+
+---comment
+---TODO make a template for the details table
+---@param choice_key string
+---@param payload CAMPAIGN_PAYLOAD_BUILDER_SCRIPT_INTERFACE
+---@param details ROGUE_DATA_CHOICE_DETAIL_ENTRY
 ---@return CAMPAIGN_PAYLOAD_BUILDER_SCRIPT_INTERFACE
-local function generate_dilemma_payload_from_details(payload, details)
+local function generate_dilemma_payload_from_details(choice_key, payload, details)
+    out("Generating reward payload for choice: " .. choice_key)
+    --add mandatory rewards
+    out("Generating "..#details.mandatory_reward_components.." mandatory components")
+    for i = 1, #details.mandatory_reward_components do
+        local mandatory_reward_component = details.mandatory_reward_components[i]
+        tab_log(1)
+        add_reward_component_to_payload(payload, mandatory_reward_component)
+        untab_log(1)
+    end
+    --add generated rewards
+    out("Generating "..#details.generated_reward_components.." generated components")
+    for i = 1, #details.generated_reward_components do
+        local generated_component_options = details.generated_reward_components[i]
+        local selected_reward_component = generated_component_options[cm:random_number(#generated_component_options)]
+        tab_log(1)
+        add_reward_component_to_payload(payload, selected_reward_component)
+        untab_log(1)
+    end
 
     return payload
 end
@@ -378,18 +499,22 @@ end
 ---@param dilemma string
 ---@return CAMPAIGN_DILEMMA_BUILDER_SCRIPT_INTERFACE
 local function generate_reward_dilemma(dilemma)
+    out("generating reward dilemma: " .. dilemma)
     local dilemma_details = mod_database.reward_dilemma_choice_details[dilemma]
     local dilemma_builder = cm:create_dilemma_builder(dilemma)
-
+    tab_log(1)
     for i = 1, #DILEMMA_CHOICE_KEYS do
         local choice_key = DILEMMA_CHOICE_KEYS[i]
         local choice_details = dilemma_details[choice_key]
         if choice_details then
-            dilemma_builder:add_choice_payload(choice_key, generate_dilemma_payload_from_details(cm:create_payload(), choice_details))
+
+            dilemma_builder:add_choice_payload(choice_key, generate_dilemma_payload_from_details(choice_key, cm:create_payload(), choice_details))
         end
     end
-
+    untab_log(1)
     --TODO add player details to the dilemma
+    dilemma_builder:add_target("default", player.force)
+    
     return dilemma_builder
 end
 
@@ -433,22 +558,7 @@ local function queue_forced_encounter(encounter)
     table.insert(pending_forced_encounters, encounter)
 end
 
----comment
----@param fragment ROGUE_DATA_FRAGMENT_ENTRY
----@return ROGUE_DATA_UNIT_ENTRY_LIST
-local function generate_units_from_force_fragment(fragment)
-    --TODO might need to rework this to be able to hide unit fragments in the preview screen.
-    local unit_list = {}
-    add_list_into_list(unit_list, fragment.mandatory_units)
-    out("Fragment had "..#fragment.mandatory_units.." mandatory units")
-    local gen_slots = fragment.generated_unit_slots
-    out("Fragment had "..#gen_slots.." generated unit slots")
-    for i = 1, #gen_slots do
-        local slot_options = gen_slots[i]
-        table.insert(unit_list, slot_options[cm:random_number(#slot_options)])
-    end
-    return unit_list 
-end
+
 
 ---commentmod_database
 ---@param force_key string
@@ -466,33 +576,15 @@ local function generate_force(force_key)
     out("Selected faction: "..force.faction)
     force.difficulty = force_data.base_difficulty ---@type integer
     force.units = {} ---@type ROGUE_DATA_UNIT_ENTRY_LIST
-    local fragment_list = force_data.force_fragments
-    local mandatory_fragments = fragment_list["MANDATORY"] or {}
-    out("Adding "..#mandatory_fragments.." mandatory fragments")
-    for i = 1, #mandatory_fragments do
-        local fragment = mandatory_fragments[i]
-        tab_log(1)
-        out("Adding fragment: "..fragment.force_fragment_key)
-        add_list_into_list(force.units, generate_units_from_force_fragment(fragment))
-        force.difficulty = force.difficulty + fragment.difficulty_delta
-        out("Difficulty increased to "..force.difficulty)
-        untab_log(1)
-    end
-    out(" Adding "..#fragment_list.." generated fragment slots")
-    for i = 1, #fragment_list do
-        local fragment_options = fragment_list[i]
-        local fragment = fragment_options[cm:random_number(#fragment_options)]
-        tab_log(1)
-        out("Adding fragment: "..fragment.force_fragment_key)
-        add_list_into_list(force.units, generate_units_from_force_fragment(fragment))
-        force.difficulty = force.difficulty + fragment.difficulty_delta
-        out("Difficulty increased to "..force.difficulty)
-        untab_log(1)
-    end
+
+    local fragment_set = force_data.force_fragment_set
+    add_list_into_list(force.units, generate_unit_list_from_force_fragment_set(fragment_set))
+
     force.unit_string = force.units[1].unit_key
     for i = 2, #force.units do
         local unit = force.units[i]
         force.unit_string = force.unit_string..","..unit.unit_key
+        --TODO add difficulty 
     end
 
     local commander_options = force_data.commander_set
@@ -586,7 +678,13 @@ local function increment_progress_gate_progress(progress_gate, increment)
     progress_gates[progress_gate] = (progress_gates[progress_gate] or 0) + increment
     out("Progress gate "..progress_gate.." is now at "..progress_gates[progress_gate])
     if was_progress_gate_reached(progress_gate) then
-        progress_gate_activated(progress_gate)
+        local ok, err = pcall(function()
+            progress_gate_activated(progress_gate)
+        end)
+        if not ok then
+            out("Error while activating progress gate "..progress_gate..": "..tostring(err))
+            out(tostring(debug.traceback()))
+        end
     end
 end
 
@@ -602,6 +700,7 @@ local function on_encounter_completed(encounter_key)
         increment_progress_gate_progress(progress_gate, progress_increment)
     end
 
+    local encounter_reward_dilemma = generate_reward_for_encounter(encounter_key)
     --TODO pend rewards
 
     --remove the encounter from the active encounters list
@@ -636,6 +735,20 @@ local function commence_encounter(settlement_key)
     end
 end
 
+local function grant_starting_reward()
+    local player_character = mod_database.player_characters[player.name]
+    local start_reward_set = mod_database.reward_sets[player_character.start_reward_set]
+    if not start_reward_set then
+        out("No starting reward set for this character!")
+        out("Skipping this")
+    else
+        local random_reward_dilemma = start_reward_set[cm:random_number(#start_reward_set)]
+        local reward_dilemma = generate_reward_dilemma(random_reward_dilemma.dilemma)
+        out("Firing the new game reward dilemma: "..random_reward_dilemma.dilemma)
+        cm:launch_custom_dilemma_from_builder(reward_dilemma, player.faction)  
+    end           
+end
+
 
 local function create_event_handlers()
     
@@ -655,7 +768,8 @@ local function ui_command(command_key, ...)
     --TODO rewrite this function to use UITrigger for multiplayer safety.
     --not sure this mod will ever be multiplayer compatible, but maybe one day.
     local commands = {
-        ["commence_encounter"] = commence_encounter
+        ["commence_encounter"] = commence_encounter,
+        ["grant_starting_reward"] = grant_starting_reward
     }
     local command = commands[command_key]
     if not command then
@@ -779,11 +893,16 @@ function rogue_main()
     if cm:is_multiplayer() then
         out("EXITING- MOD DOES NOT SUPPORT MP GAMES")
         CampaignUI.QuitToWindows()
-    elseif not playable_factions[cm:get_local_faction_name()] then
+    elseif not mod_database.player_characters[cm:get_local_faction_name()] then
        out("EXITING- THIS FACTION IS NOT PLAYABLE")
        CampaignUI.QuitToWindows()
     end
-
+    local player_character = mod_database.player_characters[cm:get_local_faction_name()]
+    player.faction = cm:get_local_faction()
+    player.name = player.faction:name()
+    player.character = player.faction:faction_leader()
+    player.cqi = player.character:command_queue_index()
+    player.force =  player.character:military_force()
 
     --skip all ai faction turns
     ---@diagnostic disable-next-line
@@ -796,6 +915,13 @@ function rogue_main()
             if faction:is_human() == false then
                 cm:kill_all_armies_for_faction(faction)
             end
+        end
+        --remove all the units from the player characters' army.
+        local pc = cm:get_local_faction():faction_leader()
+        local unit_list = pc:military_force():unit_list()
+        for i = 0, unit_list:num_items() - 1 do
+            local unit = unit_list:item_at(i)
+            cm:remove_unit_from_character(cm:char_lookup_str(pc), unit:unit_key())
         end
     end
 
@@ -828,6 +954,9 @@ function rogue_main()
             common.set_context_value("disable_campaign_spacebar_options", 1)
             ui_callback(function ()
                 start_ui()
+                ui_callback(function ()
+                    ui_command("grant_starting_reward")
+                end, 700, "starting_reward_dilemma")
             end, 250, "UISTART")
         end, 100)
     end)
@@ -836,7 +965,8 @@ function rogue_main()
         out("Game Starting Callback")
         create_event_handlers()
         if cm:is_new_game() then
-            increment_progress_gate_progress("NEW_GAME_DANIEL", 1)
+            local start_gate = player_character.start_gate
+            increment_progress_gate_progress(start_gate, 1)
         end
     end, 0.1, "GAMESTARTCALLBACK")
 end
@@ -844,31 +974,55 @@ end
 ---SECTION: Console Commands
 ---testing functions, exposed to the console
 
-local function generate_and_print_force_with_key(key)
+local function generate_and_print_force_with_key(key, optional_logger)
+    local log = optional_logger or out
     local force = generate_force(key)
-    out("Force Generated: "..key)
-    out("Difficulty: "..force.difficulty)
+    log("Force Generated: "..key)
+    log("Difficulty: "..force.difficulty)
+    log("Commander: "..force.commander.commander_key)
     for i = 1, #force.units do
         local unit = force.units[i]
-        out("\t"..unit.unit_key)
+        log("\t"..unit.unit_key)
     end
-    out("Commander: "..force.commander.commander_key)
+    log("")
 end
 
 ---comment
 ---@param encounter_key string
 ---@param tries integer
 local function test_encounter_force_generation(encounter_key, tries)
+    local log_file = io.open("encounter_force_generation_test.txt", "w+")
+    if not log_file then
+        out("ERROR - unable to open encounter_force_generation_test.txt for writing!")
+        return
+    end
+    local logTimeStamp = os.date("%d, %m %Y %X")
+    log_file:write("Encounter test - "..encounter_key.." - "..logTimeStamp.."\n")
+    local function testing_log(t)
+        out(t)
+        log_file:write(t.."\n")
+    end
+    if not tries then
+        tries = 3
+    end
+    testing_log("Attempting generation of force for "..encounter_key.." "..tries.." times")
     local encounter_data = mod_database.encounters[encounter_key] ---@type ROGUE_DATA_ENCOUNTER_ENTRY
-    local force_set = mod_database.force_sets[encounter_data.force_set] 
+    out("Testing encounter force generation for "..encounter_key)
+    tab_log(1)
+    local force_set = encounter_data.force_set
+    out("Force set size: "..#force_set)
+    tab_log(1)
     for i = 1, #force_set do 
-        local forces = mod_database.forces[force_set]
-        for j = 1, #forces do
-            for _ = 1, #(tries or 3) do
-                generate_and_print_force_with_key(forces[j])
-            end
+        local force_key = force_set[i]
+        out("Force key: "..force_key)
+        for _ = 1, tries do
+            generate_and_print_force_with_key(force_key, testing_log)
         end
     end
+    untab_log(1)
+    untab_log(1)
+    log_file:flush()
+    log_file:close()
 end
 
 
@@ -882,6 +1036,8 @@ rogue_console = {
 
     -- steal this and the other glory elements to get deamonic favour icons
     --:root:hud_campaign:resources_bar_holder:resources_bar:daemonic_glory_holder:dy_tzeentch_points:icon
+
+    use the units panel as the base for the charactersheet. 
 
     --character panel
     --:root:character_details_panel

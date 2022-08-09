@@ -86,7 +86,7 @@ return {
 	},
 	[18] = {
 		["FORCE_FRAGMENT_KEY"] = "kho_letters_1",
-		["DIFFICULTY_DELTA"] = "",
+		["DIFFICULTY_DELTA"] = "1",
 		["LOCALISED_NAME"] = ""
 	},
 	[19] = {
@@ -697,6 +697,201 @@ return {
 	[140] = {
 		["FORCE_FRAGMENT_KEY"] = "tze_blue_4",
 		["DIFFICULTY_DELTA"] = "5",
+		["LOCALISED_NAME"] = ""
+	},
+	[141] = {
+		["FORCE_FRAGMENT_KEY"] = "kho_warriors_2",
+		["DIFFICULTY_DELTA"] = "2",
+		["LOCALISED_NAME"] = ""
+	},
+	[142] = {
+		["FORCE_FRAGMENT_KEY"] = "kho_marauders_3",
+		["DIFFICULTY_DELTA"] = "3",
+		["LOCALISED_NAME"] = ""
+	},
+	[143] = {
+		["FORCE_FRAGMENT_KEY"] = "tze_warriors_2",
+		["DIFFICULTY_DELTA"] = "2",
+		["LOCALISED_NAME"] = ""
+	},
+	[144] = {
+		["FORCE_FRAGMENT_KEY"] = "tze_marauders_3",
+		["DIFFICULTY_DELTA"] = "3",
+		["LOCALISED_NAME"] = ""
+	},
+	[145] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_warriors_2",
+		["DIFFICULTY_DELTA"] = "2",
+		["LOCALISED_NAME"] = ""
+	},
+	[146] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_marauders_3",
+		["DIFFICULTY_DELTA"] = "3",
+		["LOCALISED_NAME"] = ""
+	},
+	[147] = {
+		["FORCE_FRAGMENT_KEY"] = "nur_warriors_2",
+		["DIFFICULTY_DELTA"] = "2",
+		["LOCALISED_NAME"] = ""
+	},
+	[148] = {
+		["FORCE_FRAGMENT_KEY"] = "nur_marauders_3",
+		["DIFFICULTY_DELTA"] = "3",
+		["LOCALISED_NAME"] = ""
+	},
+	[149] = {
+		["FORCE_FRAGMENT_KEY"] = "chs_warriors_2",
+		["DIFFICULTY_DELTA"] = "2",
+		["LOCALISED_NAME"] = ""
+	},
+	[150] = {
+		["FORCE_FRAGMENT_KEY"] = "chs_marauders_3",
+		["DIFFICULTY_DELTA"] = "3",
+		["LOCALISED_NAME"] = ""
+	},
+	[151] = {
+		["FORCE_FRAGMENT_KEY"] = "kho_bloodthirster",
+		["DIFFICULTY_DELTA"] = "12",
+		["LOCALISED_NAME"] = ""
+	},
+	[152] = {
+		["FORCE_FRAGMENT_KEY"] = "kho_skullcannon",
+		["DIFFICULTY_DELTA"] = "9",
+		["LOCALISED_NAME"] = ""
+	},
+	[153] = {
+		["FORCE_FRAGMENT_KEY"] = "kho_bloodshrine",
+		["DIFFICULTY_DELTA"] = "6",
+		["LOCALISED_NAME"] = ""
+	},
+	[154] = {
+		["FORCE_FRAGMENT_KEY"] = "kho_skullcrusher_1",
+		["DIFFICULTY_DELTA"] = "9",
+		["LOCALISED_NAME"] = ""
+	},
+	[155] = {
+		["FORCE_FRAGMENT_KEY"] = "kho_skullcrasher_2",
+		["DIFFICULTY_DELTA"] = "18",
+		["LOCALISED_NAME"] = ""
+	},
+	[156] = {
+		["FORCE_FRAGMENT_KEY"] = "kho_bloodcrusher_1",
+		["DIFFICULTY_DELTA"] = "6",
+		["LOCALISED_NAME"] = ""
+	},
+	[157] = {
+		["FORCE_FRAGMENT_KEY"] = "kho_bloodcrusher_2",
+		["DIFFICULTY_DELTA"] = "12",
+		["LOCALISED_NAME"] = ""
+	},
+	[158] = {
+		["FORCE_FRAGMENT_KEY"] = "kho_ex_letters_2",
+		["DIFFICULTY_DELTA"] = "8",
+		["LOCALISED_NAME"] = ""
+	},
+	[159] = {
+		["FORCE_FRAGMENT_KEY"] = "nur_ex_plaguebearer_1",
+		["DIFFICULTY_DELTA"] = "4",
+		["LOCALISED_NAME"] = ""
+	},
+	[160] = {
+		["FORCE_FRAGMENT_KEY"] = "nur_ex_plaguebearer_2",
+		["DIFFICULTY_DELTA"] = "8",
+		["LOCALISED_NAME"] = ""
+	},
+	[161] = {
+		["FORCE_FRAGMENT_KEY"] = "nur_pox_rider_1",
+		["DIFFICULTY_DELTA"] = "6",
+		["LOCALISED_NAME"] = ""
+	},
+	[162] = {
+		["FORCE_FRAGMENT_KEY"] = "nur_pox_rider_2",
+		["DIFFICULTY_DELTA"] = "12",
+		["LOCALISED_NAME"] = ""
+	},
+	[163] = {
+		["FORCE_FRAGMENT_KEY"] = "nur_drones_1",
+		["DIFFICULTY_DELTA"] = "6",
+		["LOCALISED_NAME"] = ""
+	},
+	[164] = {
+		["FORCE_FRAGMENT_KEY"] = "nur_drones_2",
+		["DIFFICULTY_DELTA"] = "12",
+		["LOCALISED_NAME"] = ""
+	},
+	[165] = {
+		["FORCE_FRAGMENT_KEY"] = "nur_unclean_one",
+		["DIFFICULTY_DELTA"] = "12",
+		["LOCALISED_NAME"] = ""
+	},
+	[166] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_ex_daemonette_1",
+		["DIFFICULTY_DELTA"] = "4",
+		["LOCALISED_NAME"] = ""
+	},
+	[167] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_ex_daemonette_2",
+		["DIFFICULTY_DELTA"] = "8",
+		["LOCALISED_NAME"] = ""
+	},
+	[168] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_seekers_1",
+		["DIFFICULTY_DELTA"] = "6",
+		["LOCALISED_NAME"] = ""
+	},
+	[169] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_seekers_2",
+		["DIFFICULTY_DELTA"] = "12",
+		["LOCALISED_NAME"] = ""
+	},
+	[170] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_fiends_1",
+		["DIFFICULTY_DELTA"] = "4",
+		["LOCALISED_NAME"] = ""
+	},
+	[171] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_fiends_2",
+		["DIFFICULTY_DELTA"] = "8",
+		["LOCALISED_NAME"] = ""
+	},
+	[172] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_seeker_chariot_1",
+		["DIFFICULTY_DELTA"] = "4",
+		["LOCALISED_NAME"] = ""
+	},
+	[173] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_seeker_chariot_2",
+		["DIFFICULTY_DELTA"] = "8",
+		["LOCALISED_NAME"] = ""
+	},
+	[174] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_keeper_of_secrets",
+		["DIFFICULTY_DELTA"] = "12",
+		["LOCALISED_NAME"] = ""
+	},
+	[175] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_heartseekers_1",
+		["DIFFICULTY_DELTA"] = "9",
+		["LOCALISED_NAME"] = ""
+	},
+	[176] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_heartseekers_2",
+		["DIFFICULTY_DELTA"] = "18",
+		["LOCALISED_NAME"] = ""
+	},
+	[177] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_ex_seeker_chariot_1",
+		["DIFFICULTY_DELTA"] = "9",
+		["LOCALISED_NAME"] = ""
+	},
+	[178] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_ex_seeker_chariot_2",
+		["DIFFICULTY_DELTA"] = "18",
+		["LOCALISED_NAME"] = ""
+	},
+	[179] = {
+		["FORCE_FRAGMENT_KEY"] = "sla_hellflayer",
+		["DIFFICULTY_DELTA"] = "9",
 		["LOCALISED_NAME"] = ""
 	}
 }
