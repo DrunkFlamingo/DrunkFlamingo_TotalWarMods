@@ -1,0 +1,22 @@
+choice_key	dilemma_key	associated_audio_trigger
+#cdir_events_dilemma_choice_details_tables;3;db/cdir_events_dilemma_choice_details_tables/df_rogue		
+FIRST	rogue_blank_dilemma	
+SECOND	rogue_blank_dilemma	
+THIRD	rogue_blank_dilemma	
+FOURTH	rogue_blank_dilemma	
+FIRST	rogue_start_all_dae	
+SECOND	rogue_start_all_dae	
+THIRD	rogue_start_all_dae	
+FOURTH	rogue_start_all_dae	
+FIRST	rogue_start_kho_vs_sla	
+SECOND	rogue_start_kho_vs_sla	
+FIRST	rogue_start_tze_vs_kho	
+SECOND	rogue_start_tze_vs_kho	
+FIRST	rogue_start_sla_vs_nur	
+SECOND	rogue_start_sla_vs_nur	
+FIRST	rogue_start_nur_vs_tze	
+SECOND	rogue_start_nur_vs_tze	
+FIRST	rogue_start_chs_quality_vs_dae_quantity	
+SECOND	rogue_start_chs_quality_vs_dae_quantity	
+FIRST	rogue_start_dae_quality_vs_chs_quantity	
+SECOND	rogue_start_dae_quality_vs_chs_quantity	
