@@ -1308,6 +1308,7 @@
 			this="BFEBB774-56F3-4B49-8A83B6E49B06ECBB"
 			id="line_smoke"
 			template_id="line_smoke"
+			visible="false"
 			part_of_template="true"
 			uniqueguid_in_template="75598DEE-6605-4A2B-9ED0A7616DC146F3"
 			uniqueguid="BFEBB774-56F3-4B49-8A83B6E49B06ECBB"
@@ -2821,6 +2822,7 @@
 			uniqueguid_in_template="4E08AA99-2BAB-4DB6-AC47ACC0CEBD26BE"
 			uniqueguid="4B71CDE6-1363-4D45-BFB6523BF66740C1"
 			dimensions="56.00,56.00"
+			visible="false"
 			priority="50"
 			sound_category="UI_GBL_TMP_Round_Small_Button">
 			<state_uniqueguids>
@@ -2862,16 +2864,6 @@
 			</component_image_uniqueguids>
 			<callbacks_with_context>
 				<callback_with_context callback_id="Button"/>
-				<callback_with_context
-					callback_id="ContextVisibilitySetter"
-					context_object_id="CcoCampaignCharacter"
-					context_function_id="FactionContext.CultureContext.Key == &quot;wh3_main_dae_daemons&quot; &amp;&amp; CanUseArmoryItems">
-					<child_m_user_properties>
-						<property
-							name="event0"
-							value="CampaignTurnStart"/>
-					</child_m_user_properties>
-				</callback_with_context>
 				<callback_with_context callback_id="StatePropagatorCallback"/>
 				<callback_with_context
 					callback_id="ContextCommandLeftClick"
@@ -3056,6 +3048,7 @@
 			this="60CD4207-F66D-4E92-AF75C8F411FD169F"
 			id="button_event_feed"
 			template_id="square_medium_button"
+			visible="false"
 			part_of_template="true"
 			uniqueguid_in_template="18ECC36C-741F-40BF-869875E6BB71B6CC"
 			uniqueguid="60CD4207-F66D-4E92-AF75C8F411FD169F"
@@ -3604,6 +3597,7 @@
 			this="C4D3DF39-6E90-42F0-971D9DA243E14EAF"
 			id="button_replace_general"
 			template_id="square_medium_button"
+			visible="false"
 			part_of_template="true"
 			uniqueguid_in_template="18ECC36C-741F-40BF-869875E6BB71B6CC"
 			uniqueguid="C4D3DF39-6E90-42F0-971D9DA243E14EAF"
@@ -4280,6 +4274,7 @@
 			id="button_view_tree"
 			template_id="square_medium_button"
 			part_of_template="true"
+			visible="false"
 			uniqueguid_in_template="18ECC36C-741F-40BF-869875E6BB71B6CC"
 			uniqueguid="92CD8C31-44F7-41EB-A849DA80BAFB1E23"
 			dimensions="55.00,55.00"
@@ -18941,11 +18936,11 @@
 		<character_name
 			this="2EFD9BD4-8442-4FEB-AE93AC830966F4BB"
 			id="character_name"
-			offset="654.00,14.00"
+			offset="654.00,1.00"
 			allowhorizontalresize="false"
 			allowverticalresize="false"
 			docking="Top Center"
-			dock_offset="0.00,14.00"
+			dock_offset="0.00,55.00"
 			component_anchor_point="0.50,0.00"
 			tooltipslocalised="true"
 			uniqueguid="2EFD9BD4-8442-4FEB-AE93AC830966F4BB"
@@ -19812,6 +19807,7 @@
 			offset="54.00,86.00"
 			allowverticalresize="false"
 			docking="Top Center"
+			visible="false"
 			dock_offset="0.00,86.00"
 			component_anchor_point="0.50,0.00"
 			priority="10"
@@ -22722,6 +22718,7 @@
 			offset="0.00,202.00"
 			allowhorizontalresize="false"
 			allowverticalresize="false"
+			visible="false"
 			priority="46"
 			tooltipslocalised="true"
 			soundcategory="UI_GBL_TMP_DropDown_List"
@@ -32359,6 +32356,7 @@
 			allowhorizontalresize="false"
 			priority="60"
 			tooltipslocalised="true"
+			visible="false"
 			uniqueguid="E07E6766-221E-4AAE-BE1B0BF560FCE83D"
 			currentstate="8DE57497-407F-4F77-A0C6D598139AF9CF">
 			<callbackwithcontextlist>
@@ -40072,12 +40070,10 @@
 			offset="0.00,435.00"
 			allowhorizontalresize="false"
 			priority="40"
+			visible="false"
 			tooltipslocalised="true"
 			uniqueguid="21ED41F1-4BBD-4AAD-B644F18E58B939D2"
 			currentstate="619008DA-98E2-4F29-A1A20934092E5B79">
-			<callbackwithcontextlist>
-				<callback_with_context callback_id="ShowIfChildVisible"/>
-			</callbackwithcontextlist>
 			<states>
 				<newstate
 					this="619008DA-98E2-4F29-A1A20934092E5B79"
@@ -41632,6 +41628,7 @@
 			offset="1558.00,12.00"
 			allowhorizontalresize="false"
 			allowverticalresize="false"
+			visible="false"
 			docking="Top Right"
 			dock_offset="-12.00,12.00"
 			component_anchor_point="1.00,0.00"
@@ -41660,6 +41657,7 @@
 			dock_offset="0.00,95.00"
 			component_anchor_point="1.00,0.00"
 			tooltipslocalised="true"
+			visible="false"
 			uniqueguid="997B2BC0-22E3-4884-AC07546B74207D56"
 			currentstate="6F43D452-1E36-4585-A87E44342BD7D960"
 			defaultstate="6F43D452-1E36-4585-A87E44342BD7D960">
@@ -41864,6 +41862,7 @@
 			id="tl_holder"
 			docking="Top Left"
 			tooltipslocalised="true"
+			visible="false"
 			uniqueguid="75D2B92B-F2CF-4D45-906C61298088B2ED"
 			currentstate="1A93EAC4-F39E-4ED7-A97CCB5ED02B6ED7"
 			defaultstate="1A93EAC4-F39E-4ED7-A97CCB5ED02B6ED7">
@@ -45090,6 +45089,7 @@
 			id="char_select_list"
 			offset="85.00,10.00"
 			allowverticalresize="false"
+			visible="false"
 			docking="Top Left"
 			dock_offset="85.00,10.00"
 			priority="10"
