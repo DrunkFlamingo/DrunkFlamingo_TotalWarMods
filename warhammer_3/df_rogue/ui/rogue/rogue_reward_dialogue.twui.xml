@@ -938,8 +938,14 @@
                 <callback_with_context callback_id="List"/>
 				<callback_with_context
 					callback_id="ContextList"
-					context_object_id="CcoCampaignCharacter"
-					context_function_id="ArmoryItemRecordList.Filter(SlotTypeContext == &quot;right_arm&quot;).Sort(ItemType, true)"/>
+					context_object_id="CcoStaticObject"
+					context_function_id="Join(ScriptObjectContext(&quot;rogue_pending_rewards&quot;).TableValue.Value).Transform(DatabaseRecordContext(&quot;CcoArmoryItemRecord&quot;, Value))">
+                    <child_m_user_properties>
+                        <property
+                            name="event0"
+                            value="ScriptObjectValueUpdatedrogue_pending_rewards"/>
+                    </child_m_user_properties>
+                </callback_with_context>
 			</callbackwithcontextlist>
 			<states>
 				<newstate
@@ -1095,10 +1101,6 @@
 					callback_id="ContextTextLabel"
 					context_object_id="CcoArmoryItemRecord"
 					context_function_id="GetIfElse(IsStringEmpty(Name), Key, Name)"/>
-				<callback_with_context
-					callback_id="ContextStateSetter"
-					context_object_id="CcoArmoryItemRecord"
-					context_function_id="GetIfElse(IsEquippedForCharacter(SelectedOrContainedCharacter), &quot;selected&quot;, &quot;active&quot;)"/>
 				<callback_with_context
 					callback_id="ContextImageSetter"
 					context_object_id="CcoArmoryItemRecord"
