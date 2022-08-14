@@ -6,9 +6,6 @@
 	<hierarchy>
 		<root this="88BFB48C-677F-40DE-BBEFE79685BD5EFC">
 			<dilemma this="D335D534-15B4-4620-86F83161CB480C20">
-				<screen_fill_background_parent this="822AACA7-84D6-498E-9CD808F99FC2E2B6">
-					<screen_fill_background this="7052186D-62CA-4F0B-B85E7797545E9B78"/>
-				</screen_fill_background_parent>
 				<background this="168DB094-5CF1-461F-AAC1B8925DC33B39">
 					<main_holder this="6D5205F5-5581-46B1-98BE47EFB00E0148">
 						<title_holder this="27C54922-C2C2-454F-AE6634BF42BE2721">
@@ -20,25 +17,8 @@
 						<subheader_holder this="0613D9E9-04F7-420F-B0D019EDF5785CB8">
 							<dy_subheader this="863BF34B-75FB-4243-82A21B88417ACA0C"/>
 						</subheader_holder>
-						<pic_holder this="81D1C142-4221-43C1-B940E21A208C9397">
-							<dy_event_picture this="BB49D9F3-1047-40A7-BDB45EC84C079E5C"/>
-							<dy_movie_frame this="79FFE517-7E5F-410A-B7A66C7A55E07896"/>
-							<pic_frame this="43EEDF7F-12E3-4DC4-A34224EF13BC122F"/>
-						</pic_holder>
-						<pic_holder_large this="651D1DED-8218-4B94-8872B4AC942227FC">
-							<dy_event_picture this="9465AE32-0C94-4AC7-97EBFFFE99DF6E2F">
-								<dy_movie_frame this="919CC804-20BB-4830-904A2D1192F9E4F9"/>
-								<pic_frame this="6FAE412A-26D0-4E9F-BE173654C92E2885"/>
-							</dy_event_picture>
-						</pic_holder_large>
-						<mannslieb_overlay this="5F644BC3-1344-455C-A1377E5B6DC3B9BF"/>
 						<spacer this="FEEA881A-3D74-493D-BC29A14F61053253"/>
 						<details_holder this="FCCB5C22-6593-43A3-8299FAB5200123E0">
-							<pic_holder this="8768B5FB-D745-45FC-9DCBBA23925A9AA9">
-								<dy_event_picture this="FDC4C704-1991-42AE-85228D6076413EC8"/>
-								<dy_movie_frame this="83DC26B1-395B-450F-959EBF46DC936120"/>
-								<pic_frame this="3E790CFA-ED29-4F14-8B7712F612701907"/>
-							</pic_holder>
 							<portrait_holder this="4158BA0A-9429-45B6-A5F3F5E48B66C97E">
 								<stroke_wh3 this="80D056B9-ADE9-43A6-8CEF671D7FF99D39"/>
 								<character_portrait this="3BBECC2D-8A23-4EB8-8DA7FA41AB7AF316">
@@ -1897,6 +1877,7 @@
 			component_anchor_point="0.50,0.50"
 			priority="60"
 			tooltipslocalised="true"
+			visible="false"
 			uniqueguid="17F7BA18-7596-4501-BEECD067C3DBD15E"
 			currentstate="0014D7EB-DF80-4833-A55602B0D2928312">
 			<callbackwithcontextlist>
@@ -1926,52 +1907,6 @@
 					stateeditordisplaypos="-842150464.00,-842150464.00"/>
 			</states>
 		</dy_description>
-		<dy_event_picture
-			this="BB49D9F3-1047-40A7-BDB45EC84C079E5C"
-			id="dy_event_picture"
-			offset="80.00,-1.00"
-			allowhorizontalresize="false"
-			allowverticalresize="false"
-			clipimagestocomponent="true"
-			docking="Center"
-			component_anchor_point="0.50,0.50"
-			priority="60"
-			tooltipslocalised="true"
-			uniqueguid="BB49D9F3-1047-40A7-BDB45EC84C079E5C"
-			currentstate="585DB20D-0BFF-4B39-9C1B4890BB67B65C"
-			defaultstate="585DB20D-0BFF-4B39-9C1B4890BB67B65C">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextImageSetter"
-					context_object_id="CcoCampaignEventFeedMessageDetails"
-					context_function_id="ImagePath"/>
-			</callbackwithcontextlist>
-			<componentimages>
-				<component_image
-					this="0C99215B-7B44-4BC9-B4E3C18BE0A8CFC5"
-					uniqueguid="0C99215B-7B44-4BC9-B4E3C18BE0A8CFC5"
-					imagepath="ui/skins/default/agent_pic_assassinate.png"/>
-			</componentimages>
-			<states>
-				<newstate
-					this="585DB20D-0BFF-4B39-9C1B4890BB67B65C"
-					name="NewState"
-					width="380"
-					height="214"
-					interactive="true"
-					shadervars="5.00,5.00,5.00,5.00"
-					uniqueguid="585DB20D-0BFF-4B39-9C1B4890BB67B65C">
-					<imagemetrics>
-						<image
-							this="65F00C8B-1917-45CC-881A7922AC1C6C83"
-							uniqueguid="65F00C8B-1917-45CC-881A7922AC1C6C83"
-							componentimage="0C99215B-7B44-4BC9-B4E3C18BE0A8CFC5"
-							width="380"
-							height="214"/>
-					</imagemetrics>
-				</newstate>
-			</states>
-		</dy_event_picture>
 		<template_effect
 			this="8A39C606-158F-45CA-9ED1E623B63B0AD7"
 			id="template_effect"
@@ -2002,53 +1937,6 @@
 					uniqueguid="A30FAC8D-8C09-4562-8C9914E94BA2F51B"/>
 			</states>
 		</template_effect>
-		<mannslieb_overlay
-			this="5F644BC3-1344-455C-A1377E5B6DC3B9BF"
-			id="mannslieb_overlay"
-			offset="145.00,490.00"
-			allowverticalresize="false"
-			visible="false"
-			priority="50"
-			tooltipslocalised="true"
-			uniqueguid="5F644BC3-1344-455C-A1377E5B6DC3B9BF"
-			currentstate="0CA31908-56AF-4562-AF557E43CE2542BC"
-			defaultstate="0CA31908-56AF-4562-AF557E43CE2542BC">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="#ContextVisibilitySetter"
-					context_object_id="CcoCampaignEventDilemma"
-					context_function_id="IsBloodMoon"/>
-			</callbackwithcontextlist>
-			<componentimages>
-				<component_image
-					this="57304F6C-2B65-420C-964458A509F81037"
-					uniqueguid="57304F6C-2B65-420C-964458A509F81037"
-					imagepath="ui/skins/default/dilemma_mannslieb_extras.png"/>
-			</componentimages>
-			<states>
-				<newstate
-					this="0CA31908-56AF-4562-AF557E43CE2542BC"
-					name="NewState"
-					width="540"
-					height="1"
-					texthbehaviour="Never split"
-					uniqueguid="0CA31908-56AF-4562-AF557E43CE2542BC">
-					<imagemetrics>
-						<image
-							this="C633875E-A45E-4AA7-B6BCCFAA7AC7892A"
-							uniqueguid="C633875E-A45E-4AA7-B6BCCFAA7AC7892A"
-							componentimage="57304F6C-2B65-420C-964458A509F81037"
-							offset="-229.00,-259.00"
-							width="999"
-							height="439"
-							dockpoint="Top Center External"
-							dock_offset="0.00,180.00"
-							canresizeheight="false"
-							canresizewidth="false"/>
-					</imagemetrics>
-				</newstate>
-			</states>
-		</mannslieb_overlay>
 		<effect_icon
 			this="99340CCD-338E-4473-8A4EBC6E56549567"
 			id="effect_icon"
@@ -2383,57 +2271,6 @@
 				</columnwidths>
 			</LayoutEngine>
 		</payload_list>
-		<pic_frame
-			this="43EEDF7F-12E3-4DC4-A34224EF13BC122F"
-			id="pic_frame"
-			offset="79.00,-2.00"
-			allowhorizontalresize="false"
-			allowverticalresize="false"
-			clipchildren="true"
-			docking="Center"
-			component_anchor_point="0.50,0.50"
-			priority="60"
-			tooltipslocalised="true"
-			uniqueguid="43EEDF7F-12E3-4DC4-A34224EF13BC122F"
-			currentstate="D621959F-E85C-48CD-84CC19381D9F7448">
-			<userproperties>
-				<property
-					name="Margin"
-					value=""/>
-			</userproperties>
-			<componentimages>
-				<component_image
-					this="92D3E172-E3AD-419A-91D3DD04688E165A"
-					uniqueguid="92D3E172-E3AD-419A-91D3DD04688E165A"
-					imagepath="ui/skins/default/panel_back_inner_frame.png"/>
-			</componentimages>
-			<states>
-				<newstate
-					this="D621959F-E85C-48CD-84CC19381D9F7448"
-					name="NewState"
-					width="382"
-					height="216"
-					font_m_size="12"
-					font_m_colour="#FFFFE0FF"
-					font_m_leading="3"
-					fontcat_name="ingame_text_warhammer3"
-					interactive="true"
-					uniqueguid="D621959F-E85C-48CD-84CC19381D9F7448">
-					<imagemetrics>
-						<image
-							this="68F2980D-7430-4BEB-A1624F80CAF80471"
-							uniqueguid="68F2980D-7430-4BEB-A1624F80CAF80471"
-							componentimage="92D3E172-E3AD-419A-91D3DD04688E165A"
-							offset="-1.00,-1.00"
-							width="384"
-							height="218"
-							tile="true"
-							dockpoint="Center"
-							margin="30.00,40.00,30.00,40.00"/>
-					</imagemetrics>
-				</newstate>
-			</states>
-		</pic_frame>
 		<root
 			this="88BFB48C-677F-40DE-BBEFE79685BD5EFC"
 			id="root"
@@ -2601,33 +2438,6 @@
 				sizetocontent="true"
 				vertical_alignment="Center"/>
 		</details_holder>
-		<pic_holder
-			this="81D1C142-4221-43C1-B940E21A208C9397"
-			id="pic_holder"
-			offset="297.00,40.00"
-			allowverticalresize="false"
-			priority="50"
-			tooltipslocalised="true"
-			uniqueguid="81D1C142-4221-43C1-B940E21A208C9397"
-			currentstate="16CB9AAF-33F6-437C-8F7005F539F184EF"
-			defaultstate="16CB9AAF-33F6-437C-8F7005F539F184EF">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextVisibilitySetter"
-					context_object_id="CcoCampaignEventFeedMessageDetails"
-					context_function_id="IsUsingLargeImage == false &amp;&amp; (CustomContext.ChoiceDetailList.Size &lt;= 4 || RootComponent.Dimensions.y &gt;= 1070)"/>
-			</callbackwithcontextlist>
-			<states>
-				<newstate
-					this="16CB9AAF-33F6-437C-8F7005F539F184EF"
-					name="NewState"
-					width="540"
-					height="211"
-					texthbehaviour="Never split"
-					interactive="true"
-					uniqueguid="16CB9AAF-33F6-437C-8F7005F539F184EF"/>
-			</states>
-		</pic_holder>
 		<title_holder
 			this="27C54922-C2C2-454F-AE6634BF42BE2721"
 			id="title_holder"
@@ -2933,125 +2743,6 @@
 				</newstate>
 			</states>
 		</turns_icon>
-		<dy_event_picture
-			this="9465AE32-0C94-4AC7-97EBFFFE99DF6E2F"
-			id="dy_event_picture"
-			offset="15.00,0.00"
-			allowhorizontalresize="false"
-			allowverticalresize="false"
-			clipimagestocomponent="true"
-			docking="Center"
-			component_anchor_point="0.50,0.50"
-			priority="60"
-			tooltipslocalised="true"
-			uniqueguid="9465AE32-0C94-4AC7-97EBFFFE99DF6E2F"
-			currentstate="01710BA1-6F60-4C70-A06C6B391BA15E89"
-			defaultstate="01710BA1-6F60-4C70-A06C6B391BA15E89">
-			<componentimages>
-				<component_image
-					this="C841EA26-B72C-4D8A-BEEA28CF19015001"
-					uniqueguid="C841EA26-B72C-4D8A-BEEA28CF19015001"
-					imagepath="ui/skins/default/agent_pic_assassinate.png"/>
-			</componentimages>
-			<states>
-				<newstate
-					this="01710BA1-6F60-4C70-A06C6B391BA15E89"
-					name="NewState"
-					width="800"
-					height="450"
-					interactive="true"
-					shadervars="5.00,5.00,5.00,5.00"
-					uniqueguid="01710BA1-6F60-4C70-A06C6B391BA15E89">
-					<imagemetrics>
-						<image
-							this="99D1DA15-44A8-40AF-A741B932EFC608BB"
-							uniqueguid="99D1DA15-44A8-40AF-A741B932EFC608BB"
-							componentimage="C841EA26-B72C-4D8A-BEEA28CF19015001"
-							width="800"
-							height="450"/>
-					</imagemetrics>
-				</newstate>
-			</states>
-		</dy_event_picture>
-		<pic_frame
-			this="6FAE412A-26D0-4E9F-BE173654C92E2885"
-			id="pic_frame"
-			offset="-3.00,-3.00"
-			allowhorizontalresize="false"
-			allowverticalresize="false"
-			docking="Center"
-			component_anchor_point="0.50,0.50"
-			priority="60"
-			tooltipslocalised="true"
-			uniqueguid="6FAE412A-26D0-4E9F-BE173654C92E2885"
-			currentstate="44AA0350-47DF-448E-BA391055BD2AE373">
-			<userproperties>
-				<property
-					name="Margin"
-					value=""/>
-			</userproperties>
-			<componentimages>
-				<component_image
-					this="B369834F-20F7-4CEF-84292F726C8F7682"
-					uniqueguid="B369834F-20F7-4CEF-84292F726C8F7682"
-					imagepath="ui/skins/default/panel_back_inner_frame.png"/>
-			</componentimages>
-			<states>
-				<newstate
-					this="44AA0350-47DF-448E-BA391055BD2AE373"
-					name="NewState"
-					width="806"
-					height="456"
-					font_m_size="12"
-					font_m_colour="#FFFFE0FF"
-					font_m_leading="3"
-					fontcat_name="ingame_text_warhammer3"
-					interactive="true"
-					uniqueguid="44AA0350-47DF-448E-BA391055BD2AE373">
-					<imagemetrics>
-						<image
-							this="DE6BA087-3052-4AAA-B307C674A3A336BD"
-							uniqueguid="DE6BA087-3052-4AAA-B307C674A3A336BD"
-							componentimage="B369834F-20F7-4CEF-84292F726C8F7682"
-							offset="-2.00,-3.00"
-							width="811"
-							height="462"
-							tile="true"
-							dockpoint="Center"
-							margin="30.00,40.00,30.00,40.00"/>
-					</imagemetrics>
-				</newstate>
-			</states>
-		</pic_frame>
-		<pic_holder_large
-			this="651D1DED-8218-4B94-8872B4AC942227FC"
-			id="pic_holder_large"
-			offset="0.00,40.00"
-			allowhorizontalresize="false"
-			allowverticalresize="false"
-			visible="false"
-			priority="50"
-			tooltipslocalised="true"
-			uniqueguid="651D1DED-8218-4B94-8872B4AC942227FC"
-			currentstate="FB1744C4-BC4F-474E-A097BA0B692F7B9D"
-			defaultstate="FB1744C4-BC4F-474E-A097BA0B692F7B9D">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextVisibilitySetter"
-					context_object_id="CcoCampaignEventFeedMessageDetails"
-					context_function_id="IsUsingLargeImage"/>
-			</callbackwithcontextlist>
-			<states>
-				<newstate
-					this="FB1744C4-BC4F-474E-A097BA0B692F7B9D"
-					name="NewState"
-					width="830"
-					height="450"
-					texthbehaviour="Never split"
-					interactive="true"
-					uniqueguid="FB1744C4-BC4F-474E-A097BA0B692F7B9D"/>
-			</states>
-		</pic_holder_large>
 		<dy_description
 			this="07C1619A-6E99-4FE5-AB85E2CF30DE9DE8"
 			id="dy_description"
@@ -3100,10 +2791,6 @@
 			currentstate="119FC46A-2071-46D3-83EC3923FECC1B8F">
 			<callbackwithcontextlist>
 				<callback_with_context callback_id="Textview"/>
-				<callback_with_context
-					callback_id="ContextVisibilitySetter"
-					context_object_id="CcoCampaignEventFeedMessageDetails"
-					context_function_id="IsUsingLargeImage"/>
 			</callbackwithcontextlist>
 			<userproperties>
 				<property
@@ -3763,163 +3450,6 @@
 				</columnwidths>
 			</LayoutEngine>
 		</background>
-		<screen_fill_background
-			this="7052186D-62CA-4F0B-B85E7797545E9B78"
-			id="screen_fill_background"
-			offset="-959.00,-963.00"
-			docking="Center"
-			component_anchor_point="0.50,0.50"
-			priority="60"
-			tooltipslocalised="true"
-			uniqueguid="7052186D-62CA-4F0B-B85E7797545E9B78"
-			currentstate="E2D7AA9A-69A2-4031-BE913A254B2454D6"
-			defaultstate="E2D7AA9A-69A2-4031-BE913A254B2454D6">
-			<callbackwithcontextlist>
-				<callback_with_context callback_id="ScreenSizedComponent">
-					<child_m_user_properties>
-						<property
-							name="center"
-							value=""/>
-						<property
-							name="double_size"
-							value="1"/>
-					</child_m_user_properties>
-				</callback_with_context>
-			</callbackwithcontextlist>
-			<componentimages>
-				<component_image
-					this="46387AE7-A042-46DD-8F87C92C6A1E032A"
-					uniqueguid="46387AE7-A042-46DD-8F87C92C6A1E032A"/>
-			</componentimages>
-			<states>
-				<default
-					this="E2D7AA9A-69A2-4031-BE913A254B2454D6"
-					name="default"
-					width="1920"
-					height="1927"
-					texthbehaviour="Never split"
-					interactive="true"
-					uniqueguid="E2D7AA9A-69A2-4031-BE913A254B2454D6">
-					<imagemetrics>
-						<image
-							this="00965057-96CF-4E4E-8FB55A905885C096"
-							uniqueguid="00965057-96CF-4E4E-8FB55A905885C096"
-							componentimage="46387AE7-A042-46DD-8F87C92C6A1E032A"
-							width="1920"
-							height="1927"
-							colour="#000000C8"/>
-					</imagemetrics>
-				</default>
-			</states>
-		</screen_fill_background>
-		<screen_fill_background_parent
-			this="822AACA7-84D6-498E-9CD808F99FC2E2B6"
-			id="screen_fill_background_parent"
-			offset="587.00,0.00"
-			allowhorizontalresize="false"
-			allowverticalresize="false"
-			priority="60"
-			tooltipslocalised="true"
-			uniqueguid="822AACA7-84D6-498E-9CD808F99FC2E2B6"
-			currentstate="4ECBAFCC-D36F-4B8D-9063AD0907F3BB45"
-			defaultstate="4ECBAFCC-D36F-4B8D-9063AD0907F3BB45">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextVisibilitySetter"
-					context_object_id="CcoCampaignEventFeedMessageDetails"
-					context_function_id="IsUsingLargeImage"/>
-			</callbackwithcontextlist>
-			<states>
-				<default
-					this="4ECBAFCC-D36F-4B8D-9063AD0907F3BB45"
-					name="default"
-					width="1"
-					height="1"
-					texthbehaviour="Never split"
-					uniqueguid="4ECBAFCC-D36F-4B8D-9063AD0907F3BB45"/>
-			</states>
-		</screen_fill_background_parent>
-		<dy_movie_frame
-			this="79FFE517-7E5F-410A-B7A66C7A55E07896"
-			id="dy_movie_frame"
-			offset="80.00,-1.00"
-			allowhorizontalresize="false"
-			allowverticalresize="false"
-			clipimagestocomponent="true"
-			docking="Center"
-			component_anchor_point="0.50,0.50"
-			priority="60"
-			tooltipslocalised="true"
-			uniqueguid="79FFE517-7E5F-410A-B7A66C7A55E07896"
-			currentstate="562D5AB5-E72A-452E-A1E637D5A8661F4D"
-			defaultstate="562D5AB5-E72A-452E-A1E637D5A8661F4D">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="MoviePlayer"
-					context_object_id="CcoCampaignEventFeedMessageDetails"
-					context_function_id="MoviePath">
-					<child_m_user_properties>
-						<property
-							name="alpha_filter"
-							value="1"/>
-						<property
-							name="movie_index"
-							value="0"/>
-						<property
-							name="parent_id"
-							value="^1"/>
-						<property
-							name="target_id"
-							value="dy_event_picture"/>
-					</child_m_user_properties>
-				</callback_with_context>
-			</callbackwithcontextlist>
-			<states>
-				<newstate
-					this="562D5AB5-E72A-452E-A1E637D5A8661F4D"
-					name="NewState"
-					width="380"
-					height="214"
-					shadervars="5.00,5.00,5.00,5.00"
-					uniqueguid="562D5AB5-E72A-452E-A1E637D5A8661F4D"/>
-			</states>
-		</dy_movie_frame>
-		<dy_movie_frame
-			this="919CC804-20BB-4830-904A2D1192F9E4F9"
-			id="dy_movie_frame"
-			clipimagestocomponent="true"
-			docking="Center"
-			component_anchor_point="0.50,0.50"
-			priority="60"
-			tooltipslocalised="true"
-			uniqueguid="919CC804-20BB-4830-904A2D1192F9E4F9"
-			currentstate="E1992382-3EB3-4900-A9C3F0EA66757FA6"
-			defaultstate="E1992382-3EB3-4900-A9C3F0EA66757FA6">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="MoviePlayer"
-					context_object_id="CcoCampaignEventFeedMessageDetails"
-					context_function_id="MoviePath">
-					<child_m_user_properties>
-						<property
-							name="loop"
-							value="1"/>
-						<property
-							name="movie_index"
-							value="0"/>
-					</child_m_user_properties>
-				</callback_with_context>
-			</callbackwithcontextlist>
-			<states>
-				<newstate
-					this="E1992382-3EB3-4900-A9C3F0EA66757FA6"
-					name="NewState"
-					width="800"
-					height="450"
-					shadervars="5.00,5.00,5.00,5.00"
-					uniqueguid="E1992382-3EB3-4900-A9C3F0EA66757FA6"/>
-			</states>
-		</dy_movie_frame>
 		<template_military_force_target
 			this="06325434-56EB-4C63-912FED406B02E46A"
 			id="template_military_force_target"
@@ -4805,172 +4335,5 @@
 					uniqueguid="6354AAD9-061D-432D-8DA16752F07D8673"/>
 			</states>
 		</dy_name>
-		<dy_event_picture
-			this="FDC4C704-1991-42AE-85228D6076413EC8"
-			id="dy_event_picture"
-			offset="7.00,3.00"
-			allowhorizontalresize="false"
-			allowverticalresize="false"
-			clipimagestocomponent="true"
-			docking="Center"
-			component_anchor_point="0.50,0.50"
-			priority="60"
-			tooltipslocalised="true"
-			uniqueguid="FDC4C704-1991-42AE-85228D6076413EC8"
-			currentstate="FE1950D7-134D-4D37-BC90C8BB2D0833C2"
-			defaultstate="FE1950D7-134D-4D37-BC90C8BB2D0833C2">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextImageSetter"
-					context_object_id="CcoCampaignEventFeedMessageDetails"
-					context_function_id="ImagePath"/>
-			</callbackwithcontextlist>
-			<componentimages>
-				<component_image
-					this="1A8B0DE6-1FE0-4D2A-842BB65A7FBC3FE6"
-					uniqueguid="1A8B0DE6-1FE0-4D2A-842BB65A7FBC3FE6"
-					imagepath="ui/skins/default/agent_pic_assassinate.png"/>
-			</componentimages>
-			<states>
-				<newstate
-					this="FE1950D7-134D-4D37-BC90C8BB2D0833C2"
-					name="NewState"
-					width="380"
-					height="214"
-					interactive="true"
-					shadervars="5.00,5.00,5.00,5.00"
-					uniqueguid="FE1950D7-134D-4D37-BC90C8BB2D0833C2">
-					<imagemetrics>
-						<image
-							this="6A3CDB2B-0032-4F39-AFADE33153FADCCF"
-							uniqueguid="6A3CDB2B-0032-4F39-AFADE33153FADCCF"
-							componentimage="1A8B0DE6-1FE0-4D2A-842BB65A7FBC3FE6"
-							width="380"
-							height="214"/>
-					</imagemetrics>
-				</newstate>
-			</states>
-		</dy_event_picture>
-		<dy_movie_frame
-			this="83DC26B1-395B-450F-959EBF46DC936120"
-			id="dy_movie_frame"
-			offset="7.00,3.00"
-			allowhorizontalresize="false"
-			allowverticalresize="false"
-			clipimagestocomponent="true"
-			docking="Center"
-			component_anchor_point="0.50,0.50"
-			priority="60"
-			tooltipslocalised="true"
-			uniqueguid="83DC26B1-395B-450F-959EBF46DC936120"
-			currentstate="67B0AC5A-FF80-4FB6-9B6ED4B622C7A50A"
-			defaultstate="67B0AC5A-FF80-4FB6-9B6ED4B622C7A50A">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="MoviePlayer"
-					context_object_id="CcoCampaignEventFeedMessageDetails"
-					context_function_id="MoviePath">
-					<child_m_user_properties>
-						<property
-							name="alpha_filter"
-							value="1"/>
-						<property
-							name="movie_index"
-							value="0"/>
-						<property
-							name="parent_id"
-							value="^1"/>
-						<property
-							name="target_id"
-							value="dy_event_picture"/>
-					</child_m_user_properties>
-				</callback_with_context>
-			</callbackwithcontextlist>
-			<states>
-				<newstate
-					this="67B0AC5A-FF80-4FB6-9B6ED4B622C7A50A"
-					name="NewState"
-					width="380"
-					height="214"
-					shadervars="5.00,5.00,5.00,5.00"
-					uniqueguid="67B0AC5A-FF80-4FB6-9B6ED4B622C7A50A"/>
-			</states>
-		</dy_movie_frame>
-		<pic_frame
-			this="3E790CFA-ED29-4F14-8B7712F612701907"
-			id="pic_frame"
-			offset="6.00,2.00"
-			allowhorizontalresize="false"
-			allowverticalresize="false"
-			clipchildren="true"
-			docking="Center"
-			component_anchor_point="0.50,0.50"
-			priority="60"
-			tooltipslocalised="true"
-			uniqueguid="3E790CFA-ED29-4F14-8B7712F612701907"
-			currentstate="2800D58D-0718-4642-B8BE88AA9BE88FC0">
-			<userproperties>
-				<property
-					name="Margin"
-					value=""/>
-			</userproperties>
-			<componentimages>
-				<component_image
-					this="D40A4EB9-5458-4AA4-86973757B3CE9721"
-					uniqueguid="D40A4EB9-5458-4AA4-86973757B3CE9721"
-					imagepath="ui/skins/default/panel_back_inner_frame.png"/>
-			</componentimages>
-			<states>
-				<newstate
-					this="2800D58D-0718-4642-B8BE88AA9BE88FC0"
-					name="NewState"
-					width="382"
-					height="216"
-					font_m_size="12"
-					font_m_colour="#FFFFE0FF"
-					font_m_leading="3"
-					fontcat_name="ingame_text_warhammer3"
-					interactive="true"
-					uniqueguid="2800D58D-0718-4642-B8BE88AA9BE88FC0">
-					<imagemetrics>
-						<image
-							this="1CF18C01-5E17-4218-BC73BD3A946D5571"
-							uniqueguid="1CF18C01-5E17-4218-BC73BD3A946D5571"
-							componentimage="D40A4EB9-5458-4AA4-86973757B3CE9721"
-							offset="-1.00,-1.00"
-							width="384"
-							height="218"
-							tile="true"
-							dockpoint="Center"
-							margin="30.00,40.00,30.00,40.00"/>
-					</imagemetrics>
-				</newstate>
-			</states>
-		</pic_frame>
-		<pic_holder
-			this="8768B5FB-D745-45FC-9DCBBA23925A9AA9"
-			id="pic_holder"
-			priority="50"
-			tooltipslocalised="true"
-			uniqueguid="8768B5FB-D745-45FC-9DCBBA23925A9AA9"
-			currentstate="A5A5BDE9-808B-487E-9AC2C4217F31F8F2"
-			defaultstate="A5A5BDE9-808B-487E-9AC2C4217F31F8F2">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextVisibilitySetter"
-					context_object_id="CcoCampaignEventFeedMessageDetails"
-					context_function_id="IsUsingLargeImage == false  &amp;&amp; CustomContext.ChoiceDetailList.Size &gt;4 &amp;&amp; RootComponent.Dimensions.y &lt; 1070"/>
-			</callbackwithcontextlist>
-			<states>
-				<newstate
-					this="A5A5BDE9-808B-487E-9AC2C4217F31F8F2"
-					name="NewState"
-					width="394"
-					height="221"
-					texthbehaviour="Never split"
-					interactive="true"
-					uniqueguid="A5A5BDE9-808B-487E-9AC2C4217F31F8F2"/>
-			</states>
-		</pic_holder>
 	</components>
 </layout>

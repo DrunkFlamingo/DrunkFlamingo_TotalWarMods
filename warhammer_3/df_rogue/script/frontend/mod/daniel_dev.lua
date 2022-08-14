@@ -4,3 +4,8 @@
 --the above doesn't seem to work anymore
 
 --TODO start the correct campaign via CCO.
+
+---@alias rogue_modes "roguelike"|"roguelite"|"freeplay"
+
+local has_valid_continue = core:svr_load_registry_bool("rogue_can_continue") or false
+local mode = core:svr_load_registry_string("rogue_mode") or "roguelike"

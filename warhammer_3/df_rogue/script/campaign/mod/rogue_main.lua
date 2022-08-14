@@ -121,6 +121,19 @@ function table_to_string(t, indent)
     return result
 end
 
+---comment
+---@param table any[]
+---@param div string 
+---@return string
+local function tolerant_table_concat(table, div)
+    local result = ""
+    for i, v in ipairs(table) do
+        result = result .. tostring(v) .. div
+    end
+    return result
+end
+
+
 
 ---comment
 ---@param call fun()
@@ -137,6 +150,29 @@ local function ui_callback(call, time, name)
     end, time, name)
 end
 
+---@param ContextType string
+---@param call fun(context: any)
+---@param optional_parent_id string|nil
+local function context_list_click_callback(ContextType, call, optional_parent_id)
+    core:add_listener(
+        ContextType.."ListComponentLClickUp",
+        "ComponentLClickUp",
+        function(context) 
+            if optional_parent_id then
+                return string.find(context.string, ContextType) and uicomponent_descended_from(UIComponent(context.component), optional_parent_id)
+            end
+            return string.find(context.string, ContextType) 
+        end,
+        function(context) 
+            out("Click callback for "..context.string)
+            local ok, err = pcall(call, context)
+            if not ok then 
+                out("Error in callback for "..context.string)
+                out(err)
+                out(debug.traceback())
+            end
+        end, true)
+end
 ---comment
 ---@param button_name string
 ---@param call fun(context: any)
@@ -171,6 +207,30 @@ local function game_callback(call, time, name)
     end, time, name)
 end
 
+---comment
+---@param event_names string|string[]
+---@param call fun(context:any)
+---@param name string
+local function game_event_callback(event_names, call, name, time)
+    if type(event_names) == "string" then
+        event_names = {event_names}
+    end
+    for i = 1, #event_names do
+        local event = event_names[i]
+        local listener_name = (name or "unnamed") .. event
+        core:add_listener(
+            listener_name,
+            event,
+            function(context) return true end,
+            function(context) 
+                out("Event callback for "..event)
+                game_callback(function()
+                    call(context)
+                end, time or 0, listener_name)
+            end, true)
+        out("Added game event callback "..listener_name)
+    end
+end
 
 local function add_list_into_list(list, list_to_add)
     for i = 1, #list_to_add do
@@ -282,26 +342,33 @@ local template_force_entry = {
     faction_set = {} ---@type string[]
 }
 
+---@class ROGUE_DATA_PROGRESS_PAYLOAD_ENTRY
+local template_progress_payload = {
+    key = "", ---@type string
+    mandatory_gate_increments = {}, ---@type table<string, integer>
+    generated_gate_increments = {}---@type table<string, integer>
+}
+
 
 ---@class ROGUE_DATA_ENCOUNTER_ENTRY
 local template_encounter_entry = {
     region = "", ---@type string
     duration = 0, ---@type integer
-    increments_progress_gate = "INTRODUCTION", ---@type string
-    gate_increment_weight = 1, ---@type integer
+    progress_payload = "", ---@type string
     boss_overlay = false, ---@type boolean
     reward_set = "", ---@type string
     key = "starting_battle", ---@type string
     inciting_incident_key = "", ---@type string
     post_battle_dilemma_override = "", ---@type string
     battle_type = "LAND_ATTACK", ---@type ROGUE_BATTLE_TYPE
-    progress_gate_selection_set = "MANDATORY",  ---@type ROGUE_SELECTION_SET
     force_set = {} ---@type string[]
 }
 
 
 ---@class ROGUE_DATA_ARMORY_PART_SET_ENTRY
 local template_armory_part_set_entry = {
+    key = "", ---@type string
+    upgrade_when_exhausted = "", ---@type string
     mandatory_parts = {}, ---@type string[]
     generated_part_slots = {} ---@type string[][]
 }
@@ -352,12 +419,22 @@ local template_mod_database = {
     player_characters = {}, ---@type table<string, ROGUE_DATA_PLAYER_CHARACTER_ENTRY>
     reward_dilemma_choice_details = {}, ---@type table<string, table<DILEMMA_CHOICE_KEY, ROGUE_DATA_CHOICE_DETAIL_ENTRY>>
     progress_gates = {}, ---@type table<string, ROGUE_DATA_PROGRESS_GATE_ENTRY>
+    progress_payloads = {}, ---@type table<string, ROGUE_DATA_PROGRESS_PAYLOAD_ENTRY>
     force_fragment_sets = {}, ---@type table<string, ROGUE_DATA_FRAGMENT_SET_ENTRY>
     force_fragments = {} ---@type table<string, ROGUE_DATA_FRAGMENT_ENTRY>
 }
 
 
-local mod_database = rogue_daniel_loader.load_all_data() ---@type ROGUE_MOD_DATABASE
+local mod_database, skips, skipped_encounters = rogue_daniel_loader.load_all_data() ---@type ROGUE_MOD_DATABASE
+if skips > 0 then
+    local err_string = "Loaded data but skipped "..skips.." encounters: "
+    for key, reason in pairs(skipped_encounters) do
+        err_string = err_string .. key .. ": " .. reason .. "\n"
+    end
+    out(err_string)
+else
+    out("Loaded all encounter data successfully")
+end
 local player = {}
 
 if not Forced_Battle_Manager then
@@ -367,13 +444,22 @@ end
 ---SECTION: Persistent Data
 
 local progress_gates = {} ---@type table<string, integer>
-persist_table("progress_gates", progress_gates, function(t) active_encounters = t end)
+persist_table("progress_gates", progress_gates, function(t) progress_gates = t end)
 
 local function was_progress_gate_reached(gate)
     if not progress_gates[gate] then
         return false
     end
     return progress_gates[gate] >= mod_database.progress_gates[gate].activation_threshold
+end
+
+local obselete_encounters = {} ---@type table<string, boolean>
+persist_table("obselete_encounters", obselete_encounters, function(t) obselete_encounters = t end)
+local function is_encounter_obselete(encounter)
+    if not obselete_encounters[encounter] then
+        return false
+    end
+    return obselete_encounters[encounter]
 end
 
 
@@ -383,15 +469,20 @@ local function send_encounters_to_ui()
     common.set_context_value("rogue_active_encounters", active_encounters)
 end
 
+local encounter_being_played_savestring = "rogue_encounter_in_progress"
+
 --dev, for now, just set a dummy value
 
 local pending_forced_encounters = {} ---@type GENERATED_ENCOUNTER[]
 persist_table("pending_forced_encounters", pending_forced_encounters,  function(t) pending_forced_encounters = t end)
 
-local pending_rewards = {}
+local pending_rewards = {
+    dilemma = nil, ---@type CAMPAIGN_DILEMMA_BUILDER_SCRIPT_INTERFACE|nil
+    armory_parts = {} ---@type string[]
+}
 persist_table("pending_rewards", pending_rewards,  function(t) pending_rewards = t end)
 local function send_rewards_to_ui()
-    common.set_context_value("rogue_pending_rewards", pending_rewards)
+    common.set_context_value("rogue_pending_rewards", pending_rewards.armory_parts)
 end
 
 
@@ -452,14 +543,18 @@ local function add_reward_component_to_payload(payload, reward_component)
     --add units to the payload
     local fragment_set_key = reward_component.force_fragment_set
     local fragment_set = mod_database.force_fragment_sets[fragment_set_key]
+    local units_to_add = {}
     if fragment_set then
         local unit_list = generate_unit_list_from_force_fragment_set(fragment_set)
         for i = 1, #unit_list do
             local unit = unit_list[i]
-            payload:add_unit(player.force, unit.unit_key, 1, 0)
+            units_to_add[unit.unit_key] = (units_to_add[unit.unit_key] or 0) + 1
         end
     else
         out("No fragment set for this payload")
+    end
+    for unit_to_add, quantity in pairs(units_to_add) do
+        payload:add_unit(player.force, unit_to_add, quantity, 0)
     end
     --TODO, the rest of the reward shit.
 end
@@ -507,8 +602,12 @@ local function generate_reward_dilemma(dilemma)
         local choice_key = DILEMMA_CHOICE_KEYS[i]
         local choice_details = dilemma_details[choice_key]
         if choice_details then
-
-            dilemma_builder:add_choice_payload(choice_key, generate_dilemma_payload_from_details(choice_key, cm:create_payload(), choice_details))
+            local payload_builder = generate_dilemma_payload_from_details(choice_key, cm:create_payload(), choice_details)
+            if payload_builder:valid(player.faction) then
+                dilemma_builder:add_choice_payload(choice_key, payload_builder)
+            else
+                out("Payload for choice "..choice_key.." is invalid")
+            end
         end
     end
     untab_log(1)
@@ -525,27 +624,36 @@ end
 ---why does this function exist?
 ---comment
 
----@return CAMPAIGN_DILEMMA_BUILDER_SCRIPT_INTERFACE
-local function generate_reward_for_encounter(encounter)
+---@param encounter_key string
+---@return CAMPAIGN_DILEMMA_BUILDER_SCRIPT_INTERFACE|nil
+local function generate_reward_dilemma_for_encounter(encounter_key)
+    local encounter = mod_database.encounters[encounter_key]
     local reward_sets = mod_database.reward_sets[encounter.reward_set]
+    if not reward_sets then
+        return nil
+    end
     out("generating reward for encounter "..encounter.key.." with reward set "..encounter.reward_set)
     tab_log(1)
     local dilemma_options = {}
-    local reward_set = reward_sets[cm:random_number(#reward_sets)]
     out("filtering the reward set")
     tab_log(1)
-    for i = 1, #reward_set do
-        local reward = reward_set[i]
+    for i = 1, #reward_sets do
+        local reward = reward_sets[i]
             --TODO add resource and resource thresholds filters
         table.insert(dilemma_options, reward.dilemma)
         out("dilemma "..reward.dilemma.." is valid")
     end
     untab_log(1)
-    local selected_dilemma = dilemma_options[cm:random_number(#dilemma_options)]
+    local selected_dilemma = reward_sets[cm:random_number(#reward_sets)].dilemma
     out("selected dilemma "..selected_dilemma)
     local reward_dilemma = generate_reward_dilemma(selected_dilemma) 
     untab_log(1)
     return reward_dilemma
+end
+
+---@return string[]
+local function generate_reward_armory_item_choice_for_encounter(encounter)
+    return {"wh3_main_dae_cha_daemon_prince_arm_r_armoured_2", "wh3_main_dae_cha_daemon_prince_legs_beast_7"}
 end
 
 
@@ -693,21 +801,45 @@ end
 local function on_encounter_completed(encounter_key)
     local encounter_data = mod_database.encounters[encounter_key]
 
-    --increment the progress gate for this encounter
-    local progress_gate = encounter_data.increments_progress_gate
-    local progress_increment = encounter_data.gate_increment_weight
-    if progress_gate then
-        increment_progress_gate_progress(progress_gate, progress_increment)
+    local encounter_reward_dilemma = generate_reward_dilemma_for_encounter(encounter_key)
+    if encounter_reward_dilemma then
+        out("Generated a reward dilemma for encounter "..encounter_key)
+    else
+        out("No reward dilemma generated for encounter "..encounter_key)
+        out("The rewards for this encounter will not function")
     end
-
-    local encounter_reward_dilemma = generate_reward_for_encounter(encounter_key)
-    --TODO pend rewards
+    local armory_item_options = generate_reward_armory_item_choice_for_encounter(encounter_key)
+    if #armory_item_options > 0 then
+        out("Generated "..#armory_item_options.." reward armory items for encounter "..encounter_key)
+    end
+    pending_rewards = {
+        dilemma = encounter_reward_dilemma,
+        armory_parts = armory_item_options
+    }
+    send_rewards_to_ui()
 
     --remove the encounter from the active encounters list
     local region = encounter_data.region
     if active_encounters[region] then
         active_encounters[region] = nil
     end
+    --remove the encounter from the currently being played register
+    cm:set_saved_value(encounter_being_played_savestring, false)
+
+    --increment the progress gates in the progress payload for this encounter
+    local progress_payload_key = encounter_data.progress_payload
+    local progress_payload = mod_database.progress_payloads[progress_payload_key]
+    local mandatory_gates = progress_payload.mandatory_gate_increments
+    for gate_key, increment in pairs(mandatory_gates) do
+        increment_progress_gate_progress(gate_key, increment)
+    end
+    local optional_gates = progress_payload.generated_gate_increments
+    local random_payload = optional_gates[cm:random_number(#optional_gates)]
+    for gate_key, increment in pairs(random_payload) do
+        increment_progress_gate_progress(gate_key, increment)
+    end
+
+    return encounter_reward_dilemma
 end
 
 local function commence_encounter(settlement_key)
@@ -717,6 +849,7 @@ local function commence_encounter(settlement_key)
         out("No encounter to commence in region "..settlement_key)
         return
     end
+    cm:set_saved_value(encounter_being_played_savestring, encounter.key)
     out("Commencing encounter "..encounter.key.." in region "..settlement_key)
     local fbm = Forced_Battle_Manager:setup_new_battle(encounter.key)
     local faction_name = encounter.force.faction
@@ -751,7 +884,29 @@ end
 
 
 local function create_event_handlers()
-    
+    game_event_callback({"CharacterPostBattleCaptureOption", "CharacterPostBattleEnslave", 
+    "CharacterPerformsSettlementOccupationDecision", "CharacterPostBattleRelease", "CharacterPostBattleSlaughter"},
+    function (context)
+        local encounter_key = cm:get_saved_value(encounter_being_played_savestring)
+        if encounter_key then
+            local dilemma_builder = on_encounter_completed(encounter_key)
+            if dilemma_builder then
+                out("Launching reward dilemma: "..type(dilemma_builder))
+                cm:launch_custom_dilemma_from_builder(dilemma_builder, player.faction)
+            end
+        end
+    end, "PlayerCompletedEncounterBattle", 0.5)
+    game_event_callback("DilemmaChoiceMadeEvent", function (context)
+        if #pending_rewards.armory_parts > 0 then
+            core:trigger_event("DisplayArmoryRewardDialogue")
+        end
+    end, "PlayerCompletedDilemma", 0.5)
+end
+
+
+local function grant_armory_item(armory_item_key)
+    ---@diagnostic disable-next-line
+    cm:add_armory_item_to_character(player.character, armory_item_key, false, false)
 end
 
 ---SECTION: UI 
@@ -769,7 +924,8 @@ local function ui_command(command_key, ...)
     --not sure this mod will ever be multiplayer compatible, but maybe one day.
     local commands = {
         ["commence_encounter"] = commence_encounter,
-        ["grant_starting_reward"] = grant_starting_reward
+        ["grant_starting_reward"] = grant_starting_reward,
+        ["grant_armory_item"] = grant_armory_item
     }
     local command = commands[command_key]
     if not command then
@@ -780,18 +936,64 @@ local function ui_command(command_key, ...)
 end
 
 
+
+
 ---@return UIC
-local function get_or_create_encounter_preview()
+local function get_or_create_army_panel(destroy_old)
+    local panel_name = "rogue_player_army"
+    local existing_panel = find_uicomponent(core:get_ui_root(), panel_name)
+    if destroy_old and existing_panel then
+        existing_panel:DestroyChildren()
+        existing_panel:Destroy()
+    elseif existing_panel then
+        return existing_panel
+    end
+    local new_panel = UIComponent(core:get_ui_root():CreateComponent(panel_name, "ui/rogue/rogue_units_panel"))
+    new_panel:SetContextObject(cco("CcoCampaignRoot", ""))
+    return new_panel
+    
+end
+
+---@return UIC
+local function get_or_create_tr_hud(destroy_old)
+    local panel_name = "rogue_tr_hud"
+    local existing_panel = find_uicomponent(core:get_ui_root(), panel_name)
+    if destroy_old and existing_panel then
+        existing_panel:DestroyChildren()
+        existing_panel:Destroy()
+    elseif existing_panel then
+        return existing_panel
+    end
+    local new_panel = UIComponent(core:get_ui_root():CreateComponent(panel_name, "ui/rogue/rogue_tr_hud"))
+    new_panel:SetContextObject(cco("CcoCampaignRoot", ""))
+    return new_panel
+end
+
+
+---@return UIC
+local function get_or_create_encounter_preview(destroy_old)
+    local panel_name = "rogue_encounter_preview"
+    local existing_panel = find_uicomponent(core:get_ui_root(), panel_name)
+    if destroy_old and existing_panel then
+        existing_panel:DestroyChildren()
+        existing_panel:Destroy()
+    elseif existing_panel then
+        return existing_panel
+    end
+    local new_panel = UIComponent(core:get_ui_root():CreateComponent(panel_name, "ui/rogue/rogue_encounter_preview"))
+    new_panel:SetContextObject(cco("CcoCampaignRoot", ""))
+    return new_panel
+end
+
+local function destroy_encounter_preview()
     local panel_name = "rogue_encounter_preview"
     local existing_panel = find_uicomponent(core:get_ui_root(), panel_name)
     if existing_panel then
-        return existing_panel
-    else
-        local new_panel = UIComponent(core:get_ui_root():CreateComponent(panel_name, "ui/rogue/rogue_encounter_preview"))
-        new_panel:SetContextObject(cco("CcoCampaignRoot", ""))
-        return new_panel
+        existing_panel:DestroyChildren()
+        existing_panel:Destroy()
     end
 end
+
 
 local function send_selected_encounter_to_ui(settlement_key)
     out("Selected encounter in region "..tostring(settlement_key))
@@ -802,9 +1004,32 @@ local function send_selected_encounter_to_ui(settlement_key)
 end
 
 local function clear_encounter_selection()
-    get_or_create_encounter_preview():DestroyChildren()
-    get_or_create_encounter_preview():Destroy()
+    destroy_encounter_preview()
     common.set_context_value("rogue_selected_encounter", "")
+end
+
+local function get_or_create_armory_reward_dialogue(destroy_old)
+    local panel_name = "rogue_reward_dialogue"
+    local existing_panel = find_uicomponent(core:get_ui_root(), panel_name)
+    if destroy_old and existing_panel then
+        existing_panel:DestroyChildren()
+        existing_panel:Destroy()
+    elseif existing_panel then
+        return existing_panel
+    end
+    local new_panel = UIComponent(core:get_ui_root():CreateComponent(panel_name, "ui/rogue/rogue_reward_dialogue"))
+    new_panel:SetContextObject(cco("CcoCampaignRoot", ""))
+    common.set_context_value("rogue_reward_dialogue_selection", "")
+    send_rewards_to_ui() 
+end
+
+local function destroy_armory_reward_dialogue()
+    local panel_name = "rogue_reward_dialogue"
+    local existing_panel = find_uicomponent(core:get_ui_root(), panel_name)
+    if existing_panel then
+        existing_panel:DestroyChildren()
+        existing_panel:Destroy()
+    end
 end
 
 ---comment
@@ -840,8 +1065,38 @@ function dev_ui()
         end, true)
 end
 
-function start_ui()
+local hud_children_to_hide = {
+    radar_things = true,
+    mission_list = true,
+    BL_parent = true,
+    bar_small_top = true,
+    ping_parent = true,
+    settings_panel = true,
+    faction_buttons_docker = true,
+    resources_bar_holder = true,
+    offscreen_icon_creator = true,
+}
 
+
+---@param uim campaign_ui_manager
+local function hide_or_remove_default_ui(uim)
+    --turn off settlement labels 
+    cm:override_ui("disable_settlement_labels", true)
+
+    local hud = find_uicomponent("hud_campaign")
+    for i = 0, hud:ChildCount() - 1 do
+        local child = UIComponent(hud:Find(i))
+        if hud_children_to_hide[child:Id()] then
+            child:SetVisible(false)
+        end
+    end
+end
+
+
+
+function start_ui()
+    local uim = cm:get_campaign_ui_manager()
+    common.call_context_command("CcoCampaignCharacter", tostring(player.cqi), "Select(false)")
     dev_ui()
 
     out("Creating the Rogue Daniel UI!")
@@ -853,6 +1108,19 @@ function start_ui()
     else
         out("The Worldspace Parent Failed to Create! Check the rogue3dui.twui.xml file!")
     end
+    get_or_create_tr_hud()
+
+    --open the units panels
+    ui_click_callback("button_unit_panel", function(context)
+        get_or_create_army_panel()
+    end)
+
+    --open the character details panel
+    ui_click_callback("button_character_details", function(context)
+        --did this via CCO
+    end)
+
+    
 
     --select encounter
     ui_click_callback("encounter_slot", function (context)
@@ -861,10 +1129,13 @@ function start_ui()
         -- note to self: this is a weird case, usually you shouldn't need to modify the context_id for get_context_value. CcoCampaignSettlement requires it.
         local settlement_key = common.get_context_value("CcoCampaignSettlement", "settlement:"..context_id, "SettlementKey")
         send_selected_encounter_to_ui(settlement_key)
+        CampaignUI.ClearSelection()
+        uim:remove_character_selection_whitelist(player.cqi)
     end)
 
     --commence encounter
     ui_click_callback("button_commence_encounter", function (context)
+        uim:add_character_selection_whitelist(player.cqi)
         local selected_encounter = common.get_context_value("ScriptObjectContext(\"rogue_selected_encounter\").StringValue")
         out("Commence encounter button clicked with UI context "..tostring(selected_encounter))
         if active_encounters[selected_encounter] then
@@ -872,11 +1143,30 @@ function start_ui()
         else
             error("ERROR - no encounter selected to commence!")
         end
+        destroy_encounter_preview()
     end)
 
     --cancel encounter
     ui_click_callback("button_decline_encounter", function (context)
         clear_encounter_selection()
+        uim:add_character_selection_whitelist(player.cqi)
+    end)
+
+    --reward panel functionality
+    game_event_callback("DisplayArmoryRewardDialogue", function (context)
+        get_or_create_armory_reward_dialogue()
+    end, "UICallback")
+
+    context_list_click_callback("CcoArmoryItemRecord", function (context)
+        local clicked_list_component = UIComponent(context.component)
+        local clicked_list_context_id = clicked_list_component:GetContextObjectId("CcoArmoryItemRecord")
+        common.set_context_value("rogue_reward_dialogue_selection" , clicked_list_context_id)
+    end, "reward_armory_item_selection")
+
+    ui_click_callback("button_finalize_armory_reward", function (context)
+        ui_command("grant_armory_item", common.get_context_value("CcoScriptObject", "rogue_reward_dialogue_selection", "StringValue"))
+        common.set_context_value("rogue_reward_dialogue_selection", "")
+        destroy_armory_reward_dialogue()
     end)
 
     --scripted context objects.
@@ -903,12 +1193,12 @@ function rogue_main()
     player.character = player.faction:faction_leader()
     player.cqi = player.character:command_queue_index()
     player.force =  player.character:military_force()
-
+    is_new_game = cm:is_new_game()
     --skip all ai faction turns
     ---@diagnostic disable-next-line
     cm:skip_all_ai_factions()
     --destroy all AI armies on new game
-    if cm:is_new_game() then
+    if is_new_game then
         local faction_list = cm:model():world():faction_list()
         for i = 0, faction_list:num_items() - 1 do
             local faction = faction_list:item_at(i)
@@ -938,12 +1228,11 @@ function rogue_main()
             if movies then
                 movies:Destroy()
             end
-            uim:display_first_turn_ui(false)
+
             uim:enable_character_selection_whitelist()
+            uim:add_character_selection_whitelist(player.cqi)
             uim:enable_settlement_selection_whitelist()
-            local hud = find_uicomponent("hud_campaign")
-            cm:override_ui("disable_settlement_labels", true)
-            hud:SetVisible(false)
+            hide_or_remove_default_ui(uim)
             local menu_bar = find_uicomponent("menu_bar", "buttongroup")
             for i = 0, menu_bar:ChildCount() - 1 do
                 local child = UIComponent(menu_bar:Find(i))
@@ -954,9 +1243,11 @@ function rogue_main()
             common.set_context_value("disable_campaign_spacebar_options", 1)
             ui_callback(function ()
                 start_ui()
-                ui_callback(function ()
-                    ui_command("grant_starting_reward")
-                end, 700, "starting_reward_dilemma")
+                if is_new_game then
+                    ui_callback(function ()
+                        ui_command("grant_starting_reward")
+                    end, 700, "starting_reward_dilemma")
+                end
             end, 250, "UISTART")
         end, 100)
     end)
@@ -964,7 +1255,7 @@ function rogue_main()
     game_callback(function ()
         out("Game Starting Callback")
         create_event_handlers()
-        if cm:is_new_game() then
+        if is_new_game then
             local start_gate = player_character.start_gate
             increment_progress_gate_progress(start_gate, 1)
         end
@@ -1027,11 +1318,67 @@ end
 
 
 rogue_console = {
+    get_or_create_army_panel = get_or_create_army_panel,
+    get_or_create_armory_reward_dialogue = get_or_create_armory_reward_dialogue,
     generate_and_print_force_with_key = generate_and_print_force_with_key,
     test_encounter_force_generation = test_encounter_force_generation,
     generate_encounter = generate_encounter,
     commence_encounter = commence_encounter,
+    on_encounter_completed = on_encounter_completed
 }
+
+---section: disabled commands
+---disabling this commands here is easier than running around disabling them in the scripts that use them.
+
+--for these two, allow anything that matches the rogue string through
+local trigger_dilemma = cm.trigger_dilemma
+local old_cm_dilemma = function(faction_key, dilemma_string, fire_immediately)
+    trigger_dilemma(cm, faction_key, dilemma_string, fire_immediately)
+end
+cm.trigger_dilemma = function(self, faction_key, dilemma_string, fire_immediately)
+    if string.find(dilemma_string, "rogue_") then
+        old_cm_dilemma(faction_key, dilemma_string, fire_immediately)
+    end
+    out("Trigger dilemma command "..dilemma_string.." was ignored")
+end
+local trigger_incident = cm.trigger_incident
+local old_trigger_incident = function (faction_key, incident_key, fire_immediately)
+    trigger_incident(cm, faction_key, incident_key, fire_immediately)
+end
+cm.trigger_incident = function (self, faction_key, incident_key, fire_immediately)
+    if string.find(incident_key, "rogue_") then
+        old_trigger_incident(faction_key, incident_key, fire_immediately)
+    end
+    out("Trigger incident command "..incident_key.." was ignored")
+end
+
+--for the rest, ignore them entirely
+cm.trigger_incident_with_targets = function (self, ...)
+    local arg_string = tolerant_table_concat({...}, ", ")
+    out("Trigger incident with targets command "..arg_string.." was ignored")
+end
+
+cm.trigger_dilemma_with_targets = function (self, ...)
+    local arg_string = tolerant_table_concat({...}, ", ")
+    out("Trigger dilemma with targets command "..arg_string.." was ignored")
+end
+
+cm.trigger_mission = function (self, ...)
+    local arg_string = tolerant_table_concat({...}, ", ")
+    out("Trigger mission command "..arg_string.." was ignored")
+end
+
+cm.trigger_mission_with_targets = function (self, ...)
+    local arg_string = tolerant_table_concat({...}, ", ")
+    out("Trigger mission with targets command "..arg_string.." was ignored")
+end
+
+cm.trigger_custom_mission_from_string = function (self, ...)
+    local arg_string = tolerant_table_concat({...}, ", ")
+    out("Trigger custom mission from string command "..arg_string.." was ignored")
+end
+
+
 --[[UI Notebook:
 
     -- steal this and the other glory elements to get deamonic favour icons

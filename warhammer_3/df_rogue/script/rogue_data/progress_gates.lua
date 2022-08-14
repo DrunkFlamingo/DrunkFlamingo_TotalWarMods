@@ -15,48 +15,38 @@ return {
 		["PROGRESS_GATE_KEY"] = "NEVER"
 	},
 	[4] = {
-		["COMMENT"] = "Introduction act: build your strength before attempting to take Doom Keep!",
+		["COMMENT"] = "Introduction act: Guaranteed to generate after starting battle.",
 		["ACTIVATION_THRESHOLD"] = "1",
 		["PROGRESS_GATE_KEY"] = "INTRODUCTION"
 	},
 	[5] = {
-		["COMMENT"] = "",
+		["COMMENT"] = "Intro act random paths",
 		["ACTIVATION_THRESHOLD"] = "1",
 		["PROGRESS_GATE_KEY"] = "INTRO_WEST"
 	},
 	[6] = {
-		["COMMENT"] = "",
+		["COMMENT"] = "Intro act random paths",
 		["ACTIVATION_THRESHOLD"] = "1",
 		["PROGRESS_GATE_KEY"] = "INTRO_SOUTH"
 	},
 	[7] = {
-		["COMMENT"] = "",
-		["ACTIVATION_THRESHOLD"] = "1",
-		["PROGRESS_GATE_KEY"] = "INTRO_MINIBOSS_SOUTH"
-	},
-	[8] = {
-		["COMMENT"] = "",
+		["COMMENT"] = "Intro act random paths",
 		["ACTIVATION_THRESHOLD"] = "1",
 		["PROGRESS_GATE_KEY"] = "INTRO_NORTH"
+	},
+	[8] = {
+		["COMMENT"] = "Intro act random paths",
+		["ACTIVATION_THRESHOLD"] = "1",
+		["PROGRESS_GATE_KEY"] = "INTRO_EAST"
 	},
 	[9] = {
 		["COMMENT"] = "",
 		["ACTIVATION_THRESHOLD"] = "1",
-		["PROGRESS_GATE_KEY"] = "INTRO_MINIBOSS_NORTH"
+		["PROGRESS_GATE_KEY"] = "INTRO_EAST_S1"
 	},
 	[10] = {
 		["COMMENT"] = "",
 		["ACTIVATION_THRESHOLD"] = "1",
-		["PROGRESS_GATE_KEY"] = "INTRO_EAST"
-	},
-	[11] = {
-		["COMMENT"] = "Limit the number of extra battles people can play in the intro",
-		["ACTIVATION_THRESHOLD"] = "7",
-		["PROGRESS_GATE_KEY"] = "INTRO_LIMIT"
-	},
-	[12] = {
-		["COMMENT"] = "",
-		["ACTIVATION_THRESHOLD"] = "1",
-		["PROGRESS_GATE_KEY"] = "ACT_ONE"
+		["PROGRESS_GATE_KEY"] = "INTRO_WEST_S1"
 	}
 }

@@ -10,9 +10,14 @@
 					<frame this="0E10BEA2-0A09-4738-8C2747945EA6E035">
 						<frame_header this="2E3F6A9A-6190-494D-857BFB3AC399342F"/>
 					</frame>
-					<textpanel this="089DDC97-BDF2-43BF-AF4066B741BED886"/>
+                    <textpanelparent this="78CEDCD8-68DB-9A47-5337353BA12F427B">
+                        <dy_item_name this="80EB9238-AF86-8378-C3AEEC6973801DEB">
+                            <dy_set_icon this="BBD04568-6760-32F6-51B471FBC18ACD3C"/>
+                        </dy_item_name>
+					    <textpanel this="089DDC97-BDF2-43BF-AF4066B741BED886"/>      
+                    </textpanelparent>
 					<dy_fields this="5E456287-1C8A-4EC2-BC50B2BAF8F7ADC6"/>
-					<button_hire this="F41155CB-8A5A-4D29-8CCCB368E7A4A5F0"/>
+					<button_finalize_armory_reward this="F41155CB-8A5A-4D29-8CCCB368E7A4A5F0"/>
 					<reward_select_panel this="720F8445-FEC2-4393-802FF0B9219882A4">
 						<frame this="9E8B2505-6F8E-4A72-9AF9F63A210C5DAF">
 							<frame_header this="018CDB4E-A97A-4D10-A7DFB66E857965CB"/>
@@ -172,9 +177,9 @@
 				</newstate>
 			</states>
 		</rogue_reward_selection>
-		<button_hire
+		<button_finalize_armory_reward
 			this="F41155CB-8A5A-4D29-8CCCB368E7A4A5F0"
-			id="button_hire"
+			id="button_finalize_armory_reward"
 			template_id="round_medium_button"
 			part_of_template="true"
 			uniqueguid="F41155CB-8A5A-4D29-8CCCB368E7A4A5F0"
@@ -221,6 +226,16 @@
 					uniqueguid="0970E34E-7706-45E9-869337CB55D05BE7"/>
 			</component_image_uniqueguids>
 			<callbacks_with_context>
+                <callback_with_context
+                    callback_id="ContextStateSetter"
+                    context_object_id="CcoStaticObject"
+                    context_function_id="GetIfElse(IsContextValid(DatabaseRecordContext(&quot;CcoArmoryItemRecord&quot;, ScriptObjectContext(&quot;rogue_reward_dialogue_selection&quot;).StringValue)), &quot;active&quot;, &quot;inactive&quot;)">
+                    <child_m_user_properties>
+                        <property
+                            name="event0"
+                            value="ScriptObjectValueUpdatedrogue_reward_dialogue_selection"/>
+                    </child_m_user_properties>
+                </callback_with_context>
 				<callback_with_context callback_id="Button"/>
 				<callback_with_context callback_id="StatePropagatorCallback">
 					<child_m_user_properties>
@@ -277,7 +292,7 @@
 				<element value="ui/skins/default/button_round_medium_underlay.png"/>
 				<element value=""/>
 			</override_images>
-		</button_hire>
+		</button_finalize_armory_reward>
 		<panel_title
 			this="A4AEC00D-8718-46BA-A1276DB0A91EBD5B"
 			id="panel_title"
@@ -988,12 +1003,24 @@
 			this="089DDC97-BDF2-43BF-AF4066B741BED886"
 			id="textpanel"
 			offset="86.00,96.00"
-			docking="Top Center"
+			docking="Center"
 			dock_offset="3.00,96.00"
 			component_anchor_point="0.50,0.00"
 			tooltipslocalised="true"
 			uniqueguid="089DDC97-BDF2-43BF-AF4066B741BED886"
 			currentstate="928F4918-EF3A-4FB2-8E15D44E6DFEF8DC">
+            <callbackwithcontextlist>   
+                <callback_with_context
+                    callback_id="ContextVisibilitySetter"
+                    context_object_id="CcoStaticObject"
+                    context_function_id="IsStringEmpty(ScriptObjectContext(&quot;rogue_reward_dialogue_selection&quot;).StringValue)">
+                        <child_m_user_properties>
+                            <property
+                                name="event0"
+                                value="ScriptObjectValueUpdatedrogue_reward_dialogue_selection"/>
+                        </child_m_user_properties>
+                </callback_with_context>
+            </callbackwithcontextlist>
 			<states>
 				<newstate
 					this="928F4918-EF3A-4FB2-8E15D44E6DFEF8DC"
@@ -1383,10 +1410,24 @@
 				<callback_with_context
 					callback_id="ContextObjectStore"
 					context_object_id="CcoArmoryItemRecord"/>
-				<callback_with_context
-					callback_id="ContextStateSetter"
-					context_object_id="CcoArmoryItemRecord"
-					context_function_id="GetIfElse(IsEquippedForCharacter(SelectedOrContainedCharacter), &quot;selected&quot;, &quot;active&quot;)"/>
+                <callback_with_context
+                    callback_id="ContextStateSetterConditional"
+                    context_object_id="CcoArmoryItemRecord">
+                    <child_m_user_properties>
+                        <property
+                            name="active"
+                            value="IsStringEmpty(ScriptObjectContext(&quot;rogue_reward_dialogue_selection&quot;).StringValue)"/>
+                        <property
+                            name="selected"
+                            value="Key == DatabaseRecordContext(&quot;CcoArmoryItemRecord&quot;, ScriptObjectContext(&quot;rogue_reward_dialogue_selection&quot;).StringValue)"/>
+                        <property
+							name="fallback_state"
+							value="inactive"/>
+                        <property
+                            name="event0"
+                            value="ScriptObjectValueUpdatedrogue_reward_dialogue_selection"/>
+                    </child_m_user_properties>
+                </callback_with_context>
 				<callback_with_context
 					callback_id="ContextTooltipSetter"
 					context_object_id="CcoArmoryItemRecord"
@@ -1746,5 +1787,210 @@
 				</columnwidths>
 			</LayoutEngine>
 		</template_armory_item>
+        <textpanelparent
+			this="78CEDCD8-68DB-9A47-5337353BA12F427B"
+			id="textpanelparent"
+			tooltipslocalised="true"
+            dock_point="Top Center"
+			uniqueguid="78CEDCD8-68DB-9A47-5337353BA12F427B"
+			currentstate="266F8F7A-D910-1500-17C8CBEC01F1DC29"
+			defaultstate="266F8F7A-D910-1500-17C8CBEC01F1DC29">
+            <callbackwithcontextlist>
+				<callback_with_context
+					callback_id="ContextObjectStore"
+					context_object_id="CcoArmoryItemRecord"/>
+                <callback_with_context
+                    callback_id="ContextPropagator"
+                    context_object_id="CcoStaticObject"
+                    context_function_id="DatabaseRecordContext(&quot;CcoArmoryItemRecord&quot;, ScriptObjectContext(&quot;rogue_reward_dialogue_selection&quot;).StringValue)">
+                        <child_m_user_properties>
+                            <property
+                                name="event0"
+                                value="ScriptObjectValueUpdatedrogue_reward_dialogue_selection"/>
+                        </child_m_user_properties>
+                </callback_with_context>
+            </callbackwithcontextlist>
+			<componentimages>
+				<component_image
+					this="98A0B55B-AC96-445D-D221743C491B59C7"
+					uniqueguid="98A0B55B-AC96-445D-D221743C491B59C7"/>
+			</componentimages>
+			<states>
+				<newstate
+					this="266F8F7A-D910-1500-17C8CBEC01F1DC29"
+					name="NewState"
+					width="495"
+					height="48"
+					interactive="false"
+					uniqueguid="266F8F7A-D910-1500-17C8CBEC01F1DC29">
+					<imagemetrics>
+						<image
+							this="13460EFC-0106-216C-C016D70410C2791B"
+							uniqueguid="13460EFC-0106-216C-C016D70410C2791B"
+							componentimage="98A0B55B-AC96-445D-D221743C491B59C7"
+							width="0"
+							height="0"/>
+					</imagemetrics>
+				</newstate>
+			</states>
+		</textpanelparent>
+		<dy_item_name
+			this="80EB9238-AF86-8378-C3AEEC6973801DEB"
+			id="dy_item_name"
+            offset="86.00,96.00"
+			priority="20"
+			tooltipslocalised="true"
+			uniqueguid="80EB9238-AF86-8378-C3AEEC6973801DEB"
+			currentstate="118D5B32-9F44-53F6-92629140549CEEDA"
+			defaultstate="118D5B32-9F44-53F6-92629140549CEEDA">
+			<callbackwithcontextlist>
+                <callback_with_context
+                    callback_id="ContextVisibilitySetter"
+                    context_object_id="CcoStaticObject"
+                    context_function_id="IsStringEmpty(ScriptObjectContext(&quot;rogue_reward_dialogue_selection&quot;).StringValue) == false">
+                    <child_m_user_properties>
+                        <property
+                            name="event0"
+                            value="ScriptObjectValueUpdatedrogue_reward_dialogue_selection"/>
+                    </child_m_user_properties>
+            </callback_with_context>
+                
+				<callback_with_context
+					callback_id="ContextTextLabel"
+					context_object_id="CcoArmoryItemRecord"
+					context_function_id="GetIfElse(IsStringEmpty(Name), Key, Name)"/>
+                <callback_with_context
+					callback_id="ContextTooltipSetter"
+					context_object_id="CcoArmoryItemRecord"
+					context_function_id="Description"/>
+				<callback_with_context
+					callback_id="ContextImageSetter"
+					context_object_id="CcoArmoryItemRecord"
+					context_function_id="AddDefaultSkinPath(Format(&quot;armoury_banner_s.png&quot;, ItemType))"/>
+			</callbackwithcontextlist>
+			<componentimages>
+				<component_image
+					this="BDFC4311-1A06-628E-67A2EA9C59E3DC27"
+					uniqueguid="BDFC4311-1A06-628E-67A2EA9C59E3DC27"
+					imagepath="ui/skins/wh3_dae_main_dae_daemons/armoury_banner_generic.png"/>
+			</componentimages>
+			<states>
+				<active
+					this="118D5B32-9F44-53F6-92629140549CEEDA"
+					name="active"
+					width="332"
+					height="24"
+					text="DY_Title"
+					textvalign="Center"
+					textxoffset="32.00,0.00"
+					texthbehaviour="Never split"
+					textlabel="StateText_98202901"
+					font_m_font_name="brand_header"
+					font_m_size="14"
+					font_m_colour="#FFF8D7FF"
+					font_m_leading="1"
+					fontcat_name="FE_header_small"
+					text_shader_name="set_greyscale_t0"
+					textshadervars="0.00,0.75,0.00,0.00"
+					uniqueguid="118D5B32-9F44-53F6-92629140549CEEDA">
+					<imagemetrics>
+						<image
+							this="7E2FBB88-9788-177F-26E824676AB0C0B4"
+							uniqueguid="7E2FBB88-9788-177F-26E824676AB0C0B4"
+							componentimage="BDFC4311-1A06-628E-67A2EA9C59E3DC27"
+							offset="0.00,-5.00"
+							width="330"
+							height="35"
+							colour="#FFFFFFC0"
+							dockpoint="Center Left"
+							margin="0.00,1.00,0.00,30.00"/>
+					</imagemetrics>
+				</active>
+				<selected
+					this="FC78B0A0-6DFD-DBD1-554B36ACFA0DF2DF"
+					name="selected"
+					width="332"
+					height="24"
+					text="DY_Title"
+					textvalign="Center"
+					textxoffset="32.00,0.00"
+					texthbehaviour="Never split"
+					textlabel="StateText_5fe5b192"
+					font_m_font_name="brand_header"
+					font_m_size="14"
+					font_m_colour="#FFF8D7FF"
+					font_m_leading="1"
+					fontcat_name="FE_header_small"
+					uniqueguid="FC78B0A0-6DFD-DBD1-554B36ACFA0DF2DF">
+					<imagemetrics>
+						<image
+							this="DBF5DEBE-4ADC-0AA9-3DFBA08862664589"
+							uniqueguid="DBF5DEBE-4ADC-0AA9-3DFBA08862664589"
+							componentimage="BDFC4311-1A06-628E-67A2EA9C59E3DC27"
+							offset="0.00,-5.00"
+							width="330"
+							height="35"
+							dockpoint="Center Left"
+							margin="0.00,1.00,0.00,30.00"/>
+					</imagemetrics>
+				</selected>
+			</states>
+		</dy_item_name>
+		<dy_set_icon
+			this="BBD04568-6760-32F6-51B471FBC18ACD3C"
+			id="dy_set_icon"
+			offset="308.00,0.00"
+			allowhorizontalresize="false"
+			allowverticalresize="false"
+			docking="Center Right"
+			component_anchor_point="1.00,0.50"
+			priority="60"
+			componentleveltooltip="{{tt:ui/campaign ui/armory_item_set_tooltip}}"
+			tooltiplabel="ComponentTooltip_6cd23090"
+			uniqueguid="BBD04568-6760-32F6-51B471FBC18ACD3C"
+			currentstate="F95D5F1F-CFDD-2B0D-DBFDACFA681DC6B4"
+			defaultstate="F95D5F1F-CFDD-2B0D-DBFDACFA681DC6B4">
+			<callbackwithcontextlist>
+				<callback_with_context
+					callback_id="ContextVisibilitySetter"
+					context_object_id="CcoArmoryItemRecord"
+					context_function_id="ItemSetList.Any(EffectList.IsEmpty == false)"/>
+				<callback_with_context
+					callback_id="ContextImageSetter"
+					context_object_id="CcoArmoryItemSetRecord"
+					context_function_id="Icon"/>
+				<callback_with_context
+					callback_id="ContextPropagator"
+					context_object_id="CcoArmoryItemRecord"
+					context_function_id="ItemSetList.FirstContext(EffectList.IsEmpty == false)"/>
+				<callback_with_context
+					callback_id="ContextCustomTooltipStore"
+					context_object_id="CcoArmoryItemSetRecord"/>
+			</callbackwithcontextlist>
+			<componentimages>
+				<component_image
+					this="45AE73C5-5C49-D092-DC10EDD88BC2B779"
+					uniqueguid="45AE73C5-5C49-D092-DC10EDD88BC2B779"
+					imagepath="ui/skins/warhammer3/icon_gift_set_dp.png"/>
+			</componentimages>
+			<states>
+				<default
+					this="F95D5F1F-CFDD-2B0D-DBFDACFA681DC6B4"
+					name="default"
+					width="24"
+					height="24"
+					interactive="true"
+					uniqueguid="F95D5F1F-CFDD-2B0D-DBFDACFA681DC6B4">
+					<imagemetrics>
+						<image
+							this="53CDD9A1-3EFF-EEE8-CC458DBC2BE9C044"
+							uniqueguid="53CDD9A1-3EFF-EEE8-CC458DBC2BE9C044"
+							componentimage="45AE73C5-5C49-D092-DC10EDD88BC2B779"
+							width="24"
+							height="24"/>
+					</imagemetrics>
+				</default>
+			</states>
+		</dy_set_icon>
 	</components>
 </layout>

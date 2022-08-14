@@ -5,8 +5,8 @@
 	precache_condition="">
 	<hierarchy>
 		<root this="CCA3BABF-DDD2-D7DC-1C76F1383546F418">
-			<encounter_preview this="A579883B-A91E-F12D-22B69FB988AF6CFE">
-				<encounter_info_panel this="9DFC5EC6-EBEC-2BE2-40F05336BD0B3967">
+			<player_units_screen this="A579883B-A91E-F12D-22B69FB988AF6CFE">
+				<units_info_panel this="9DFC5EC6-EBEC-2BE2-40F05336BD0B3967">
 					<header this="3D680723-45CE-B9B4-796AF87F4A7D5688">
 						<panel_smoke_t this="46C5826D-D9D2-9558-AD21CBBEC2C4C3CA"/>
 						<panel_title this="3454DB8A-831C-5961-5D2FE6AA60E6BC27">
@@ -14,25 +14,27 @@
 						</panel_title>
 						<button_info this="549E92FE-9BD6-80A9-C1B43E3CD1FA607E"/>
 					</header>
+                    <units this="167D583F-C0AB-54EE-03983058090FDCB6">
+                        <template_unit_card this="69462C9D-A3D0-9C8B-D1D2DE5625D59752">
+                            <unit_cat_frame this="FC4F7070-94B9-22FB-A3B063D54BEB73AE">
+                                <unit_category_icon this="2C42A835-87C5-75C0-4889BAD21CA60B76"/>
+                            </unit_cat_frame>
+                            <health_frame this="2D72DE1D-F5C2-95BC-A0E72883697FA6C7">
+                                <health_back this="7BBCD40E-70B4-FDC6-2ED136EA1A9CC053"/>
+                                <health_bar this="652D791C-1A59-F906-99EDF905BB189834">
+                                    <health_fill this="539C5137-8040-6894-7B608FA5C776BDDD"/>
+                                    <damaged_max this="11CD14B6-29BF-E91B-C64A15A35FA20DC2"/>
+                                </health_bar>
+                                <unit_strength_number this="E51E634F-C1B9-6A3B-3086D6561AC4540B"/>
+                            </health_frame>
+                            <experience this="A8D6F2AD-C90B-B503-D9CAEA39046F8DB2"/>
+                        </template_unit_card>
+                    </units>
 					<tx_descr this="ED911422-03D4-F01F-8A86971D406E3F3C"/>
-					<units_holder this="2BF7387C-AB12-0F2F-C1218D70BA83C706">
-						<commander_unit_card this="370200E6-29F9-F3E9-0CE701A92EABE38D">
-							<unit_cat_frame this="A2E6C963-1E41-5B73-E90BB28E400E4747">
-								<unit_category_icon this="F12647D4-2A28-6B20-AB490F093FB0FB5B"/>
-							</unit_cat_frame>
-						</commander_unit_card>
-						<units this="DD3FFAC1-62DB-A97F-6CC534D4CEE1345C">
-							<template_unit_card this="BFE1CF9F-4548-B05E-07E381900D3EA9D8">
-								<unit_cat_frame this="C6F19065-8AAA-A6D8-198D229CDA1591BD">
-									<unit_category_icon this="81D4EFD8-88A8-CED2-4FA4C95E1D442769"/>
-								</unit_cat_frame>
-							</template_unit_card>
-						</units>
-					</units_holder>
 					<details_list this="1784BAF5-5624-1DBB-CE07DF3F0A72B38D">
 						<no_node_selected this="173C72CD-9D2F-A30C-AEFBBACB45E84384"/>
 					</details_list>
-				</encounter_info_panel>
+				</units_info_panel>
 				<small_bar this="76907D7E-4F05-FD1D-1A2E3E4592AD1C8D">
 					<button_set_holder this="DA0FB649-25AD-5C2E-52FA2B9C09D8B97F">
 						<button_commence_encounter this="892F6347-0980-1547-3F92081A6F37DDA8">
@@ -55,7 +57,7 @@
 						</button_decline_encounter>
 					</button_set_holder>
 				</small_bar>
-			</encounter_preview>
+			</player_units_screen>
 		</root>
 	</hierarchy>
 	<components>
@@ -186,6 +188,96 @@
 				<element value="ui\skins\default\fe_tab_text_selected_underlay.png"/>
 			</override_images>
 		</button_decline_encounter>
+		<button_info
+			this="549E92FE-9BD6-80A9-C1B43E3CD1FA607E"
+			id="button_info"
+			template_id="round_extra_small_button"
+			part_of_template="true"
+			uniqueguid_in_template="052608B0-D9E2-46D2-926D0B182C32BBB6"
+			uniqueguid="549E92FE-9BD6-80A9-C1B43E3CD1FA607E"
+			dimensions="30.00,30.00"
+			dock_point="Top Right"
+			offset="0.00,10.00"
+			priority="60"
+			sound_category="UI_GBL_TMP_Round_Small_Button">
+			<state_uniqueguids>
+				<state_uniqueguid
+					name="active"
+					uniqueguid="C4ECD92E-2231-C488-11E7178B12190B92"/>
+				<state_uniqueguid
+					name="down"
+					uniqueguid="C2FD8C54-8B3D-D00C-132015D399279FE0"/>
+				<state_uniqueguid
+					name="down_off"
+					uniqueguid="22D7F7DD-5B4B-CAC5-1DD6A53A1C026F81"/>
+				<state_uniqueguid
+					name="hover"
+					uniqueguid="476B2ED2-49B1-E5B9-4945E7A6A1F362A2"/>
+				<state_uniqueguid
+					name="inactive"
+					uniqueguid="152F31F8-8AB6-C949-637C0679DE43B4CC"/>
+			</state_uniqueguids>
+			<component_image_uniqueguids>
+				<component_image_uniqueguid
+					name="ui\skins\default\icon_question_mark.png"
+					uniqueguid="5EAE6440-2378-1B35-08516555F8E3AEE3"/>
+				<component_image_uniqueguid
+					name="ui\skins\default\button_round_small_pressed.png"
+					uniqueguid="57563839-BBFB-A4A7-53ED7E8507E89E89"/>
+				<component_image_uniqueguid
+					name="ui\skins\default\button_round_small_hover.png"
+					uniqueguid="169C23BE-8923-8837-12DEF682813A1D4C"/>
+				<component_image_uniqueguid
+					name="ui\skins\default\button_round_small_active.png"
+					uniqueguid="20A716F4-85ED-D4FA-B2F5B962CF870A75"/>
+				<component_image_uniqueguid
+					name="ui\skins\default\button_round_small_inactive.png"
+					uniqueguid="E9A4D9A0-36F8-FB3F-72CABB65A8B02EAD"/>
+				<component_image_uniqueguid
+					name="ui\skins\default\button_round_small_underlay.png"
+					uniqueguid="3AA38CE2-E508-5BC5-00D8097CC63D9AE7"/>
+			</component_image_uniqueguids>
+						<user_properties>
+				<property
+					name="disable_override"
+					value="resizable"/>
+				<property
+					name="disable_override0"
+					value="CallbackAnimTrigger"/>
+				<property
+					name="dynamic_image"
+					value="0"/>
+			</user_properties>
+			<localised_texts>
+				<localised_text
+					tooltip_label="ComponentTooltip_535d12d2"
+					tooltip_text="{{tr:help_pages}}"/>
+				<localised_text
+					state="active"
+					is_text_localised="false"/>
+				<localised_text
+					state="down"
+					is_text_localised="false"/>
+				<localised_text
+					state="down_off"
+					is_text_localised="false"/>
+				<localised_text
+					state="hover"
+					is_text_localised="false"/>
+				<localised_text
+					state="inactive"
+					is_text_localised="false"/>
+			</localised_texts>
+			<override_images>
+				<element value="ui\skins\default\icon_question_mark.png"/>
+				<element value="ui\skins\default\button_round_small_pressed.png"/>
+				<element value="ui\skins\default\button_round_small_hover.png"/>
+				<element value="ui\skins\default\button_round_small_active.png"/>
+				<element value="ui\skins\default\button_round_small_inactive.png"/>
+				<element value="ui\skins\default\button_round_small_underlay.png"/>
+				<element value=""/>
+			</override_images>
+		</button_info>
 		<button_commence_encounter
 			this="892F6347-0980-1547-3F92081A6F37DDA8"
 			id="button_commence_encounter"
@@ -588,9 +680,9 @@
 				<element value="ui\skins\default\fe_tab_text_eye.png"/>
 			</override_images>
 		</eye_right>
-		<encounter_preview
+		<player_units_screen
 			this="A579883B-A91E-F12D-22B69FB988AF6CFE"
-			id="encounter_preview"
+			id="player_units_screen"
 			offset="314.00,303.00"
 			allowhorizontalresize="false"
 			allowverticalresize="false"
@@ -605,14 +697,11 @@
                 <callback_with_context callback_id="ContextInitCampaignRoot"/>
 				<callback_with_context
 					callback_id="ContextPropagator"
-					context_object_id="CcoStaticObject"
-					context_function_id="Join(ScriptObjectContext(&quot;rogue_active_encounters&quot;).TableValue.Value).Filter(Key == ScriptObjectContext(&quot;rogue_selected_encounter&quot;).StringValue).FirstContext">
-                    <child_m_user_properties>
-                        <property
-                            name="event0"
-                            value="ScriptObjectValueUpdatedrogue_selected_encounter"/>
-                    </child_m_user_properties>
-                </callback_with_context>
+					context_object_id="CcoCampaignRoot"
+					context_function_id="PlayersFaction.FactionLeaderContext"/>
+                <callback_with_context
+					callback_id="ContextObjectStore"
+					context_object_id="CcoCampaignCharacter"/>
 			</callbackwithcontextlist>
 			<states>
 				<newstate
@@ -690,7 +779,7 @@
 					</frames>
 				</hide>
 			</animations>
-		</encounter_preview>
+		</player_units_screen>
 		<small_bar
 			this="76907D7E-4F05-FD1D-1A2E3E4592AD1C8D"
 			id="small_bar"
@@ -1060,9 +1149,9 @@
 				</newstate>
 			</states>
 		</panel_title>
-		<encounter_info_panel
+		<units_info_panel
 			this="9DFC5EC6-EBEC-2BE2-40F05336BD0B3967"
-			id="encounter_info_panel"
+			id="units_info_panel"
 			offset="171.00,391.00"
 			visible="true"
 			docking="Bottom Center"
@@ -1180,12 +1269,12 @@
 					<column width="545"/>
 				</columnwidths>
 			</LayoutEngine>
-		</encounter_info_panel>
+		</units_info_panel>
 		<tx_descr
 			this="ED911422-03D4-F01F-8A86971D406E3F3C"
 			id="tx_descr"
 			offset="12.00,34.00"
-			visible="true"
+			visible="false"
 			priority="50"
 			tooltipslocalised="true"
 			uniqueguid="ED911422-03D4-F01F-8A86971D406E3F3C"
@@ -1627,8 +1716,513 @@
 				type="HorizontalList"
 				sizetocontent="true"/>
 		</costs>
+		<damaged_max
+			this="11CD14B6-29BF-E91B-C64A15A35FA20DC2"
+			id="damaged_max"
+			offset="43.00,-1.00"
+			allowhorizontalresize="false"
+			allowverticalresize="false"
+			visible="false"
+			docking="Center Left"
+			dock_offset="43.00,0.00"
+			component_anchor_point="0.00,0.50"
+			tooltipslocalised="true"
+			uniqueguid="11CD14B6-29BF-E91B-C64A15A35FA20DC2"
+			currentstate="6DED79E2-BDE0-469E-9641F94017D6A125"
+			defaultstate="6DED79E2-BDE0-469E-9641F94017D6A125">
+			<componentimages>
+				<component_image
+					this="CFA7B838-33AA-04CE-C5068AF339D9C34E"
+					uniqueguid="CFA7B838-33AA-04CE-C5068AF339D9C34E"
+					imagepath="ui/skins/default/health_bar_damaged_bar.png"/>
+			</componentimages>
+			<states>
+				<newstate
+					this="6DED79E2-BDE0-469E-9641F94017D6A125"
+					name="NewState"
+					width="5"
+					height="14"
+					texthbehaviour="Never split"
+					uniqueguid="6DED79E2-BDE0-469E-9641F94017D6A125">
+					<imagemetrics>
+						<image
+							this="45B4C05B-4326-17B9-2D42ED065C229835"
+							uniqueguid="45B4C05B-4326-17B9-2D42ED065C229835"
+							componentimage="CFA7B838-33AA-04CE-C5068AF339D9C34E"
+							width="5"
+							height="14"
+							margin="3.00,1.00,3.00,1.00"/>
+					</imagemetrics>
+				</newstate>
+			</states>
+		</damaged_max>
+		<experience
+			this="A8D6F2AD-C90B-B503-D9CAEA39046F8DB2"
+			id="experience"
+			offset="1.00,21.00"
+			allowhorizontalresize="false"
+			allowverticalresize="false"
+			docking="Top Left"
+			dock_offset="1.00,21.00"
+			tooltipslocalised="true"
+			uniqueguid="A8D6F2AD-C90B-B503-D9CAEA39046F8DB2"
+			currentstate="AE8A0DB1-78F0-EC09-D039CE645C92075C"
+			defaultstate="AE8A0DB1-78F0-EC09-D039CE645C92075C">
+			<componentimages>
+				<component_image
+					this="DD5276C8-1CB3-0BEA-841078B594C1AFF9"
+					uniqueguid="DD5276C8-1CB3-0BEA-841078B594C1AFF9"
+					imagepath="ui/skins/default/experience_9.png"/>
+				<component_image
+					this="98766737-4EF3-1FE0-8840E84BC51936AE"
+					uniqueguid="98766737-4EF3-1FE0-8840E84BC51936AE"
+					imagepath="ui/skins/default/experience_1.png"/>
+				<component_image
+					this="2258FD5D-7D93-5310-494344BC57790E56"
+					uniqueguid="2258FD5D-7D93-5310-494344BC57790E56"
+					imagepath="ui/skins/default/experience_2.png"/>
+				<component_image
+					this="48DEAE2E-7110-49B3-ABFA2FE92D68D7A7"
+					uniqueguid="48DEAE2E-7110-49B3-ABFA2FE92D68D7A7"
+					imagepath="ui/skins/default/experience_3.png"/>
+				<component_image
+					this="4C387AEB-8D30-0DED-FEE1DE6BC205C4AE"
+					uniqueguid="4C387AEB-8D30-0DED-FEE1DE6BC205C4AE"
+					imagepath="ui/skins/default/experience_4.png"/>
+				<component_image
+					this="EA5FF588-878E-32FA-36F7F32218D693D1"
+					uniqueguid="EA5FF588-878E-32FA-36F7F32218D693D1"
+					imagepath="ui/skins/default/experience_5.png"/>
+				<component_image
+					this="56823D65-B0D1-E2ED-A1A896A68ACA995D"
+					uniqueguid="56823D65-B0D1-E2ED-A1A896A68ACA995D"
+					imagepath="ui/skins/default/experience_6.png"/>
+				<component_image
+					this="7CB8CA57-0283-C101-44E586F71B7862A7"
+					uniqueguid="7CB8CA57-0283-C101-44E586F71B7862A7"
+					imagepath="ui/skins/default/experience_7.png"/>
+				<component_image
+					this="6E1298CD-BC8B-DA69-6D37DB8E25DF54DD"
+					uniqueguid="6E1298CD-BC8B-DA69-6D37DB8E25DF54DD"
+					imagepath="ui/skins/default/experience_8.png"/>
+			</componentimages>
+			<states>
+				<_0
+					this="AE8A0DB1-78F0-EC09-D039CE645C92075C"
+					name="0"
+					width="24"
+					height="24"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					uniqueguid="AE8A0DB1-78F0-EC09-D039CE645C92075C"/>
+				<_1
+					this="8F87F9F5-F496-9D0C-4F6CDEE5457AEF98"
+					name="1"
+					width="24"
+					height="24"
+					tooltip="Unit rank 1"
+					tooltiplabel="Level_1_Tooltip_4c0043s"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					interactive="true"
+					disabled="true"
+					shadervars="-0.20,0.00,0.00,0.00"
+					uniqueguid="8F87F9F5-F496-9D0C-4F6CDEE5457AEF98">
+					<imagemetrics>
+						<image
+							this="ADCA01FC-CBEB-0696-4CAA643FB8437AD0"
+							uniqueguid="ADCA01FC-CBEB-0696-4CAA643FB8437AD0"
+							componentimage="98766737-4EF3-1FE0-8840E84BC51936AE"
+							width="24"
+							height="24"/>
+					</imagemetrics>
+				</_1>
+				<_10
+					this="0439012D-CFCB-9426-E81A832240D1FE07"
+					name="10"
+					width="24"
+					height="24"
+					tooltip="Unit rank 10"
+					tooltiplabel="experience_10_Tooltip_160027"
+					font_m_size="12"
+					font_m_colour="#FFF8D7FF"
+					font_m_leading="3"
+					fontcat_name="ingame_tooltip"
+					interactive="true"
+					disabled="true"
+					uniqueguid="0439012D-CFCB-9426-E81A832240D1FE07"/>
+				<_2
+					this="6B8AC15A-D181-8C45-0986EBF59548365D"
+					name="2"
+					width="24"
+					height="24"
+					tooltip="Unit rank 2"
+					tooltiplabel="Level_2_Tooltip_6c0040d"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					interactive="true"
+					disabled="true"
+					shadervars="-0.20,0.00,0.00,0.00"
+					uniqueguid="6B8AC15A-D181-8C45-0986EBF59548365D">
+					<imagemetrics>
+						<image
+							this="1D9B3D08-06AA-1CDD-D7C6FD6B06B6BE14"
+							uniqueguid="1D9B3D08-06AA-1CDD-D7C6FD6B06B6BE14"
+							componentimage="2258FD5D-7D93-5310-494344BC57790E56"
+							width="24"
+							height="24"/>
+					</imagemetrics>
+				</_2>
+				<_3
+					this="0554FA27-B1C8-5D85-744CFFA143BD7F21"
+					name="3"
+					width="24"
+					height="24"
+					tooltip="Unit rank 3"
+					tooltiplabel="Level_3_Tooltip_6c0041t"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					interactive="true"
+					disabled="true"
+					shadervars="-0.20,0.00,0.00,0.00"
+					uniqueguid="0554FA27-B1C8-5D85-744CFFA143BD7F21">
+					<imagemetrics>
+						<image
+							this="11CB07DA-D99E-B720-2C52F747EF63FB6C"
+							uniqueguid="11CB07DA-D99E-B720-2C52F747EF63FB6C"
+							componentimage="48DEAE2E-7110-49B3-ABFA2FE92D68D7A7"
+							width="24"
+							height="24"/>
+					</imagemetrics>
+				</_3>
+				<_4
+					this="1F51344F-7C29-C5AC-77EEB129A08D5337"
+					name="4"
+					width="24"
+					height="24"
+					tooltip="Unit rank 4"
+					tooltiplabel="Level_4_Tooltip_6c0046t"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					interactive="true"
+					disabled="true"
+					shadervars="-0.50,0.00,0.00,0.00"
+					uniqueguid="1F51344F-7C29-C5AC-77EEB129A08D5337">
+					<imagemetrics>
+						<image
+							this="30D86295-9CCF-19A4-D50AEB9BC114DD4D"
+							uniqueguid="30D86295-9CCF-19A4-D50AEB9BC114DD4D"
+							componentimage="4C387AEB-8D30-0DED-FEE1DE6BC205C4AE"
+							width="24"
+							height="24"/>
+					</imagemetrics>
+				</_4>
+				<_5
+					this="5F0C9C77-4D74-64AC-DDCEBA4F97D694F6"
+					name="5"
+					width="24"
+					height="24"
+					tooltip="Unit rank 5"
+					tooltiplabel="Level_5_Tooltip_6c0047e"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					interactive="true"
+					disabled="true"
+					shadervars="-0.50,0.00,0.00,0.00"
+					uniqueguid="5F0C9C77-4D74-64AC-DDCEBA4F97D694F6">
+					<imagemetrics>
+						<image
+							this="E790442E-375C-ACAB-B763285A5F37C29F"
+							uniqueguid="E790442E-375C-ACAB-B763285A5F37C29F"
+							componentimage="EA5FF588-878E-32FA-36F7F32218D693D1"
+							width="24"
+							height="24"/>
+					</imagemetrics>
+				</_5>
+				<_6
+					this="7633E7F0-51C7-9253-9F82F960F2096DFE"
+					name="6"
+					width="24"
+					height="24"
+					tooltip="Unit rank 6"
+					tooltiplabel="Level_6_Tooltip_6c0044m"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					interactive="true"
+					disabled="true"
+					shadervars="-0.50,0.00,0.00,0.00"
+					uniqueguid="7633E7F0-51C7-9253-9F82F960F2096DFE">
+					<imagemetrics>
+						<image
+							this="B20F1A47-BDA5-8152-6263A7622E8EDB03"
+							uniqueguid="B20F1A47-BDA5-8152-6263A7622E8EDB03"
+							componentimage="56823D65-B0D1-E2ED-A1A896A68ACA995D"
+							width="24"
+							height="24"/>
+					</imagemetrics>
+				</_6>
+				<_7
+					this="25072014-D176-1C66-830532D4A8C88E5A"
+					name="7"
+					width="24"
+					height="24"
+					tooltip="Unit rank 7"
+					tooltiplabel="Level_7_Tooltip_660045g"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					interactive="true"
+					disabled="true"
+					shadervars="-0.70,0.00,0.00,0.00"
+					uniqueguid="25072014-D176-1C66-830532D4A8C88E5A">
+					<imagemetrics>
+						<image
+							this="3AA9E97C-137F-5FA2-B846D53C1D0D8326"
+							uniqueguid="3AA9E97C-137F-5FA2-B846D53C1D0D8326"
+							componentimage="7CB8CA57-0283-C101-44E586F71B7862A7"
+							width="24"
+							height="24"/>
+					</imagemetrics>
+				</_7>
+				<_8
+					this="2CCA28BA-0634-3928-B08091AC92182E01"
+					name="8"
+					width="24"
+					height="24"
+					tooltip="Unit rank 8"
+					tooltiplabel="Level_8_Tooltip_6c004as"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					interactive="true"
+					disabled="true"
+					shadervars="-0.70,0.00,0.00,0.00"
+					uniqueguid="2CCA28BA-0634-3928-B08091AC92182E01">
+					<imagemetrics>
+						<image
+							this="E8013B04-78AE-242D-6786B848CCF9093E"
+							uniqueguid="E8013B04-78AE-242D-6786B848CCF9093E"
+							componentimage="6E1298CD-BC8B-DA69-6D37DB8E25DF54DD"
+							width="24"
+							height="24"/>
+					</imagemetrics>
+				</_8>
+				<_9
+					this="591138A1-27FB-D1B5-1970D9A4B3302AC2"
+					name="9"
+					width="24"
+					height="24"
+					tooltip="Unit rank 9"
+					tooltiplabel="Level_9_Tooltip_6c004be"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					interactive="true"
+					disabled="true"
+					shadervars="-0.70,0.00,0.00,0.00"
+					uniqueguid="591138A1-27FB-D1B5-1970D9A4B3302AC2">
+					<imagemetrics>
+						<image
+							this="623D11FE-DE7C-A370-3CE2CBB61BEBD44C"
+							uniqueguid="623D11FE-DE7C-A370-3CE2CBB61BEBD44C"
+							componentimage="DD5276C8-1CB3-0BEA-841078B594C1AFF9"
+							width="24"
+							height="24"/>
+					</imagemetrics>
+				</_9>
+			</states>
+		</experience>
+		<health_back
+			this="7BBCD40E-70B4-FDC6-2ED136EA1A9CC053"
+			id="health_back"
+			tooltipslocalised="true"
+			uniqueguid="7BBCD40E-70B4-FDC6-2ED136EA1A9CC053"
+			currentstate="6F561338-5283-07C3-137B106DD5CF213D"
+			defaultstate="6F561338-5283-07C3-137B106DD5CF213D">
+			<componentimages>
+				<component_image
+					this="B7408605-C638-422C-098DEB13CF4B32A4"
+					uniqueguid="B7408605-C638-422C-098DEB13CF4B32A4"
+					imagepath="ui/skins/default/unit_card_back.png"/>
+				<component_image
+					this="0736BB8B-7719-5875-26891F42BD6583B1"
+					uniqueguid="0736BB8B-7719-5875-26891F42BD6583B1"
+					imagepath="ui/skins/default/unit_card_frame_ammo.png"/>
+			</componentimages>
+			<states>
+				<newstate
+					this="6F561338-5283-07C3-137B106DD5CF213D"
+					name="NewState"
+					width="52"
+					height="14"
+					texthbehaviour="Never split"
+					uniqueguid="6F561338-5283-07C3-137B106DD5CF213D">
+					<imagemetrics>
+						<image
+							this="264EA587-725C-1921-E2B59CD3D8338EB6"
+							uniqueguid="264EA587-725C-1921-E2B59CD3D8338EB6"
+							componentimage="B7408605-C638-422C-098DEB13CF4B32A4"
+							width="52"
+							height="12"
+							tile="true"
+							margin="2.00,5.00,2.00,5.00"/>
+						<image
+							this="29D5D67B-F4F4-6540-ED8253A9D44B1F12"
+							uniqueguid="29D5D67B-F4F4-6540-ED8253A9D44B1F12"
+							componentimage="0736BB8B-7719-5875-26891F42BD6583B1"
+							offset="-4.00,5.00"
+							width="60"
+							height="31"
+							tile="true"
+							dockpoint="Top Center"
+							dock_offset="0.00,5.00"
+							canresizeheight="false"
+							margin="0.00,4.00,0.00,4.00"/>
+					</imagemetrics>
+				</newstate>
+			</states>
+		</health_back>
+		<health_bar
+			this="652D791C-1A59-F906-99EDF905BB189834"
+			id="health_bar"
+			allowhorizontalresize="false"
+			allowverticalresize="false"
+			tooltipslocalised="true"
+			componentleveltooltip="Health"
+			tooltiplabel="health_bar_Tooltip_610067"
+			uniqueguid="652D791C-1A59-F906-99EDF905BB189834"
+			currentstate="FFA01351-26E2-2F4C-152B4072053C700C">
+			<callbackwithcontextlist>
+				<callback_with_context callback_id="CallbackRedirector"/>
+			</callbackwithcontextlist>
+			<userproperties>
+				<property
+					name="parent_id"
+					value="UnitCard"/>
+			</userproperties>
+			<states>
+				<newstate
+					this="FFA01351-26E2-2F4C-152B4072053C700C"
+					name="NewState"
+					width="52"
+					height="12"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					uniqueguid="FFA01351-26E2-2F4C-152B4072053C700C"/>
+			</states>
+		</health_bar>
+		<health_fill
+			this="539C5137-8040-6894-7B608FA5C776BDDD"
+			id="health_fill"
+			clipimagestocomponent="true"
+			docking="Center Left"
+			component_anchor_point="0.00,0.50"
+			tooltipslocalised="true"
+			uniqueguid="539C5137-8040-6894-7B608FA5C776BDDD"
+			currentstate="DBE8A785-CDD6-A7FE-5D6E5904EB7F7146"
+			defaultstate="DBE8A785-CDD6-A7FE-5D6E5904EB7F7146">
+			<componentimages>
+				<component_image
+					this="CCB41422-F6CD-625D-82B83E9924BA2221"
+					uniqueguid="CCB41422-F6CD-625D-82B83E9924BA2221"
+					imagepath="ui/skins/default/bar_white.png"/>
+			</componentimages>
+			<states>
+				<default
+					this="DBE8A785-CDD6-A7FE-5D6E5904EB7F7146"
+					name="default"
+					width="52"
+					height="12"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					uniqueguid="DBE8A785-CDD6-A7FE-5D6E5904EB7F7146">
+					<imagemetrics>
+						<image
+							this="06EECB5D-71E1-DCBC-DCF1CCE61C6BCF6A"
+							uniqueguid="06EECB5D-71E1-DCBC-DCF1CCE61C6BCF6A"
+							componentimage="CCB41422-F6CD-625D-82B83E9924BA2221"
+							width="52"
+							height="12"
+							colour="#A2EC17FF"
+							dockpoint="Center Left"
+							canresizeheight="false"
+							canresizewidth="false"
+							margin="0.00,1.00,0.00,1.00"/>
+					</imagemetrics>
+				</default>
+				<raise
+					this="ACA9A6FD-88F7-04EB-80D2602D7B631F70"
+					name="raise"
+					width="52"
+					height="12"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					shader_name="set_greyscale_t0"
+					shadervars="1.00,1.00,0.00,0.00"
+					uniqueguid="ACA9A6FD-88F7-04EB-80D2602D7B631F70">
+					<imagemetrics>
+						<image
+							this="2988D8EC-F4C2-717F-CAB6E7FF5887B969"
+							uniqueguid="2988D8EC-F4C2-717F-CAB6E7FF5887B969"
+							componentimage="CCB41422-F6CD-625D-82B83E9924BA2221"
+							width="52"
+							height="12"
+							colour="#A2EC17FF"
+							margin="0.00,1.00,0.00,1.00"/>
+					</imagemetrics>
+				</raise>
+			</states>
+		</health_fill>
+		<health_frame
+			this="2D72DE1D-F5C2-95BC-A0E72883697FA6C7"
+			id="health_frame"
+			offset="4.00,3.00"
+			docking="Top Center"
+			dock_offset="0.00,3.00"
+			component_anchor_point="0.50,0.00"
+			tooltipslocalised="true"
+			uniqueguid="2D72DE1D-F5C2-95BC-A0E72883697FA6C7"
+			currentstate="53633B44-E8B8-2B7B-2D5F6E6FA837CE91"
+			defaultstate="53633B44-E8B8-2B7B-2D5F6E6FA837CE91">
+			<componentimages>
+				<component_image
+					this="BB223818-CA44-FC39-5A54FA10550AE4DC"
+					uniqueguid="BB223818-CA44-FC39-5A54FA10550AE4DC"/>
+			</componentimages>
+			<states>
+				<newstate
+					this="53633B44-E8B8-2B7B-2D5F6E6FA837CE91"
+					name="NewState"
+					width="52"
+					height="14"
+					font_m_colour="#FFFFE0FF"
+					font_m_leading="1"
+					fontcat_name="ingame_text_small_warhammer3"
+					uniqueguid="53633B44-E8B8-2B7B-2D5F6E6FA837CE91">
+					<imagemetrics>
+						<image
+							this="E879E096-5331-08B5-F95EF66DD26DC522"
+							uniqueguid="E879E096-5331-08B5-F95EF66DD26DC522"
+							componentimage="BB223818-CA44-FC39-5A54FA10550AE4DC"
+							width="52"
+							height="14"
+							colour="#000000FF"/>
+					</imagemetrics>
+				</newstate>
+			</states>
+		</health_frame>
 		<template_unit_card
-			this="BFE1CF9F-4548-B05E-07E381900D3EA9D8"
+			this="69462C9D-A3D0-9C8B-D1D2DE5625D59752"
 			id="template_unit_card"
 			offset="10.00,0.00"
 			allowhorizontalresize="false"
@@ -1636,26 +2230,14 @@
 			clipimagestocomponent="true"
 			tooltipslocalised="true"
 			soundcategory="UI_GBL_TMP_Unit_Card"
-			uniqueguid="BFE1CF9F-4548-B05E-07E381900D3EA9D8"
-			currentstate="9CB7AC03-6016-716F-9CF02CCBE6D2EAA6"
-			defaultstate="9CB7AC03-6016-716F-9CF02CCBE6D2EAA6">
+			uniqueguid="69462C9D-A3D0-9C8B-D1D2DE5625D59752"
+			currentstate="EEDE44EB-AD23-2D4A-524DD3C3CECFFD54"
+			defaultstate="EEDE44EB-AD23-2D4A-524DD3C3CECFFD54">
 			<callbackwithcontextlist>
 				<callback_with_context
-					callback_id="ContextPropagator"
-					context_object_id="CcoScriptTableNode"
-					context_function_id="DatabaseRecordContext(&quot;CcoMainUnitRecord&quot;, 
-						Join(Value).Filter(Key == &quot;unit_key&quot;).FirstContext.Value)"/>
-				<callback_with_context
 					callback_id="ContextImageSetter"
-					context_object_id="CcoMainUnitRecord"
+					context_object_id="CcoCampaignUnit"
 					context_function_id="IconPath"/>
-				<callback_with_context callback_id="StatePropagatorCallback">
-					<child_m_user_properties>
-						<property
-							name="target_self"
-							value=""/>
-					</child_m_user_properties>
-				</callback_with_context>
 			</callbackwithcontextlist>
 			<userproperties>
 				<property
@@ -1676,45 +2258,45 @@
 			</userproperties>
 			<componentimages>
 				<component_image
-					this="BBAC32E3-280E-1139-D1B75246CE141562"
-					uniqueguid="BBAC32E3-280E-1139-D1B75246CE141562"
+					this="4FF257CA-432C-E963-BD7D6897B5D307F5"
+					uniqueguid="4FF257CA-432C-E963-BD7D6897B5D307F5"
 					imagepath="ui/skins/default/unit_card_ph.png"/>
 				<component_image
-					this="FF1291D7-C81D-61F7-18F3B175BA65F5AA"
-					uniqueguid="FF1291D7-C81D-61F7-18F3B175BA65F5AA"
+					this="ED3D0B28-D6E5-08CC-83A337CA5C27EA99"
+					uniqueguid="ED3D0B28-D6E5-08CC-83A337CA5C27EA99"
 					imagepath="ui/skins/default/unit_card_recruitment_frame.png"/>
 				<component_image
-					this="DEA88C4F-F7AC-97A1-8817EF1B15E16229"
-					uniqueguid="DEA88C4F-F7AC-97A1-8817EF1B15E16229"
+					this="B8CA2B32-801D-6333-EF2544A0EB76862B"
+					uniqueguid="B8CA2B32-801D-6333-EF2544A0EB76862B"
 					imagepath="ui/skins/default/unit_card_selected.png"/>
 				<component_image
-					this="667890E4-15CE-50FB-B4BDEAB4E12BDA42"
-					uniqueguid="667890E4-15CE-50FB-B4BDEAB4E12BDA42"
+					this="372E1889-D6DF-47C1-60910BD71F2153DB"
+					uniqueguid="372E1889-D6DF-47C1-60910BD71F2153DB"
 					imagepath="ui/skins/default/unit_card_hover.png"/>
 				<component_image
-					this="1130A017-1CDB-F00E-E4383733984D03A2"
-					uniqueguid="1130A017-1CDB-F00E-E4383733984D03A2"
+					this="8A858D37-D6CA-9D24-423D40B200E56473"
+					uniqueguid="8A858D37-D6CA-9D24-423D40B200E56473"
 					imagepath="ui/skins/default/unit_card_selected_hover.png"/>
 				<component_image
-					this="0B1B18A1-2AE6-236C-AA62F4111CEC5D8D"
-					uniqueguid="0B1B18A1-2AE6-236C-AA62F4111CEC5D8D"
+					this="0871CBEF-2327-B394-15B690ED8CF42163"
+					uniqueguid="0871CBEF-2327-B394-15B690ED8CF42163"
 					imagepath="ui/skins/default/unit_card_back_overlay.png"/>
 				<component_image
-					this="AEB8DBE2-2956-2F5F-2E8EB743F803BDBF"
-					uniqueguid="AEB8DBE2-2956-2F5F-2E8EB743F803BDBF"
+					this="C1F0ADCB-CA78-60B0-F342BEBDBA389B66"
+					uniqueguid="C1F0ADCB-CA78-60B0-F342BEBDBA389B66"
 					imagepath="ui/skins/default/unit_card_background.png"/>
 				<component_image
-					this="F74F65B4-772E-B068-F2666D230D56737A"
-					uniqueguid="F74F65B4-772E-B068-F2666D230D56737A"
+					this="5DB4655D-5005-23BF-9DBF26EF47D52BCC"
+					uniqueguid="5DB4655D-5005-23BF-9DBF26EF47D52BCC"
 					imagepath="ui/skins/default/mask_unit_primary.png"/>
 				<component_image
-					this="8E62AA47-DFE8-1BB2-5F3DBBA3D6DF748D"
-					uniqueguid="8E62AA47-DFE8-1BB2-5F3DBBA3D6DF748D"
+					this="AACAECC0-E25E-A351-1E32DDA57CB5C26F"
+					uniqueguid="AACAECC0-E25E-A351-1E32DDA57CB5C26F"
 					imagepath="ui/skins/default/mask_unit_secondary.png"/>
 			</componentimages>
 			<states>
 				<active
-					this="9CB7AC03-6016-716F-9CF02CCBE6D2EAA6"
+					this="EEDE44EB-AD23-2D4A-524DD3C3CECFFD54"
 					name="active"
 					width="60"
 					height="130"
@@ -1723,26 +2305,26 @@
 					fontcat_name="ingame_text_small_warhammer3"
 					interactive="true"
 					shader_name="brighten_t0"
-					uniqueguid="9CB7AC03-6016-716F-9CF02CCBE6D2EAA6"
+					uniqueguid="EEDE44EB-AD23-2D4A-524DD3C3CECFFD54"
 					stateeditordisplaypos="102.00,65.00">
 					<imagemetrics>
 						<image
-							this="0B826B9D-CF4C-A808-A196A2FBD49B1F0C"
-							uniqueguid="0B826B9D-CF4C-A808-A196A2FBD49B1F0C"
-							componentimage="AEB8DBE2-2956-2F5F-2E8EB743F803BDBF"
+							this="11B1A848-D093-2E73-AF8C1D8CE982F2E8"
+							uniqueguid="11B1A848-D093-2E73-AF8C1D8CE982F2E8"
+							componentimage="C1F0ADCB-CA78-60B0-F342BEBDBA389B66"
 							width="60"
 							height="130"/>
 						<image
-							this="EA0B0BA7-522D-CC4B-BA494C62EC0B744D"
-							uniqueguid="EA0B0BA7-522D-CC4B-BA494C62EC0B744D"
-							componentimage="BBAC32E3-280E-1139-D1B75246CE141562"
+							this="17E3D036-8A7C-224F-C74B0843B2620A46"
+							uniqueguid="17E3D036-8A7C-224F-C74B0843B2620A46"
+							componentimage="4FF257CA-432C-E963-BD7D6897B5D307F5"
 							width="60"
 							height="130"
 							dockpoint="Center"/>
 						<image
-							this="3EA3736C-8FD2-0559-D978BF1A4F921C88"
-							uniqueguid="3EA3736C-8FD2-0559-D978BF1A4F921C88"
-							componentimage="0B1B18A1-2AE6-236C-AA62F4111CEC5D8D"
+							this="2AC9873E-4519-AECA-F962B21D27CF5580"
+							uniqueguid="2AC9873E-4519-AECA-F962B21D27CF5580"
+							componentimage="0871CBEF-2327-B394-15B690ED8CF42163"
 							width="60"
 							height="130"
 							colour="#FFFFFF32"
@@ -1750,35 +2332,35 @@
 							canresizeheight="false"
 							margin="0.00,10.00,0.00,10.00"/>
 						<image
-							this="739A30F0-93C5-1FFE-B5665EF3DE32F19D"
-							uniqueguid="739A30F0-93C5-1FFE-B5665EF3DE32F19D"
-							componentimage="F74F65B4-772E-B068-F2666D230D56737A"
+							this="3D926561-9136-107A-5FC8B77C79519B24"
+							uniqueguid="3D926561-9136-107A-5FC8B77C79519B24"
+							componentimage="5DB4655D-5005-23BF-9DBF26EF47D52BCC"
 							width="60"
 							height="130"
 							dockpoint="Center"/>
 						<image
-							this="090519F2-8B16-CD4F-C826E567289546C8"
-							uniqueguid="090519F2-8B16-CD4F-C826E567289546C8"
-							componentimage="8E62AA47-DFE8-1BB2-5F3DBBA3D6DF748D"
+							this="33D2D8EB-1DA4-498B-D4855ACEE8162909"
+							uniqueguid="33D2D8EB-1DA4-498B-D4855ACEE8162909"
+							componentimage="AACAECC0-E25E-A351-1E32DDA57CB5C26F"
 							width="60"
 							height="130"
 							dockpoint="Center"/>
 						<image
-							this="DDFE1C7C-051A-1BB1-1BD52B1F8E4664F2"
-							uniqueguid="DDFE1C7C-051A-1BB1-1BD52B1F8E4664F2"
-							componentimage="FF1291D7-C81D-61F7-18F3B175BA65F5AA"
+							this="F95EA662-75A3-A237-9DE33309D03FC422"
+							uniqueguid="F95EA662-75A3-A237-9DE33309D03FC422"
+							componentimage="ED3D0B28-D6E5-08CC-83A337CA5C27EA99"
 							width="60"
 							height="130"
 							margin="0.00,20.00,0.00,20.00"/>
 					</imagemetrics>
 					<transitionmap>
 						<transition
-							transition_m_target_state="7E643FE6-40C7-4D35-66611E30C1F9E02F"
+							transition_m_target_state="8F3C1A86-47B9-0B31-C190B1118D5CD81B"
 							transition_m_interpolation_property_mask="8"/>
 					</transitionmap>
 				</active>
 				<hover
-					this="7E643FE6-40C7-4D35-66611E30C1F9E02F"
+					this="8F3C1A86-47B9-0B31-C190B1118D5CD81B"
 					name="hover"
 					width="60"
 					height="130"
@@ -1788,26 +2370,26 @@
 					interactive="true"
 					shadervars="0.50,0.00,0.00,0.00"
 					textshadervars="0.20,0.00,0.00,0.00"
-					uniqueguid="7E643FE6-40C7-4D35-66611E30C1F9E02F"
+					uniqueguid="8F3C1A86-47B9-0B31-C190B1118D5CD81B"
 					stateeditordisplaypos="123.00,272.00">
 					<imagemetrics>
 						<image
-							this="3B28D405-492C-8116-059DC25A72115400"
-							uniqueguid="3B28D405-492C-8116-059DC25A72115400"
-							componentimage="AEB8DBE2-2956-2F5F-2E8EB743F803BDBF"
+							this="C0E61693-5D9C-0927-849B7BA26934375E"
+							uniqueguid="C0E61693-5D9C-0927-849B7BA26934375E"
+							componentimage="C1F0ADCB-CA78-60B0-F342BEBDBA389B66"
 							width="60"
 							height="130"/>
 						<image
-							this="05015119-A11A-6C1F-0231887BD4F9A664"
-							uniqueguid="05015119-A11A-6C1F-0231887BD4F9A664"
-							componentimage="BBAC32E3-280E-1139-D1B75246CE141562"
+							this="D9EA03CD-4065-7B92-0A07FD24DE0C580B"
+							uniqueguid="D9EA03CD-4065-7B92-0A07FD24DE0C580B"
+							componentimage="4FF257CA-432C-E963-BD7D6897B5D307F5"
 							width="60"
 							height="130"
 							dockpoint="Center"/>
 						<image
-							this="6CAD47C0-9757-7C53-19E9C7EDC9E1C1C5"
-							uniqueguid="6CAD47C0-9757-7C53-19E9C7EDC9E1C1C5"
-							componentimage="0B1B18A1-2AE6-236C-AA62F4111CEC5D8D"
+							this="B347D005-E771-0193-73580AD7321E2A3F"
+							uniqueguid="B347D005-E771-0193-73580AD7321E2A3F"
+							componentimage="0871CBEF-2327-B394-15B690ED8CF42163"
 							width="60"
 							height="130"
 							colour="#FFFFFF32"
@@ -1815,30 +2397,30 @@
 							canresizeheight="false"
 							margin="0.00,10.00,0.00,10.00"/>
 						<image
-							this="90AA5013-0CAE-8667-84472F76C41BECDA"
-							uniqueguid="90AA5013-0CAE-8667-84472F76C41BECDA"
-							componentimage="F74F65B4-772E-B068-F2666D230D56737A"
+							this="862D03F4-094E-A629-1067FA981C1813A1"
+							uniqueguid="862D03F4-094E-A629-1067FA981C1813A1"
+							componentimage="5DB4655D-5005-23BF-9DBF26EF47D52BCC"
 							width="60"
 							height="130"
 							dockpoint="Center"/>
 						<image
-							this="848D7D7A-9FAD-9C28-60CF475BF89E33D6"
-							uniqueguid="848D7D7A-9FAD-9C28-60CF475BF89E33D6"
-							componentimage="8E62AA47-DFE8-1BB2-5F3DBBA3D6DF748D"
+							this="48219711-69ED-FA0B-4F3BCF5EEFE62EE4"
+							uniqueguid="48219711-69ED-FA0B-4F3BCF5EEFE62EE4"
+							componentimage="AACAECC0-E25E-A351-1E32DDA57CB5C26F"
 							width="60"
 							height="130"
 							dockpoint="Center"/>
 						<image
-							this="B99FA8D6-63C7-93F2-49DD21193A794D4A"
-							uniqueguid="B99FA8D6-63C7-93F2-49DD21193A794D4A"
-							componentimage="FF1291D7-C81D-61F7-18F3B175BA65F5AA"
+							this="3FEAF0BA-EC70-03DB-4D03DE8B3FEBED32"
+							uniqueguid="3FEAF0BA-EC70-03DB-4D03DE8B3FEBED32"
+							componentimage="ED3D0B28-D6E5-08CC-83A337CA5C27EA99"
 							width="60"
 							height="130"
 							margin="0.00,20.00,0.00,20.00"/>
 						<image
-							this="513E2377-6A86-ECAD-7E9DC6CE0E8AB932"
-							uniqueguid="513E2377-6A86-ECAD-7E9DC6CE0E8AB932"
-							componentimage="667890E4-15CE-50FB-B4BDEAB4E12BDA42"
+							this="7F9056DA-725F-9EB7-659C33797D7A7AC3"
+							uniqueguid="7F9056DA-725F-9EB7-659C33797D7A7AC3"
+							componentimage="372E1889-D6DF-47C1-60910BD71F2153DB"
 							width="60"
 							height="130"
 							tile="true"
@@ -1848,12 +2430,12 @@
 					<transitionmap>
 						<transition
 							index="1"
-							transition_m_target_state="9CB7AC03-6016-716F-9CF02CCBE6D2EAA6"
+							transition_m_target_state="EEDE44EB-AD23-2D4A-524DD3C3CECFFD54"
 							transition_m_interpolation_property_mask="8"/>
 					</transitionmap>
 				</hover>
 				<inactive
-					this="C6A4D041-9065-3B15-04A15230A9069636"
+					this="5B81855A-B721-DBFC-EC7307A1E9EB6FFB"
 					name="inactive"
 					width="60"
 					height="130"
@@ -1866,35 +2448,35 @@
 					shader_name="set_greyscale_t0"
 					shadervars="1.00,1.00,0.00,0.00"
 					textshadervars="1.00,0.50,0.00,0.00"
-					uniqueguid="C6A4D041-9065-3B15-04A15230A9069636"
+					uniqueguid="5B81855A-B721-DBFC-EC7307A1E9EB6FFB"
 					stateeditordisplaypos="102.00,65.00">
 					<imagemetrics>
 						<image
-							this="18D18254-B7F6-2D90-8E4661CA927BAA7C"
-							uniqueguid="18D18254-B7F6-2D90-8E4661CA927BAA7C"
-							componentimage="AEB8DBE2-2956-2F5F-2E8EB743F803BDBF"
+							this="C054C0A9-6982-4049-BA9B692D9EE0BF0B"
+							uniqueguid="C054C0A9-6982-4049-BA9B692D9EE0BF0B"
+							componentimage="C1F0ADCB-CA78-60B0-F342BEBDBA389B66"
 							width="60"
 							height="130"/>
 						<image
-							this="EEF5943D-13FD-6F57-373244379DA338D7"
-							uniqueguid="EEF5943D-13FD-6F57-373244379DA338D7"
-							componentimage="BBAC32E3-280E-1139-D1B75246CE141562"
+							this="50E19650-A42E-517D-B7AAD2709E2C38C4"
+							uniqueguid="50E19650-A42E-517D-B7AAD2709E2C38C4"
+							componentimage="4FF257CA-432C-E963-BD7D6897B5D307F5"
 							width="60"
 							height="130"
 							dockpoint="Center"
 							shadertechnique_vars="1.00,1.00,0.00,0.00"
 							shader_name="set_greyscale_t0"/>
 						<image
-							this="86EB4675-AE56-7909-1428AD9891C228A3"
-							uniqueguid="86EB4675-AE56-7909-1428AD9891C228A3"
-							componentimage="FF1291D7-C81D-61F7-18F3B175BA65F5AA"
+							this="3969EF9F-DAD6-C8E9-9DAFC7BC31D91303"
+							uniqueguid="3969EF9F-DAD6-C8E9-9DAFC7BC31D91303"
+							componentimage="ED3D0B28-D6E5-08CC-83A337CA5C27EA99"
 							width="60"
 							height="130"
 							margin="0.00,20.00,0.00,20.00"/>
 					</imagemetrics>
 				</inactive>
 				<selected
-					this="7574955A-BCFE-637E-A6DC7EF7753FC20E"
+					this="C6507433-E56B-D5CD-CF95E53112E809D2"
 					name="selected"
 					width="60"
 					height="130"
@@ -1904,61 +2486,61 @@
 					interactive="true"
 					shadervars="1.00,0.00,0.00,0.00"
 					textshadervars="0.20,0.00,0.00,0.00"
-					uniqueguid="7574955A-BCFE-637E-A6DC7EF7753FC20E"
+					uniqueguid="C6507433-E56B-D5CD-CF95E53112E809D2"
 					stateeditordisplaypos="300.00,99.00">
 					<imagemetrics>
 						<image
-							this="FFDFFF9F-5170-564A-B381BD1B11AB77AF"
-							uniqueguid="FFDFFF9F-5170-564A-B381BD1B11AB77AF"
-							componentimage="AEB8DBE2-2956-2F5F-2E8EB743F803BDBF"
+							this="E368C703-08CF-3580-95E13D80D7EE666E"
+							uniqueguid="E368C703-08CF-3580-95E13D80D7EE666E"
+							componentimage="C1F0ADCB-CA78-60B0-F342BEBDBA389B66"
 							width="60"
 							height="130"/>
 						<image
-							this="347BEA1D-0ACA-1DED-55CF28EC5C1A47BC"
-							uniqueguid="347BEA1D-0ACA-1DED-55CF28EC5C1A47BC"
-							componentimage="BBAC32E3-280E-1139-D1B75246CE141562"
+							this="E02430FC-D23B-3FC7-6853CBBCF45FF01E"
+							uniqueguid="E02430FC-D23B-3FC7-6853CBBCF45FF01E"
+							componentimage="4FF257CA-432C-E963-BD7D6897B5D307F5"
 							width="60"
 							height="130"
 							dockpoint="Center"
 							shadertechnique_vars="1.50,0.00,0.00,0.00"
 							shader_name="brighten_t0"/>
 						<image
-							this="E9284B89-1811-57D3-75E9789E0B2616A9"
-							uniqueguid="E9284B89-1811-57D3-75E9789E0B2616A9"
-							componentimage="F74F65B4-772E-B068-F2666D230D56737A"
+							this="34A188EF-BAE3-1539-46213FD1A1BAD60A"
+							uniqueguid="34A188EF-BAE3-1539-46213FD1A1BAD60A"
+							componentimage="5DB4655D-5005-23BF-9DBF26EF47D52BCC"
 							width="60"
 							height="130"
 							dockpoint="Center"/>
 						<image
-							this="EE59F469-2AF3-021C-205454735117227A"
-							uniqueguid="EE59F469-2AF3-021C-205454735117227A"
-							componentimage="8E62AA47-DFE8-1BB2-5F3DBBA3D6DF748D"
+							this="D864AB52-74BA-567D-8D5588A462D013D4"
+							uniqueguid="D864AB52-74BA-567D-8D5588A462D013D4"
+							componentimage="AACAECC0-E25E-A351-1E32DDA57CB5C26F"
 							width="60"
 							height="130"
 							dockpoint="Center"/>
 						<image
-							this="D6780E9E-53F3-3702-027ABD0A23B9F0EF"
-							uniqueguid="D6780E9E-53F3-3702-027ABD0A23B9F0EF"
-							componentimage="FF1291D7-C81D-61F7-18F3B175BA65F5AA"
+							this="0F142B83-F3E2-1A16-6B3D0CB8BBFF49C8"
+							uniqueguid="0F142B83-F3E2-1A16-6B3D0CB8BBFF49C8"
+							componentimage="ED3D0B28-D6E5-08CC-83A337CA5C27EA99"
 							width="60"
 							height="130"
 							margin="0.00,20.00,0.00,20.00"/>
 						<image
-							this="E4D29D3A-9389-465C-589A9D41D40D1FD4"
-							uniqueguid="E4D29D3A-9389-465C-589A9D41D40D1FD4"
-							componentimage="DEA88C4F-F7AC-97A1-8817EF1B15E16229"
+							this="DED9127C-28D1-0E70-4986D9682D9D72FD"
+							uniqueguid="DED9127C-28D1-0E70-4986D9682D9D72FD"
+							componentimage="B8CA2B32-801D-6333-EF2544A0EB76862B"
 							width="60"
 							height="130"
 							margin="0.00,10.00,0.00,10.00"/>
 					</imagemetrics>
 					<transitionmap>
 						<transition
-							transition_m_target_state="D9AA0B27-7EE3-7630-11E636AF9AD747B3"
+							transition_m_target_state="870FFE13-D55F-5493-930261D9589F3D64"
 							transition_m_interpolation_property_mask="8"/>
 					</transitionmap>
 				</selected>
 				<selected_hover
-					this="D9AA0B27-7EE3-7630-11E636AF9AD747B3"
+					this="870FFE13-D55F-5493-930261D9589F3D64"
 					name="selected_hover"
 					width="60"
 					height="130"
@@ -1968,49 +2550,49 @@
 					interactive="true"
 					shadervars="1.00,0.00,0.00,0.00"
 					textshadervars="0.20,0.00,0.00,0.00"
-					uniqueguid="D9AA0B27-7EE3-7630-11E636AF9AD747B3"
+					uniqueguid="870FFE13-D55F-5493-930261D9589F3D64"
 					stateeditordisplaypos="349.00,255.00">
 					<imagemetrics>
 						<image
-							this="4907ED5D-1561-693E-F976F10A4AD38750"
-							uniqueguid="4907ED5D-1561-693E-F976F10A4AD38750"
-							componentimage="AEB8DBE2-2956-2F5F-2E8EB743F803BDBF"
+							this="5B3507E5-F768-B771-A1F5CFDEDAEEAF98"
+							uniqueguid="5B3507E5-F768-B771-A1F5CFDEDAEEAF98"
+							componentimage="C1F0ADCB-CA78-60B0-F342BEBDBA389B66"
 							width="60"
 							height="130"/>
 						<image
-							this="59F3CD42-6C18-D853-215652734BADE7FF"
-							uniqueguid="59F3CD42-6C18-D853-215652734BADE7FF"
-							componentimage="BBAC32E3-280E-1139-D1B75246CE141562"
+							this="985AD95D-AB59-57B5-F9B592304F05842F"
+							uniqueguid="985AD95D-AB59-57B5-F9B592304F05842F"
+							componentimage="4FF257CA-432C-E963-BD7D6897B5D307F5"
 							width="60"
 							height="130"
 							dockpoint="Center"
 							shadertechnique_vars="1.50,0.00,0.00,0.00"
 							shader_name="brighten_t0"/>
 						<image
-							this="ED7E91D7-C803-A5F9-A75605C8B2D8891C"
-							uniqueguid="ED7E91D7-C803-A5F9-A75605C8B2D8891C"
-							componentimage="F74F65B4-772E-B068-F2666D230D56737A"
+							this="7C91A78E-CDB1-0BB8-021BD2567371E03A"
+							uniqueguid="7C91A78E-CDB1-0BB8-021BD2567371E03A"
+							componentimage="5DB4655D-5005-23BF-9DBF26EF47D52BCC"
 							width="60"
 							height="130"
 							dockpoint="Center"/>
 						<image
-							this="593C456A-8C30-DBD6-0A6BECD368BDF4D3"
-							uniqueguid="593C456A-8C30-DBD6-0A6BECD368BDF4D3"
-							componentimage="8E62AA47-DFE8-1BB2-5F3DBBA3D6DF748D"
+							this="54602B87-7764-21B9-4F114D70F034ABD4"
+							uniqueguid="54602B87-7764-21B9-4F114D70F034ABD4"
+							componentimage="AACAECC0-E25E-A351-1E32DDA57CB5C26F"
 							width="60"
 							height="130"
 							dockpoint="Center"/>
 						<image
-							this="E306F0A4-5D62-9D3C-8B2ED42DB2C6AC9C"
-							uniqueguid="E306F0A4-5D62-9D3C-8B2ED42DB2C6AC9C"
-							componentimage="FF1291D7-C81D-61F7-18F3B175BA65F5AA"
+							this="9B9084E0-B185-6DC5-32F7F5A99E6FE5D3"
+							uniqueguid="9B9084E0-B185-6DC5-32F7F5A99E6FE5D3"
+							componentimage="ED3D0B28-D6E5-08CC-83A337CA5C27EA99"
 							width="60"
 							height="130"
 							margin="0.00,20.00,0.00,20.00"/>
 						<image
-							this="5199E09D-C071-46AB-0B3D2288CB244B3A"
-							uniqueguid="5199E09D-C071-46AB-0B3D2288CB244B3A"
-							componentimage="1130A017-1CDB-F00E-E4383733984D03A2"
+							this="A81AA94E-A39D-4993-8C5BB5A5259775B6"
+							uniqueguid="A81AA94E-A39D-4993-8C5BB5A5259775B6"
+							componentimage="8A858D37-D6CA-9D24-423D40B200E56473"
 							width="60"
 							height="130"
 							margin="0.00,10.00,0.00,10.00"/>
@@ -2018,7 +2600,7 @@
 					<transitionmap>
 						<transition
 							index="1"
-							transition_m_target_state="7574955A-BCFE-637E-A6DC7EF7753FC20E"
+							transition_m_target_state="C6507433-E56B-D5CD-CF95E53112E809D2"
 							transition_m_transition_time="200"
 							transition_m_interpolation_property_mask="8"/>
 					</transitionmap>
@@ -2080,7 +2662,7 @@
 			</animations>
 		</template_unit_card>
 		<unit_category_icon
-			this="81D4EFD8-88A8-CED2-4FA4C95E1D442769"
+			this="2C42A835-87C5-75C0-4889BAD21CA60B76"
 			id="unit_category_icon"
 			offset="7.00,14.00"
 			allowhorizontalresize="false"
@@ -2088,14 +2670,10 @@
 			docking="Bottom Center"
 			component_anchor_point="0.50,1.00"
 			tooltipslocalised="true"
-			uniqueguid="81D4EFD8-88A8-CED2-4FA4C95E1D442769"
-			currentstate="33E49F46-9488-853E-0B8FFFFEB6871E55"
-			defaultstate="33E49F46-9488-853E-0B8FFFFEB6871E55">
+			uniqueguid="2C42A835-87C5-75C0-4889BAD21CA60B76"
+			currentstate="B6D4D4E8-338A-DCC0-634E98723C026FA0"
+			defaultstate="B6D4D4E8-338A-DCC0-634E98723C026FA0">
 			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextImageSetter"
-					context_object_id="CcoUnitDetails"
-					context_function_id="UnitRecordContext.CategoryIcon"/>
 				<callback_with_context callback_id="CallbackRedirector"/>
 			</callbackwithcontextlist>
 			<userproperties>
@@ -2105,30 +2683,30 @@
 			</userproperties>
 			<componentimages>
 				<component_image
-					this="A6E58E96-7ACF-996D-76D68C655CC67A0A"
-					uniqueguid="A6E58E96-7ACF-996D-76D68C655CC67A0A"
+					this="C1D2B49F-5DB0-D26D-1DAC3CDB2D02F7FE"
+					uniqueguid="C1D2B49F-5DB0-D26D-1DAC3CDB2D02F7FE"
 					imagepath="ui/common ui/unit_category_icons/infantry_sword.png"/>
 			</componentimages>
 			<states>
 				<default
-					this="33E49F46-9488-853E-0B8FFFFEB6871E55"
+					this="B6D4D4E8-338A-DCC0-634E98723C026FA0"
 					name="default"
 					width="22"
 					height="22"
 					disabled="true"
 					pixelcollision="true"
-					uniqueguid="33E49F46-9488-853E-0B8FFFFEB6871E55">
+					uniqueguid="B6D4D4E8-338A-DCC0-634E98723C026FA0">
 					<imagemetrics>
 						<image
-							this="8871CD84-DEBB-7F64-5958A20DF4D0291E"
-							uniqueguid="8871CD84-DEBB-7F64-5958A20DF4D0291E"
-							componentimage="A6E58E96-7ACF-996D-76D68C655CC67A0A"
+							this="5A668113-9F27-5004-1E103BE3EF107BD4"
+							uniqueguid="5A668113-9F27-5004-1E103BE3EF107BD4"
+							componentimage="C1D2B49F-5DB0-D26D-1DAC3CDB2D02F7FE"
 							width="22"
 							height="22"/>
 					</imagemetrics>
 				</default>
 				<raise
-					this="24E3F023-4DF7-5178-7C5211BAEA68B9B8"
+					this="211A8B59-ACF5-1E07-766A14A0AE01278F"
 					name="raise"
 					width="22"
 					height="22"
@@ -2136,12 +2714,12 @@
 					pixelcollision="true"
 					shader_name="set_greyscale_t0"
 					shadervars="1.00,1.00,0.00,0.00"
-					uniqueguid="24E3F023-4DF7-5178-7C5211BAEA68B9B8">
+					uniqueguid="211A8B59-ACF5-1E07-766A14A0AE01278F">
 					<imagemetrics>
 						<image
-							this="5116A4E9-FFB1-A77D-65A918F7774A8F0F"
-							uniqueguid="5116A4E9-FFB1-A77D-65A918F7774A8F0F"
-							componentimage="A6E58E96-7ACF-996D-76D68C655CC67A0A"
+							this="2CFDE2AA-1CEF-01F9-70C97AA83E4E3527"
+							uniqueguid="2CFDE2AA-1CEF-01F9-70C97AA83E4E3527"
+							componentimage="C1D2B49F-5DB0-D26D-1DAC3CDB2D02F7FE"
 							width="22"
 							height="22"/>
 					</imagemetrics>
@@ -2149,7 +2727,7 @@
 			</states>
 		</unit_category_icon>
 		<unit_cat_frame
-			this="C6F19065-8AAA-A6D8-198D229CDA1591BD"
+			this="FC4F7070-94B9-22FB-A3B063D54BEB73AE"
 			id="unit_cat_frame"
 			offset="12.00,94.00"
 			allowhorizontalresize="false"
@@ -2157,57 +2735,51 @@
 			docking="Bottom Center"
 			component_anchor_point="0.50,1.00"
 			tooltipslocalised="true"
-			uniqueguid="C6F19065-8AAA-A6D8-198D229CDA1591BD"
-			currentstate="72A212E4-EAAC-577A-D783588737F80029"
-			defaultstate="72A212E4-EAAC-577A-D783588737F80029">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextStateSetter"
-					context_object_id="CcoMainUnitRecord"
-					context_function_id="SpecialCategoryKey"/>
-			</callbackwithcontextlist>
+			uniqueguid="FC4F7070-94B9-22FB-A3B063D54BEB73AE"
+			currentstate="120745F6-5DC2-62E0-5B1B971454241115"
+			defaultstate="120745F6-5DC2-62E0-5B1B971454241115">
 			<componentimages>
 				<component_image
-					this="C7B31BEA-DA98-820B-E5ED69E72A70AE15"
-					uniqueguid="C7B31BEA-DA98-820B-E5ED69E72A70AE15"
+					this="C93E3979-118F-CB3E-C9F31C973217E59C"
+					uniqueguid="C93E3979-118F-CB3E-C9F31C973217E59C"
 					imagepath="ui/skins/default/unit_card_semicircle.png"/>
 				<component_image
-					this="6810A660-0B9C-7A21-A31004B1138F77A7"
-					uniqueguid="6810A660-0B9C-7A21-A31004B1138F77A7"
+					this="5D9CA887-B441-A63A-CA5B2D0D3C06070D"
+					uniqueguid="5D9CA887-B441-A63A-CA5B2D0D3C06070D"
 					imagepath="ui/skins/default/unit_card_semicircle_renown.png"/>
 				<component_image
-					this="D949A6A8-4610-54D5-395ECEE87E4080B9"
-					uniqueguid="D949A6A8-4610-54D5-395ECEE87E4080B9"
+					this="DD3E4C5A-63B8-B994-8867BECA8ABD7822"
+					uniqueguid="DD3E4C5A-63B8-B994-8867BECA8ABD7822"
 					imagepath="ui/skins/default/unit_card_semicircle_spawning.png"/>
 				<component_image
-					this="2C87889A-EC36-EDDB-5A63A5F72D56086F"
-					uniqueguid="2C87889A-EC36-EDDB-5A63A5F72D56086F"
+					this="A3A97897-93EC-6574-95F63B79E96EA24D"
+					uniqueguid="A3A97897-93EC-6574-95F63B79E96EA24D"
 					imagepath="ui/skins/default/unit_card_semicircle_crafted.png"/>
 				<component_image
-					this="D7794E68-C437-6B2B-1D902FC1B9CDE786"
-					uniqueguid="D7794E68-C437-6B2B-1D902FC1B9CDE786"
+					this="EC16F645-6080-8088-292E996182E59437"
+					uniqueguid="EC16F645-6080-8088-292E996182E59437"
 					imagepath="ui/skins/warhammer2/unit_card_semicircle_tech_lab.png"/>
 				<component_image
-					this="E949340B-4F44-8878-14B07AD006297B41"
-					uniqueguid="E949340B-4F44-8878-14B07AD006297B41"
+					this="00FB1719-7EBB-79E8-D7BD335B0184C950"
+					uniqueguid="00FB1719-7EBB-79E8-D7BD335B0184C950"
 					imagepath="ui/skins/default/unit_card_semicircle_elector.png"/>
 				<component_image
-					this="D9975FB2-14B7-8BFB-8905FB19AC93AA8C"
-					uniqueguid="D9975FB2-14B7-8BFB-8905FB19AC93AA8C"
+					this="1F83A62B-BB3F-1864-C9E70E7E9E052153"
+					uniqueguid="1F83A62B-BB3F-1864-C9E70E7E9E052153"
 					imagepath="ui/skins/warhammer2/unit_card_semicircle_mistwalker.png"/>
 			</componentimages>
 			<states>
 				<active
-					this="72A212E4-EAAC-577A-D783588737F80029"
+					this="120745F6-5DC2-62E0-5B1B971454241115"
 					name="active"
 					width="36"
 					height="36"
-					uniqueguid="72A212E4-EAAC-577A-D783588737F80029">
+					uniqueguid="120745F6-5DC2-62E0-5B1B971454241115">
 					<imagemetrics>
 						<image
-							this="09F7360D-C84E-A944-B7E0AE48D79DCCBA"
-							uniqueguid="09F7360D-C84E-A944-B7E0AE48D79DCCBA"
-							componentimage="C7B31BEA-DA98-820B-E5ED69E72A70AE15"
+							this="85339DEF-EAFA-38D1-63406CC47323F7E2"
+							uniqueguid="85339DEF-EAFA-38D1-63406CC47323F7E2"
+							componentimage="C93E3979-118F-CB3E-C9F31C973217E59C"
 							offset="-9.00,1.00"
 							width="55"
 							height="35"
@@ -2217,16 +2789,16 @@
 					</imagemetrics>
 				</active>
 				<blessed_spawning
-					this="141C2F21-D0A8-5714-86E3480686AA97F0"
+					this="C76BD8D1-725D-304C-024E4A1B7333ACA3"
 					name="blessed_spawning"
 					width="36"
 					height="36"
-					uniqueguid="141C2F21-D0A8-5714-86E3480686AA97F0">
+					uniqueguid="C76BD8D1-725D-304C-024E4A1B7333ACA3">
 					<imagemetrics>
 						<image
-							this="CF649376-11AE-CECB-C66E26AA1224E099"
-							uniqueguid="CF649376-11AE-CECB-C66E26AA1224E099"
-							componentimage="D949A6A8-4610-54D5-395ECEE87E4080B9"
+							this="4E14ABEB-815C-6DE6-A2BB6B11E0BF10AE"
+							uniqueguid="4E14ABEB-815C-6DE6-A2BB6B11E0BF10AE"
+							componentimage="DD3E4C5A-63B8-B994-8867BECA8ABD7822"
 							offset="-9.00,1.00"
 							width="55"
 							height="35"
@@ -2234,16 +2806,16 @@
 					</imagemetrics>
 				</blessed_spawning>
 				<crafted
-					this="87450ED1-EFC8-7880-FEF7EF76ADFA68DE"
+					this="5845AFE8-219E-86DC-17EC0745C8538F3F"
 					name="crafted"
 					width="36"
 					height="36"
-					uniqueguid="87450ED1-EFC8-7880-FEF7EF76ADFA68DE">
+					uniqueguid="5845AFE8-219E-86DC-17EC0745C8538F3F">
 					<imagemetrics>
 						<image
-							this="53901BC7-B46D-5075-6184CA2DA681C217"
-							uniqueguid="53901BC7-B46D-5075-6184CA2DA681C217"
-							componentimage="2C87889A-EC36-EDDB-5A63A5F72D56086F"
+							this="277C27D5-5002-ADD1-891EC5B7BC96CA66"
+							uniqueguid="277C27D5-5002-ADD1-891EC5B7BC96CA66"
+							componentimage="A3A97897-93EC-6574-95F63B79E96EA24D"
 							offset="-9.00,1.00"
 							width="55"
 							height="35"
@@ -2251,16 +2823,16 @@
 					</imagemetrics>
 				</crafted>
 				<elector_counts
-					this="247EB090-0968-C2B2-379F0EA64FA6BEFF"
+					this="6A36B9A6-759D-AEAB-C973A67C2504E0C4"
 					name="elector_counts"
 					width="36"
 					height="36"
-					uniqueguid="247EB090-0968-C2B2-379F0EA64FA6BEFF">
+					uniqueguid="6A36B9A6-759D-AEAB-C973A67C2504E0C4">
 					<imagemetrics>
 						<image
-							this="B68604FC-D596-7C30-5411D1C61D7D25D3"
-							uniqueguid="B68604FC-D596-7C30-5411D1C61D7D25D3"
-							componentimage="E949340B-4F44-8878-14B07AD006297B41"
+							this="0EF0688C-B0E2-E4C0-EDF53F51DB01C2DA"
+							uniqueguid="0EF0688C-B0E2-E4C0-EDF53F51DB01C2DA"
+							componentimage="00FB1719-7EBB-79E8-D7BD335B0184C950"
 							offset="-9.00,1.00"
 							width="55"
 							height="35"
@@ -2268,18 +2840,18 @@
 					</imagemetrics>
 				</elector_counts>
 				<inactive
-					this="80F1A73D-3911-5E50-70FC068F98955898"
+					this="DFD30B52-DC12-4250-72417508E55F4D6D"
 					name="inactive"
 					width="36"
 					height="36"
 					shader_name="set_greyscale_t0"
 					shadervars="1.00,1.00,0.00,0.00"
-					uniqueguid="80F1A73D-3911-5E50-70FC068F98955898">
+					uniqueguid="DFD30B52-DC12-4250-72417508E55F4D6D">
 					<imagemetrics>
 						<image
-							this="BAD5BF3B-8C6A-7845-2FCBBAF39F44C886"
-							uniqueguid="BAD5BF3B-8C6A-7845-2FCBBAF39F44C886"
-							componentimage="C7B31BEA-DA98-820B-E5ED69E72A70AE15"
+							this="BE771C6C-F546-73BA-D002EFB842AA7C83"
+							uniqueguid="BE771C6C-F546-73BA-D002EFB842AA7C83"
+							componentimage="C93E3979-118F-CB3E-C9F31C973217E59C"
 							offset="-9.00,1.00"
 							width="55"
 							height="35"
@@ -2289,16 +2861,16 @@
 					</imagemetrics>
 				</inactive>
 				<mistwalker
-					this="F3DB50A9-E845-BC7A-FB20544A66A34F6D"
+					this="CB0701E1-C069-7F5A-392A8C071FEFA53D"
 					name="mistwalker"
 					width="36"
 					height="36"
-					uniqueguid="F3DB50A9-E845-BC7A-FB20544A66A34F6D">
+					uniqueguid="CB0701E1-C069-7F5A-392A8C071FEFA53D">
 					<imagemetrics>
 						<image
-							this="9340D437-4ECD-C13A-DE091E930768AF89"
-							uniqueguid="9340D437-4ECD-C13A-DE091E930768AF89"
-							componentimage="D9975FB2-14B7-8BFB-8905FB19AC93AA8C"
+							this="033B9AD9-538C-425E-7346B63B042EA2D8"
+							uniqueguid="033B9AD9-538C-425E-7346B63B042EA2D8"
+							componentimage="1F83A62B-BB3F-1864-C9E70E7E9E052153"
 							offset="-9.00,0.00"
 							width="55"
 							height="35"
@@ -2306,18 +2878,18 @@
 					</imagemetrics>
 				</mistwalker>
 				<raise
-					this="52106E9D-6F66-467D-5AE5C98B1582647B"
+					this="3CFCCE32-EAE1-CDD4-750F47550C72B1E3"
 					name="raise"
 					width="36"
 					height="36"
 					shader_name="set_greyscale_t0"
 					shadervars="1.00,1.00,0.00,0.00"
-					uniqueguid="52106E9D-6F66-467D-5AE5C98B1582647B">
+					uniqueguid="3CFCCE32-EAE1-CDD4-750F47550C72B1E3">
 					<imagemetrics>
 						<image
-							this="54501311-63A6-1E02-426A8CCDE02FE78F"
-							uniqueguid="54501311-63A6-1E02-426A8CCDE02FE78F"
-							componentimage="C7B31BEA-DA98-820B-E5ED69E72A70AE15"
+							this="E7BACBE3-4E81-C028-C617DAF640BCC6B8"
+							uniqueguid="E7BACBE3-4E81-C028-C617DAF640BCC6B8"
+							componentimage="C93E3979-118F-CB3E-C9F31C973217E59C"
 							offset="-9.00,1.00"
 							width="55"
 							height="35"
@@ -2327,16 +2899,16 @@
 					</imagemetrics>
 				</raise>
 				<renown
-					this="5598CDE1-7B9D-EE45-FE261162E4D82E7E"
+					this="5301EADD-B348-67C4-7C39BAA703197F19"
 					name="renown"
 					width="36"
 					height="36"
-					uniqueguid="5598CDE1-7B9D-EE45-FE261162E4D82E7E">
+					uniqueguid="5301EADD-B348-67C4-7C39BAA703197F19">
 					<imagemetrics>
 						<image
-							this="B2A15745-D3D4-1E3B-D9302C3774C4C878"
-							uniqueguid="B2A15745-D3D4-1E3B-D9302C3774C4C878"
-							componentimage="6810A660-0B9C-7A21-A31004B1138F77A7"
+							this="40A2E373-2648-E270-E71C15E007B5CE2E"
+							uniqueguid="40A2E373-2648-E270-E71C15E007B5CE2E"
+							componentimage="5D9CA887-B441-A63A-CA5B2D0D3C06070D"
 							offset="-9.00,1.00"
 							width="55"
 							height="35"
@@ -2346,17 +2918,17 @@
 					</imagemetrics>
 				</renown>
 				<tech_lab
-					this="334F42EA-A5F6-6E36-DC97416C812DB22F"
+					this="4D076505-D2B3-1008-92406D4D6828A412"
 					name="tech_lab"
 					width="36"
 					height="36"
 					texthbehaviour="Never split"
-					uniqueguid="334F42EA-A5F6-6E36-DC97416C812DB22F">
+					uniqueguid="4D076505-D2B3-1008-92406D4D6828A412">
 					<imagemetrics>
 						<image
-							this="F07591BB-26F8-B9A2-A3DFD1E58E34C0F2"
-							uniqueguid="F07591BB-26F8-B9A2-A3DFD1E58E34C0F2"
-							componentimage="D7794E68-C437-6B2B-1D902FC1B9CDE786"
+							this="07170A4D-5A24-3454-131FFCD975CF28CD"
+							uniqueguid="07170A4D-5A24-3454-131FFCD975CF28CD"
+							componentimage="EC16F645-6080-8088-292E996182E59437"
 							offset="-9.00,0.00"
 							width="55"
 							height="35"
@@ -2365,28 +2937,58 @@
 				</tech_lab>
 			</states>
 		</unit_cat_frame>
+		<unit_strength_number
+			this="E51E634F-C1B9-6A3B-3086D6561AC4540B"
+			id="unit_strength_number"
+			offset="9.00,-1.00"
+			allowhorizontalresize="false"
+			allowverticalresize="false"
+			docking="Top Center"
+			dock_offset="0.00,-1.00"
+			component_anchor_point="0.50,0.00"
+			tooltipslocalised="true"
+			uniqueguid="E51E634F-C1B9-6A3B-3086D6561AC4540B"
+			currentstate="3F7B7EA2-59AC-C790-643D373DA8EEC9F7">
+			<states>
+				<_1
+					this="3F7B7EA2-59AC-C790-643D373DA8EEC9F7"
+					name="1"
+					width="33"
+					height="14"
+					text="000"
+					textvalign="Center"
+					texthalign="Center"
+					texthbehaviour="Never split"
+					textlabel="LandBanner_1_Text_300000"
+					font_m_colour="#FFF8D7FF"
+					font_m_leading="1"
+					fontcat_name="fe_text_small"
+					disabled="true"
+					text_shader_name="drop_shadow_t0"
+					textshadervars="0.00,1.00,2.00,0.00"
+					uniqueguid="3F7B7EA2-59AC-C790-643D373DA8EEC9F7"/>
+			</states>
+		</unit_strength_number>
 		<units
-			this="DD3FFAC1-62DB-A97F-6CC534D4CEE1345C"
+			this="167D583F-C0AB-54EE-03983058090FDCB6"
 			id="units"
 			offset="294.00,43.00"
 			allowverticalresize="false"
 			docking="Center"
 			component_anchor_point="0.50,0.50"
 			tooltipslocalised="true"
-			uniqueguid="DD3FFAC1-62DB-A97F-6CC534D4CEE1345C"
-			currentstate="24302CA9-94C9-1F8E-7074F253ABA576E5"
-			defaultstate="24302CA9-94C9-1F8E-7074F253ABA576E5">
+			uniqueguid="167D583F-C0AB-54EE-03983058090FDCB6"
+			currentstate="CC3636DA-AFD8-25FA-26F65760EA3E4CF4"
+			defaultstate="CC3636DA-AFD8-25FA-26F65760EA3E4CF4">
 			<callbackwithcontextlist>
 				<callback_with_context
 					callback_id="ContextList"
-					context_object_id="CcoScriptTableNode"
-					context_function_id="Join(
-						Join(Join(Value).Filter(Key == &quot;force&quot;).FirstContext.Value
-					).Filter(Key == &quot;units&quot;).FirstContext.Value)"/>
+					context_object_id="CcoCampaignCharacter"
+					context_function_id="MilitaryForceContext.UnitList"/>
 			</callbackwithcontextlist>
 			<states>
 				<newstate
-					this="24302CA9-94C9-1F8E-7074F253ABA576E5"
+					this="CC3636DA-AFD8-25FA-26F65760EA3E4CF4"
 					name="NewState"
 					width="80"
 					height="130"
@@ -2395,7 +2997,7 @@
 					font_m_leading="3"
 					fontcat_name="fe_tooltip_red"
 					interactive="true"
-					uniqueguid="24302CA9-94C9-1F8E-7074F253ABA576E5"/>
+					uniqueguid="CC3636DA-AFD8-25FA-26F65760EA3E4CF4"/>
 			</states>
 			<LayoutEngine
 				type="HorizontalList"
@@ -2403,776 +3005,5 @@
 				min_dimensions="0.00,640.00"
 				margins="10.00,10.00"/>
 		</units>
-		<units_holder
-			this="2BF7387C-AB12-0F2F-C1218D70BA83C706"
-			id="units_holder"
-			offset="294.00,43.00"
-			allowverticalresize="false"
-			docking="Center"
-			component_anchor_point="0.50,0.50"
-			tooltipslocalised="true"
-			uniqueguid="2BF7387C-AB12-0F2F-C1218D70BA83C706"
-			currentstate="19E0F6A4-2D10-0CD8-64B15A905D88B4C3"
-			defaultstate="19E0F6A4-2D10-0CD8-64B15A905D88B4C3">
-			<states>
-				<newstate
-					this="19E0F6A4-2D10-0CD8-64B15A905D88B4C3"
-					name="NewState"
-					width="80"
-					height="130"
-					font_m_size="12"
-					font_m_colour="#FF2D2DFF"
-					font_m_leading="3"
-					fontcat_name="fe_tooltip_red"
-					interactive="true"
-					uniqueguid="19E0F6A4-2D10-0CD8-64B15A905D88B4C3"/>
-			</states>
-			<LayoutEngine
-				type="HorizontalList"
-				sizetocontent="true"
-				min_dimensions="0.00,640.00"
-				margins="10.00,10.00"/>
-		</units_holder>
-		<commander_unit_card
-			this="370200E6-29F9-F3E9-0CE701A92EABE38D"
-			id="commander_unit_card"
-			offset="10.00,0.00"
-			allowhorizontalresize="false"
-			allowverticalresize="false"
-			clipimagestocomponent="true"
-			tooltipslocalised="true"
-			soundcategory="UI_GBL_TMP_Unit_Card"
-			uniqueguid="370200E6-29F9-F3E9-0CE701A92EABE38D"
-			currentstate="D0080E11-2DD3-31B5-939F2879B9EE84B6"
-			defaultstate="D0080E11-2DD3-31B5-939F2879B9EE84B6">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextPropagator"
-					context_object_id="CcoScriptTableNode"
-					context_function_id="DatabaseRecordContext(&quot;CcoAgentSubtypeRecord&quot;, Join(
-						Join(
-							Join(Value).Filter(Key == &quot;force&quot;).FirstContext.Value
-						).Filter(Key == &quot;commander&quot;).FirstContext.Value
-					).Filter(Key == &quot;agent_subtype&quot;).FirstContext.Value).AssociatedUnitOverride"/>
-				<callback_with_context
-					callback_id="ContextImageSetter"
-					context_object_id="CcoMainUnitRecord"
-					context_function_id="IconPath"/>
-				<callback_with_context callback_id="StatePropagatorCallback">
-					<child_m_user_properties>
-						<property
-							name="target_self"
-							value=""/>
-					</child_m_user_properties>
-				</callback_with_context>
-			</callbackwithcontextlist>
-			<userproperties>
-				<property
-					name="background_img"
-					value="1"/>
-				<property
-					name="main_img"
-					value="0"/>
-				<property
-					name="main_mask"
-					value="10"/>
-				<property
-					name="secondary_mask"
-					value="11"/>
-				<property
-					name="status_cycle_width"
-					value="50"/>
-			</userproperties>
-			<componentimages>
-				<component_image
-					this="D51D9A17-5BB0-AFC4-39AC7884451D3182"
-					uniqueguid="D51D9A17-5BB0-AFC4-39AC7884451D3182"
-					imagepath="ui/skins/default/unit_card_ph.png"/>
-				<component_image
-					this="FA9A4987-BBC4-79D3-057B973B4096619C"
-					uniqueguid="FA9A4987-BBC4-79D3-057B973B4096619C"
-					imagepath="ui/skins/default/unit_card_recruitment_frame.png"/>
-				<component_image
-					this="E3B9D8F9-CB7D-35DD-4ECAB697C9781C60"
-					uniqueguid="E3B9D8F9-CB7D-35DD-4ECAB697C9781C60"
-					imagepath="ui/skins/default/unit_card_selected.png"/>
-				<component_image
-					this="AEEF8D4F-31AE-F2F2-93BDDB4C3A2903C2"
-					uniqueguid="AEEF8D4F-31AE-F2F2-93BDDB4C3A2903C2"
-					imagepath="ui/skins/default/unit_card_hover.png"/>
-				<component_image
-					this="CE590600-9BB6-250D-3A05356491CA5D4D"
-					uniqueguid="CE590600-9BB6-250D-3A05356491CA5D4D"
-					imagepath="ui/skins/default/unit_card_selected_hover.png"/>
-				<component_image
-					this="529A862E-9FA9-EE6F-D3F6AD9276C0CBB4"
-					uniqueguid="529A862E-9FA9-EE6F-D3F6AD9276C0CBB4"
-					imagepath="ui/skins/default/unit_card_back_overlay.png"/>
-				<component_image
-					this="EEBFDD21-CAB6-B2C2-952F91E1CA3C5684"
-					uniqueguid="EEBFDD21-CAB6-B2C2-952F91E1CA3C5684"
-					imagepath="ui/skins/default/unit_card_background.png"/>
-				<component_image
-					this="8F4B2F1A-E3D0-9188-3ED6DAF305A5CEB1"
-					uniqueguid="8F4B2F1A-E3D0-9188-3ED6DAF305A5CEB1"
-					imagepath="ui/skins/default/mask_unit_primary.png"/>
-				<component_image
-					this="DA5C2A51-6875-1079-E6B9B5D345F84B95"
-					uniqueguid="DA5C2A51-6875-1079-E6B9B5D345F84B95"
-					imagepath="ui/skins/default/mask_unit_secondary.png"/>
-			</componentimages>
-			<states>
-				<active
-					this="D0080E11-2DD3-31B5-939F2879B9EE84B6"
-					name="active"
-					width="60"
-					height="130"
-					font_m_colour="#FFFFE0FF"
-					font_m_leading="1"
-					fontcat_name="ingame_text_small_warhammer3"
-					interactive="true"
-					shader_name="brighten_t0"
-					uniqueguid="D0080E11-2DD3-31B5-939F2879B9EE84B6"
-					stateeditordisplaypos="102.00,65.00">
-					<imagemetrics>
-						<image
-							this="19F19856-733C-A27F-A3554D4F211770DB"
-							uniqueguid="19F19856-733C-A27F-A3554D4F211770DB"
-							componentimage="EEBFDD21-CAB6-B2C2-952F91E1CA3C5684"
-							width="60"
-							height="130"/>
-						<image
-							this="658B1065-D258-F19B-5A5639E0C53C4AAA"
-							uniqueguid="658B1065-D258-F19B-5A5639E0C53C4AAA"
-							componentimage="D51D9A17-5BB0-AFC4-39AC7884451D3182"
-							width="60"
-							height="130"
-							dockpoint="Center"/>
-						<image
-							this="BFA3DBFF-6360-C459-A3B1FE7713BBA525"
-							uniqueguid="BFA3DBFF-6360-C459-A3B1FE7713BBA525"
-							componentimage="529A862E-9FA9-EE6F-D3F6AD9276C0CBB4"
-							width="60"
-							height="130"
-							colour="#FFFFFF32"
-							tile="true"
-							canresizeheight="false"
-							margin="0.00,10.00,0.00,10.00"/>
-						<image
-							this="558ED7ED-DC04-C09C-A93C044D145F5638"
-							uniqueguid="558ED7ED-DC04-C09C-A93C044D145F5638"
-							componentimage="8F4B2F1A-E3D0-9188-3ED6DAF305A5CEB1"
-							width="60"
-							height="130"
-							dockpoint="Center"/>
-						<image
-							this="00F1E885-6185-CE51-C25FA6F440621894"
-							uniqueguid="00F1E885-6185-CE51-C25FA6F440621894"
-							componentimage="DA5C2A51-6875-1079-E6B9B5D345F84B95"
-							width="60"
-							height="130"
-							dockpoint="Center"/>
-						<image
-							this="D770C52F-A0B3-6BAC-E22235266BF08A55"
-							uniqueguid="D770C52F-A0B3-6BAC-E22235266BF08A55"
-							componentimage="FA9A4987-BBC4-79D3-057B973B4096619C"
-							width="60"
-							height="130"
-							margin="0.00,20.00,0.00,20.00"/>
-					</imagemetrics>
-					<transitionmap>
-						<transition
-							transition_m_target_state="5E122B32-A53F-2BDC-386EB5C5C6A51D90"
-							transition_m_interpolation_property_mask="8"/>
-					</transitionmap>
-				</active>
-				<hover
-					this="5E122B32-A53F-2BDC-386EB5C5C6A51D90"
-					name="hover"
-					width="60"
-					height="130"
-					font_m_colour="#FFFFE0FF"
-					font_m_leading="1"
-					fontcat_name="ingame_text_small_warhammer3"
-					interactive="true"
-					shadervars="0.50,0.00,0.00,0.00"
-					textshadervars="0.20,0.00,0.00,0.00"
-					uniqueguid="5E122B32-A53F-2BDC-386EB5C5C6A51D90"
-					stateeditordisplaypos="123.00,272.00">
-					<imagemetrics>
-						<image
-							this="65BE9979-B82B-8475-637C50DD0DCC4BA1"
-							uniqueguid="65BE9979-B82B-8475-637C50DD0DCC4BA1"
-							componentimage="EEBFDD21-CAB6-B2C2-952F91E1CA3C5684"
-							width="60"
-							height="130"/>
-						<image
-							this="67B994B9-CF79-C117-8A54F2823A646F1E"
-							uniqueguid="67B994B9-CF79-C117-8A54F2823A646F1E"
-							componentimage="D51D9A17-5BB0-AFC4-39AC7884451D3182"
-							width="60"
-							height="130"
-							dockpoint="Center"/>
-						<image
-							this="FE2B77DF-F9BC-3378-03D28010D319B963"
-							uniqueguid="FE2B77DF-F9BC-3378-03D28010D319B963"
-							componentimage="529A862E-9FA9-EE6F-D3F6AD9276C0CBB4"
-							width="60"
-							height="130"
-							colour="#FFFFFF32"
-							tile="true"
-							canresizeheight="false"
-							margin="0.00,10.00,0.00,10.00"/>
-						<image
-							this="6FEC9F02-0607-FD97-D140BE0BAA2A5F77"
-							uniqueguid="6FEC9F02-0607-FD97-D140BE0BAA2A5F77"
-							componentimage="8F4B2F1A-E3D0-9188-3ED6DAF305A5CEB1"
-							width="60"
-							height="130"
-							dockpoint="Center"/>
-						<image
-							this="1C442E80-EE3D-297C-31A859100E944B38"
-							uniqueguid="1C442E80-EE3D-297C-31A859100E944B38"
-							componentimage="DA5C2A51-6875-1079-E6B9B5D345F84B95"
-							width="60"
-							height="130"
-							dockpoint="Center"/>
-						<image
-							this="136C4DD0-09E3-B368-C0A6D0F68BF79BCE"
-							uniqueguid="136C4DD0-09E3-B368-C0A6D0F68BF79BCE"
-							componentimage="FA9A4987-BBC4-79D3-057B973B4096619C"
-							width="60"
-							height="130"
-							margin="0.00,20.00,0.00,20.00"/>
-						<image
-							this="CEFDE572-5A1E-8FB3-B397D8AB68821058"
-							uniqueguid="CEFDE572-5A1E-8FB3-B397D8AB68821058"
-							componentimage="AEEF8D4F-31AE-F2F2-93BDDB4C3A2903C2"
-							width="60"
-							height="130"
-							tile="true"
-							canresizeheight="false"
-							margin="0.00,1.00,0.00,1.00"/>
-					</imagemetrics>
-					<transitionmap>
-						<transition
-							index="1"
-							transition_m_target_state="D0080E11-2DD3-31B5-939F2879B9EE84B6"
-							transition_m_interpolation_property_mask="8"/>
-					</transitionmap>
-				</hover>
-				<inactive
-					this="8F358BB3-924D-1C28-EFFB34732AC0559C"
-					name="inactive"
-					width="60"
-					height="130"
-					soundcategory="UI_GBL_TMP_Generic_Click_Locked_Small"
-					font_m_colour="#FFFFE0FF"
-					font_m_leading="1"
-					fontcat_name="ingame_text_small_warhammer3"
-					interactive="true"
-					disabled="true"
-					shader_name="set_greyscale_t0"
-					shadervars="1.00,1.00,0.00,0.00"
-					textshadervars="1.00,0.50,0.00,0.00"
-					uniqueguid="8F358BB3-924D-1C28-EFFB34732AC0559C"
-					stateeditordisplaypos="102.00,65.00">
-					<imagemetrics>
-						<image
-							this="6E925811-B914-F616-F813A00453808F72"
-							uniqueguid="6E925811-B914-F616-F813A00453808F72"
-							componentimage="EEBFDD21-CAB6-B2C2-952F91E1CA3C5684"
-							width="60"
-							height="130"/>
-						<image
-							this="266BB1F9-9C8C-DCB9-7677006F9ED5C44B"
-							uniqueguid="266BB1F9-9C8C-DCB9-7677006F9ED5C44B"
-							componentimage="D51D9A17-5BB0-AFC4-39AC7884451D3182"
-							width="60"
-							height="130"
-							dockpoint="Center"
-							shadertechnique_vars="1.00,1.00,0.00,0.00"
-							shader_name="set_greyscale_t0"/>
-						<image
-							this="0B17BF25-0FA1-97E5-C5C4DEF797E4B6BC"
-							uniqueguid="0B17BF25-0FA1-97E5-C5C4DEF797E4B6BC"
-							componentimage="FA9A4987-BBC4-79D3-057B973B4096619C"
-							width="60"
-							height="130"
-							margin="0.00,20.00,0.00,20.00"/>
-					</imagemetrics>
-				</inactive>
-				<selected
-					this="77B3E40F-F2F8-80EB-FB8635736460C0DE"
-					name="selected"
-					width="60"
-					height="130"
-					font_m_colour="#FFFFE0FF"
-					font_m_leading="1"
-					fontcat_name="ingame_text_small_warhammer3"
-					interactive="true"
-					shadervars="1.00,0.00,0.00,0.00"
-					textshadervars="0.20,0.00,0.00,0.00"
-					uniqueguid="77B3E40F-F2F8-80EB-FB8635736460C0DE"
-					stateeditordisplaypos="300.00,99.00">
-					<imagemetrics>
-						<image
-							this="731E2122-734D-C2F2-3C2F533F84A69438"
-							uniqueguid="731E2122-734D-C2F2-3C2F533F84A69438"
-							componentimage="EEBFDD21-CAB6-B2C2-952F91E1CA3C5684"
-							width="60"
-							height="130"/>
-						<image
-							this="3310C01A-1984-3566-DE3880146E60A71C"
-							uniqueguid="3310C01A-1984-3566-DE3880146E60A71C"
-							componentimage="D51D9A17-5BB0-AFC4-39AC7884451D3182"
-							width="60"
-							height="130"
-							dockpoint="Center"
-							shadertechnique_vars="1.50,0.00,0.00,0.00"
-							shader_name="brighten_t0"/>
-						<image
-							this="0E279886-160C-2654-9D9EE8669237C5E2"
-							uniqueguid="0E279886-160C-2654-9D9EE8669237C5E2"
-							componentimage="8F4B2F1A-E3D0-9188-3ED6DAF305A5CEB1"
-							width="60"
-							height="130"
-							dockpoint="Center"/>
-						<image
-							this="85CAB9D5-739A-AFD3-B75C08C251EAE7AA"
-							uniqueguid="85CAB9D5-739A-AFD3-B75C08C251EAE7AA"
-							componentimage="DA5C2A51-6875-1079-E6B9B5D345F84B95"
-							width="60"
-							height="130"
-							dockpoint="Center"/>
-						<image
-							this="97036C7D-C7B0-CF15-E81E8E0F64361B7A"
-							uniqueguid="97036C7D-C7B0-CF15-E81E8E0F64361B7A"
-							componentimage="FA9A4987-BBC4-79D3-057B973B4096619C"
-							width="60"
-							height="130"
-							margin="0.00,20.00,0.00,20.00"/>
-						<image
-							this="AE9A8CFE-B685-5592-4620FF19D55D2491"
-							uniqueguid="AE9A8CFE-B685-5592-4620FF19D55D2491"
-							componentimage="E3B9D8F9-CB7D-35DD-4ECAB697C9781C60"
-							width="60"
-							height="130"
-							margin="0.00,10.00,0.00,10.00"/>
-					</imagemetrics>
-					<transitionmap>
-						<transition
-							transition_m_target_state="62EA0801-AFDD-29CB-379FB509273CD968"
-							transition_m_interpolation_property_mask="8"/>
-					</transitionmap>
-				</selected>
-				<selected_hover
-					this="62EA0801-AFDD-29CB-379FB509273CD968"
-					name="selected_hover"
-					width="60"
-					height="130"
-					font_m_colour="#FFFFE0FF"
-					font_m_leading="1"
-					fontcat_name="ingame_text_small_warhammer3"
-					interactive="true"
-					shadervars="1.00,0.00,0.00,0.00"
-					textshadervars="0.20,0.00,0.00,0.00"
-					uniqueguid="62EA0801-AFDD-29CB-379FB509273CD968"
-					stateeditordisplaypos="349.00,255.00">
-					<imagemetrics>
-						<image
-							this="07EDC6A5-3E2D-D67A-CBF70B2D2B66D680"
-							uniqueguid="07EDC6A5-3E2D-D67A-CBF70B2D2B66D680"
-							componentimage="EEBFDD21-CAB6-B2C2-952F91E1CA3C5684"
-							width="60"
-							height="130"/>
-						<image
-							this="2C6D7EE3-8D8D-1B72-3EB624ED303BCAA2"
-							uniqueguid="2C6D7EE3-8D8D-1B72-3EB624ED303BCAA2"
-							componentimage="D51D9A17-5BB0-AFC4-39AC7884451D3182"
-							width="60"
-							height="130"
-							dockpoint="Center"
-							shadertechnique_vars="1.50,0.00,0.00,0.00"
-							shader_name="brighten_t0"/>
-						<image
-							this="C0A6BDFE-E0C2-5CCD-3BAA37E91F6C0BAE"
-							uniqueguid="C0A6BDFE-E0C2-5CCD-3BAA37E91F6C0BAE"
-							componentimage="8F4B2F1A-E3D0-9188-3ED6DAF305A5CEB1"
-							width="60"
-							height="130"
-							dockpoint="Center"/>
-						<image
-							this="2AB4273E-6853-01AF-E7623DB9CD9B21A0"
-							uniqueguid="2AB4273E-6853-01AF-E7623DB9CD9B21A0"
-							componentimage="DA5C2A51-6875-1079-E6B9B5D345F84B95"
-							width="60"
-							height="130"
-							dockpoint="Center"/>
-						<image
-							this="31332027-3559-6764-D55C2660EFFB4ABA"
-							uniqueguid="31332027-3559-6764-D55C2660EFFB4ABA"
-							componentimage="FA9A4987-BBC4-79D3-057B973B4096619C"
-							width="60"
-							height="130"
-							margin="0.00,20.00,0.00,20.00"/>
-						<image
-							this="17700593-117C-D08F-F459D6F7546EB846"
-							uniqueguid="17700593-117C-D08F-F459D6F7546EB846"
-							componentimage="CE590600-9BB6-250D-3A05356491CA5D4D"
-							width="60"
-							height="130"
-							margin="0.00,10.00,0.00,10.00"/>
-					</imagemetrics>
-					<transitionmap>
-						<transition
-							index="1"
-							transition_m_target_state="77B3E40F-F2F8-80EB-FB8635736460C0DE"
-							transition_m_transition_time="200"
-							transition_m_interpolation_property_mask="8"/>
-					</transitionmap>
-				</selected_hover>
-			</states>
-			<animations>
-				<glow id="glow">
-					<frames>
-						<frame
-							interpolationtime="0"
-							interpolationpropertymask="8"
-							targetmetrics_m_height="56"
-							targetmetrics_m_width="56"
-							targetmetrics_m_offset="682.00,-495.00"/>
-						<frame
-							interpolationtime="200"
-							interpolationpropertymask="8"
-							targetmetrics_m_height="56"
-							targetmetrics_m_width="56"
-							targetmetrics_m_offset="682.00,-495.00"
-							targetmetrics_m_shadervars="10.00,0.00,0.00,0.00"/>
-						<frame
-							interpolationtime="700"
-							interpolationpropertymask="8"
-							targetmetrics_m_height="56"
-							targetmetrics_m_width="56"
-							targetmetrics_m_offset="682.00,-495.00"/>
-					</frames>
-				</glow>
-				<fade_in
-					id="fade_in"
-					propagate="true">
-					<frames>
-						<frame
-							interpolationtime="0"
-							interpolationpropertymask="72"
-							targetmetrics_m_colour="#FFFFFF00"
-							targetmetrics_m_height="130"
-							targetmetrics_m_width="60"
-							targetmetrics_m_offset="527.00,197.00"
-							targetmetrics_m_shadervars="1.00,0.00,0.00,0.00"/>
-						<frame
-							interpolationtime="700"
-							interpolationpropertymask="72"
-							targetmetrics_m_height="130"
-							targetmetrics_m_width="60"
-							targetmetrics_m_offset="527.00,197.00"
-							targetmetrics_m_shadervars="5.00,0.00,0.00,0.00"/>
-						<frame
-							interpolationtime="300"
-							interpolationpropertymask="72"
-							targetmetrics_m_height="130"
-							targetmetrics_m_width="60"
-							targetmetrics_m_offset="527.00,197.00"
-							targetmetrics_m_shadervars="1.00,0.00,0.00,0.00"
-							easing_curve_type="Quadratic In &amp; Out"/>
-					</frames>
-				</fade_in>
-			</animations>
-		</commander_unit_card>
-		<unit_category_icon
-			this="F12647D4-2A28-6B20-AB490F093FB0FB5B"
-			id="unit_category_icon"
-			offset="7.00,14.00"
-			allowhorizontalresize="false"
-			allowverticalresize="false"
-			docking="Bottom Center"
-			component_anchor_point="0.50,1.00"
-			tooltipslocalised="true"
-			uniqueguid="F12647D4-2A28-6B20-AB490F093FB0FB5B"
-			currentstate="49D8A31B-BE7A-E586-8F683194F22DD31F"
-			defaultstate="49D8A31B-BE7A-E586-8F683194F22DD31F">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextImageSetter"
-					context_object_id="CcoUnitDetails"
-					context_function_id="UnitRecordContext.CategoryIcon"/>
-				<callback_with_context callback_id="CallbackRedirector"/>
-			</callbackwithcontextlist>
-			<userproperties>
-				<property
-					name="parent_id"
-					value="UnitCard"/>
-			</userproperties>
-			<componentimages>
-				<component_image
-					this="BD15611C-258E-CC59-CC0B4B231790A9D6"
-					uniqueguid="BD15611C-258E-CC59-CC0B4B231790A9D6"
-					imagepath="ui/common ui/unit_category_icons/infantry_sword.png"/>
-			</componentimages>
-			<states>
-				<default
-					this="49D8A31B-BE7A-E586-8F683194F22DD31F"
-					name="default"
-					width="22"
-					height="22"
-					disabled="true"
-					pixelcollision="true"
-					uniqueguid="49D8A31B-BE7A-E586-8F683194F22DD31F">
-					<imagemetrics>
-						<image
-							this="5C8CD279-FE68-35D2-2B37333A2CB93DFC"
-							uniqueguid="5C8CD279-FE68-35D2-2B37333A2CB93DFC"
-							componentimage="BD15611C-258E-CC59-CC0B4B231790A9D6"
-							width="22"
-							height="22"/>
-					</imagemetrics>
-				</default>
-				<raise
-					this="A66E61B4-9A75-7D9B-7759CB3B6C2BE2B7"
-					name="raise"
-					width="22"
-					height="22"
-					disabled="true"
-					pixelcollision="true"
-					shader_name="set_greyscale_t0"
-					shadervars="1.00,1.00,0.00,0.00"
-					uniqueguid="A66E61B4-9A75-7D9B-7759CB3B6C2BE2B7">
-					<imagemetrics>
-						<image
-							this="96F75D8E-A76B-ED99-9FB5A9A602BA7E84"
-							uniqueguid="96F75D8E-A76B-ED99-9FB5A9A602BA7E84"
-							componentimage="BD15611C-258E-CC59-CC0B4B231790A9D6"
-							width="22"
-							height="22"/>
-					</imagemetrics>
-				</raise>
-			</states>
-		</unit_category_icon>
-		<unit_cat_frame
-			this="A2E6C963-1E41-5B73-E90BB28E400E4747"
-			id="unit_cat_frame"
-			offset="12.00,94.00"
-			allowhorizontalresize="false"
-			allowverticalresize="false"
-			docking="Bottom Center"
-			component_anchor_point="0.50,1.00"
-			tooltipslocalised="true"
-			uniqueguid="A2E6C963-1E41-5B73-E90BB28E400E4747"
-			currentstate="023143F7-C1C4-87C1-78D072D758B4D8D0"
-			defaultstate="023143F7-C1C4-87C1-78D072D758B4D8D0">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextStateSetter"
-					context_object_id="CcoMainUnitRecord"
-					context_function_id="SpecialCategoryKey"/>
-			</callbackwithcontextlist>
-			<componentimages>
-				<component_image
-					this="BEF474A4-721B-62E1-BAC40BA514D6502A"
-					uniqueguid="BEF474A4-721B-62E1-BAC40BA514D6502A"
-					imagepath="ui/skins/default/unit_card_semicircle.png"/>
-				<component_image
-					this="F899C7D7-0647-ED72-175BCCA37978169B"
-					uniqueguid="F899C7D7-0647-ED72-175BCCA37978169B"
-					imagepath="ui/skins/default/unit_card_semicircle_renown.png"/>
-				<component_image
-					this="634CFA0A-CDC7-AD3D-B76523EC679A238E"
-					uniqueguid="634CFA0A-CDC7-AD3D-B76523EC679A238E"
-					imagepath="ui/skins/default/unit_card_semicircle_spawning.png"/>
-				<component_image
-					this="0E70533C-AB7E-9166-5906F90275D127E8"
-					uniqueguid="0E70533C-AB7E-9166-5906F90275D127E8"
-					imagepath="ui/skins/default/unit_card_semicircle_crafted.png"/>
-				<component_image
-					this="6D527EE7-FFCA-40E4-22FE8B20932F5B23"
-					uniqueguid="6D527EE7-FFCA-40E4-22FE8B20932F5B23"
-					imagepath="ui/skins/warhammer2/unit_card_semicircle_tech_lab.png"/>
-				<component_image
-					this="9C87A20B-AE90-C8FA-C372B3E859095E33"
-					uniqueguid="9C87A20B-AE90-C8FA-C372B3E859095E33"
-					imagepath="ui/skins/default/unit_card_semicircle_elector.png"/>
-				<component_image
-					this="31F9AB21-164E-9F61-8220EE65A79F5975"
-					uniqueguid="31F9AB21-164E-9F61-8220EE65A79F5975"
-					imagepath="ui/skins/warhammer2/unit_card_semicircle_mistwalker.png"/>
-			</componentimages>
-			<states>
-				<active
-					this="023143F7-C1C4-87C1-78D072D758B4D8D0"
-					name="active"
-					width="36"
-					height="36"
-					uniqueguid="023143F7-C1C4-87C1-78D072D758B4D8D0">
-					<imagemetrics>
-						<image
-							this="67A24CAC-325C-BD23-5E9E0863941352E3"
-							uniqueguid="67A24CAC-325C-BD23-5E9E0863941352E3"
-							componentimage="BEF474A4-721B-62E1-BAC40BA514D6502A"
-							offset="-9.00,1.00"
-							width="55"
-							height="35"
-							dockpoint="Bottom Center"
-							canresizeheight="false"
-							canresizewidth="false"/>
-					</imagemetrics>
-				</active>
-				<blessed_spawning
-					this="7A7A9E02-D199-0D17-C727816D6FA4C659"
-					name="blessed_spawning"
-					width="36"
-					height="36"
-					uniqueguid="7A7A9E02-D199-0D17-C727816D6FA4C659">
-					<imagemetrics>
-						<image
-							this="8EA48FF1-0A43-6F69-B268A925B7B0D7BC"
-							uniqueguid="8EA48FF1-0A43-6F69-B268A925B7B0D7BC"
-							componentimage="634CFA0A-CDC7-AD3D-B76523EC679A238E"
-							offset="-9.00,1.00"
-							width="55"
-							height="35"
-							dockpoint="Bottom Center"/>
-					</imagemetrics>
-				</blessed_spawning>
-				<crafted
-					this="C8DE071E-47DB-E3C9-78CE8B7922CD5173"
-					name="crafted"
-					width="36"
-					height="36"
-					uniqueguid="C8DE071E-47DB-E3C9-78CE8B7922CD5173">
-					<imagemetrics>
-						<image
-							this="FEC98F72-77AC-D949-DCD32405B62F8123"
-							uniqueguid="FEC98F72-77AC-D949-DCD32405B62F8123"
-							componentimage="0E70533C-AB7E-9166-5906F90275D127E8"
-							offset="-9.00,1.00"
-							width="55"
-							height="35"
-							dockpoint="Bottom Center"/>
-					</imagemetrics>
-				</crafted>
-				<elector_counts
-					this="2A9688C9-8A12-8748-3177E140D834E5F1"
-					name="elector_counts"
-					width="36"
-					height="36"
-					uniqueguid="2A9688C9-8A12-8748-3177E140D834E5F1">
-					<imagemetrics>
-						<image
-							this="354ABFB9-F659-E166-703B3B34AFFE2DDA"
-							uniqueguid="354ABFB9-F659-E166-703B3B34AFFE2DDA"
-							componentimage="9C87A20B-AE90-C8FA-C372B3E859095E33"
-							offset="-9.00,1.00"
-							width="55"
-							height="35"
-							dockpoint="Bottom Center"/>
-					</imagemetrics>
-				</elector_counts>
-				<inactive
-					this="E161C5EA-CCA3-5353-7D52D32177E891BE"
-					name="inactive"
-					width="36"
-					height="36"
-					shader_name="set_greyscale_t0"
-					shadervars="1.00,1.00,0.00,0.00"
-					uniqueguid="E161C5EA-CCA3-5353-7D52D32177E891BE">
-					<imagemetrics>
-						<image
-							this="48F33768-628B-869D-80DF93EC1F3B8EAB"
-							uniqueguid="48F33768-628B-869D-80DF93EC1F3B8EAB"
-							componentimage="BEF474A4-721B-62E1-BAC40BA514D6502A"
-							offset="-9.00,1.00"
-							width="55"
-							height="35"
-							dockpoint="Bottom Center"
-							canresizeheight="false"
-							canresizewidth="false"/>
-					</imagemetrics>
-				</inactive>
-				<mistwalker
-					this="ECED852D-C186-51D2-1420453F53AB7573"
-					name="mistwalker"
-					width="36"
-					height="36"
-					uniqueguid="ECED852D-C186-51D2-1420453F53AB7573">
-					<imagemetrics>
-						<image
-							this="7D5F456A-2167-57F1-A85DB66EECC32A99"
-							uniqueguid="7D5F456A-2167-57F1-A85DB66EECC32A99"
-							componentimage="31F9AB21-164E-9F61-8220EE65A79F5975"
-							offset="-9.00,0.00"
-							width="55"
-							height="35"
-							dockpoint="Center"/>
-					</imagemetrics>
-				</mistwalker>
-				<raise
-					this="47081588-B74F-A4F3-8B4411293ACF778E"
-					name="raise"
-					width="36"
-					height="36"
-					shader_name="set_greyscale_t0"
-					shadervars="1.00,1.00,0.00,0.00"
-					uniqueguid="47081588-B74F-A4F3-8B4411293ACF778E">
-					<imagemetrics>
-						<image
-							this="72A9F9C0-C68E-FD90-934402557B059CE2"
-							uniqueguid="72A9F9C0-C68E-FD90-934402557B059CE2"
-							componentimage="BEF474A4-721B-62E1-BAC40BA514D6502A"
-							offset="-9.00,1.00"
-							width="55"
-							height="35"
-							dockpoint="Bottom Center"
-							canresizeheight="false"
-							canresizewidth="false"/>
-					</imagemetrics>
-				</raise>
-				<renown
-					this="99A1F61A-0735-41EE-63A0066259558306"
-					name="renown"
-					width="36"
-					height="36"
-					uniqueguid="99A1F61A-0735-41EE-63A0066259558306">
-					<imagemetrics>
-						<image
-							this="76BD2AA8-7145-FFCD-B5A4FB537D1144C8"
-							uniqueguid="76BD2AA8-7145-FFCD-B5A4FB537D1144C8"
-							componentimage="F899C7D7-0647-ED72-175BCCA37978169B"
-							offset="-9.00,1.00"
-							width="55"
-							height="35"
-							dockpoint="Bottom Center"
-							canresizeheight="false"
-							canresizewidth="false"/>
-					</imagemetrics>
-				</renown>
-				<tech_lab
-					this="E7297C39-B941-1016-F917D5EB3710487A"
-					name="tech_lab"
-					width="36"
-					height="36"
-					texthbehaviour="Never split"
-					uniqueguid="E7297C39-B941-1016-F917D5EB3710487A">
-					<imagemetrics>
-						<image
-							this="F2E9B054-BDA1-CEF8-B33BC7431FB696D9"
-							uniqueguid="F2E9B054-BDA1-CEF8-B33BC7431FB696D9"
-							componentimage="6D527EE7-FFCA-40E4-22FE8B20932F5B23"
-							offset="-9.00,0.00"
-							width="55"
-							height="35"
-							dockpoint="Center"/>
-					</imagemetrics>
-				</tech_lab>
-			</states>
-		</unit_cat_frame>
 	</components>
 </layout>

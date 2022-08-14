@@ -1,4 +1,142 @@
 return {
+		["progress_gates"] = {
+			["NONE"] = {
+				["activation_threshold"] = 9999,
+				["generates_encounters"] = {
+
+				},
+				["displaces_encounters"] = {
+
+				},
+				["forces_encounters"] = {
+
+				}
+			},
+			["INTRO_NORTH"] = {
+				["activation_threshold"] = 1,
+				["generates_encounters"] = {
+
+				},
+				["displaces_encounters"] = {
+
+				},
+				["forces_encounters"] = {
+
+				}
+			},
+			["INTRODUCTION"] = {
+				["activation_threshold"] = 1,
+				["generates_encounters"] = {
+
+				},
+				["displaces_encounters"] = {
+
+				},
+				["forces_encounters"] = {
+
+				}
+			},
+			["INTRO_WEST"] = {
+				["activation_threshold"] = 1,
+				["generates_encounters"] = {
+
+				},
+				["displaces_encounters"] = {
+
+				},
+				["forces_encounters"] = {
+
+				}
+			},
+			["INTRO_WEST_S1"] = {
+				["activation_threshold"] = 1,
+				["generates_encounters"] = {
+
+				},
+				["displaces_encounters"] = {
+
+				},
+				["forces_encounters"] = {
+
+				}
+			},
+			["INTRO_EAST_S1"] = {
+				["activation_threshold"] = 1,
+				["generates_encounters"] = {
+
+				},
+				["displaces_encounters"] = {
+
+				},
+				["forces_encounters"] = {
+
+				}
+			},
+			["NEW_GAME_DANIEL"] = {
+				["activation_threshold"] = 1,
+				["generates_encounters"] = {
+					[1] = {
+						["progress_payload"] = "START_BATTLE_COMPLETE",
+						["region"] = "settlement:wh3_main_chaos_region_doomkeep",
+						["duration"] = 0,
+						["boss_overlay"] = false,
+						["reward_set"] = "daniel_intro_battle_rewards",
+						["key"] = "starting_battle",
+						["inciting_incident_key"] = "",
+						["battle_type"] = "LAND_ATTACK",
+						["post_battle_dilemma_override"] = "",
+						["force_set"] = {
+							[1] = "starting_battle_kho",
+							[2] = "starting_battle_nur",
+							[3] = "starting_battle_sla",
+							[4] = "starting_battle_tze"
+						}
+					}
+				},
+				["displaces_encounters"] = {
+
+				},
+				["forces_encounters"] = {
+
+				}
+			},
+			["INTRO_EAST"] = {
+				["activation_threshold"] = 1,
+				["generates_encounters"] = {
+
+				},
+				["displaces_encounters"] = {
+
+				},
+				["forces_encounters"] = {
+
+				}
+			},
+			["NEVER"] = {
+				["activation_threshold"] = 9999,
+				["generates_encounters"] = {
+
+				},
+				["displaces_encounters"] = {
+
+				},
+				["forces_encounters"] = {
+
+				}
+			},
+			["INTRO_SOUTH"] = {
+				["activation_threshold"] = 1,
+				["generates_encounters"] = {
+
+				},
+				["displaces_encounters"] = {
+
+				},
+				["forces_encounters"] = {
+
+				}
+			}
+		},
 		["force_fragments"] = {
 			["kho_bloodcrusher_1"] = {
 				["difficulty_delta"] = 6,
@@ -3666,195 +3804,6 @@ return {
 				}
 			}
 		},
-		["effect_bundle_lists"] = {
-
-		},
-		["commanders"] = {
-			["azazel_easy"] = {
-				["difficulty_delta"] = 0,
-				["agent_subtype"] = "wh3_dlc20_sla_azazel",
-				["commander_key"] = "azazel_easy"
-			},
-			["chs_prince"] = {
-				["difficulty_delta"] = 7,
-				["agent_subtype"] = "wh3_dlc20_chs_daemon_prince_undivided",
-				["commander_key"] = "chs_prince"
-			},
-			["festus_easy"] = {
-				["difficulty_delta"] = 0,
-				["agent_subtype"] = "wh3_dlc20_nur_festus",
-				["commander_key"] = "festus_easy"
-			},
-			["nur_starting_enemy"] = {
-				["difficulty_delta"] = 0,
-				["agent_subtype"] = "wh3_dlc20_chs_sorcerer_lord_nurgle_mnur",
-				["commander_key"] = "nur_starting_enemy"
-			},
-			["kho_valkia_easy"] = {
-				["difficulty_delta"] = 10,
-				["agent_subtype"] = "wh3_dlc20_kho_valkia",
-				["commander_key"] = "kho_valkia_easy"
-			},
-			["kho_prince_easy"] = {
-				["difficulty_delta"] = 3,
-				["agent_subtype"] = "wh3_dlc20_chs_daemon_prince_khorne",
-				["commander_key"] = "kho_prince_easy"
-			},
-			["nkari_easy"] = {
-				["difficulty_delta"] = 0,
-				["agent_subtype"] = "wh3_main_sla_nkari",
-				["commander_key"] = "nkari_easy"
-			},
-			["kho_starting_enemy"] = {
-				["difficulty_delta"] = 1,
-				["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
-				["commander_key"] = "kho_starting_enemy"
-			},
-			["kugath_easy"] = {
-				["difficulty_delta"] = 0,
-				["agent_subtype"] = "wh3_main_nur_kugath",
-				["commander_key"] = "kugath_easy"
-			},
-			["vilitch_easy"] = {
-				["difficulty_delta"] = 0,
-				["agent_subtype"] = "wh3_dlc20_tze_vilitch",
-				["commander_key"] = "vilitch_easy"
-			},
-			["kairos_easy"] = {
-				["difficulty_delta"] = 0,
-				["agent_subtype"] = "wh3_main_tze_kairos",
-				["commander_key"] = "kairos_easy"
-			},
-			["sla_starting_enemy"] = {
-				["difficulty_delta"] = 0,
-				["agent_subtype"] = "wh3_dlc20_chs_lord_msla",
-				["commander_key"] = "sla_starting_enemy"
-			},
-			["kho_lord_hard"] = {
-				["difficulty_delta"] = 1,
-				["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
-				["commander_key"] = "kho_lord_hard"
-			},
-			["skarbrand_easy"] = {
-				["difficulty_delta"] = 10,
-				["agent_subtype"] = "wh3_main_kho_skarbrand",
-				["commander_key"] = "skarbrand_easy"
-			},
-			["kho_lord_norm"] = {
-				["difficulty_delta"] = 1,
-				["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
-				["commander_key"] = "kho_lord_norm"
-			},
-			["tze_starting_enemy"] = {
-				["difficulty_delta"] = 0,
-				["agent_subtype"] = "wh3_dlc20_chs_sorcerer_lord_tzeentch_mtze",
-				["commander_key"] = "tze_starting_enemy"
-			}
-		},
-		["commander_sets"] = {
-			["kho_skarbrand_easy"] = {
-				[1] = {
-					["difficulty_delta"] = 10,
-					["agent_subtype"] = "wh3_main_kho_skarbrand",
-					["commander_key"] = "skarbrand_easy"
-				}
-			},
-			["chs_prince"] = {
-				[1] = {
-					["difficulty_delta"] = 7,
-					["agent_subtype"] = "wh3_dlc20_chs_daemon_prince_undivided",
-					["commander_key"] = "chs_prince"
-				}
-			},
-			["nur_starting_enemy"] = {
-				[1] = {
-					["difficulty_delta"] = 0,
-					["agent_subtype"] = "wh3_dlc20_chs_sorcerer_lord_nurgle_mnur",
-					["commander_key"] = "nur_starting_enemy"
-				}
-			},
-			["sla_starting_enemy"] = {
-				[1] = {
-					["difficulty_delta"] = 0,
-					["agent_subtype"] = "wh3_dlc20_chs_lord_msla",
-					["commander_key"] = "sla_starting_enemy"
-				}
-			},
-			["kho_valkia_easy"] = {
-				[1] = {
-					["difficulty_delta"] = 10,
-					["agent_subtype"] = "wh3_dlc20_kho_valkia",
-					["commander_key"] = "kho_valkia_easy"
-				}
-			},
-			["kho_lord_easy"] = {
-
-			},
-			["tze_starting_enemy"] = {
-				[1] = {
-					["difficulty_delta"] = 0,
-					["agent_subtype"] = "wh3_dlc20_chs_sorcerer_lord_tzeentch_mtze",
-					["commander_key"] = "tze_starting_enemy"
-				}
-			},
-			["kho_starting_enemy"] = {
-				[1] = {
-					["difficulty_delta"] = 1,
-					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
-					["commander_key"] = "kho_starting_enemy"
-				}
-			},
-			["kho_random"] = {
-
-			},
-			["kho_herald"] = {
-
-			},
-			["kho_lord_all"] = {
-				[1] = {
-					["difficulty_delta"] = 1,
-					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
-					["commander_key"] = "kho_lord_norm"
-				},
-				[2] = {
-					["difficulty_delta"] = 1,
-					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
-					["commander_key"] = "kho_lord_hard"
-				}
-			},
-			["kho_prince"] = {
-
-			},
-			["kho_lord_hard"] = {
-				[1] = {
-					["difficulty_delta"] = 1,
-					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
-					["commander_key"] = "kho_lord_hard"
-				}
-			},
-			["kho_lord_norm"] = {
-				[1] = {
-					["difficulty_delta"] = 1,
-					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
-					["commander_key"] = "kho_lord_norm"
-				}
-			},
-			["kho_lord_norm_plus"] = {
-				[1] = {
-					["difficulty_delta"] = 1,
-					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
-					["commander_key"] = "kho_lord_norm"
-				},
-				[2] = {
-					["difficulty_delta"] = 1,
-					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
-					["commander_key"] = "kho_lord_hard"
-				}
-			},
-			["kho_greater_deamon"] = {
-
-			}
-		},
 		["forces"] = {
 			["SPECIAL_MIRROR"] = {
 				["base_difficulty"] = 0,
@@ -4147,6 +4096,195 @@ return {
 				}
 			}
 		},
+		["commanders"] = {
+			["azazel_easy"] = {
+				["difficulty_delta"] = 0,
+				["agent_subtype"] = "wh3_dlc20_sla_azazel",
+				["commander_key"] = "azazel_easy"
+			},
+			["chs_prince"] = {
+				["difficulty_delta"] = 7,
+				["agent_subtype"] = "wh3_dlc20_chs_daemon_prince_undivided",
+				["commander_key"] = "chs_prince"
+			},
+			["festus_easy"] = {
+				["difficulty_delta"] = 0,
+				["agent_subtype"] = "wh3_dlc20_nur_festus",
+				["commander_key"] = "festus_easy"
+			},
+			["nur_starting_enemy"] = {
+				["difficulty_delta"] = 0,
+				["agent_subtype"] = "wh3_dlc20_chs_sorcerer_lord_nurgle_mnur",
+				["commander_key"] = "nur_starting_enemy"
+			},
+			["kho_valkia_easy"] = {
+				["difficulty_delta"] = 10,
+				["agent_subtype"] = "wh3_dlc20_kho_valkia",
+				["commander_key"] = "kho_valkia_easy"
+			},
+			["kho_prince_easy"] = {
+				["difficulty_delta"] = 3,
+				["agent_subtype"] = "wh3_dlc20_chs_daemon_prince_khorne",
+				["commander_key"] = "kho_prince_easy"
+			},
+			["nkari_easy"] = {
+				["difficulty_delta"] = 0,
+				["agent_subtype"] = "wh3_main_sla_nkari",
+				["commander_key"] = "nkari_easy"
+			},
+			["kho_starting_enemy"] = {
+				["difficulty_delta"] = 1,
+				["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
+				["commander_key"] = "kho_starting_enemy"
+			},
+			["kugath_easy"] = {
+				["difficulty_delta"] = 0,
+				["agent_subtype"] = "wh3_main_nur_kugath",
+				["commander_key"] = "kugath_easy"
+			},
+			["vilitch_easy"] = {
+				["difficulty_delta"] = 0,
+				["agent_subtype"] = "wh3_dlc20_tze_vilitch",
+				["commander_key"] = "vilitch_easy"
+			},
+			["kairos_easy"] = {
+				["difficulty_delta"] = 0,
+				["agent_subtype"] = "wh3_main_tze_kairos",
+				["commander_key"] = "kairos_easy"
+			},
+			["sla_starting_enemy"] = {
+				["difficulty_delta"] = 0,
+				["agent_subtype"] = "wh3_dlc20_chs_lord_msla",
+				["commander_key"] = "sla_starting_enemy"
+			},
+			["kho_lord_hard"] = {
+				["difficulty_delta"] = 1,
+				["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
+				["commander_key"] = "kho_lord_hard"
+			},
+			["skarbrand_easy"] = {
+				["difficulty_delta"] = 10,
+				["agent_subtype"] = "wh3_main_kho_skarbrand",
+				["commander_key"] = "skarbrand_easy"
+			},
+			["kho_lord_norm"] = {
+				["difficulty_delta"] = 1,
+				["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
+				["commander_key"] = "kho_lord_norm"
+			},
+			["tze_starting_enemy"] = {
+				["difficulty_delta"] = 0,
+				["agent_subtype"] = "wh3_dlc20_chs_sorcerer_lord_tzeentch_mtze",
+				["commander_key"] = "tze_starting_enemy"
+			}
+		},
+		["commander_sets"] = {
+			["kho_skarbrand_easy"] = {
+				[1] = {
+					["difficulty_delta"] = 10,
+					["agent_subtype"] = "wh3_main_kho_skarbrand",
+					["commander_key"] = "skarbrand_easy"
+				}
+			},
+			["chs_prince"] = {
+				[1] = {
+					["difficulty_delta"] = 7,
+					["agent_subtype"] = "wh3_dlc20_chs_daemon_prince_undivided",
+					["commander_key"] = "chs_prince"
+				}
+			},
+			["nur_starting_enemy"] = {
+				[1] = {
+					["difficulty_delta"] = 0,
+					["agent_subtype"] = "wh3_dlc20_chs_sorcerer_lord_nurgle_mnur",
+					["commander_key"] = "nur_starting_enemy"
+				}
+			},
+			["sla_starting_enemy"] = {
+				[1] = {
+					["difficulty_delta"] = 0,
+					["agent_subtype"] = "wh3_dlc20_chs_lord_msla",
+					["commander_key"] = "sla_starting_enemy"
+				}
+			},
+			["kho_valkia_easy"] = {
+				[1] = {
+					["difficulty_delta"] = 10,
+					["agent_subtype"] = "wh3_dlc20_kho_valkia",
+					["commander_key"] = "kho_valkia_easy"
+				}
+			},
+			["kho_lord_easy"] = {
+
+			},
+			["tze_starting_enemy"] = {
+				[1] = {
+					["difficulty_delta"] = 0,
+					["agent_subtype"] = "wh3_dlc20_chs_sorcerer_lord_tzeentch_mtze",
+					["commander_key"] = "tze_starting_enemy"
+				}
+			},
+			["kho_starting_enemy"] = {
+				[1] = {
+					["difficulty_delta"] = 1,
+					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
+					["commander_key"] = "kho_starting_enemy"
+				}
+			},
+			["kho_random"] = {
+
+			},
+			["kho_herald"] = {
+
+			},
+			["kho_lord_all"] = {
+				[1] = {
+					["difficulty_delta"] = 1,
+					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
+					["commander_key"] = "kho_lord_norm"
+				},
+				[2] = {
+					["difficulty_delta"] = 1,
+					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
+					["commander_key"] = "kho_lord_hard"
+				}
+			},
+			["kho_prince"] = {
+
+			},
+			["kho_lord_hard"] = {
+				[1] = {
+					["difficulty_delta"] = 1,
+					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
+					["commander_key"] = "kho_lord_hard"
+				}
+			},
+			["kho_lord_norm"] = {
+				[1] = {
+					["difficulty_delta"] = 1,
+					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
+					["commander_key"] = "kho_lord_norm"
+				}
+			},
+			["kho_lord_norm_plus"] = {
+				[1] = {
+					["difficulty_delta"] = 1,
+					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
+					["commander_key"] = "kho_lord_norm"
+				},
+				[2] = {
+					["difficulty_delta"] = 1,
+					["agent_subtype"] = "wh3_dlc20_chs_lord_mkho",
+					["commander_key"] = "kho_lord_hard"
+				}
+			},
+			["kho_greater_deamon"] = {
+
+			}
+		},
+		["effect_bundle_lists"] = {
+
+		},
 		["reward_sets"] = {
 			["daniel_starting_rewards"] = {
 				[1] = {
@@ -4186,7 +4324,41 @@ return {
 				}
 			},
 			["daniel_intro_battle_rewards"] = {
-
+				[1] = {
+					["dilemma"] = "rogue_start_all_dae",
+					["resource_threshold"] = 0,
+					["requires_resource"] = ""
+				},
+				[2] = {
+					["dilemma"] = "rogue_start_kho_vs_sla",
+					["resource_threshold"] = 0,
+					["requires_resource"] = ""
+				},
+				[3] = {
+					["dilemma"] = "rogue_start_tze_vs_kho",
+					["resource_threshold"] = 0,
+					["requires_resource"] = ""
+				},
+				[4] = {
+					["dilemma"] = "rogue_start_sla_vs_nur",
+					["resource_threshold"] = 0,
+					["requires_resource"] = ""
+				},
+				[5] = {
+					["dilemma"] = "rogue_start_nur_vs_tze",
+					["resource_threshold"] = 0,
+					["requires_resource"] = ""
+				},
+				[6] = {
+					["dilemma"] = "rogue_start_chs_quality_vs_dae_quantity",
+					["resource_threshold"] = 0,
+					["requires_resource"] = ""
+				},
+				[7] = {
+					["dilemma"] = "rogue_start_dae_quality_vs_chs_quantity",
+					["resource_threshold"] = 0,
+					["requires_resource"] = ""
+				}
 			},
 			["placeholder_reward_set"] = {
 				[1] = {
@@ -4196,168 +4368,58 @@ return {
 				}
 			}
 		},
-		["progress_gates"] = {
-			["NONE"] = {
-				["activation_threshold"] = 9999,
-				["generates_encounters"] = {
+		["progress_payloads"] = {
+			["INTRO_COMPLETED_WEST"] = {
+				["mandatory_gate_increments"] = {
+					["INTRO_WEST_S1"] = 1
+				},
+				["generated_gate_increments"] = {
 
 				},
-				["displaces_encounters"] = {
-
-				},
-				["forces_encounters"] = {
-
-				}
+				["key"] = "INTRO_COMPLETED_WEST"
 			},
-			["INTRO_NORTH"] = {
-				["activation_threshold"] = 1,
-				["generates_encounters"] = {
+			["INTRODUCTION_ACT_COMPLETED"] = {
+				["mandatory_gate_increments"] = {
 
 				},
-				["displaces_encounters"] = {
+				["generated_gate_increments"] = {
 
 				},
-				["forces_encounters"] = {
-
-				}
+				["key"] = "INTRODUCTION_ACT_COMPLETED"
 			},
-			["INTRODUCTION"] = {
-				["activation_threshold"] = 1,
-				["generates_encounters"] = {
-
+			["START_BATTLE_COMPLETE"] = {
+				["mandatory_gate_increments"] = {
+					["INTRODUCTION"] = 1
 				},
-				["displaces_encounters"] = {
-
-				},
-				["forces_encounters"] = {
-
-				}
-			},
-			["ACT_ONE"] = {
-				["activation_threshold"] = 1,
-				["generates_encounters"] = {
-
-				},
-				["displaces_encounters"] = {
-
-				},
-				["forces_encounters"] = {
-
-				}
-			},
-			["INTRO_WEST"] = {
-				["activation_threshold"] = 1,
-				["generates_encounters"] = {
-
-				},
-				["displaces_encounters"] = {
-
-				},
-				["forces_encounters"] = {
-
-				}
-			},
-			["INTRO_MINIBOSS_NORTH"] = {
-				["activation_threshold"] = 1,
-				["generates_encounters"] = {
-
-				},
-				["displaces_encounters"] = {
-
-				},
-				["forces_encounters"] = {
-
-				}
-			},
-			["NEW_GAME_DANIEL"] = {
-				["activation_threshold"] = 1,
-				["generates_encounters"] = {
+				["generated_gate_increments"] = {
 					[1] = {
-						["region"] = "settlement:wh3_main_chaos_region_doomkeep",
-						["duration"] = 0,
-						["increments_progress_gate"] = "INTRODUCTION",
-						["gate_increment_weight"] = 1,
-						["boss_overlay"] = false,
-						["reward_set"] = "placeholder_reward_set",
-						["key"] = "starting_battle",
-						["inciting_incident_key"] = "",
-						["post_battle_dilemma_override"] = "",
-						["battle_type"] = "LAND_ATTACK",
-						["progress_gate_selection_set"] = "MANDATORY",
-						["force_set"] = {
-							[1] = "starting_battle_kho",
-							[2] = "starting_battle_nur",
-							[3] = "starting_battle_sla",
-							[4] = "starting_battle_tze"
-						}
+						["INTRO_WEST"] = 1,
+						["INTRO_EAST"] = 1
+					},
+					[2] = {
+						["INTRO_NORTH"] = 1,
+						["INTRO_SOUTH"] = 1
 					}
 				},
-				["displaces_encounters"] = {
-
-				},
-				["forces_encounters"] = {
-
-				}
+				["key"] = "START_BATTLE_COMPLETE"
 			},
-			["INTRO_LIMIT"] = {
-				["activation_threshold"] = 7,
-				["generates_encounters"] = {
+			["INTRO_COMPLETED_EAST"] = {
+				["mandatory_gate_increments"] = {
+					["INTRO_EAST_S1"] = 1
+				},
+				["generated_gate_increments"] = {
 
 				},
-				["displaces_encounters"] = {
-
-				},
-				["forces_encounters"] = {
-
-				}
+				["key"] = "INTRO_COMPLETED_EAST"
 			},
-			["INTRO_MINIBOSS_SOUTH"] = {
-				["activation_threshold"] = 1,
-				["generates_encounters"] = {
+			["EMPTY_PROGRESS_PAYLOAD"] = {
+				["mandatory_gate_increments"] = {
 
 				},
-				["displaces_encounters"] = {
+				["generated_gate_increments"] = {
 
 				},
-				["forces_encounters"] = {
-
-				}
-			},
-			["INTRO_EAST"] = {
-				["activation_threshold"] = 1,
-				["generates_encounters"] = {
-
-				},
-				["displaces_encounters"] = {
-
-				},
-				["forces_encounters"] = {
-
-				}
-			},
-			["NEVER"] = {
-				["activation_threshold"] = 9999,
-				["generates_encounters"] = {
-
-				},
-				["displaces_encounters"] = {
-
-				},
-				["forces_encounters"] = {
-
-				}
-			},
-			["INTRO_SOUTH"] = {
-				["activation_threshold"] = 1,
-				["generates_encounters"] = {
-
-				},
-				["displaces_encounters"] = {
-
-				},
-				["forces_encounters"] = {
-
-				}
+				["key"] = "EMPTY_PROGRESS_PAYLOAD"
 			}
 		},
 		["player_characters"] = {
@@ -4367,50 +4429,6 @@ return {
 			}
 		},
 		["armory_part_sets"] = {
-			["slaanesh_2"] = {
-				["mandatory_parts"] = {
-
-				},
-				["generated_part_slots"] = {
-					[1] = {
-						[1] = "wh3_main_dae_cha_daemon_prince_wings_sensuous_4",
-						[2] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_3",
-						[3] = "wh3_main_dae_cha_daemon_prince_arm_r_scythe_3",
-						[4] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_shield_3",
-						[5] = "wh3_main_dae_cha_daemon_prince_head_adornedhelmet_7",
-						[6] = "wh3_main_dae_cha_daemon_prince_tail_fiend_1",
-						[7] = "wh3_main_dae_cha_daemon_prince_wings_sensuous_5",
-						[8] = "wh3_main_dae_cha_daemon_prince_wings_sensuous_6",
-						[9] = "wh3_main_dae_cha_daemon_prince_weapon_chosen_halberd_1",
-						[10] = "wh3_main_dae_cha_daemon_prince_wings_sensuous",
-						[11] = "wh3_main_dae_cha_daemon_prince_torso_magical_heavy_3",
-						[12] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_warrior_sword_3"
-					}
-				}
-			},
-			["tzeentch_1"] = {
-				["mandatory_parts"] = {
-
-				},
-				["generated_part_slots"] = {
-					[1] = {
-						[1] = "wh3_main_dae_cha_daemon_prince_legs_bird_7",
-						[2] = "wh3_main_dae_cha_daemon_prince_wings_bird_5",
-						[3] = "wh3_main_dae_cha_daemon_prince_torso_bird_1",
-						[4] = "wh3_main_dae_cha_daemon_prince_arm_l_bird_4",
-						[5] = "wh3_main_dae_cha_daemon_prince_head_bird_7",
-						[6] = "wh3_main_dae_cha_daemon_prince_arm_r_bird_4",
-						[7] = "wh3_main_dae_cha_daemon_prince_tail_snapping_4",
-						[8] = "wh3_main_dae_cha_daemon_prince_arm_l_base_5",
-						[9] = "wh3_main_dae_cha_daemon_prince_arm_r_bird_5",
-						[10] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_5",
-						[11] = "wh3_main_dae_cha_daemon_prince_tail_snapping_5",
-						[12] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_sorcerer_staff_2",
-						[13] = "wh3_main_dae_cha_daemon_prince_arm_l_bird_5",
-						[14] = "wh3_main_dae_cha_daemon_prince_head_bird_8"
-					}
-				}
-			},
 			["tzeentch_2"] = {
 				["mandatory_parts"] = {
 
@@ -4430,30 +4448,38 @@ return {
 						[11] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_sword_3",
 						[12] = "wh3_main_dae_cha_daemon_prince_tail_base_2"
 					}
-				}
+				},
+				["key"] = "tzeentch_2",
+				["upgrade_when_exhausted"] = "tzeentch_3"
 			},
-			["undivided_1"] = {
+			["undivided_3"] = {
 				["mandatory_parts"] = {
 
 				},
 				["generated_part_slots"] = {
 					[1] = {
-						[1] = "wh3_main_dae_cha_daemon_prince_arm_l_base_6",
-						[2] = "wh3_main_dae_cha_daemon_prince_wings_base_6",
-						[3] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_shield_2",
-						[4] = "wh3_main_dae_cha_daemon_prince_legs_base_2",
-						[5] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_warrior_sword_2",
-						[6] = "wh3_main_dae_cha_daemon_prince_head_base_2",
-						[7] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_2",
-						[8] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_sword_1",
-						[9] = "wh3_main_dae_cha_daemon_prince_torso_base_6",
-						[10] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_shield_1",
-						[11] = "wh3_main_dae_cha_daemon_prince_torso_base_10",
-						[12] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_sorcerer_staff_3",
-						[13] = "wh3_main_dae_cha_daemon_prince_arm_r_base_6",
-						[14] = "wh3_main_dae_cha_daemon_prince_tail_base_5"
+						[1] = "wh3_main_dae_cha_daemon_prince_arm_l_base_4",
+						[2] = "wh3_main_dae_cha_daemon_prince_arm_r_base_4",
+						[3] = "wh3_main_dae_cha_daemon_prince_wings_base_5",
+						[4] = "wh3_main_dae_cha_daemon_prince_legs_base_3",
+						[5] = "wh3_main_dae_cha_daemon_prince_tail_base_6",
+						[6] = "wh3_main_dae_cha_daemon_prince_tail_base_3",
+						[7] = "wh3_main_dae_cha_daemon_prince_wings_base_3",
+						[8] = "wh3_main_dae_cha_daemon_prince_legs_base_6",
+						[9] = "wh3_main_dae_cha_daemon_prince_weapon_soulgrinder_sword_1",
+						[10] = "wh3_main_dae_cha_daemon_prince_wings_base_1",
+						[11] = "wh3_main_dae_cha_daemon_prince_torso_base_8",
+						[12] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_sword_3",
+						[13] = "wh3_main_dae_cha_daemon_prince_head_base_6",
+						[14] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_sword_2",
+						[15] = "wh3_main_dae_cha_daemon_prince_legs_base_5",
+						[16] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_sword_1",
+						[17] = "wh3_main_dae_cha_daemon_prince_arm_l_base_2",
+						[18] = "wh3_main_dae_cha_daemon_prince_arm_r_base_2"
 					}
-				}
+				},
+				["key"] = "undivided_3",
+				["upgrade_when_exhausted"] = "nurgle_2"
 			},
 			["tzeentch_3"] = {
 				["mandatory_parts"] = {
@@ -4503,191 +4529,9 @@ return {
 						[40] = "wh3_main_dae_cha_daemon_prince_weapon_doom_knight_lance_2",
 						[41] = "wh3_main_dae_cha_daemon_prince_wings_bird_3"
 					}
-				}
-			},
-			["khorne_2"] = {
-				["mandatory_parts"] = {
-
 				},
-				["generated_part_slots"] = {
-					[1] = {
-						[1] = "wh3_main_dae_cha_daemon_prince_head_beast_5",
-						[2] = "wh3_main_dae_cha_daemon_prince_arm_r_armoured_4",
-						[3] = "wh3_main_dae_cha_daemon_prince_tail_living_3",
-						[4] = "wh3_main_dae_cha_daemon_prince_torso_brasscollar_2",
-						[5] = "wh3_main_dae_cha_daemon_prince_arm_r_armoured_5",
-						[6] = "wh3_main_dae_cha_daemon_prince_wings_beast_6",
-						[7] = "wh3_main_dae_cha_daemon_prince_arm_l_armoured_5",
-						[8] = "wh3_main_dae_cha_daemon_prince_torso_brasscollar_5",
-						[9] = "wh3_main_dae_cha_daemon_prince_arm_r_armoured_3",
-						[10] = "wh3_main_dae_cha_daemon_prince_head_beast_3",
-						[11] = "wh3_main_dae_cha_daemon_prince_arm_l_armoured_3",
-						[12] = "wh3_main_dae_cha_daemon_prince_wings_beast_2"
-					}
-				}
-			},
-			["nurgle_2"] = {
-				["mandatory_parts"] = {
-
-				},
-				["generated_part_slots"] = {
-					[1] = {
-						[1] = "wh3_main_dae_cha_daemon_prince_head_base_9",
-						[2] = "wh3_main_dae_cha_daemon_prince_weapon_dragon_ogre_hammer_1",
-						[3] = "wh3_main_dae_cha_daemon_prince_tail_corpulent_6",
-						[4] = "wh3_main_dae_cha_daemon_prince_wings_corpulent_2",
-						[5] = "wh3_main_dae_cha_daemon_prince_torso_magical_heavy_4",
-						[6] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_7",
-						[7] = "wh3_main_dae_cha_daemon_prince_weapon_dragon_ogre_shaggoth_axe_1",
-						[8] = "wh3_main_dae_cha_daemon_prince_torso_magical_heavy_6",
-						[9] = "wh3_main_dae_cha_daemon_prince_weapon_chosen_halberd_3",
-						[10] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_4",
-						[11] = "wh3_main_dae_cha_daemon_prince_weapon_dragon_ogre_hammer_4",
-						[12] = "wh3_main_dae_cha_daemon_prince_wings_corpulent_6"
-					}
-				}
-			},
-			["slaanesh_1"] = {
-				["mandatory_parts"] = {
-
-				},
-				["generated_part_slots"] = {
-					[1] = {
-						[1] = "wh3_main_dae_cha_daemon_prince_tail_fiend_4",
-						[2] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_1",
-						[3] = "wh3_main_dae_cha_daemon_prince_weapon_dragon_ogre_hammer_2",
-						[4] = "wh3_main_dae_cha_daemon_prince_head_adornedhelmet_8",
-						[5] = "wh3_main_dae_cha_daemon_prince_wings_sensuous_3",
-						[6] = "wh3_main_dae_cha_daemon_prince_arm_r_scythe_1",
-						[7] = "wh3_main_dae_cha_daemon_prince_legs_daemonette_7",
-						[8] = "wh3_main_dae_cha_daemon_prince_torso_magical_heavy_1",
-						[9] = "wh3_main_dae_cha_daemon_prince_arm_l_scythe_3",
-						[10] = "wh3_main_dae_cha_daemon_prince_legs_daemonette_8",
-						[11] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_lance_3",
-						[12] = "wh3_main_dae_cha_daemon_prince_wings_sensuous_2",
-						[13] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_sword_2",
-						[14] = "wh3_main_dae_cha_daemon_prince_arm_l_scythe_1"
-					}
-				}
-			},
-			["nurgle_3"] = {
-				["mandatory_parts"] = {
-
-				},
-				["generated_part_slots"] = {
-					[1] = {
-						[1] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_3",
-						[2] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_3",
-						[3] = "wh3_main_dae_cha_daemon_prince_tail_corpulent_4",
-						[4] = "wh3_main_dae_cha_daemon_prince_head_corpulent_3",
-						[5] = "wh3_main_dae_cha_daemon_prince_torso_corpulent_3",
-						[6] = "wh3_main_dae_cha_daemon_prince_weapon_great_unclean_one_sword_1",
-						[7] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_2",
-						[8] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_2",
-						[9] = "wh3_main_dae_cha_daemon_prince_torso_corpulent_2",
-						[10] = "wh3_main_dae_cha_daemon_prince_head_corpulent_2",
-						[11] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_2",
-						[12] = "wh3_main_dae_cha_daemon_prince_tail_corpulent_2",
-						[13] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_1",
-						[14] = "wh3_main_dae_cha_daemon_prince_head_corpulent_1",
-						[15] = "wh3_main_dae_cha_daemon_prince_weapon_cultist_club_1",
-						[16] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_1",
-						[17] = "wh3_main_dae_cha_daemon_prince_tail_corpulent_1",
-						[18] = "wh3_main_dae_cha_daemon_prince_torso_corpulent_1",
-						[19] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_1",
-						[20] = "wh3_main_dae_cha_daemon_prince_head_base_10",
-						[21] = "wh3_main_dae_cha_daemon_prince_torso_base_3",
-						[22] = "wh3_main_dae_cha_daemon_prince_head_corpulent_6",
-						[23] = "wh3_main_dae_cha_daemon_prince_torso_corpulent_6",
-						[24] = "wh3_main_dae_cha_daemon_prince_weapon_exalted_great_unclean_one_bell_1",
-						[25] = "wh3_main_dae_cha_daemon_prince_weapon_great_unclean_one_sword_3",
-						[26] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_5",
-						[27] = "wh3_main_dae_cha_daemon_prince_tail_corpulent_5",
-						[28] = "wh3_main_dae_cha_daemon_prince_torso_corpulent_5",
-						[29] = "wh3_main_dae_cha_daemon_prince_wings_corpulent_5",
-						[30] = "wh3_main_dae_cha_daemon_prince_head_corpulent_5",
-						[31] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_4",
-						[32] = "wh3_main_dae_cha_daemon_prince_torso_corpulent_4",
-						[33] = "wh3_main_dae_cha_daemon_prince_weapon_cultist_club_2",
-						[34] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_4",
-						[35] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_4",
-						[36] = "wh3_main_dae_cha_daemon_prince_wings_corpulent_4",
-						[37] = "wh3_main_dae_cha_daemon_prince_head_corpulent_4",
-						[38] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_3",
-						[39] = "wh3_main_dae_cha_daemon_prince_weapon_great_unclean_one_sword_2"
-					}
-				}
-			},
-			["nurgle_1"] = {
-				["mandatory_parts"] = {
-
-				},
-				["generated_part_slots"] = {
-					[1] = {
-						[1] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_warrior_sword_5",
-						[2] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_6",
-						[3] = "wh3_main_dae_cha_daemon_prince_weapon_dragon_ogre_hammer_3",
-						[4] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_5",
-						[5] = "wh3_main_dae_cha_daemon_prince_head_base_8",
-						[6] = "wh3_main_dae_cha_daemon_prince_tail_corpulent_3",
-						[7] = "wh3_main_dae_cha_daemon_prince_wings_corpulent",
-						[8] = "wh3_main_dae_cha_daemon_prince_head_base_7",
-						[9] = "wh3_main_dae_cha_daemon_prince_wings_corpulent_3",
-						[10] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_5",
-						[11] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_6",
-						[12] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_6",
-						[13] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_6",
-						[14] = "wh3_main_dae_cha_daemon_prince_head_base_11"
-					}
-				}
-			},
-			["undivided_3"] = {
-				["mandatory_parts"] = {
-
-				},
-				["generated_part_slots"] = {
-					[1] = {
-						[1] = "wh3_main_dae_cha_daemon_prince_arm_l_base_4",
-						[2] = "wh3_main_dae_cha_daemon_prince_arm_r_base_4",
-						[3] = "wh3_main_dae_cha_daemon_prince_wings_base_5",
-						[4] = "wh3_main_dae_cha_daemon_prince_legs_base_3",
-						[5] = "wh3_main_dae_cha_daemon_prince_tail_base_6",
-						[6] = "wh3_main_dae_cha_daemon_prince_tail_base_3",
-						[7] = "wh3_main_dae_cha_daemon_prince_wings_base_3",
-						[8] = "wh3_main_dae_cha_daemon_prince_legs_base_6",
-						[9] = "wh3_main_dae_cha_daemon_prince_weapon_soulgrinder_sword_1",
-						[10] = "wh3_main_dae_cha_daemon_prince_wings_base_1",
-						[11] = "wh3_main_dae_cha_daemon_prince_torso_base_8",
-						[12] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_sword_3",
-						[13] = "wh3_main_dae_cha_daemon_prince_head_base_6",
-						[14] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_sword_2",
-						[15] = "wh3_main_dae_cha_daemon_prince_legs_base_5",
-						[16] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_sword_1",
-						[17] = "wh3_main_dae_cha_daemon_prince_arm_l_base_2",
-						[18] = "wh3_main_dae_cha_daemon_prince_arm_r_base_2"
-					}
-				}
-			},
-			["undivided_2"] = {
-				["mandatory_parts"] = {
-
-				},
-				["generated_part_slots"] = {
-					[1] = {
-						[1] = "wh3_main_dae_cha_daemon_prince_torso_base_9",
-						[2] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_warrior_sword_1",
-						[3] = "wh3_main_dae_cha_daemon_prince_tail_base_4",
-						[4] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_lance_1",
-						[5] = "wh3_main_dae_cha_daemon_prince_head_base_4",
-						[6] = "wh3_main_dae_cha_daemon_prince_torso_base_7",
-						[7] = "wh3_main_dae_cha_daemon_prince_legs_base_4",
-						[8] = "wh3_main_dae_cha_daemon_prince_torso_magical_heavy_5",
-						[9] = "wh3_main_dae_cha_daemon_prince_head_base_5",
-						[10] = "wh3_main_dae_cha_daemon_prince_wings_base_4",
-						[11] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_lance_2",
-						[12] = "wh3_main_dae_cha_daemon_prince_head_base_3"
-					}
-				}
+				["key"] = "tzeentch_3",
+				["upgrade_when_exhausted"] = ""
 			},
 			["khorne_3"] = {
 				["mandatory_parts"] = {
@@ -4731,7 +4575,57 @@ return {
 						[34] = "wh3_main_dae_cha_daemon_prince_weapon_bloodletter_sword_3",
 						[35] = "wh3_main_dae_cha_daemon_prince_weapon_skullcrusher_shield_2"
 					}
-				}
+				},
+				["key"] = "khorne_3",
+				["upgrade_when_exhausted"] = ""
+			},
+			["nurgle_2"] = {
+				["mandatory_parts"] = {
+
+				},
+				["generated_part_slots"] = {
+					[1] = {
+						[1] = "wh3_main_dae_cha_daemon_prince_head_base_9",
+						[2] = "wh3_main_dae_cha_daemon_prince_weapon_dragon_ogre_hammer_1",
+						[3] = "wh3_main_dae_cha_daemon_prince_tail_corpulent_6",
+						[4] = "wh3_main_dae_cha_daemon_prince_wings_corpulent_2",
+						[5] = "wh3_main_dae_cha_daemon_prince_torso_magical_heavy_4",
+						[6] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_7",
+						[7] = "wh3_main_dae_cha_daemon_prince_weapon_dragon_ogre_shaggoth_axe_1",
+						[8] = "wh3_main_dae_cha_daemon_prince_torso_magical_heavy_6",
+						[9] = "wh3_main_dae_cha_daemon_prince_weapon_chosen_halberd_3",
+						[10] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_4",
+						[11] = "wh3_main_dae_cha_daemon_prince_weapon_dragon_ogre_hammer_4",
+						[12] = "wh3_main_dae_cha_daemon_prince_wings_corpulent_6"
+					}
+				},
+				["key"] = "nurgle_2",
+				["upgrade_when_exhausted"] = ""
+			},
+			["nurgle_1"] = {
+				["mandatory_parts"] = {
+
+				},
+				["generated_part_slots"] = {
+					[1] = {
+						[1] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_warrior_sword_5",
+						[2] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_6",
+						[3] = "wh3_main_dae_cha_daemon_prince_weapon_dragon_ogre_hammer_3",
+						[4] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_5",
+						[5] = "wh3_main_dae_cha_daemon_prince_head_base_8",
+						[6] = "wh3_main_dae_cha_daemon_prince_tail_corpulent_3",
+						[7] = "wh3_main_dae_cha_daemon_prince_wings_corpulent",
+						[8] = "wh3_main_dae_cha_daemon_prince_head_base_7",
+						[9] = "wh3_main_dae_cha_daemon_prince_wings_corpulent_3",
+						[10] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_5",
+						[11] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_6",
+						[12] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_6",
+						[13] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_6",
+						[14] = "wh3_main_dae_cha_daemon_prince_head_base_11"
+					}
+				},
+				["key"] = "nurgle_1",
+				["upgrade_when_exhausted"] = "nurgle_3"
 			},
 			["slaanesh_3"] = {
 				["mandatory_parts"] = {
@@ -4780,7 +4674,9 @@ return {
 						[39] = "wh3_main_dae_cha_daemon_prince_legs_daemonette_4",
 						[40] = "wh3_main_dae_cha_daemon_prince_tail_fiend_6"
 					}
-				}
+				},
+				["key"] = "slaanesh_3",
+				["upgrade_when_exhausted"] = ""
 			},
 			["khorne_1"] = {
 				["mandatory_parts"] = {
@@ -4803,7 +4699,304 @@ return {
 						[13] = "wh3_main_dae_cha_daemon_prince_torso_brasscollar_4",
 						[14] = "wh3_main_dae_cha_daemon_prince_tail_living_5"
 					}
-				}
+				},
+				["key"] = "khorne_1",
+				["upgrade_when_exhausted"] = "khorne_2"
+			},
+			["slaanesh_2"] = {
+				["mandatory_parts"] = {
+
+				},
+				["generated_part_slots"] = {
+					[1] = {
+						[1] = "wh3_main_dae_cha_daemon_prince_wings_sensuous_4",
+						[2] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_3",
+						[3] = "wh3_main_dae_cha_daemon_prince_arm_r_scythe_3",
+						[4] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_shield_3",
+						[5] = "wh3_main_dae_cha_daemon_prince_head_adornedhelmet_7",
+						[6] = "wh3_main_dae_cha_daemon_prince_tail_fiend_1",
+						[7] = "wh3_main_dae_cha_daemon_prince_wings_sensuous_5",
+						[8] = "wh3_main_dae_cha_daemon_prince_wings_sensuous_6",
+						[9] = "wh3_main_dae_cha_daemon_prince_weapon_chosen_halberd_1",
+						[10] = "wh3_main_dae_cha_daemon_prince_wings_sensuous",
+						[11] = "wh3_main_dae_cha_daemon_prince_torso_magical_heavy_3",
+						[12] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_warrior_sword_3"
+					}
+				},
+				["key"] = "slaanesh_2",
+				["upgrade_when_exhausted"] = "slaanesh_3"
+			},
+			["tzeentch_1"] = {
+				["mandatory_parts"] = {
+
+				},
+				["generated_part_slots"] = {
+					[1] = {
+						[1] = "wh3_main_dae_cha_daemon_prince_legs_bird_7",
+						[2] = "wh3_main_dae_cha_daemon_prince_wings_bird_5",
+						[3] = "wh3_main_dae_cha_daemon_prince_torso_bird_1",
+						[4] = "wh3_main_dae_cha_daemon_prince_arm_l_bird_4",
+						[5] = "wh3_main_dae_cha_daemon_prince_head_bird_7",
+						[6] = "wh3_main_dae_cha_daemon_prince_arm_r_bird_4",
+						[7] = "wh3_main_dae_cha_daemon_prince_tail_snapping_4",
+						[8] = "wh3_main_dae_cha_daemon_prince_arm_l_base_5",
+						[9] = "wh3_main_dae_cha_daemon_prince_arm_r_bird_5",
+						[10] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_5",
+						[11] = "wh3_main_dae_cha_daemon_prince_tail_snapping_5",
+						[12] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_sorcerer_staff_2",
+						[13] = "wh3_main_dae_cha_daemon_prince_arm_l_bird_5",
+						[14] = "wh3_main_dae_cha_daemon_prince_head_bird_8"
+					}
+				},
+				["key"] = "tzeentch_1",
+				["upgrade_when_exhausted"] = "tzeentch_2"
+			},
+			["undivided_1"] = {
+				["mandatory_parts"] = {
+
+				},
+				["generated_part_slots"] = {
+					[1] = {
+						[1] = "wh3_main_dae_cha_daemon_prince_arm_l_base_6",
+						[2] = "wh3_main_dae_cha_daemon_prince_wings_base_6",
+						[3] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_shield_2",
+						[4] = "wh3_main_dae_cha_daemon_prince_legs_base_2",
+						[5] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_warrior_sword_2",
+						[6] = "wh3_main_dae_cha_daemon_prince_head_base_2",
+						[7] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_2",
+						[8] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_sword_1",
+						[9] = "wh3_main_dae_cha_daemon_prince_torso_base_6",
+						[10] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_shield_1",
+						[11] = "wh3_main_dae_cha_daemon_prince_torso_base_10",
+						[12] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_sorcerer_staff_3",
+						[13] = "wh3_main_dae_cha_daemon_prince_arm_r_base_6",
+						[14] = "wh3_main_dae_cha_daemon_prince_tail_base_5"
+					}
+				},
+				["key"] = "undivided_1",
+				["upgrade_when_exhausted"] = "undivided_2"
+			},
+			["khorne_2"] = {
+				["mandatory_parts"] = {
+
+				},
+				["generated_part_slots"] = {
+					[1] = {
+						[1] = "wh3_main_dae_cha_daemon_prince_head_beast_5",
+						[2] = "wh3_main_dae_cha_daemon_prince_arm_r_armoured_4",
+						[3] = "wh3_main_dae_cha_daemon_prince_tail_living_3",
+						[4] = "wh3_main_dae_cha_daemon_prince_torso_brasscollar_2",
+						[5] = "wh3_main_dae_cha_daemon_prince_arm_r_armoured_5",
+						[6] = "wh3_main_dae_cha_daemon_prince_wings_beast_6",
+						[7] = "wh3_main_dae_cha_daemon_prince_arm_l_armoured_5",
+						[8] = "wh3_main_dae_cha_daemon_prince_torso_brasscollar_5",
+						[9] = "wh3_main_dae_cha_daemon_prince_arm_r_armoured_3",
+						[10] = "wh3_main_dae_cha_daemon_prince_head_beast_3",
+						[11] = "wh3_main_dae_cha_daemon_prince_arm_l_armoured_3",
+						[12] = "wh3_main_dae_cha_daemon_prince_wings_beast_2"
+					}
+				},
+				["key"] = "khorne_2",
+				["upgrade_when_exhausted"] = "khorne_3"
+			},
+			["undivided_2"] = {
+				["mandatory_parts"] = {
+
+				},
+				["generated_part_slots"] = {
+					[1] = {
+						[1] = "wh3_main_dae_cha_daemon_prince_torso_base_9",
+						[2] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_warrior_sword_1",
+						[3] = "wh3_main_dae_cha_daemon_prince_tail_base_4",
+						[4] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_lance_1",
+						[5] = "wh3_main_dae_cha_daemon_prince_head_base_4",
+						[6] = "wh3_main_dae_cha_daemon_prince_torso_base_7",
+						[7] = "wh3_main_dae_cha_daemon_prince_legs_base_4",
+						[8] = "wh3_main_dae_cha_daemon_prince_torso_magical_heavy_5",
+						[9] = "wh3_main_dae_cha_daemon_prince_head_base_5",
+						[10] = "wh3_main_dae_cha_daemon_prince_wings_base_4",
+						[11] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_lance_2",
+						[12] = "wh3_main_dae_cha_daemon_prince_head_base_3"
+					}
+				},
+				["key"] = "undivided_2",
+				["upgrade_when_exhausted"] = "undivided_3"
+			},
+			["any_2"] = {
+				["mandatory_parts"] = {
+
+				},
+				["generated_part_slots"] = {
+
+				},
+				["key"] = "any_2",
+				["upgrade_when_exhausted"] = "any_3"
+			},
+			["any_3"] = {
+				["mandatory_parts"] = {
+
+				},
+				["generated_part_slots"] = {
+
+				},
+				["key"] = "any_3",
+				["upgrade_when_exhausted"] = ""
+			},
+			["any_1"] = {
+				["mandatory_parts"] = {
+
+				},
+				["generated_part_slots"] = {
+					[1] = {
+						[1] = "wh3_main_dae_cha_daemon_prince_arm_r_armoured_2",
+						[2] = "wh3_main_dae_cha_daemon_prince_legs_beast_7",
+						[3] = "wh3_main_dae_cha_daemon_prince_wings_beast",
+						[4] = "wh3_main_dae_cha_daemon_prince_arm_l_armoured_4",
+						[5] = "wh3_main_dae_cha_daemon_prince_head_beast_2",
+						[6] = "wh3_main_dae_cha_daemon_prince_tail_living_2",
+						[7] = "wh3_main_dae_cha_daemon_prince_torso_brasscollar_1",
+						[8] = "wh3_main_dae_cha_daemon_prince_tail_living_4",
+						[9] = "wh3_main_dae_cha_daemon_prince_wings_beast_4",
+						[10] = "wh3_main_dae_cha_daemon_prince_legs_beast_8",
+						[11] = "wh3_main_dae_cha_daemon_prince_head_beast_1",
+						[12] = "wh3_main_dae_cha_daemon_prince_arm_l_armoured_2",
+						[13] = "wh3_main_dae_cha_daemon_prince_torso_brasscollar_4",
+						[14] = "wh3_main_dae_cha_daemon_prince_tail_living_5",
+						[15] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_warrior_sword_5",
+						[16] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_6",
+						[17] = "wh3_main_dae_cha_daemon_prince_weapon_dragon_ogre_hammer_3",
+						[18] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_5",
+						[19] = "wh3_main_dae_cha_daemon_prince_head_base_8",
+						[20] = "wh3_main_dae_cha_daemon_prince_tail_corpulent_3",
+						[21] = "wh3_main_dae_cha_daemon_prince_wings_corpulent",
+						[22] = "wh3_main_dae_cha_daemon_prince_head_base_7",
+						[23] = "wh3_main_dae_cha_daemon_prince_wings_corpulent_3",
+						[24] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_5",
+						[25] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_6",
+						[26] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_6",
+						[27] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_6",
+						[28] = "wh3_main_dae_cha_daemon_prince_head_base_11",
+						[29] = "wh3_main_dae_cha_daemon_prince_tail_fiend_4",
+						[30] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_1",
+						[31] = "wh3_main_dae_cha_daemon_prince_weapon_dragon_ogre_hammer_2",
+						[32] = "wh3_main_dae_cha_daemon_prince_head_adornedhelmet_8",
+						[33] = "wh3_main_dae_cha_daemon_prince_wings_sensuous_3",
+						[34] = "wh3_main_dae_cha_daemon_prince_arm_r_scythe_1",
+						[35] = "wh3_main_dae_cha_daemon_prince_legs_daemonette_7",
+						[36] = "wh3_main_dae_cha_daemon_prince_torso_magical_heavy_1",
+						[37] = "wh3_main_dae_cha_daemon_prince_arm_l_scythe_3",
+						[38] = "wh3_main_dae_cha_daemon_prince_legs_daemonette_8",
+						[39] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_lance_3",
+						[40] = "wh3_main_dae_cha_daemon_prince_wings_sensuous_2",
+						[41] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_sword_2",
+						[42] = "wh3_main_dae_cha_daemon_prince_arm_l_scythe_1",
+						[43] = "wh3_main_dae_cha_daemon_prince_legs_bird_7",
+						[44] = "wh3_main_dae_cha_daemon_prince_wings_bird_5",
+						[45] = "wh3_main_dae_cha_daemon_prince_torso_bird_1",
+						[46] = "wh3_main_dae_cha_daemon_prince_arm_l_bird_4",
+						[47] = "wh3_main_dae_cha_daemon_prince_head_bird_7",
+						[48] = "wh3_main_dae_cha_daemon_prince_arm_r_bird_4",
+						[49] = "wh3_main_dae_cha_daemon_prince_tail_snapping_4",
+						[50] = "wh3_main_dae_cha_daemon_prince_arm_l_base_5",
+						[51] = "wh3_main_dae_cha_daemon_prince_arm_r_bird_5",
+						[52] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_5",
+						[53] = "wh3_main_dae_cha_daemon_prince_tail_snapping_5",
+						[54] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_sorcerer_staff_2",
+						[55] = "wh3_main_dae_cha_daemon_prince_arm_l_bird_5",
+						[56] = "wh3_main_dae_cha_daemon_prince_head_bird_8",
+						[57] = "wh3_main_dae_cha_daemon_prince_arm_l_base_6",
+						[58] = "wh3_main_dae_cha_daemon_prince_wings_base_6",
+						[59] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_shield_2",
+						[60] = "wh3_main_dae_cha_daemon_prince_legs_base_2",
+						[61] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_warrior_sword_2",
+						[62] = "wh3_main_dae_cha_daemon_prince_head_base_2",
+						[63] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_2",
+						[64] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_sword_1",
+						[65] = "wh3_main_dae_cha_daemon_prince_torso_base_6",
+						[66] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_shield_1",
+						[67] = "wh3_main_dae_cha_daemon_prince_torso_base_10",
+						[68] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_sorcerer_staff_3",
+						[69] = "wh3_main_dae_cha_daemon_prince_arm_r_base_6",
+						[70] = "wh3_main_dae_cha_daemon_prince_tail_base_5"
+					}
+				},
+				["key"] = "any_1",
+				["upgrade_when_exhausted"] = "any_2"
+			},
+			["slaanesh_1"] = {
+				["mandatory_parts"] = {
+
+				},
+				["generated_part_slots"] = {
+					[1] = {
+						[1] = "wh3_main_dae_cha_daemon_prince_tail_fiend_4",
+						[2] = "wh3_main_dae_cha_daemon_prince_torso_magical_medium_1",
+						[3] = "wh3_main_dae_cha_daemon_prince_weapon_dragon_ogre_hammer_2",
+						[4] = "wh3_main_dae_cha_daemon_prince_head_adornedhelmet_8",
+						[5] = "wh3_main_dae_cha_daemon_prince_wings_sensuous_3",
+						[6] = "wh3_main_dae_cha_daemon_prince_arm_r_scythe_1",
+						[7] = "wh3_main_dae_cha_daemon_prince_legs_daemonette_7",
+						[8] = "wh3_main_dae_cha_daemon_prince_torso_magical_heavy_1",
+						[9] = "wh3_main_dae_cha_daemon_prince_arm_l_scythe_3",
+						[10] = "wh3_main_dae_cha_daemon_prince_legs_daemonette_8",
+						[11] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_lance_3",
+						[12] = "wh3_main_dae_cha_daemon_prince_wings_sensuous_2",
+						[13] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_sword_2",
+						[14] = "wh3_main_dae_cha_daemon_prince_arm_l_scythe_1"
+					}
+				},
+				["key"] = "slaanesh_1",
+				["upgrade_when_exhausted"] = "slaanesh_2"
+			},
+			["nurgle_3"] = {
+				["mandatory_parts"] = {
+
+				},
+				["generated_part_slots"] = {
+					[1] = {
+						[1] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_3",
+						[2] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_3",
+						[3] = "wh3_main_dae_cha_daemon_prince_tail_corpulent_4",
+						[4] = "wh3_main_dae_cha_daemon_prince_head_corpulent_3",
+						[5] = "wh3_main_dae_cha_daemon_prince_torso_corpulent_3",
+						[6] = "wh3_main_dae_cha_daemon_prince_weapon_great_unclean_one_sword_1",
+						[7] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_2",
+						[8] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_2",
+						[9] = "wh3_main_dae_cha_daemon_prince_torso_corpulent_2",
+						[10] = "wh3_main_dae_cha_daemon_prince_head_corpulent_2",
+						[11] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_2",
+						[12] = "wh3_main_dae_cha_daemon_prince_tail_corpulent_2",
+						[13] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_1",
+						[14] = "wh3_main_dae_cha_daemon_prince_head_corpulent_1",
+						[15] = "wh3_main_dae_cha_daemon_prince_weapon_cultist_club_1",
+						[16] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_1",
+						[17] = "wh3_main_dae_cha_daemon_prince_tail_corpulent_1",
+						[18] = "wh3_main_dae_cha_daemon_prince_torso_corpulent_1",
+						[19] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_1",
+						[20] = "wh3_main_dae_cha_daemon_prince_head_base_10",
+						[21] = "wh3_main_dae_cha_daemon_prince_torso_base_3",
+						[22] = "wh3_main_dae_cha_daemon_prince_head_corpulent_6",
+						[23] = "wh3_main_dae_cha_daemon_prince_torso_corpulent_6",
+						[24] = "wh3_main_dae_cha_daemon_prince_weapon_exalted_great_unclean_one_bell_1",
+						[25] = "wh3_main_dae_cha_daemon_prince_weapon_great_unclean_one_sword_3",
+						[26] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_5",
+						[27] = "wh3_main_dae_cha_daemon_prince_tail_corpulent_5",
+						[28] = "wh3_main_dae_cha_daemon_prince_torso_corpulent_5",
+						[29] = "wh3_main_dae_cha_daemon_prince_wings_corpulent_5",
+						[30] = "wh3_main_dae_cha_daemon_prince_head_corpulent_5",
+						[31] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_4",
+						[32] = "wh3_main_dae_cha_daemon_prince_torso_corpulent_4",
+						[33] = "wh3_main_dae_cha_daemon_prince_weapon_cultist_club_2",
+						[34] = "wh3_main_dae_cha_daemon_prince_arm_l_corpulent_4",
+						[35] = "wh3_main_dae_cha_daemon_prince_arm_r_corpulent_4",
+						[36] = "wh3_main_dae_cha_daemon_prince_wings_corpulent_4",
+						[37] = "wh3_main_dae_cha_daemon_prince_head_corpulent_4",
+						[38] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_3",
+						[39] = "wh3_main_dae_cha_daemon_prince_weapon_great_unclean_one_sword_2"
+					}
+				},
+				["key"] = "nurgle_3",
+				["upgrade_when_exhausted"] = ""
 			}
 		},
 		["force_fragment_sets"] = {
@@ -5369,17 +5562,15 @@ return {
 		},
 		["encounters"] = {
 			["starting_battle"] = {
+				["progress_payload"] = "START_BATTLE_COMPLETE",
 				["region"] = "settlement:wh3_main_chaos_region_doomkeep",
 				["duration"] = 0,
-				["increments_progress_gate"] = "INTRODUCTION",
-				["gate_increment_weight"] = 1,
 				["boss_overlay"] = false,
-				["reward_set"] = "placeholder_reward_set",
+				["reward_set"] = "daniel_intro_battle_rewards",
 				["key"] = "starting_battle",
 				["inciting_incident_key"] = "",
-				["post_battle_dilemma_override"] = "",
 				["battle_type"] = "LAND_ATTACK",
-				["progress_gate_selection_set"] = "MANDATORY",
+				["post_battle_dilemma_override"] = "",
 				["force_set"] = {
 					[1] = "starting_battle_kho",
 					[2] = "starting_battle_nur",
@@ -5419,7 +5610,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_6",
 										[14] = "wh3_main_dae_cha_daemon_prince_head_base_11"
 									}
-								}
+								},
+								["key"] = "nurgle_1",
+								["upgrade_when_exhausted"] = "nurgle_3"
 							}
 						}
 					}
@@ -5453,7 +5646,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_arm_l_bird_5",
 										[14] = "wh3_main_dae_cha_daemon_prince_head_bird_8"
 									}
-								}
+								},
+								["key"] = "tzeentch_1",
+								["upgrade_when_exhausted"] = "tzeentch_2"
 							}
 						}
 					}
@@ -5489,7 +5684,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_6",
 										[14] = "wh3_main_dae_cha_daemon_prince_head_base_11"
 									}
-								}
+								},
+								["key"] = "nurgle_1",
+								["upgrade_when_exhausted"] = "nurgle_3"
 							}
 						}
 					}
@@ -5523,7 +5720,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_torso_brasscollar_4",
 										[14] = "wh3_main_dae_cha_daemon_prince_tail_living_5"
 									}
-								}
+								},
+								["key"] = "khorne_1",
+								["upgrade_when_exhausted"] = "khorne_2"
 							}
 						}
 					}
@@ -5557,7 +5756,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_sword_2",
 										[14] = "wh3_main_dae_cha_daemon_prince_arm_l_scythe_1"
 									}
-								}
+								},
+								["key"] = "slaanesh_1",
+								["upgrade_when_exhausted"] = "slaanesh_2"
 							}
 						}
 					}
@@ -5591,7 +5792,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_arm_l_bird_5",
 										[14] = "wh3_main_dae_cha_daemon_prince_head_bird_8"
 									}
-								}
+								},
+								["key"] = "tzeentch_1",
+								["upgrade_when_exhausted"] = "tzeentch_2"
 							}
 						}
 					}
@@ -5627,7 +5830,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_arm_r_base_6",
 										[14] = "wh3_main_dae_cha_daemon_prince_tail_base_5"
 									}
-								}
+								},
+								["key"] = "undivided_1",
+								["upgrade_when_exhausted"] = "undivided_2"
 							}
 						}
 					}
@@ -5661,7 +5866,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_arm_r_base_6",
 										[14] = "wh3_main_dae_cha_daemon_prince_tail_base_5"
 									}
-								}
+								},
+								["key"] = "undivided_1",
+								["upgrade_when_exhausted"] = "undivided_2"
 							}
 						}
 					}
@@ -5697,7 +5904,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_arm_l_bird_5",
 										[14] = "wh3_main_dae_cha_daemon_prince_head_bird_8"
 									}
-								}
+								},
+								["key"] = "tzeentch_1",
+								["upgrade_when_exhausted"] = "tzeentch_2"
 							}
 						}
 					}
@@ -5731,7 +5940,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_torso_brasscollar_4",
 										[14] = "wh3_main_dae_cha_daemon_prince_tail_living_5"
 									}
-								}
+								},
+								["key"] = "khorne_1",
+								["upgrade_when_exhausted"] = "khorne_2"
 							}
 						}
 					}
@@ -5767,7 +5978,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_sword_2",
 										[14] = "wh3_main_dae_cha_daemon_prince_arm_l_scythe_1"
 									}
-								}
+								},
+								["key"] = "slaanesh_1",
+								["upgrade_when_exhausted"] = "slaanesh_2"
 							}
 						}
 					}
@@ -5801,7 +6014,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_legs_corpulent_6",
 										[14] = "wh3_main_dae_cha_daemon_prince_head_base_11"
 									}
-								}
+								},
+								["key"] = "nurgle_1",
+								["upgrade_when_exhausted"] = "nurgle_3"
 							}
 						}
 					}
@@ -5837,7 +6052,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_arm_r_base_6",
 										[14] = "wh3_main_dae_cha_daemon_prince_tail_base_5"
 									}
-								}
+								},
+								["key"] = "undivided_1",
+								["upgrade_when_exhausted"] = "undivided_2"
 							}
 						}
 					}
@@ -5871,7 +6088,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_arm_r_base_6",
 										[14] = "wh3_main_dae_cha_daemon_prince_tail_base_5"
 									}
-								}
+								},
+								["key"] = "undivided_1",
+								["upgrade_when_exhausted"] = "undivided_2"
 							}
 						}
 					}
@@ -5907,7 +6126,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_torso_brasscollar_4",
 										[14] = "wh3_main_dae_cha_daemon_prince_tail_living_5"
 									}
-								}
+								},
+								["key"] = "khorne_1",
+								["upgrade_when_exhausted"] = "khorne_2"
 							}
 						}
 					}
@@ -5941,7 +6162,9 @@ return {
 										[13] = "wh3_main_dae_cha_daemon_prince_weapon_chaos_knight_sword_2",
 										[14] = "wh3_main_dae_cha_daemon_prince_arm_l_scythe_1"
 									}
-								}
+								},
+								["key"] = "slaanesh_1",
+								["upgrade_when_exhausted"] = "slaanesh_2"
 							}
 						}
 					}

@@ -2822,7 +2822,6 @@
 			uniqueguid_in_template="4E08AA99-2BAB-4DB6-AC47ACC0CEBD26BE"
 			uniqueguid="4B71CDE6-1363-4D45-BFB6523BF66740C1"
 			dimensions="56.00,56.00"
-			visible="false"
 			priority="50"
 			sound_category="UI_GBL_TMP_Round_Small_Button">
 			<state_uniqueguids>
@@ -2864,33 +2863,10 @@
 			</component_image_uniqueguids>
 			<callbacks_with_context>
 				<callback_with_context callback_id="Button"/>
-				<callback_with_context callback_id="StatePropagatorCallback"/>
 				<callback_with_context
-					callback_id="ContextCommandLeftClick"
-					context_function_id="Do(ToggleHUDPanel(&quot;daemonic_progression&quot;), ClosePanel(&quot;character_details_panel&quot;))"/>
-				<callback_with_context callback_id="ContextStateSetterConditional">
-					<child_m_user_properties>
-						<property
-							name="event0"
-							value="PanelClosed_daemonic_progression"/>
-						<property
-							name="event1"
-							value="PanelOpened_daemonic_progression"/>
-						<property
-							name="fallback_state"
-							value="active"/>
-						<property
-							name="handle_button_states"
-							value=""/>
-						<property
-							name="inactive"
-							value="IsLocalPlayersTurn == false"/>
-						<property
-							name="selected"
-							value="IsHUDPanelOpen(&quot;daemonic_progression&quot;) "/>
-					</child_m_user_properties>
-				</callback_with_context>
-				<callback_with_context callback_id="CallbackAnimTrigger"/>
+					callback_id="ContextVisibilitySetter"
+					context_object_id="CcoStaticObject"
+					context_function_id="CampaignRoot.IsPrologue == true"/>
 			</callbacks_with_context>
 			<user_properties>
 				<property
@@ -21914,6 +21890,7 @@
 			this="E6B84A49-2DD8-4C3A-A2B5E2B155418365"
 			id="holder_br"
 			offset="1548.00,844.00"
+			visible="false"
 			allowhorizontalresize="false"
 			allowverticalresize="false"
 			docking="Bottom Right"
@@ -41802,33 +41779,6 @@
 			uniqueguid="EFEA0624-C601-4FD0-BEC42A1E10255BDE"
 			currentstate="59567E34-181F-43E4-BDF674CE0E648C3F"
 			defaultstate="59567E34-181F-43E4-BDF674CE0E648C3F">
-			<callbackwithcontextlist>
-				<callback_with_context
-					callback_id="ContextVisibilitySetter"
-					context_object_id="CcoCampaignFaction"
-					context_function_id="PlayersFaction.UnlockableRitualList(&quot;ASCENSION_RITUAL&quot;).Any(CanPerformRitual) &amp;&amp; PlayersFaction.UnlockableRitualList(&quot;ASCENSION_RITUAL&quot;).Any(IsComplete) == false">
-					<child_m_user_properties>
-						<property
-							name="event0"
-							value="PooledResourceThresholdSetEvaluated"/>
-						<property
-							name="event1"
-							value="PooledResourceTransaction"/>
-						<property
-							name="event2"
-							value="RitualComplete"/>
-					</child_m_user_properties>
-				</callback_with_context>
-				<callback_with_context callback_id="ContextInitPlayerFaction"/>
-			</callbackwithcontextlist>
-			<userproperties>
-				<property
-					name="dynamic_child"
-					value="1"/>
-				<property
-					name="dynamic_child_parent"
-					value="button_daemonic_progression"/>
-			</userproperties>
 			<componentimages>
 				<component_image
 					this="60AEEEB9-4063-40CC-A53C7D7457A2130D"
