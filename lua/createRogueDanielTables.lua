@@ -43,6 +43,8 @@ local rogue_daniel_file_inputs = {
     "forces",
     "player_characters",
     "progress_gates",
+    "progress_payloads",
+    "progress_payloads_to_progress_gates",
     "reward_dilemma_choice_details",
     "reward_sets",
     "reward_sets_to_dilemmas",
@@ -121,11 +123,19 @@ function rogue_daniel_loader.load_all_data()
             forces 
             force_sets > force_set_to_forces
             armory_part_sets > armory_part_sets_to_armory_parts
+            progress_gates 
+            progress_payloads > progress_payloads_to_progress_gates
             reward_dilemma_choice_details
             reward_sets > reward_set_to_dilemmas
-            progress_gates > encounters
+            encounters
             player_characters
     ]]
+    local skipped_encounters = {}
+    local n_skipped_encounters = 0
+    local function skip_encounter(encounter_name, message)
+        skipped_encounters[encounter_name] = message
+        n_skipped_encounters = n_skipped_encounters + 1
+    end
 
     --upe_sets > upe_sets_to_upe
     local upe_sets_data = req_data("upe_sets")
@@ -372,7 +382,10 @@ function rogue_daniel_loader.load_all_data()
     for i = 1, #armory_part_sets_data do
         local this_row = armory_part_sets_data[i]
         --[[ARMORY_PART_SET_KEY: string]]
+        --[[UPGRADE_WHEN_EXHAUSTED: string]]
         MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET_KEY] = {
+            key = this_row.ARMORY_PART_SET_KEY,
+            upgrade_when_exhausted = this_row.UPGRADE_WHEN_EXHAUSTED,
             mandatory_parts = {},
             generated_part_slots = {}
         }
@@ -397,6 +410,60 @@ function rogue_daniel_loader.load_all_data()
                 MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET].generated_part_slots[list_index] = 
                 MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET].generated_part_slots[list_index] or {}
                 table.insert(MOD_DATABASE.armory_part_sets[this_row.ARMORY_PART_SET].generated_part_slots[list_index], this_row.ARMORY_PART)
+            end
+        end
+    end
+
+    --progress gates
+    local progress_gates_data = req_data("progress_gates")
+    MOD_DATABASE.progress_gates = {}
+    for i = 1, #progress_gates_data do
+        local this_row = progress_gates_data[i]
+        --[[PROGRESS_GATE_KEY: string]]
+        --[[ACTIVATION_THRESHOLD: string->number]]
+        MOD_DATABASE.progress_gates[this_row.PROGRESS_GATE_KEY] = {
+            activation_threshold = tonumber(this_row.ACTIVATION_THRESHOLD) or 0,
+            generates_encounters = {}, 
+            forces_encounters = {},
+            displaces_encounters = {}
+        }
+    end
+
+    --progress_payloads > progress_payloads_to_progress_gates
+    local progress_payloads_data = req_data("progress_payloads")
+    MOD_DATABASE.progress_payloads = {}
+    for i = 1, #progress_payloads_data do
+        local this_row = progress_payloads_data[i]
+        --[[PROGRESS_PAYLOAD_KEY: string]]
+        MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD_KEY] = {
+            key = this_row.PROGRESS_PAYLOAD_KEY,
+            mandatory_gate_increments = {},
+            generated_gate_increments = {}
+        }
+    end
+    local progress_payloads_to_progress_gates = req_data("progress_payloads_to_progress_gates")
+    for i = 1, #progress_payloads_to_progress_gates do
+        local this_row = progress_payloads_to_progress_gates[i]
+        --[[PROGRESS_PAYLOAD: progress_payloads]]
+        --[[PROGRESS_GATE: progress_gates]]
+        --[[INCREMENT: string->number]]
+        --[[SELECTION_SET: selection_sets]]
+        if this_row.PROGRESS_PAYLOAD == "" or this_row.PROGRESS_GATE == "" then
+            --skip this row, its blank.
+        elseif not MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD] then
+            error("invalid progress payload key: "..this_row.PROGRESS_PAYLOAD.. " on row "..i.." of progress_payloads_to_progress_gates")
+        elseif not MOD_DATABASE.progress_gates[this_row.PROGRESS_GATE] then
+            error("invalid progress gate key: "..this_row.PROGRESS_GATE.. " on row "..i.." of progress_payloads_to_progress_gates")
+        elseif this_row.SELECTION_SET == "MANDATORY" then
+            MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD].mandatory_gate_increments[this_row.PROGRESS_GATE] = tonumber(this_row.INCREMENT) or 0
+        else
+            local list_index = tonumber(this_row.SELECTION_SET)
+            if not list_index then
+                --the value which can trigger this is MANDATORY, which is handled above.
+            else
+                MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD].generated_gate_increments[list_index] = 
+                MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD].generated_gate_increments[list_index] or {}
+                MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD].generated_gate_increments[list_index][this_row.PROGRESS_GATE] = tonumber(this_row.INCREMENT) or 0
             end
         end
     end
@@ -479,20 +546,7 @@ function rogue_daniel_loader.load_all_data()
     end
 
 
-    --progress gates > encounters
-    local progress_gates_data = req_data("progress_gates")
-    MOD_DATABASE.progress_gates = {}
-    for i = 1, #progress_gates_data do
-        local this_row = progress_gates_data[i]
-        --[[PROGRESS_GATE_KEY: string]]
-        --[[ACTIVATION_THRESHOLD: string->number]]
-        MOD_DATABASE.progress_gates[this_row.PROGRESS_GATE_KEY] = {
-            activation_threshold = tonumber(this_row.ACTIVATION_THRESHOLD) or 0,
-            generates_encounters = {}, 
-            forces_encounters = {},
-            displaces_encounters = {}
-        }
-    end
+    --encounters
     local encounters_data = req_data("encounters")
     MOD_DATABASE.encounters = {}
     for i = 1, #encounters_data do
@@ -507,29 +561,30 @@ function rogue_daniel_loader.load_all_data()
         --[[FORCED_AT_PROGRESS_GATE: progress_gates]]
         --[[DISPLACED_AT_PROGRESS_GATE: progress_gates]]
         --[[PROGRESS_GATE_SELECTION_SET: selection_set_enum]]
-        --[[INCREMENTS_PROGRESS_GATE: progress_gates]]
-        --[[GATE_INCREMENT_WEIGHT: string->number]]
+        --[[PROGRESS_PAYLOAD: progress_payloads]]
         --[[DURATION: string->number]]
         --[[REWARD_SET: reward_sets]]
         --[[BOSS_OVERLAY: string->boolean]]
         --[[POST_BATTLE_DILEMMA_OVERRIDE: string]]
         --[[INCITING_INCIDENT_KEY: string]]
-        if this_row.ENCOUNTER_KEY == "" or this_row.REGION == "" or this_row.BATTLE_TYPE == "" or this_row.FORCE_SET == "" 
-        or this_row.PROGRESS_GATE_SELECTION_SET == "" or this_row.GATE_INCREMENT_WEIGHT == "" or this_row.REWARD_SET == "" then
-            --skip this row, its blank.
+        if this_row.ENCOUNTER_KEY == "" then
+            --skip with no message, key is empty
+        elseif this_row.REGION == "" or this_row.BATTLE_TYPE == "" or this_row.FORCE_SET == "" 
+        or this_row.PROGRESS_PAYLOAD == "" or this_row.REWARD_SET == "" then
+            skip_encounter(this_row.ENCOUNTER_KEY, "encounter on row "..i.." Missing necessary data")
         elseif #MOD_DATABASE.force_sets[this_row.FORCE_SET] == 0 then
-            error("force set "..this_row.FORCE_SET.." has no forces, but is used on row "..i.." of encounters")
+            skip_encounter(this_row.ENCOUNTER_KEY, "force set "..this_row.FORCE_SET.." has no forces, but is used on row "..i.." of encounters")
         elseif #MOD_DATABASE.reward_sets[this_row.REWARD_SET] == 0 then
-            error("reward set "..this_row.REWARD_SET.." has no members, but is used on row "..i.." of encounters")
+            skip_encounter(this_row.ENCOUNTER_KEY, "reward set "..this_row.REWARD_SET.." has no members, but is used on row "..i.." of encounters")
+        elseif not MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD] then
+            skip_encounter(this_row.ENCOUNTER_KEY, "progress payload "..this_row.PROGRESS_PAYLOAD.." does not exist, but is used on row "..i.." of encounters")
         else
             local encounter = {
                 key = this_row.ENCOUNTER_KEY,
                 region = "settlement:"..this_row.REGION,
                 force_set = MOD_DATABASE.force_sets[this_row.FORCE_SET],
                 battle_type = this_row.BATTLE_TYPE,
-                increments_progress_gate = this_row.INCREMENTS_PROGRESS_GATE,
-                gate_increment_weight = tonumber(this_row.GATE_INCREMENT_WEIGHT) or 0,
-                progress_gate_selection_set = this_row.PROGRESS_GATE_SELECTION_SET,
+                progress_payload = this_row.PROGRESS_PAYLOAD,
                 duration = tonumber(this_row.DURATION) or 0,
                 reward_set = this_row.REWARD_SET,
                 boss_overlay = this_row.BOSS_OVERLAY == "TRUE",
@@ -572,9 +627,21 @@ function rogue_daniel_loader.load_all_data()
         end
     end
 
-    return MOD_DATABASE
+
+
+    return MOD_DATABASE, n_skipped_encounters, skipped_encounters
 end
 
+local mod_db, skips, skipped_encounters = rogue_daniel_loader.load_all_data()
 local output_file = io.open("lua/output/rogue_daniel_db/".."test_case.lua", "w+")
-output_file:write("return ".. table_to_string(rogue_daniel_loader.load_all_data(), 1))
+output_file:write("return ".. table_to_string(mod_db, 1))
+output_file:flush()
+output_file:close()
 --lua\output\rogue_daniel_db\forces.lua
+if skips > 0 then
+    local err_string = "Skipped "..skips.." encounters: "
+    for key, reason in pairs(skipped_encounters) do
+        err_string = err_string .. key .. ": " .. reason .. "\n"
+    end
+    error(err_string)
+end
