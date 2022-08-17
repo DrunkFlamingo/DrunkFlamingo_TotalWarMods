@@ -20,3 +20,15 @@ FIRST	rogue_start_chs_quality_vs_dae_quantity
 SECOND	rogue_start_chs_quality_vs_dae_quantity	
 FIRST	rogue_start_dae_quality_vs_chs_quantity	
 SECOND	rogue_start_dae_quality_vs_chs_quantity	
+FIRST	rogue_common_all_dae	
+FIRST	rogue_special_all_dae	
+FIRST	rogue_rare_all_dae	
+SECOND	rogue_common_all_dae	
+SECOND	rogue_special_all_dae	
+SECOND	rogue_rare_all_dae	
+THIRD	rogue_common_all_dae	
+THIRD	rogue_special_all_dae	
+THIRD	rogue_rare_all_dae	
+FOURTH	rogue_common_all_dae	
+FOURTH	rogue_special_all_dae	
+FOURTH	rogue_rare_all_dae	

@@ -88,5 +88,23 @@ return {
 		["RESOURCE_THRESHOLD"] = "",
 		["DILEMMA"] = "rogue_start_dae_quality_vs_chs_quantity",
 		["REQUIRES_RESOURCE"] = ""
+	},
+	[16] = {
+		["REWARD_SET"] = "random_common",
+		["RESOURCE_THRESHOLD"] = "",
+		["DILEMMA"] = "rogue_common_all_dae",
+		["REQUIRES_RESOURCE"] = ""
+	},
+	[17] = {
+		["REWARD_SET"] = "random_special",
+		["RESOURCE_THRESHOLD"] = "",
+		["DILEMMA"] = "rogue_special_all_dae",
+		["REQUIRES_RESOURCE"] = ""
+	},
+	[18] = {
+		["REWARD_SET"] = "random_rare",
+		["RESOURCE_THRESHOLD"] = "",
+		["DILEMMA"] = "rogue_rare_all_dae",
+		["REQUIRES_RESOURCE"] = ""
 	}
 }

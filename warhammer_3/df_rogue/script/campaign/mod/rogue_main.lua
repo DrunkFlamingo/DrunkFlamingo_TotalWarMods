@@ -485,7 +485,9 @@ local function send_rewards_to_ui()
     common.set_context_value("rogue_pending_rewards", pending_rewards.armory_parts)
 end
 
-
+local function get_unit_value(unit_key)
+    return common.get_context_value("CcoMainUnitRecord", unit_key, "Cost")
+end
 
 
 ---comment
@@ -503,7 +505,8 @@ local function generate_units_from_force_fragment(fragment)
     end
     return unit_list 
 end
-
+---@param fragment_set ROGUE_DATA_FRAGMENT_SET_ENTRY 
+---@return ROGUE_DATA_UNIT_ENTRY_LIST
 local function generate_unit_list_from_force_fragment_set(fragment_set)
     out("Generating unit list for fragment set: "..fragment_set.key)
     local unit_list = {}
@@ -683,26 +686,34 @@ local function generate_force(force_key)
     tab_log(1)
     out("Selected faction: "..force.faction)
     force.difficulty = force_data.base_difficulty ---@type integer
+    force.value = 0 ---@type integer
     force.units = {} ---@type ROGUE_DATA_UNIT_ENTRY_LIST
 
     local fragment_set = force_data.force_fragment_set
     add_list_into_list(force.units, generate_unit_list_from_force_fragment_set(fragment_set))
-
-    force.unit_string = force.units[1].unit_key
-    for i = 2, #force.units do
-        local unit = force.units[i]
-        force.unit_string = force.unit_string..","..unit.unit_key
-        --TODO add difficulty 
+    if #force.units == 0 then
+        out("WARNING: Force has no units!")
+        out("it will likely crash if used.")
+    else
+        force.unit_string = force.units[1].unit_key
+        for i = 2, #force.units do
+            local unit = force.units[i]
+            force.unit_string = force.unit_string..","..unit.unit_key
+            force.value = force.value + get_unit_value(unit.unit_key)
+        end
     end
-
     local commander_options = force_data.commander_set
-    force.commander = commander_options[cm:random_number(#commander_options)] ---@type ROGUE_DATA_COMMANDER_ENTRY
-    out("Selected commander: "..force.commander.commander_key.." of subtype "..force.commander.agent_subtype)
-    force.difficulty = force.difficulty + force.commander.difficulty_delta
-    tab_log(1)
-    out("Difficulty increased to "..force.difficulty)
-    untab_log(1)
-
+    if #commander_options == 0 then
+        out("WARNING: Force has no commanders!")
+        out("it will likely crash if used.")
+    else
+        force.commander = commander_options[cm:random_number(#commander_options)] ---@type ROGUE_DATA_COMMANDER_ENTRY
+        out("Selected commander: "..force.commander.commander_key.." of subtype "..force.commander.agent_subtype)
+        force.difficulty = force.difficulty + force.commander.difficulty_delta
+        tab_log(1)
+        out("Difficulty increased to "..force.difficulty)
+        untab_log(1)
+    end
 
     untab_log(1)
     return force
@@ -1108,6 +1119,7 @@ function start_ui()
     else
         out("The Worldspace Parent Failed to Create! Check the rogue3dui.twui.xml file!")
     end
+    --[[
     get_or_create_tr_hud()
 
     --open the units panels
@@ -1118,9 +1130,8 @@ function start_ui()
     --open the character details panel
     ui_click_callback("button_character_details", function(context)
         --did this via CCO
-    end)
+    end)--]]
 
-    
 
     --select encounter
     ui_click_callback("encounter_slot", function (context)
@@ -1270,12 +1281,15 @@ local function generate_and_print_force_with_key(key, optional_logger)
     local force = generate_force(key)
     log("Force Generated: "..key)
     log("Difficulty: "..force.difficulty)
+    log("Value: "..force.value)
     log("Commander: "..force.commander.commander_key)
+
     for i = 1, #force.units do
         local unit = force.units[i]
         log("\t"..unit.unit_key)
     end
     log("")
+    return force.value, #force.units
 end
 
 ---comment
@@ -1316,12 +1330,117 @@ local function test_encounter_force_generation(encounter_key, tries)
     log_file:close()
 end
 
+local function output_force_statistics(depth)
+    local force_results = {}
+    for key, _ in pairs(mod_database.forces) do
+        local ok, err = pcall(function ()
+            local total_value = 0
+            local total_units = 0
+            local highest_value = 0
+            local highest_units = 0
+            local lowest_value = 999999
+            local lowest_units = 999999
+            for _ = 1, depth do
+                local value, unit_count = generate_and_print_force_with_key(key)
+                total_value = total_value + value
+                if value > highest_value then
+                    highest_value = value
+                elseif value < lowest_value then
+                    lowest_value = value
+                end
+                total_units = total_units + unit_count
+                if unit_count > highest_units then
+                    highest_units = unit_count
+                elseif unit_count < lowest_units then
+                    lowest_units = unit_count
+                end
+            end
+            local average_value = total_value / depth
+            local average_units = total_units / depth
+            force_results[key] = {
+                average_value = average_value,
+                average_units = average_units,
+                highest_value = highest_value,
+                highest_units = highest_units,
+                lowest_value = lowest_value,
+                lowest_units = lowest_units
+            }
+                        
+        end)
+        if not ok then
+            out("Error generating force "..tostring(key)..": "..tostring(err))
+        end
+    end
+    local log_file = io.open("force_statistics.tsv", "w+")
+    if not log_file then
+        out("ERROR - unable to open force_statistics.tsv for writing!")
+        return
+    end
+    local had_results = false
+    log_file:write("force_key\taverage_value\taverage_units\thighest_value\thighest_units\tlowest_value\tlowest_units\n")
+    for force_key, results in pairs(force_results) do
+        had_results = true
+        log_file:write(force_key.."\t"..results.average_value.."\t"..results.average_units.."\t"..results.highest_value.."\t"..results.highest_units.."\t"..results.lowest_value.."\t"..results.lowest_units.."\n")
+    end
+    if not had_results then
+        log_file:write("No results in the results table :C")
+    end
+    log_file:flush()
+    log_file:close()
+end
+
+local function test_reward_option(dilemma, choice)
+    local value = 0
+    local choice_details = mod_database.reward_dilemma_choice_details[dilemma]
+    local this_choice = choice_details[choice]
+    out("Unit rewards for "..choice..": ")
+    tab_log(1)
+    for i = 1, #this_choice.mandatory_reward_components do
+        local component = this_choice.mandatory_reward_components[i]
+        out("Mandatory Reward Component: "..component.force_fragment_set)
+        local fragment_set = mod_database.force_fragment_sets[component.force_fragment_set]
+        local unit_list = generate_unit_list_from_force_fragment_set(fragment_set)
+        for j = 1, #unit_list do
+            local unit = unit_list[j]
+            out(unit.unit_key)
+            local unit_value = get_unit_value(unit.unit_key)
+            if unit_value then
+                value = value + unit_value
+            else
+                out("ERROR - unit value not found for "..unit.unit_key)
+
+            end
+        end
+    end
+    untab_log(1)
+    out("Total value for this reward option: "..value)
+end
+
+local function test_starting_armies()
+    local player_character = mod_database.player_characters[player.name]
+    local start_reward_set = mod_database.reward_sets[player_character.start_reward_set]
+    out("Testing starting armies for player "..player.name)
+    tab_log(1)
+    for i = 1, #start_reward_set do
+        local reward = start_reward_set[i]
+        out("Reward: "..reward.dilemma)
+        tab_log(1)
+        local choice_details = mod_database.reward_dilemma_choice_details[reward.dilemma]
+        for choice_key, choice_detail in pairs(choice_details) do
+            test_reward_option(reward.dilemma, choice_key)
+        end
+        untab_log(1)
+    end
+    untab_log(1)
+end
 
 rogue_console = {
     get_or_create_army_panel = get_or_create_army_panel,
     get_or_create_armory_reward_dialogue = get_or_create_armory_reward_dialogue,
     generate_and_print_force_with_key = generate_and_print_force_with_key,
+    output_force_statistics = output_force_statistics,
     test_encounter_force_generation = test_encounter_force_generation,
+    test_starting_armies = test_starting_armies,
     generate_encounter = generate_encounter,
     commence_encounter = commence_encounter,
     on_encounter_completed = on_encounter_completed

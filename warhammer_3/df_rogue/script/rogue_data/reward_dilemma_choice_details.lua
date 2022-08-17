@@ -142,5 +142,221 @@ return {
 		["ARMORY_PART_SET"] = "undivided_1",
 		["COSTS_RESOURCE"] = "",
 		["REWARD_DILEMMA"] = "rogue_start_dae_quality_vs_chs_quantity"
+	},
+	[17] = {
+		["FORCE_FRAGMENT_SET"] = "reward_kho_any_common",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "FIRST",
+		["ARMORY_PART_SET"] = "khorne_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[18] = {
+		["FORCE_FRAGMENT_SET"] = "reward_kho_special_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "FIRST",
+		["ARMORY_PART_SET"] = "khorne_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_special_all_dae"
+	},
+	[19] = {
+		["FORCE_FRAGMENT_SET"] = "reward_kho_rare_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "FIRST",
+		["ARMORY_PART_SET"] = "khorne_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_rare_all_dae"
+	},
+	[20] = {
+		["FORCE_FRAGMENT_SET"] = "reward_sla_any_common",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "SECOND",
+		["ARMORY_PART_SET"] = "slaanesh_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[21] = {
+		["FORCE_FRAGMENT_SET"] = "reward_sla_special_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "SECOND",
+		["ARMORY_PART_SET"] = "slaanesh_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_special_all_dae"
+	},
+	[22] = {
+		["FORCE_FRAGMENT_SET"] = "reward_sla_rare_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "SECOND",
+		["ARMORY_PART_SET"] = "slaanesh_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_rare_all_dae"
+	},
+	[23] = {
+		["FORCE_FRAGMENT_SET"] = "reward_tze_any_common",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "THIRD",
+		["ARMORY_PART_SET"] = "tzeentch_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[24] = {
+		["FORCE_FRAGMENT_SET"] = "reward_tze_special_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "THIRD",
+		["ARMORY_PART_SET"] = "tzeentch_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_special_all_dae"
+	},
+	[25] = {
+		["FORCE_FRAGMENT_SET"] = "reward_tze_rare_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "THIRD",
+		["ARMORY_PART_SET"] = "tzeentch_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_rare_all_dae"
+	},
+	[26] = {
+		["FORCE_FRAGMENT_SET"] = "reward_nur_any_common",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "FOURTH",
+		["ARMORY_PART_SET"] = "nurgle_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[27] = {
+		["FORCE_FRAGMENT_SET"] = "reward_nur_special_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "FOURTH",
+		["ARMORY_PART_SET"] = "nurgle_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_special_all_dae"
+	},
+	[28] = {
+		["FORCE_FRAGMENT_SET"] = "reward_nur_rare_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "FOURTH",
+		["ARMORY_PART_SET"] = "nurgle_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_rare_all_dae"
+	},
+	[29] = {
+		["FORCE_FRAGMENT_SET"] = "reward_kho_melee_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "FIRST",
+		["ARMORY_PART_SET"] = "khorne_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[30] = {
+		["FORCE_FRAGMENT_SET"] = "reward_sla_melee_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "SECOND",
+		["ARMORY_PART_SET"] = "slaanesh_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[31] = {
+		["FORCE_FRAGMENT_SET"] = "reward_tze_melee_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "THIRD",
+		["ARMORY_PART_SET"] = "tzeentch_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[32] = {
+		["FORCE_FRAGMENT_SET"] = "reward_nur_melee_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "FOURTH",
+		["ARMORY_PART_SET"] = "nurgle_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[33] = {
+		["FORCE_FRAGMENT_SET"] = "reward_kho_melee_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "FIRST",
+		["ARMORY_PART_SET"] = "khorne_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[34] = {
+		["FORCE_FRAGMENT_SET"] = "reward_sla_melee_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "SECOND",
+		["ARMORY_PART_SET"] = "slaanesh_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[35] = {
+		["FORCE_FRAGMENT_SET"] = "reward_tze_melee_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "THIRD",
+		["ARMORY_PART_SET"] = "tzeentch_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[36] = {
+		["FORCE_FRAGMENT_SET"] = "reward_nur_melee_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "FOURTH",
+		["ARMORY_PART_SET"] = "nurgle_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[37] = {
+		["FORCE_FRAGMENT_SET"] = "reward_kho_mobile_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "FIRST",
+		["ARMORY_PART_SET"] = "khorne_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[38] = {
+		["FORCE_FRAGMENT_SET"] = "reward_sla_mobile_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "SECOND",
+		["ARMORY_PART_SET"] = "slaanesh_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[39] = {
+		["FORCE_FRAGMENT_SET"] = "reward_tze_mobile_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "THIRD",
+		["ARMORY_PART_SET"] = "tzeentch_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
+	},
+	[40] = {
+		["FORCE_FRAGMENT_SET"] = "reward_nur_mobile_early",
+		["SELECTION_SET"] = "1",
+		["COST"] = "",
+		["DILEMMA_CHOICE_KEY"] = "FOURTH",
+		["ARMORY_PART_SET"] = "nurgle_1",
+		["COSTS_RESOURCE"] = "",
+		["REWARD_DILEMMA"] = "rogue_common_all_dae"
 	}
 }

@@ -7,5 +7,17 @@ return {
 	},
 	[3] = {
 		["REWARD_SET_KEY"] = "placeholder_reward_set"
+	},
+	[4] = {
+		["REWARD_SET_KEY"] = "random_common"
+	},
+	[5] = {
+		["REWARD_SET_KEY"] = "random_special"
+	},
+	[6] = {
+		["REWARD_SET_KEY"] = "random_rare"
+	},
+	[7] = {
+		["REWARD_SET_KEY"] = "random_all_weighted"
 	}
 }

@@ -28,6 +28,11 @@ local selection_set_enum = {
     "5"
 }
 
+local merge_behaviour_validation = {
+    ["SHIFT_MANDATORY"] = true,
+    ["COMBINE"] = true
+}
+
 local select_set_validation = {}
 for i = 1, #selection_set_enum do
     select_set_validation[selection_set_enum[i]] = true
@@ -50,15 +55,15 @@ function rogue_daniel_loader.load_all_data()
             effect_bundle_lists > effect_bundle_lists_to_effect_bundles
 
             commander_sets > commanders > commander_set_to_commanders
-            force_fragments  > force_fragment_to_main_units
-            force_fragment_sets > force_fragment_sets_to_force_fragments
+            force_fragments  > force_fragment_to_main_units > force_fragment_merges
+            force_fragment_sets > force_fragment_sets_to_force_fragments -> force_fragment_set_merges
             forces 
-            force_sets > force_set_to_forces
+            force_sets > force_set_to_forces > force_set_merges
             armory_part_sets > armory_part_sets_to_armory_parts
             progress_gates 
             progress_payloads > progress_payloads_to_progress_gates
             reward_dilemma_choice_details
-            reward_sets > reward_set_to_dilemmas
+            reward_sets > reward_set_to_dilemmas > reward_set_merges
             encounters
             player_characters
     ]]
@@ -151,7 +156,7 @@ function rogue_daniel_loader.load_all_data()
         end
     end
 
-    --force_fragments  > force_fragment_to_main_units
+    --force_fragments  > force_fragment_to_main_units > force_fragment_merges
     local force_fragments_data = req_data("force_fragments")
     MOD_DATABASE.force_fragments = {}
     for row_index = 1, #force_fragments_data do
@@ -201,8 +206,47 @@ function rogue_daniel_loader.load_all_data()
             end
         end
     end
+    local force_fragment_merges_data = req_data("force_fragment_merges")
+    for row_index = 1, #force_fragment_merges_data do
+        local this_row = force_fragment_merges_data[row_index]
+        --[[PARENT_FRAGMENT: force_fragments]]
+        --[[CHILD_FRAGMENT: force_fragments]]
+        --[[MERGE_BEHAVIOUR: merge_behaviour_enum]]
+        if this_row.PARENT_FRAGMENT == "" or this_row.CHILD_FRAGMENT == "" then
+            --skip this row, its blank.
+        elseif not MOD_DATABASE.force_fragments[this_row.PARENT_FRAGMENT] then
+            error("invalid force fragment key: "..this_row.PARENT_FRAGMENT.. " on row "..row_index.." of force_fragment_merges")
+        elseif not MOD_DATABASE.force_fragments[this_row.CHILD_FRAGMENT] then
+            error("invalid force fragment key: "..this_row.CHILD_FRAGMENT.. " on row "..row_index.." of force_fragment_merges")
+        elseif not merge_behaviour_validation[this_row.MERGE_BEHAVIOUR] then
+            error("invalid merge behaviour enum: "..this_row.MERGE_BEHAVIOUR.. " on row "..row_index.." of force_fragment_merges")
+        else
+            local parent_fragment = MOD_DATABASE.force_fragments[this_row.PARENT_FRAGMENT]
+            local child_fragment = MOD_DATABASE.force_fragments[this_row.CHILD_FRAGMENT]
+            local offset_for_generated_slots = 0
+            if this_row.MERGE_BEHAVIOUR == "COMBINE" then
+                for i = 1, #child_fragment.mandatory_units do
+                    table.insert(parent_fragment.mandatory_units, child_fragment.mandatory_units[i])
+                end
+            elseif this_row.MERGE_BEHAVIOUR == "SHIFT_MANDATORY" then
+                offset_for_generated_slots = 1
+                parent_fragment.generated_unit_slots[1] = parent_fragment.generated_unit_slots[1] or {}
+                for i = 1, #child_fragment.mandatory_units do
+                    table.insert(parent_fragment.generated_unit_slots[1], child_fragment.mandatory_units[i])
+                end
+            end
+            for list_index = 1, #child_fragment.generated_unit_slots do
+                local i = list_index + offset_for_generated_slots
+                parent_fragment.generated_unit_slots[i] = parent_fragment.generated_unit_slots[i] or {}
+                for j = 1, #parent_fragment.generated_unit_slots[i] do
+                    table.insert(parent_fragment.generated_unit_slots[i], child_fragment.generated_unit_slots[i][j])
+                end
+            end
+        end
+    end
+    
 
-    --force_fragment_sets > force_fragment_sets_to_force_fragments
+    --force_fragment_sets > force_fragment_sets_to_force_fragments > force_fragment_set_merges
     local force_fragment_sets_data = req_data("force_fragment_sets")
     MOD_DATABASE.force_fragment_sets = {}
     for row_index = 1, #force_fragment_sets_data do
@@ -252,8 +296,46 @@ function rogue_daniel_loader.load_all_data()
             end
         end
     end
+    local force_fragment_set_merges_data = req_data("force_fragment_set_merges")
+    for i = 1, #force_fragment_set_merges_data do
+        local this_row = force_fragment_set_merges_data[i]
+        --[[PARENT_FORCE_FRAGMENT_SET: force_fragment_sets]]
+        --[[CHILD_FORCE_FRAGMENT_SET: force_fragment_sets]]
+        --[[MERGE_BEHAVIOUR: merge_behaviour_enum]]
+        if this_row.PARENT_FORCE_FRAGMENT_SET == "" or this_row.CHILD_FORCE_FRAGMENT_SET == "" then
+            --skip this row, its blank.
+        elseif not merge_behaviour_validation[this_row.MERGE_BEHAVIOUR] then
+            error("invalid merge behaviour enum: "..this_row.MERGE_BEHAVIOUR.. " on row "..i.." of force_fragment_set_merges")
+        elseif not MOD_DATABASE.force_fragment_sets[this_row.PARENT_FORCE_FRAGMENT_SET] then
+            error("invalid parent force fragment set key: "..this_row.PARENT_FORCE_FRAGMENT_SET.. " on row "..i.." of force_fragment_set_merges")
+        elseif not MOD_DATABASE.force_fragment_sets[this_row.CHILD_FORCE_FRAGMENT_SET] then
+            error("invalid child force fragment set key: "..this_row.CHILD_FORCE_FRAGMENT_SET.. " on row "..i.." of force_fragment_set_merges")
+        else
+            local parent_fragment_set = MOD_DATABASE.force_fragment_sets[this_row.PARENT_FORCE_FRAGMENT_SET]
+            local child_fragment_set = MOD_DATABASE.force_fragment_sets[this_row.CHILD_FORCE_FRAGMENT_SET]
+            local offset_for_generated_slots = 0
+            if this_row.MERGE_BEHAVIOUR == "COMBINE" then
+                for i = 1, #child_fragment_set.mandatory_fragments do
+                    table.insert(parent_fragment_set.mandatory_fragments, child_fragment_set.mandatory_fragments[i])
+                end
+            elseif this_row.MERGE_BEHAVIOUR == "SHIFT_MANDATORY" then
+                offset_for_generated_slots = 1
+                parent_fragment_set.generated_fragment_slots[1] = parent_fragment_set.generated_fragment_slots[1] or {}
+                for i = 1, #child_fragment_set.mandatory_fragments do
+                    table.insert(parent_fragment_set.generated_fragment_slots[1], child_fragment_set.mandatory_fragments[i])
+                end
+            end
+            for list_index = 1, #child_fragment_set.generated_fragment_slots do
+                local i = list_index + offset_for_generated_slots
+                parent_fragment_set.generated_fragment_slots[i] = parent_fragment_set.generated_fragment_slots[i] or {}
+                for j = 1, #parent_fragment_set.generated_fragment_slots[i] do
+                    table.insert(parent_fragment_set.generated_fragment_slots[i], child_fragment_set.generated_fragment_slots[i][j])
+                end
+            end
+        end
+    end
 
-    --forces > force_to_force_fragments
+    --forces 
     local forces_data = req_data("forces") 
     MOD_DATABASE.forces = {}
     for row_index = 1, #forces_data do
@@ -264,7 +346,7 @@ function rogue_daniel_loader.load_all_data()
         --[[FACTION_SET: faction_sets]]
         --[[FORCE_FRAGMENT_SET: force_fragment_sets]]
         
-        if this_row.FORCE_KEY == "" then
+        if this_row.FORCE_KEY == "" or this_row.FORCE_FRAGMENT_SET == "" then
             --skip this row, its blank.
         elseif MOD_DATABASE.commander_sets[this_row.COMMANDER_SET] == nil then
             error("Invalid Commander Set key ["..this_row.COMMANDER_SET.."] on row "..row_index.." of forces")
@@ -283,13 +365,19 @@ function rogue_daniel_loader.load_all_data()
         end
     end
 
-    --force_sets > force_set_to_forces
+
+    --force_sets > force_set_to_forces > force_set_merges
     local force_sets_data = req_data("force_sets")
     MOD_DATABASE.force_sets = {}
+    MOD_DATABASE.force_set_upgrades = {}
     for i = 1, #force_sets_data do
         local this_row = force_sets_data[i]
         --[[FORCE_SET_KEY: string]]
+        ---[[UPGRADABLE_TO_SET: string]]
         MOD_DATABASE.force_sets[this_row.FORCE_SET_KEY] = {}
+        if this_row.UPGRADABLE_TO_SET ~= "" then
+            MOD_DATABASE.force_set_upgrades[this_row.FORCE_SET_KEY] = this_row.UPGRADABLE_TO_SET
+        end
     end
     local force_set_to_forces_data = req_data("force_set_to_forces")
     for i = 1, #force_set_to_forces_data do
@@ -304,6 +392,23 @@ function rogue_daniel_loader.load_all_data()
             error("invalid force key: "..this_row.FORCE_KEY.. " on row "..i.." of force_set_to_forces")
         else
             table.insert(MOD_DATABASE.force_sets[this_row.FORCE_SET_KEY], this_row.FORCE_KEY)
+        end
+    end
+    local force_set_merges_data = req_data("force_set_merges")
+    for i = 1, #force_set_merges_data do
+        local this_row = force_set_merges_data[i]
+        --[[PARENT_FORCE_SET: force_sets]]
+        --[[CHILD_FORCE_SET: force_sets]]
+        if this_row.PARENT_FORCE_SET == "" or this_row.CHILD_FORCE_SET == "" then
+            --skip this row, its blank.
+        elseif not MOD_DATABASE.force_sets[this_row.PARENT_FORCE_SET] then
+            error("invalid parent force set key: "..this_row.PARENT_FORCE_SET.. " on row "..i.." of force_set_merges")
+        elseif not MOD_DATABASE.force_sets[this_row.CHILD_FORCE_SET] then
+            error("invalid child force set key: "..this_row.CHILD_FORCE_SET.. " on row "..i.." of force_set_merges")
+        else
+            for j = 1, #MOD_DATABASE.force_sets[this_row.CHILD_FORCE_SET] do
+                table.insert(MOD_DATABASE.force_sets[this_row.PARENT_FORCE_SET], MOD_DATABASE.force_sets[this_row.CHILD_FORCE_SET][j])
+            end
         end
     end
 
@@ -438,7 +543,9 @@ function rogue_daniel_loader.load_all_data()
                 if not list_index then
                     
                 else
-                    table.insert(MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY].generated_reward_components[this_row.SELECTION_SET], {
+                    MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY].generated_reward_components[list_index] = 
+                    MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY].generated_reward_components[list_index] or {}
+                    table.insert(MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY].generated_reward_components[list_index], {
                         costs_resource = this_row.COSTS_RESOURCE,
                         costs = this_row.COSTS,
                         force_fragment_set = this_row.FORCE_FRAGMENT_SET,
@@ -449,7 +556,7 @@ function rogue_daniel_loader.load_all_data()
         end
     end
 
-    --reward_sets > reward_set_to_dilemmas
+    --reward_sets > reward_set_to_dilemmas > reward_set_merges
     local reward_sets_data = req_data("reward_sets")
     MOD_DATABASE.reward_sets = {}
     for i = 1, #reward_sets_data do
@@ -475,6 +582,27 @@ function rogue_daniel_loader.load_all_data()
                 resource_threshold = tonumber(this_row.RESOURCE_THRESHOLD) or 0
             })
         end
+    end
+    local reward_set_merges_data = req_data("reward_set_merges")
+    for i = 1, #reward_set_merges_data do
+        local this_row = reward_set_merges_data[i]
+        --[[PARENT_REWARD_SET: reward_sets]]
+        --[[CHILD_REWARD_SET: reward_sets]]
+        --[[WEIGHT: string->number]]
+        if this_row.PARENT_REWARD_SET == "" or this_row.CHILD_REWARD_SET == "" then
+            --skip this row, its blank.
+        elseif not MOD_DATABASE.reward_sets[this_row.PARENT_REWARD_SET] then
+            error("invalid parent reward set key: "..this_row.PARENT_REWARD_SET.. " on row "..i.." of reward_set_merges")
+        elseif not MOD_DATABASE.reward_sets[this_row.CHILD_REWARD_SET] then
+            error("invalid child reward set key: "..this_row.CHILD_REWARD_SET.. " on row "..i.." of reward_set_merges")
+        else
+            for j = 1, #MOD_DATABASE.reward_sets[this_row.CHILD_REWARD_SET] do
+                for k = 1, (tonumber(this_row.WEIGHT) or 1) do
+                    table.insert(MOD_DATABASE.reward_sets[this_row.PARENT_REWARD_SET], MOD_DATABASE.reward_sets[this_row.CHILD_REWARD_SET][j])
+                end
+            end
+        end
+        
     end
 
 
