@@ -14271,6 +14271,12 @@
 			defaultstate="3A85284B-504B-40F3-8E588F68BEDD8391">
 			<callbackwithcontextlist>
 				<callback_with_context
+					callback_id="ContextVisibilitySetter"
+					context_object_id="CcoFrontendFactionLeader"
+					context_function_id="(ScriptObjectContext(&quot;mixer_factions_that_require_other_mods&quot;).TableValue.HasValueForKey(this.GeneralKey, false) == false) &amp;&amp; (
+						ScriptObjectContext(&quot;mixer_minor_factions_visible&quot;).NumericValue == 1 || ScriptObjectContext(&quot;mixer_major_factions&quot;).TableValue.HasValueForKey(this.FactionRecordContext.Key, false)
+					)"/>
+				<callback_with_context
 					callback_id="#ContextAnimPropertySetter"
 					context_object_id="CcoStaticObject">
 					<child_m_user_properties>
