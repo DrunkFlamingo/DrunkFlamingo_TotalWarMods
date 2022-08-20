@@ -3347,6 +3347,65 @@ return {
 					}
 				}
 			},
+			["kho_fleshhounds_4"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "kho_fleshhounds_4",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_kho_inf_flesh_hounds_of_khorne_0"
+					},
+					[2] = {
+						["unit_key"] = "wh3_main_kho_inf_flesh_hounds_of_khorne_0"
+					},
+					[3] = {
+						["unit_key"] = "wh3_main_kho_inf_flesh_hounds_of_khorne_0"
+					},
+					[4] = {
+						["unit_key"] = "wh3_main_kho_inf_flesh_hounds_of_khorne_0"
+					}
+				}
+			},
+			["skv_slaves_3"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+					[1] = {
+						[1] = {
+							["unit_key"] = "wh2_main_skv_inf_skavenslave_spearmen_0"
+						},
+						[2] = {
+							["unit_key"] = "wh2_main_skv_inf_skavenslaves_0"
+						}
+					},
+					[2] = {
+						[1] = {
+							["unit_key"] = "wh2_main_skv_inf_skavenslave_spearmen_0"
+						},
+						[2] = {
+							["unit_key"] = "wh2_main_skv_inf_skavenslaves_0"
+						}
+					},
+					[3] = {
+						[1] = {
+							["unit_key"] = "wh2_main_skv_inf_skavenslave_spearmen_0"
+						},
+						[2] = {
+							["unit_key"] = "wh2_main_skv_inf_skavenslaves_0"
+						},
+						[3] = {
+							["unit_key"] = "wh2_main_skv_inf_skavenslave_slingers_0"
+						}
+					}
+				},
+				["force_fragment_key"] = "skv_slaves_3",
+				["mandatory_units"] = {
+
+				}
+			},
 			["grn_boar_boys_2"] = {
 				["difficulty_delta"] = 0,
 				["localised_name"] = "",
@@ -6532,7 +6591,7 @@ return {
 			["skv_moulder_easy"] = {
 				["mandatory_fragments"] = {
 					[1] = {
-						["force_fragment_key"] = "skv_slaves_4",
+						["force_fragment_key"] = "skv_slaves_3",
 						["hidden_fragment"] = false
 					},
 					[2] = {
@@ -7035,7 +7094,7 @@ return {
 							["hidden_fragment"] = false
 						},
 						[2] = {
-							["force_fragment_key"] = "nurglings_3",
+							["force_fragment_key"] = "nurglings_4",
 							["hidden_fragment"] = false
 						}
 					},
@@ -7110,6 +7169,117 @@ return {
 				["key"] = "reward_nur_plaguebearers_early",
 				["generated_fragment_slots"] = {
 
+				}
+			},
+			["nur_doom_keep_boss"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "nurglings_3",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "nur_doom_keep_boss",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "nur_plaguebearer_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "nur_warriors_3",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "nur_forsaken_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "nur_plaguebearer_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "nur_warriors_3",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "nur_forsaken_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "nur_plaguebearer_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "nur_warriors_3",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "nur_forsaken_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[4] = {
+						[1] = {
+							["force_fragment_key"] = "nur_ex_plaguebearer_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "nur_chosen_1",
+							["hidden_fragment"] = false
+						}
+					},
+					[5] = {
+						[1] = {
+							["force_fragment_key"] = "nur_beast_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "nur_warshrine",
+							["hidden_fragment"] = false
+						}
+					},
+					[6] = {
+						[1] = {
+							["force_fragment_key"] = "nur_drones_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "nur_pox_rider_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "nur_knights_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[7] = {
+						[1] = {
+							["force_fragment_key"] = "nur_chosen_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "nur_beast_1",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "nur_ex_plaguebearer_1",
+							["hidden_fragment"] = false
+						}
+					},
+					[8] = {
+						[1] = {
+							["force_fragment_key"] = "nur_flies_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "nur_toads_2",
+							["hidden_fragment"] = false
+						}
+					}
 				}
 			},
 			["reward_sla_chosen_early"] = {
@@ -7383,7 +7553,7 @@ return {
 			["skv_pestilens_easy"] = {
 				["mandatory_fragments"] = {
 					[1] = {
-						["force_fragment_key"] = "skv_slaves_4",
+						["force_fragment_key"] = "skv_slaves_3",
 						["hidden_fragment"] = false
 					},
 					[2] = {
@@ -8318,6 +8488,91 @@ return {
 
 				}
 			},
+			["sla_doom_keep_boss"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "sla_marauders_3",
+						["hidden_fragment"] = false
+					},
+					[2] = {
+						["force_fragment_key"] = "sla_ex_daemonette_2",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "sla_doom_keep_boss",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "sla_warriors_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "sla_forsaken_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "sla_chosen_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "sla_fiends_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "sla_daemonette_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "sla_warriors_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[4] = {
+						[1] = {
+							["force_fragment_key"] = "sla_daemonette_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "sla_warriors_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[5] = {
+						[1] = {
+							["force_fragment_key"] = "sla_seekers_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "sla_hellflayer",
+							["hidden_fragment"] = false
+						}
+					},
+					[6] = {
+						[1] = {
+							["force_fragment_key"] = "sla_ex_seeker_chariot_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "sla_warshrine",
+							["hidden_fragment"] = false
+						}
+					},
+					[7] = {
+						[1] = {
+							["force_fragment_key"] = "sla_cultist_norm",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "sla_daemonette_1",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
 			["reward_nur_warriors_early"] = {
 				["mandatory_fragments"] = {
 					[1] = {
@@ -8406,7 +8661,7 @@ return {
 			["start_army_chs_undivided_quantity"] = {
 				["mandatory_fragments"] = {
 					[1] = {
-						["force_fragment_key"] = "chs_marauders_4",
+						["force_fragment_key"] = "chs_marauders_3",
 						["hidden_fragment"] = false
 					}
 				},
@@ -8422,7 +8677,7 @@ return {
 							["hidden_fragment"] = false
 						}
 					},
-					[2] = {
+					[3] = {
 						[1] = {
 							["force_fragment_key"] = "chs_warhounds_2",
 							["hidden_fragment"] = false
@@ -8430,14 +8685,12 @@ return {
 						[2] = {
 							["force_fragment_key"] = "chs_marauder_horse_2",
 							["hidden_fragment"] = false
-						}
-					},
-					[3] = {
-						[1] = {
+						},
+						[3] = {
 							["force_fragment_key"] = "chs_chariot_1",
 							["hidden_fragment"] = false
 						},
-						[2] = {
+						[4] = {
 							["force_fragment_key"] = "chs_horsemaster_1",
 							["hidden_fragment"] = false
 						}
@@ -8565,6 +8818,182 @@ return {
 						},
 						[7] = {
 							["force_fragment_key"] = "nur_knights_1",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
+			["tze_doom_keep_boss"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "tze_ex_flamers_1",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "tze_doom_keep_boss",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "tze_horrors_1_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_warriors_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "tze_horrors_1_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_forsaken_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "tze_ex_pink_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_chosen_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[4] = {
+						[1] = {
+							["force_fragment_key"] = "tze_chosen_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_flamers_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[5] = {
+						[1] = {
+							["force_fragment_key"] = "tze_doom_knight_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_burning_chariots_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[6] = {
+						[1] = {
+							["force_fragment_key"] = "tze_furies_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_screamers_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[7] = {
+						[1] = {
+							["force_fragment_key"] = "tze_cultist_norm",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_spawn_1",
+							["hidden_fragment"] = false
+						}
+					},
+					[8] = {
+						[1] = {
+							["force_fragment_key"] = "tze_furies_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_screamers_1",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
+			["kho_doom_keep_boss"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "kho_ex_letters_2",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "kho_doom_keep_boss",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "kho_knights_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_bloodcrusher_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "kho_chosen_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_ex_letters_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "kho_chosen_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_ex_letters_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "kho_spawn_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[4] = {
+						[1] = {
+							["force_fragment_key"] = "kho_warriors_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_forsaken_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[5] = {
+						[1] = {
+							["force_fragment_key"] = "kho_minos_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_warshrine",
+							["hidden_fragment"] = false
+						}
+					},
+					[6] = {
+						[1] = {
+							["force_fragment_key"] = "kho_letters_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_warriors_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[7] = {
+						[1] = {
+							["force_fragment_key"] = "kho_fleshhounds_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_furies_2",
 							["hidden_fragment"] = false
 						}
 					}
@@ -8873,7 +9302,7 @@ return {
 							["hidden_fragment"] = false
 						},
 						[2] = {
-							["force_fragment_key"] = "nur_cultist_easy",
+							["force_fragment_key"] = "nurglings_3",
 							["hidden_fragment"] = false
 						}
 					}
@@ -9644,7 +10073,7 @@ return {
 			["skv_moulder_norm"] = {
 				["mandatory_fragments"] = {
 					[1] = {
-						["force_fragment_key"] = "skv_slaves_4",
+						["force_fragment_key"] = "skv_slaves_3",
 						["hidden_fragment"] = false
 					},
 					[2] = {
@@ -10561,6 +10990,24 @@ return {
 
 		},
 		["encounters"] = {
+			["intro_east_2"] = {
+				["progress_payload"] = "EMPTY_PROGRESS_PAYLOAD",
+				["region"] = "settlement:wh3_main_chaos_region_black_gulch",
+				["duration"] = 0,
+				["boss_overlay"] = false,
+				["reward_set"] = "random_all_weighted",
+				["key"] = "intro_east_2",
+				["inciting_incident_key"] = "",
+				["battle_type"] = "AMBUSH_DEFEND",
+				["post_battle_dilemma_override"] = "",
+				["force_set"] = {
+					[1] = "grn_orcs_easy",
+					[2] = "grn_nightgoblins_easy",
+					[3] = "skv_moulder_easy",
+					[4] = "skv_warlords_easy",
+					[5] = "skv_pestilens_easy"
+				}
+			},
 			["intro_north_1"] = {
 				["progress_payload"] = "EMPTY_PROGRESS_PAYLOAD",
 				["region"] = "settlement:wh3_main_chaos_region_altar_of_spawns",
@@ -10593,24 +11040,6 @@ return {
 					[2] = "grn_nightgoblins_easy"
 				}
 			},
-			["intro_east_2"] = {
-				["progress_payload"] = "EMPTY_PROGRESS_PAYLOAD",
-				["region"] = "settlement:wh3_main_chaos_region_black_gulch",
-				["duration"] = 0,
-				["boss_overlay"] = false,
-				["reward_set"] = "random_all_weighted",
-				["key"] = "intro_east_2",
-				["inciting_incident_key"] = "",
-				["battle_type"] = "AMBUSH_DEFEND",
-				["post_battle_dilemma_override"] = "",
-				["force_set"] = {
-					[1] = "grn_orcs_easy",
-					[2] = "grn_nightgoblins_easy",
-					[3] = "skv_moulder_easy",
-					[4] = "skv_warlords_easy",
-					[5] = "skv_pestilens_easy"
-				}
-			},
 			["intro_west_2"] = {
 				["progress_payload"] = "EMPTY_PROGRESS_PAYLOAD",
 				["region"] = "settlement:wh3_main_chaos_region_foul_fortress",
@@ -10632,6 +11061,21 @@ return {
 					[8] = "tze_knights_easy"
 				}
 			},
+			["intro_south_1"] = {
+				["progress_payload"] = "EMPTY_PROGRESS_PAYLOAD",
+				["region"] = "settlement:wh3_main_chaos_region_bay_of_blades",
+				["duration"] = 0,
+				["boss_overlay"] = false,
+				["reward_set"] = "random_all_weighted",
+				["key"] = "intro_south_1",
+				["inciting_incident_key"] = "",
+				["battle_type"] = "AMBUSH_ATTACK",
+				["post_battle_dilemma_override"] = "",
+				["force_set"] = {
+					[1] = "emp_knights_easy",
+					[2] = "emp_powder_easy"
+				}
+			},
 			["intro_west_1"] = {
 				["progress_payload"] = "INTRO_COMPLETED_WEST",
 				["region"] = "settlement:wh3_main_chaos_region_the_monolith_of_katam",
@@ -10646,19 +11090,21 @@ return {
 					[1] = "tze_dae_easy"
 				}
 			},
-			["intro_south_1"] = {
-				["progress_payload"] = "EMPTY_PROGRESS_PAYLOAD",
-				["region"] = "settlement:wh3_main_chaos_region_bay_of_blades",
+			["intro_boss"] = {
+				["progress_payload"] = "INTRODUCTION_ACT_COMPLETED",
+				["region"] = "settlement:wh3_main_chaos_region_doomkeep",
 				["duration"] = 0,
 				["boss_overlay"] = false,
 				["reward_set"] = "random_all_weighted",
-				["key"] = "intro_south_1",
+				["key"] = "intro_boss",
 				["inciting_incident_key"] = "",
-				["battle_type"] = "AMBUSH_ATTACK",
+				["battle_type"] = "SIEGE_ATTACK",
 				["post_battle_dilemma_override"] = "",
 				["force_set"] = {
-					[1] = "emp_knights_easy",
-					[2] = "emp_powder_easy"
+					[1] = "kho_doom_keep_boss",
+					[2] = "tze_doom_keep_boss",
+					[3] = "nur_doom_keep_boss",
+					[4] = "sla_doom_keep_boss"
 				}
 			},
 			["starting_battle"] = {
@@ -12128,7 +12574,23 @@ return {
 			["INTRODUCTION"] = {
 				["activation_threshold"] = 1,
 				["generates_encounters"] = {
-
+					[1] = {
+						["progress_payload"] = "INTRODUCTION_ACT_COMPLETED",
+						["region"] = "settlement:wh3_main_chaos_region_doomkeep",
+						["duration"] = 0,
+						["boss_overlay"] = false,
+						["reward_set"] = "random_all_weighted",
+						["key"] = "intro_boss",
+						["inciting_incident_key"] = "",
+						["battle_type"] = "SIEGE_ATTACK",
+						["post_battle_dilemma_override"] = "",
+						["force_set"] = {
+							[1] = "kho_doom_keep_boss",
+							[2] = "tze_doom_keep_boss",
+							[3] = "nur_doom_keep_boss",
+							[4] = "sla_doom_keep_boss"
+						}
+					}
 				},
 				["displaces_encounters"] = {
 
@@ -13531,6 +13993,108 @@ return {
 					[5] = "wh3_dlc20_tze_the_sightless"
 				}
 			},
+			["kho_doom_keep_boss"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "kho_ex_letters_2",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "kho_doom_keep_boss",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "kho_knights_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "kho_bloodcrusher_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "kho_chosen_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "kho_ex_letters_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "kho_chosen_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "kho_ex_letters_2",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "kho_spawn_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[4] = {
+							[1] = {
+								["force_fragment_key"] = "kho_warriors_3",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "kho_forsaken_3",
+								["hidden_fragment"] = false
+							}
+						},
+						[5] = {
+							[1] = {
+								["force_fragment_key"] = "kho_minos_1",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "kho_warshrine",
+								["hidden_fragment"] = false
+							}
+						},
+						[6] = {
+							[1] = {
+								["force_fragment_key"] = "kho_letters_3",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "kho_warriors_3",
+								["hidden_fragment"] = false
+							}
+						},
+						[7] = {
+							[1] = {
+								["force_fragment_key"] = "kho_fleshhounds_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "kho_furies_2",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "kho_doom_keep_boss",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_kho_exalted_bloodthirster",
+						["commander_key"] = "kho_exalted_bloodthirster"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh3_main_kho_bloody_sword",
+					[2] = "wh3_main_kho_karneths_sons",
+					[3] = "wh3_main_kho_brazen_throne",
+					[4] = "wh3_main_kho_crimson_skull"
+				}
+			},
 			["nor_mammoth_norm"] = {
 				["base_difficulty"] = 0,
 				["force_fragment_set"] = {
@@ -13677,7 +14241,7 @@ return {
 				["force_fragment_set"] = {
 					["mandatory_fragments"] = {
 						[1] = {
-							["force_fragment_key"] = "skv_slaves_4",
+							["force_fragment_key"] = "skv_slaves_3",
 							["hidden_fragment"] = false
 						},
 						[2] = {
@@ -13786,7 +14350,7 @@ return {
 				["force_fragment_set"] = {
 					["mandatory_fragments"] = {
 						[1] = {
-							["force_fragment_key"] = "skv_slaves_4",
+							["force_fragment_key"] = "skv_slaves_3",
 							["hidden_fragment"] = false
 						},
 						[2] = {
@@ -13974,7 +14538,7 @@ return {
 				["force_fragment_set"] = {
 					["mandatory_fragments"] = {
 						[1] = {
-							["force_fragment_key"] = "skv_slaves_4",
+							["force_fragment_key"] = "skv_slaves_3",
 							["hidden_fragment"] = false
 						},
 						[2] = {
@@ -14380,6 +14944,112 @@ return {
 					[3] = "wh3_main_sla_subtle_torture"
 				}
 			},
+			["sla_doom_keep_boss"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "sla_marauders_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "sla_ex_daemonette_2",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "sla_doom_keep_boss",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "sla_warriors_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "sla_forsaken_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "sla_chosen_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "sla_fiends_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "sla_daemonette_3",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "sla_warriors_3",
+								["hidden_fragment"] = false
+							}
+						},
+						[4] = {
+							[1] = {
+								["force_fragment_key"] = "sla_daemonette_3",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "sla_warriors_3",
+								["hidden_fragment"] = false
+							}
+						},
+						[5] = {
+							[1] = {
+								["force_fragment_key"] = "sla_seekers_1",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "sla_hellflayer",
+								["hidden_fragment"] = false
+							}
+						},
+						[6] = {
+							[1] = {
+								["force_fragment_key"] = "sla_ex_seeker_chariot_1",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "sla_warshrine",
+								["hidden_fragment"] = false
+							}
+						},
+						[7] = {
+							[1] = {
+								["force_fragment_key"] = "sla_cultist_norm",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "sla_daemonette_1",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "sla_doom_keep_boss",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_sla_exalted_keeper_of_secrets_shadow",
+						["commander_key"] = "sla_exalted_keeper_of_secrets_shadow"
+					},
+					[2] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_sla_exalted_keeper_of_secrets_slaanesh",
+						["commander_key"] = "sla_exalted_keeper_of_secrets_sla"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh3_main_sla_exquisite_pain",
+					[2] = "wh3_main_sla_rapturous_excess",
+					[3] = "wh3_main_sla_subtle_torture"
+				}
+			},
 			["sla_marauder_horde_easy"] = {
 				["base_difficulty"] = 0,
 				["force_fragment_set"] = {
@@ -14579,6 +15249,138 @@ return {
 					[15] = "wh_main_nor_aesling"
 				}
 			},
+			["nur_doom_keep_boss"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "nurglings_3",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "nur_doom_keep_boss",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "nur_plaguebearer_3",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "nur_warriors_3",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "nur_forsaken_3",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "nur_plaguebearer_3",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "nur_warriors_3",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "nur_forsaken_3",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "nur_plaguebearer_3",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "nur_warriors_3",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "nur_forsaken_3",
+								["hidden_fragment"] = false
+							}
+						},
+						[4] = {
+							[1] = {
+								["force_fragment_key"] = "nur_ex_plaguebearer_1",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "nur_chosen_1",
+								["hidden_fragment"] = false
+							}
+						},
+						[5] = {
+							[1] = {
+								["force_fragment_key"] = "nur_beast_1",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "nur_warshrine",
+								["hidden_fragment"] = false
+							}
+						},
+						[6] = {
+							[1] = {
+								["force_fragment_key"] = "nur_drones_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "nur_pox_rider_2",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "nur_knights_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[7] = {
+							[1] = {
+								["force_fragment_key"] = "nur_chosen_1",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "nur_beast_1",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "nur_ex_plaguebearer_1",
+								["hidden_fragment"] = false
+							}
+						},
+						[8] = {
+							[1] = {
+								["force_fragment_key"] = "nur_flies_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "nur_toads_2",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "nur_doom_keep_boss",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_nur_exalted_great_unclean_one_death",
+						["commander_key"] = "nur_exalted_great_unclean_one_death"
+					},
+					[2] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_nur_exalted_great_unclean_one_nurgle",
+						["commander_key"] = "nur_exalted_great_unclean_one_nur"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh3_main_nur_septic_claw",
+					[2] = "wh3_main_nur_bubonic_swarm",
+					[3] = "wh3_main_nur_maggoth_kin"
+				}
+			},
 			["nur_dae_easy"] = {
 				["base_difficulty"] = 0,
 				["force_fragment_set"] = {
@@ -14653,6 +15455,120 @@ return {
 					[1] = "wh3_main_nur_septic_claw",
 					[2] = "wh3_main_nur_bubonic_swarm",
 					[3] = "wh3_main_nur_maggoth_kin"
+				}
+			},
+			["tze_doom_keep_boss"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "tze_ex_flamers_1",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "tze_doom_keep_boss",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "tze_horrors_1_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "tze_warriors_3",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "tze_horrors_1_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "tze_forsaken_3",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "tze_ex_pink_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "tze_chosen_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[4] = {
+							[1] = {
+								["force_fragment_key"] = "tze_chosen_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "tze_flamers_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[5] = {
+							[1] = {
+								["force_fragment_key"] = "tze_doom_knight_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "tze_burning_chariots_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[6] = {
+							[1] = {
+								["force_fragment_key"] = "tze_furies_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "tze_screamers_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[7] = {
+							[1] = {
+								["force_fragment_key"] = "tze_cultist_norm",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "tze_spawn_1",
+								["hidden_fragment"] = false
+							}
+						},
+						[8] = {
+							[1] = {
+								["force_fragment_key"] = "tze_furies_1",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "tze_screamers_1",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "tze_doom_keep_boss",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_tze_exalted_lord_of_change_metal",
+						["commander_key"] = "tze_exalted_lord_of_change_metal"
+					},
+					[2] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_tze_exalted_lord_of_change_tzeentch",
+						["commander_key"] = "tze_exalted_lord_of_change_tze"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh3_main_tze_all_seeing_eye",
+					[2] = "wh3_main_tze_sarthoraels_watchers",
+					[3] = "wh3_main_tze_broken_wheel",
+					[4] = "wh3_main_tze_flaming_scribes",
+					[5] = "wh3_dlc20_tze_the_sightless"
 				}
 			},
 			["sla_dae_easy"] = {
@@ -15049,7 +15965,7 @@ return {
 								["hidden_fragment"] = false
 							},
 							[2] = {
-								["force_fragment_key"] = "nur_cultist_easy",
+								["force_fragment_key"] = "nurglings_3",
 								["hidden_fragment"] = false
 							}
 						}
@@ -15706,12 +16622,20 @@ return {
 				},
 				["generated_gate_increments"] = {
 					[1] = {
-						["INTRO_WEST"] = 1,
-						["INTRO_EAST"] = 1
+						[1] = {
+							["INTRO_WEST"] = 1
+						},
+						[2] = {
+							["INTRO_EAST"] = 1
+						}
 					},
 					[2] = {
-						["INTRO_NORTH"] = 1,
-						["INTRO_SOUTH"] = 1
+						[1] = {
+							["INTRO_SOUTH"] = 1
+						},
+						[2] = {
+							["INTRO_NORTH"] = 1
+						}
 					}
 				},
 				["key"] = "START_BATTLE_COMPLETE"
@@ -17076,7 +18000,10 @@ return {
 				[5] = "skv_pestilens_easy"
 			},
 			["intro_boss_battle"] = {
-
+				[1] = "kho_doom_keep_boss",
+				[2] = "tze_doom_keep_boss",
+				[3] = "nur_doom_keep_boss",
+				[4] = "sla_doom_keep_boss"
 			},
 			["starting_enemies"] = {
 				[1] = "starting_battle_kho",

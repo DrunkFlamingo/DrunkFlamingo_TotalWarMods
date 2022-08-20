@@ -299,5 +299,33 @@ return {
 		["FORCE_KEY"] = "nur_dae_easy",
 		["COMMANDER_SET"] = "nur_herald_of_nurgle",
 		["BASE_DIFFICULTY"] = ""
+	},
+	[44] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["FACTION_SET"] = "kho_minor_factions",
+		["FORCE_KEY"] = "kho_doom_keep_boss",
+		["COMMANDER_SET"] = "kho_exalted_bloodthirster",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[45] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["FACTION_SET"] = "tze_minor_factions",
+		["FORCE_KEY"] = "tze_doom_keep_boss",
+		["COMMANDER_SET"] = "tze_exalted_lord_of_change",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[46] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["FACTION_SET"] = "nur_minor_factions",
+		["FORCE_KEY"] = "nur_doom_keep_boss",
+		["COMMANDER_SET"] = "nur_exalted_great_unclean_one",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[47] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["FACTION_SET"] = "sla_minor_factions",
+		["FORCE_KEY"] = "sla_doom_keep_boss",
+		["COMMANDER_SET"] = "sla_exalted_keeper_of_secrets",
+		["BASE_DIFFICULTY"] = ""
 	}
 }

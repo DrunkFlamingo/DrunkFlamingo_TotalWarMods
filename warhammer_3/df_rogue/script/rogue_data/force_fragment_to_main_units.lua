@@ -4762,5 +4762,47 @@ return {
 		["UPE_SET"] = "",
 		["MAIN_UNIT_KEY"] = "wh_main_grn_cav_orc_boar_boy_big_uns",
 		["LIST_INDEX"] = "MANDATORY"
+	},
+	[795] = {
+		["FORCE_FRAGMENT_KEY"] = "skv_slaves_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh2_main_skv_inf_skavenslave_spearmen_0",
+		["LIST_INDEX"] = "1"
+	},
+	[796] = {
+		["FORCE_FRAGMENT_KEY"] = "skv_slaves_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh2_main_skv_inf_skavenslaves_0",
+		["LIST_INDEX"] = "1"
+	},
+	[797] = {
+		["FORCE_FRAGMENT_KEY"] = "skv_slaves_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh2_main_skv_inf_skavenslave_spearmen_0",
+		["LIST_INDEX"] = "2"
+	},
+	[798] = {
+		["FORCE_FRAGMENT_KEY"] = "skv_slaves_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh2_main_skv_inf_skavenslaves_0",
+		["LIST_INDEX"] = "2"
+	},
+	[799] = {
+		["FORCE_FRAGMENT_KEY"] = "skv_slaves_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh2_main_skv_inf_skavenslave_spearmen_0",
+		["LIST_INDEX"] = "3"
+	},
+	[800] = {
+		["FORCE_FRAGMENT_KEY"] = "skv_slaves_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh2_main_skv_inf_skavenslaves_0",
+		["LIST_INDEX"] = "3"
+	},
+	[801] = {
+		["FORCE_FRAGMENT_KEY"] = "skv_slaves_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh2_main_skv_inf_skavenslave_slingers_0",
+		["LIST_INDEX"] = "3"
 	}
 }

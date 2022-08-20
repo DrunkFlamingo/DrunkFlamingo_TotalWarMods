@@ -162,5 +162,21 @@ return {
 	[41] = {
 		["FORCE_KEY"] = "nur_dae_easy",
 		["FORCE_SET_KEY"] = "nur_dae_easy"
+	},
+	[42] = {
+		["FORCE_KEY"] = "kho_doom_keep_boss",
+		["FORCE_SET_KEY"] = "intro_boss_battle"
+	},
+	[43] = {
+		["FORCE_KEY"] = "tze_doom_keep_boss",
+		["FORCE_SET_KEY"] = "intro_boss_battle"
+	},
+	[44] = {
+		["FORCE_KEY"] = "nur_doom_keep_boss",
+		["FORCE_SET_KEY"] = "intro_boss_battle"
+	},
+	[45] = {
+		["FORCE_KEY"] = "sla_doom_keep_boss",
+		["FORCE_SET_KEY"] = "intro_boss_battle"
 	}
 }

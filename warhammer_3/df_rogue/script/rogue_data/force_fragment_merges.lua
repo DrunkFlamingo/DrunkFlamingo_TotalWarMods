@@ -338,5 +338,15 @@ return {
 		["CHILD_FRAGMENT"] = "emp_mortar",
 		["PARENT_FRAGMENT"] = "emp_basic_arty",
 		["MERGE_BEHAVIOUR"] = "SHIFT_MANDATORY"
+	},
+	[69] = {
+		["CHILD_FRAGMENT"] = "kho_fleshhounds_2",
+		["PARENT_FRAGMENT"] = "kho_fleshhounds_4",
+		["MERGE_BEHAVIOUR"] = "COMBINE"
+	},
+	[70] = {
+		["CHILD_FRAGMENT"] = "kho_fleshhounds_2",
+		["PARENT_FRAGMENT"] = "kho_fleshhounds_4",
+		["MERGE_BEHAVIOUR"] = "COMBINE"
 	}
 }

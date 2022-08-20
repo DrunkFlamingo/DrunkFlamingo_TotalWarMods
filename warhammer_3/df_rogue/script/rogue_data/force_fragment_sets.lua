@@ -457,5 +457,17 @@ return {
 	},
 	[153] = {
 		["FORCE_FRAGMENT_SET"] = "reward_tze_any_common"
+	},
+	[154] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss"
+	},
+	[155] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss"
+	},
+	[156] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss"
+	},
+	[157] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss"
 	}
 }

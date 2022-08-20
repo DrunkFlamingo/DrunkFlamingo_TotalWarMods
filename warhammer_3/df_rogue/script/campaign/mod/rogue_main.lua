@@ -211,9 +211,14 @@ end
 ---@param event_names string|string[]
 ---@param call fun(context:any)
 ---@param name string
-local function game_event_callback(event_names, call, name, time)
+---@param optional_context_preserver string[]
+local function game_event_callback(event_names, call, name, time, optional_context_preserver)
     if type(event_names) == "string" then
         event_names = {event_names}
+    end
+    if time and not optional_context_preserver then
+        out("Warning: game_event_callback called with time but no context_preserver")
+        out("This may or may not cause the context to be garbage collected before it has a chance to be used.")
     end
     for i = 1, #event_names do
         local event = event_names[i]
@@ -223,9 +228,19 @@ local function game_event_callback(event_names, call, name, time)
             event,
             function(context) return true end,
             function(context) 
+                local perserved_context 
+                if optional_context_preserver then
+                    perserved_context = {}
+                    for j = 1, #optional_context_preserver do
+                        local val = context[optional_context_preserver[j]](context)
+                        perserved_context[optional_context_preserver[j]] = function(_)
+                            return val
+                        end
+                    end
+                end
                 out("Event callback for "..event)
                 game_callback(function()
-                    call(context)
+                    call(perserved_context or context)
                 end, time or 0, listener_name)
             end, true)
         out("Added game event callback "..listener_name)
@@ -304,6 +319,15 @@ local DILEMMA_CHOICE_KEYS = {
     "FOURTH"
 } ---@type DILEMMA_CHOICE_KEY[]
 
+---@param index integer
+local function dilemma_choice_key_for_choice_index(index)
+    return (({
+        [0] = "FIRST",
+        [1] = "SECOND",
+        [2] = "THIRD",
+        [3] = "FOURTH"
+    })[index]) or ""
+end
 ---@class ROGUE_DATA_COMMANDER_ENTRY
 local template_commander_entry = {
     commander_key = "", ---@type string
@@ -346,7 +370,7 @@ local template_force_entry = {
 local template_progress_payload = {
     key = "", ---@type string
     mandatory_gate_increments = {}, ---@type table<string, integer>
-    generated_gate_increments = {}---@type table<string, integer>
+    generated_gate_increments = {}---@type (table<string, integer>)[][]
 }
 
 
@@ -412,7 +436,8 @@ local template_reward_entry = {
 ---@class ROGUE_MOD_DATABASE
 local template_mod_database = {
     forces = {}, ---@type table<string, ROGUE_DATA_FORCE_TEMPLATE>
-    force_sets = {}, ---@type string[]
+    force_sets = {}, ---@type table<string, string[]>
+    force_set_upgrades = {}, ---@type table<string, string>
     encounters = {}, ---@type table<string, ROGUE_DATA_ENCOUNTER_ENTRY>
     choice_detail = {}, ---@type ROGUE_DATA_CHOICE_DETAIL_ENTRY[]
     reward_sets = {}, ---@type table<string, ROGUE_DATA_REWARD_ENTRY[]>
@@ -421,7 +446,8 @@ local template_mod_database = {
     progress_gates = {}, ---@type table<string, ROGUE_DATA_PROGRESS_GATE_ENTRY>
     progress_payloads = {}, ---@type table<string, ROGUE_DATA_PROGRESS_PAYLOAD_ENTRY>
     force_fragment_sets = {}, ---@type table<string, ROGUE_DATA_FRAGMENT_SET_ENTRY>
-    force_fragments = {} ---@type table<string, ROGUE_DATA_FRAGMENT_ENTRY>
+    force_fragments = {}, ---@type table<string, ROGUE_DATA_FRAGMENT_ENTRY>
+    armory_part_sets = {} ---@type table<string, ROGUE_DATA_ARMORY_PART_SET_ENTRY>
 }
 
 
@@ -477,7 +503,7 @@ local pending_forced_encounters = {} ---@type GENERATED_ENCOUNTER[]
 persist_table("pending_forced_encounters", pending_forced_encounters,  function(t) pending_forced_encounters = t end)
 
 local pending_rewards = {
-    dilemma = nil, ---@type CAMPAIGN_DILEMMA_BUILDER_SCRIPT_INTERFACE|nil
+    choice_detail_armory_parts = {}, ---@type table<string, string[]>
     armory_parts = {} ---@type string[]
 }
 persist_table("pending_rewards", pending_rewards,  function(t) pending_rewards = t end)
@@ -495,20 +521,27 @@ end
 ---@return ROGUE_DATA_UNIT_ENTRY_LIST
 local function generate_units_from_force_fragment(fragment)
     local unit_list = {}
+    local value = 0
     add_list_into_list(unit_list, fragment.mandatory_units)
     out("Fragment had "..#fragment.mandatory_units.." mandatory units")
     local gen_slots = fragment.generated_unit_slots
     out("Fragment had "..#gen_slots.." generated unit slots")
     for i = 1, #gen_slots do
         local slot_options = gen_slots[i]
-        table.insert(unit_list, slot_options[cm:random_number(#slot_options)])
+        if #slot_options > 0 then
+            table.insert(unit_list, slot_options[cm:random_number(#slot_options)])
+        else
+            out("Generated slot  "..i.." had no options")
+        end
     end
     return unit_list 
 end
 ---@param fragment_set ROGUE_DATA_FRAGMENT_SET_ENTRY 
----@return ROGUE_DATA_UNIT_ENTRY_LIST
-local function generate_unit_list_from_force_fragment_set(fragment_set)
+---@param get_fragment_value boolean|nil
+---@return ROGUE_DATA_UNIT_ENTRY_LIST, integer
+local function generate_unit_list_from_force_fragment_set(fragment_set, get_fragment_value)
     out("Generating unit list for fragment set: "..fragment_set.key)
+    local value = 0
     local unit_list = {}
     local mandatory_fragments = fragment_set.mandatory_fragments
     out("Adding "..#mandatory_fragments.." mandatory fragments")
@@ -524,14 +557,23 @@ local function generate_unit_list_from_force_fragment_set(fragment_set)
     out(" Adding "..#generated_fragments.." generated fragment slots")
     for i = 1, #generated_fragments do
         local fragment_options = generated_fragments[i]
-        local fragment_set_member = fragment_options[cm:random_number(#fragment_options)]
         tab_log(1)
-        out("Adding fragment: "..fragment_set_member.force_fragment_key)
-        local fragment = mod_database.force_fragments[fragment_set_member.force_fragment_key]
-        add_list_into_list(unit_list, generate_units_from_force_fragment(fragment))
+        if #fragment_options > 0 then
+            local fragment_set_member = fragment_options[cm:random_number(#fragment_options)]
+            out("Adding fragment: "..tostring(fragment_set_member.force_fragment_key))
+            local fragment = mod_database.force_fragments[fragment_set_member.force_fragment_key]
+            add_list_into_list(unit_list, generate_units_from_force_fragment(fragment))
+        else
+            out("Generated fragment slot "..i.." had no options")
+        end
         untab_log(1)
     end
-    return unit_list 
+    if get_fragment_value then
+        for i = 1, #unit_list do
+            value = value + get_unit_value(unit_list[i].unit_key)
+        end
+    end
+    return unit_list, value
 end
 
 
@@ -546,12 +588,14 @@ local function add_reward_component_to_payload(payload, reward_component)
     --add units to the payload
     local fragment_set_key = reward_component.force_fragment_set
     local fragment_set = mod_database.force_fragment_sets[fragment_set_key]
+    local value = 0
     local units_to_add = {}
     if fragment_set then
-        local unit_list = generate_unit_list_from_force_fragment_set(fragment_set)
+        local unit_list, unit_list_value = generate_unit_list_from_force_fragment_set(fragment_set)
         for i = 1, #unit_list do
             local unit = unit_list[i]
             units_to_add[unit.unit_key] = (units_to_add[unit.unit_key] or 0) + 1
+            value = value + get_unit_value(unit.unit_key)
         end
     else
         out("No fragment set for this payload")
@@ -559,6 +603,7 @@ local function add_reward_component_to_payload(payload, reward_component)
     for unit_to_add, quantity in pairs(units_to_add) do
         payload:add_unit(player.force, unit_to_add, quantity, 0)
     end
+    out("Units added had value: "..tostring(value))
     --TODO, the rest of the reward shit.
 end
 
@@ -621,6 +666,103 @@ local function generate_reward_dilemma(dilemma)
 end
 
 ---comment
+---@param armory_part_set ROGUE_DATA_ARMORY_PART_SET_ENTRY
+---@param num_items any
+---@return table|unknown
+local function generate_armory_part_reward_from_set(armory_part_set, num_items)
+    out("Generating "..tostring(num_items).." armory part rewards from set: "..armory_part_set.key)
+    local already_owned_items = player.owned_items or {}
+    local items_to_reward = {}
+    local valid_reward_items = {}
+    for i = 1, #armory_part_set.mandatory_parts do
+        local armory_part = armory_part_set.mandatory_parts[i]
+        if not already_owned_items[armory_part] then
+            table.insert(valid_reward_items, armory_part)
+        end
+    end
+    local generated_part_options = armory_part_set.generated_part_slots
+    local selected_part_list = generated_part_options[cm:random_number(#generated_part_options)]
+    for i = 1, #selected_part_list do
+        local armory_part = selected_part_list[i]
+        if not already_owned_items[armory_part] then
+            table.insert(valid_reward_items, armory_part)
+        end
+    end
+    if #valid_reward_items < num_items then
+        out("Asked for "..tostring(num_items).." items, but only "..tostring(#valid_reward_items).." are available")
+        local additional_parts_needed = num_items - #valid_reward_items
+        local upgrade = mod_database.armory_part_sets[armory_part_set.upgrade_when_exhausted]
+        if upgrade then
+            local additional_parts =  generate_armory_part_reward_from_set(upgrade, additional_parts_needed)
+            out("Got "..tostring(#additional_parts).." additional parts from upgrade")
+            add_list_into_list(valid_reward_items, additional_parts)
+        else
+            out("No upgrade available for this set")
+        end
+    else
+        out("Found sufficient parts which are not yet owned!")
+    end
+    for i = 1, num_items do
+        local item = valid_reward_items[cm:random_number(#valid_reward_items)]
+        table.insert(items_to_reward, item)
+    end
+    return items_to_reward
+end
+
+---@param choice_key string
+---@param choice_details ROGUE_DATA_CHOICE_DETAIL_ENTRY
+---@return string[]
+local function generate_armory_item_rewards_for_dilemma_choice(choice_key, choice_details)
+    out("Generating reward payload for choice: " .. choice_key)
+    local reward_items = {}
+    --add mandatory rewards
+    out("Generating "..#choice_details.mandatory_reward_components.." mandatory components")
+    for i = 1, #choice_details.mandatory_reward_components do
+        local mandatory_reward_component = choice_details.mandatory_reward_components[i]
+        tab_log(1)
+        --TODO replace 3 with something data driven
+        local items = generate_armory_part_reward_from_set(mandatory_reward_component.armory_part_set, 3)
+        add_list_into_list(reward_items, items)
+        untab_log(1)
+    end
+    --add generated rewards
+    out("Generating "..#choice_details.generated_reward_components.." generated components")
+    for i = 1, #choice_details.generated_reward_components do
+        local generated_component_options = choice_details.generated_reward_components[i]
+        local selected_reward_component = generated_component_options[cm:random_number(#generated_component_options)]
+        tab_log(1)
+        --TODO replace 3 with something data driven
+        local items = generate_armory_part_reward_from_set(selected_reward_component.armory_part_set, 3)
+        add_list_into_list(reward_items, items)
+        untab_log(1)
+    end
+    return reward_items
+end
+
+
+---comment
+---@param dilemma string
+---@return table<string, string[]>
+local function generate_armory_item_rewards_for_dilemma(dilemma)
+    out("generating armory items for dilemma: " .. dilemma)
+    local dilemma_details = mod_database.reward_dilemma_choice_details[dilemma]
+    local armory_item_rewards = {}
+    tab_log(1)
+    for i = 1, #DILEMMA_CHOICE_KEYS do
+        local choice_key = DILEMMA_CHOICE_KEYS[i]
+        local choice_details = dilemma_details[choice_key]
+        if choice_details then
+            local armory_items = generate_armory_item_rewards_for_dilemma_choice(choice_key, choice_details)
+            if not armory_items or #armory_items == 0 then
+                out("No armory items for choice "..choice_key)
+            else
+                armory_item_rewards[choice_key] = armory_items
+            end
+        end
+    end
+    untab_log(1)
+    return armory_item_rewards
+end
 
 
 ---TODO make a template for the reward_set table
@@ -628,12 +770,13 @@ end
 ---comment
 
 ---@param encounter_key string
----@return CAMPAIGN_DILEMMA_BUILDER_SCRIPT_INTERFACE|nil
-local function generate_reward_dilemma_for_encounter(encounter_key)
+---@return CAMPAIGN_DILEMMA_BUILDER_SCRIPT_INTERFACE|nil, table<string, string[]>|nil, string[]|nil
+local function generate_reward_for_encounter(encounter_key)
     local encounter = mod_database.encounters[encounter_key]
     local reward_sets = mod_database.reward_sets[encounter.reward_set]
     if not reward_sets then
-        return nil
+        out("No reward sets for encounter: "..encounter_key)
+        return nil, nil, nil
     end
     out("generating reward for encounter "..encounter.key.." with reward set "..encounter.reward_set)
     tab_log(1)
@@ -647,17 +790,18 @@ local function generate_reward_dilemma_for_encounter(encounter_key)
         out("dilemma "..reward.dilemma.." is valid")
     end
     untab_log(1)
-    local selected_dilemma = reward_sets[cm:random_number(#reward_sets)].dilemma
+    local selected_dilemma = dilemma_options[cm:random_number(#dilemma_options)]
     out("selected dilemma "..selected_dilemma)
     local reward_dilemma = generate_reward_dilemma(selected_dilemma) 
+    --TODO item rewards attached directly to reward sets
+
+    local armory_item_choice_rewards = generate_armory_item_rewards_for_dilemma(selected_dilemma)
+
     untab_log(1)
-    return reward_dilemma
+    return reward_dilemma, armory_item_choice_rewards, {}
 end
 
----@return string[]
-local function generate_reward_armory_item_choice_for_encounter(encounter)
-    return {"wh3_main_dae_cha_daemon_prince_arm_r_armoured_2", "wh3_main_dae_cha_daemon_prince_legs_beast_7"}
-end
+
 
 
 ---SECTION: GENERATION FUNCTIONS FOR ENEMIES
@@ -748,6 +892,10 @@ local function generate_encounter(encounter_key, is_forced_encounter)
     local force = generate_force(selected_force_key)
     encounter.force = force ---@type GENERATED_FORCE
 
+    --set encounter difficulty default value, the actual difficulty is calculated by check_active_encounter_difficulty_and_upgrade_or_destroy 
+    --This is so that the difficulty update happens after the player recieves rewards, because difficulty is based on the value balance between the player and enemy army.
+
+
     --TODO battle type
     out("DEV/ BATTLE TYPE NOT IMPLEMENTED YET, DEFAULTS TO LAND_ATTACK")
     encounter.battle_type = "LAND_ATTACK" ---@type string
@@ -760,6 +908,139 @@ local function generate_encounter(encounter_key, is_forced_encounter)
     untab_log(1)
     return encounter
 end
+
+---@param encounter_entry GENERATED_ENCOUNTER
+---@param new_force_set string
+local function upgrade_encounter(encounter_entry, new_force_set)
+    local encounter_data = mod_database.encounters[encounter_entry.key] ---@type ROGUE_DATA_ENCOUNTER_ENTRY
+    --TODO regenerate the force for the encounter using the force set upgrade 
+    --create a force for the encounter
+    local force_set = mod_database.force_sets[new_force_set]
+    out("Selecting a force from "..#force_set.." options")
+    local selected_force_key = force_set[cm:random_number(#force_set)]
+    local force = generate_force(selected_force_key)
+    encounter_entry.force = force ---@type GENERATED_FORCE
+end
+
+
+---SECTION: EVENT HANDLERS
+
+local function update_player()
+    local force_value = 0 
+    local owned_units = {}
+    local unit_list = {}
+    local player_force = player.force 
+    --we start this loop at 1 because the first unit is the player's general
+    --the encounter force's value doesn't count their general, so we don't count the player's either
+    for i = 1, player_force:unit_list():num_items() - 1 do
+        local unit = player_force:unit_list():item_at(i)
+        local unit_key = unit:unit_key()
+        table.insert(unit_list, unit_key)
+        if not owned_units[unit_key] then
+            owned_units[unit_key] = 0
+        end
+        owned_units[unit_key] = owned_units[unit_key] + 1
+        force_value = force_value + get_unit_value(unit_key)
+    end
+    player.force_value = force_value
+    player.owned_units = owned_units
+    player.unit_list = unit_list
+
+    local player_character = player.character
+    local player_armory = player_character:family_member():armory()
+    local already_owned_items = {} ---@type table<string, boolean>
+    for i = 1, #player_armory:get_currently_registered_armory_items() do
+        local item = player_armory:get_currently_registered_armory_items()[i]
+        already_owned_items[item] = true
+    end
+    player.owned_items = already_owned_items
+end
+
+local difficulty_destruction_threshold = 0.9 ---too easy, needs upgrading
+local difficulty_1_threshold = 1.1
+local difficulty_2_threshold = 1.25
+local difficulty_3_threshold = 1.4 --above this is too hard, prints a warning to the balance log
+
+local function adjust_difficulty_thresholds_for_campaign_difficulty()
+    --TODO consider this shit.
+end
+
+---when called recursively, do_not_upgrade should be true to prevent infinite loops
+---@param region_key string
+---@param generated_encounter GENERATED_ENCOUNTER
+---@param update_difficulty_only boolean
+---@return boolean
+local function update_encounter_difficulty(region_key, generated_encounter, update_difficulty_only)
+    out("Updating difficulty and considering upgrades and destruction for encounter "..generated_encounter.key.." in region "..region_key)
+    local encounter_data = mod_database.encounters[generated_encounter.key]
+    local encounter_force = generated_encounter.force
+    local encounter_value = encounter_force.value
+    local player_value = player.force_value
+    local has_other_encounters = false
+    for k, v in pairs(active_encounters) do
+        if k ~= region_key then
+            has_other_encounters = true
+            break
+        end
+    end
+    local strength_ratio = encounter_value/player_value
+    out("Player value is "..player_value.." and encounter value is "..encounter_value)
+    out("Ratio is "..(encounter_value/player_value))
+    if (not update_difficulty_only) and strength_ratio < difficulty_destruction_threshold then
+        --if encounter_data.is_plot_essential then
+        if  false then
+            out("Encounter "..generated_encounter.key.." is plot essential, not upgrading or destroying.")
+        elseif not has_other_encounters then
+            out("Encounter "..generated_encounter.key.." is too easy, and there are no other encounters, not upgrading or destroying.")
+        else
+            out("Encounter "..generated_encounter.key.." is not plot essential, upgrading or destroying.")
+            local force_set_upgrade = mod_database.force_set_upgrades[encounter_data.force_set]
+            if force_set_upgrade then
+                out("Upgrading encounter "..generated_encounter.key)
+                upgrade_encounter(generated_encounter, force_set_upgrade)
+                return true
+            else
+                out("Destroying encounter "..generated_encounter.key)
+                active_encounters[region_key] = nil
+                return false
+            end
+        end
+    elseif strength_ratio < difficulty_1_threshold then
+        generated_encounter.difficulty = 1
+    elseif strength_ratio < difficulty_2_threshold then
+        generated_encounter.difficulty = 2
+    elseif strength_ratio < difficulty_3_threshold then
+        generated_encounter.difficulty = 3
+    else
+        generated_encounter.difficulty = 4
+        out("WARNING: Encounter "..generated_encounter.key.." is likely too difficult for the player, difficulty is set to 4")
+
+        if not has_other_encounters then
+            out("WARNING: There are no other encounters, The player is likely FUCKED.")
+        end
+    end
+
+    return false
+end
+
+
+
+local function check_active_encounter_difficulty_and_upgrade_or_destroy()
+    --TODO check if an encounter is still difficult enough by comparing the value of the force attached to it with the value of the players' force.
+    --[[
+        When encounter_value < player_value * 0.9, upgrade or destroy.
+        Never destroy encounters which are marked as plot essential.
+    ]]
+    for region_key, generated_encounter in pairs(active_encounters) do
+        local was_upgraded = update_encounter_difficulty(region_key, generated_encounter)
+        if was_upgraded then 
+            update_encounter_difficulty(region_key, generated_encounter, true)
+        end
+    end
+        
+    send_encounters_to_ui()
+end
+
 
 local function progress_gate_activated(progress_gate)
     out("Progress gate "..progress_gate.." activated!")
@@ -807,27 +1088,23 @@ local function increment_progress_gate_progress(progress_gate, increment)
     end
 end
 
----SECTION: EVENT HANDLERS
+
 
 local function on_encounter_completed(encounter_key)
-    local encounter_data = mod_database.encounters[encounter_key]
+    update_player()
 
-    local encounter_reward_dilemma = generate_reward_dilemma_for_encounter(encounter_key)
+    local encounter_data = mod_database.encounters[encounter_key]
+    local encounter_reward_dilemma, choice_armory_lists, armory_list = generate_reward_for_encounter(encounter_key)
     if encounter_reward_dilemma then
         out("Generated a reward dilemma for encounter "..encounter_key)
     else
         out("No reward dilemma generated for encounter "..encounter_key)
-        out("The rewards for this encounter will not function")
     end
-    local armory_item_options = generate_reward_armory_item_choice_for_encounter(encounter_key)
-    if #armory_item_options > 0 then
-        out("Generated "..#armory_item_options.." reward armory items for encounter "..encounter_key)
-    end
+    --TODO pend armory rewards
     pending_rewards = {
-        dilemma = encounter_reward_dilemma,
-        armory_parts = armory_item_options
+        choice_detail_armory_parts = choice_armory_lists,
+        armory_parts = armory_list
     }
-    send_rewards_to_ui()
 
     --remove the encounter from the active encounters list
     local region = encounter_data.region
@@ -845,10 +1122,18 @@ local function on_encounter_completed(encounter_key)
         increment_progress_gate_progress(gate_key, increment)
     end
     local optional_gates = progress_payload.generated_gate_increments
-    local random_payload = optional_gates[cm:random_number(#optional_gates)]
-    for gate_key, increment in pairs(random_payload) do
-        increment_progress_gate_progress(gate_key, increment)
+    if #optional_gates > 0 then
+        for i = 1, #optional_gates do
+            local selection_set = optional_gates[i]
+            local selected_gate = selection_set[cm:random_number(#selection_set)]
+            for key, increment in pairs(selected_gate) do
+                increment_progress_gate_progress(key, increment)
+            end
+        end
     end
+
+    --TODO if encounter only contains armory parts, then trigger the armory reward dialogue immediately and return nil
+
 
     return encounter_reward_dilemma
 end
@@ -888,6 +1173,8 @@ local function grant_starting_reward()
     else
         local random_reward_dilemma = start_reward_set[cm:random_number(#start_reward_set)]
         local reward_dilemma = generate_reward_dilemma(random_reward_dilemma.dilemma)
+        local armory_item_choice_rewards = generate_armory_item_rewards_for_dilemma(random_reward_dilemma.dilemma)
+        pending_rewards.choice_detail_armory_parts = armory_item_choice_rewards
         out("Firing the new game reward dilemma: "..random_reward_dilemma.dilemma)
         cm:launch_custom_dilemma_from_builder(reward_dilemma, player.faction)  
     end           
@@ -895,6 +1182,7 @@ end
 
 
 local function create_event_handlers()
+    --after the post battle option is clicked, check if there are rewards to claim and fire them.
     game_event_callback({"CharacterPostBattleCaptureOption", "CharacterPostBattleEnslave", 
     "CharacterPerformsSettlementOccupationDecision", "CharacterPostBattleRelease", "CharacterPostBattleSlaughter"},
     function (context)
@@ -904,14 +1192,33 @@ local function create_event_handlers()
             if dilemma_builder then
                 out("Launching reward dilemma: "..type(dilemma_builder))
                 cm:launch_custom_dilemma_from_builder(dilemma_builder, player.faction)
+            else
+                out("No reward dilemma to launch")
+                game_callback(check_active_encounter_difficulty_and_upgrade_or_destroy, 0.1, "CheckEncounterDifficultyPostReward")
+                local items = {}
+                add_list_into_list(items, pending_rewards.armory_parts)
+                if #items > 0 then
+                    pending_rewards.armory_parts = items
+                    core:trigger_event("DisplayArmoryRewardDialogue")
+                else
+                    --TODO force an encounter if one is pending
+                end
             end
         end
-    end, "PlayerCompletedEncounterBattle", 0.5)
+    end, "PlayerCompletedEncounterBattle", 0.5, {})
+
     game_event_callback("DilemmaChoiceMadeEvent", function (context)
-        if #pending_rewards.armory_parts > 0 then
+        local choice_key = context:choice_key()
+        update_player()
+        local items = {}
+        add_list_into_list(items, pending_rewards.armory_parts or {})
+        add_list_into_list(items, pending_rewards.choice_detail_armory_parts[choice_key] or {})
+        if #items > 0 then
+            pending_rewards.armory_parts = items
             core:trigger_event("DisplayArmoryRewardDialogue")
         end
-    end, "PlayerCompletedDilemma", 0.5)
+        game_callback(check_active_encounter_difficulty_and_upgrade_or_destroy, 0.1, "CheckEncounterDifficultyPostReward")
+    end, "PlayerCompletedDilemma", 0.5, {"choice_key"})
 end
 
 
@@ -1177,6 +1484,8 @@ function start_ui()
     ui_click_callback("button_finalize_armory_reward", function (context)
         ui_command("grant_armory_item", common.get_context_value("CcoScriptObject", "rogue_reward_dialogue_selection", "StringValue"))
         common.set_context_value("rogue_reward_dialogue_selection", "")
+        pending_rewards.armory_parts = {}
+        pending_rewards.choice_detail_armory_parts = {}
         destroy_armory_reward_dialogue()
     end)
 
@@ -1330,7 +1639,7 @@ local function test_encounter_force_generation(encounter_key, tries)
     log_file:close()
 end
 
-local function output_force_statistics(depth)
+local function test_forces(depth)
     local force_results = {}
     for key, _ in pairs(mod_database.forces) do
         local ok, err = pcall(function ()
@@ -1357,13 +1666,17 @@ local function output_force_statistics(depth)
             end
             local average_value = total_value / depth
             local average_units = total_units / depth
+            local value_variance = ((highest_value - average_value) / average_value) * 100
+            local unit_variance = ((highest_units - average_units) / average_units) * 100
             force_results[key] = {
                 average_value = average_value,
                 average_units = average_units,
                 highest_value = highest_value,
                 highest_units = highest_units,
                 lowest_value = lowest_value,
-                lowest_units = lowest_units
+                lowest_units = lowest_units,
+                value_variance = value_variance,
+                unit_variance = unit_variance
             }
                         
         end)
@@ -1377,10 +1690,10 @@ local function output_force_statistics(depth)
         return
     end
     local had_results = false
-    log_file:write("force_key\taverage_value\taverage_units\thighest_value\thighest_units\tlowest_value\tlowest_units\n")
+    log_file:write("force_key\taverage_value\taverage_units\thighest_value\thighest_units\tlowest_value\tlowest_units\tvalue_variance\tunit_variance\n")
     for force_key, results in pairs(force_results) do
         had_results = true
-        log_file:write(force_key.."\t"..results.average_value.."\t"..results.average_units.."\t"..results.highest_value.."\t"..results.highest_units.."\t"..results.lowest_value.."\t"..results.lowest_units.."\n")
+        log_file:write(force_key.."\t"..results.average_value.."\t"..results.average_units.."\t"..results.highest_value.."\t"..results.highest_units.."\t"..results.lowest_value.."\t"..results.lowest_units.."\t"..results.value_variance.."\t"..results.unit_variance.."\n")
     end
     if not had_results then
         log_file:write("No results in the results table :C")
@@ -1391,15 +1704,18 @@ end
 
 local function test_reward_option(dilemma, choice)
     local value = 0
+    local unit_count = 0
     local choice_details = mod_database.reward_dilemma_choice_details[dilemma]
     local this_choice = choice_details[choice]
     out("Unit rewards for "..choice..": ")
     tab_log(1)
+    --TODO, if we add generated components to starting rewards, we need to expand this function.
     for i = 1, #this_choice.mandatory_reward_components do
         local component = this_choice.mandatory_reward_components[i]
         out("Mandatory Reward Component: "..component.force_fragment_set)
         local fragment_set = mod_database.force_fragment_sets[component.force_fragment_set]
         local unit_list = generate_unit_list_from_force_fragment_set(fragment_set)
+        unit_count = unit_count + #unit_list
         for j = 1, #unit_list do
             local unit = unit_list[j]
             out(unit.unit_key)
@@ -1408,42 +1724,124 @@ local function test_reward_option(dilemma, choice)
                 value = value + unit_value
             else
                 out("ERROR - unit value not found for "..unit.unit_key)
-
             end
         end
     end
     untab_log(1)
-    out("Total value for this reward option: "..value)
+    out("Total value for this reward option: "..value.." total count of units: "..unit_count)
+    return value, unit_count
 end
 
-local function test_starting_armies()
+local function test_starting_armies(depth)
     local player_character = mod_database.player_characters[player.name]
     local start_reward_set = mod_database.reward_sets[player_character.start_reward_set]
     out("Testing starting armies for player "..player.name)
     tab_log(1)
+    local start_army_results = {}
     for i = 1, #start_reward_set do
-        local reward = start_reward_set[i]
-        out("Reward: "..reward.dilemma)
-        tab_log(1)
-        local choice_details = mod_database.reward_dilemma_choice_details[reward.dilemma]
-        for choice_key, choice_detail in pairs(choice_details) do
-            test_reward_option(reward.dilemma, choice_key)
+        local ok, err = pcall(function ()
+            local reward = start_reward_set[i]
+            out("Reward: "..reward.dilemma)
+            start_army_results[reward.dilemma] = {}
+            tab_log(1)
+            local choice_details = mod_database.reward_dilemma_choice_details[reward.dilemma]
+            for choice_key, choice_detail in pairs(choice_details) do
+                local total_value = 0
+                local total_units = 0
+                local highest_value = 0
+                local highest_units = 0
+                local lowest_value = 999999
+                local lowest_units = 999999
+                for _ = 1, depth do
+                    local value, unit_count = test_reward_option(reward.dilemma, choice_key)
+                    total_value = total_value + value
+                    if value > highest_value then
+                        highest_value = value
+                    elseif value < lowest_value then
+                        lowest_value = value
+                    end
+                    total_units = total_units + unit_count
+                    if unit_count > highest_units then
+                        highest_units = unit_count
+                    elseif unit_count < lowest_units then
+                        lowest_units = unit_count
+                    end
+                end
+                local average_value = total_value / depth
+                local average_units = total_units / depth
+                local value_variance = ((highest_value - average_value) / average_value) * 100
+                local unit_variance = ((highest_units - average_units) / average_units) * 100
+                start_army_results[reward.dilemma][choice_key] = {
+                    average_value = average_value,
+                    average_units = average_units,
+                    highest_value = highest_value,
+                    highest_units = highest_units,
+                    lowest_value = lowest_value,
+                    lowest_units = lowest_units,
+                    value_variance = value_variance,
+                    unit_variance = unit_variance
+                }
+            end
+            untab_log(1)
+        end)
+        if not ok then
+            out("Error generating reward "..tostring(start_reward_set[i].dilemma)..": "..tostring(err))
         end
-        untab_log(1)
     end
     untab_log(1)
+    local log_file = io.open("starting_army_statistics.tsv", "w+")
+    if not log_file then
+        out("ERROR - unable to open force_statistics.tsv for writing!")
+        return
+    end
+    local had_results = false
+    log_file:write("reward_key\taverage_value\taverage_units\thighest_value\thighest_units\tlowest_value\tlowest_units\tvalue_variance\tunit_variance\n")
+    for dilemma_key, choice_results in pairs(start_army_results) do
+        for choice_key, results in pairs(choice_results) do
+            had_results = true
+            log_file:write(dilemma_key.."_"..choice_key.."\t"..results.average_value.."\t"..results.average_units.."\t"..results.highest_value.."\t"..results.highest_units.."\t"..results.lowest_value.."\t"..results.lowest_units.."\t"..results.value_variance.."\t"..results.unit_variance.."\n")
+        end
+        had_results = true
+    end
+    if not had_results then
+        log_file:write("No results in the results table :C")
+    end
+    log_file:flush()
+    log_file:close()
+    reset_log_tab()
+end
+
+local function force_complete_encounter(encounter_key)
+    if encounter_key then
+        local dilemma_builder = on_encounter_completed(encounter_key)
+        if dilemma_builder then
+            out("Launching reward dilemma: "..type(dilemma_builder))
+            cm:launch_custom_dilemma_from_builder(dilemma_builder, player.faction)
+        else
+            out("No reward dilemma to launch")
+            game_callback(check_active_encounter_difficulty_and_upgrade_or_destroy, 0.1, "CheckEncounterDifficultyPostReward")
+            local items = {}
+            add_list_into_list(items, pending_rewards.armory_parts)
+            if #items > 0 then
+                pending_rewards.armory_parts = items
+                core:trigger_event("DisplayArmoryRewardDialogue")
+            else
+                --TODO force an encounter if one is pending
+            end
+        end
+    end
 end
 
 rogue_console = {
     get_or_create_army_panel = get_or_create_army_panel,
     get_or_create_armory_reward_dialogue = get_or_create_armory_reward_dialogue,
     generate_and_print_force_with_key = generate_and_print_force_with_key,
-    output_force_statistics = output_force_statistics,
+    test_forces = test_forces,
     test_encounter_force_generation = test_encounter_force_generation,
     test_starting_armies = test_starting_armies,
     generate_encounter = generate_encounter,
     commence_encounter = commence_encounter,
-    on_encounter_completed = on_encounter_completed
+    force_complete_encounter = force_complete_encounter
 }
 
 ---section: disabled commands

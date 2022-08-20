@@ -521,7 +521,7 @@ return {
 		["FORCE_FRAGMENT_SET"] = "start_army_dae_nurgle",
 		["SELECTION_SET"] = "2",
 		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "nurglings_3",
+		["FORCE_FRAGMENT_KEY"] = "nurglings_4",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[76] = {
@@ -668,7 +668,7 @@ return {
 		["FORCE_FRAGMENT_SET"] = "start_army_chs_undivided_quantity",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "chs_marauders_4",
+		["FORCE_FRAGMENT_KEY"] = "chs_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[97] = {
@@ -701,14 +701,14 @@ return {
 	},
 	[101] = {
 		["FORCE_FRAGMENT_SET"] = "start_army_chs_undivided_quantity",
-		["SELECTION_SET"] = "2",
+		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "chs_warhounds_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[102] = {
 		["FORCE_FRAGMENT_SET"] = "start_army_chs_undivided_quantity",
-		["SELECTION_SET"] = "2",
+		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "chs_marauder_horse_2",
 		["HIDE_FRAGMENT"] = "false"
@@ -2838,7 +2838,7 @@ return {
 		["FORCE_FRAGMENT_SET"] = "skv_moulder_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "skv_slaves_4",
+		["FORCE_FRAGMENT_KEY"] = "skv_slaves_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[407] = {
@@ -2873,7 +2873,7 @@ return {
 		["FORCE_FRAGMENT_SET"] = "skv_moulder_norm",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "skv_slaves_4",
+		["FORCE_FRAGMENT_KEY"] = "skv_slaves_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[412] = {
@@ -2943,7 +2943,7 @@ return {
 		["FORCE_FRAGMENT_SET"] = "skv_pestilens_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "skv_slaves_4",
+		["FORCE_FRAGMENT_KEY"] = "skv_slaves_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[422] = {
@@ -4392,7 +4392,7 @@ return {
 		["FORCE_FRAGMENT_SET"] = "nur_chosen_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "nur_cultist_easy",
+		["FORCE_FRAGMENT_KEY"] = "nurglings_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[629] = {
@@ -4631,6 +4631,503 @@ return {
 		["SELECTION_SET"] = "4",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_plaguebearer_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[663] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_ex_letters_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[664] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_knights_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[665] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_bloodcrusher_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[666] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_chosen_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[667] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_ex_letters_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[668] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_chosen_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[669] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_ex_letters_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[670] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_spawn_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[671] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "4",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_warriors_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[672] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "4",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_forsaken_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[673] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "5",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_minos_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[674] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "5",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_warshrine",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[675] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "6",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_letters_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[676] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "6",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_warriors_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[677] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "7",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_fleshhounds_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[678] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "7",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_furies_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[679] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_ex_flamers_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[680] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_horrors_1_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[681] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_warriors_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[682] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_horrors_1_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[683] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_forsaken_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[684] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_ex_pink_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[685] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_chosen_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[686] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "4",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_chosen_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[687] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "4",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_flamers_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[688] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "5",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_doom_knight_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[689] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "5",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_burning_chariots_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[690] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "6",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_furies_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[691] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "6",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_screamers_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[692] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "7",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_cultist_norm",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[693] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "7",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_spawn_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[694] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "8",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_furies_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[695] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
+		["SELECTION_SET"] = "8",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "tze_screamers_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[696] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nurglings_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[697] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_plaguebearer_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[698] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_warriors_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[699] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_forsaken_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[700] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_plaguebearer_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[701] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_warriors_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[702] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_forsaken_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[703] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_plaguebearer_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[704] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_warriors_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[705] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_forsaken_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[706] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "4",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_ex_plaguebearer_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[707] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "4",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_chosen_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[708] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "5",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_beast_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[709] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "5",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_warshrine",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[710] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "6",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_drones_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[711] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "6",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_pox_rider_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[712] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "6",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_knights_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[713] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "7",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_chosen_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[714] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "7",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_beast_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[715] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "7",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_ex_plaguebearer_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[716] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "8",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_flies_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[717] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "8",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_toads_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[718] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_marauders_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[719] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_warriors_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[720] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_forsaken_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[721] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_chosen_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[722] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_fiends_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[723] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_ex_daemonette_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[724] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_daemonette_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[725] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_warriors_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[726] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "4",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_daemonette_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[727] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "4",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_warriors_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[728] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "5",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_seekers_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[729] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "5",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_hellflayer",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[730] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "6",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_ex_seeker_chariot_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[731] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "6",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_warshrine",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[732] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "7",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_cultist_norm",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[733] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "7",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_daemonette_1",
 		["HIDE_FRAGMENT"] = "false"
 	}
 }

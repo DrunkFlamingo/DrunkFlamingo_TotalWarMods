@@ -25,7 +25,11 @@ local selection_set_enum = {
     "2",
     "3",
     "4",
-    "5"
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
 }
 
 local merge_behaviour_validation = {
@@ -350,6 +354,8 @@ function rogue_daniel_loader.load_all_data()
             --skip this row, its blank.
         elseif MOD_DATABASE.commander_sets[this_row.COMMANDER_SET] == nil then
             error("Invalid Commander Set key ["..this_row.COMMANDER_SET.."] on row "..row_index.." of forces")
+        elseif #MOD_DATABASE.commander_sets[this_row.COMMANDER_SET] == 0 then
+            error("Commander Set ["..this_row.COMMANDER_SET.."] is used on row "..row_index.." of forces but has no commanders")
         elseif MOD_DATABASE.faction_sets[this_row.FACTION_SET] == nil then
             error("Invalid Faction Set key ["..this_row.FACTION_SET.."] on row "..row_index.." of forces")
         elseif not MOD_DATABASE.force_fragment_sets[this_row.FORCE_FRAGMENT_SET] then
@@ -512,7 +518,7 @@ function rogue_daniel_loader.load_all_data()
         local this_row = reward_dilemma_choice_details_data[i]
         --[[REWARD_DILEMMA: string]]
         --[[DILEMMA_CHOICE_KEY: string]]
-        --[[SELECTION_SET: selection_sets]]
+        --[[SELECTION_SET: selection_set_enum]]
         --[[COSTS_RESOURCE: string]]
         --[[COSTS: string->number]]
         --[[FORCE_FRAGMENT_SET: force_fragment_sets]]

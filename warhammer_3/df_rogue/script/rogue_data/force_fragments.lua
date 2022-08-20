@@ -1598,5 +1598,15 @@ return {
 		["FORCE_FRAGMENT_KEY"] = "grn_boar_biguns_2",
 		["DIFFICULTY_DELTA"] = "",
 		["LOCALISED_NAME"] = ""
+	},
+	[321] = {
+		["FORCE_FRAGMENT_KEY"] = "skv_slaves_3",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[322] = {
+		["FORCE_FRAGMENT_KEY"] = "kho_fleshhounds_4",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
 	}
 }
