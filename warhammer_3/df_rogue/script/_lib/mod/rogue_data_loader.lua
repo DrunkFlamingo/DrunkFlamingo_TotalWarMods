@@ -506,7 +506,8 @@ function rogue_daniel_loader.load_all_data()
             else
                 MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD].generated_gate_increments[list_index] = 
                 MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD].generated_gate_increments[list_index] or {}
-                MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD].generated_gate_increments[list_index][this_row.PROGRESS_GATE] = tonumber(this_row.INCREMENT) or 0
+                table.insert(MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD].generated_gate_increments[list_index],
+                {[this_row.PROGRESS_GATE] = tonumber(this_row.INCREMENT) or 0})
             end
         end
     end
@@ -627,6 +628,7 @@ function rogue_daniel_loader.load_all_data()
         --[[FORCED_AT_PROGRESS_GATE: progress_gates]]
         --[[DISPLACED_AT_PROGRESS_GATE: progress_gates]]
         --[[PROGRESS_GATE_SELECTION_SET: selection_set_enum]]
+        --[[PLOT_ESSENTIAL: string->boolean]]
         --[[PROGRESS_PAYLOAD: progress_payloads]]
         --[[DURATION: string->number]]
         --[[REWARD_SET: reward_sets]]
@@ -653,9 +655,10 @@ function rogue_daniel_loader.load_all_data()
                 progress_payload = this_row.PROGRESS_PAYLOAD,
                 duration = tonumber(this_row.DURATION) or 0,
                 reward_set = this_row.REWARD_SET,
-                boss_overlay = this_row.BOSS_OVERLAY == "TRUE",
+                boss_overlay = this_row.BOSS_OVERLAY == "true",
                 post_battle_dilemma_override = this_row.POST_BATTLE_DILEMMA_OVERRIDE,
-                inciting_incident_key = this_row.INCITING_INCIDENT_KEY
+                inciting_incident_key = this_row.INCITING_INCIDENT_KEY,
+                plot_essential = this_row.PLOT_ESSENTIAL == "true"
             }
             MOD_DATABASE.encounters[this_row.ENCOUNTER_KEY] = encounter
             if this_row.GENERATED_AT_PROGRESS_GATE ~= "NEVER" then
@@ -693,9 +696,88 @@ function rogue_daniel_loader.load_all_data()
         end
     end
 
+    --loop through all of the places where selection sets are used, and make sure they are valid lua vectors (ie no gaps in integer index counts)
+    --Those are:
+    --[[
+        armory_part_sets
+        progress_payloads
+        reward_dilemma_choice_details
+        force_fragments
+        force_fragment_sets
+    ]]
+    local selection_set_gap_warnings = {}
+    local function set_gap_warn(t)
+        table.insert(selection_set_gap_warnings, t)
+    end
+    for key, armory_part_set in pairs(MOD_DATABASE.armory_part_sets) do
+        local gaps = {}
+        for i = 1, #armory_part_set.generated_part_slots do
+            if not armory_part_set.generated_part_slots[i] then
+                table.insert(gaps, i)
+            end
+        end
+        for gap = 1, #gaps do
+            local i = gaps[gap]
+            set_gap_warn("armory part set "..key.." has a gap in its index count, at index "..i)
+            table.remove(armory_part_set.generated_part_slots, i)
+        end
+    end
+    for key, progress_payload in pairs(MOD_DATABASE.progress_payloads) do
+        local gaps = {}
+        for i = 1, #progress_payload.generated_gate_increments do
+            if not progress_payload.generated_gate_increments[i] then
+                table.insert(gaps, i)
+            end
+        end
+        for gap = 1, #gaps do
+            local i = gaps[gap]
+            set_gap_warn("progress payload "..key.." has a gap in its index count, at index "..i)
+            table.remove(progress_payload.generated_gate_increments, i)
+        end
+    end
+    for key, dilemma_choice_details in pairs(MOD_DATABASE.reward_dilemma_choice_details) do
+        for choice_key, choice_detail in pairs(dilemma_choice_details) do
+            local gaps = {}
+            for i = 1, #choice_detail.generated_reward_components do
+                if not choice_detail.generated_reward_components[i] then
+                    table.insert(gaps, i)
+                end
+            end
+            for gap = 1, #gaps do
+                local i = gaps[gap]
+                set_gap_warn("reward dilemma choice detail "..key.." has a gap in its index count, at index "..i)
+                table.remove(choice_detail.generated_reward_components, i)
+            end
+        end
+    end
+    for key, force_fragment in pairs(MOD_DATABASE.force_fragments) do
+        local gaps = {}
+        for i = 1, #force_fragment.generated_unit_slots do
+            if not force_fragment.generated_unit_slots[i] then
+                table.insert(gaps, i)
+            end
+        end
+        for gap = 1, #gaps do
+            local i = gaps[gap]
+            set_gap_warn("force fragment "..key.." has a gap in its index count, at index "..i)
+            table.remove(force_fragment.generated_unit_slots, i)
+        end
+    end
+    for key, force_fragment_set in pairs(MOD_DATABASE.force_fragment_sets) do
+        local gaps = {}
+        for i = 1, #force_fragment_set.generated_fragment_slots do
+            if not force_fragment_set.generated_fragment_slots[i] then
+                table.insert(gaps, i)
+            end
+        end
+        for gap = 1, #gaps do
+            local i = gaps[gap]
+            set_gap_warn("force fragment set "..key.." has a gap in its index count, at index "..i)
+            table.remove(force_fragment_set.generated_fragment_slots, i)
+        end
+    end
 
-
-    return MOD_DATABASE, n_skipped_encounters, skipped_encounters
+    return MOD_DATABASE, n_skipped_encounters, skipped_encounters, selection_set_gap_warnings
 end
 
 function rogue_daniel_loader.verify_all_data(MOD_DATABASE)

@@ -385,6 +385,7 @@ local template_encounter_entry = {
     inciting_incident_key = "", ---@type string
     post_battle_dilemma_override = "", ---@type string
     battle_type = "LAND_ATTACK", ---@type ROGUE_BATTLE_TYPE
+    plot_essential = false, ---@type boolean
     force_set = {} ---@type string[]
 }
 
@@ -451,16 +452,29 @@ local template_mod_database = {
 }
 
 
-local mod_database, skips, skipped_encounters = rogue_daniel_loader.load_all_data() ---@type ROGUE_MOD_DATABASE
-if skips > 0 then
-    local err_string = "Loaded data but skipped "..skips.." encounters: "
+local mod_database, ---@type ROGUE_MOD_DATABASE
+ skips, ---@type integer
+  skipped_encounters, ---@type table<string, string>
+   selection_set_gap_warnings ---@type string[]
+   = rogue_daniel_loader.load_all_data() 
+local err_string = ""
+if skips > 0  then
+    err_string = "\tSkipped "..skips.." encounters: "
     for key, reason in pairs(skipped_encounters) do
-        err_string = err_string .. key .. ": " .. reason .. "\n"
+        err_string = err_string .. "\t\t".. key .. ": " .. reason .. "\n"
     end
-    out(err_string)
-else
-    out("Loaded all encounter data successfully")
 end
+if #selection_set_gap_warnings > 0 then
+    err_string = err_string .. "\tFound selection set gaps: " .. "\n"
+    for i = 1, #selection_set_gap_warnings do
+        err_string = err_string .. "\t\t".. selection_set_gap_warnings[i] .. "\n"
+    end
+end
+if err_string ~= "" then
+    err_string = "Loaded data, but with warnings: \n" .. err_string
+    out(err_string)
+end
+
 local player = {}
 
 if not Forced_Battle_Manager then
@@ -702,9 +716,11 @@ local function generate_armory_part_reward_from_set(armory_part_set, num_items)
     else
         out("Found sufficient parts which are not yet owned!")
     end
-    for i = 1, num_items do
-        local item = valid_reward_items[cm:random_number(#valid_reward_items)]
+    for _ = 1, num_items do
+        local i = cm:random_number(#valid_reward_items)
+        local item = valid_reward_items[i]
         table.insert(items_to_reward, item)
+        table.remove(valid_reward_items, i)
     end
     return items_to_reward
 end
@@ -841,6 +857,11 @@ local function generate_force(force_key)
     else
         force.unit_string = force.units[1].unit_key
         for i = 2, #force.units do
+            if i > 19 then
+                out("WARNING: Force has more than 20 units!")
+                out("Omitting the rest of the units.")
+                break
+            end
             local unit = force.units[i]
             force.unit_string = force.unit_string..","..unit.unit_key
             force.value = force.value + get_unit_value(unit.unit_key)
@@ -927,6 +948,7 @@ end
 
 local function update_player()
     local force_value = 0 
+    local potential_value = 0
     local owned_units = {}
     local unit_list = {}
     local player_force = player.force 
@@ -940,9 +962,11 @@ local function update_player()
             owned_units[unit_key] = 0
         end
         owned_units[unit_key] = owned_units[unit_key] + 1
-        force_value = force_value + get_unit_value(unit_key)
+        potential_value = potential_value + get_unit_value(unit_key)
+        force_value = force_value + (get_unit_value(unit_key) * (unit:percentage_proportion_of_full_strength()/100))
     end
     player.force_value = force_value
+    player.potential_value = potential_value
     player.owned_units = owned_units
     player.unit_list = unit_list
 
@@ -956,7 +980,7 @@ local function update_player()
     player.owned_items = already_owned_items
 end
 
-local difficulty_destruction_threshold = 0.9 ---too easy, needs upgrading
+local difficulty_destruction_threshold = 0.85 ---too easy, needs upgrading
 local difficulty_1_threshold = 1.1
 local difficulty_2_threshold = 1.25
 local difficulty_3_threshold = 1.4 --above this is too hard, prints a warning to the balance log
@@ -976,6 +1000,7 @@ local function update_encounter_difficulty(region_key, generated_encounter, upda
     local encounter_force = generated_encounter.force
     local encounter_value = encounter_force.value
     local player_value = player.force_value
+    local player_potential = player.potential_value
     local has_other_encounters = false
     for k, v in pairs(active_encounters) do
         if k ~= region_key then
@@ -984,11 +1009,11 @@ local function update_encounter_difficulty(region_key, generated_encounter, upda
         end
     end
     local strength_ratio = encounter_value/player_value
-    out("Player value is "..player_value.." and encounter value is "..encounter_value)
+    local potential_strength_ratio = encounter_value/player_potential
+    out("Player value is "..player_value..", player potential value is "..player_potential.." and encounter value is "..encounter_value)
     out("Ratio is "..(encounter_value/player_value))
-    if (not update_difficulty_only) and strength_ratio < difficulty_destruction_threshold then
-        --if encounter_data.is_plot_essential then
-        if  false then
+    if (not update_difficulty_only) and potential_strength_ratio < difficulty_destruction_threshold then
+        if encounter_data.plot_essential then
             out("Encounter "..generated_encounter.key.." is plot essential, not upgrading or destroying.")
         elseif not has_other_encounters then
             out("Encounter "..generated_encounter.key.." is too easy, and there are no other encounters, not upgrading or destroying.")
@@ -1013,9 +1038,8 @@ local function update_encounter_difficulty(region_key, generated_encounter, upda
         generated_encounter.difficulty = 3
     else
         generated_encounter.difficulty = 4
-        out("WARNING: Encounter "..generated_encounter.key.." is likely too difficult for the player, difficulty is set to 4")
-
         if not has_other_encounters then
+            out("WARNING: Encounter "..generated_encounter.key.." is likely too difficult for the player, difficulty is set to 4")
             out("WARNING: There are no other encounters, The player is likely FUCKED.")
         end
     end
@@ -1131,7 +1155,7 @@ local function on_encounter_completed(encounter_key)
             end
         end
     end
-
+    send_encounters_to_ui()
     --TODO if encounter only contains armory parts, then trigger the armory reward dialogue immediately and return nil
 
 
@@ -1640,48 +1664,53 @@ local function test_encounter_force_generation(encounter_key, tries)
 end
 
 local function test_forces(depth)
+    if not depth then
+        depth = 5
+    end
     local force_results = {}
     for key, _ in pairs(mod_database.forces) do
-        local ok, err = pcall(function ()
-            local total_value = 0
-            local total_units = 0
-            local highest_value = 0
-            local highest_units = 0
-            local lowest_value = 999999
-            local lowest_units = 999999
-            for _ = 1, depth do
-                local value, unit_count = generate_and_print_force_with_key(key)
-                total_value = total_value + value
-                if value > highest_value then
-                    highest_value = value
-                elseif value < lowest_value then
-                    lowest_value = value
+        if key ~= "SPECIAL_MIRROR" then 
+            local ok, err = pcall(function ()
+                local total_value = 0
+                local total_units = 0
+                local highest_value = 0
+                local highest_units = 0
+                local lowest_value = 999999
+                local lowest_units = 999999
+                for _ = 1, depth do
+                    local value, unit_count = generate_and_print_force_with_key(key)
+                    total_value = total_value + value
+                    if value > highest_value then
+                        highest_value = value
+                    elseif value < lowest_value then
+                        lowest_value = value
+                    end
+                    total_units = total_units + unit_count
+                    if unit_count > highest_units then
+                        highest_units = unit_count
+                    elseif unit_count < lowest_units then
+                        lowest_units = unit_count
+                    end
                 end
-                total_units = total_units + unit_count
-                if unit_count > highest_units then
-                    highest_units = unit_count
-                elseif unit_count < lowest_units then
-                    lowest_units = unit_count
-                end
-            end
-            local average_value = total_value / depth
-            local average_units = total_units / depth
-            local value_variance = ((highest_value - average_value) / average_value) * 100
-            local unit_variance = ((highest_units - average_units) / average_units) * 100
-            force_results[key] = {
-                average_value = average_value,
-                average_units = average_units,
-                highest_value = highest_value,
-                highest_units = highest_units,
-                lowest_value = lowest_value,
-                lowest_units = lowest_units,
-                value_variance = value_variance,
-                unit_variance = unit_variance
-            }
+                local average_value = total_value / depth
+                local average_units = total_units / depth
+                local value_variance = ((highest_value - average_value) / average_value) * 100
+                local unit_variance = ((highest_units - average_units) / average_units) * 100
+                force_results[key] = {
+                    average_value = average_value,
+                    average_units = average_units,
+                    highest_value = highest_value,
+                    highest_units = highest_units,
+                    lowest_value = lowest_value,
+                    lowest_units = lowest_units,
+                    value_variance = value_variance,
+                    unit_variance = unit_variance
+                }
                         
-        end)
-        if not ok then
-            out("Error generating force "..tostring(key)..": "..tostring(err))
+            end)
+            if not ok then
+                out("Error generating force "..tostring(key)..": "..tostring(err))
+            end
         end
     end
     local log_file = io.open("force_statistics.tsv", "w+")
@@ -1733,6 +1762,9 @@ local function test_reward_option(dilemma, choice)
 end
 
 local function test_starting_armies(depth)
+    if not depth then
+        depth = 5
+    end
     local player_character = mod_database.player_characters[player.name]
     local start_reward_set = mod_database.reward_sets[player_character.start_reward_set]
     out("Testing starting armies for player "..player.name)
