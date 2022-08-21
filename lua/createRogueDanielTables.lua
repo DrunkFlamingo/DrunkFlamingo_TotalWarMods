@@ -36,10 +36,13 @@ local rogue_daniel_file_inputs = {
     "faction_sets_to_factions",
     "force_fragment_to_main_units",
     "force_fragments",
+    "force_fragment_merges",
     "force_set_to_forces",
     "force_sets",
+    "force_set_merges",
     "force_fragment_sets",
     "force_fragment_sets_to_force_fragments",
+    "force_fragment_set_merges",
     "forces",
     "player_characters",
     "progress_gates",
@@ -48,9 +51,14 @@ local rogue_daniel_file_inputs = {
     "reward_dilemma_choice_details",
     "reward_sets",
     "reward_sets_to_dilemmas",
+    "reward_set_merges",
     "upe_sets",
     "upe_sets_to_upe"
 }
+
+local function  breakpoint(...)
+    
+end
 
 --for each file, parse the TSV format and create a string representing a valid .lua table.
 --print the string to a file in the output folder.
@@ -94,13 +102,22 @@ local selection_set_enum = {
     "2",
     "3",
     "4",
-    "5"
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
 }
 local select_set_validation = {}
 for i = 1, #selection_set_enum do
     select_set_validation[selection_set_enum[i]] = true
 end
 
+local merge_behaviour_validation = {
+    ["SHIFT_MANDATORY"] = true,
+    ["COMBINE"] = true,
+    ["APPEND"] = true
+}
 
 local req_data = function (file)
     return require("output/rogue_daniel_db/"..file)
@@ -118,15 +135,15 @@ function rogue_daniel_loader.load_all_data()
             effect_bundle_lists > effect_bundle_lists_to_effect_bundles
 
             commander_sets > commanders > commander_set_to_commanders
-            force_fragments  > force_fragment_to_main_units
-            force_fragment_sets > force_fragment_sets_to_force_fragments
+            force_fragments  > force_fragment_to_main_units > force_fragment_merges
+            force_fragment_sets > force_fragment_sets_to_force_fragments -> force_fragment_set_merges
             forces 
-            force_sets > force_set_to_forces
+            force_sets > force_set_to_forces > force_set_merges
             armory_part_sets > armory_part_sets_to_armory_parts
             progress_gates 
             progress_payloads > progress_payloads_to_progress_gates
             reward_dilemma_choice_details
-            reward_sets > reward_set_to_dilemmas
+            reward_sets > reward_set_to_dilemmas > reward_set_merges
             encounters
             player_characters
     ]]
@@ -219,7 +236,7 @@ function rogue_daniel_loader.load_all_data()
         end
     end
 
-    --force_fragments  > force_fragment_to_main_units
+    --force_fragments  > force_fragment_to_main_units > force_fragment_merges
     local force_fragments_data = req_data("force_fragments")
     MOD_DATABASE.force_fragments = {}
     for row_index = 1, #force_fragments_data do
@@ -269,8 +286,50 @@ function rogue_daniel_loader.load_all_data()
             end
         end
     end
+    local force_fragment_merges_data = req_data("force_fragment_merges")
+    for row_index = 1, #force_fragment_merges_data do
+        local this_row = force_fragment_merges_data[row_index]
+        --[[PARENT_FRAGMENT: force_fragments]]
+        --[[CHILD_FRAGMENT: force_fragments]]
+        --[[MERGE_BEHAVIOUR: merge_behaviour_enum]]
+        if this_row.PARENT_FRAGMENT == "" or this_row.CHILD_FRAGMENT == "" then
+            --skip this row, its blank.
+        elseif not MOD_DATABASE.force_fragments[this_row.PARENT_FRAGMENT] then
+            error("invalid force fragment key: "..this_row.PARENT_FRAGMENT.. " on row "..row_index.." of force_fragment_merges")
+        elseif not MOD_DATABASE.force_fragments[this_row.CHILD_FRAGMENT] then
+            error("invalid force fragment key: "..this_row.CHILD_FRAGMENT.. " on row "..row_index.." of force_fragment_merges")
+        elseif not merge_behaviour_validation[this_row.MERGE_BEHAVIOUR] then
+            error("invalid merge behaviour enum: "..this_row.MERGE_BEHAVIOUR.. " on row "..row_index.." of force_fragment_merges")
+        else
+            local parent_fragment = MOD_DATABASE.force_fragments[this_row.PARENT_FRAGMENT]
+            local child_fragment = MOD_DATABASE.force_fragments[this_row.CHILD_FRAGMENT]
+            local offset_for_generated_slots = 0
+            if this_row.MERGE_BEHAVIOUR == "SHIFT_MANDATORY" then
+                for i = 1, #child_fragment.mandatory_units do
+                    offset_for_generated_slots = offset_for_generated_slots + 1
+                    parent_fragment.generated_unit_slots[i] = parent_fragment.generated_unit_slots[i] or {}
+                    table.insert(parent_fragment.generated_unit_slots[i], child_fragment.mandatory_units[i])
+                end
+            else
+                for i = 1, #child_fragment.mandatory_units do
+                    table.insert(parent_fragment.mandatory_units, child_fragment.mandatory_units[i])
+                end
+            end
+            if this_row.MERGE_BEHAVIOUR == "APPEND" then
+                offset_for_generated_slots = offset_for_generated_slots + #parent_fragment.generated_unit_slots
+            end
+            for list_index = 1, #child_fragment.generated_unit_slots do
+                local i = list_index + offset_for_generated_slots
+                parent_fragment.generated_unit_slots[i] = parent_fragment.generated_unit_slots[i] or {}
+                for j = 1, #parent_fragment.generated_unit_slots[list_index] do
+                    table.insert(parent_fragment.generated_unit_slots[i], child_fragment.generated_unit_slots[list_index][j])
+                end
+            end
+        end
+    end
+    
 
-    --force_fragment_sets > force_fragment_sets_to_force_fragments
+    --force_fragment_sets > force_fragment_sets_to_force_fragments > force_fragment_set_merges
     local force_fragment_sets_data = req_data("force_fragment_sets")
     MOD_DATABASE.force_fragment_sets = {}
     for row_index = 1, #force_fragment_sets_data do
@@ -320,8 +379,49 @@ function rogue_daniel_loader.load_all_data()
             end
         end
     end
+    local force_fragment_set_merges_data = req_data("force_fragment_set_merges")
+    for i = 1, #force_fragment_set_merges_data do
+        local this_row = force_fragment_set_merges_data[i]
+        --[[PARENT_FORCE_FRAGMENT_SET: force_fragment_sets]]
+        --[[CHILD_FORCE_FRAGMENT_SET: force_fragment_sets]]
+        --[[MERGE_BEHAVIOUR: merge_behaviour_enum]]
+        if this_row.PARENT_FORCE_FRAGMENT_SET == "" or this_row.CHILD_FORCE_FRAGMENT_SET == "" then
+            --skip this row, its blank.
+        elseif not merge_behaviour_validation[this_row.MERGE_BEHAVIOUR] then
+            error("invalid merge behaviour enum: "..this_row.MERGE_BEHAVIOUR.. " on row "..i.." of force_fragment_set_merges")
+        elseif not MOD_DATABASE.force_fragment_sets[this_row.PARENT_FORCE_FRAGMENT_SET] then
+            error("invalid parent force fragment set key: "..this_row.PARENT_FORCE_FRAGMENT_SET.. " on row "..i.." of force_fragment_set_merges")
+        elseif not MOD_DATABASE.force_fragment_sets[this_row.CHILD_FORCE_FRAGMENT_SET] then
+            error("invalid child force fragment set key: "..this_row.CHILD_FORCE_FRAGMENT_SET.. " on row "..i.." of force_fragment_set_merges")
+        else
+            local parent_fragment_set = MOD_DATABASE.force_fragment_sets[this_row.PARENT_FORCE_FRAGMENT_SET]
+            local child_fragment_set = MOD_DATABASE.force_fragment_sets[this_row.CHILD_FORCE_FRAGMENT_SET]
+            local offset_for_generated_slots = 0
+            if this_row.MERGE_BEHAVIOUR == "SHIFT_MANDATORY" then
+                for i = 1, #child_fragment_set.mandatory_fragments do
+                    offset_for_generated_slots = offset_for_generated_slots + 1
+                    parent_fragment_set.generated_fragment_slots[i] = parent_fragment_set.generated_fragment_slots[i] or {}
+                    table.insert(parent_fragment_set.generated_fragment_slots[1], child_fragment_set.mandatory_fragments[i])
+                end
+            else
+                for i = 1, #child_fragment_set.mandatory_fragments do
+                    table.insert(parent_fragment_set.mandatory_fragments, child_fragment_set.mandatory_fragments[i])
+                end
+            end
+            if this_row.MERGE_BEHAVIOUR == "APPEND" then
+                offset_for_generated_slots = offset_for_generated_slots + #parent_fragment_set.generated_fragment_slots
+            end
+            for list_index = 1, #child_fragment_set.generated_fragment_slots do
+                local i = list_index + offset_for_generated_slots
+                parent_fragment_set.generated_fragment_slots[i] = parent_fragment_set.generated_fragment_slots[i] or {}
+                for j = 1, #child_fragment_set.generated_fragment_slots[list_index] do
+                    table.insert(parent_fragment_set.generated_fragment_slots[i], child_fragment_set.generated_fragment_slots[list_index][j])
+                end
+            end
+        end
+    end
 
-    --forces > force_to_force_fragments
+    --forces 
     local forces_data = req_data("forces") 
     MOD_DATABASE.forces = {}
     for row_index = 1, #forces_data do
@@ -332,10 +432,12 @@ function rogue_daniel_loader.load_all_data()
         --[[FACTION_SET: faction_sets]]
         --[[FORCE_FRAGMENT_SET: force_fragment_sets]]
         
-        if this_row.FORCE_KEY == "" then
+        if this_row.FORCE_KEY == "" or this_row.FORCE_FRAGMENT_SET == "" then
             --skip this row, its blank.
         elseif MOD_DATABASE.commander_sets[this_row.COMMANDER_SET] == nil then
             error("Invalid Commander Set key ["..this_row.COMMANDER_SET.."] on row "..row_index.." of forces")
+        elseif #MOD_DATABASE.commander_sets[this_row.COMMANDER_SET] == 0 then
+            error("Commander Set ["..this_row.COMMANDER_SET.."] is used on row "..row_index.." of forces but has no commanders")
         elseif MOD_DATABASE.faction_sets[this_row.FACTION_SET] == nil then
             error("Invalid Faction Set key ["..this_row.FACTION_SET.."] on row "..row_index.." of forces")
         elseif not MOD_DATABASE.force_fragment_sets[this_row.FORCE_FRAGMENT_SET] then
@@ -351,13 +453,19 @@ function rogue_daniel_loader.load_all_data()
         end
     end
 
-    --force_sets > force_set_to_forces
+
+    --force_sets > force_set_to_forces > force_set_merges
     local force_sets_data = req_data("force_sets")
     MOD_DATABASE.force_sets = {}
+    MOD_DATABASE.force_set_upgrades = {}
     for i = 1, #force_sets_data do
         local this_row = force_sets_data[i]
         --[[FORCE_SET_KEY: string]]
+        ---[[UPGRADABLE_TO_SET: string]]
         MOD_DATABASE.force_sets[this_row.FORCE_SET_KEY] = {}
+        if this_row.UPGRADABLE_TO_SET ~= "" then
+            MOD_DATABASE.force_set_upgrades[this_row.FORCE_SET_KEY] = this_row.UPGRADABLE_TO_SET
+        end
     end
     local force_set_to_forces_data = req_data("force_set_to_forces")
     for i = 1, #force_set_to_forces_data do
@@ -372,6 +480,23 @@ function rogue_daniel_loader.load_all_data()
             error("invalid force key: "..this_row.FORCE_KEY.. " on row "..i.." of force_set_to_forces")
         else
             table.insert(MOD_DATABASE.force_sets[this_row.FORCE_SET_KEY], this_row.FORCE_KEY)
+        end
+    end
+    local force_set_merges_data = req_data("force_set_merges")
+    for i = 1, #force_set_merges_data do
+        local this_row = force_set_merges_data[i]
+        --[[PARENT_FORCE_SET: force_sets]]
+        --[[CHILD_FORCE_SET: force_sets]]
+        if this_row.PARENT_FORCE_SET == "" or this_row.CHILD_FORCE_SET == "" then
+            --skip this row, its blank.
+        elseif not MOD_DATABASE.force_sets[this_row.PARENT_FORCE_SET] then
+            error("invalid parent force set key: "..this_row.PARENT_FORCE_SET.. " on row "..i.." of force_set_merges")
+        elseif not MOD_DATABASE.force_sets[this_row.CHILD_FORCE_SET] then
+            error("invalid child force set key: "..this_row.CHILD_FORCE_SET.. " on row "..i.." of force_set_merges")
+        else
+            for j = 1, #MOD_DATABASE.force_sets[this_row.CHILD_FORCE_SET] do
+                table.insert(MOD_DATABASE.force_sets[this_row.PARENT_FORCE_SET], MOD_DATABASE.force_sets[this_row.CHILD_FORCE_SET][j])
+            end
         end
     end
 
@@ -463,7 +588,8 @@ function rogue_daniel_loader.load_all_data()
             else
                 MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD].generated_gate_increments[list_index] = 
                 MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD].generated_gate_increments[list_index] or {}
-                MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD].generated_gate_increments[list_index][this_row.PROGRESS_GATE] = tonumber(this_row.INCREMENT) or 0
+                table.insert(MOD_DATABASE.progress_payloads[this_row.PROGRESS_PAYLOAD].generated_gate_increments[list_index],
+                {[this_row.PROGRESS_GATE] = tonumber(this_row.INCREMENT) or 0})
             end
         end
     end
@@ -475,7 +601,7 @@ function rogue_daniel_loader.load_all_data()
         local this_row = reward_dilemma_choice_details_data[i]
         --[[REWARD_DILEMMA: string]]
         --[[DILEMMA_CHOICE_KEY: string]]
-        --[[SELECTION_SET: selection_sets]]
+        --[[SELECTION_SET: selection_set_enum]]
         --[[COSTS_RESOURCE: string]]
         --[[COSTS: string->number]]
         --[[FORCE_FRAGMENT_SET: force_fragment_sets]]
@@ -506,7 +632,9 @@ function rogue_daniel_loader.load_all_data()
                 if not list_index then
                     
                 else
-                    table.insert(MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY].generated_reward_components[this_row.SELECTION_SET], {
+                    MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY].generated_reward_components[list_index] = 
+                    MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY].generated_reward_components[list_index] or {}
+                    table.insert(MOD_DATABASE.reward_dilemma_choice_details[this_row.REWARD_DILEMMA][this_row.DILEMMA_CHOICE_KEY].generated_reward_components[list_index], {
                         costs_resource = this_row.COSTS_RESOURCE,
                         costs = this_row.COSTS,
                         force_fragment_set = this_row.FORCE_FRAGMENT_SET,
@@ -517,7 +645,7 @@ function rogue_daniel_loader.load_all_data()
         end
     end
 
-    --reward_sets > reward_set_to_dilemmas
+    --reward_sets > reward_set_to_dilemmas > reward_set_merges
     local reward_sets_data = req_data("reward_sets")
     MOD_DATABASE.reward_sets = {}
     for i = 1, #reward_sets_data do
@@ -544,6 +672,27 @@ function rogue_daniel_loader.load_all_data()
             })
         end
     end
+    local reward_set_merges_data = req_data("reward_set_merges")
+    for i = 1, #reward_set_merges_data do
+        local this_row = reward_set_merges_data[i]
+        --[[PARENT_REWARD_SET: reward_sets]]
+        --[[CHILD_REWARD_SET: reward_sets]]
+        --[[WEIGHT: string->number]]
+        if this_row.PARENT_REWARD_SET == "" or this_row.CHILD_REWARD_SET == "" then
+            --skip this row, its blank.
+        elseif not MOD_DATABASE.reward_sets[this_row.PARENT_REWARD_SET] then
+            error("invalid parent reward set key: "..this_row.PARENT_REWARD_SET.. " on row "..i.." of reward_set_merges")
+        elseif not MOD_DATABASE.reward_sets[this_row.CHILD_REWARD_SET] then
+            error("invalid child reward set key: "..this_row.CHILD_REWARD_SET.. " on row "..i.." of reward_set_merges")
+        else
+            for j = 1, #MOD_DATABASE.reward_sets[this_row.CHILD_REWARD_SET] do
+                for k = 1, (tonumber(this_row.WEIGHT) or 1) do
+                    table.insert(MOD_DATABASE.reward_sets[this_row.PARENT_REWARD_SET], MOD_DATABASE.reward_sets[this_row.CHILD_REWARD_SET][j])
+                end
+            end
+        end
+        
+    end
 
 
     --encounters
@@ -561,6 +710,7 @@ function rogue_daniel_loader.load_all_data()
         --[[FORCED_AT_PROGRESS_GATE: progress_gates]]
         --[[DISPLACED_AT_PROGRESS_GATE: progress_gates]]
         --[[PROGRESS_GATE_SELECTION_SET: selection_set_enum]]
+        --[[PLOT_ESSENTIAL: string->boolean]]
         --[[PROGRESS_PAYLOAD: progress_payloads]]
         --[[DURATION: string->number]]
         --[[REWARD_SET: reward_sets]]
@@ -587,9 +737,10 @@ function rogue_daniel_loader.load_all_data()
                 progress_payload = this_row.PROGRESS_PAYLOAD,
                 duration = tonumber(this_row.DURATION) or 0,
                 reward_set = this_row.REWARD_SET,
-                boss_overlay = this_row.BOSS_OVERLAY == "TRUE",
+                boss_overlay = this_row.BOSS_OVERLAY == "true",
                 post_battle_dilemma_override = this_row.POST_BATTLE_DILEMMA_OVERRIDE,
-                inciting_incident_key = this_row.INCITING_INCIDENT_KEY
+                inciting_incident_key = this_row.INCITING_INCIDENT_KEY,
+                plot_essential = this_row.PLOT_ESSENTIAL == "true"
             }
             MOD_DATABASE.encounters[this_row.ENCOUNTER_KEY] = encounter
             if this_row.GENERATED_AT_PROGRESS_GATE ~= "NEVER" then
@@ -627,21 +778,109 @@ function rogue_daniel_loader.load_all_data()
         end
     end
 
+    --loop through all of the places where selection sets are used, and make sure they are valid lua vectors (ie no gaps in integer index counts)
+    --Those are:
+    --[[
+        armory_part_sets
+        progress_payloads
+        reward_dilemma_choice_details
+        force_fragments
+        force_fragment_sets
+    ]]
+    local selection_set_gap_warnings = {}
+    local function set_gap_warn(t)
+        table.insert(selection_set_gap_warnings, t)
+    end
+    for key, armory_part_set in pairs(MOD_DATABASE.armory_part_sets) do
+        local gaps = {}
+        for i = 1, #armory_part_set.generated_part_slots do
+            if not armory_part_set.generated_part_slots[i] then
+                table.insert(gaps, i)
+            end
+        end
+        for gap = 1, #gaps do
+            local i = gaps[gap]
+            set_gap_warn("armory part set "..key.." has a gap in its index count, at index "..i)
+            table.remove(armory_part_set.generated_part_slots, i)
+        end
+    end
+    for key, progress_payload in pairs(MOD_DATABASE.progress_payloads) do
+        local gaps = {}
+        for i = 1, #progress_payload.generated_gate_increments do
+            if not progress_payload.generated_gate_increments[i] then
+                table.insert(gaps, i)
+            end
+        end
+        for gap = 1, #gaps do
+            local i = gaps[gap]
+            set_gap_warn("progress payload "..key.." has a gap in its index count, at index "..i)
+            table.remove(progress_payload.generated_gate_increments, i)
+        end
+    end
+    for key, dilemma_choice_details in pairs(MOD_DATABASE.reward_dilemma_choice_details) do
+        for choice_key, choice_detail in pairs(dilemma_choice_details) do
+            local gaps = {}
+            for i = 1, #choice_detail.generated_reward_components do
+                if not choice_detail.generated_reward_components[i] then
+                    table.insert(gaps, i)
+                end
+            end
+            for gap = 1, #gaps do
+                local i = gaps[gap]
+                set_gap_warn("reward dilemma choice detail "..key.." has a gap in its index count, at index "..i)
+                table.remove(choice_detail.generated_reward_components, i)
+            end
+        end
+    end
+    for key, force_fragment in pairs(MOD_DATABASE.force_fragments) do
+        local gaps = {}
+        for i = 1, #force_fragment.generated_unit_slots do
+            if not force_fragment.generated_unit_slots[i] then
+                table.insert(gaps, i)
+            end
+        end
+        for gap = 1, #gaps do
+            local i = gaps[gap]
+            set_gap_warn("force fragment "..key.." has a gap in its index count, at index "..i)
+            table.remove(force_fragment.generated_unit_slots, i)
+        end
+    end
+    for key, force_fragment_set in pairs(MOD_DATABASE.force_fragment_sets) do
+        local gaps = {}
+        for i = 1, #force_fragment_set.generated_fragment_slots do
+            if not force_fragment_set.generated_fragment_slots[i] then
+                table.insert(gaps, i)
+            end
+        end
+        for gap = 1, #gaps do
+            local i = gaps[gap]
+            set_gap_warn("force fragment set "..key.." has a gap in its index count, at index "..i)
+            table.remove(force_fragment_set.generated_fragment_slots, i)
+        end
+    end
 
-
-    return MOD_DATABASE, n_skipped_encounters, skipped_encounters
+    return MOD_DATABASE, n_skipped_encounters, skipped_encounters, selection_set_gap_warnings
 end
 
-local mod_db, skips, skipped_encounters = rogue_daniel_loader.load_all_data()
+local mod_db, skips, skipped_encounters, selection_set_gap_warnings = rogue_daniel_loader.load_all_data()
 local output_file = io.open("lua/output/rogue_daniel_db/".."test_case.lua", "w+")
 output_file:write("return ".. table_to_string(mod_db, 1))
 output_file:flush()
 output_file:close()
 --lua\output\rogue_daniel_db\forces.lua
-if skips > 0 then
-    local err_string = "Skipped "..skips.." encounters: "
+local err_string = ""
+if skips > 0  then
+    err_string = "Skipped "..skips.." encounters: "
     for key, reason in pairs(skipped_encounters) do
         err_string = err_string .. key .. ": " .. reason .. "\n"
     end
+end
+if #selection_set_gap_warnings > 0 then
+    err_string = err_string .. "Found selection set gaps: " .. "\n"
+    for i = 1, #selection_set_gap_warnings do
+        err_string = err_string .. selection_set_gap_warnings[i] .. "\n"
+    end
+end
+if err_string ~= "" then
     error(err_string)
 end

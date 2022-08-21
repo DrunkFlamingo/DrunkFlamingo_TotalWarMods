@@ -34,7 +34,8 @@ local selection_set_enum = {
 
 local merge_behaviour_validation = {
     ["SHIFT_MANDATORY"] = true,
-    ["COMBINE"] = true
+    ["COMBINE"] = true,
+    ["APPEND"] = true
 }
 
 local select_set_validation = {}
@@ -228,22 +229,25 @@ function rogue_daniel_loader.load_all_data()
             local parent_fragment = MOD_DATABASE.force_fragments[this_row.PARENT_FRAGMENT]
             local child_fragment = MOD_DATABASE.force_fragments[this_row.CHILD_FRAGMENT]
             local offset_for_generated_slots = 0
-            if this_row.MERGE_BEHAVIOUR == "COMBINE" then
+            if this_row.MERGE_BEHAVIOUR == "SHIFT_MANDATORY" then
+                for i = 1, #child_fragment.mandatory_units do
+                    offset_for_generated_slots = offset_for_generated_slots + 1
+                    parent_fragment.generated_unit_slots[i] = parent_fragment.generated_unit_slots[i] or {}
+                    table.insert(parent_fragment.generated_unit_slots[i], child_fragment.mandatory_units[i])
+                end
+            else
                 for i = 1, #child_fragment.mandatory_units do
                     table.insert(parent_fragment.mandatory_units, child_fragment.mandatory_units[i])
                 end
-            elseif this_row.MERGE_BEHAVIOUR == "SHIFT_MANDATORY" then
-                offset_for_generated_slots = 1
-                parent_fragment.generated_unit_slots[1] = parent_fragment.generated_unit_slots[1] or {}
-                for i = 1, #child_fragment.mandatory_units do
-                    table.insert(parent_fragment.generated_unit_slots[1], child_fragment.mandatory_units[i])
-                end
+            end
+            if this_row.MERGE_BEHAVIOUR == "APPEND" then
+                offset_for_generated_slots = offset_for_generated_slots + #parent_fragment.generated_unit_slots
             end
             for list_index = 1, #child_fragment.generated_unit_slots do
                 local i = list_index + offset_for_generated_slots
                 parent_fragment.generated_unit_slots[i] = parent_fragment.generated_unit_slots[i] or {}
-                for j = 1, #parent_fragment.generated_unit_slots[i] do
-                    table.insert(parent_fragment.generated_unit_slots[i], child_fragment.generated_unit_slots[i][j])
+                for j = 1, #parent_fragment.generated_unit_slots[list_index] do
+                    table.insert(parent_fragment.generated_unit_slots[i], child_fragment.generated_unit_slots[list_index][j])
                 end
             end
         end
@@ -318,22 +322,25 @@ function rogue_daniel_loader.load_all_data()
             local parent_fragment_set = MOD_DATABASE.force_fragment_sets[this_row.PARENT_FORCE_FRAGMENT_SET]
             local child_fragment_set = MOD_DATABASE.force_fragment_sets[this_row.CHILD_FORCE_FRAGMENT_SET]
             local offset_for_generated_slots = 0
-            if this_row.MERGE_BEHAVIOUR == "COMBINE" then
+            if this_row.MERGE_BEHAVIOUR == "SHIFT_MANDATORY" then
+                for i = 1, #child_fragment_set.mandatory_fragments do
+                    offset_for_generated_slots = offset_for_generated_slots + 1
+                    parent_fragment_set.generated_fragment_slots[i] = parent_fragment_set.generated_fragment_slots[i] or {}
+                    table.insert(parent_fragment_set.generated_fragment_slots[1], child_fragment_set.mandatory_fragments[i])
+                end
+            else
                 for i = 1, #child_fragment_set.mandatory_fragments do
                     table.insert(parent_fragment_set.mandatory_fragments, child_fragment_set.mandatory_fragments[i])
                 end
-            elseif this_row.MERGE_BEHAVIOUR == "SHIFT_MANDATORY" then
-                offset_for_generated_slots = 1
-                parent_fragment_set.generated_fragment_slots[1] = parent_fragment_set.generated_fragment_slots[1] or {}
-                for i = 1, #child_fragment_set.mandatory_fragments do
-                    table.insert(parent_fragment_set.generated_fragment_slots[1], child_fragment_set.mandatory_fragments[i])
-                end
+            end
+            if this_row.MERGE_BEHAVIOUR == "APPEND" then
+                offset_for_generated_slots = offset_for_generated_slots + #parent_fragment_set.generated_fragment_slots
             end
             for list_index = 1, #child_fragment_set.generated_fragment_slots do
                 local i = list_index + offset_for_generated_slots
                 parent_fragment_set.generated_fragment_slots[i] = parent_fragment_set.generated_fragment_slots[i] or {}
-                for j = 1, #parent_fragment_set.generated_fragment_slots[i] do
-                    table.insert(parent_fragment_set.generated_fragment_slots[i], child_fragment_set.generated_fragment_slots[i][j])
+                for j = 1, #child_fragment_set.generated_fragment_slots[list_index] do
+                    table.insert(parent_fragment_set.generated_fragment_slots[i], child_fragment_set.generated_fragment_slots[list_index][j])
                 end
             end
         end
