@@ -1419,7 +1419,7 @@
                             value="IsStringEmpty(ScriptObjectContext(&quot;rogue_reward_dialogue_selection&quot;).StringValue)"/>
                         <property
                             name="selected"
-                            value="Key == DatabaseRecordContext(&quot;CcoArmoryItemRecord&quot;, ScriptObjectContext(&quot;rogue_reward_dialogue_selection&quot;).StringValue)"/>
+                            value="Key == DatabaseRecordContext(&quot;CcoArmoryItemRecord&quot;, ScriptObjectContext(&quot;rogue_reward_dialogue_selection&quot;).StringValue).Key"/>
                         <property
 							name="fallback_state"
 							value="inactive"/>

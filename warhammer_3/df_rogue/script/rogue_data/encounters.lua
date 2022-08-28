@@ -8,7 +8,7 @@ return {
 		["DISPLACED_AT_PROGRESS_GATE"] = "NEVER",
 		["GENERATED_AT_PROGRESS_GATE"] = "NEW_GAME_DANIEL",
 		["FORCE_SET"] = "starting_enemies",
-		["REWARD_SET"] = "random_all_weighted",
+		["REWARD_SET"] = "random_common",
 		["DURATION"] = "0",
 		["REGION"] = "wh3_main_chaos_region_doomkeep",
 		["BOSS_OVERLAY"] = "false",

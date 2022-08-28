@@ -98,5 +98,21 @@ return {
 	[25] = {
 		["CHILD_FORCE_SET"] = "tze_any_mortal_easy",
 		["PARENT_FORCE_SET"] = "tze_or_nur_mortal_easy"
+	},
+	[26] = {
+		["CHILD_FORCE_SET"] = "emp_norm",
+		["PARENT_FORCE_SET"] = "any_old_world_human_norm"
+	},
+	[27] = {
+		["CHILD_FORCE_SET"] = "ksl_normal",
+		["PARENT_FORCE_SET"] = "any_old_world_human_norm"
+	},
+	[28] = {
+		["CHILD_FORCE_SET"] = "emp_easy",
+		["PARENT_FORCE_SET"] = "any_old_world_human_hard"
+	},
+	[29] = {
+		["CHILD_FORCE_SET"] = "ksl_hard",
+		["PARENT_FORCE_SET"] = "any_old_world_human_hard"
 	}
 }

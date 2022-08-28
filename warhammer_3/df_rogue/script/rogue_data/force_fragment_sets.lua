@@ -384,90 +384,126 @@ return {
 		["FORCE_FRAGMENT_SET"] = "emp_knights_easy"
 	},
 	[129] = {
-		["FORCE_FRAGMENT_SET"] = "emp_powder_easy"
+		["FORCE_FRAGMENT_SET"] = "emp_knights_norm"
 	},
 	[130] = {
-		["FORCE_FRAGMENT_SET"] = "kho_marauder_horde_easy"
+		["FORCE_FRAGMENT_SET"] = "emp_knights_hard"
 	},
 	[131] = {
-		["FORCE_FRAGMENT_SET"] = "kho_warband_easy"
+		["FORCE_FRAGMENT_SET"] = "emp_powder_easy"
 	},
 	[132] = {
-		["FORCE_FRAGMENT_SET"] = "kho_chosen_easy"
+		["FORCE_FRAGMENT_SET"] = "emp_powder_norm"
 	},
 	[133] = {
-		["FORCE_FRAGMENT_SET"] = "kho_knights_easy"
+		["FORCE_FRAGMENT_SET"] = "emp_powder_hard"
 	},
 	[134] = {
-		["FORCE_FRAGMENT_SET"] = "tze_marauder_horde_easy"
+		["FORCE_FRAGMENT_SET"] = "kho_marauder_horde_easy"
 	},
 	[135] = {
-		["FORCE_FRAGMENT_SET"] = "tze_warband_easy"
+		["FORCE_FRAGMENT_SET"] = "kho_warband_easy"
 	},
 	[136] = {
-		["FORCE_FRAGMENT_SET"] = "tze_chosen_easy"
+		["FORCE_FRAGMENT_SET"] = "kho_chosen_easy"
 	},
 	[137] = {
-		["FORCE_FRAGMENT_SET"] = "tze_knights_easy"
+		["FORCE_FRAGMENT_SET"] = "kho_knights_easy"
 	},
 	[138] = {
-		["FORCE_FRAGMENT_SET"] = "sla_marauder_horde_easy"
+		["FORCE_FRAGMENT_SET"] = "tze_marauder_horde_easy"
 	},
 	[139] = {
-		["FORCE_FRAGMENT_SET"] = "sla_warband_easy"
+		["FORCE_FRAGMENT_SET"] = "tze_warband_easy"
 	},
 	[140] = {
-		["FORCE_FRAGMENT_SET"] = "sla_chosen_easy"
+		["FORCE_FRAGMENT_SET"] = "tze_chosen_easy"
 	},
 	[141] = {
-		["FORCE_FRAGMENT_SET"] = "sla_knights_easy"
+		["FORCE_FRAGMENT_SET"] = "tze_knights_easy"
 	},
 	[142] = {
-		["FORCE_FRAGMENT_SET"] = "nur_marauder_horde_easy"
+		["FORCE_FRAGMENT_SET"] = "sla_marauder_horde_easy"
 	},
 	[143] = {
-		["FORCE_FRAGMENT_SET"] = "nur_warband_easy"
+		["FORCE_FRAGMENT_SET"] = "sla_warband_easy"
 	},
 	[144] = {
-		["FORCE_FRAGMENT_SET"] = "nur_chosen_easy"
+		["FORCE_FRAGMENT_SET"] = "sla_chosen_easy"
 	},
 	[145] = {
-		["FORCE_FRAGMENT_SET"] = "nur_knights_easy"
+		["FORCE_FRAGMENT_SET"] = "sla_knights_easy"
 	},
 	[146] = {
-		["FORCE_FRAGMENT_SET"] = "kho_dae_easy"
+		["FORCE_FRAGMENT_SET"] = "nur_marauder_horde_easy"
 	},
 	[147] = {
-		["FORCE_FRAGMENT_SET"] = "tze_dae_easy"
+		["FORCE_FRAGMENT_SET"] = "nur_warband_easy"
 	},
 	[148] = {
-		["FORCE_FRAGMENT_SET"] = "sla_dae_easy"
+		["FORCE_FRAGMENT_SET"] = "nur_chosen_easy"
 	},
 	[149] = {
-		["FORCE_FRAGMENT_SET"] = "nur_dae_easy"
+		["FORCE_FRAGMENT_SET"] = "nur_knights_easy"
 	},
 	[150] = {
-		["FORCE_FRAGMENT_SET"] = "reward_kho_any_common"
+		["FORCE_FRAGMENT_SET"] = "kho_dae_easy"
 	},
 	[151] = {
-		["FORCE_FRAGMENT_SET"] = "reward_nur_any_common"
+		["FORCE_FRAGMENT_SET"] = "tze_dae_easy"
 	},
 	[152] = {
-		["FORCE_FRAGMENT_SET"] = "reward_sla_any_common"
+		["FORCE_FRAGMENT_SET"] = "sla_dae_easy"
 	},
 	[153] = {
-		["FORCE_FRAGMENT_SET"] = "reward_tze_any_common"
+		["FORCE_FRAGMENT_SET"] = "nur_dae_easy"
 	},
 	[154] = {
-		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss"
+		["FORCE_FRAGMENT_SET"] = "reward_kho_any_common"
 	},
 	[155] = {
-		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss"
+		["FORCE_FRAGMENT_SET"] = "reward_nur_any_common"
 	},
 	[156] = {
-		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss"
+		["FORCE_FRAGMENT_SET"] = "reward_sla_any_common"
 	},
 	[157] = {
+		["FORCE_FRAGMENT_SET"] = "reward_tze_any_common"
+	},
+	[158] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss"
+	},
+	[159] = {
+		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss"
+	},
+	[160] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss"
+	},
+	[161] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss"
+	},
+	[162] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_easy"
+	},
+	[163] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_easy"
+	},
+	[164] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_ice_court_norm"
+	},
+	[165] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_norm"
+	},
+	[166] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_norm"
+	},
+	[167] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_ice_court_hard"
+	},
+	[168] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_hard"
+	},
+	[169] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_hard"
 	}
 }

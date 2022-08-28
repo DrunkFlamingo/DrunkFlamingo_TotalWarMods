@@ -294,5 +294,33 @@ return {
 	[74] = {
 		["FACTION_SET"] = "lzd_any",
 		["FACTION_KEY"] = "wh3_main_lzd_tepoks_spawn"
+	},
+	[75] = {
+		["FACTION_SET"] = "ksl_minor",
+		["FACTION_KEY"] = "wh3_main_ksl_brotherhood_of_the_bear"
+	},
+	[76] = {
+		["FACTION_SET"] = "ksl_minor",
+		["FACTION_KEY"] = "wh3_main_ksl_ropsmenn_clan"
+	},
+	[77] = {
+		["FACTION_SET"] = "ksl_minor",
+		["FACTION_KEY"] = "wh3_main_ksl_ungol_kindred"
+	},
+	[78] = {
+		["FACTION_SET"] = "ksl_minor",
+		["FACTION_KEY"] = "wh3_main_ksl_ursun_revivalists"
+	},
+	[79] = {
+		["FACTION_SET"] = "ksl_minor",
+		["FACTION_KEY"] = "wh3_main_ksl_druzhina_enclave"
+	},
+	[80] = {
+		["FACTION_SET"] = "ksl_orthodoxy",
+		["FACTION_KEY"] = "wh3_main_ksl_the_great_orthodoxy"
+	},
+	[81] = {
+		["FACTION_SET"] = "ksl_ice_court",
+		["FACTION_KEY"] = "wh3_main_ksl_the_ice_court"
 	}
 }

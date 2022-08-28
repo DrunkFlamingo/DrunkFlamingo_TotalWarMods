@@ -1024,6 +1024,22 @@ return {
 
 				}
 			},
+			["ksl_winged_lancers_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "ksl_winged_lancers_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_ksl_cav_winged_lancers_0"
+					},
+					[2] = {
+						["unit_key"] = "wh3_main_ksl_cav_winged_lancers_0"
+					}
+				}
+			},
 			["kho_fleshhounds_2"] = {
 				["difficulty_delta"] = 8,
 				["localised_name"] = "",
@@ -1327,20 +1343,22 @@ return {
 							["unit_key"] = "wh_main_emp_inf_halberdiers"
 						},
 						[2] = {
-							["unit_key"] = "wh_main_emp_inf_halberdiers"
+							["unit_key"] = "wh_main_emp_inf_spearmen_0"
 						},
 						[3] = {
-							["unit_key"] = "wh_main_emp_inf_swordsmen"
-						},
-						[4] = {
 							["unit_key"] = "wh_main_emp_inf_swordsmen"
 						}
 					},
 					[2] = {
-
-					},
-					[3] = {
-
+						[1] = {
+							["unit_key"] = "wh_main_emp_inf_halberdiers"
+						},
+						[2] = {
+							["unit_key"] = "wh_main_emp_inf_spearmen_0"
+						},
+						[3] = {
+							["unit_key"] = "wh_main_emp_inf_swordsmen"
+						}
 					}
 				},
 				["force_fragment_key"] = "emp_melee_statetroops_2",
@@ -1896,6 +1914,22 @@ return {
 					}
 				}
 			},
+			["emp_flagellants_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "emp_flagellants_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh_dlc04_emp_inf_flagellants_0"
+					},
+					[2] = {
+						["unit_key"] = "wh_dlc04_emp_inf_flagellants_0"
+					}
+				}
+			},
 			["nor_ice_troll_1"] = {
 				["difficulty_delta"] = 0,
 				["localised_name"] = "",
@@ -1949,6 +1983,22 @@ return {
 				["force_fragment_key"] = "nur_warriors_4",
 				["mandatory_units"] = {
 
+				}
+			},
+			["emp_greatswords_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "emp_greatswords_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh_main_emp_inf_greatswords"
+					},
+					[2] = {
+						["unit_key"] = "wh_main_emp_inf_greatswords"
+					}
 				}
 			},
 			["sla_ex_seeker_chariot_2"] = {
@@ -2114,6 +2164,32 @@ return {
 					}
 				}
 			},
+			["emp_demis_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+					[1] = {
+						[1] = {
+							["unit_key"] = "wh_main_emp_cav_demigryph_knights_0"
+						},
+						[2] = {
+							["unit_key"] = "wh_main_emp_cav_demigryph_knights_1"
+						}
+					},
+					[2] = {
+						[1] = {
+							["unit_key"] = "wh_main_emp_cav_demigryph_knights_0"
+						},
+						[2] = {
+							["unit_key"] = "wh_main_emp_cav_demigryph_knights_1"
+						}
+					}
+				},
+				["force_fragment_key"] = "emp_demis_2",
+				["mandatory_units"] = {
+
+				}
+			},
 			["nor_ice_wolf_chariot_1"] = {
 				["difficulty_delta"] = 0,
 				["localised_name"] = "",
@@ -2170,6 +2246,24 @@ return {
 					[1] = {
 						["unit_key"] = "wh3_main_sla_veh_exalted_seeker_chariot_0"
 					}
+				}
+			},
+			["emp_advanced_arty"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+					[1] = {
+						[1] = {
+							["unit_key"] = "wh_main_emp_art_helblaster_volley_gun"
+						},
+						[2] = {
+							["unit_key"] = "wh_main_emp_art_helstorm_rocket_battery"
+						}
+					}
+				},
+				["force_fragment_key"] = "emp_advanced_arty",
+				["mandatory_units"] = {
+
 				}
 			},
 			["kho_letters_3"] = {
@@ -2713,6 +2807,19 @@ return {
 					}
 				}
 			},
+			["emp_helstorm_1"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "emp_helstorm_1",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh_main_emp_art_helstorm_rocket_battery"
+					}
+				}
+			},
 			["chs_knights_1"] = {
 				["difficulty_delta"] = 4,
 				["localised_name"] = "",
@@ -2768,6 +2875,38 @@ return {
 				["force_fragment_key"] = "nur_knights_2",
 				["mandatory_units"] = {
 
+				}
+			},
+			["ksl_little_grom"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "ksl_little_grom",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_ksl_veh_little_grom_0"
+					}
+				}
+			},
+			["ksl_streltsi_3"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "ksl_streltsi_3",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_ksl_inf_streltsi_0"
+					},
+					[2] = {
+						["unit_key"] = "wh3_main_ksl_inf_streltsi_0"
+					},
+					[3] = {
+						["unit_key"] = "wh3_main_ksl_inf_streltsi_0"
+					}
 				}
 			},
 			["any_chs_chosen_4"] = {
@@ -2862,6 +3001,22 @@ return {
 
 				}
 			},
+			["ksl_snow_cat_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "ksl_snow_cat_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_ksl_mon_snow_leopard_0"
+					},
+					[2] = {
+						["unit_key"] = "wh3_main_ksl_mon_snow_leopard_0"
+					}
+				}
+			},
 			["nor_hunters_2"] = {
 				["difficulty_delta"] = 0,
 				["localised_name"] = "",
@@ -2910,6 +3065,45 @@ return {
 
 				}
 			},
+			["ksl_ice_bear"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "ksl_ice_bear",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_ksl_mon_elemental_bear_0"
+					}
+				}
+			},
+			["ksl_ice_guard_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+					[1] = {
+						[1] = {
+							["unit_key"] = "wh3_main_ksl_inf_ice_guard_0"
+						},
+						[2] = {
+							["unit_key"] = "wh3_main_ksl_inf_ice_guard_1"
+						}
+					},
+					[2] = {
+						[1] = {
+							["unit_key"] = "wh3_main_ksl_inf_ice_guard_0"
+						},
+						[2] = {
+							["unit_key"] = "wh3_main_ksl_inf_ice_guard_1"
+						}
+					}
+				},
+				["force_fragment_key"] = "ksl_ice_guard_2",
+				["mandatory_units"] = {
+
+				}
+			},
 			["tze_knights_1"] = {
 				["difficulty_delta"] = 4,
 				["localised_name"] = "",
@@ -2928,6 +3122,60 @@ return {
 
 				}
 			},
+			["nor_marauders_4"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+					[1] = {
+						[1] = {
+							["unit_key"] = "wh_main_nor_inf_chaos_marauders_0"
+						},
+						[2] = {
+							["unit_key"] = "wh_main_nor_inf_chaos_marauders_1"
+						},
+						[3] = {
+							["unit_key"] = "wh_dlc08_nor_inf_marauder_spearman_0"
+						}
+					},
+					[2] = {
+						[1] = {
+							["unit_key"] = "wh_main_nor_inf_chaos_marauders_0"
+						},
+						[2] = {
+							["unit_key"] = "wh_main_nor_inf_chaos_marauders_1"
+						},
+						[3] = {
+							["unit_key"] = "wh_dlc08_nor_inf_marauder_spearman_0"
+						}
+					},
+					[3] = {
+						[1] = {
+							["unit_key"] = "wh_main_nor_inf_chaos_marauders_0"
+						},
+						[2] = {
+							["unit_key"] = "wh_main_nor_inf_chaos_marauders_1"
+						},
+						[3] = {
+							["unit_key"] = "wh_dlc08_nor_inf_marauder_spearman_0"
+						}
+					},
+					[4] = {
+						[1] = {
+							["unit_key"] = "wh_main_nor_inf_chaos_marauders_0"
+						},
+						[2] = {
+							["unit_key"] = "wh_main_nor_inf_chaos_marauders_1"
+						},
+						[3] = {
+							["unit_key"] = "wh_dlc08_nor_inf_marauder_spearman_0"
+						}
+					}
+				},
+				["force_fragment_key"] = "nor_marauders_4",
+				["mandatory_units"] = {
+
+				}
+			},
 			["sla_hellflayer"] = {
 				["difficulty_delta"] = 9,
 				["localised_name"] = "",
@@ -2938,6 +3186,19 @@ return {
 				["mandatory_units"] = {
 					[1] = {
 						["unit_key"] = "wh3_main_sla_veh_hellflayer_0"
+					}
+				}
+			},
+			["ksl_light_sled_1"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "ksl_light_sled_1",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_ksl_veh_light_war_sled_0"
 					}
 				}
 			},
@@ -2954,6 +3215,19 @@ return {
 					}
 				}
 			},
+			["ksl_heavy_sled"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "ksl_heavy_sled",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_ksl_veh_heavy_war_sled_0"
+					}
+				}
+			},
 			["grn_boar_chariot"] = {
 				["difficulty_delta"] = 0,
 				["localised_name"] = "",
@@ -2964,6 +3238,64 @@ return {
 				["mandatory_units"] = {
 					[1] = {
 						["unit_key"] = "wh_main_grn_cav_orc_boar_chariot"
+					}
+				}
+			},
+			["ksl_tzar_guard_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+					[1] = {
+						[1] = {
+							["unit_key"] = "wh3_main_ksl_inf_tzar_guard_0"
+						},
+						[2] = {
+							["unit_key"] = "wh3_main_ksl_inf_tzar_guard_1"
+						}
+					},
+					[2] = {
+						[1] = {
+							["unit_key"] = "wh3_main_ksl_inf_tzar_guard_0"
+						},
+						[2] = {
+							["unit_key"] = "wh3_main_ksl_inf_tzar_guard_1"
+						}
+					}
+				},
+				["force_fragment_key"] = "ksl_tzar_guard_2",
+				["mandatory_units"] = {
+
+				}
+			},
+			["ksl_gryphon_legion_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "ksl_gryphon_legion_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_ksl_cav_gryphon_legion_0"
+					},
+					[2] = {
+						["unit_key"] = "wh3_main_ksl_cav_gryphon_legion_0"
+					}
+				}
+			},
+			["sla_marauder_horse_2"] = {
+				["difficulty_delta"] = 3,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "sla_marauder_horse_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins"
+					},
+					[2] = {
+						["unit_key"] = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins"
 					}
 				}
 			},
@@ -2999,6 +3331,40 @@ return {
 					}
 				}
 			},
+			["sla_warriors_3"] = {
+				["difficulty_delta"] = 3,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+					[1] = {
+						[1] = {
+							["unit_key"] = "wh3_dlc20_chs_inf_chaos_warriors_msla"
+						},
+						[2] = {
+							["unit_key"] = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges"
+						}
+					},
+					[2] = {
+						[1] = {
+							["unit_key"] = "wh3_dlc20_chs_inf_chaos_warriors_msla"
+						},
+						[2] = {
+							["unit_key"] = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges"
+						}
+					},
+					[3] = {
+						[1] = {
+							["unit_key"] = "wh3_dlc20_chs_inf_chaos_warriors_msla"
+						},
+						[2] = {
+							["unit_key"] = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges"
+						}
+					}
+				},
+				["force_fragment_key"] = "sla_warriors_3",
+				["mandatory_units"] = {
+
+				}
+			},
 			["any_greater_daemon"] = {
 				["difficulty_delta"] = 12,
 				["localised_name"] = "",
@@ -3023,6 +3389,72 @@ return {
 
 				}
 			},
+			["ksl_streltsi_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "ksl_streltsi_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_ksl_inf_streltsi_0"
+					},
+					[2] = {
+						["unit_key"] = "wh3_main_ksl_inf_streltsi_0"
+					}
+				}
+			},
+			["ksl_kossars_3"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+					[1] = {
+						[1] = {
+							["unit_key"] = "wh3_main_ksl_inf_kossars_0"
+						},
+						[2] = {
+							["unit_key"] = "wh3_main_ksl_inf_kossars_1"
+						}
+					},
+					[2] = {
+						[1] = {
+							["unit_key"] = "wh3_main_ksl_inf_kossars_0"
+						},
+						[2] = {
+							["unit_key"] = "wh3_main_ksl_inf_kossars_1"
+						}
+					},
+					[3] = {
+						[1] = {
+							["unit_key"] = "wh3_main_ksl_inf_kossars_0"
+						},
+						[2] = {
+							["unit_key"] = "wh3_main_ksl_inf_kossars_1"
+						}
+					}
+				},
+				["force_fragment_key"] = "ksl_kossars_3",
+				["mandatory_units"] = {
+
+				}
+			},
+			["tze_ex_pink_2"] = {
+				["difficulty_delta"] = 8,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "tze_ex_pink_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_tze_inf_pink_horrors_1"
+					},
+					[2] = {
+						["unit_key"] = "wh3_main_tze_inf_pink_horrors_1"
+					}
+				}
+			},
 			["tze_furies_1"] = {
 				["difficulty_delta"] = 0,
 				["localised_name"] = "",
@@ -3033,6 +3465,22 @@ return {
 				["mandatory_units"] = {
 					[1] = {
 						["unit_key"] = "wh3_main_tze_inf_chaos_furies_0"
+					}
+				}
+			},
+			["ksl_dervishes_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "ksl_dervishes_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_ksl_cav_horse_raiders_0"
+					},
+					[2] = {
+						["unit_key"] = "wh3_main_ksl_cav_horse_raiders_0"
 					}
 				}
 			},
@@ -3173,6 +3621,108 @@ return {
 					}
 				}
 			},
+			["ksl_horse_archers_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "ksl_horse_archers_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_ksl_cav_horse_archers_0"
+					},
+					[2] = {
+						["unit_key"] = "wh3_main_ksl_cav_horse_archers_0"
+					}
+				}
+			},
+			["ksl_armoured_kossar_3"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+					[1] = {
+						[1] = {
+							["unit_key"] = "wh3_main_ksl_inf_armoured_kossars_0"
+						},
+						[2] = {
+							["unit_key"] = "wh3_main_ksl_inf_armoured_kossars_1"
+						}
+					},
+					[2] = {
+						[1] = {
+							["unit_key"] = "wh3_main_ksl_inf_armoured_kossars_0"
+						},
+						[2] = {
+							["unit_key"] = "wh3_main_ksl_inf_armoured_kossars_1"
+						}
+					},
+					[3] = {
+						[1] = {
+							["unit_key"] = "wh3_main_ksl_inf_armoured_kossars_0"
+						},
+						[2] = {
+							["unit_key"] = "wh3_main_ksl_inf_armoured_kossars_1"
+						}
+					}
+				},
+				["force_fragment_key"] = "ksl_armoured_kossar_3",
+				["mandatory_units"] = {
+
+				}
+			},
+			["nor_skinwolves_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+					[1] = {
+						[1] = {
+							["unit_key"] = "wh_dlc08_nor_mon_skinwolves_0"
+						},
+						[2] = {
+							["unit_key"] = "wh_dlc08_nor_mon_skinwolves_1"
+						}
+					},
+					[2] = {
+						[1] = {
+							["unit_key"] = "wh_dlc08_nor_mon_skinwolves_0"
+						},
+						[2] = {
+							["unit_key"] = "wh_dlc08_nor_mon_skinwolves_1"
+						}
+					}
+				},
+				["force_fragment_key"] = "nor_skinwolves_2",
+				["mandatory_units"] = {
+
+				}
+			},
+			["ksl_winged_lancers_1"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "ksl_winged_lancers_1",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_ksl_cav_winged_lancers_0"
+					}
+				}
+			},
+			["emp_grenade_wagon"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "emp_grenade_wagon",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh2_dlc13_emp_veh_war_wagon_1"
+					}
+				}
+			},
 			["any_chs_forsaken_3"] = {
 				["difficulty_delta"] = 4,
 				["localised_name"] = "",
@@ -3265,6 +3815,19 @@ return {
 					}
 				}
 			},
+			["emp_wagon"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "emp_wagon",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh2_dlc13_emp_veh_war_wagon_0"
+					}
+				}
+			},
 			["tze_blue_4"] = {
 				["difficulty_delta"] = 5,
 				["localised_name"] = "",
@@ -3287,6 +3850,64 @@ return {
 					}
 				}
 			},
+			["emp_steamtank"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "emp_steamtank",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh_main_emp_veh_steam_tank"
+					}
+				}
+			},
+			["kho_knights_2"] = {
+				["difficulty_delta"] = 8,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+					[1] = {
+						[1] = {
+							["unit_key"] = "wh3_dlc20_chs_cav_chaos_knights_mkho"
+						},
+						[2] = {
+							["unit_key"] = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances"
+						}
+					},
+					[2] = {
+						[1] = {
+							["unit_key"] = "wh3_dlc20_chs_cav_chaos_knights_mkho"
+						},
+						[2] = {
+							["unit_key"] = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances"
+						}
+					}
+				},
+				["force_fragment_key"] = "kho_knights_2",
+				["mandatory_units"] = {
+
+				}
+			},
+			["emp_flagellants_3"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "emp_flagellants_3",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh_dlc04_emp_inf_flagellants_0"
+					},
+					[2] = {
+						["unit_key"] = "wh_dlc04_emp_inf_flagellants_0"
+					},
+					[3] = {
+						["unit_key"] = "wh_dlc04_emp_inf_flagellants_0"
+					}
+				}
+			},
 			["skv_plagueclaw_1"] = {
 				["difficulty_delta"] = 0,
 				["localised_name"] = "",
@@ -3297,6 +3918,38 @@ return {
 				["mandatory_units"] = {
 					[1] = {
 						["unit_key"] = "wh2_main_skv_art_plagueclaw_catapult"
+					}
+				}
+			},
+			["grn_squigs_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "grn_squigs_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh_dlc06_grn_inf_squig_herd_0"
+					},
+					[2] = {
+						["unit_key"] = "wh_dlc06_grn_inf_squig_herd_0"
+					}
+				}
+			},
+			["emp_pistols_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "emp_pistols_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh_main_emp_cav_pistoliers_1"
+					},
+					[2] = {
+						["unit_key"] = "wh_main_emp_cav_pistoliers_1"
 					}
 				}
 			},
@@ -3314,6 +3967,61 @@ return {
 					}
 				},
 				["force_fragment_key"] = "kho_knights_1",
+				["mandatory_units"] = {
+
+				}
+			},
+			["emp_helblaster_1"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "emp_helblaster_1",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh_main_emp_art_helblaster_volley_gun"
+					}
+				}
+			},
+			["tze_chariot_2"] = {
+				["difficulty_delta"] = 3,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "tze_chariot_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_dlc20_chs_cav_chaos_chariot_mtze"
+					},
+					[2] = {
+						["unit_key"] = "wh3_dlc20_chs_cav_chaos_chariot_mtze"
+					}
+				}
+			},
+			["ksl_kossars_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+					[1] = {
+						[1] = {
+							["unit_key"] = "wh3_main_ksl_inf_kossars_0"
+						},
+						[2] = {
+							["unit_key"] = "wh3_main_ksl_inf_kossars_1"
+						}
+					},
+					[2] = {
+						[1] = {
+							["unit_key"] = "wh3_main_ksl_inf_kossars_0"
+						},
+						[2] = {
+							["unit_key"] = "wh3_main_ksl_inf_kossars_1"
+						}
+					}
+				},
+				["force_fragment_key"] = "ksl_kossars_2",
 				["mandatory_units"] = {
 
 				}
@@ -3344,6 +4052,22 @@ return {
 				["mandatory_units"] = {
 					[1] = {
 						["unit_key"] = "wh3_main_kho_inf_flesh_hounds_of_khorne_0"
+					}
+				}
+			},
+			["emp_reiksguard_2"] = {
+				["difficulty_delta"] = 0,
+				["localised_name"] = "",
+				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "emp_reiksguard_2",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh_main_emp_cav_reiksguard"
+					},
+					[2] = {
+						["unit_key"] = "wh_main_emp_cav_reiksguard"
 					}
 				}
 			},
@@ -3555,19 +4279,16 @@ return {
 					}
 				}
 			},
-			["grn_squigs_2"] = {
+			["emp_grenade_riders_1"] = {
 				["difficulty_delta"] = 0,
 				["localised_name"] = "",
 				["generated_unit_slots"] = {
 
 				},
-				["force_fragment_key"] = "grn_squigs_2",
+				["force_fragment_key"] = "emp_grenade_riders_1",
 				["mandatory_units"] = {
 					[1] = {
-						["unit_key"] = "wh_dlc06_grn_inf_squig_herd_0"
-					},
-					[2] = {
-						["unit_key"] = "wh_dlc06_grn_inf_squig_herd_0"
+						["unit_key"] = "wh_main_emp_cav_outriders_1"
 					}
 				}
 			},
@@ -3672,18 +4393,20 @@ return {
 							["unit_key"] = "wh_main_emp_inf_crossbowmen"
 						},
 						[2] = {
-							["unit_key"] = "wh_main_emp_inf_crossbowmen"
+							["unit_key"] = "wh2_dlc13_emp_inf_archers_0"
 						},
 						[3] = {
-							["unit_key"] = "wh2_dlc13_emp_inf_archers_0"
-						},
-						[4] = {
-							["unit_key"] = "wh2_dlc13_emp_inf_archers_0"
-						},
-						[5] = {
 							["unit_key"] = "wh_main_emp_inf_handgunners"
+						}
+					},
+					[2] = {
+						[1] = {
+							["unit_key"] = "wh_main_emp_inf_crossbowmen"
 						},
-						[6] = {
+						[2] = {
+							["unit_key"] = "wh2_dlc13_emp_inf_archers_0"
+						},
+						[3] = {
 							["unit_key"] = "wh_main_emp_inf_handgunners"
 						}
 					}
@@ -4043,28 +4766,28 @@ return {
 
 				}
 			},
-			["nor_skinwolves_2"] = {
+			["ksl_armoured_kossar_2"] = {
 				["difficulty_delta"] = 0,
 				["localised_name"] = "",
 				["generated_unit_slots"] = {
 					[1] = {
 						[1] = {
-							["unit_key"] = "wh_dlc08_nor_mon_skinwolves_0"
+							["unit_key"] = "wh3_main_ksl_inf_armoured_kossars_0"
 						},
 						[2] = {
-							["unit_key"] = "wh_dlc08_nor_mon_skinwolves_1"
+							["unit_key"] = "wh3_main_ksl_inf_armoured_kossars_1"
 						}
 					},
 					[2] = {
 						[1] = {
-							["unit_key"] = "wh_dlc08_nor_mon_skinwolves_0"
+							["unit_key"] = "wh3_main_ksl_inf_armoured_kossars_0"
 						},
 						[2] = {
-							["unit_key"] = "wh_dlc08_nor_mon_skinwolves_1"
+							["unit_key"] = "wh3_main_ksl_inf_armoured_kossars_1"
 						}
 					}
 				},
-				["force_fragment_key"] = "nor_skinwolves_2",
+				["force_fragment_key"] = "ksl_armoured_kossar_2",
 				["mandatory_units"] = {
 
 				}
@@ -4196,19 +4919,19 @@ return {
 					}
 				}
 			},
-			["tze_ex_pink_2"] = {
-				["difficulty_delta"] = 8,
+			["emp_blazing_sun_2"] = {
+				["difficulty_delta"] = 0,
 				["localised_name"] = "",
 				["generated_unit_slots"] = {
 
 				},
-				["force_fragment_key"] = "tze_ex_pink_2",
+				["force_fragment_key"] = "emp_blazing_sun_2",
 				["mandatory_units"] = {
 					[1] = {
-						["unit_key"] = "wh3_main_tze_inf_pink_horrors_1"
+						["unit_key"] = "wh_dlc04_emp_cav_knights_blazing_sun_0"
 					},
 					[2] = {
-						["unit_key"] = "wh3_main_tze_inf_pink_horrors_1"
+						["unit_key"] = "wh_dlc04_emp_cav_knights_blazing_sun_0"
 					}
 				}
 			},
@@ -4322,58 +5045,20 @@ return {
 					}
 				}
 			},
-			["nor_marauders_4"] = {
+			["ksl_light_sled_2"] = {
 				["difficulty_delta"] = 0,
 				["localised_name"] = "",
 				["generated_unit_slots"] = {
+
+				},
+				["force_fragment_key"] = "ksl_light_sled_2",
+				["mandatory_units"] = {
 					[1] = {
-						[1] = {
-							["unit_key"] = "wh_main_nor_inf_chaos_marauders_0"
-						},
-						[2] = {
-							["unit_key"] = "wh_main_nor_inf_chaos_marauders_1"
-						},
-						[3] = {
-							["unit_key"] = "wh_dlc08_nor_inf_marauder_spearman_0"
-						}
+						["unit_key"] = "wh3_main_ksl_veh_light_war_sled_0"
 					},
 					[2] = {
-						[1] = {
-							["unit_key"] = "wh_main_nor_inf_chaos_marauders_0"
-						},
-						[2] = {
-							["unit_key"] = "wh_main_nor_inf_chaos_marauders_1"
-						},
-						[3] = {
-							["unit_key"] = "wh_dlc08_nor_inf_marauder_spearman_0"
-						}
-					},
-					[3] = {
-						[1] = {
-							["unit_key"] = "wh_main_nor_inf_chaos_marauders_0"
-						},
-						[2] = {
-							["unit_key"] = "wh_main_nor_inf_chaos_marauders_1"
-						},
-						[3] = {
-							["unit_key"] = "wh_dlc08_nor_inf_marauder_spearman_0"
-						}
-					},
-					[4] = {
-						[1] = {
-							["unit_key"] = "wh_main_nor_inf_chaos_marauders_0"
-						},
-						[2] = {
-							["unit_key"] = "wh_main_nor_inf_chaos_marauders_1"
-						},
-						[3] = {
-							["unit_key"] = "wh_dlc08_nor_inf_marauder_spearman_0"
-						}
+						["unit_key"] = "wh3_main_ksl_veh_light_war_sled_0"
 					}
-				},
-				["force_fragment_key"] = "nor_marauders_4",
-				["mandatory_units"] = {
-
 				}
 			},
 			["kho_bloodshrine"] = {
@@ -4935,19 +5620,16 @@ return {
 
 				}
 			},
-			["sla_marauder_horse_2"] = {
-				["difficulty_delta"] = 3,
+			["ksl_gryphon_legion_1"] = {
+				["difficulty_delta"] = 0,
 				["localised_name"] = "",
 				["generated_unit_slots"] = {
 
 				},
-				["force_fragment_key"] = "sla_marauder_horse_2",
+				["force_fragment_key"] = "ksl_gryphon_legion_1",
 				["mandatory_units"] = {
 					[1] = {
-						["unit_key"] = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins"
-					},
-					[2] = {
-						["unit_key"] = "wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins"
+						["unit_key"] = "wh3_main_ksl_cav_gryphon_legion_0"
 					}
 				}
 			},
@@ -5011,38 +5693,17 @@ return {
 					}
 				}
 			},
-			["sla_warriors_3"] = {
-				["difficulty_delta"] = 3,
+			["ksl_bear_rider"] = {
+				["difficulty_delta"] = 0,
 				["localised_name"] = "",
 				["generated_unit_slots"] = {
-					[1] = {
-						[1] = {
-							["unit_key"] = "wh3_dlc20_chs_inf_chaos_warriors_msla"
-						},
-						[2] = {
-							["unit_key"] = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges"
-						}
-					},
-					[2] = {
-						[1] = {
-							["unit_key"] = "wh3_dlc20_chs_inf_chaos_warriors_msla"
-						},
-						[2] = {
-							["unit_key"] = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges"
-						}
-					},
-					[3] = {
-						[1] = {
-							["unit_key"] = "wh3_dlc20_chs_inf_chaos_warriors_msla"
-						},
-						[2] = {
-							["unit_key"] = "wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges"
-						}
-					}
-				},
-				["force_fragment_key"] = "sla_warriors_3",
-				["mandatory_units"] = {
 
+				},
+				["force_fragment_key"] = "ksl_bear_rider",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh3_main_ksl_cav_war_bear_riders_1"
+					}
 				}
 			},
 			["sla_cultist_norm"] = {
@@ -5506,30 +6167,17 @@ return {
 					}
 				}
 			},
-			["kho_knights_2"] = {
-				["difficulty_delta"] = 8,
+			["emp_luminark"] = {
+				["difficulty_delta"] = 0,
 				["localised_name"] = "",
 				["generated_unit_slots"] = {
-					[1] = {
-						[1] = {
-							["unit_key"] = "wh3_dlc20_chs_cav_chaos_knights_mkho"
-						},
-						[2] = {
-							["unit_key"] = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances"
-						}
-					},
-					[2] = {
-						[1] = {
-							["unit_key"] = "wh3_dlc20_chs_cav_chaos_knights_mkho"
-						},
-						[2] = {
-							["unit_key"] = "wh3_dlc20_chs_cav_chaos_knights_mkho_lances"
-						}
-					}
-				},
-				["force_fragment_key"] = "kho_knights_2",
-				["mandatory_units"] = {
 
+				},
+				["force_fragment_key"] = "emp_luminark",
+				["mandatory_units"] = {
+					[1] = {
+						["unit_key"] = "wh_main_emp_veh_luminark_of_hysh_0"
+					}
 				}
 			},
 			["nur_marauder_horse_2"] = {
@@ -5676,27 +6324,31 @@ return {
 							["unit_key"] = "wh3_main_sla_inf_daemonette_0"
 						},
 						[2] = {
-							["unit_key"] = "wh3_main_sla_inf_daemonette_0"
+							["unit_key"] = "wh3_main_kho_inf_bloodletters_0"
 						},
 						[3] = {
-							["unit_key"] = "wh3_main_kho_inf_bloodletters_0"
+							["unit_key"] = "wh3_main_nur_inf_plaguebearers_0"
 						},
 						[4] = {
+							["unit_key"] = "wh3_main_tze_inf_blue_horrors_0"
+						}
+					},
+					[2] = {
+						[1] = {
+							["unit_key"] = "wh3_main_sla_inf_daemonette_0"
+						},
+						[2] = {
 							["unit_key"] = "wh3_main_kho_inf_bloodletters_0"
 						},
-						[5] = {
+						[3] = {
 							["unit_key"] = "wh3_main_nur_inf_plaguebearers_0"
 						},
-						[6] = {
-							["unit_key"] = "wh3_main_nur_inf_plaguebearers_0"
-						},
-						[7] = {
-							["unit_key"] = "wh3_main_tze_inf_blue_horrors_0"
-						},
-						[8] = {
+						[4] = {
 							["unit_key"] = "wh3_main_tze_inf_pink_horrors_0"
-						},
-						[9] = {
+						}
+					},
+					[3] = {
+						[1] = {
 							["unit_key"] = "wh3_main_tze_inf_blue_horrors_0"
 						}
 					}
@@ -6126,20 +6778,22 @@ return {
 
 				}
 			},
-			["tze_chariot_2"] = {
-				["difficulty_delta"] = 3,
+			["emp_demis_1"] = {
+				["difficulty_delta"] = 0,
 				["localised_name"] = "",
 				["generated_unit_slots"] = {
-
-				},
-				["force_fragment_key"] = "tze_chariot_2",
-				["mandatory_units"] = {
 					[1] = {
-						["unit_key"] = "wh3_dlc20_chs_cav_chaos_chariot_mtze"
-					},
-					[2] = {
-						["unit_key"] = "wh3_dlc20_chs_cav_chaos_chariot_mtze"
+						[1] = {
+							["unit_key"] = "wh_main_emp_cav_demigryph_knights_0"
+						},
+						[2] = {
+							["unit_key"] = "wh_main_emp_cav_demigryph_knights_1"
+						}
 					}
+				},
+				["force_fragment_key"] = "emp_demis_1",
+				["mandatory_units"] = {
+
 				}
 			},
 			["nor_marauders_3"] = {
@@ -6316,39 +6970,66 @@ return {
 					}
 				}
 			},
-			["reward_sla_any_common"] = {
+			["emp_powder_norm"] = {
 				["mandatory_fragments"] = {
-
+					[1] = {
+						["force_fragment_key"] = "emp_melee_statetroops_2",
+						["hidden_fragment"] = false
+					},
+					[2] = {
+						["force_fragment_key"] = "emp_basic_arty",
+						["hidden_fragment"] = false
+					}
 				},
-				["key"] = "reward_sla_any_common",
+				["key"] = "emp_powder_norm",
 				["generated_fragment_slots"] = {
 					[1] = {
 						[1] = {
-							["force_fragment_key"] = "sla_daemonette_1",
+							["force_fragment_key"] = "emp_knights_2",
 							["hidden_fragment"] = false
 						},
 						[2] = {
-							["force_fragment_key"] = "sla_chariot_1",
+							["force_fragment_key"] = "emp_halberds_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "emp_basic_arty",
 							["hidden_fragment"] = false
 						},
-						[3] = {
-							["force_fragment_key"] = "sla_marauder_horse_2",
+						[2] = {
+							["force_fragment_key"] = "emp_handgunners_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "emp_swords_2",
 							["hidden_fragment"] = false
 						},
-						[4] = {
-							["force_fragment_key"] = "sla_forsaken_2",
+						[2] = {
+							["force_fragment_key"] = "emp_spearmen_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[4] = {
+						[1] = {
+							["force_fragment_key"] = "emp_handgunners_2",
 							["hidden_fragment"] = false
 						},
-						[5] = {
-							["force_fragment_key"] = "sla_spawn_1",
+						[2] = {
+							["force_fragment_key"] = "emp_outriders_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[5] = {
+						[1] = {
+							["force_fragment_key"] = "emp_free_company_2",
 							["hidden_fragment"] = false
 						},
-						[6] = {
-							["force_fragment_key"] = "sla_warriors_2",
-							["hidden_fragment"] = false
-						},
-						[7] = {
-							["force_fragment_key"] = "sla_marauders_3",
+						[2] = {
+							["force_fragment_key"] = "emp_spearmen_2",
 							["hidden_fragment"] = false
 						}
 					}
@@ -7294,6 +7975,93 @@ return {
 
 				}
 			},
+			["emp_knights_hard"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "emp_demis_1",
+						["hidden_fragment"] = false
+					},
+					[2] = {
+						["force_fragment_key"] = "emp_knights_2",
+						["hidden_fragment"] = false
+					},
+					[3] = {
+						["force_fragment_key"] = "emp_melee_statetroops_2",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "emp_knights_hard",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "emp_basic_arty",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_handgunners_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "emp_greatswords_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "emp_reiksguard_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_blazing_sun_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "emp_demis_1",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "emp_wagon",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_pistols_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[4] = {
+						[1] = {
+							["force_fragment_key"] = "emp_melee_statetroops_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_free_company_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[5] = {
+						[1] = {
+							["force_fragment_key"] = "emp_huntsman_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_ranged_statetroops_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[6] = {
+						[1] = {
+							["force_fragment_key"] = "emp_spearmen_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_archers_2",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
 			["reward_tze_melee_early"] = {
 				["mandatory_fragments"] = {
 
@@ -7392,6 +8160,59 @@ return {
 						},
 						[3] = {
 							["force_fragment_key"] = "kho_knights_1",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
+			["ksl_ice_court_norm"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "ksl_ice_guard_2",
+						["hidden_fragment"] = false
+					},
+					[2] = {
+						["force_fragment_key"] = "ksl_kossars_3",
+						["hidden_fragment"] = false
+					},
+					[3] = {
+						["force_fragment_key"] = "ksl_armoured_kossar_2",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "ksl_ice_court_norm",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_snow_cat_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_ice_guard_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_horse_archers_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_dervishes_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "ksl_kossars_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_streltsi_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_tzar_guard_2",
 							["hidden_fragment"] = false
 						}
 					}
@@ -8014,6 +8835,101 @@ return {
 					}
 				}
 			},
+			["emp_powder_hard"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "emp_melee_statetroops_2",
+						["hidden_fragment"] = false
+					},
+					[2] = {
+						["force_fragment_key"] = "emp_basic_arty",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "emp_powder_hard",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "emp_demis_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_greatswords_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "emp_advanced_arty",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_grenade_wagon",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "emp_advanced_arty",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_steamtank",
+							["hidden_fragment"] = false
+						}
+					},
+					[4] = {
+						[1] = {
+							["force_fragment_key"] = "emp_knights_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_halberds_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[5] = {
+						[1] = {
+							["force_fragment_key"] = "emp_basic_arty",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_handgunners_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[6] = {
+						[1] = {
+							["force_fragment_key"] = "emp_swords_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_spearmen_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[7] = {
+						[1] = {
+							["force_fragment_key"] = "emp_handgunners_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_outriders_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[8] = {
+						[1] = {
+							["force_fragment_key"] = "emp_free_company_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_spearmen_2",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
 			["reward_kho_letters_mid"] = {
 				["mandatory_fragments"] = {
 					[1] = {
@@ -8298,6 +9214,10 @@ return {
 			["emp_powder_easy"] = {
 				["mandatory_fragments"] = {
 					[1] = {
+						["force_fragment_key"] = "emp_melee_statetroops_2",
+						["hidden_fragment"] = false
+					},
+					[2] = {
 						["force_fragment_key"] = "emp_basic_arty",
 						["hidden_fragment"] = false
 					}
@@ -8585,6 +9505,97 @@ return {
 
 				}
 			},
+			["tze_doom_keep_boss"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "tze_ex_flamers_1",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "tze_doom_keep_boss",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "tze_horrors_1_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_warriors_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "tze_horrors_1_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_forsaken_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "tze_ex_pink_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_chosen_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[4] = {
+						[1] = {
+							["force_fragment_key"] = "tze_chosen_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_flamers_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[5] = {
+						[1] = {
+							["force_fragment_key"] = "tze_doom_knight_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_burning_chariots_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[6] = {
+						[1] = {
+							["force_fragment_key"] = "tze_furies_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_screamers_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[7] = {
+						[1] = {
+							["force_fragment_key"] = "tze_cultist_norm",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_spawn_1",
+							["hidden_fragment"] = false
+						}
+					},
+					[8] = {
+						[1] = {
+							["force_fragment_key"] = "tze_furies_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_screamers_1",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
 			["sla_marauder_horde_easy"] = {
 				["mandatory_fragments"] = {
 					[1] = {
@@ -8615,6 +9626,76 @@ return {
 						},
 						[2] = {
 							["force_fragment_key"] = "sla_chariot_1",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
+			["ksl_cavalry_hard"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "ksl_bear_rider",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "ksl_cavalry_hard",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_heavy_sled",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_bear_rider",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
+			["grn_nightgoblins_norm"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "grn_night_goblins_3",
+						["hidden_fragment"] = false
+					},
+					[2] = {
+						["force_fragment_key"] = "grn_night_globin_archers_2",
+						["hidden_fragment"] = false
+					},
+					[3] = {
+						["force_fragment_key"] = "grn_fanatics_2",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "grn_nightgoblins_norm",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "grn_fanatics_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "grn_squigs_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "grn_night_globin_archers_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "grn_squig_hoppers",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "grn_squigs_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "grn_squig_hoppers",
 							["hidden_fragment"] = false
 						}
 					}
@@ -8658,6 +9739,112 @@ return {
 
 				}
 			},
+			["ksl_infantry_norm"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "ksl_tzar_guard_2",
+						["hidden_fragment"] = false
+					},
+					[2] = {
+						["force_fragment_key"] = "ksl_kossars_3",
+						["hidden_fragment"] = false
+					},
+					[3] = {
+						["force_fragment_key"] = "ksl_armoured_kossar_2",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "ksl_infantry_norm",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_tzar_guard_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_streltsi_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_horse_archers_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_dervishes_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "ksl_kossars_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_streltsi_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_tzar_guard_2",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
+			["ksl_cavalry_norm"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "ksl_bear_rider",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "ksl_cavalry_norm",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_armoured_kossar_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_streltsi_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_gryphon_legion_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_heavy_sled",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_heavy_sled",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_bear_rider",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
+			["reward_nur_chariot_early"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "nur_chariot_1",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "reward_nur_chariot_early",
+				["generated_fragment_slots"] = {
+
+				}
+			},
 			["start_army_chs_undivided_quantity"] = {
 				["mandatory_fragments"] = {
 					[1] = {
@@ -8677,7 +9864,7 @@ return {
 							["hidden_fragment"] = false
 						}
 					},
-					[3] = {
+					[2] = {
 						[1] = {
 							["force_fragment_key"] = "chs_warhounds_2",
 							["hidden_fragment"] = false
@@ -8695,13 +9882,181 @@ return {
 							["hidden_fragment"] = false
 						}
 					},
-					[4] = {
+					[3] = {
 						[1] = {
 							["force_fragment_key"] = "chs_spawn_1",
 							["hidden_fragment"] = false
 						},
 						[2] = {
 							["force_fragment_key"] = "chs_trolls_1",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
+			["reward_tze_knights_early"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "tze_knights_1",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "reward_tze_knights_early",
+				["generated_fragment_slots"] = {
+
+				}
+			},
+			["ksl_infantry_hard"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "ksl_little_grom",
+						["hidden_fragment"] = false
+					},
+					[2] = {
+						["force_fragment_key"] = "ksl_tzar_guard_2",
+						["hidden_fragment"] = false
+					},
+					[3] = {
+						["force_fragment_key"] = "ksl_kossars_3",
+						["hidden_fragment"] = false
+					},
+					[4] = {
+						["force_fragment_key"] = "ksl_armoured_kossar_2",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "ksl_infantry_hard",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_gryphon_legion_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_heavy_sled",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "ksl_little_grom",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_tzar_guard_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_streltsi_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_horse_archers_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_dervishes_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "ksl_kossars_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[4] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_streltsi_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_tzar_guard_2",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
+			["kho_doom_keep_boss"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "kho_ex_letters_2",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "kho_doom_keep_boss",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "kho_knights_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_bloodcrusher_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "kho_chosen_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_ex_letters_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "kho_chosen_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_ex_letters_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "kho_spawn_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[4] = {
+						[1] = {
+							["force_fragment_key"] = "kho_warriors_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_forsaken_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[5] = {
+						[1] = {
+							["force_fragment_key"] = "kho_minos_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_warshrine",
+							["hidden_fragment"] = false
+						}
+					},
+					[6] = {
+						[1] = {
+							["force_fragment_key"] = "kho_letters_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_warriors_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[7] = {
+						[1] = {
+							["force_fragment_key"] = "kho_fleshhounds_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_furies_2",
 							["hidden_fragment"] = false
 						}
 					}
@@ -8823,182 +10178,6 @@ return {
 					}
 				}
 			},
-			["tze_doom_keep_boss"] = {
-				["mandatory_fragments"] = {
-					[1] = {
-						["force_fragment_key"] = "tze_ex_flamers_1",
-						["hidden_fragment"] = false
-					}
-				},
-				["key"] = "tze_doom_keep_boss",
-				["generated_fragment_slots"] = {
-					[1] = {
-						[1] = {
-							["force_fragment_key"] = "tze_horrors_1_2",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "tze_warriors_3",
-							["hidden_fragment"] = false
-						}
-					},
-					[2] = {
-						[1] = {
-							["force_fragment_key"] = "tze_horrors_1_2",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "tze_forsaken_3",
-							["hidden_fragment"] = false
-						}
-					},
-					[3] = {
-						[1] = {
-							["force_fragment_key"] = "tze_ex_pink_2",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "tze_chosen_2",
-							["hidden_fragment"] = false
-						}
-					},
-					[4] = {
-						[1] = {
-							["force_fragment_key"] = "tze_chosen_2",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "tze_flamers_2",
-							["hidden_fragment"] = false
-						}
-					},
-					[5] = {
-						[1] = {
-							["force_fragment_key"] = "tze_doom_knight_2",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "tze_burning_chariots_2",
-							["hidden_fragment"] = false
-						}
-					},
-					[6] = {
-						[1] = {
-							["force_fragment_key"] = "tze_furies_2",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "tze_screamers_2",
-							["hidden_fragment"] = false
-						}
-					},
-					[7] = {
-						[1] = {
-							["force_fragment_key"] = "tze_cultist_norm",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "tze_spawn_1",
-							["hidden_fragment"] = false
-						}
-					},
-					[8] = {
-						[1] = {
-							["force_fragment_key"] = "tze_furies_1",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "tze_screamers_1",
-							["hidden_fragment"] = false
-						}
-					}
-				}
-			},
-			["kho_doom_keep_boss"] = {
-				["mandatory_fragments"] = {
-					[1] = {
-						["force_fragment_key"] = "kho_ex_letters_2",
-						["hidden_fragment"] = false
-					}
-				},
-				["key"] = "kho_doom_keep_boss",
-				["generated_fragment_slots"] = {
-					[1] = {
-						[1] = {
-							["force_fragment_key"] = "kho_knights_2",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "kho_bloodcrusher_2",
-							["hidden_fragment"] = false
-						}
-					},
-					[2] = {
-						[1] = {
-							["force_fragment_key"] = "kho_chosen_2",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "kho_ex_letters_2",
-							["hidden_fragment"] = false
-						}
-					},
-					[3] = {
-						[1] = {
-							["force_fragment_key"] = "kho_chosen_2",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "kho_ex_letters_2",
-							["hidden_fragment"] = false
-						},
-						[3] = {
-							["force_fragment_key"] = "kho_spawn_2",
-							["hidden_fragment"] = false
-						}
-					},
-					[4] = {
-						[1] = {
-							["force_fragment_key"] = "kho_warriors_3",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "kho_forsaken_3",
-							["hidden_fragment"] = false
-						}
-					},
-					[5] = {
-						[1] = {
-							["force_fragment_key"] = "kho_minos_1",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "kho_warshrine",
-							["hidden_fragment"] = false
-						}
-					},
-					[6] = {
-						[1] = {
-							["force_fragment_key"] = "kho_letters_3",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "kho_warriors_3",
-							["hidden_fragment"] = false
-						}
-					},
-					[7] = {
-						[1] = {
-							["force_fragment_key"] = "kho_fleshhounds_2",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "kho_furies_2",
-							["hidden_fragment"] = false
-						}
-					}
-				}
-			},
 			["reward_tze_any_common"] = {
 				["mandatory_fragments"] = {
 
@@ -9007,28 +10186,105 @@ return {
 				["generated_fragment_slots"] = {
 					[1] = {
 						[1] = {
-							["force_fragment_key"] = "tze_chariot_1",
+							["force_fragment_key"] = "tze_blue_2",
 							["hidden_fragment"] = false
 						},
 						[2] = {
-							["force_fragment_key"] = "tze_marauder_horse_2",
+							["force_fragment_key"] = "tze_pink_1",
 							["hidden_fragment"] = false
 						},
 						[3] = {
-							["force_fragment_key"] = "tze_forsaken_2",
+							["force_fragment_key"] = "tze_chariot_1",
 							["hidden_fragment"] = false
 						},
 						[4] = {
-							["force_fragment_key"] = "tze_warriors_2",
+							["force_fragment_key"] = "tze_marauder_horse_2",
 							["hidden_fragment"] = false
 						},
 						[5] = {
+							["force_fragment_key"] = "tze_forsaken_2",
+							["hidden_fragment"] = false
+						},
+						[6] = {
+							["force_fragment_key"] = "tze_warriors_2",
+							["hidden_fragment"] = false
+						},
+						[7] = {
 							["force_fragment_key"] = "tze_marauders_3",
 							["hidden_fragment"] = false
 						}
-					},
-					[2] = {
+					}
+				}
+			},
+			["reward_sla_any_common"] = {
+				["mandatory_fragments"] = {
 
+				},
+				["key"] = "reward_sla_any_common",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "sla_daemonette_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "sla_chariot_1",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "sla_marauder_horse_2",
+							["hidden_fragment"] = false
+						},
+						[4] = {
+							["force_fragment_key"] = "sla_forsaken_2",
+							["hidden_fragment"] = false
+						},
+						[5] = {
+							["force_fragment_key"] = "sla_spawn_1",
+							["hidden_fragment"] = false
+						},
+						[6] = {
+							["force_fragment_key"] = "sla_warriors_2",
+							["hidden_fragment"] = false
+						},
+						[7] = {
+							["force_fragment_key"] = "sla_marauders_3",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
+			["reward_kho_any_common"] = {
+				["mandatory_fragments"] = {
+
+				},
+				["key"] = "reward_kho_any_common",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "kho_letters_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "kho_chariot_1",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "kho_marauder_horse_2",
+							["hidden_fragment"] = false
+						},
+						[4] = {
+							["force_fragment_key"] = "kho_forsaken_2",
+							["hidden_fragment"] = false
+						},
+						[5] = {
+							["force_fragment_key"] = "kho_warriors_2",
+							["hidden_fragment"] = false
+						},
+						[6] = {
+							["force_fragment_key"] = "kho_marauders_3",
+							["hidden_fragment"] = false
+						}
 					}
 				}
 			},
@@ -9093,35 +10349,43 @@ return {
 					}
 				}
 			},
-			["reward_kho_any_common"] = {
+			["tze_warband_easy"] = {
 				["mandatory_fragments"] = {
 
 				},
-				["key"] = "reward_kho_any_common",
+				["key"] = "tze_warband_easy",
 				["generated_fragment_slots"] = {
 					[1] = {
 						[1] = {
-							["force_fragment_key"] = "kho_letters_1",
+							["force_fragment_key"] = "tze_warriors_3",
 							["hidden_fragment"] = false
 						},
 						[2] = {
-							["force_fragment_key"] = "kho_chariot_1",
+							["force_fragment_key"] = "tze_marauders_4",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "tze_warriors_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_doom_knight_1",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "tze_screamers_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "tze_marauder_horse_2",
 							["hidden_fragment"] = false
 						},
 						[3] = {
-							["force_fragment_key"] = "kho_marauder_horse_2",
-							["hidden_fragment"] = false
-						},
-						[4] = {
-							["force_fragment_key"] = "kho_forsaken_2",
-							["hidden_fragment"] = false
-						},
-						[5] = {
-							["force_fragment_key"] = "kho_warriors_2",
-							["hidden_fragment"] = false
-						},
-						[6] = {
-							["force_fragment_key"] = "kho_marauders_3",
+							["force_fragment_key"] = "tze_chariot_1",
 							["hidden_fragment"] = false
 						}
 					}
@@ -9196,6 +10460,80 @@ return {
 
 				}
 			},
+			["nur_knights_easy"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "nur_knights_2",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "nur_knights_easy",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "nur_marauders_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "nur_forsaken_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "nur_marauders_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "nur_warriors_2",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
+			["nur_chosen_easy"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "nur_chosen_1",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "nur_chosen_easy",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "nur_warriors_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "nur_forsaken_3",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "nur_marauders_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "nurglings_3",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
+			["reward_nur_plaguebearers_mid"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "nur_plaguebearer_2",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "reward_nur_plaguebearers_mid",
+				["generated_fragment_slots"] = {
+
+				}
+			},
 			["sla_warband_easy"] = {
 				["mandatory_fragments"] = {
 
@@ -9229,80 +10567,6 @@ return {
 						},
 						[2] = {
 							["force_fragment_key"] = "sla_marauder_horse_2",
-							["hidden_fragment"] = false
-						}
-					}
-				}
-			},
-			["nur_knights_easy"] = {
-				["mandatory_fragments"] = {
-					[1] = {
-						["force_fragment_key"] = "nur_knights_2",
-						["hidden_fragment"] = false
-					}
-				},
-				["key"] = "nur_knights_easy",
-				["generated_fragment_slots"] = {
-					[1] = {
-						[1] = {
-							["force_fragment_key"] = "nur_marauders_3",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "nur_forsaken_2",
-							["hidden_fragment"] = false
-						}
-					},
-					[2] = {
-						[1] = {
-							["force_fragment_key"] = "nur_marauders_3",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "nur_warriors_2",
-							["hidden_fragment"] = false
-						}
-					}
-				}
-			},
-			["reward_nur_plaguebearers_mid"] = {
-				["mandatory_fragments"] = {
-					[1] = {
-						["force_fragment_key"] = "nur_plaguebearer_2",
-						["hidden_fragment"] = false
-					}
-				},
-				["key"] = "reward_nur_plaguebearers_mid",
-				["generated_fragment_slots"] = {
-
-				}
-			},
-			["nur_chosen_easy"] = {
-				["mandatory_fragments"] = {
-					[1] = {
-						["force_fragment_key"] = "nur_chosen_1",
-						["hidden_fragment"] = false
-					}
-				},
-				["key"] = "nur_chosen_easy",
-				["generated_fragment_slots"] = {
-					[1] = {
-						[1] = {
-							["force_fragment_key"] = "nur_warriors_3",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "nur_forsaken_3",
-							["hidden_fragment"] = false
-						}
-					},
-					[2] = {
-						[1] = {
-							["force_fragment_key"] = "nur_marauders_3",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "nurglings_3",
 							["hidden_fragment"] = false
 						}
 					}
@@ -9346,48 +10610,6 @@ return {
 						},
 						[2] = {
 							["force_fragment_key"] = "tze_ex_pink_1",
-							["hidden_fragment"] = false
-						}
-					}
-				}
-			},
-			["tze_warband_easy"] = {
-				["mandatory_fragments"] = {
-
-				},
-				["key"] = "tze_warband_easy",
-				["generated_fragment_slots"] = {
-					[1] = {
-						[1] = {
-							["force_fragment_key"] = "tze_warriors_3",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "tze_marauders_4",
-							["hidden_fragment"] = false
-						}
-					},
-					[2] = {
-						[1] = {
-							["force_fragment_key"] = "tze_warriors_3",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "tze_doom_knight_1",
-							["hidden_fragment"] = false
-						}
-					},
-					[3] = {
-						[1] = {
-							["force_fragment_key"] = "tze_screamers_1",
-							["hidden_fragment"] = false
-						},
-						[2] = {
-							["force_fragment_key"] = "tze_marauder_horse_2",
-							["hidden_fragment"] = false
-						},
-						[3] = {
-							["force_fragment_key"] = "tze_chariot_1",
 							["hidden_fragment"] = false
 						}
 					}
@@ -9506,6 +10728,75 @@ return {
 						},
 						[3] = {
 							["force_fragment_key"] = "kho_marauder_horse_2",
+							["hidden_fragment"] = false
+						}
+					}
+				}
+			},
+			["emp_knights_norm"] = {
+				["mandatory_fragments"] = {
+					[1] = {
+						["force_fragment_key"] = "emp_knights_2",
+						["hidden_fragment"] = false
+					},
+					[2] = {
+						["force_fragment_key"] = "emp_melee_statetroops_2",
+						["hidden_fragment"] = false
+					}
+				},
+				["key"] = "emp_knights_norm",
+				["generated_fragment_slots"] = {
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "emp_reiksguard_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_blazing_sun_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "emp_demis_1",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "emp_wagon",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_pistols_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "emp_melee_statetroops_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_free_company_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[4] = {
+						[1] = {
+							["force_fragment_key"] = "emp_huntsman_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_ranged_statetroops_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[5] = {
+						[1] = {
+							["force_fragment_key"] = "emp_spearmen_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_archers_2",
 							["hidden_fragment"] = false
 						}
 					}
@@ -9710,50 +11001,68 @@ return {
 					}
 				}
 			},
-			["grn_nightgoblins_norm"] = {
+			["ksl_ice_court_hard"] = {
 				["mandatory_fragments"] = {
 					[1] = {
-						["force_fragment_key"] = "grn_night_goblins_3",
+						["force_fragment_key"] = "ksl_ice_bear",
 						["hidden_fragment"] = false
 					},
 					[2] = {
-						["force_fragment_key"] = "grn_night_globin_archers_2",
+						["force_fragment_key"] = "ksl_ice_guard_2",
 						["hidden_fragment"] = false
 					},
 					[3] = {
-						["force_fragment_key"] = "grn_fanatics_2",
+						["force_fragment_key"] = "ksl_kossars_3",
+						["hidden_fragment"] = false
+					},
+					[4] = {
+						["force_fragment_key"] = "ksl_armoured_kossar_2",
 						["hidden_fragment"] = false
 					}
 				},
-				["key"] = "grn_nightgoblins_norm",
+				["key"] = "ksl_ice_court_hard",
 				["generated_fragment_slots"] = {
 					[1] = {
 						[1] = {
-							["force_fragment_key"] = "grn_fanatics_2",
+							["force_fragment_key"] = "ksl_snow_cat_2",
 							["hidden_fragment"] = false
 						},
 						[2] = {
-							["force_fragment_key"] = "grn_squigs_2",
+							["force_fragment_key"] = "ksl_ice_guard_2",
 							["hidden_fragment"] = false
 						}
 					},
 					[2] = {
 						[1] = {
-							["force_fragment_key"] = "grn_night_globin_archers_2",
+							["force_fragment_key"] = "ksl_snow_cat_2",
 							["hidden_fragment"] = false
 						},
 						[2] = {
-							["force_fragment_key"] = "grn_squig_hoppers",
+							["force_fragment_key"] = "ksl_ice_guard_2",
 							["hidden_fragment"] = false
 						}
 					},
 					[3] = {
 						[1] = {
-							["force_fragment_key"] = "grn_squigs_2",
+							["force_fragment_key"] = "ksl_horse_archers_2",
 							["hidden_fragment"] = false
 						},
 						[2] = {
-							["force_fragment_key"] = "grn_squig_hoppers",
+							["force_fragment_key"] = "ksl_dervishes_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "ksl_kossars_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[4] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_streltsi_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_tzar_guard_2",
 							["hidden_fragment"] = false
 						}
 					}
@@ -10155,6 +11464,16 @@ return {
 							["force_fragment_key"] = "emp_ranged_statetroops_2",
 							["hidden_fragment"] = false
 						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "emp_spearmen_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_archers_2",
+							["hidden_fragment"] = false
+						}
 					}
 				}
 			},
@@ -10470,16 +11789,43 @@ return {
 					}
 				}
 			},
-			["reward_nur_chariot_early"] = {
+			["ksl_infantry_easy"] = {
 				["mandatory_fragments"] = {
 					[1] = {
-						["force_fragment_key"] = "nur_chariot_1",
+						["force_fragment_key"] = "ksl_kossars_3",
+						["hidden_fragment"] = false
+					},
+					[2] = {
+						["force_fragment_key"] = "ksl_armoured_kossar_2",
 						["hidden_fragment"] = false
 					}
 				},
-				["key"] = "reward_nur_chariot_early",
+				["key"] = "ksl_infantry_easy",
 				["generated_fragment_slots"] = {
-
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_horse_archers_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_dervishes_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "ksl_kossars_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_streltsi_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_tzar_guard_2",
+							["hidden_fragment"] = false
+						}
+					}
 				}
 			},
 			["reward_tze_forsaken_early"] = {
@@ -10920,16 +12266,69 @@ return {
 
 				}
 			},
-			["reward_tze_knights_early"] = {
+			["ksl_cavalry_easy"] = {
 				["mandatory_fragments"] = {
 					[1] = {
-						["force_fragment_key"] = "tze_knights_1",
+						["force_fragment_key"] = "ksl_kossars_2",
+						["hidden_fragment"] = false
+					},
+					[2] = {
+						["force_fragment_key"] = "ksl_winged_lancers_1",
 						["hidden_fragment"] = false
 					}
 				},
-				["key"] = "reward_tze_knights_early",
+				["key"] = "ksl_cavalry_easy",
 				["generated_fragment_slots"] = {
-
+					[1] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_kossars_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_armoured_kossar_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[2] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_horse_archers_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_light_sled_1",
+							["hidden_fragment"] = false
+						}
+					},
+					[3] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_winged_lancers_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_dervishes_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[4] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_armoured_kossar_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_streltsi_2",
+							["hidden_fragment"] = false
+						}
+					},
+					[5] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_gryphon_legion_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_heavy_sled",
+							["hidden_fragment"] = false
+						}
+					}
 				}
 			},
 			["reward_sla_daemonettes_mid"] = {
@@ -10982,8 +12381,14 @@ return {
 			}
 		},
 		["force_set_upgrades"] = {
+			["ksl_easy"] = "ksl_normal",
+			["emp_norm"] = "emp_hard",
+			["emp_easy"] = "emp_norm",
+			["any_old_world_human_norm"] = "any_old_world_human_hard",
 			["skv_any_easy"] = "skv_any_norm",
 			["skv_or_grn_easy"] = "skv_any_norm",
+			["any_old_world_human_easy"] = "any_old_world_human_norm",
+			["ksl_normal"] = "ksl_hard",
 			["grn_any_easy"] = "grn_any_norm"
 		},
 		["upe_sets"] = {
@@ -10997,6 +12402,7 @@ return {
 				["boss_overlay"] = false,
 				["reward_set"] = "random_all_weighted",
 				["key"] = "intro_east_2",
+				["plot_essential"] = false,
 				["inciting_incident_key"] = "",
 				["battle_type"] = "AMBUSH_DEFEND",
 				["post_battle_dilemma_override"] = "",
@@ -11015,6 +12421,7 @@ return {
 				["boss_overlay"] = false,
 				["reward_set"] = "random_all_weighted",
 				["key"] = "intro_north_1",
+				["plot_essential"] = true,
 				["inciting_incident_key"] = "",
 				["battle_type"] = "LAND_ATTACK",
 				["post_battle_dilemma_override"] = "",
@@ -11032,6 +12439,7 @@ return {
 				["boss_overlay"] = false,
 				["reward_set"] = "random_all_weighted",
 				["key"] = "intro_east_1",
+				["plot_essential"] = true,
 				["inciting_incident_key"] = "",
 				["battle_type"] = "LAND_ATTACK",
 				["post_battle_dilemma_override"] = "",
@@ -11047,6 +12455,7 @@ return {
 				["boss_overlay"] = false,
 				["reward_set"] = "random_all_weighted",
 				["key"] = "intro_west_2",
+				["plot_essential"] = false,
 				["inciting_incident_key"] = "",
 				["battle_type"] = "SIEGE_ATTACK",
 				["post_battle_dilemma_override"] = "",
@@ -11068,12 +12477,15 @@ return {
 				["boss_overlay"] = false,
 				["reward_set"] = "random_all_weighted",
 				["key"] = "intro_south_1",
+				["plot_essential"] = true,
 				["inciting_incident_key"] = "",
 				["battle_type"] = "AMBUSH_ATTACK",
 				["post_battle_dilemma_override"] = "",
 				["force_set"] = {
 					[1] = "emp_knights_easy",
-					[2] = "emp_powder_easy"
+					[2] = "emp_powder_easy",
+					[3] = "ksl_cavalry_easy",
+					[4] = "ksl_infantry_easy"
 				}
 			},
 			["intro_west_1"] = {
@@ -11083,6 +12495,7 @@ return {
 				["boss_overlay"] = false,
 				["reward_set"] = "random_all_weighted",
 				["key"] = "intro_west_1",
+				["plot_essential"] = true,
 				["inciting_incident_key"] = "",
 				["battle_type"] = "LAND_DEFEND",
 				["post_battle_dilemma_override"] = "",
@@ -11094,9 +12507,10 @@ return {
 				["progress_payload"] = "INTRODUCTION_ACT_COMPLETED",
 				["region"] = "settlement:wh3_main_chaos_region_doomkeep",
 				["duration"] = 0,
-				["boss_overlay"] = false,
+				["boss_overlay"] = true,
 				["reward_set"] = "random_all_weighted",
 				["key"] = "intro_boss",
+				["plot_essential"] = true,
 				["inciting_incident_key"] = "",
 				["battle_type"] = "SIEGE_ATTACK",
 				["post_battle_dilemma_override"] = "",
@@ -11112,8 +12526,9 @@ return {
 				["region"] = "settlement:wh3_main_chaos_region_doomkeep",
 				["duration"] = 0,
 				["boss_overlay"] = false,
-				["reward_set"] = "random_all_weighted",
+				["reward_set"] = "random_common",
 				["key"] = "starting_battle",
+				["plot_essential"] = true,
 				["inciting_incident_key"] = "",
 				["battle_type"] = "LAND_ATTACK",
 				["post_battle_dilemma_override"] = "",
@@ -12553,6 +13968,7 @@ return {
 						["boss_overlay"] = false,
 						["reward_set"] = "random_all_weighted",
 						["key"] = "intro_north_1",
+						["plot_essential"] = true,
 						["inciting_incident_key"] = "",
 						["battle_type"] = "LAND_ATTACK",
 						["post_battle_dilemma_override"] = "",
@@ -12578,9 +13994,10 @@ return {
 						["progress_payload"] = "INTRODUCTION_ACT_COMPLETED",
 						["region"] = "settlement:wh3_main_chaos_region_doomkeep",
 						["duration"] = 0,
-						["boss_overlay"] = false,
+						["boss_overlay"] = true,
 						["reward_set"] = "random_all_weighted",
 						["key"] = "intro_boss",
+						["plot_essential"] = true,
 						["inciting_incident_key"] = "",
 						["battle_type"] = "SIEGE_ATTACK",
 						["post_battle_dilemma_override"] = "",
@@ -12609,6 +14026,7 @@ return {
 						["boss_overlay"] = false,
 						["reward_set"] = "random_all_weighted",
 						["key"] = "intro_west_1",
+						["plot_essential"] = true,
 						["inciting_incident_key"] = "",
 						["battle_type"] = "LAND_DEFEND",
 						["post_battle_dilemma_override"] = "",
@@ -12634,6 +14052,7 @@ return {
 						["boss_overlay"] = false,
 						["reward_set"] = "random_all_weighted",
 						["key"] = "intro_west_2",
+						["plot_essential"] = false,
 						["inciting_incident_key"] = "",
 						["battle_type"] = "SIEGE_ATTACK",
 						["post_battle_dilemma_override"] = "",
@@ -12672,6 +14091,7 @@ return {
 						["boss_overlay"] = false,
 						["reward_set"] = "random_all_weighted",
 						["key"] = "intro_east_2",
+						["plot_essential"] = false,
 						["inciting_incident_key"] = "",
 						["battle_type"] = "AMBUSH_DEFEND",
 						["post_battle_dilemma_override"] = "",
@@ -12693,8 +14113,9 @@ return {
 						["region"] = "settlement:wh3_main_chaos_region_doomkeep",
 						["duration"] = 0,
 						["boss_overlay"] = false,
-						["reward_set"] = "random_all_weighted",
+						["reward_set"] = "random_common",
 						["key"] = "starting_battle",
+						["plot_essential"] = true,
 						["inciting_incident_key"] = "",
 						["battle_type"] = "LAND_ATTACK",
 						["post_battle_dilemma_override"] = "",
@@ -12723,6 +14144,7 @@ return {
 						["boss_overlay"] = false,
 						["reward_set"] = "random_all_weighted",
 						["key"] = "intro_east_1",
+						["plot_essential"] = true,
 						["inciting_incident_key"] = "",
 						["battle_type"] = "LAND_ATTACK",
 						["post_battle_dilemma_override"] = "",
@@ -12761,12 +14183,15 @@ return {
 						["boss_overlay"] = false,
 						["reward_set"] = "random_all_weighted",
 						["key"] = "intro_south_1",
+						["plot_essential"] = true,
 						["inciting_incident_key"] = "",
 						["battle_type"] = "AMBUSH_ATTACK",
 						["post_battle_dilemma_override"] = "",
 						["force_set"] = {
 							[1] = "emp_knights_easy",
-							[2] = "emp_powder_easy"
+							[2] = "emp_powder_easy",
+							[3] = "ksl_cavalry_easy",
+							[4] = "ksl_infantry_easy"
 						}
 					}
 				},
@@ -12806,16 +14231,26 @@ return {
 					["requires_resource"] = ""
 				},
 				[6] = {
-					["dilemma"] = "rogue_special_all_dae",
+					["dilemma"] = "rogue_common_all_dae",
 					["resource_threshold"] = 0,
 					["requires_resource"] = ""
 				},
 				[7] = {
-					["dilemma"] = "rogue_special_all_dae",
+					["dilemma"] = "rogue_common_all_dae",
 					["resource_threshold"] = 0,
 					["requires_resource"] = ""
 				},
 				[8] = {
+					["dilemma"] = "rogue_special_all_dae",
+					["resource_threshold"] = 0,
+					["requires_resource"] = ""
+				},
+				[9] = {
+					["dilemma"] = "rogue_special_all_dae",
+					["resource_threshold"] = 0,
+					["requires_resource"] = ""
+				},
+				[10] = {
 					["dilemma"] = "rogue_rare_all_dae",
 					["resource_threshold"] = 0,
 					["requires_resource"] = ""
@@ -13704,6 +15139,108 @@ return {
 					[5] = "wh3_main_skv_clan_krizzor"
 				}
 			},
+			["emp_knights_hard"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "emp_demis_1",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_knights_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "emp_melee_statetroops_2",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "emp_knights_hard",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "emp_basic_arty",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_handgunners_2",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "emp_greatswords_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "emp_reiksguard_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_blazing_sun_2",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "emp_demis_1",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "emp_wagon",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_pistols_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[4] = {
+							[1] = {
+								["force_fragment_key"] = "emp_melee_statetroops_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_free_company_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[5] = {
+							[1] = {
+								["force_fragment_key"] = "emp_huntsman_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_ranged_statetroops_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[6] = {
+							[1] = {
+								["force_fragment_key"] = "emp_spearmen_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_archers_2",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "emp_knights_hard",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh_main_emp_lord",
+						["commander_key"] = "emp_general"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh_main_emp_ostland",
+					[2] = "wh_main_emp_nordland"
+				}
+			},
 			["kho_chosen_easy"] = {
 				["base_difficulty"] = 0,
 				["force_fragment_set"] = {
@@ -13750,6 +15287,179 @@ return {
 					[2] = "wh3_main_kho_karneths_sons",
 					[3] = "wh3_main_kho_brazen_throne",
 					[4] = "wh3_main_kho_crimson_skull"
+				}
+			},
+			["ksl_infantry_hard"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_little_grom",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_tzar_guard_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "ksl_kossars_3",
+							["hidden_fragment"] = false
+						},
+						[4] = {
+							["force_fragment_key"] = "ksl_armoured_kossar_2",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "ksl_infantry_hard",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_gryphon_legion_1",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_heavy_sled",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "ksl_little_grom",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_tzar_guard_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_streltsi_3",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_horse_archers_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_dervishes_2",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "ksl_kossars_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[4] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_streltsi_3",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_tzar_guard_2",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "ksl_infantry_hard",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_ksl_boyar",
+						["commander_key"] = "ksl_boyar"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh3_main_ksl_brotherhood_of_the_bear",
+					[2] = "wh3_main_ksl_ropsmenn_clan",
+					[3] = "wh3_main_ksl_ungol_kindred",
+					[4] = "wh3_main_ksl_ursun_revivalists",
+					[5] = "wh3_main_ksl_druzhina_enclave"
+				}
+			},
+			["emp_knights_norm"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "emp_knights_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_melee_statetroops_2",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "emp_knights_norm",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "emp_reiksguard_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_blazing_sun_2",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "emp_demis_1",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "emp_wagon",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_pistols_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "emp_melee_statetroops_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_free_company_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[4] = {
+							[1] = {
+								["force_fragment_key"] = "emp_huntsman_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_ranged_statetroops_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[5] = {
+							[1] = {
+								["force_fragment_key"] = "emp_spearmen_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_archers_2",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "emp_knights_norm",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh_main_emp_lord",
+						["commander_key"] = "emp_general"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh_main_emp_ostland",
+					[2] = "wh_main_emp_nordland"
 				}
 			},
 			["skv_warlords_norm"] = {
@@ -13814,6 +15524,137 @@ return {
 				["faction_set"] = {
 					[1] = "wh2_main_skv_clan_spittel",
 					[2] = "wh3_main_skv_clan_morbidus"
+				}
+			},
+			["ksl_cavalry_norm"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_bear_rider",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "ksl_cavalry_norm",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_armoured_kossar_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_streltsi_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_gryphon_legion_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_heavy_sled",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_heavy_sled",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_bear_rider",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "ksl_cavalry_norm",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_ksl_boyar",
+						["commander_key"] = "ksl_boyar"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh3_main_ksl_brotherhood_of_the_bear",
+					[2] = "wh3_main_ksl_ropsmenn_clan",
+					[3] = "wh3_main_ksl_ungol_kindred",
+					[4] = "wh3_main_ksl_ursun_revivalists",
+					[5] = "wh3_main_ksl_druzhina_enclave"
+				}
+			},
+			["ksl_ice_court_norm"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_ice_guard_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_kossars_3",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "ksl_armoured_kossar_2",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "ksl_ice_court_norm",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_snow_cat_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_ice_guard_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_horse_archers_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_dervishes_2",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "ksl_kossars_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_streltsi_3",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_tzar_guard_2",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "ksl_ice_court_norm",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_ksl_ice_witch_tempest",
+						["commander_key"] = "ksl_ice_witch_temp"
+					},
+					[2] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_ksl_ice_witch_ice",
+						["commander_key"] = "ksl_ice_witch_ice"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh3_main_ksl_the_ice_court"
 				}
 			},
 			["nor_easy"] = {
@@ -13939,6 +15780,131 @@ return {
 					[3] = "wh3_main_nur_maggoth_kin"
 				}
 			},
+			["ksl_ice_court_hard"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_ice_bear",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_ice_guard_2",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "ksl_kossars_3",
+							["hidden_fragment"] = false
+						},
+						[4] = {
+							["force_fragment_key"] = "ksl_armoured_kossar_2",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "ksl_ice_court_hard",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_snow_cat_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_ice_guard_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_snow_cat_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_ice_guard_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_horse_archers_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_dervishes_2",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "ksl_kossars_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[4] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_streltsi_3",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_tzar_guard_2",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "ksl_ice_court_hard",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_ksl_ice_witch_tempest",
+						["commander_key"] = "ksl_ice_witch_temp"
+					},
+					[2] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_ksl_ice_witch_ice",
+						["commander_key"] = "ksl_ice_witch_ice"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh3_main_ksl_the_ice_court"
+				}
+			},
+			["ksl_cavalry_hard"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_bear_rider",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "ksl_cavalry_hard",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_heavy_sled",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_bear_rider",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "ksl_cavalry_hard",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_ksl_boyar",
+						["commander_key"] = "ksl_boyar"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh3_main_ksl_brotherhood_of_the_bear",
+					[2] = "wh3_main_ksl_ropsmenn_clan",
+					[3] = "wh3_main_ksl_ungol_kindred",
+					[4] = "wh3_main_ksl_ursun_revivalists",
+					[5] = "wh3_main_ksl_druzhina_enclave"
+				}
+			},
 			["tze_knights_easy"] = {
 				["base_difficulty"] = 0,
 				["force_fragment_set"] = {
@@ -13991,6 +15957,77 @@ return {
 					[3] = "wh3_main_tze_broken_wheel",
 					[4] = "wh3_main_tze_flaming_scribes",
 					[5] = "wh3_dlc20_tze_the_sightless"
+				}
+			},
+			["ksl_infantry_norm"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_tzar_guard_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_kossars_3",
+							["hidden_fragment"] = false
+						},
+						[3] = {
+							["force_fragment_key"] = "ksl_armoured_kossar_2",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "ksl_infantry_norm",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_tzar_guard_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_streltsi_3",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_horse_archers_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_dervishes_2",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "ksl_kossars_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_streltsi_3",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_tzar_guard_2",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "ksl_infantry_norm",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_ksl_boyar",
+						["commander_key"] = "ksl_boyar"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh3_main_ksl_brotherhood_of_the_bear",
+					[2] = "wh3_main_ksl_ropsmenn_clan",
+					[3] = "wh3_main_ksl_ungol_kindred",
+					[4] = "wh3_main_ksl_ursun_revivalists",
+					[5] = "wh3_main_ksl_druzhina_enclave"
 				}
 			},
 			["kho_doom_keep_boss"] = {
@@ -14289,11 +16326,72 @@ return {
 					[1] = "wh2_main_skv_clan_moulder"
 				}
 			},
+			["ksl_infantry_easy"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_kossars_3",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_armoured_kossar_2",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "ksl_infantry_easy",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_horse_archers_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_dervishes_2",
+								["hidden_fragment"] = false
+							},
+							[3] = {
+								["force_fragment_key"] = "ksl_kossars_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_streltsi_3",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_tzar_guard_2",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "ksl_infantry_easy",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_ksl_boyar",
+						["commander_key"] = "ksl_boyar"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh3_main_ksl_brotherhood_of_the_bear",
+					[2] = "wh3_main_ksl_ropsmenn_clan",
+					[3] = "wh3_main_ksl_ungol_kindred",
+					[4] = "wh3_main_ksl_ursun_revivalists",
+					[5] = "wh3_main_ksl_druzhina_enclave"
+				}
+			},
 			["emp_powder_easy"] = {
 				["base_difficulty"] = 0,
 				["force_fragment_set"] = {
 					["mandatory_fragments"] = {
 						[1] = {
+							["force_fragment_key"] = "emp_melee_statetroops_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
 							["force_fragment_key"] = "emp_basic_arty",
 							["hidden_fragment"] = false
 						}
@@ -14659,6 +16757,16 @@ return {
 								["force_fragment_key"] = "emp_ranged_statetroops_2",
 								["hidden_fragment"] = false
 							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "emp_spearmen_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_archers_2",
+								["hidden_fragment"] = false
+							}
 						}
 					}
 				},
@@ -14838,6 +16946,199 @@ return {
 					[5] = "wh3_dlc20_tze_the_sightless"
 				}
 			},
+			["ksl_cavalry_easy"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "ksl_kossars_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "ksl_winged_lancers_1",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "ksl_cavalry_easy",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_kossars_3",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_armoured_kossar_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_horse_archers_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_light_sled_1",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_winged_lancers_1",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_dervishes_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[4] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_armoured_kossar_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_streltsi_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[5] = {
+							[1] = {
+								["force_fragment_key"] = "ksl_gryphon_legion_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "ksl_heavy_sled",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "ksl_cavalry_easy",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh3_main_ksl_boyar",
+						["commander_key"] = "ksl_boyar"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh3_main_ksl_brotherhood_of_the_bear",
+					[2] = "wh3_main_ksl_ropsmenn_clan",
+					[3] = "wh3_main_ksl_ungol_kindred",
+					[4] = "wh3_main_ksl_ursun_revivalists",
+					[5] = "wh3_main_ksl_druzhina_enclave"
+				}
+			},
+			["emp_powder_hard"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "emp_melee_statetroops_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_basic_arty",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "emp_powder_hard",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "emp_demis_1",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_greatswords_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "emp_advanced_arty",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_grenade_wagon",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "emp_advanced_arty",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_steamtank",
+								["hidden_fragment"] = false
+							}
+						},
+						[4] = {
+							[1] = {
+								["force_fragment_key"] = "emp_knights_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_halberds_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[5] = {
+							[1] = {
+								["force_fragment_key"] = "emp_basic_arty",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_handgunners_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[6] = {
+							[1] = {
+								["force_fragment_key"] = "emp_swords_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_spearmen_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[7] = {
+							[1] = {
+								["force_fragment_key"] = "emp_handgunners_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_outriders_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[8] = {
+							[1] = {
+								["force_fragment_key"] = "emp_free_company_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_spearmen_2",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "emp_powder_hard",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh_main_emp_lord",
+						["commander_key"] = "emp_general"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh_main_emp_ostland",
+					[2] = "wh_main_emp_nordland"
+				}
+			},
 			["grn_nightgoblins_easy"] = {
 				["base_difficulty"] = 0,
 				["force_fragment_set"] = {
@@ -14895,6 +17196,86 @@ return {
 					[9] = "wh_main_grn_black_venom",
 					[10] = "wh3_main_grn_moon_howlerz",
 					[11] = "wh3_main_grn_tusked_sunz"
+				}
+			},
+			["emp_powder_norm"] = {
+				["base_difficulty"] = 0,
+				["force_fragment_set"] = {
+					["mandatory_fragments"] = {
+						[1] = {
+							["force_fragment_key"] = "emp_melee_statetroops_2",
+							["hidden_fragment"] = false
+						},
+						[2] = {
+							["force_fragment_key"] = "emp_basic_arty",
+							["hidden_fragment"] = false
+						}
+					},
+					["key"] = "emp_powder_norm",
+					["generated_fragment_slots"] = {
+						[1] = {
+							[1] = {
+								["force_fragment_key"] = "emp_knights_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_halberds_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[2] = {
+							[1] = {
+								["force_fragment_key"] = "emp_basic_arty",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_handgunners_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[3] = {
+							[1] = {
+								["force_fragment_key"] = "emp_swords_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_spearmen_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[4] = {
+							[1] = {
+								["force_fragment_key"] = "emp_handgunners_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_outriders_2",
+								["hidden_fragment"] = false
+							}
+						},
+						[5] = {
+							[1] = {
+								["force_fragment_key"] = "emp_free_company_2",
+								["hidden_fragment"] = false
+							},
+							[2] = {
+								["force_fragment_key"] = "emp_spearmen_2",
+								["hidden_fragment"] = false
+							}
+						}
+					}
+				},
+				["force_key"] = "emp_powder_norm",
+				["commander_set"] = {
+					[1] = {
+						["difficulty_delta"] = 0,
+						["agent_subtype"] = "wh_main_emp_lord",
+						["commander_key"] = "emp_general"
+					}
+				},
+				["faction_set"] = {
+					[1] = "wh_main_emp_ostland",
+					[2] = "wh_main_emp_nordland"
 				}
 			},
 			["sla_chosen_easy"] = {
@@ -17841,10 +20222,16 @@ return {
 				[2] = "wh3_main_nur_bubonic_swarm",
 				[3] = "wh3_main_nur_maggoth_kin"
 			},
+			["ksl_orthodoxy"] = {
+				[1] = "wh3_main_ksl_the_great_orthodoxy"
+			},
 			["emp_eastern"] = {
 				[1] = "wh_main_emp_talabecland",
 				[2] = "wh_main_emp_hochland",
 				[3] = "wh_main_emp_ostermark"
+			},
+			["ksl_ice_court"] = {
+				[1] = "wh3_main_ksl_the_ice_court"
 			},
 			["tze_minor_factions"] = {
 				[1] = "wh3_main_tze_all_seeing_eye",
@@ -17852,6 +20239,13 @@ return {
 				[3] = "wh3_main_tze_broken_wheel",
 				[4] = "wh3_main_tze_flaming_scribes",
 				[5] = "wh3_dlc20_tze_the_sightless"
+			},
+			["ksl_minor"] = {
+				[1] = "wh3_main_ksl_brotherhood_of_the_bear",
+				[2] = "wh3_main_ksl_ropsmenn_clan",
+				[3] = "wh3_main_ksl_ungol_kindred",
+				[4] = "wh3_main_ksl_ursun_revivalists",
+				[5] = "wh3_main_ksl_druzhina_enclave"
 			},
 			["skv_eshin"] = {
 				[1] = "wh2_main_skv_clan_eshin"
@@ -17959,38 +20353,19 @@ return {
 			}
 		},
 		["force_sets"] = {
-			["brt_easy"] = {
-
+			["dae_any_easy"] = {
+				[1] = "kho_dae_easy",
+				[2] = "tze_dae_easy",
+				[3] = "sla_dae_easy",
+				[4] = "nur_dae_easy"
 			},
-			["emp_easy"] = {
-				[1] = "emp_knights_easy",
-				[2] = "emp_powder_easy"
-			},
-			["skv_any_norm"] = {
-				[1] = "skv_moulder_norm",
-				[2] = "skv_pestilens_norm",
-				[3] = "skv_warlords_norm"
-			},
-			["tze_or_nur_mortal_easy"] = {
-				[1] = "nur_marauder_horde_easy",
-				[2] = "nur_warband_easy",
-				[3] = "nur_chosen_easy",
-				[4] = "nur_knights_easy",
-				[5] = "tze_marauder_horde_easy",
-				[6] = "tze_warband_easy",
-				[7] = "tze_chosen_easy",
-				[8] = "tze_knights_easy"
+			["ksl_hard"] = {
+				[1] = "ksl_ice_court_hard",
+				[2] = "ksl_cavalry_hard",
+				[3] = "ksl_infantry_hard"
 			},
 			["tze_dae_easy"] = {
 				[1] = "tze_dae_easy"
-			},
-			["nor_wulfrik"] = {
-				[1] = "nor_wulfrik_norm"
-			},
-			["nor_any_norm"] = {
-				[1] = "nor_marauder_horde_norm",
-				[2] = "nor_skinwolves_norm",
-				[3] = "nor_mammoth_norm"
 			},
 			["skv_or_grn_easy"] = {
 				[1] = "grn_orcs_easy",
@@ -18004,19 +20379,6 @@ return {
 				[2] = "tze_doom_keep_boss",
 				[3] = "nur_doom_keep_boss",
 				[4] = "sla_doom_keep_boss"
-			},
-			["starting_enemies"] = {
-				[1] = "starting_battle_kho",
-				[2] = "starting_battle_nur",
-				[3] = "starting_battle_sla",
-				[4] = "starting_battle_tze"
-			},
-			["nur_any_easy"] = {
-				[1] = "nur_marauder_horde_easy",
-				[2] = "nur_warband_easy",
-				[3] = "nur_chosen_easy",
-				[4] = "nur_knights_easy",
-				[5] = "nur_dae_easy"
 			},
 			["sla_any_easy"] = {
 				[1] = "sla_marauder_horde_easy",
@@ -18032,16 +20394,40 @@ return {
 				[4] = "tze_knights_easy",
 				[5] = "tze_dae_easy"
 			},
-			["skv_or_grn_norm"] = {
+			["ksl_easy"] = {
+				[1] = "ksl_cavalry_easy",
+				[2] = "ksl_infantry_easy"
+			},
+			["grn_any_easy"] = {
+				[1] = "grn_orcs_easy",
+				[2] = "grn_nightgoblins_easy"
+			},
+			["any_old_world_human_norm"] = {
+				[1] = "ksl_ice_court_norm",
+				[2] = "ksl_cavalry_norm",
+				[3] = "ksl_infantry_norm"
+			},
+			["nur_dae_easy"] = {
+				[1] = "nur_dae_easy"
+			},
+			["grn_any_norm"] = {
 				[1] = "grn_orcs_norm",
 				[2] = "grn_spiders_norm",
-				[3] = "grn_nightgoblins_norm",
-				[4] = "skv_moulder_norm",
-				[5] = "skv_pestilens_norm",
-				[6] = "skv_warlords_norm"
+				[3] = "grn_nightgoblins_norm"
 			},
-			["ksl_easy"] = {
+			["any_old_world_human_easy"] = {
+				[1] = "emp_knights_easy",
+				[2] = "emp_powder_easy",
+				[3] = "ksl_cavalry_easy",
+				[4] = "ksl_infantry_easy"
+			},
+			["emp_norm"] = {
 
+			},
+			["skv_any_norm"] = {
+				[1] = "skv_moulder_norm",
+				[2] = "skv_pestilens_norm",
+				[3] = "skv_warlords_norm"
 			},
 			["kho_any_easy"] = {
 				[1] = "kho_marauder_horde_easy",
@@ -18050,11 +20436,48 @@ return {
 				[4] = "kho_knights_easy",
 				[5] = "kho_dae_easy"
 			},
+			["nor_wulfrik"] = {
+				[1] = "nor_wulfrik_norm"
+			},
+			["skv_any_easy"] = {
+				[1] = "skv_moulder_easy",
+				[2] = "skv_warlords_easy",
+				[3] = "skv_pestilens_easy"
+			},
+			["sla_dae_easy"] = {
+				[1] = "sla_dae_easy"
+			},
+			["sla_any_mortal_easy"] = {
+				[1] = "sla_marauder_horde_easy",
+				[2] = "sla_warband_easy",
+				[3] = "sla_chosen_easy",
+				[4] = "sla_knights_easy"
+			},
+			["skv_or_grn_norm"] = {
+				[1] = "grn_orcs_norm",
+				[2] = "grn_spiders_norm",
+				[3] = "grn_nightgoblins_norm",
+				[4] = "skv_moulder_norm",
+				[5] = "skv_pestilens_norm",
+				[6] = "skv_warlords_norm"
+			},
+			["ksl_normal"] = {
+				[1] = "ksl_ice_court_norm",
+				[2] = "ksl_cavalry_norm",
+				[3] = "ksl_infantry_norm"
+			},
 			["nur_any_mortal_easy"] = {
 				[1] = "nur_marauder_horde_easy",
 				[2] = "nur_warband_easy",
 				[3] = "nur_chosen_easy",
 				[4] = "nur_knights_easy"
+			},
+			["any_old_world_human_hard"] = {
+				[1] = "emp_knights_easy",
+				[2] = "emp_powder_easy",
+				[3] = "ksl_ice_court_hard",
+				[4] = "ksl_cavalry_hard",
+				[5] = "ksl_infantry_hard"
 			},
 			["kho_any_mortal_easy"] = {
 				[1] = "kho_marauder_horde_easy",
@@ -18062,28 +20485,24 @@ return {
 				[3] = "kho_chosen_easy",
 				[4] = "kho_knights_easy"
 			},
-			["dae_any_easy"] = {
-				[1] = "kho_dae_easy",
-				[2] = "tze_dae_easy",
-				[3] = "sla_dae_easy",
-				[4] = "nur_dae_easy"
+			["nur_any_easy"] = {
+				[1] = "nur_marauder_horde_easy",
+				[2] = "nur_warband_easy",
+				[3] = "nur_chosen_easy",
+				[4] = "nur_knights_easy",
+				[5] = "nur_dae_easy"
 			},
-			["nur_dae_easy"] = {
-				[1] = "nur_dae_easy"
+			["brt_easy"] = {
+
 			},
-			["sla_dae_easy"] = {
-				[1] = "sla_dae_easy"
+			["emp_easy"] = {
+				[1] = "emp_knights_easy",
+				[2] = "emp_powder_easy"
 			},
-			["grn_any_norm"] = {
-				[1] = "grn_orcs_norm",
-				[2] = "grn_spiders_norm",
-				[3] = "grn_nightgoblins_norm"
-			},
-			["sla_any_mortal_easy"] = {
-				[1] = "sla_marauder_horde_easy",
-				[2] = "sla_warband_easy",
-				[3] = "sla_chosen_easy",
-				[4] = "sla_knights_easy"
+			["nor_any_norm"] = {
+				[1] = "nor_marauder_horde_norm",
+				[2] = "nor_skinwolves_norm",
+				[3] = "nor_mammoth_norm"
 			},
 			["chs_monogods_any_easy"] = {
 				[1] = "sla_marauder_horde_easy",
@@ -18103,27 +20522,33 @@ return {
 				[15] = "kho_chosen_easy",
 				[16] = "kho_knights_easy"
 			},
+			["emp_hard"] = {
+
+			},
+			["starting_enemies"] = {
+				[1] = "starting_battle_kho",
+				[2] = "starting_battle_nur",
+				[3] = "starting_battle_sla",
+				[4] = "starting_battle_tze"
+			},
+			["tze_or_nur_mortal_easy"] = {
+				[1] = "nur_marauder_horde_easy",
+				[2] = "nur_warband_easy",
+				[3] = "nur_chosen_easy",
+				[4] = "nur_knights_easy",
+				[5] = "tze_marauder_horde_easy",
+				[6] = "tze_warband_easy",
+				[7] = "tze_chosen_easy",
+				[8] = "tze_knights_easy"
+			},
+			["kho_dae_easy"] = {
+				[1] = "kho_dae_easy"
+			},
 			["tze_any_mortal_easy"] = {
 				[1] = "tze_marauder_horde_easy",
 				[2] = "tze_warband_easy",
 				[3] = "tze_chosen_easy",
 				[4] = "tze_knights_easy"
-			},
-			["grn_any_easy"] = {
-				[1] = "grn_orcs_easy",
-				[2] = "grn_nightgoblins_easy"
-			},
-			["any_old_world_human_easy"] = {
-				[1] = "emp_knights_easy",
-				[2] = "emp_powder_easy"
-			},
-			["kho_dae_easy"] = {
-				[1] = "kho_dae_easy"
-			},
-			["skv_any_easy"] = {
-				[1] = "skv_moulder_easy",
-				[2] = "skv_warlords_easy",
-				[3] = "skv_pestilens_easy"
 			}
 		}
 	}

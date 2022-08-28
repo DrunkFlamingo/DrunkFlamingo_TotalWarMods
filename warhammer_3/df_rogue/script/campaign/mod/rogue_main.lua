@@ -139,21 +139,42 @@ end
 ---@param call fun()
 ---@param time integer
 ---@param name string
-local function ui_callback(call, time, name)
-    cm:real_callback(function()
+---@param should_repeat boolean
+---@param time_to_remove_after integer|nil
+local function ui_callback(call, time, name, should_repeat, time_to_remove_after)
+    if not is_number(time) then
+        out("ui_callback called with a non-number time")
+        out("For Immediate callbacks, use game_callback")
+        return
+    end
+    local callstack = debug.traceback()
+    local cb = function()
         local ok, err = pcall(call)
         if not ok then
             out("Error in callback "..((name or "with unspecified name")))
             out(err)
             out(debug.traceback())
+            out("The callstack which established the failed callback was:")
+            out(callstack)
         end
-    end, time, name)
+    end
+    if should_repeat then
+      cm:repeat_real_callback(cb, time, name)
+    else
+      cm:callback(cb, time, name)
+    end
+    if should_repeat and time_to_remove_after then
+      cm:real_callback(function()
+        cm:remove_real_callback(name)
+      end, time_to_remove_after, name)
+    end
 end
 
 ---@param ContextType string
 ---@param call fun(context: any)
 ---@param optional_parent_id string|nil
 local function context_list_click_callback(ContextType, call, optional_parent_id)
+    local callstack = debug.traceback()
     core:add_listener(
         ContextType.."ListComponentLClickUp",
         "ComponentLClickUp",
@@ -170,6 +191,8 @@ local function context_list_click_callback(ContextType, call, optional_parent_id
                 out("Error in callback for "..context.string)
                 out(err)
                 out(debug.traceback())
+                out("The callstack which established the failed callback was:")
+                out(callstack)
             end
         end, true)
 end
@@ -177,6 +200,7 @@ end
 ---@param button_name string
 ---@param call fun(context: any)
 local function ui_click_callback(button_name, call)
+    local callstack = debug.traceback()
     core:add_listener(
         button_name.."ComponentLClickUp",
         "ComponentLClickUp",
@@ -188,6 +212,8 @@ local function ui_click_callback(button_name, call)
                 out("Error in callback for "..button_name)
                 out(err)
                 out(debug.traceback())
+                out("The callstack which established the failed callback was:")
+                out(callstack)
             end
         end, true)
 end
@@ -196,15 +222,20 @@ end
 ---@param call fun()
 ---@param time number
 ---@param name string
-local function game_callback(call, time, name)
+---@vararg any
+local function game_callback(call, time, name, ...)
+    local callstack = debug.traceback()
+    local args = {...}
     cm:callback(function()
-        local ok, err = pcall(call)
+        local ok, err = pcall(call, unpack(args))
         if not ok then
             out("Error in callback "..((name or "with unspecified name")))
             out(err)
             out(debug.traceback())
+            out("The callstack which established the failed callback was:")
+            out(callstack)
         end
-    end, time, name)
+    end, time or 0, name)
 end
 
 ---comment
@@ -239,9 +270,7 @@ local function game_event_callback(event_names, call, name, time, optional_conte
                     end
                 end
                 out("Event callback for "..event)
-                game_callback(function()
-                    call(perserved_context or context)
-                end, time or 0, listener_name)
+                game_callback(call, time or 0, listener_name, (perserved_context or context))
             end, true)
         out("Added game event callback "..listener_name)
     end
@@ -456,7 +485,10 @@ local mod_database, ---@type ROGUE_MOD_DATABASE
  skips, ---@type integer
   skipped_encounters, ---@type table<string, string>
    selection_set_gap_warnings ---@type string[]
+   ---@diagnostic disable-next-line
    = rogue_daniel_loader.load_all_data() 
+
+
 local err_string = ""
 if skips > 0  then
     err_string = "\tSkipped "..skips.." encounters: "
@@ -884,6 +916,88 @@ local function generate_force(force_key)
     return force
 end
 
+---@param generated_encounter GENERATED_ENCOUNTER
+local function setup_siege_encounter(generated_encounter)
+    local region = string.gsub(generated_encounter.region, "settlement:", "")
+    local spawn_x, spawn_y = cm:find_valid_spawn_location_for_character_from_settlement(
+        generated_encounter.force.faction,
+        region,
+        false, 
+        true,
+        8)
+    if spawn_x == -1 then
+        spawn_x, spawn_y = cm:find_valid_spawn_location_for_character_from_settlement(generated_encounter.force.faction,
+        region, false, false);
+    end
+    if spawn_x == -1 then
+        out("ERROR: Could not find a valid spawn location for the siege encounter after two tries!")
+        return
+    end
+    --first, spawn a dummy force so that the faction counts as alive.
+    cm:create_force(generated_encounter.force.faction, generated_encounter.force.unit_string, region,
+    spawn_x, spawn_y, true, function (cqi) out("The Dummy force spawned succesfully with CQI: "..cqi) end)
+    --then, transfer them the intended region on a callback.
+    game_callback(function ()
+        out("transferring: "..region.." to "..generated_encounter.force.faction)
+        cm:transfer_region_to_faction(region, generated_encounter.force.faction)
+        --then, on another callback, spawn the real force inside of the settlement.
+        local settlement = cm:get_region(region):settlement()
+        game_callback(function ()
+            cm:create_force(
+                generated_encounter.force.faction, 
+                generated_encounter.force.unit_string,
+                region,
+                settlement:logical_position_x(),
+                settlement:logical_position_y(),
+                true,
+                function (cqi, mf_cqi)
+                    out("Siege force successfully created with CQI: "..cqi)
+                    local faction = cm:get_faction(generated_encounter.force.faction)
+                    local faction_name = faction:name()
+                    if not faction:at_war_with(player.faction) then
+                        out("Force declaring war")
+                        cm:force_declare_war(player.faction:name(), faction_name, false, false)
+                    end
+                    --find and kill the dummy force
+                    for i = 0, faction:character_list():num_items() - 1 do
+                        local char = faction:character_list():item_at(i)
+                        if char:has_military_force() then
+                            if char:command_queue_index() ~= cqi then
+                                if char:has_garrison_residence() then
+                                    out("Found another char belonging to this faction, but they have a garrison residence")
+                                    local garrison_residence_region = char:garrison_residence():settlement_interface():region():name()
+                                    out("They're located in "..garrison_residence_region..", this should be the location of another siege encounter")
+                                    if not active_encounters["settlement:"..garrison_residence_region] then
+                                        out("But no siege encounter is active for that region!")
+                                    end
+                                else
+                                    out("Found other force "..char:command_queue_index().." which is not a siege force, and isn't the force we just spawned!")
+                                    game_callback(function ()
+                                        cm:kill_character(cm:char_lookup_str(char:command_queue_index()), true)
+                                    end, 0.1, "SiegeSetupKillDummyForceCallback")
+                                end
+                            end
+                        end
+                    end
+                    game_callback(function ()
+                        --replace the general with our intended general:
+                        local mf = cm:get_military_force_by_cqi(mf_cqi)
+                        ---@diagnostic disable-next-line
+                        local new_character = cm:replace_general_in_force(mf, generated_encounter.force.commander.agent_subtype)
+                        ---@diagnostic disable-next-line
+                        cm:randomise_character_name(new_char_interface)
+                        --TODO character effect bundles
+                    end, 0.1, "SiegeSetupReplaceGeneralCallback")
+                    
+                end,
+                true)
+        end, 0.4, "SiegeSetupArmySpawnCallback")
+    end, 0.1, "SiegeSetupTransferRegionCallback")
+    
+
+    out("Force create command was sent for the siege setup!")
+end
+
 ---comment
 ---@param encounter_key string
 ---@param is_forced_encounter boolean
@@ -902,6 +1016,8 @@ local function generate_encounter(encounter_key, is_forced_encounter)
     local encounter = {}
 
     encounter.key = encounter_key ---@type string
+    encounter.region = encounter_data.region ---@type string
+    encounter.is_forced_encounter = is_forced_encounter ---@type boolean
 
     --TODO localize this
     encounter.localised_name = encounter_key
@@ -916,12 +1032,14 @@ local function generate_encounter(encounter_key, is_forced_encounter)
     --set encounter difficulty default value, the actual difficulty is calculated by check_active_encounter_difficulty_and_upgrade_or_destroy 
     --This is so that the difficulty update happens after the player recieves rewards, because difficulty is based on the value balance between the player and enemy army.
 
-
-    --TODO battle type
-    out("DEV/ BATTLE TYPE NOT IMPLEMENTED YET, DEFAULTS TO LAND_ATTACK")
-    encounter.battle_type = "LAND_ATTACK" ---@type string
+    encounter.battle_type = encounter_data.battle_type
+    out("Battle type is "..encounter.battle_type)
+    if encounter.battle_type == "SIEGE_ATTACK" then
+        setup_siege_encounter(encounter)
+    end
 
     --TODO - generate rewards
+    --Currently I have rewards being generated after the battle ends - does that need to change?
     out("DEV/ REWARDS NOT IMPLEMENTED YET, DEFAULTS TO NONE")
 
     active_encounters[encounter_data.region] = encounter
@@ -1011,12 +1129,17 @@ local function update_encounter_difficulty(region_key, generated_encounter, upda
     local strength_ratio = encounter_value/player_value
     local potential_strength_ratio = encounter_value/player_potential
     out("Player value is "..player_value..", player potential value is "..player_potential.." and encounter value is "..encounter_value)
-    out("Ratio is "..(encounter_value/player_value))
+    out("Ratio is "..tostring(strength_ratio))
+    out("Potential ratio is "..tostring(potential_strength_ratio))
     if (not update_difficulty_only) and potential_strength_ratio < difficulty_destruction_threshold then
         if encounter_data.plot_essential then
             out("Encounter "..generated_encounter.key.." is plot essential, not upgrading or destroying.")
+        elseif generated_encounter.is_forced_encounter then
+            out("Encounter "..generated_encounter.key.." is a forced encounter, not upgrading or destroying.")
         elseif not has_other_encounters then
-            out("Encounter "..generated_encounter.key.." is too easy, and there are no other encounters, not upgrading or destroying.")
+            out("Encounter "..generated_encounter.key.." is too easy, but there are no other encounters, not upgrading or destroying.")
+        elseif encounter_data.battle_type == "SIEGE_ATTACK" then
+            out("Encounter "..generated_encounter.key.." is too easy, but it's a siege attack, not upgrading or destroying.")
         else
             out("Encounter "..generated_encounter.key.." is not plot essential, upgrading or destroying.")
             local force_set_upgrade = mod_database.force_set_upgrades[encounter_data.force_set]
@@ -1049,14 +1172,14 @@ end
 
 
 
-local function check_active_encounter_difficulty_and_upgrade_or_destroy()
+local function check_active_encounter_difficulty_and_upgrade_or_destroy(upgrade_only)
     --TODO check if an encounter is still difficult enough by comparing the value of the force attached to it with the value of the players' force.
     --[[
         When encounter_value < player_value * 0.9, upgrade or destroy.
         Never destroy encounters which are marked as plot essential.
     ]]
     for region_key, generated_encounter in pairs(active_encounters) do
-        local was_upgraded = update_encounter_difficulty(region_key, generated_encounter)
+        local was_upgraded = update_encounter_difficulty(region_key, generated_encounter, upgrade_only)
         if was_upgraded then 
             update_encounter_difficulty(region_key, generated_encounter, true)
         end
@@ -1088,7 +1211,9 @@ local function progress_gate_activated(progress_gate)
     --Randomly select an encounter to force
     local forces_encounters = gate_data.forces_encounters
     if #forces_encounters > 0 then
+        out("Adding forced encounter")
         local encounter_key = forces_encounters[cm:random_number(#forces_encounters)].key
+        out("Selected encounter "..encounter_key)
         queue_forced_encounter(generate_encounter(encounter_key, true))
     end
     untab_log(1)
@@ -1111,6 +1236,7 @@ local function increment_progress_gate_progress(progress_gate, increment)
         end
     end
 end
+
 
 
 
@@ -1137,7 +1263,18 @@ local function on_encounter_completed(encounter_key)
     end
     --remove the encounter from the currently being played register
     cm:set_saved_value(encounter_being_played_savestring, false)
+    --save the game and allow the player to continue
+    cm:disable_saving_game(false)
+    game_callback(function ()
+        cm:save(function ()
+            out("Saved the game!")
+        end, true)
+    end, 1, "SaveGameAfterEncounter")
+    core:svr_save_registry_bool("rogue_can_continue", true)
 
+    --give back the escape key and make the menu show again
+    local menu_bar = find_uicomponent("menu_bar", "buttongroup"):SetVisible(true)
+    cm:steal_escape_key(false)
     --increment the progress gates in the progress payload for this encounter
     local progress_payload_key = encounter_data.progress_payload
     local progress_payload = mod_database.progress_payloads[progress_payload_key]
@@ -1178,14 +1315,51 @@ local function commence_encounter(settlement_key)
     local force_key = encounter.force.key
     local region_key = string.gsub(settlement_key, "settlement:", "")
     local x, y = cm:find_valid_spawn_location_for_character_from_settlement(faction_name, region_key, false, true, 30)
-    local player_cqi = cm:get_local_faction():faction_leader():command_queue_index()
-    local is_ambush = false
-    fbm:add_new_force(force_key, unit_list_string, faction_name, true, nil, agent_subtype)
-    --TODO fill out this conditional for defensive/offensive/ambush
-    if true then
-        out("Forcing an encounter battle!")
-        fbm:trigger_battle(force_key, player_cqi, x, y, false)
+    local player_cqi = cm:get_local_faction():faction_leader():military_force():command_queue_index()
+    local battle_type = encounter.battle_type
+    local is_ambush = battle_type == "AMBUSH_ATTACK" or battle_type == "AMBUSH_DEFEND"
+    local is_siege = battle_type == "SIEGE_ATTACK" or battle_type == "SIEGE_DEFEND"
+    local siege_target = -1
+    if not is_siege then
+        fbm:add_new_force(force_key, unit_list_string, faction_name, true, nil, agent_subtype)
     end
+    if is_siege then
+        local garrison_residence = cm:get_region(region_key):garrison_residence()
+        if not garrison_residence:has_army() then
+            out("ERROR: No Garrison Residence Found in encounter region "..region_key)
+            out("The Encounter cannot be commenced")
+            return
+        end
+        siege_target = garrison_residence:army():command_queue_index()
+        out("Siege target is "..siege_target)
+    end
+    --turn off the ability to continue the game
+    core:svr_save_registry_bool("rogue_can_continue", false)
+    --turn off access to the menu so they can't exit
+    local menu_bar = find_uicomponent("menu_bar", "buttongroup"):SetVisible(false)
+    cm:steal_escape_key(true)
+
+    --TODO fill out this conditional for defensive/offensive/ambush
+    if battle_type == "LAND_DEFEND" or battle_type == "AMBUSH_DEFEND" then
+        out("Forcing an encounter battle! Defending!")
+        fbm:trigger_battle(force_key, player_cqi, x, y, is_ambush)
+    elseif battle_type == "LAND_ATTACK" or battle_type == "AMBUSH_ATTACK" then
+        out("Forcing an encounter battle! Attacking!")
+        fbm:trigger_battle(player_cqi, force_key, x, y, is_ambush)
+    elseif battle_type == "SIEGE_ATTACK" then
+        out("Forcing an encounter siege battle! Attacking!")
+        fbm:trigger_battle(player_cqi, siege_target)
+    end
+end
+
+local function trigger_forced_encounters()
+    if pending_forced_encounters[1] == nil then
+        out("No forced encounters to trigger")
+        return
+    end
+    local encounter = pending_forced_encounters[1]
+    out("Triggering forced encounter "..encounter.key)
+    game_callback(commence_encounter, 0.5, "ForcedEncounterTrigger", encounter.region)
 end
 
 local function grant_starting_reward()
@@ -1225,7 +1399,7 @@ local function create_event_handlers()
                     pending_rewards.armory_parts = items
                     core:trigger_event("DisplayArmoryRewardDialogue")
                 else
-                    --TODO force an encounter if one is pending
+                    core:trigger_event("TriggerForcedEncounters")
                 end
             end
         end
@@ -1240,15 +1414,26 @@ local function create_event_handlers()
         if #items > 0 then
             pending_rewards.armory_parts = items
             core:trigger_event("DisplayArmoryRewardDialogue")
+        else
+            core:trigger_event("TriggerForcedEncounters")
         end
         game_callback(check_active_encounter_difficulty_and_upgrade_or_destroy, 0.1, "CheckEncounterDifficultyPostReward")
     end, "PlayerCompletedDilemma", 0.5, {"choice_key"})
+
 end
 
 
 local function grant_armory_item(armory_item_key)
     ---@diagnostic disable-next-line
     cm:add_armory_item_to_character(player.character, armory_item_key, false, false)
+    ui_callback(function ()
+        common.call_context_command("CcoCampaignCharacter", tostring(player.cqi), "Select(false)")
+    end, 500, "SelectCharacterAfterRewards")
+end
+
+local function rename_player_at_game_start()
+    player.rename_active = true
+    common.call_context_command("CcoCampaignCharacter", tostring(player.cqi), "Rename")
 end
 
 ---SECTION: UI 
@@ -1265,36 +1450,26 @@ local function ui_command(command_key, ...)
     --TODO rewrite this function to use UITrigger for multiplayer safety.
     --not sure this mod will ever be multiplayer compatible, but maybe one day.
     local commands = {
-        ["commence_encounter"] = commence_encounter,
-        ["grant_starting_reward"] = grant_starting_reward,
-        ["grant_armory_item"] = grant_armory_item
+        ["commence_encounter"] = {command = commence_encounter, delay = 0.1},
+        ["rename_player_at_game_start"] = {command = rename_player_at_game_start},
+        ["grant_starting_reward"] = {command = grant_starting_reward},
+        ["grant_armory_item"] = {command = grant_armory_item},
+        ["trigger_forced_encounters"] = {command = trigger_forced_encounters}
     }
-    local command = commands[command_key]
-    if not command then
+    local command_info = commands[command_key]
+    if not command_info then
         error("No UI command found for key "..command_key)
     else
-        command(...)
+        game_callback(command_info.command, command_info.delay, command_key, ...)
     end
 end
 
 
+local function show_army_panel()
 
-
----@return UIC
-local function get_or_create_army_panel(destroy_old)
-    local panel_name = "rogue_player_army"
-    local existing_panel = find_uicomponent(core:get_ui_root(), panel_name)
-    if destroy_old and existing_panel then
-        existing_panel:DestroyChildren()
-        existing_panel:Destroy()
-    elseif existing_panel then
-        return existing_panel
-    end
-    local new_panel = UIComponent(core:get_ui_root():CreateComponent(panel_name, "ui/rogue/rogue_units_panel"))
-    new_panel:SetContextObject(cco("CcoCampaignRoot", ""))
-    return new_panel
-    
 end
+
+
 
 ---@return UIC
 local function get_or_create_tr_hud(destroy_old)
@@ -1438,7 +1613,6 @@ end
 
 function start_ui()
     local uim = cm:get_campaign_ui_manager()
-    common.call_context_command("CcoCampaignCharacter", tostring(player.cqi), "Select(false)")
     dev_ui()
 
     out("Creating the Rogue Daniel UI!")
@@ -1485,7 +1659,7 @@ function start_ui()
         else
             error("ERROR - no encounter selected to commence!")
         end
-        destroy_encounter_preview()
+        clear_encounter_selection()
     end)
 
     --cancel encounter
@@ -1511,6 +1685,18 @@ function start_ui()
         pending_rewards.armory_parts = {}
         pending_rewards.choice_detail_armory_parts = {}
         destroy_armory_reward_dialogue()
+        core:trigger_event("TriggerForcedEncounters")
+    end)
+
+    game_event_callback("TriggerForcedEncounters", function (context)
+        ui_command("trigger_forced_encounters")
+    end, "UICallback")
+
+    ui_click_callback("button_ok", function (context)
+       if player.rename_active then
+            player.rename_active = false
+            ui_command("grant_starting_reward")
+       end 
     end)
 
     --scripted context objects.
@@ -1559,6 +1745,8 @@ function rogue_main()
         end
     end
 
+    cm:disable_saving_game(true)
+
     --disable the event feed
     cm:disable_event_feed_events(true, "wh_event_category_diplomacy", "", "")
     cm:disable_event_feed_events(true, "wh_event_category_character", "", "")
@@ -1589,8 +1777,8 @@ function rogue_main()
                 start_ui()
                 if is_new_game then
                     ui_callback(function ()
-                        ui_command("grant_starting_reward")
-                    end, 700, "starting_reward_dilemma")
+                        ui_command("rename_player_at_game_start")
+                    end, 700, "startup_sequence")
                 end
             end, 250, "UISTART")
         end, 100)
@@ -1843,8 +2031,18 @@ local function test_starting_armies(depth)
     reset_log_tab()
 end
 
+local function force_generate_encounter(encounter_key)
+    generate_encounter(encounter_key)
+    send_encounters_to_ui()
+end
+
 local function force_complete_encounter(encounter_key)
     if encounter_key then
+        if not active_encounters[encounter_key] then
+            out("Force complete encounter called for encounter "..encounter_key.." but that encounter is not active!")
+            out("generating it now...")
+            generate_encounter(encounter_key, true)
+        end
         local dilemma_builder = on_encounter_completed(encounter_key)
         if dilemma_builder then
             out("Launching reward dilemma: "..type(dilemma_builder))
@@ -1865,7 +2063,6 @@ local function force_complete_encounter(encounter_key)
 end
 
 rogue_console = {
-    get_or_create_army_panel = get_or_create_army_panel,
     get_or_create_armory_reward_dialogue = get_or_create_armory_reward_dialogue,
     generate_and_print_force_with_key = generate_and_print_force_with_key,
     test_forces = test_forces,
@@ -1926,6 +2123,16 @@ cm.trigger_custom_mission_from_string = function (self, ...)
     local arg_string = tolerant_table_concat({...}, ", ")
     out("Trigger custom mission from string command "..arg_string.." was ignored")
 end
+
+
+
+--TODO test implementation of this as a stopgap for crashes ruining runs
+local function count_crashes()
+    local crashes = 0
+    for dir in io.popen([[dir "%appdata%\The Creative Assembly\Warhammer3\crash_report" /b]]):lines() do crashes = crashes + 1 end
+    return crashes/2
+end
+
 
 
 --[[UI Notebook:

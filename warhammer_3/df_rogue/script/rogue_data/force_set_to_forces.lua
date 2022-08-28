@@ -178,5 +178,37 @@ return {
 	[45] = {
 		["FORCE_KEY"] = "sla_doom_keep_boss",
 		["FORCE_SET_KEY"] = "intro_boss_battle"
+	},
+	[46] = {
+		["FORCE_KEY"] = "ksl_cavalry_easy",
+		["FORCE_SET_KEY"] = "ksl_easy"
+	},
+	[47] = {
+		["FORCE_KEY"] = "ksl_infantry_easy",
+		["FORCE_SET_KEY"] = "ksl_easy"
+	},
+	[48] = {
+		["FORCE_KEY"] = "ksl_ice_court_norm",
+		["FORCE_SET_KEY"] = "ksl_normal"
+	},
+	[49] = {
+		["FORCE_KEY"] = "ksl_cavalry_norm",
+		["FORCE_SET_KEY"] = "ksl_normal"
+	},
+	[50] = {
+		["FORCE_KEY"] = "ksl_infantry_norm",
+		["FORCE_SET_KEY"] = "ksl_normal"
+	},
+	[51] = {
+		["FORCE_KEY"] = "ksl_ice_court_hard",
+		["FORCE_SET_KEY"] = "ksl_hard"
+	},
+	[52] = {
+		["FORCE_KEY"] = "ksl_cavalry_hard",
+		["FORCE_SET_KEY"] = "ksl_hard"
+	},
+	[53] = {
+		["FORCE_KEY"] = "ksl_infantry_hard",
+		["FORCE_SET_KEY"] = "ksl_hard"
 	}
 }

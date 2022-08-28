@@ -1608,5 +1608,190 @@ return {
 		["FORCE_FRAGMENT_KEY"] = "kho_fleshhounds_4",
 		["DIFFICULTY_DELTA"] = "",
 		["LOCALISED_NAME"] = ""
+	},
+	[323] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_reiksguard_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[324] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_blazing_sun_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[325] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_demis_1",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[326] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_demis_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[327] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_helblaster_1",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[328] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_helstorm_1",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[329] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_advanced_arty",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[330] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_greatswords_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[331] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_pistols_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[332] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_grenade_riders_1",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[333] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_flagellants_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[334] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_flagellants_3",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[335] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_luminark",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[336] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_steamtank",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[337] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_wagon",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[338] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_grenade_wagon",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[339] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_winged_lancers_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[340] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_winged_lancers_1",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[341] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[342] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_3",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[343] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_horse_archers_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[344] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_dervishes_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[345] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[346] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_3",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[347] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_streltsi_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[348] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_bear_rider",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[349] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_gryphon_legion_1",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[350] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_gryphon_legion_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[351] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_tzar_guard_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[352] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_heavy_sled",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[353] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_light_sled_1",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[354] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_light_sled_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[355] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_ice_guard_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[356] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_ice_bear",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[357] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_snow_cat_2",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[358] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_little_grom",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
+	},
+	[359] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_streltsi_3",
+		["DIFFICULTY_DELTA"] = "",
+		["LOCALISED_NAME"] = ""
 	}
 }

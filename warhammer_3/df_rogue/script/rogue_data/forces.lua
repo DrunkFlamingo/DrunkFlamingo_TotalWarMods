@@ -327,5 +327,89 @@ return {
 		["FORCE_KEY"] = "sla_doom_keep_boss",
 		["COMMANDER_SET"] = "sla_exalted_keeper_of_secrets",
 		["BASE_DIFFICULTY"] = ""
+	},
+	[48] = {
+		["FORCE_FRAGMENT_SET"] = "emp_knights_norm",
+		["FACTION_SET"] = "emp_northern",
+		["FORCE_KEY"] = "emp_knights_norm",
+		["COMMANDER_SET"] = "emp_general",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[49] = {
+		["FORCE_FRAGMENT_SET"] = "emp_knights_hard",
+		["FACTION_SET"] = "emp_northern",
+		["FORCE_KEY"] = "emp_knights_hard",
+		["COMMANDER_SET"] = "emp_general",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[50] = {
+		["FORCE_FRAGMENT_SET"] = "emp_powder_norm",
+		["FACTION_SET"] = "emp_northern",
+		["FORCE_KEY"] = "emp_powder_norm",
+		["COMMANDER_SET"] = "emp_general",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[51] = {
+		["FORCE_FRAGMENT_SET"] = "emp_powder_hard",
+		["FACTION_SET"] = "emp_northern",
+		["FORCE_KEY"] = "emp_powder_hard",
+		["COMMANDER_SET"] = "emp_general",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[52] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_easy",
+		["FACTION_SET"] = "ksl_minor",
+		["FORCE_KEY"] = "ksl_cavalry_easy",
+		["COMMANDER_SET"] = "ksl_boyar",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[53] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_easy",
+		["FACTION_SET"] = "ksl_minor",
+		["FORCE_KEY"] = "ksl_infantry_easy",
+		["COMMANDER_SET"] = "ksl_boyar",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[54] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_ice_court_norm",
+		["FACTION_SET"] = "ksl_ice_court",
+		["FORCE_KEY"] = "ksl_ice_court_norm",
+		["COMMANDER_SET"] = "ksl_ice_witch",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[55] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_norm",
+		["FACTION_SET"] = "ksl_minor",
+		["FORCE_KEY"] = "ksl_cavalry_norm",
+		["COMMANDER_SET"] = "ksl_boyar",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[56] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_norm",
+		["FACTION_SET"] = "ksl_minor",
+		["FORCE_KEY"] = "ksl_infantry_norm",
+		["COMMANDER_SET"] = "ksl_boyar",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[57] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_ice_court_hard",
+		["FACTION_SET"] = "ksl_ice_court",
+		["FORCE_KEY"] = "ksl_ice_court_hard",
+		["COMMANDER_SET"] = "ksl_ice_witch",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[58] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_hard",
+		["FACTION_SET"] = "ksl_minor",
+		["FORCE_KEY"] = "ksl_cavalry_hard",
+		["COMMANDER_SET"] = "ksl_boyar",
+		["BASE_DIFFICULTY"] = ""
+	},
+	[59] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_hard",
+		["FACTION_SET"] = "ksl_minor",
+		["FORCE_KEY"] = "ksl_infantry_hard",
+		["COMMANDER_SET"] = "ksl_boyar",
+		["BASE_DIFFICULTY"] = ""
 	}
 }

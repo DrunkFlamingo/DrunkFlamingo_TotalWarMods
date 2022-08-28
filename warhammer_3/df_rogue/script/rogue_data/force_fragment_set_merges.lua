@@ -123,5 +123,55 @@ return {
 		["PARENT_FORCE_FRAGMENT_SET"] = "reward_sla_any_common",
 		["MERGE_BEHAVIOUR"] = "SHIFT_MANDATORY",
 		["CHILD_FORCE_FRAGMENT_SET"] = "reward_sla_marauders_early"
+	},
+	[26] = {
+		["PARENT_FORCE_FRAGMENT_SET"] = "emp_knights_norm",
+		["MERGE_BEHAVIOUR"] = "APPEND",
+		["CHILD_FORCE_FRAGMENT_SET"] = "emp_knights_easy"
+	},
+	[27] = {
+		["PARENT_FORCE_FRAGMENT_SET"] = "emp_knights_hard",
+		["MERGE_BEHAVIOUR"] = "APPEND",
+		["CHILD_FORCE_FRAGMENT_SET"] = "emp_knights_norm"
+	},
+	[28] = {
+		["PARENT_FORCE_FRAGMENT_SET"] = "emp_powder_norm",
+		["MERGE_BEHAVIOUR"] = "APPEND",
+		["CHILD_FORCE_FRAGMENT_SET"] = "emp_powder_easy"
+	},
+	[29] = {
+		["PARENT_FORCE_FRAGMENT_SET"] = "emp_powder_hard",
+		["MERGE_BEHAVIOUR"] = "APPEND",
+		["CHILD_FORCE_FRAGMENT_SET"] = "emp_powder_norm"
+	},
+	[30] = {
+		["PARENT_FORCE_FRAGMENT_SET"] = "ksl_cavalry_easy",
+		["MERGE_BEHAVIOUR"] = "APPEND",
+		["CHILD_FORCE_FRAGMENT_SET"] = "ksl_cavalry_norm"
+	},
+	[31] = {
+		["PARENT_FORCE_FRAGMENT_SET"] = "ksl_cavalry_norm",
+		["MERGE_BEHAVIOUR"] = "APPEND",
+		["CHILD_FORCE_FRAGMENT_SET"] = "ksl_cavalry_hard"
+	},
+	[32] = {
+		["PARENT_FORCE_FRAGMENT_SET"] = "ksl_ice_court_norm",
+		["MERGE_BEHAVIOUR"] = "APPEND",
+		["CHILD_FORCE_FRAGMENT_SET"] = "ksl_infantry_easy"
+	},
+	[33] = {
+		["PARENT_FORCE_FRAGMENT_SET"] = "ksl_ice_court_hard",
+		["MERGE_BEHAVIOUR"] = "APPEND",
+		["CHILD_FORCE_FRAGMENT_SET"] = "ksl_ice_court_norm"
+	},
+	[34] = {
+		["PARENT_FORCE_FRAGMENT_SET"] = "ksl_infantry_norm",
+		["MERGE_BEHAVIOUR"] = "APPEND",
+		["CHILD_FORCE_FRAGMENT_SET"] = "ksl_infantry_easy"
+	},
+	[35] = {
+		["PARENT_FORCE_FRAGMENT_SET"] = "ksl_infantry_hard",
+		["MERGE_BEHAVIOUR"] = "APPEND",
+		["CHILD_FORCE_FRAGMENT_SET"] = "ksl_infantry_norm"
 	}
 }

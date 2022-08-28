@@ -687,42 +687,42 @@ return {
 	},
 	[99] = {
 		["FORCE_FRAGMENT_SET"] = "start_army_chs_undivided_quantity",
-		["SELECTION_SET"] = "4",
+		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "chs_spawn_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[100] = {
 		["FORCE_FRAGMENT_SET"] = "start_army_chs_undivided_quantity",
-		["SELECTION_SET"] = "4",
+		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "chs_trolls_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[101] = {
 		["FORCE_FRAGMENT_SET"] = "start_army_chs_undivided_quantity",
-		["SELECTION_SET"] = "3",
+		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "chs_warhounds_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[102] = {
 		["FORCE_FRAGMENT_SET"] = "start_army_chs_undivided_quantity",
-		["SELECTION_SET"] = "3",
+		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "chs_marauder_horse_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[103] = {
 		["FORCE_FRAGMENT_SET"] = "start_army_chs_undivided_quantity",
-		["SELECTION_SET"] = "3",
+		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "chs_chariot_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[104] = {
 		["FORCE_FRAGMENT_SET"] = "start_army_chs_undivided_quantity",
-		["SELECTION_SET"] = "3",
+		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "chs_horsemaster_1",
 		["HIDE_FRAGMENT"] = "false"
@@ -3745,1389 +3745,1788 @@ return {
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[536] = {
+		["FORCE_FRAGMENT_SET"] = "emp_knights_easy",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_spearmen_2",
+		["HIDE_FRAGMENT"] = ""
+	},
+	[537] = {
+		["FORCE_FRAGMENT_SET"] = "emp_knights_easy",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_archers_2",
+		["HIDE_FRAGMENT"] = ""
+	},
+	[538] = {
+		["FORCE_FRAGMENT_SET"] = "emp_powder_easy",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_melee_statetroops_2",
+		["HIDE_FRAGMENT"] = ""
+	},
+	[539] = {
 		["FORCE_FRAGMENT_SET"] = "emp_powder_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "emp_swords_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[537] = {
+	[540] = {
 		["FORCE_FRAGMENT_SET"] = "emp_powder_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "emp_spearmen_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[538] = {
+	[541] = {
 		["FORCE_FRAGMENT_SET"] = "emp_powder_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "emp_handgunners_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[539] = {
+	[542] = {
 		["FORCE_FRAGMENT_SET"] = "emp_powder_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "emp_outriders_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[540] = {
+	[543] = {
 		["FORCE_FRAGMENT_SET"] = "emp_powder_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "emp_basic_arty",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[541] = {
+	[544] = {
 		["FORCE_FRAGMENT_SET"] = "emp_powder_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "emp_free_company_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[542] = {
+	[545] = {
 		["FORCE_FRAGMENT_SET"] = "emp_powder_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "emp_spearmen_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[543] = {
+	[546] = {
 		["FORCE_FRAGMENT_SET"] = "kho_marauder_horde_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_marauders_4",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[544] = {
+	[547] = {
 		["FORCE_FRAGMENT_SET"] = "kho_marauder_horde_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[545] = {
+	[548] = {
 		["FORCE_FRAGMENT_SET"] = "kho_marauder_horde_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_warshrine",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[546] = {
+	[549] = {
 		["FORCE_FRAGMENT_SET"] = "kho_marauder_horde_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_bloodshrine",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[547] = {
+	[550] = {
 		["FORCE_FRAGMENT_SET"] = "kho_marauder_horde_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_marauder_horse_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[548] = {
+	[551] = {
 		["FORCE_FRAGMENT_SET"] = "kho_marauder_horde_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_chariot_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[549] = {
+	[552] = {
 		["FORCE_FRAGMENT_SET"] = "kho_warband_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[550] = {
+	[553] = {
 		["FORCE_FRAGMENT_SET"] = "kho_warband_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_marauders_4",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[551] = {
+	[554] = {
 		["FORCE_FRAGMENT_SET"] = "kho_warband_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[552] = {
+	[555] = {
 		["FORCE_FRAGMENT_SET"] = "kho_warband_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_minos_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[553] = {
+	[556] = {
 		["FORCE_FRAGMENT_SET"] = "kho_warband_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_warhounds_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[554] = {
+	[557] = {
 		["FORCE_FRAGMENT_SET"] = "kho_warband_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_chariot_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[555] = {
+	[558] = {
 		["FORCE_FRAGMENT_SET"] = "kho_warband_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_marauder_horse_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[556] = {
+	[559] = {
 		["FORCE_FRAGMENT_SET"] = "kho_chosen_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_chosen_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[557] = {
+	[560] = {
 		["FORCE_FRAGMENT_SET"] = "kho_chosen_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[558] = {
+	[561] = {
 		["FORCE_FRAGMENT_SET"] = "kho_chosen_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_forsaken_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[559] = {
+	[562] = {
 		["FORCE_FRAGMENT_SET"] = "kho_chosen_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[560] = {
+	[563] = {
 		["FORCE_FRAGMENT_SET"] = "kho_chosen_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_cultist_easy",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[561] = {
+	[564] = {
 		["FORCE_FRAGMENT_SET"] = "kho_knights_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_knights_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[562] = {
+	[565] = {
 		["FORCE_FRAGMENT_SET"] = "kho_knights_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[563] = {
+	[566] = {
 		["FORCE_FRAGMENT_SET"] = "kho_knights_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_forsaken_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[564] = {
+	[567] = {
 		["FORCE_FRAGMENT_SET"] = "kho_knights_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[565] = {
+	[568] = {
 		["FORCE_FRAGMENT_SET"] = "kho_knights_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_warriors_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[566] = {
+	[569] = {
 		["FORCE_FRAGMENT_SET"] = "tze_marauder_horde_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_marauders_4",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[567] = {
+	[570] = {
 		["FORCE_FRAGMENT_SET"] = "tze_marauder_horde_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[568] = {
+	[571] = {
 		["FORCE_FRAGMENT_SET"] = "tze_marauder_horde_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_warshrine",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[569] = {
+	[572] = {
 		["FORCE_FRAGMENT_SET"] = "tze_marauder_horde_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_spawn_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[570] = {
+	[573] = {
 		["FORCE_FRAGMENT_SET"] = "tze_marauder_horde_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_marauder_horse_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[571] = {
+	[574] = {
 		["FORCE_FRAGMENT_SET"] = "tze_marauder_horde_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_chariot_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[572] = {
+	[575] = {
 		["FORCE_FRAGMENT_SET"] = "tze_warband_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[573] = {
+	[576] = {
 		["FORCE_FRAGMENT_SET"] = "tze_warband_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_marauders_4",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[574] = {
+	[577] = {
 		["FORCE_FRAGMENT_SET"] = "tze_warband_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[575] = {
+	[578] = {
 		["FORCE_FRAGMENT_SET"] = "tze_warband_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_doom_knight_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[576] = {
+	[579] = {
 		["FORCE_FRAGMENT_SET"] = "tze_warband_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_screamers_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[577] = {
+	[580] = {
 		["FORCE_FRAGMENT_SET"] = "tze_warband_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_marauder_horse_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[578] = {
+	[581] = {
 		["FORCE_FRAGMENT_SET"] = "tze_warband_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_chariot_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[579] = {
+	[582] = {
 		["FORCE_FRAGMENT_SET"] = "tze_chosen_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_chosen_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[580] = {
+	[583] = {
 		["FORCE_FRAGMENT_SET"] = "tze_chosen_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[581] = {
+	[584] = {
 		["FORCE_FRAGMENT_SET"] = "tze_chosen_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_forsaken_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[582] = {
+	[585] = {
 		["FORCE_FRAGMENT_SET"] = "tze_chosen_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[583] = {
+	[586] = {
 		["FORCE_FRAGMENT_SET"] = "tze_chosen_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_cultist_easy",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[584] = {
+	[587] = {
 		["FORCE_FRAGMENT_SET"] = "tze_knights_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_knights_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[585] = {
+	[588] = {
 		["FORCE_FRAGMENT_SET"] = "tze_knights_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[586] = {
+	[589] = {
 		["FORCE_FRAGMENT_SET"] = "tze_knights_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_forsaken_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[587] = {
+	[590] = {
 		["FORCE_FRAGMENT_SET"] = "tze_knights_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[588] = {
+	[591] = {
 		["FORCE_FRAGMENT_SET"] = "tze_knights_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_warriors_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[589] = {
+	[592] = {
 		["FORCE_FRAGMENT_SET"] = "sla_marauder_horde_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_marauders_4",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[590] = {
+	[593] = {
 		["FORCE_FRAGMENT_SET"] = "sla_marauder_horde_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[591] = {
+	[594] = {
 		["FORCE_FRAGMENT_SET"] = "sla_marauder_horde_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_warshrine",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[592] = {
+	[595] = {
 		["FORCE_FRAGMENT_SET"] = "sla_marauder_horde_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_spawn_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[593] = {
+	[596] = {
 		["FORCE_FRAGMENT_SET"] = "sla_marauder_horde_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_marauder_horse_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[594] = {
+	[597] = {
 		["FORCE_FRAGMENT_SET"] = "sla_marauder_horde_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_chariot_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[595] = {
+	[598] = {
 		["FORCE_FRAGMENT_SET"] = "sla_warband_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[596] = {
+	[599] = {
 		["FORCE_FRAGMENT_SET"] = "sla_warband_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_marauders_4",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[597] = {
+	[600] = {
 		["FORCE_FRAGMENT_SET"] = "sla_warband_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[598] = {
+	[601] = {
 		["FORCE_FRAGMENT_SET"] = "sla_warband_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_hellstriders_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[599] = {
+	[602] = {
 		["FORCE_FRAGMENT_SET"] = "sla_warband_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_seeker_chariot_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[600] = {
+	[603] = {
 		["FORCE_FRAGMENT_SET"] = "sla_warband_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_marauder_horse_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[601] = {
+	[604] = {
 		["FORCE_FRAGMENT_SET"] = "sla_chosen_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_chosen_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[602] = {
+	[605] = {
 		["FORCE_FRAGMENT_SET"] = "sla_chosen_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[603] = {
+	[606] = {
 		["FORCE_FRAGMENT_SET"] = "sla_chosen_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_forsaken_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[604] = {
+	[607] = {
 		["FORCE_FRAGMENT_SET"] = "sla_chosen_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[605] = {
+	[608] = {
 		["FORCE_FRAGMENT_SET"] = "sla_chosen_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_cultist_easy",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[606] = {
+	[609] = {
 		["FORCE_FRAGMENT_SET"] = "sla_knights_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_knights_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[607] = {
+	[610] = {
 		["FORCE_FRAGMENT_SET"] = "sla_knights_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[608] = {
+	[611] = {
 		["FORCE_FRAGMENT_SET"] = "sla_knights_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_forsaken_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[609] = {
+	[612] = {
 		["FORCE_FRAGMENT_SET"] = "sla_knights_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[610] = {
+	[613] = {
 		["FORCE_FRAGMENT_SET"] = "sla_knights_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_warriors_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[611] = {
+	[614] = {
 		["FORCE_FRAGMENT_SET"] = "nur_marauder_horde_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_marauders_4",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[612] = {
+	[615] = {
 		["FORCE_FRAGMENT_SET"] = "nur_marauder_horde_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[613] = {
+	[616] = {
 		["FORCE_FRAGMENT_SET"] = "nur_marauder_horde_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_warshrine",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[614] = {
+	[617] = {
 		["FORCE_FRAGMENT_SET"] = "nur_marauder_horde_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_forsaken_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[615] = {
+	[618] = {
 		["FORCE_FRAGMENT_SET"] = "nur_marauder_horde_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_marauder_horse_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[616] = {
+	[619] = {
 		["FORCE_FRAGMENT_SET"] = "nur_marauder_horde_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_chariot_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[617] = {
+	[620] = {
 		["FORCE_FRAGMENT_SET"] = "nur_warband_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[618] = {
+	[621] = {
 		["FORCE_FRAGMENT_SET"] = "nur_warband_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_marauders_4",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[619] = {
+	[622] = {
 		["FORCE_FRAGMENT_SET"] = "nur_warband_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[620] = {
+	[623] = {
 		["FORCE_FRAGMENT_SET"] = "nur_warband_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_flies_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[621] = {
+	[624] = {
 		["FORCE_FRAGMENT_SET"] = "nur_warband_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_toads_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[622] = {
+	[625] = {
 		["FORCE_FRAGMENT_SET"] = "nur_warband_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_chariot_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[623] = {
+	[626] = {
 		["FORCE_FRAGMENT_SET"] = "nur_warband_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_marauder_horse_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[624] = {
+	[627] = {
 		["FORCE_FRAGMENT_SET"] = "nur_chosen_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_chosen_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[625] = {
+	[628] = {
 		["FORCE_FRAGMENT_SET"] = "nur_chosen_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[626] = {
+	[629] = {
 		["FORCE_FRAGMENT_SET"] = "nur_chosen_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_forsaken_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[627] = {
+	[630] = {
 		["FORCE_FRAGMENT_SET"] = "nur_chosen_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[628] = {
+	[631] = {
 		["FORCE_FRAGMENT_SET"] = "nur_chosen_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nurglings_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[629] = {
+	[632] = {
 		["FORCE_FRAGMENT_SET"] = "nur_knights_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_knights_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[630] = {
+	[633] = {
 		["FORCE_FRAGMENT_SET"] = "nur_knights_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[631] = {
+	[634] = {
 		["FORCE_FRAGMENT_SET"] = "nur_knights_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_forsaken_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[632] = {
+	[635] = {
 		["FORCE_FRAGMENT_SET"] = "nur_knights_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[633] = {
+	[636] = {
 		["FORCE_FRAGMENT_SET"] = "nur_knights_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_warriors_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[634] = {
+	[637] = {
 		["FORCE_FRAGMENT_SET"] = "kho_dae_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_letters_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[635] = {
+	[638] = {
 		["FORCE_FRAGMENT_SET"] = "kho_dae_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_furies_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[636] = {
+	[639] = {
 		["FORCE_FRAGMENT_SET"] = "kho_dae_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_fleshhounds_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[637] = {
+	[640] = {
 		["FORCE_FRAGMENT_SET"] = "kho_dae_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_ex_letters_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[638] = {
+	[641] = {
 		["FORCE_FRAGMENT_SET"] = "kho_dae_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_bloodcrusher_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[639] = {
+	[642] = {
 		["FORCE_FRAGMENT_SET"] = "kho_dae_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_letters_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[640] = {
+	[643] = {
 		["FORCE_FRAGMENT_SET"] = "kho_dae_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_fleshhounds_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[641] = {
+	[644] = {
 		["FORCE_FRAGMENT_SET"] = "tze_dae_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_horrors_2_4",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[642] = {
+	[645] = {
 		["FORCE_FRAGMENT_SET"] = "tze_dae_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_screamers_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[643] = {
+	[646] = {
 		["FORCE_FRAGMENT_SET"] = "tze_dae_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_furies_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[644] = {
+	[647] = {
 		["FORCE_FRAGMENT_SET"] = "tze_dae_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_flamers_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[645] = {
+	[648] = {
 		["FORCE_FRAGMENT_SET"] = "tze_dae_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_ex_pink_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[646] = {
+	[649] = {
 		["FORCE_FRAGMENT_SET"] = "sla_dae_easy",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_daemonette_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[647] = {
+	[650] = {
 		["FORCE_FRAGMENT_SET"] = "sla_dae_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_furies_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[648] = {
+	[651] = {
 		["FORCE_FRAGMENT_SET"] = "sla_dae_easy",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_seekers_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[649] = {
+	[652] = {
 		["FORCE_FRAGMENT_SET"] = "sla_dae_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_ex_daemonette_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[650] = {
+	[653] = {
 		["FORCE_FRAGMENT_SET"] = "sla_dae_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_fiends_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[651] = {
+	[654] = {
 		["FORCE_FRAGMENT_SET"] = "sla_dae_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_daemonette_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[652] = {
+	[655] = {
 		["FORCE_FRAGMENT_SET"] = "sla_dae_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_seeker_chariot_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[653] = {
-		["FORCE_FRAGMENT_SET"] = "nur_dae_easy",
-		["SELECTION_SET"] = "MANDATORY",
-		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "nurglings_2",
-		["HIDE_FRAGMENT"] = "false"
-	},
-	[654] = {
-		["FORCE_FRAGMENT_SET"] = "nur_dae_easy",
-		["SELECTION_SET"] = "MANDATORY",
-		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "nur_plaguebearer_1",
-		["HIDE_FRAGMENT"] = "false"
-	},
-	[655] = {
-		["FORCE_FRAGMENT_SET"] = "nur_dae_easy",
-		["SELECTION_SET"] = "1",
-		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "nur_toads_2",
-		["HIDE_FRAGMENT"] = "false"
-	},
 	[656] = {
 		["FORCE_FRAGMENT_SET"] = "nur_dae_easy",
-		["SELECTION_SET"] = "1",
+		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nurglings_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[657] = {
 		["FORCE_FRAGMENT_SET"] = "nur_dae_easy",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_plaguebearer_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[658] = {
+		["FORCE_FRAGMENT_SET"] = "nur_dae_easy",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_toads_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[659] = {
+		["FORCE_FRAGMENT_SET"] = "nur_dae_easy",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nurglings_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[660] = {
+		["FORCE_FRAGMENT_SET"] = "nur_dae_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_pox_rider_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[658] = {
+	[661] = {
 		["FORCE_FRAGMENT_SET"] = "nur_dae_easy",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_beast_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[659] = {
+	[662] = {
 		["FORCE_FRAGMENT_SET"] = "nur_dae_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_flies_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[660] = {
+	[663] = {
 		["FORCE_FRAGMENT_SET"] = "nur_dae_easy",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_furies_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[661] = {
+	[664] = {
 		["FORCE_FRAGMENT_SET"] = "nur_dae_easy",
 		["SELECTION_SET"] = "4",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_ex_plaguebearer_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[662] = {
+	[665] = {
 		["FORCE_FRAGMENT_SET"] = "nur_dae_easy",
 		["SELECTION_SET"] = "4",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_plaguebearer_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[663] = {
+	[666] = {
 		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_ex_letters_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[664] = {
+	[667] = {
 		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_knights_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[665] = {
+	[668] = {
 		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_bloodcrusher_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[666] = {
-		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
-		["SELECTION_SET"] = "2",
-		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "kho_chosen_2",
-		["HIDE_FRAGMENT"] = "false"
-	},
-	[667] = {
-		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
-		["SELECTION_SET"] = "2",
-		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "kho_ex_letters_2",
-		["HIDE_FRAGMENT"] = "false"
-	},
-	[668] = {
-		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
-		["SELECTION_SET"] = "3",
-		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "kho_chosen_2",
-		["HIDE_FRAGMENT"] = "false"
-	},
 	[669] = {
 		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
-		["SELECTION_SET"] = "3",
+		["SELECTION_SET"] = "2",
 		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "kho_ex_letters_2",
+		["FORCE_FRAGMENT_KEY"] = "kho_chosen_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[670] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_ex_letters_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[671] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_chosen_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[672] = {
+		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "kho_ex_letters_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[673] = {
 		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_spawn_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[671] = {
+	[674] = {
 		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
 		["SELECTION_SET"] = "4",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[672] = {
+	[675] = {
 		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
 		["SELECTION_SET"] = "4",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_forsaken_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[673] = {
+	[676] = {
 		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
 		["SELECTION_SET"] = "5",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_minos_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[674] = {
+	[677] = {
 		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
 		["SELECTION_SET"] = "5",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_warshrine",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[675] = {
+	[678] = {
 		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
 		["SELECTION_SET"] = "6",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_letters_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[676] = {
+	[679] = {
 		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
 		["SELECTION_SET"] = "6",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[677] = {
+	[680] = {
 		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
 		["SELECTION_SET"] = "7",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_fleshhounds_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[678] = {
+	[681] = {
 		["FORCE_FRAGMENT_SET"] = "kho_doom_keep_boss",
 		["SELECTION_SET"] = "7",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "kho_furies_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[679] = {
+	[682] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_ex_flamers_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[680] = {
+	[683] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_horrors_1_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[681] = {
+	[684] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[682] = {
+	[685] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_horrors_1_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[683] = {
+	[686] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_forsaken_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[684] = {
+	[687] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_ex_pink_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[685] = {
+	[688] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "3",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_chosen_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[686] = {
+	[689] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "4",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_chosen_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[687] = {
+	[690] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "4",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_flamers_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[688] = {
+	[691] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "5",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_doom_knight_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[689] = {
+	[692] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "5",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_burning_chariots_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[690] = {
+	[693] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "6",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_furies_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[691] = {
+	[694] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "6",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_screamers_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[692] = {
+	[695] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "7",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_cultist_norm",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[693] = {
+	[696] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "7",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_spawn_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[694] = {
+	[697] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "8",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_furies_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[695] = {
+	[698] = {
 		["FORCE_FRAGMENT_SET"] = "tze_doom_keep_boss",
 		["SELECTION_SET"] = "8",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "tze_screamers_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[696] = {
+	[699] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nurglings_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[697] = {
-		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
-		["SELECTION_SET"] = "1",
-		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "nur_plaguebearer_3",
-		["HIDE_FRAGMENT"] = "false"
-	},
-	[698] = {
-		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
-		["SELECTION_SET"] = "1",
-		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "nur_warriors_3",
-		["HIDE_FRAGMENT"] = "false"
-	},
-	[699] = {
-		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
-		["SELECTION_SET"] = "1",
-		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "nur_forsaken_3",
-		["HIDE_FRAGMENT"] = "false"
-	},
 	[700] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
-		["SELECTION_SET"] = "2",
+		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_plaguebearer_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[701] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
-		["SELECTION_SET"] = "2",
+		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[702] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
-		["SELECTION_SET"] = "2",
+		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_forsaken_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[703] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
-		["SELECTION_SET"] = "3",
+		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_plaguebearer_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[704] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
-		["SELECTION_SET"] = "3",
+		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_warriors_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[705] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
-		["SELECTION_SET"] = "3",
+		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_forsaken_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[706] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_plaguebearer_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[707] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_warriors_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[708] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "nur_forsaken_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[709] = {
+		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
 		["SELECTION_SET"] = "4",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_ex_plaguebearer_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[707] = {
+	[710] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
 		["SELECTION_SET"] = "4",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_chosen_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[708] = {
+	[711] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
 		["SELECTION_SET"] = "5",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_beast_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[709] = {
+	[712] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
 		["SELECTION_SET"] = "5",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_warshrine",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[710] = {
+	[713] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
 		["SELECTION_SET"] = "6",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_drones_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[711] = {
+	[714] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
 		["SELECTION_SET"] = "6",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_pox_rider_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[712] = {
+	[715] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
 		["SELECTION_SET"] = "6",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_knights_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[713] = {
+	[716] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
 		["SELECTION_SET"] = "7",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_chosen_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[714] = {
+	[717] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
 		["SELECTION_SET"] = "7",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_beast_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[715] = {
+	[718] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
 		["SELECTION_SET"] = "7",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_ex_plaguebearer_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[716] = {
+	[719] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
 		["SELECTION_SET"] = "8",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_flies_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[717] = {
+	[720] = {
 		["FORCE_FRAGMENT_SET"] = "nur_doom_keep_boss",
 		["SELECTION_SET"] = "8",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "nur_toads_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[718] = {
+	[721] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_marauders_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[719] = {
+	[722] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_warriors_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[720] = {
+	[723] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
 		["SELECTION_SET"] = "1",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_forsaken_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[721] = {
+	[724] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_chosen_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[722] = {
+	[725] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
 		["SELECTION_SET"] = "2",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_fiends_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[723] = {
+	[726] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
 		["SELECTION_SET"] = "MANDATORY",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_ex_daemonette_2",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[724] = {
-		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
-		["SELECTION_SET"] = "3",
-		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "sla_daemonette_3",
-		["HIDE_FRAGMENT"] = "false"
-	},
-	[725] = {
-		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
-		["SELECTION_SET"] = "3",
-		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "sla_warriors_3",
-		["HIDE_FRAGMENT"] = "false"
-	},
-	[726] = {
-		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
-		["SELECTION_SET"] = "4",
-		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "sla_daemonette_3",
-		["HIDE_FRAGMENT"] = "false"
-	},
 	[727] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
-		["SELECTION_SET"] = "4",
+		["SELECTION_SET"] = "3",
 		[""] = "",
-		["FORCE_FRAGMENT_KEY"] = "sla_warriors_3",
+		["FORCE_FRAGMENT_KEY"] = "sla_daemonette_3",
 		["HIDE_FRAGMENT"] = "false"
 	},
 	[728] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_warriors_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[729] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "4",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_daemonette_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[730] = {
+		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
+		["SELECTION_SET"] = "4",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "sla_warriors_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[731] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
 		["SELECTION_SET"] = "5",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_seekers_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[729] = {
+	[732] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
 		["SELECTION_SET"] = "5",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_hellflayer",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[730] = {
+	[733] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
 		["SELECTION_SET"] = "6",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_ex_seeker_chariot_1",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[731] = {
+	[734] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
 		["SELECTION_SET"] = "6",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_warshrine",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[732] = {
+	[735] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
 		["SELECTION_SET"] = "7",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_cultist_norm",
 		["HIDE_FRAGMENT"] = "false"
 	},
-	[733] = {
+	[736] = {
 		["FORCE_FRAGMENT_SET"] = "sla_doom_keep_boss",
 		["SELECTION_SET"] = "7",
 		[""] = "",
 		["FORCE_FRAGMENT_KEY"] = "sla_daemonette_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[737] = {
+		["FORCE_FRAGMENT_SET"] = "emp_knights_norm",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_reiksguard_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[738] = {
+		["FORCE_FRAGMENT_SET"] = "emp_knights_norm",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_blazing_sun_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[739] = {
+		["FORCE_FRAGMENT_SET"] = "emp_knights_norm",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_demis_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[740] = {
+		["FORCE_FRAGMENT_SET"] = "emp_knights_norm",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_wagon",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[741] = {
+		["FORCE_FRAGMENT_SET"] = "emp_knights_norm",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_pistols_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[742] = {
+		["FORCE_FRAGMENT_SET"] = "emp_knights_hard",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_basic_arty",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[743] = {
+		["FORCE_FRAGMENT_SET"] = "emp_knights_hard",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_handgunners_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[744] = {
+		["FORCE_FRAGMENT_SET"] = "emp_knights_hard",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_greatswords_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[745] = {
+		["FORCE_FRAGMENT_SET"] = "emp_knights_hard",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_demis_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[746] = {
+		["FORCE_FRAGMENT_SET"] = "emp_powder_norm",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_basic_arty",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[747] = {
+		["FORCE_FRAGMENT_SET"] = "emp_powder_norm",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_handgunners_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[748] = {
+		["FORCE_FRAGMENT_SET"] = "emp_powder_norm",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_knights_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[749] = {
+		["FORCE_FRAGMENT_SET"] = "emp_powder_norm",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_halberds_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[750] = {
+		["FORCE_FRAGMENT_SET"] = "emp_powder_hard",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_demis_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[751] = {
+		["FORCE_FRAGMENT_SET"] = "emp_powder_hard",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_greatswords_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[752] = {
+		["FORCE_FRAGMENT_SET"] = "emp_powder_hard",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_advanced_arty",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[753] = {
+		["FORCE_FRAGMENT_SET"] = "emp_powder_hard",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_grenade_wagon",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[754] = {
+		["FORCE_FRAGMENT_SET"] = "emp_powder_hard",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_advanced_arty",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[755] = {
+		["FORCE_FRAGMENT_SET"] = "emp_powder_hard",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "emp_steamtank",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[756] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_easy",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[757] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_easy",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[758] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_easy",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[759] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_easy",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_winged_lancers_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[760] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_easy",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_horse_archers_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[761] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_easy",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_light_sled_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[762] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_easy",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_winged_lancers_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[763] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_easy",
+		["SELECTION_SET"] = "3",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_dervishes_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[764] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_norm",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[765] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_norm",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_streltsi_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[766] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_norm",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_gryphon_legion_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[767] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_norm",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_heavy_sled",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[768] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_hard",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_bear_rider",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[769] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_hard",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_heavy_sled",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[770] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_cavalry_hard",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_bear_rider",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[771] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_easy",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[772] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_easy",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[773] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_easy",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_horse_archers_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[774] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_easy",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_dervishes_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[775] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_easy",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[776] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_easy",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_streltsi_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[777] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_easy",
+		["SELECTION_SET"] = "2",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_tzar_guard_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[778] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_norm",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_tzar_guard_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[779] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_norm",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_tzar_guard_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[780] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_norm",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_streltsi_3",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[781] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_hard",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_gryphon_legion_1",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[782] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_hard",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_heavy_sled",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[783] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_hard",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_little_grom",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[784] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_infantry_hard",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_little_grom",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[785] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_ice_court_norm",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_ice_guard_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[786] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_ice_court_norm",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_snow_cat_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[787] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_ice_court_norm",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_ice_guard_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[788] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_ice_court_hard",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_snow_cat_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[789] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_ice_court_hard",
+		["SELECTION_SET"] = "1",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_ice_guard_2",
+		["HIDE_FRAGMENT"] = "false"
+	},
+	[790] = {
+		["FORCE_FRAGMENT_SET"] = "ksl_ice_court_hard",
+		["SELECTION_SET"] = "MANDATORY",
+		[""] = "",
+		["FORCE_FRAGMENT_KEY"] = "ksl_ice_bear",
 		["HIDE_FRAGMENT"] = "false"
 	}
 }

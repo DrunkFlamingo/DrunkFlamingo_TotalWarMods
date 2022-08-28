@@ -2,6 +2,12 @@
 ---handler for dealing with forced battles.
 ---can be used to (semi-safely) force existing armies to fight, or can handle spawning new armies and cleaning them up afterwards
 
+--[[
+	Modified by Drunk Flamingo for Rogue Daniel
+	--Fixed a bug with battles where neither army needs to be spawned
+	--Modified it to always prevent retreating.
+]]
+
 Forced_Battle_Manager = {
 	forced_battles_list ={},
 	active_battle = ""
@@ -339,7 +345,7 @@ function Forced_Battle_Manager:setup_battle_completion_listener()
 			local attacker_won = false
 
 			local uim = cm:get_campaign_ui_manager();
-			uim:override("retreat"):unlock();
+			
 
 			if cm:model():pending_battle():has_been_fought() and cm:pending_battle_cache_attacker_victory() then
 				attacker_won = true;
@@ -395,11 +401,11 @@ function forced_battle:forced_battle_stage_2()
 			self.is_ambush = false
 		end
 		
-		-- lock the retreat button is if the attacker is in a stance that can't retreat - if they try to they instantly die.
-		if attacker_force:active_stance() == "MILITARY_FORCE_ACTIVE_STANCE_TYPE_DOUBLE_TIME" or attacker_force:active_stance() ==  "MILITARY_FORCE_ACTIVE_STANCE_TYPE_MARCH" then
+		-- lock the retreat button 
+		--if attacker_force:active_stance() == "MILITARY_FORCE_ACTIVE_STANCE_TYPE_DOUBLE_TIME" or attacker_force:active_stance() ==  "MILITARY_FORCE_ACTIVE_STANCE_TYPE_MARCH" then
 			local uim = cm:get_campaign_ui_manager();
 			uim:override("retreat"):lock();
-		end
+		--end
 
 		---declare war if needed. Can't use standard invasion manager behaviour here because it doesn't kick in in time for the attack
 		if not attacker_faction:at_war_with(target_faction) then

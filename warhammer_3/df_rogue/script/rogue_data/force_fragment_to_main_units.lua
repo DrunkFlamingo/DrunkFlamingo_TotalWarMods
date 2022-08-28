@@ -4804,5 +4804,473 @@ return {
 		["UPE_SET"] = "",
 		["MAIN_UNIT_KEY"] = "wh2_main_skv_inf_skavenslave_slingers_0",
 		["LIST_INDEX"] = "3"
+	},
+	[802] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_reiksguard_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_cav_reiksguard",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[803] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_reiksguard_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_cav_reiksguard",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[804] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_blazing_sun_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_dlc04_emp_cav_knights_blazing_sun_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[805] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_blazing_sun_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_dlc04_emp_cav_knights_blazing_sun_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[806] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_demis_1",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_cav_demigryph_knights_0",
+		["LIST_INDEX"] = "1"
+	},
+	[807] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_demis_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_cav_demigryph_knights_0",
+		["LIST_INDEX"] = "1"
+	},
+	[808] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_demis_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_cav_demigryph_knights_0",
+		["LIST_INDEX"] = "2"
+	},
+	[809] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_demis_1",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_cav_demigryph_knights_1",
+		["LIST_INDEX"] = "1"
+	},
+	[810] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_demis_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_cav_demigryph_knights_1",
+		["LIST_INDEX"] = "1"
+	},
+	[811] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_demis_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_cav_demigryph_knights_1",
+		["LIST_INDEX"] = "2"
+	},
+	[812] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_helblaster_1",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_art_helblaster_volley_gun",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[813] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_helstorm_1",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_art_helstorm_rocket_battery",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[814] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_greatswords_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_inf_greatswords",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[815] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_greatswords_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_inf_greatswords",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[816] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_pistols_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_cav_pistoliers_1",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[817] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_pistols_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_cav_pistoliers_1",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[818] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_grenade_riders_1",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_cav_outriders_1",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[819] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_flagellants_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_dlc04_emp_inf_flagellants_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[820] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_flagellants_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_dlc04_emp_inf_flagellants_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[821] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_flagellants_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_dlc04_emp_inf_flagellants_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[822] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_flagellants_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_dlc04_emp_inf_flagellants_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[823] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_flagellants_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_dlc04_emp_inf_flagellants_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[824] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_luminark",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_veh_luminark_of_hysh_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[825] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_steamtank",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh_main_emp_veh_steam_tank",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[826] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_wagon",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh2_dlc13_emp_veh_war_wagon_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[827] = {
+		["FORCE_FRAGMENT_KEY"] = "emp_grenade_wagon",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh2_dlc13_emp_veh_war_wagon_1",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[828] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_winged_lancers_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_cav_winged_lancers_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[829] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_winged_lancers_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_cav_winged_lancers_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[830] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_winged_lancers_1",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_cav_winged_lancers_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[831] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_armoured_kossars_0",
+		["LIST_INDEX"] = "1"
+	},
+	[832] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_armoured_kossars_1",
+		["LIST_INDEX"] = "1"
+	},
+	[833] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_armoured_kossars_0",
+		["LIST_INDEX"] = "2"
+	},
+	[834] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_armoured_kossars_1",
+		["LIST_INDEX"] = "2"
+	},
+	[835] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_armoured_kossars_0",
+		["LIST_INDEX"] = "3"
+	},
+	[836] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_armoured_kossars_1",
+		["LIST_INDEX"] = "3"
+	},
+	[837] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_armoured_kossars_0",
+		["LIST_INDEX"] = "1"
+	},
+	[838] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_armoured_kossars_1",
+		["LIST_INDEX"] = "1"
+	},
+	[839] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_armoured_kossars_0",
+		["LIST_INDEX"] = "2"
+	},
+	[840] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_armoured_kossar_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_armoured_kossars_1",
+		["LIST_INDEX"] = "2"
+	},
+	[841] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_horse_archers_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_cav_horse_archers_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[842] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_horse_archers_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_cav_horse_archers_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[843] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_dervishes_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_cav_horse_raiders_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[844] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_dervishes_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_cav_horse_raiders_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[845] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_kossars_0",
+		["LIST_INDEX"] = "1"
+	},
+	[846] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_kossars_1",
+		["LIST_INDEX"] = "1"
+	},
+	[847] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_kossars_0",
+		["LIST_INDEX"] = "2"
+	},
+	[848] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_kossars_1",
+		["LIST_INDEX"] = "2"
+	},
+	[849] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_kossars_0",
+		["LIST_INDEX"] = "3"
+	},
+	[850] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_kossars_1",
+		["LIST_INDEX"] = "3"
+	},
+	[851] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_kossars_0",
+		["LIST_INDEX"] = "1"
+	},
+	[852] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_kossars_1",
+		["LIST_INDEX"] = "1"
+	},
+	[853] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_kossars_0",
+		["LIST_INDEX"] = "2"
+	},
+	[854] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_kossars_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_kossars_1",
+		["LIST_INDEX"] = "2"
+	},
+	[855] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_streltsi_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_streltsi_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[856] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_streltsi_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_streltsi_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[857] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_bear_rider",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_cav_war_bear_riders_1",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[858] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_gryphon_legion_1",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_cav_gryphon_legion_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[859] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_gryphon_legion_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_cav_gryphon_legion_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[860] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_gryphon_legion_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_cav_gryphon_legion_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[861] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_tzar_guard_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_tzar_guard_0",
+		["LIST_INDEX"] = "1"
+	},
+	[862] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_tzar_guard_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_tzar_guard_1",
+		["LIST_INDEX"] = "1"
+	},
+	[863] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_tzar_guard_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_tzar_guard_0",
+		["LIST_INDEX"] = "2"
+	},
+	[864] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_tzar_guard_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_tzar_guard_1",
+		["LIST_INDEX"] = "2"
+	},
+	[865] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_heavy_sled",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_veh_heavy_war_sled_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[866] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_light_sled_1",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_veh_light_war_sled_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[867] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_light_sled_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_veh_light_war_sled_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[868] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_light_sled_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_veh_light_war_sled_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[869] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_ice_guard_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_ice_guard_0",
+		["LIST_INDEX"] = "1"
+	},
+	[870] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_ice_guard_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_ice_guard_1",
+		["LIST_INDEX"] = "1"
+	},
+	[871] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_ice_guard_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_ice_guard_0",
+		["LIST_INDEX"] = "2"
+	},
+	[872] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_ice_guard_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_ice_guard_1",
+		["LIST_INDEX"] = "2"
+	},
+	[873] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_ice_bear",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_mon_elemental_bear_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[874] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_snow_cat_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_mon_snow_leopard_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[875] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_snow_cat_2",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_mon_snow_leopard_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[876] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_little_grom",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_veh_little_grom_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[877] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_streltsi_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_streltsi_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[878] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_streltsi_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_streltsi_0",
+		["LIST_INDEX"] = "MANDATORY"
+	},
+	[879] = {
+		["FORCE_FRAGMENT_KEY"] = "ksl_streltsi_3",
+		["UPE_SET"] = "",
+		["MAIN_UNIT_KEY"] = "wh3_main_ksl_inf_streltsi_0",
+		["LIST_INDEX"] = "MANDATORY"
 	}
 }

@@ -2,7 +2,7 @@ return {
 	[1] = {
 		["PARENT_REWARD_SET"] = "random_all_weighted",
 		["CHILD_REWARD_SET"] = "random_common",
-		["WEIGHT"] = "5"
+		["WEIGHT"] = "7"
 	},
 	[2] = {
 		["PARENT_REWARD_SET"] = "random_all_weighted",

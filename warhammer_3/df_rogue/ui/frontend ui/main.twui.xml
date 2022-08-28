@@ -4152,22 +4152,26 @@
 			defaultstate="4C2CF127-9E78-4654-A9AB2CB768E6C815">
 			<callbackwithcontextlist>
 				<callback_with_context callback_id="TextButton"/>
-				<callback_with_context callback_id="StatePropagatorCallback"/>
+				<callback_with_context
+					callback_id="ContextStateSetterConditional"
+					context_object_id="CcoStaticObject">
+					<child_m_user_properties>
+						<property
+							name="active"
+							value="ScriptObjectContext(&quot;rogue_can_continue&quot;).NumericValue == 1"/>
+						<property
+							name="fallback_state"
+							value="inactive"/>
+						<property
+							name="event0"
+							value="ScriptObjectValueUpdatedrogue_can_continue"/>
+					</child_m_user_properties>
+				</callback_with_context>
 				<callback_with_context callback_id="CallbackAnimTrigger"/>
 				<callback_with_context
 					callback_id="ContextVisibilitySetter"
 					context_object_id="CcoStaticObject"
-					context_function_id="HasAnySavedGames"/>
-				<callback_with_context callback_id="StatePropagatorCallback">
-					<child_m_user_properties>
-						<property
-							name="parent_id"
-							value="start_campaign_holder"/>
-						<property
-							name="target_id"
-							value="smoke"/>
-					</child_m_user_properties>
-				</callback_with_context>
+					context_function_id="HasAnySavedGames &amp;&amp; criptObjectContext(&quot;rogue_can_continue&quot;).NumericValue == 1"/>
 			</callbackwithcontextlist>
 			<userproperties>
 				<property
@@ -4744,16 +4748,11 @@
 				<callback_with_context callback_id="TextButton"/>
 				<callback_with_context callback_id="StatePropagatorCallback"/>
 				<callback_with_context callback_id="ButtonToggleSetting"/>
-				<callback_with_context callback_id="ButtonAnimTrigger">
-					<child_m_user_properties>
-						<property
-							name="target_anim"
-							value="GetIfElse(Component(&quot;campaign_frame&quot;).IsVisible, &quot;hide&quot;, &quot;show&quot;)"/>
-						<property
-							name="target_id"
-							value="campaign_frame"/>
-					</child_m_user_properties>
-				</callback_with_context>
+				<!-- StartCampaign-->
+				<callback_with_context
+					callback_id="ContextCommandLeftClick"
+					context_object_id="CcoStaticObject"
+					context_function_id="FrontendRoot.StartCampaign(&quot;wh3_main_chaos&quot;, &quot;wh3_main_dae_daemon_prince&quot;, &quot;SP_NORMAL&quot;)"/>
 				<callback_with_context callback_id="StatePropagatorCallback">
 					<child_m_user_properties>
 						<property

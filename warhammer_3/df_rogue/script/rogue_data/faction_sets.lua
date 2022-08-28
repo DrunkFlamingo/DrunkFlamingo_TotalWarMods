@@ -79,5 +79,14 @@ return {
 	},
 	[27] = {
 		["FACTION_SET_KEY"] = "lzd_any"
+	},
+	[28] = {
+		["FACTION_SET_KEY"] = "ksl_minor"
+	},
+	[29] = {
+		["FACTION_SET_KEY"] = "ksl_orthodoxy"
+	},
+	[30] = {
+		["FACTION_SET_KEY"] = "ksl_ice_court"
 	}
 }
