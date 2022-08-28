@@ -1,4 +1,4 @@
-key	generate	localised_description	localised_title	ui_image	prioritized	event_category	sound_popup_override	sound_click_override	override_icon
-#dilemmas_tables;2;db/dilemmas_tables/one_button_respec									
-df_one_button_respec_dilemma_1	false			faction	true	Event			
-df_one_button_respec_dilemma_2	false			faction	true	Event			
+key	generate	localised_description	localised_title	ui_image	prioritized	event_category	sound_popup_override	sound_click_override	override_icon	is_large_dilemma
+#dilemmas_tables;3;db/dilemmas_tables/one_button_respec										
+df_one_button_respec_dilemma_1	false			faction	true	Event				false
+df_one_button_respec_dilemma_2	false			faction	true	Event				false
