@@ -195,56 +195,7 @@ local wh3_ror = {
 	------------------
     {"wh3_twa06_tze_inf_pink_horrors_ror_0", "special", 2}
 }
---[[
-    wh3_dlc20_chs_cav_chaos_chariot_mkho
-    wh3_dlc20_chs_cav_chaos_chariot_mnur
-    wh3_dlc20_chs_cav_chaos_chariot_msla
-    wh3_dlc20_chs_cav_chaos_chariot_msla_ror
-    wh3_dlc20_chs_cav_chaos_chariot_mtze
-    wh3_dlc20_chs_cav_chaos_knights_mkho
-    wh3_dlc20_chs_cav_chaos_knights_mkho_lances
-    wh3_dlc20_chs_cav_chaos_knights_mnur
-    wh3_dlc20_chs_cav_chaos_knights_mnur_lances
-    wh3_dlc20_chs_cav_chaos_knights_msla
-    wh3_dlc20_chs_cav_chaos_knights_msla_lances
-    wh3_dlc20_chs_cav_chaos_knights_mtze_lances
-    wh3_dlc20_chs_inf_aspiring_champions_mtze_ror
-    wh3_dlc20_chs_inf_chaos_marauders_mkho
-    wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons
-    wh3_dlc20_chs_inf_chaos_marauders_mnur
-    wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons
-    wh3_dlc20_chs_inf_chaos_marauders_msla
-    wh3_dlc20_chs_inf_chaos_marauders_msla_hellscourges
-    wh3_dlc20_chs_inf_chaos_marauders_mtze
-    wh3_dlc20_chs_inf_chaos_marauders_mtze_spears
-    wh3_dlc20_chs_inf_chaos_warriors_mnur
-    wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons
-    wh3_dlc20_chs_inf_chaos_warriors_msla
-    wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges
-    wh3_dlc20_chs_inf_chaos_warriors_mtze
-    wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds
-    wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes
-    wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes
-    wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins
-    wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins
-    wh3_dlc20_chs_inf_chosen_mkho
-    wh3_dlc20_chs_inf_chosen_mkho_dualweapons
-    wh3_dlc20_chs_inf_chosen_mnur
-    wh3_dlc20_chs_inf_chosen_mnur_greatweapons
-    wh3_dlc20_chs_inf_chosen_msla
-    wh3_dlc20_chs_inf_chosen_msla_hellscourges
-    wh3_dlc20_chs_inf_chosen_mtze
-    wh3_dlc20_chs_inf_chosen_mtze_halberds
-    wh3_dlc20_chs_inf_forsaken_mkho
-    wh3_dlc20_chs_inf_forsaken_msla
-    wh3_dlc20_chs_mon_giant_mnur_ror
-    wh3_dlc20_chs_mon_warshrine
-    wh3_dlc20_chs_mon_warshrine_mkho
-    wh3_dlc20_chs_mon_warshrine_mnur
-    wh3_dlc20_chs_mon_warshrine_msla
-    wh3_dlc20_chs_mon_warshrine_mtze
-    wh3_dlc20_kho_cav_skullcrushers_mkho_ror
-]]
+
 local dlc20_units = {
     {"wh3_dlc20_chs_cav_chaos_chariot_mkho", "core", 1},
     {"wh3_dlc20_chs_cav_chaos_chariot_mnur", "core", 1},
