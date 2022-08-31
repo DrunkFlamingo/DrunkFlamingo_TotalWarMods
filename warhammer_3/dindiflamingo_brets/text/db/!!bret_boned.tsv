@@ -1,0 +1,10 @@
+key	text	tooltip
+#Loc PackedFile;1;text/db/!!bret_boned.loc		
+uied_component_texts_localised_string_StateText_73018501	{{tr:warband_upgrades_title}}	false
+ui_text_replacements_localised_text_warband_upgrades_title_wh_main_sc_chs_chaos	Warband Upgrades	false
+ui_text_replacements_localised_text_warband_upgrades_title_wh_main_sc_brt_bretonnia	Knightly Ranks	false
+ui_text_replacements_localised_text_warband_upgrades_title	TEST	false
+land_units_onscreen_name_k_vow_e_realm	Knights of the Realm (Vow of Empathy)	false
+land_units_onscreen_name_k_vow_e_errants	Knights Errant (Vow of Empathy)	false
+land_units_onscreen_name_K_vow_e_questing	Questing Knights (Vow of Empathy)	false
+land_units_onscreen_name_k_vow_e_grail	Grail Knights (Vow of Empathy)	false

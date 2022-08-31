@@ -1,0 +1,6 @@
+faction	unit	name	variant	unit_card
+#unit_variants_tables;5;db/unit_variants_tables/!!!bret_boned				
+	k_vow_e_errants	k_vow_e_errants	k_vow_e_errants	wh_dlc07_brt_knights_errant
+	k_vow_e_realm	k_vow_e_realm	k_vow_e_realm	wh_main_brt_knights_realm
+	K_vow_e_questing	K_vow_e_questing	K_vow_e_questing	wh_dlc07_brt_questing_knights
+	k_vow_e_grail	k_vow_e_grail	k_vow_e_grail	wh_dlc07_brt_grail_guardians

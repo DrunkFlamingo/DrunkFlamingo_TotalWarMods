@@ -1,0 +1,6 @@
+variant_name	tech_folder	variant_filename	low_poly_filename	mount_scale	scale	scale_variation	super_low_poly_filename
+#variants_tables;6;db/variants_tables/!!!bret_boned							
+k_vow_e_errants		k_vow_errants		1.0	1.0	0.05	
+k_vow_e_realm		k_vow_realm	hu1\brt\brt_grail_knights\low_poly\brt_grail_knights_lowlod	1.0	1.0	0.05	hu1\imposter\humanoid_imposter
+K_vow_e_questing		K_vow_questing	hu1/brt/brt_questing_knights/imposter/brt_questing_knights_imposter	1.0	1.0	0.05	
+k_vow_e_grail		k_vow_grail	hu1\brt\brt_grail_knights\low_poly\brt_grail_knights_lowlod	1.0	1.0	0.05	hu1\imposter\humanoid_imposter
