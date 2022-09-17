@@ -82,3 +82,6 @@ function table_to_string(t, indent)
     return result
 end
 
+function escape_search_string(str)
+    return str:gsub("([%(%)%.%%%+%-%*%?%[%^%$%]])", "%%%1")
+end

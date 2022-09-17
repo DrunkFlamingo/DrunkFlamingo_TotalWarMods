@@ -7,16 +7,19 @@ local guid_find_pattern ='(%x%x%x%x%x%x%x%x%-%x%x%x%x%-%x%x%x%x%-%x%x%x%x%x%x%x%
 
 local hierarchy_end_tag = "</hierarchy>"
 new_file_text = ""
-local GUID_to_tag_name = {}
-local seen_hierarchy_end = false
+GUID_to_tag_name = {}
+seen_hierarchy_end = false
 tag_level_of_last_tag = 0
 
-local file = io.open("lua/input/extract_hierarchy.xml", "r+")
-local file_text = file:read("*a")
-local backup_file_text = file_text
+local file = io.open("lua/input/twui/extract_hierarchy.xml", "r+")
+file_text = file:read("*a")
+backup_file_text = file_text
 
-local function escape_string(str)
+local escape_string = function (str)
     return str:gsub("([%(%)%.%%%+%-%*%?%[%^%$%]])", "%%%1")
+end
+local function breakpoint()
+    
 end
 
 
@@ -26,13 +29,37 @@ function export_tag(line, n)
     if tag_guid then
         local tag_name = GUID_to_tag_name[tag_guid]
         if tag_name then
-
-            local tag_start_index = string.find(file_text, tag_name, hierarchy_end_index)
+            log("Searching for "..tag_name.." with GUID "..tag_guid)
+            log("Tag GUID when escaped == "..escape_string(tag_guid))
+            local guid_found_index = string.find(file_text, escape_string(tag_guid), hierarchy_end_index) 
+            if not guid_found_index then
+                log("GUID not found; "..tag_name.." with GUID "..tag_guid.." was probably already exported")
+                return
+            end
+            log("We found the guid on line "..tostring(guid_found_index))
+            --we're looking for a start tag which is between the end of the hiarchy and the guid
+            local search_start_index = hierarchy_end_index
+            log("Starting to search for the start tag at index "..tostring(search_start_index))
             local tag_end_search = string.gsub(tag_name, "<", "") .. ">"
-            local tag_end_index = string.find(file_text, tag_end_search, hierarchy_end_index) 
+            local timeout = 500
+            while string.find(file_text, tag_end_search, search_start_index) < guid_found_index do
+                local st, en = string.find(file_text, tag_end_search, search_start_index)
+                log("There was an end tag from index "..tostring(st).." to "..tostring(en))
+                log("that is before the guid, so we're going to search after that")
+                search_start_index = en
+                timeout = timeout - 1
+                if timeout == 0 then
+                    log("We timed out looking for the start tag")
+                    error("We timed out looking for the start tag")
+                end
+            end
+            local tag_end_index = string.find(file_text, tag_end_search, guid_found_index) 
+            log("The end of the tag is at index "..tostring(tag_end_index))
+            local tag_start_index = string.find(file_text, tag_name.."[\n\t%s]+", search_start_index)
+
             local tag_text = string.sub(file_text, tag_start_index, tag_end_index+string.len(tag_end_search))
             file_text, c = string.gsub(file_text, escape_string(tag_text), "")
-            log("Removed tag "..tag_name.." "..tag_guid.." on line "..n.." "..c.." times: "..tag_text)
+            log("Removed tag "..tag_name.." "..tag_guid.." on line "..n.." "..c.." times")
             for i = 1, tag_level_of_last_tag -1 do
                 new_file_text = new_file_text .. "\t"
             end 
@@ -78,9 +105,11 @@ for line in string.gmatch(file_text, "[^\n]+") do
 end
 handle_lines(file_lines)
 
+breakpoint()
+
 local function output_result()
     file:close()
-    local new_file_path = "lua/output/extract_hierarchy.xml"
+    local new_file_path = "lua/output/twui/extract_hierarchy.xml"
     local new_file = io.open(new_file_path, "w+")
 
     local components_tag_start = string.find(backup_file_text, "<components>")
