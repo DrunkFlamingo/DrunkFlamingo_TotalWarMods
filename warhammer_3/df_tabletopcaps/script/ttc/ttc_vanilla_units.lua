@@ -170,30 +170,37 @@ local wh3_ror = {
 	---- CATHAY ----
 	----------------
     {"wh3_twa06_cth_inf_dragon_guard_ror_0", "rare", 1},
+    {"wh3_twa07_cth_cav_jade_longma_riders_ror_0", "rare", 2},
 	----------------
 	---- KHORNE ----
 	----------------
     {"wh3_twa06_kho_inf_bloodletters_ror_0", "special", 2},
+    {"wh3_twa07_kho_cav_bloodcrushers_ror_0", "special", 2},
 	----------------
 	---- KISLEV ----
 	----------------
     {"wh3_twa06_ksl_inf_tzar_guard_ror_0", "special", 2},
+    {"wh3_twa07_ksl_cav_war_bear_riders_ror_0", "special", 3},
 	----------------
 	---- NURGLE ----
 	----------------
     {"wh3_twa06_nur_inf_plaguebearers_ror_0", "special", 2},
+    {"wh3_twa07_nur_cav_pox_riders_of_nurgle_ror_0", "special", 2},
 	-----------------------
 	---- OGRE KINGDOMS ----
 	-----------------------
     {"wh3_twa06_ogr_inf_maneaters_ror_0", "special", 2},
+    {"wh3_twa07_ogr_cav_crushers_ror_0", "rare", 2},
 	------------------
 	---- SLAANESH ----
 	------------------
     {"wh3_twa06_sla_inf_daemonette_ror_0", "special", 2},
+    {"wh3_twa07_sla_cav_heartseekers_of_slaanesh_ror_0", "rare", 2},
 	------------------
 	---- TZEENTCH ----
 	------------------
-    {"wh3_twa06_tze_inf_pink_horrors_ror_0", "special", 2}
+    {"wh3_twa06_tze_inf_pink_horrors_ror_0", "special", 2},
+    {"wh3_twa07_tze_cav_doom_knights_ror_0", "rare", 2}
 }
 
 local dlc20_units = {
@@ -246,7 +253,8 @@ local dlc20_units = {
     {"wh3_dlc20_chs_mon_warshrine_mtze", "special", 2},
     ---rare
     {"wh3_dlc20_chs_mon_giant_mnur_ror", "rare", 2},
-    {"wh3_dlc20_kho_cav_skullcrushers_mkho_ror", "rare", 2}
+    {"wh3_dlc20_kho_cav_skullcrushers_mkho_ror", "rare", 2},
+    {"wh3_main_nur_mon_spawn_of_nurgle_0_warriors", "rare", 1}
 }
 
 
@@ -1050,7 +1058,7 @@ local wh2_units = {
     {"wh2_main_def_inf_witch_elves_0", "core"},
     {"wh2_main_def_cav_dark_riders_0", "core"},
     {"wh2_main_def_cav_dark_riders_1", "core"},
-    {"wh_twa03_def_inf_squig_explosive_0", "core"}, --RAKARTH UNIQUE
+    
     --SPECIAL
     {"wh2_main_def_inf_harpies", "special", 1},
     {"wh2_dlc10_def_mon_feral_manticore_0", "special", 2},
@@ -1064,7 +1072,7 @@ local wh2_units = {
     {"wh2_main_def_cav_cold_one_chariot", "special", 2},
     {"wh2_dlc10_def_cav_doomfire_warlocks_0", "special", 2},
     {"wh2_dlc14_def_cav_scourgerunner_chariot_0", "special", 2},
-    {"wh2_twa03_def_mon_wolves_0", "special", 1}, --RAKARTH UNIQUE
+    
     --RARE
     {"wh2_main_def_art_reaper_bolt_thrower", "rare", 1},
     {"wh2_main_def_mon_black_dragon", "rare", 3},
@@ -1072,7 +1080,14 @@ local wh2_units = {
     {"wh2_dlc10_def_mon_kharibdyss_0", "rare", 2},
     {"wh2_dlc14_def_mon_bloodwrack_medusa_0", "rare", 1},
     {"wh2_dlc14_def_veh_bloodwrack_shrine_0", "rare", 2},
-    {"wh2_twa03_def_mon_war_mammoth_0", "rare", 2}, --RAKARTH UNIQUE
+    
+    --RAKARTH UNIQUE
+    {"wh_twa03_def_inf_squig_explosive_0", "core"}, 
+    {"wh2_twa03_def_mon_wolves_0", "special", 1}, 
+    {"wh2_twa03_def_mon_war_mammoth_0", "rare", 2}, 
+    {"wh2_twa03_grn_mon_wyvern_0", "rare", 1},
+    {"wh3_main_monster_feral_bears", "special", 2},
+    {"wh3_main_monster_feral_ice_bears", "rare", 1},
     
     -------ROR-------
     --CORE

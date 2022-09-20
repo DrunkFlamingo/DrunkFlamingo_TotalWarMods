@@ -1,3 +1,4 @@
+
 ---@param t string|any
 local out = function(t)
   ModLog("DRUNKFLAMINGO: "..tostring(t).." (tabletopcaps)")
@@ -178,37 +179,77 @@ mod.count_unit_in_selection = function(unit_key)
   return count
 end
 
----@return boolean
-mod.is_recruit_panel_open = function()
-  return cm:get_campaign_ui_manager():is_panel_open("units_recruitment")
-end
-
+--c_print(tostring(core:get_static_object("tabletopcaps").is_recruit_panel_open()))
+---mercenary_display
 ---@return boolean
 mod.is_merc_panel_open = function()
-  return cm:get_campaign_ui_manager():is_panel_open("mercenary_recruitment")
+  -- :root:units_panel:main_units_panel:recruitment_docker:recruitment_options:mercenary_display
+  local merc_display = find_uicomponent(core:get_ui_root(), "units_panel", "main_units_panel",
+   "recruitment_docker", "recruitment_options", "mercenary_display")
+  return is_uicomponent(merc_display) and merc_display:Visible(true)
 end
 
+
+---@return boolean
+mod.is_recruit_panel_open = function()
+  -- :root:units_panel:main_units_panel:recruitment_docker:recruitment_options:recruitment_listbox
+  local recruit_display = find_uicomponent(core:get_ui_root(), "units_panel", "main_units_panel",
+   "recruitment_docker", "recruitment_options", "recruitment_listbox")
+  return is_uicomponent(recruit_display) and recruit_display:Visible(true)
+end
+
+---units_panel
 ---@return boolean
 mod.is_units_panel_open = function()
   return cm:get_campaign_ui_manager():is_panel_open("units_panel")
 end
 
+---allied_recuitment_display
+---@return boolean
+mod.is_allied_recruitment_panel_open = function()
+  -- :root:units_panel:main_units_panel:recruitment_docker:recruitment_options:allied_recuitment_display
+  local allied_recuitment_display = find_uicomponent(core:get_ui_root(), "units_panel", "main_units_panel",
+   "recruitment_docker", "recruitment_options", "allied_recuitment_display")
+  return is_uicomponent(allied_recuitment_display) and allied_recuitment_display:Visible(true)
+end
+
 ---@return boolean
 mod.is_exchange_panel_open = function()
-  return cm:get_campaign_ui_manager():is_panel_open("unit_exchange")
+  local unit_exchange = find_uicomponent(core:get_ui_root(), "unit_exchange")
+  return is_uicomponent(unit_exchange) and unit_exchange:Visible(true)
 end
 
 ---The spell browser doesn't work properly.
 ---@return boolean
 mod.is_spell_browser_open = function()
-  return is_uicomponent(find_uicomponent("spell_browser"))
+  local browser = find_uicomponent("spell_browser")
+  return is_uicomponent(browser) and browser:Visible(true)
 end
 
 ---the upgrades docker also does not count as a panel AFAIK
 mod.is_warband_upgrade_panel_open = function()
-  return is_uicomponent(find_uicomponent("warband_upgrades")) and find_uicomponent("warband_upgrades"):Visible()
+  -- :root:units_panel:main_units_panel:warband_upgrades_docker:warband_upgrades
+  local warband_upgrades = find_uicomponent(core:get_ui_root(), "units_panel", "main_units_panel",
+   "warband_upgrades_docker", "warband_upgrades")
+  return is_uicomponent(warband_upgrades) and warband_upgrades:Visible(true)
 end
 
+mod.last_panel_open = ""
+mod.get_current_panel = function ()
+  if mod.is_exchange_panel_open() then
+    return "unit_exchange"
+  elseif mod.is_merc_panel_open() then
+    return "mercenary_recruitment"
+  elseif mod.is_warband_upgrade_panel_open() then
+    return "warband_upgrades"
+  elseif mod.is_allied_recruitment_panel_open() then
+    return "allied_recruitment"
+  elseif mod.is_recruit_panel_open() then
+    return "units_recruitment"
+  else
+    return ""
+  end
+end
 
 ---@param callback fun(context)
 ---@param ... string
@@ -266,7 +307,7 @@ ttc_unit.new = function(unit_key, group_name, unit_weight, is_special_rule, supp
   setmetatable(self, {
     __index = ttc_unit
   })
-  out_if(not suppress_log, "Creating a unit ["..(unit_key or "Null unit").."] in group ["..(group_name or "core")..(unit_weight or "1").."], special rule: "..tostring(is_special_rule))
+  out_if(not suppress_log, "Creating a unit ["..(unit_key or "Null unit").."] in group ["..(group_name or "core")..(tostring(unit_weight) or "1").."], special rule: "..tostring(is_special_rule))
   self.key = unit_key
   self.group = group_name or "core" ---@type string
   self.weight = unit_weight or 1 ---@type integer
@@ -299,7 +340,7 @@ ttc_character.new = function(character)
     return
   end
   mod.characters[self.cqi] = self
-
+  self.is_clone = false
   self.units = {} ---@type table<string, ttc_unit>
   self.factors = {}
   self.budget = {}
@@ -324,9 +365,23 @@ ttc_character.clone_to_temp_record = function(self)
   setmetatable(clone, {
     __index = ttc_character
   })
-  for k, v in pairs(self) do
-    clone[k] = v
+  clone.is_clone = true
+  clone.cqi = -1
+  clone.interface = self.interface
+  clone.force = self.force
+  clone.units = self.units
+  clone.budget = self.budget
+  clone.count = {}
+  for k, v in pairs(self.count) do
+    self.count = {}
+    clone.count[k] = v
   end
+  clone.factors = {}
+  self.potential_special_rules = {}
+  clone.log = function(this, t)
+    ModLog("DRUNFLAMINGO: "..tostring(t).." (tabletopcaps:cloned_character"..tostring(self.cqi)..")")
+  end
+  
   return clone
 end
 
@@ -346,6 +401,9 @@ end
 ttc_character.apply_cost_of_unit = function(self, unit_record, is_queued_exchange)
   self:log("Purchased unit "..unit_record.key)
   self.count[unit_record.group] = (self.count[unit_record.group] or 0) + unit_record.weight
+  if self.is_clone then
+    return
+  end
   local factor_key = unit_record.key
   self.factors[factor_key] = (self.factors[factor_key] or 0) + unit_record.weight
   core:trigger_event("ModScriptEventTabletopCapsCountChanged", self.interface, unit_record.group)
@@ -360,6 +418,9 @@ end
 ttc_character.refund_cost_of_unit = function(self, unit_record, is_queued_exchange)
   self:log("Refunded unit "..unit_record.key)
   self.count[unit_record.group] = (self.count[unit_record.group] or 0) - unit_record.weight
+  if self.is_clone then
+    return
+  end
   local factor_key = unit_record.key
   self.factors[factor_key] = (self.factors[factor_key] or 0) - unit_record.weight
   if (self.count[unit_record.group] or 0) < 0 then
@@ -374,6 +435,10 @@ ttc_character.refresh_budget = function(self)
   self.budget = {
     core = 999
   }
+  if self.is_clone then
+    out("Refresh budget should not be called on cloned character records")
+    return
+  end
 
   self:log("Building budget from bonus values")
   for effect_bonus_value_key, group_key in pairs(mod.budget_bonus_values) do
@@ -385,6 +450,10 @@ end
 
 ---refreshes the special rules associated with the character
 ttc_character.refresh_special_rules = function(self)
+  if self.is_clone then
+    out("Refresh special rules should not be called on cloned character records")
+    return
+  end
   self:log("Refreshing special rules")
   for i = 1, #self.potential_special_rules do
     local unit_key = self.potential_special_rules[i]
@@ -428,6 +497,10 @@ end
 ---@param number_of_replacements integer|nil
 ---@return boolean
 ttc_character.can_afford_swap = function (self, unit_record_to_remove, unit_record_to_add, number_of_replacements)
+  if self.is_clone then
+    out("Cannot afford swap should not be called on cloned character records")
+    return false
+  end
   local q = number_of_replacements or 1
   local clone = self:clone_to_temp_record()
   for i = 1, q do
@@ -617,7 +690,7 @@ mod.add_listeners_to_army_unit_card = function(unitCard, character_record, unit_
         out("Army card listener fired but the unit card it refers to is dead. A remove listener command is missing somewhere.")
         return
       end
-      local should_be_visible = mod.is_exchange_panel_open() or mod.is_merc_panel_open() or mod.is_recruit_panel_open()
+      local should_be_visible = mod.is_exchange_panel_open() or mod.get_current_panel() ~= ""
       local pipElement = find_uicomponent(unitCard, "card_image_holder", "campaign", "ttc_pip")
       if not pipElement then
         local element_to_clone = find_uicomponent(unitCard, "card_image_holder", "campaign", "copy_of_upgradable")
@@ -668,13 +741,16 @@ end
 
 mod.refresh_icons_on_exchange_bars = function()
   local character_record = mod.get_selected_character_record()
+  out("Refreshing the icons in the exchange bars")
   local armyLists = {find_uicomponent_from_table(core:get_ui_root(), {"unit_exchange", "main_units_panel_1", "units"}), find_uicomponent_from_table(core:get_ui_root(), {"unit_exchange", "main_units_panel_2", "units"})}
   for j = 1, #armyLists do
+    out("Refreshing the icons in the exchange bar "..tostring(j))
     local armyList = armyLists[j]
     for i = 0, armyList:ChildCount() - 1 do	
+      out("Handling unit card "..tostring(i))
       local unitCard = UIComponent(armyList:Find(i))
-      if unitCard:Id():find("Queued") then -- Queued Unit Card
-        unitCard:SimulateMouseOn()
+      local turns = find_uicomponent(unitCard, "card_image_holder", "campaign", "Turns")
+      if turns:Visible() then -- Queued Unit Card
         -- :root:hud_campaign:unit_information_parent:unit_info_panel_holder_parent:unit_info_panel_holder:unit_information
         local ok, err = pcall(function()
           local experience_icon = find_uicomponent(unitCard, "experience")
@@ -689,8 +765,7 @@ mod.refresh_icons_on_exchange_bars = function()
           out("Error reading a queued unit card")
           out(tostring(err))
         end
-        unitCard:SimulateMouseOff()
-      elseif unitCard:Id() ~= "LandUnit 0" then --regular unit_card that is not the general character
+      elseif unitCard:Id() ~= "UnitCard1" then --regular unit_card that is not the general character
         local unitContextId = unitCard:GetContextObjectId("CcoCampaignUnit")
         local campaignUnitContext = cco("CcoCampaignUnit", unitContextId)
         local unit_key = campaignUnitContext:Call("UnitRecordContext.Key")
@@ -747,8 +822,13 @@ mod.refresh_icons_on_army_units_panel = function()
 end
 
 mod.destroy_icons_on_army_units_panel = function()
-  local character_record = mod.get_selected_character_record()
-  local armyList = find_uicomponent_from_table(core:get_ui_root(), {"units_panel", "main_units_panel", "units"})
+  -- :root:units_panel:main_units_panel:units
+  core:remove_listener("TTCArmyCardListeners")
+  local armyList = find_uicomponent(core:get_ui_root(), "units_panel", "main_units_panel", "units")
+  if not armyList then
+    out("destroy_icons_on_army_units_panel: No army list found")
+    return
+  end
   for i = 0, armyList:ChildCount() - 1 do	
     local unitCard = UIComponent(armyList:Find(i))
     local pipElement = find_uicomponent(unitCard, "ttc_pip")
@@ -853,10 +933,62 @@ end
 ----warband upgrades
 -------------------------------------------------------
 
+
+
 ----called when the player changes their unit selection
 ---updates the upgrade tree by adding lock icons for units which cannot be afforded.
-mod.update_warband_upgrade_tree_lock_icons = function ()
-  --this is probably unncessary.
+mod.update_warband_tree = function ()
+  -- :root:units_panel:main_units_panel:warband_upgrades_docker:warband_upgrades:body:upgrade_tree:slot_parent
+  out("Updating Warband tree")
+  local character_record = mod.get_selected_character_record()
+  if not character_record then
+    out("Aborting update_warband_tree; No character record for unit card")
+    return 
+  end
+  local slot_parent = find_uicomponent(core:get_ui_root(), "units_panel", "main_units_panel", "warband_upgrades_docker",
+   "warband_upgrades", "body", "upgrade_tree", "slot_parent")
+
+  if not slot_parent then
+    out("update_warband_tree: No slot parent found")
+    return
+  end
+
+  out("Slot parent has "..slot_parent:ChildCount().." children")
+
+  for i = 0, slot_parent:ChildCount() - 1 do
+    -- :wh3_main_chs_pink_horrors_exalted:CcoMainUnitRecordwh3_main_tze_inf_pink_horrors_1
+    local slot = UIComponent(slot_parent:Find(i))
+    
+    for j = 1, slot:ChildCount() - 1 do
+      local slotUnitCard = UIComponent(slot:Find(j))
+      local mainUnitRecord = slotUnitCard:GetContextObjectId("CcoMainUnitRecord")
+      local unit_record = mod.get_unit(mainUnitRecord, character_record)
+      local cost_tooltip_loc
+
+      if unit_record.group == "core" then
+        local desc_loc_to_fill = common.get_localised_string("ttc_unit_no_cost")
+        local detail_loc_to_fill = common.get_localised_string("ttc_army_unlimited")
+        local group_name = common.get_localised_string("ttc_group_name_core")
+        cost_tooltip_loc = fill_loc(desc_loc_to_fill, group_name) .. "\n\n" .. fill_loc(detail_loc_to_fill, group_name)
+      else
+        local desc_loc_to_fill = common.get_localised_string("ttc_unit_cost")
+        local detail_loc_to_fill = common.get_localised_string("ttc_army_limited")
+        local points_name = common.get_localised_string("ttc_measurement_name")
+        local group_name = common.get_localised_string("ttc_group_name_"..unit_record.group)
+        local cost = tostring(unit_record.weight)
+        local capacity = tostring((character_record).budget[unit_record.group] or 0)
+        cost_tooltip_loc = fill_loc(desc_loc_to_fill, group_name, cost, points_name) .. "\n\n" .. fill_loc(detail_loc_to_fill, capacity, points_name, group_name)
+      end
+      local pip_image = (mod.ui_settings.groups_to_pips[unit_record.group] or {})[unit_record.weight]
+      if not pip_image then
+        out("WARNING: could not find pip image for group "..unit_record.group)
+      end
+      local pip_element = UIComponent(slotUnitCard:CreateComponent("ttc_cost_pip", "ui/campaign ui/ttc_pip"))
+      pip_element:SetImagePath(pip_image, 0)
+      pip_element:SetTooltipText(cost_tooltip_loc, true)
+      pip_element:SetVisible(true)
+    end
+  end
 end
 
 
@@ -885,20 +1017,27 @@ mod.add_warband_upgrade_requirement_entry = function(unit_record, upgrade_record
     return
   end
 
-  local perUnitCostHolder =  find_uicomponent(requirements, "per_unit_cost", "per_unit_cost_holder")
+  local tt_to_fill = common.get_localised_string("ttc_warband_upgrade_cost")
+  local points_name = common.get_localised_string("ttc_measurement_name")
+  local group_name = common.get_localised_string("ttc_group_name_"..upgrade_record.group)
+  local tt = fill_loc(tt_to_fill, tostring(cost_per_unit), group_name, points_name)
+
+  local perUnitCostHolder =  find_uicomponent(requirements, "per_unit_cost")
   local perUnitPointCost 
   if find_uicomponent(perUnitCostHolder, "ttc_per_unit_cost") then
     perUnitPointCost = find_uicomponent(perUnitCostHolder, "ttc_per_unit_cost")
   else
-    perUnitPointCost = UIComponent(perUnitCostHolder:CopyComponent("ttc_per_unit_cost"))
+    perUnitPointCost = UIComponent(perUnitCostHolder:CreateComponent("ttc_per_unit_cost", "ui/campaign ui/ttc_meter"))
   end
   if perUnitPointCost then
-    perUnitPointCost:SetImagePath(pip_image)
-    perUnitPointCost:SetCurrentStateImageTiled(0, false)
-    local perUnitPointCostLabel = find_uicomponent(perUnitPointCost, "dy_per_unit_cost")
-    perUnitPointCostLabel:SetStateText(tostring(cost_per_unit))
+    perUnitPointCost:SetImagePath(pip_image, 1)
+    perUnitPointCost:SetStateText(tostring(cost_per_unit))
     perUnitPointCost:SetDockingPoint(2)
-    perUnitPointCostLabel:SetDockingPoint(5)
+    perUnitPointCost:SetCanResizeHeight(true)
+    perUnitPointCost:SetCanResizeWidth(true)
+    perUnitPointCost:Resize(47, 20)
+    perUnitPointCost:SetDockOffset(28, -2)
+    perUnitPointCost:SetTooltipText(tt, true)
     if cost_per_unit == 0 then
       perUnitPointCost:SetVisible(false)
     else
@@ -907,20 +1046,22 @@ mod.add_warband_upgrade_requirement_entry = function(unit_record, upgrade_record
   else
     out("Failed to get or create a per unit point cost element")
   end
-  local totalCostHolder = find_uicomponent(requirements, "total_cost", "total_cost_holder")
+  local totalCostHolder = find_uicomponent(requirements, "total_cost")
   local totalPointsCost
   if find_uicomponent(totalCostHolder, "ttc_total_cost") then
     totalPointsCost = find_uicomponent(totalCostHolder, "ttc_total_cost")
   else
-    totalPointsCost = UIComponent(totalCostHolder:CopyComponent("ttc_total_cost"))
+    totalPointsCost = UIComponent(totalCostHolder:CreateComponent("ttc_total_cost", "ui/campaign ui/ttc_meter"))
   end
   if totalPointsCost then
-    totalPointsCost:SetImagePath(pip_image)
-    totalPointsCost:SetCurrentStateImageTiled(0, false)
-    local totalPointsCostLabel = find_uicomponent(totalPointsCost, "dy_total_cost")
+    totalPointsCost:SetImagePath(pip_image, 1)
     totalPointsCost:SetDockingPoint(2)
-    totalPointsCostLabel:SetDockingPoint(5)
-    totalPointsCostLabel:SetStateText(tostring(cost_per_unit * quantity))
+    totalPointsCost:SetCanResizeHeight(true)
+    totalPointsCost:SetCanResizeWidth(true)
+    totalPointsCost:Resize(47, 20)
+    totalPointsCost:SetDockOffset(28, -2)
+    totalPointsCost:SetStateText(tostring(cost_per_unit * quantity))
+    totalPointsCost:SetTooltipText(tt, true)
     if cost_per_unit == 0 then
       totalPointsCost:SetVisible(false)
     else
@@ -929,74 +1070,9 @@ mod.add_warband_upgrade_requirement_entry = function(unit_record, upgrade_record
   else
     out("Failed to get or create a total point cost element")
   end
-  --TODO redo this to use a custom pip display element.
-  --TODO tooltips for the pip images
 
 end
 
----comment
----@param character_record ttc_character
-mod.add_warband_upgrade_cost_display = function (character_record)
-  -- root:units_panel:main_units_panel:warband_upgrades_docker:warband_upgrades:body:info_holder:upgrade_info_holder
-  local upgrade_info_holder = find_uicomponent(core:get_ui_root(), "units_panel", "main_units_panel", "warband_upgrades_docker",
-   "warband_upgrades", "body", "info_holder", "upgrade_info_holder")
-  local nothing_selected_holder = find_uicomponent(core:get_ui_root(), "units_panel", "main_units_panel", "warband_upgrades_docker",
-   "warband_upgrades", "body", "info_holder", "nothing_selected_holder")
-
-  if upgrade_info_holder and upgrade_info_holder:Visible() then
-    --unit_info_costs:holder_unit_upgrade_path:target_subtitle:dy_unit_upgrade 
-    local unit_upgrade_label = find_uicomponent(upgrade_info_holder, "unit_info_costs", "holder_unit_upgrade_path", "target_subtitle",
-      "dy_unit_upgrade")
-    if unit_upgrade_label:Visible() then
-      local unit_upgrade_context_id = unit_upgrade_label:GetContextObjectId("CcoMainUnitRecord")
-      if unit_upgrade_context_id then
-        local unitUpgradeContext = cco("CcoMainUnitRecord", unit_upgrade_context_id)
-        local unit_key = unitUpgradeContext:Call("Key")
-        local unit_record = mod.get_unit(unit_key, character_record)
-        local old_text = unit_upgrade_label:GetStateText()
-        if not string.find(old_text, "img") then
-          local new_text = unit_record:get_cost_string().." "..old_text
-          unit_upgrade_label:SetStateText(new_text)
-        end
-      end
-    end
-
-    --root:units_panel:main_units_panel:warband_upgrades_docker:warband_upgrades:body:info_holder
-    --upgrade_info_holder:unit_info_costs:holder_unit_upgrade_path:selected_title:dy_unit_selected
-    local unit_selected_label = find_uicomponent(upgrade_info_holder, "unit_info_costs", "holder_unit_upgrade_path", "selected_title",
-      "dy_unit_selected")
-    if unit_selected_label:Visible() then
-      local unit_selected_context_id = unit_selected_label:GetContextObjectId("CcoCampaignUnit")
-      if unit_selected_context_id then
-        local unitSelectedContext = cco("CcoCampaignUnit", unit_selected_context_id)
-        local unit_key = unitSelectedContext:Call("UnitRecordContext.Key")
-        local unit_record = mod.get_unit(unit_key, character_record)
-        local old_text = unit_selected_label:GetStateText()
-        if not string.find(old_text, "img") then
-          local new_text = unit_record:get_cost_string().." "..old_text
-          unit_selected_label:SetStateText(new_text)
-        end
-      end
-    end
-  elseif nothing_selected_holder and nothing_selected_holder:Visible() then
-    --selected_title:dy_unit_selected
-    local unit_selected_label = find_uicomponent(nothing_selected_holder, "selected_title", "dy_unit_selected")
-    if unit_selected_label:Visible() then
-      local unit_selected_context_id = unit_selected_label:GetContextObjectId("CcoCampaignUnit")
-      if unit_selected_context_id then
-        local unitSelectedContext = cco("CcoCampaignUnit", unit_selected_context_id)
-        local unit_key = unitSelectedContext:Call("UnitRecordContext.Key")
-        local unit_record = mod.get_unit(unit_key, character_record)
-        local old_text = unit_selected_label:GetStateText()
-        if not string.find(old_text, "img") then
-          local new_text = unit_record:get_cost_string().." "..old_text
-          unit_selected_label:SetStateText(new_text)
-        end
-      end
-    end
-  end
-
-end
 
 --TODO test the upgrades system and clean up any artifacts. 
 ---called when the player changes either their unit selection or their target unit selection
@@ -1010,12 +1086,12 @@ mod.update_warband_upgrade_requirements_and_invocation_button = function ()
       out("No character selected, aborting update_warband_upgrade_requirements_and_invocation_button")
       return
     end
-    mod.add_warband_upgrade_cost_display(character_record)
+    --mod.add_warband_upgrade_cost_display(character_record)
     local invokeButton = find_uicomponent_from_table(core:get_ui_root(), {"units_panel", "main_units_panel", 
     "warband_upgrades_docker", "warband_upgrades", "body", "info_holder", "upgrade_info_holder", "unit_info_costs", 
     "holder_requirements", "button_invoke"})
     if not invokeButton then
-      out("WARNING: update_warband_upgrade_requirements_and_invocation_button called but couldn't find the invoke button!")
+      out("update_warband_upgrade_requirements_and_invocation_button called but couldn't find the invoke button!")
       return
     end
     --get the unit we are upgrading from and the unit we are upgrading to.
@@ -1046,12 +1122,65 @@ mod.update_warband_upgrade_requirements_and_invocation_button = function ()
     if can_afford_upgrade then
       --leave it alone.
     else
+      local tt_to_fill = common.get_localised_string("ttc_restriction_tooltip")
+      local points_name = common.get_localised_string("ttc_measurement_name")
+      local group_name = common.get_localised_string("ttc_group_name_"..upgrade_record.group)
+      local tt = fill_loc(tt_to_fill, group_name, points_name)
       invokeButton:SetState("inactive")
+      invokeButton:SetTooltipText(tt, true)
     end
 end
 
 
+mod.add_listeners_to_warband_panel = function ()
+  out("Added Warband Panel Listeners")
+  ---warband handling
+    --update our picture of what is selected when a land unit card is clicked.
+    --if the warbands upgrade panel is open, we should refresh our picture of the queued upgrade.
+    core:add_listener(
+        "TTCWarbandListeners",
+        "ComponentLClickUp",
+        function(context)
+            return string.find(context.string, "LandUnit")
+        end,
+        function(context)
+            out("Mouseclick triggered on a land unit")
+            mod.update_unit_selection()
+            mod.update_warband_upgrade_requirements_and_invocation_button()
+        end,
+        true)
+    --update our picture of what is selected when an upgrade is clicked in the warband upgrade tree.
+    core:add_listener(
+        "TTCWarbandListeners",
+        "ComponentLClickUp",
+        function(context)
+            local component = UIComponent(context.component)
+            return uicomponent_descended_from(component, "upgrade_tree") and mod.is_warband_upgrade_panel_open()
+        end,
+        function(context)
+            out("Mouseclick triggered on a warband unit upgrade option!")
+            mod.update_warband_upgrade_requirements_and_invocation_button()
+        end,
+        true)
+    core:add_listener(
+      "TTCWarbandListeners",
+      "ComponentLClickUp",
+      function(context)
+        return string.find(context.string, "button_toggle_tab_")
+      end,
+      function(context)
+        out("Mouseclick triggered on a warband tab button!")
+        cm:real_callback(mod.update_warband_tree, 50)
+      end,
+      true)
+      mod.update_warband_upgrade_requirements_and_invocation_button()
+      mod.update_warband_tree()
+end
 
+mod.remove_warband_listeners = function ()
+  out("Removed warband listeners")
+  core:remove_listener("TTCWarbandListeners")
+end
 
 -----------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------
@@ -1273,6 +1402,9 @@ mod.add_listeners = function()
       core:remove_listener("TTCTempListeners")
       --clear any recruitment listeners we have out.
       mod.remove_recruitment_listeners()
+      mod.remove_warband_listeners()
+      --reset the last recruitment panel variable so that panel opened instructions fire again on the next tick.
+      mod.last_panel_open = ""
       --is the panel already open?
       if mod.is_units_panel_open() then
         out("Units Panel is open already")
@@ -1280,24 +1412,8 @@ mod.add_listeners = function()
         cm:callback(function() 
           out("The delayed character select callback is firing")
           mod.select_character(mod.get_selected_character_record().interface)
-          --if the recruitment panel is open too, we can immediately add listeners to it.
-          if mod.is_recruit_panel_open() then
-            mod.add_lsteners_to_recruitment_panel()
-            mod.refresh_icons_on_army_units_panel()
-          elseif mod.is_merc_panel_open() then
-            mod.add_listeners_to_mercenary_panel()
-            mod.refresh_icons_on_army_units_panel()
-          else
-            out("but neither recruitment panel is open, adding a temp listener")
-            --if the recruitment panel isn't open yet, set up a listener for when it does.
-            mod.panels_open_callback(function(context)
-              if context.string == "units_recruitment" then
-                mod.add_lsteners_to_recruitment_panel()
-              else
-                mod.add_listeners_to_mercenary_panel()
-              end
-              mod.refresh_icons_on_army_units_panel()
-            end, "units_recruitment", "mercenary_recruitment")
+          if mod.get_current_panel() == "" then
+            mod.destroy_icons_on_army_units_panel()
           end
         end, 0.1)
         core:trigger_event("ModScriptEventRefreshUnitCards")
@@ -1307,15 +1423,7 @@ mod.add_listeners = function()
         mod.panels_open_callback(function(context)
           out("Units panel open callback set on character select is firing")
           mod.select_character(mod.get_selected_character_record().interface)
-          --inside that, queue up another one for the rec panels.
-          mod.panels_open_callback(function(context)
-            mod.refresh_icons_on_army_units_panel()
-            if context.string == "units_recruitment" then
-              mod.add_lsteners_to_recruitment_panel()
-            else
-              mod.add_listeners_to_mercenary_panel()
-            end
-          end, "units_recruitment", "mercenary_recruitment")
+          mod.destroy_icons_on_army_units_panel()
         end, "units_panel")
       end
     end,
@@ -1336,99 +1444,113 @@ mod.add_listeners = function()
       end,
       true)
 
-  --handle the player swapping between panels or closing them
-  core:add_listener(
-    "TTCMainListeners",
-    "PanelClosedCampaign",
-    function(context)
-      return context.string == "units_recruitment"
-    end,
-    function(context)
-      --remove recruitment listeners
-      mod.remove_recruitment_listeners()
-      --if the mercenary panel is open, add listeners back to the merc panel. 
-      if mod.is_merc_panel_open() then
-        out("Swapped from regular recruitment to the mercenary panel")
-        mod.add_listeners_to_mercenary_panel()
-        mod.refresh_icons_on_army_units_panel()
-      else
-        out("Closed regular recruitment fully")
-        if mod.is_warband_upgrade_panel_open() then
-          out("Warband upgrades panel was open! Leaving the pips on the army panel")
-        else
-          mod.destroy_icons_on_army_units_panel()
-        end
-        --listen for it reopening. 
-        mod.panels_open_callback(function(context)
-          if context.string == "units_recruitment" then
-            mod.add_lsteners_to_recruitment_panel()
-          else
-            mod.add_listeners_to_mercenary_panel()
-          end
-          mod.refresh_icons_on_army_units_panel()
-        end, "units_recruitment", "mercenary_recruitment")
-      end
-    end,
-    true)    
-  core:add_listener(
-    "TTCMainListeners",
-    "PanelClosedCampaign",
-    function(context)
-      return context.string == "mercenary_recruitment"; 
-    end,
-    function(context)
-      --remove recruitment listeners and clear the mercenary queue
-      mod.remove_recruitment_listeners()
-      mod.mercenaries_in_queue = {}
-      --if the recruit panel is open, add listenrs to it.
-      if mod.is_recruit_panel_open() then
-        out("Swapped from the mercenary panel to the standard recruitment panel")
+    --handle the player swapping between panels or closing them
+    --these tables define instructions for what to do when a panel is opened or closed.
+    --the panel closed instructions of the panel closing are fired before the panel opened instructions of the panel opening.
+    local panel_opened_switch = {
+      ["units_recruitment"] = function ()
         mod.add_lsteners_to_recruitment_panel()
+      end,
+      ["allied_recruitment"] = function ()
+        mod.add_lsteners_to_recruitment_panel()
+      end,
+      ["mercenary_recruitment"] = function ()
+        mod.add_listeners_to_mercenary_panel()
+      end,
+      ["warband_upgrades"] = function ()
+        mod.add_listeners_to_warband_panel()
+        mod.update_unit_selection()
+      end
+    }
+    local panel_closed_switch = {
+      ["units_recruitment"] = function ()
+        mod.remove_recruitment_listeners()
+      end,
+      ["allied_recruitment"] = function ()
+        mod.remove_recruitment_listeners()
+      end,
+      ["mercenary_recruitment"] = function ()
+        mod.remove_recruitment_listeners()
+      end,
+      ["warband_upgrades"] = function ()
+        mod.remove_warband_listeners()
+      end
+    }
+    --check every 60 ms to see if the panel has changed.
+    cm:repeat_real_callback(function() 
+      local new_panel_open = mod.get_current_panel()
+      if mod.last_panel_open == new_panel_open then
+        return 
+      end
+      out("Recruitment Panel changed from "..mod.last_panel_open.." to "..new_panel_open)
+      if panel_closed_switch[mod.last_panel_open] then
+        panel_closed_switch[mod.last_panel_open]()
+      end
+      if panel_opened_switch[new_panel_open] then
+        cm:real_callback(panel_opened_switch[new_panel_open], 50)
+      end
+      if new_panel_open ~= "" then
         mod.refresh_icons_on_army_units_panel()
       else
-        out("Closed mercenary recruitment fully")
-        if mod.is_warband_upgrade_panel_open() then
-          out("Warband upgrades panel was open! Leaving the pips on the army panel")
-        else
-          mod.destroy_icons_on_army_units_panel()
-        end
-        --listen for it reopening. 
-        mod.panels_open_callback(function(context)
-          if context.string == "units_recruitment" then
-            mod.add_lsteners_to_recruitment_panel()
-          else
-            mod.add_listeners_to_mercenary_panel()
-          end
-          mod.refresh_icons_on_army_units_panel()
-        end, "units_recruitment", "mercenary_recruitment")
+        mod.destroy_icons_on_army_units_panel()
       end
-    end,
-    true)
-    --listen for the warband panel closing.
+      mod.last_panel_open = new_panel_open
+    end, 50, "TTCPanelMonitor")
+
+    --when a panel closes, reset the last panel open variable and fire the panel closed instructions.
+    --this accounts for cases where the player swaps between different versions of the same panel, such as in mercenary recruitment.
+    core:add_listener(
+      "TTCPanelMonitor",
+      "PanelClosedCampaign",
+      function(context)
+        return context.string == mod.last_panel_open
+      end,
+      function(context)
+        if panel_closed_switch[mod.last_panel_open] then
+          panel_closed_switch[mod.last_panel_open]()
+        end
+        out("Recruitment Panel closed: "..tostring(mod.last_panel_open))
+        mod.last_panel_open = ""
+      end,
+      true)
+
+    --when the player clicks an option in the allies dropdown menu, "close" the panel so that the panel open instructions fire again.
     core:add_listener(
       "TTCMainListeners",
       "ComponentLClickUp",
       function(context)
-          return ((context.string == "button_minimize" and uicomponent_descended_from(UIComponent(context.component), "warband_upgrades"))
-          or (context.string == "button_warbands_upgrade" and uicomponent_descended_from(UIComponent(context.component), "button_group_army")))
-          and not mod.is_warband_upgrade_panel_open()
+        return (not not string.find(context.string, "option")) and uicomponent_descended_from(UIComponent(context.component), "allied_factions_dropdown")
       end,
       function(context)
-          if mod.is_recruit_panel_open() then
-            out("Swapped from the warband upgrade panel to the standard recruitment panel")
-            mod.add_lsteners_to_recruitment_panel()
-            mod.refresh_icons_on_army_units_panel()
-          elseif mod.is_merc_panel_open() then
-            out("Swapped from warband upgrade panel to the mercenary panel")
-            mod.add_listeners_to_mercenary_panel()
-            mod.refresh_icons_on_army_units_panel()
-          else
-            out("The Warband Panel was closed fully")
-            mod.destroy_icons_on_army_units_panel()
-          end
+        out("Refreshing allies")
+        if panel_closed_switch[mod.last_panel_open] then
+          panel_closed_switch[mod.last_panel_open]()
+        end
+        out("Recruitment Panel closed: "..tostring(mod.last_panel_open))
+        mod.last_panel_open = ""
       end,
       true)
 
+    --after the character changes stance,  "close" the panel so that the panel open instructions fire again.
+    core:add_listener(
+      "TTCMainListeners",
+      "ForceAdoptsStance",
+      function(context)
+        return context:military_force():faction():name() == cm:get_local_faction_name(true)
+      end,
+      function(context)
+        out("Character changed stance, destroying and rebuilding recruitment listeners")
+        if panel_closed_switch[mod.last_panel_open] then
+          panel_closed_switch[mod.last_panel_open]()
+        end
+        out("Recruitment Panel Closed: "..tostring(mod.last_panel_open))
+        mod.last_panel_open = ""
+      end,
+      true);
+
+      --special case to handle a bug in the UI scripting interface
+      --if you open a panel while you have a character selected, the character remains selected behind the panel.
+      --however, when you exit that panel, the cmui manager doesn't know that the character is selected and returns -1.
       core:add_listener(
         "TTCMainListeners",
         "PanelClosedCampaign",
@@ -1436,11 +1558,11 @@ mod.add_listeners = function()
           return context.string ~= "mercenary_recruitment" and context.string ~= "units_recruitment" and context.string ~= "units_panel"
         end,
         function(context)
-          cm:callback(function ()
+          cm:real_callback(function ()
             if cm:get_campaign_ui_manager():get_char_selected_cqi() == -1 then
               -- root:units_panel:main_units_panel:units:LandUnit 0
               local unitCard = find_uicomponent(core:get_ui_root(), "units_panel", "main_units_panel", "units", "LandUnit 0")
-              if unitCard then
+              if unitCard and unitCard:Visible() then
                 out("After panel closed, there is a unit card visible but no character selected. Selecting the unit card's character")
                 local character_cqi = tonumber(unitCard:GetContextObjectId("CcoCampaignCharacter") or 0)
                 ---@cast character_cqi integer
@@ -1454,12 +1576,12 @@ mod.add_listeners = function()
                 end
               end
             end
-          end, 0.5)
+          end, 500)
         end, 
         true)
 
 
-
+    --[[
     --whenever one of these panels opens, assume we want a refresh.
     core:add_listener(
       "TTCMainListeners",
@@ -1499,6 +1621,7 @@ mod.add_listeners = function()
       end,
       true)
 
+    --]]
 
     --when a unit is added to the recruitment queue, add its costs.
     core:add_listener(
@@ -1569,7 +1692,7 @@ mod.add_listeners = function()
         end
         local unit_record = mod.get_unit(context:unit():unit_key(), character_record)
         out("Player disbanded "..unit_record.key)
-        character_record:refund_cost_of_unit(unit_record)
+        --character_record:refund_cost_of_unit(unit_record)
         if not mod.is_recruit_panel_open() and not mod.is_merc_panel_open() then
           cm:callback(function() 
             core:trigger_event("ModScriptEventRefreshUnitCards")
@@ -1602,36 +1725,7 @@ mod.add_listeners = function()
         end
       end,
       true)
-    --refresh the UI after the character changes stance
-    core:add_listener(
-      "TTCMainListeners",
-      "ForceAdoptsStance",
-      function(context)
-        return context:military_force():faction():name() == cm:get_local_faction_name(true)
-      end,
-      function(context)
-        out("Character changed stance, destroying and rebuilding recruitment listeners")
-        mod.remove_recruitment_listeners()
-        if mod.is_recruit_panel_open() then
-          mod.add_lsteners_to_recruitment_panel()
-          mod.refresh_icons_on_army_units_panel()
-        elseif mod.is_merc_panel_open() then
-          mod.add_listeners_to_mercenary_panel()
-          mod.refresh_icons_on_army_units_panel()
-        else
-          out("Neither recruitment panel is open, adding a temp listener")
-          --if the recruitment panel isn't open yet, set up a listener for when it does.
-          mod.panels_open_callback(function(context)
-            if context.string == "units_recruitment" then
-              mod.add_lsteners_to_recruitment_panel()
-            else
-              mod.add_listeners_to_mercenary_panel()
-            end
-            mod.refresh_icons_on_army_units_panel()
-          end, "units_recruitment", "mercenary_recruitment")
-        end
-      end,
-      true);
+    
 
     --refresh the budget after character skills change - these may affect the budget or the special rules available to the character
     core:add_listener(
@@ -1650,26 +1744,7 @@ mod.add_listeners = function()
     );
 
 
-      --when the player clicks an option in the allies dropdown menu, refresh
-    core:add_listener(
-      "TTCMainListeners",
-      "ComponentLClickUp",
-      function(context)
-        return (not not string.find(context.string, "option")) and uicomponent_descended_from(UIComponent(context.component), "allied_factions_dropdown")
-      end,
-      function(context)
-        out("Refreshing allies")
-        mod.remove_recruitment_listeners()
-        cm:callback(function()
-          if mod.is_merc_panel_open() then
-            mod.add_listeners_to_mercenary_panel()
-            mod.refresh_icons_on_army_units_panel()
-          else
-            out("Allied factions dropdown was clicked, but the merc panel wasn't open when we went to replace listeners")
-          end
-        end, 0.1)
-      end,
-      true)
+
     --when a mercenary is added to queue, apply cost.
     core:add_listener(
       "TTCMainListeners",
@@ -1744,40 +1819,6 @@ mod.add_listeners = function()
           core:trigger_event("ModScriptEventRefreshUnitCards")
       end,
       true);
-
-    ---warband handling
-
-
-
-    --update our picture of what is selected when a land unit card is clicked.
-    --if the warbands upgrade panel is open, we should refresh our picture of the queued upgrade.
-    core:add_listener(
-        "TTCMainListeners",
-        "ComponentLClickUp",
-        function(context)
-            return string.find(context.string, "LandUnit")
-        end,
-        function(context)
-            out("Mouseclick triggered on a land unit")
-            mod.update_unit_selection()
-            if mod.is_warband_upgrade_panel_open() then
-              mod.update_warband_upgrade_requirements_and_invocation_button()
-            end
-        end,
-        true)
-    --update our picture of what is selected when an upgrade is clicked in the warband upgrade tree.
-    core:add_listener(
-        "TTCMainListeners",
-        "ComponentLClickUp",
-        function(context)
-            local component = UIComponent(context.component)
-            return uicomponent_descended_from(component, "upgrade_tree") and mod.is_warband_upgrade_panel_open()
-        end,
-        function(context)
-            out("Mouseclick triggered on a warband unit upgrade option!")
-            mod.update_warband_upgrade_requirements_and_invocation_button()
-        end,
-        true)
 
 
 
@@ -2051,9 +2092,7 @@ mod.get_or_create_group_meter = function(group_key)
     out("Creating the meter component "..uic_key.." !")
     local ok, err = pcall(function()
       --create and return the meter element
-      local cargo_icon = find_uicomponent(main_units_panel, "icon_list","cathay_caravan_cargo")
-      new_icon = UIComponent(cargo_icon:CopyComponent(uic_key))
-      intended_parent:Adopt(new_icon:Address(), 0)
+      new_icon = UIComponent(intended_parent:CreateComponent(uic_key, "ui/campaign ui/ttc_meter"))
       local group_image = (mod.ui_settings.groups_to_pips[group_key] or {})[1]
       if group_image then
         new_icon:SetImagePath(group_image, 1)
@@ -2462,13 +2501,19 @@ mod.setup_exchange = function ()
   out("The exchange panel has opened!")
   core:remove_listener("TTCExchangeListeners")
   mod.refresh_icons_on_exchange_bars()
+  out("1")
   core:trigger_event("ModScriptEventRefreshUnitCards")
   local currently_selected_cqi = cm:get_campaign_ui_manager():get_char_selected_cqi()
+  out("2")
   local character_record_1 = mod.characters[currently_selected_cqi]
   local meters_special = mod.add_or_get_exchange_panel_meters("special")
+  out("3")
   local meters_rare = mod.add_or_get_exchange_panel_meters("rare")
+  out("4")
   mod.add_listeners_to_exchange_meter("special", meters_special[1], currently_selected_cqi)
+  out("5")
   mod.add_listeners_to_exchange_meter("rare", meters_rare[1], currently_selected_cqi)
+  out("6")
   local character_record_2 = mod.get_other_character_in_exchange()
   if not character_record_2 then
     out("Failed to get the other character in exchange, exchange setup failed!")
@@ -2815,7 +2860,7 @@ mod.setup.special_rule_lists = {}
 
 mod.setup.post_callbacks = {} ---@type fun()[]
 
-mod.setup.entries = {} ---@type table<string, string|integer[]>
+mod.setup.entries = {} ---@type table<string, string|integer>
 
 ---Used to tell the script when it needs to check bonus values for what units
 
@@ -2916,23 +2961,28 @@ mod.add_replacement_units_for_subculture = function(subculture, unit_list)
   end
 end
 
----@param unit_list string|integer[]
+---@param unit_list (string|integer)[]
 ---@param prioritized boolean|nil
 mod.add_unit_list = function(unit_list, prioritized)
   local calling_file = debug.getinfo(2).source
   out("Adding a unit list from ["..tostring(calling_file).."]!")
   for i = 1, #unit_list do
     local entry = unit_list[i]
-    local unit_key = entry[1]
-    if mod.setup.entries[unit_key] then
-      out("\tUnit Key: ["..unit_key.."] existing entry overwritten by prioritized list.")
-      if prioritized then
-        mod.setup.entries[unit_key] = entry
-      else
-        out("\tUnit Key: ["..unit_key.."] is being skipped because it already has an entry.")
-      end
+    if not entry then
+      out("entry is nil! Something is weird in the calling file")
     else
-      mod.setup.entries[unit_key] = entry
+      local unit_key = entry[1] 
+      ---@cast unit_key string
+      if mod.setup.entries[unit_key] then
+        out("\tUnit Key: ["..unit_key.."] existing entry overwritten by prioritized list.")
+        if prioritized then
+          mod.setup.entries[unit_key] = entry
+        else
+          out("\tUnit Key: ["..unit_key.."] is being skipped because it already has an entry.")
+        end
+      else
+        mod.setup.entries[unit_key] = entry
+      end
     end
   end
 end
