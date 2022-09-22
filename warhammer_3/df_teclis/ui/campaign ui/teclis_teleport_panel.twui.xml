@@ -66,7 +66,6 @@
 			docking="Center"
 			component_anchor_point="0.50,0.50"
 			tooltipslocalised="true"
-			soundcategory="UI_CAM_HUD_Tzeentch_WoM_Manipulation_Browser"
 			uniqueguid="2453F0AA-25A1-7987-37136F1D783984F1"
 			currentstate="1C11B612-E61E-4818-533569AE2FA2FB1C"
 			defaultstate="1C11B612-E61E-4818-533569AE2FA2FB1C">
@@ -145,7 +144,7 @@
 					textvalign="Center"
 					texthalign="Center"
 					font_m_size="12"
-					font_m_colour="#FFF8D7FF"
+					font_m_colour="#000000FF"
 					font_m_leading="1"
 					fontcat_name="fe_default_text"
 					uniqueguid="E168B3C6-A562-5E40-CD7D3D4CDBA2376E"/>

@@ -422,6 +422,25 @@ local function new_game_setup()
         cm:make_region_visible_in_shroud(mod.teclis_faction_key, "wh3_main_combi_region_altdorf")
         cm:make_diplomacy_available(mod.teclis_faction_key, "wh2_main_hef_lothern")
         cm:make_region_visible_in_shroud(mod.teclis_faction_key, "wh3_main_combi_region_lothern")
+
+        --on hard difficulty and above, spawn additional enemies for Teclis.
+        local difficulty_level = cm:get_difficulty() ---@type integer
+        if difficulty_level >= 2 then
+            local skv_faction = "wh3_main_skv_clan_morbidus"
+            local force_key = "wh2_main_skv_inf_plague_monks,wh2_main_skv_inf_clanrats_0,wh2_main_skv_inf_clanrat_spearmen_1,wh2_main_skv_inf_clanrat_spearmen_0"
+            if difficulty_level > 2 then
+                force_key = force_key .. ",wh2_main_skv_inf_plague_monks"
+                if difficulty_level > 3 then
+                    force_key = force_key .. ",wh2_main_skv_art_plagueclaw_catapult"
+                end
+            end
+            cm:create_force(skv_faction, force_key, "wh3_main_combi_region_temple_avenue_of_gold", 703, 147, true, function(cqi)
+                cm:apply_effect_bundle_to_characters_force("wh_main_bundle_military_upkeep_free_force", cqi, 1)
+                cm:force_character_force_into_stance(cm:char_lookup_str(cqi), "MILITARY_FORCE_ACTIVE_STANCE_TYPE_AMBUSH")
+            end)
+            local teclis_cqi = mod.get_teclis_faction():faction_leader():military_force():command_queue_index()
+            cm:apply_effect_bundle_to_force("wh2_dlc14_bundle_scripted_force_ambush", teclis_cqi, 2)
+        end
     end
 end
 
@@ -506,3 +525,10 @@ SettlementList.Filter(
   Teleport Teclis to the player to help them when they play as an Order faction.
 
 --]]
+
+
+local function add_tables(table_to_add, table_to_recieve)
+    for i = 1, #table_to_add do
+        table.insert(table_to_recieve, table_to_add[i])
+    end
+end

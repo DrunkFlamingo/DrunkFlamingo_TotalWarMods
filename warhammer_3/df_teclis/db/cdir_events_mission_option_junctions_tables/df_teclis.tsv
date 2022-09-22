@@ -45,3 +45,10 @@ id	mission_key	option_key	value	target
 416943	df_teclis_reclaim_wh3_main_combi_region_the_star_tower	VAR_CHANCE	100	default
 416944	df_teclis_reclaim_wh3_main_combi_region_arnheim	VAR_CHANCE	100	default
 416945	df_teclis_reclaim_wh3_main_combi_region_gronti_mingol	VAR_CHANCE	100	default
+416946	df_teclis_declare_war	VAR_CHANCE	100	default
+416947	df_teclis_defeat_army	VAR_CHANCE	100	default
+416948	df_teclis_declare_war	VAR_MISSION_LENGTH_INFINITE		default
+416949	df_teclis_defeat_army	VAR_MISSION_LENGTH_INFINITE		default
+416950	df_teclis_declare_war	CND_UNIQUE		default
+416951	df_teclis_defeat_army	CND_UNIQUE		default
+416952	df_teclis_declare_war	VAR_OBJECTIVE_ENEMY_OF_FACTION		default

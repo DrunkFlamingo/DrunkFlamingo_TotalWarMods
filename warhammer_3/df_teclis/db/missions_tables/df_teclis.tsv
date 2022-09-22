@@ -9,3 +9,5 @@ df_teclis_reclaim_wh3_main_combi_region_great_turtle_isle	CAPTURE_REGIONS	wh3_ma
 df_teclis_reclaim_wh3_main_combi_region_the_star_tower	CAPTURE_REGIONS	wh3_main_combi_region_the_star_tower		hef/generic	rom_event_mission.png	false	true	Military		0	0	false	false	0.0	false	true	Success! You have achieved one of your goals.	true
 df_teclis_reclaim_wh3_main_combi_region_arnheim	CAPTURE_REGIONS	wh3_main_combi_region_arnheim		hef/generic	rom_event_mission.png	false	true	Military		0	0	false	false	0.0	false	true	Success! You have achieved one of your goals.	true
 df_teclis_reclaim_wh3_main_combi_region_gronti_mingol	CAPTURE_REGIONS	wh3_main_combi_region_gronti_mingol		hef/generic	rom_event_mission.png	false	true	Military		0	0	false	false	0.0	false	true	Success! You have achieved one of your goals.	true
+df_teclis_defeat_army	ENGAGE_FORCE			hef/generic	rom_event_mission.png	false	true	Military		0	0	false	false	0.0	false	true	Success! You have achieved one of your goals.	true
+df_teclis_declare_war	DECLARE_WAR			hef/generic	rom_event_mission.png	false	true	Military		0	0	false	false	0.0	false	true	Success! You have achieved one of your goals.	true
