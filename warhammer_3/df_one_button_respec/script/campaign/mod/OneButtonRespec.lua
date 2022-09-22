@@ -35,6 +35,7 @@ function table_to_string(t, indent)
     result = result .. "\n"..prefix.."}"
     return result
 end
+--[[
 
 local auto_level_skills = require("obr_data/auto_level_skills") 
 ---skill, rank, level 
@@ -80,7 +81,7 @@ local skills_to_skill_node_sets = nil
 local auto_level_skills = nil
 local skill_node_to_subtypes = nil
 local skill_node_to_skill = nil
-
+--]]
 --out(table_to_string(subtypes_to_auto_skills))
 
 local out = function(t)
@@ -250,6 +251,7 @@ local populate_respec_button = function (respec_button)
 
 end
 
+--[[
 ---@param character CHARACTER_SCRIPT_INTERFACE
 local function reapply_auto_levelled_skills(character)
     cm:disable_event_feed_events(true, "", "wh_event_subcategory_character_ancillaries", "")
@@ -272,6 +274,33 @@ local function reapply_auto_levelled_skills(character)
     cm:callback(function ()
         cm:disable_event_feed_events(false, "", "wh_event_subcategory_character_ancillaries", "")
     end, 1)
+end--]]
+
+local function respec_character(character)
+    local characterContext = cco("CcoCampaignCharacter", character:command_queue_index())
+    if not characterContext then
+        out("Something went wrong, character passed for respec did not return a valid CCO")
+        return
+    end
+    local num_skills = characterContext:Call("SkillList.Size")
+    out("Respecing character: " .. character:command_queue_index() .. " of subtype "..character:character_subtype_key().." who is rank "..character:rank())
+    out("They have "..num_skills.." to potentially remove")
+    for i = 0, num_skills - 1 do
+        local skill_key = characterContext:Call("SkillList.At("..i..").Key")
+        local skill_indent = characterContext:Call("SkillList.At("..i..").Indent")
+        local skill_level = characterContext:Call("SkillList.At("..i..").Level")
+        out("Checking skill: "..skill_key.." with indent "..skill_indent)
+        if skill_indent > 0 and skill_indent < 7 then
+            if skill_level > 0 then    
+                out("Removing skill: "..skill_key)
+                for _ = 1, skill_level do
+                    cm:remove_skill_point(cm:char_lookup_str(character), skill_key)
+                end
+            else
+                out("No points in this skill")
+            end
+        end
+    end
 end
 
 
@@ -321,10 +350,12 @@ local trigger_respec_dilemma = function(faction, character)
         end,
         function (context)
             if context:choice() == 0 then
+                --[[]
                 cm:force_reset_skills(cm:char_lookup_str(character))
                 cm:callback(function ()
                     reapply_auto_levelled_skills(character)
-                end, 0.1)
+                end, 0.1)--]]
+                respec_character(character)
                 cm:set_script_state(character, script_state_string, true)
             end
         end)
