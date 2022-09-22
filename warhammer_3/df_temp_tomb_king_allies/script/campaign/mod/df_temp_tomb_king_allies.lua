@@ -94,3 +94,10 @@ cm:add_first_tick_callback(function()
 
     out("Added TK ally outpost checker")
 end)
+    
+    
+--update 2.1
+    --update 2.1
+    --update 2.1
+    --update 2.1
+--update 2.1
