@@ -347,7 +347,7 @@ local wh2_units = {
     {"wh2_dlc13_emp_cav_reiksguard_imperial_supply", "special", 1},
     {"wh2_dlc13_emp_inf_greatswords_imperial_supply", "special", 1},
     {"wh2_dlc13_emp_inf_huntsmen_0_imperial_supply", "special", 1},
-    {"wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0_mercenary", "special", 2},
+    {"wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0", "special", 2},
     --RARE
     {"wh2_dlc13_emp_art_helblaster_volley_gun_imperial_supply", "rare", 2},
     {"wh2_dlc13_emp_art_helstorm_rocket_battery_imperial_supply","rare", 2},
@@ -405,6 +405,7 @@ local wh2_units = {
     {"wh_dlc06_dwf_art_gob_lobber_0", "special", 1},
     --RARE
     {"wh_dlc06_dwf_inf_norgrimlings_irondrakes_0", "rare", 1},
+    {"wh2_dlc17_lzd_carnosaur", "rare", 2},
     
     
     ---------------------------------------------------------------
@@ -700,6 +701,7 @@ local wh2_units = {
     {"wh_dlc05_wef_inf_deepwood_scouts_1", "special", 1},
     {"wh_dlc05_wef_mon_treekin_0", "special", 2},
     {"wh_dlc05_wef_mon_great_eagle_0", "special", 2},
+    {"wh2_dlc16_wef_mon_gwindalor_summoned", "special", 2},
     {"wh_dlc05_wef_cav_hawk_riders_0", "special", 2},
     {"wh_dlc05_wef_inf_wardancers_0", "special", 1},
     {"wh_dlc05_wef_inf_wardancers_1", "special", 1},
@@ -715,6 +717,7 @@ local wh2_units = {
     {"wh2_dlc16_wef_mon_wolves_0", "special", 1},
     --RARE
     {"wh_dlc05_wef_forest_dragon_0", "rare", 3},
+    {"wh2_dlc16_wef_mon_ceithin_har_summoned", "rare", 3},
     {"wh_dlc05_wef_mon_treeman_0", "rare", 3},
     {"wh_dlc05_wef_inf_waywatchers_0", "rare", 1},
     {"wh_dlc05_wef_cav_sisters_thorn_0", "rare", 1},
@@ -978,6 +981,7 @@ local wh2_units = {
     {"wh2_main_hef_inf_archers_1", "core"},
     {"wh2_main_hef_inf_lothern_sea_guard_0", "core"},
     {"wh2_main_hef_inf_lothern_sea_guard_1", "core"},
+    {"wh2_main_hef_inf_gate_guard", "core"},
     {"wh2_main_hef_cav_ellyrian_reavers_1", "core"},
     {"wh2_main_hef_inf_spearmen_0", "core"},
     {"wh2_main_hef_cav_ellyrian_reavers_0", "core"},
@@ -1186,6 +1190,9 @@ local wh2_units = {
     {"wh2_dlc11_cst_mon_bloated_corpse_0", "core"},
     {"wh2_dlc11_cst_mon_fell_bats", "core"},
     {"wh2_dlc11_cst_mon_scurvy_dogs", "core"},
+    {"wh2_dlc11_cst_cav_knights_errant_0", "core"},
+    {"wh2_dlc11_cst_cav_knights_of_the_realm", "core"},
+
     --SPECIAL
     {"wh2_dlc11_cst_art_carronade", "special", 2},
     {"wh2_dlc11_cst_art_mortar", "special", 2},
@@ -1199,8 +1206,10 @@ local wh2_units = {
     {"wh2_dlc11_cst_mon_animated_hulks_0", "special", 1},
     {"wh2_dlc11_cst_mon_rotting_prometheans_0", "special", 2},
     {"wh2_dlc11_cst_mon_rotting_prometheans_gunnery_mob_0", "special", 2},
+    {"wh2_dlc11_cst_cav_questing_knights_0", "special", 2},
     --RARE
     {"wh2_dlc11_cst_mon_mournguls_0", "rare", 1},
+    {"wh2_dlc11_cst_art_queen_bess", "rare", 2},
     {"wh2_dlc11_cst_mon_necrofex_colossus_0", "rare", 3},
     {"wh2_dlc11_cst_mon_rotting_leviathan_0", "rare", 3},
     {"wh2_dlc11_cst_mon_terrorgheist", "rare", 3},

@@ -73,10 +73,14 @@ mod.ui_settings.path_to_recruitment_sources = {
 mod.ui_settings.path_from_source_to_unit_list = {"unit_list", "listview", "list_clip", "list_box"}
 mod.ui_settings.path_to_mercenary_unit_list = {
   {"units_panel", "main_units_panel", "recruitment_docker", "recruitment_options", "mercenary_display",
-   "listview", "list_clip", "list_box"},
+   "listview", "list_clip", "list_box"}
+}
+mod.ui_settings.path_to_allied_unit_list = {
   {"units_panel", "main_units_panel", "recruitment_docker", "recruitment_options", "allied_recuitment_display", "recruitment_holder", "unit_list", 
   "listview", "list_clip", "allied_unit_list"}
 }
+
+
 mod.ui_settings.path_to_mercenary_cap = {"units_panel", "main_units_panel", "recruitment_docker", "recruitment_options", "mercenary_display","frame", "mercenary_cap_holder", "tx_merc_count"}
 
 mod.ui_settings.groups_to_pips = {
@@ -962,31 +966,39 @@ mod.update_warband_tree = function ()
     for j = 1, slot:ChildCount() - 1 do
       local slotUnitCard = UIComponent(slot:Find(j))
       local mainUnitRecord = slotUnitCard:GetContextObjectId("CcoMainUnitRecord")
-      local unit_record = mod.get_unit(mainUnitRecord, character_record)
-      local cost_tooltip_loc
-
-      if unit_record.group == "core" then
-        local desc_loc_to_fill = common.get_localised_string("ttc_unit_no_cost")
-        local detail_loc_to_fill = common.get_localised_string("ttc_army_unlimited")
-        local group_name = common.get_localised_string("ttc_group_name_core")
-        cost_tooltip_loc = fill_loc(desc_loc_to_fill, group_name) .. "\n\n" .. fill_loc(detail_loc_to_fill, group_name)
+      local existing_element = find_uicomponent(slotUnitCard, "ttc_cost_pip")
+      if existing_element then
+        out("Existing element found for slot "..slot:Id().." "..mainUnitRecord)
       else
-        local desc_loc_to_fill = common.get_localised_string("ttc_unit_cost")
-        local detail_loc_to_fill = common.get_localised_string("ttc_army_limited")
-        local points_name = common.get_localised_string("ttc_measurement_name")
-        local group_name = common.get_localised_string("ttc_group_name_"..unit_record.group)
-        local cost = tostring(unit_record.weight)
-        local capacity = tostring((character_record).budget[unit_record.group] or 0)
-        cost_tooltip_loc = fill_loc(desc_loc_to_fill, group_name, cost, points_name) .. "\n\n" .. fill_loc(detail_loc_to_fill, capacity, points_name, group_name)
+        local unit_record = mod.get_unit(mainUnitRecord, character_record)
+        local cost_tooltip_loc
+
+        if unit_record.group == "core" then
+          local desc_loc_to_fill = common.get_localised_string("ttc_unit_no_cost")
+          local detail_loc_to_fill = common.get_localised_string("ttc_army_unlimited")
+          local group_name = common.get_localised_string("ttc_group_name_core")
+          cost_tooltip_loc = fill_loc(desc_loc_to_fill, group_name) .. "\n\n" .. fill_loc(detail_loc_to_fill, group_name)
+        else
+          local desc_loc_to_fill = common.get_localised_string("ttc_unit_cost")
+          local detail_loc_to_fill = common.get_localised_string("ttc_army_limited")
+          local points_name = common.get_localised_string("ttc_measurement_name")
+          local group_name = common.get_localised_string("ttc_group_name_"..unit_record.group)
+          local cost = tostring(unit_record.weight)
+          local capacity = tostring((character_record).budget[unit_record.group] or 0)
+          cost_tooltip_loc = fill_loc(desc_loc_to_fill, group_name, cost, points_name) .. "\n\n" .. fill_loc(detail_loc_to_fill, capacity, points_name, group_name)
+        end
+        local pip_image = (mod.ui_settings.groups_to_pips[unit_record.group] or {})[unit_record.weight]
+        if not pip_image then
+          out("WARNING: could not find pip image for group "..unit_record.group)
+        end
+        
+        local pip_element = UIComponent(slotUnitCard:CreateComponent("ttc_cost_pip", "ui/campaign ui/ttc_pip"))
+        
+        pip_element:SetImagePath(pip_image, 0)
+        pip_element:SetTooltipText(cost_tooltip_loc, true)
+        pip_element:SetVisible(true)
+        out("Created element for slot "..slot:Id().." "..mainUnitRecord)
       end
-      local pip_image = (mod.ui_settings.groups_to_pips[unit_record.group] or {})[unit_record.weight]
-      if not pip_image then
-        out("WARNING: could not find pip image for group "..unit_record.group)
-      end
-      local pip_element = UIComponent(slotUnitCard:CreateComponent("ttc_cost_pip", "ui/campaign ui/ttc_pip"))
-      pip_element:SetImagePath(pip_image, 0)
-      pip_element:SetTooltipText(cost_tooltip_loc, true)
-      pip_element:SetVisible(true)
     end
   end
 end
@@ -1336,6 +1348,36 @@ mod.add_listeners_to_mercenary_panel = function()
   end
 end
 
+mod.add_listeners_to_allied_recruitment_panel = function()
+  out("Installing listeners on unit cards in the allied panel")
+  local any_new_listeners = false
+  local unitList
+  for i = 1, #mod.ui_settings.path_to_allied_unit_list do
+    unitList = find_uicomponent_from_table(core:get_ui_root(), mod.ui_settings.path_to_allied_unit_list[i])
+    if unitList and unitList:ChildCount() > 0 then
+      out("Found allied unit list "..i)
+      break
+    end
+  end
+  if not unitList then 
+    out("No allied unit lists were found!")
+    out("Either the recruitment panel doesn't exist currently, there are no allied available, or the script is missing a path!")
+  end
+  local count = unitList:ChildCount()
+  out("The allied unit list has: "..tostring(count).." options available")
+  for i = 0, count - 1 do
+    local ok = mod.add_listeners_to_recruitable_unit_card(UIComponent(unitList:Find(i)))
+    if ok then any_new_listeners = true end
+  end
+  
+  if any_new_listeners then
+    out("Listeners installed: triggering card refresh")
+    core:trigger_event("ModScriptEventRefreshUnitCards")
+  else
+    out("No new listeners installed, skipping card refresh")
+  end
+end
+
 ---@return boolean
 mod.add_lsteners_to_recruitment_panel = function()
   out("Installing listeners on unit cards in the standard recruitment panel")
@@ -1452,7 +1494,7 @@ mod.add_listeners = function()
         mod.add_lsteners_to_recruitment_panel()
       end,
       ["allied_recruitment"] = function ()
-        mod.add_lsteners_to_recruitment_panel()
+        mod.add_listeners_to_allied_recruitment_panel()
       end,
       ["mercenary_recruitment"] = function ()
         mod.add_listeners_to_mercenary_panel()
@@ -1580,8 +1622,17 @@ mod.add_listeners = function()
         end, 
         true)
 
+       --[[
+        --TODO this shit to fix autoresolve
+      core:add_listener(
+        "TTCMainListeners",
+        "CharacterCompletedBattle",
+        function ()
+          
+        end
+      )]]
 
-    --[[
+    
     --whenever one of these panels opens, assume we want a refresh.
     core:add_listener(
       "TTCMainListeners",
@@ -1590,7 +1641,6 @@ mod.add_listeners = function()
         return context.string == "units_recruitment"
       end,
       function(context)
-        mod.refresh_icons_on_army_units_panel()
         core:trigger_event("ModScriptEventRefreshUnitCards")
       end,
       true)
@@ -1601,10 +1651,10 @@ mod.add_listeners = function()
         return context.string == "mercenary_recruitment"
       end,
       function(context)
-        mod.refresh_icons_on_army_units_panel()
         core:trigger_event("ModScriptEventRefreshUnitCards")
       end,
       true)
+      
     core:add_listener(
       "TTCMainListeners",
       "ComponentLClickUp",
@@ -1613,15 +1663,11 @@ mod.add_listeners = function()
           and mod.is_warband_upgrade_panel_open()
       end,
       function(context)
-          out("The Warband Panel was opened")
-          mod.refresh_icons_on_army_units_panel()
-          cm:callback(function()
-            mod.refresh_icons_on_army_units_panel()
-          end, 0.1)
+          mod.update_warband_tree()
       end,
       true)
 
-    --]]
+    
 
     --when a unit is added to the recruitment queue, add its costs.
     core:add_listener(
@@ -1642,6 +1688,7 @@ mod.add_listeners = function()
         out("Player started recruitment of "..unit_record.key)
         character_record:apply_cost_of_unit(unit_record)
         mod.refresh_icons_on_army_units_panel()
+        core:trigger_event("ModScriptEventRefreshUnitCards")
         cm:callback(function()
           mod.refresh_icons_on_army_units_panel()
         end, 0.1)
@@ -1669,6 +1716,7 @@ mod.add_listeners = function()
         character_record:refund_cost_of_unit(unit_record)
         if mod.is_recruit_panel_open() or mod.is_merc_panel_open() then
           mod.refresh_icons_on_army_units_panel()
+          core:trigger_event("ModScriptEventRefreshUnitCards")
           cm:callback(function()
             mod.refresh_icons_on_army_units_panel()
           end, 0.1)
@@ -1692,7 +1740,7 @@ mod.add_listeners = function()
         end
         local unit_record = mod.get_unit(context:unit():unit_key(), character_record)
         out("Player disbanded "..unit_record.key)
-        --character_record:refund_cost_of_unit(unit_record)
+        character_record:refund_cost_of_unit(unit_record)
         if not mod.is_recruit_panel_open() and not mod.is_merc_panel_open() then
           cm:callback(function() 
             core:trigger_event("ModScriptEventRefreshUnitCards")
@@ -2121,6 +2169,7 @@ mod.populate_group_meter_text = function(group_key, group_meter, character_recor
   end
   if not character_record then
     out("No character record provided - cannot populate group meter.")
+    group_meter:SetVisible(false)
     return
   end
   --local character_record = mod.get_selected_character_record()
