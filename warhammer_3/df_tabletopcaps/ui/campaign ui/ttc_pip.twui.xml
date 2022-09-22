@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<layout
+	version="138"
+	comment=""
+	precache_condition="">
+	<hierarchy>
+		<root this="4F61C336-8F8C-5B23-A003A1E5079BAC0F">
+			
+            <ttc_cost_pip this="61CCE62D-7660-57B4-39879FE9C865DE99"/>
+					
+		</root>
+	</hierarchy>
+	<components>
+		<root
+			this="4F61C336-8F8C-5B23-A003A1E5079BAC0F"
+			id="root"
+			tooltipslocalised="true"
+			uniqueguid="4F61C336-8F8C-5B23-A003A1E5079BAC0F"
+			currentstate="E775BE0E-6A5A-8E41-8E5BB35475473502"
+			defaultstate="E775BE0E-6A5A-8E41-8E5BB35475473502">
+			<componentimages>
+				<component_image
+					this="A9AD9AE5-4C59-6136-057A87FEB2499D64"
+					uniqueguid="A9AD9AE5-4C59-6136-057A87FEB2499D64"/>
+			</componentimages>
+			<states>
+				<newstate
+					this="E775BE0E-6A5A-8E41-8E5BB35475473502"
+					name="NewState"
+					width="1600"
+					height="900"
+					interactive="true"
+					uniqueguid="E775BE0E-6A5A-8E41-8E5BB35475473502">
+					<imagemetrics>
+						<image
+							this="7C334CC1-9FAD-66E7-D92B62ED6E487EB6"
+							uniqueguid="7C334CC1-9FAD-66E7-D92B62ED6E487EB6"
+							componentimage="A9AD9AE5-4C59-6136-057A87FEB2499D64"
+							width="1280"
+							height="960"
+							colour="#7F7F7FFF"/>
+					</imagemetrics>
+				</newstate>
+			</states>
+		</root>
+		<ttc_cost_pip
+			this="61CCE62D-7660-57B4-39879FE9C865DE99"
+			id="ttc_cost_pip"
+			offset="51.00,13.00"
+			allowhorizontalresize="false"
+			allowverticalresize="false"
+			visible="false"
+			docking="Top Right"
+			dock_offset="9.00,13.00"
+			component_anchor_point="1.00,0.00"
+			tooltipslocalised="true"
+			uniqueguid="61CCE62D-7660-57B4-39879FE9C865DE99"
+			currentstate="B418AB31-2305-97CA-2D4D705D4CC18B24"
+			defaultstate="B418AB31-2305-97CA-2D4D705D4CC18B24">
+			<componentimages>
+				<component_image
+					this="01178C88-5A54-2B1F-F34B7D62366E321B"
+					uniqueguid="01178C88-5A54-2B1F-F34B7D62366E321B"
+					imagepath="ui/skins/default/icon_requirements_not_met.png"/>
+			</componentimages>
+			<states>
+				<res_rom_grain
+					this="B418AB31-2305-97CA-2D4D705D4CC18B24"
+					name="res_rom_grain"
+					width="24"
+					height="24"
+					interactive="true"
+					disabled="true"
+					uniqueguid="B418AB31-2305-97CA-2D4D705D4CC18B24">
+					<imagemetrics>
+						<image
+							this="565B1DE7-A27A-D0D2-1E508C52D46C3C5E"
+							uniqueguid="565B1DE7-A27A-D0D2-1E508C52D46C3C5E"
+							componentimage="01178C88-5A54-2B1F-F34B7D62366E321B"
+							width="24"
+							height="24"/>
+					</imagemetrics>
+				</res_rom_grain>
+			</states>
+		</ttc_cost_pip>
+	</components>
+</layout>

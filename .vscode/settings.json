@@ -25,12 +25,19 @@
         // temporary, hopefully
     "Lua.completion.autoRequire": false,
     "Lua.diagnostics.workspaceDelay": 500,
-    "Lua.diagnostics.workspaceRate": 10,
+    "Lua.diagnostics.workspaceRate": 50,
     "Lua.IntelliSense.traceBeSetted": true,
     "Lua.IntelliSense.traceFieldInject": true,
     "Lua.IntelliSense.traceLocalSet": true,
     "Lua.IntelliSense.traceReturn": true,
     "Lua.workspace.ignoreSubmodules": false,
-    "Lua.workspace.preloadFileSize": 2500
+    "Lua.workspace.preloadFileSize": 2500,
+    "Lua.workspace.maxPreload": 5000,
+    "Lua.diagnostics.libraryFiles": "Opened",
+    "Lua.runtime.path": [
+        "?.lua",
+        "?/init.lua",
+        "script/campaign/?.lua"
+    ]
 }
 

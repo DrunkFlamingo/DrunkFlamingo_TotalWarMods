@@ -1,0 +1,5 @@
+building	culture	subculture	faction	description	icon	disables	short_description	display_tooltip
+#building_culture_variants_tables;4;db/building_culture_variants_tables/!!!bret_boned								
+wh_main_brt_stables_3	wh_main_brt_bretonnia	wh_main_sc_brt_bretonnia		wh_main_PLACEHOLDER	bretonnia_stables	true	wh_main_brt_stables_3	true
+wh_main_brt_stables_4	wh_main_brt_bretonnia	wh_main_sc_brt_bretonnia		wh_main_PLACEHOLDER	bretonnia_stables	true	wh_main_brt_stables_4	true
+wh_main_brt_stables_5	wh_main_brt_bretonnia	wh_main_sc_brt_bretonnia		wh_main_PLACEHOLDER	bretonnia_stables	true	wh_main_brt_stables_5	true

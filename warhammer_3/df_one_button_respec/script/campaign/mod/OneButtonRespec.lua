@@ -1,5 +1,88 @@
---no changes necessary for update 1.2
+---take a lua table and return a string which can be loadstringed to recreate the table.
+---@param t table
+---@return string
+function table_to_string(t, indent)
+    if not indent then
+        indent = 0
+    end
+    local prefix = ""
+    for i = 1, indent do
+        prefix = prefix .. "\t"
+    end
+    local result = "{" .. "".."\n"
+    local first_result = false 
+    for k, v in pairs(t) do
+        if not first_result then
+            first_result = true
+        else
+            result = result .. ",\n" 
+        end
+        local layer_indent = "\t"
+        if type(k) == "string" then
+            k = string.format("%q", k)
+        end
+        if v == "" then
+            v = "\"\"" --empty string
+        elseif type(v) == "boolean" or type(v) == "number" then
+            v = tostring(v)
+        elseif type(v) == "string" then
+            v = string.format("%q", v) 
+        elseif type(v) == "table" then
+            v = table_to_string(v, indent + 1)
+        end
+        result = result ..layer_indent..prefix.."[" .. k .. "] = " .. v
+    end
+    result = result .. "\n"..prefix.."}"
+    return result
+end
+--[[
 
+local auto_level_skills = require("obr_data/auto_level_skills") 
+---skill, rank, level 
+
+local skill_node_to_subtypes = require("obr_data/skill_node_to_subtypes")
+---skill node set, subtype
+
+local skill_node_to_skill = require("obr_data/skill_to_skill_node") 
+---skill, skill node set
+
+local subtypes_to_auto_skills = {} ---@type table<string, table<integer, string[]>>
+local skills_to_skill_node_sets = {} ---@type table<string, string[]>
+--build data tables then clear above from memory
+for i = 1, #skill_node_to_skill do
+    local skill_key = skill_node_to_skill[i][1]
+    local skill_node_set = skill_node_to_skill[i][2]
+    if not skills_to_skill_node_sets[skill_key] then
+        skills_to_skill_node_sets[skill_key] = {skill_node_set}
+    else
+        table.insert(skills_to_skill_node_sets[skill_key], skill_node_set)
+    end
+end
+
+for i = 1, #auto_level_skills do
+    local skill_key = auto_level_skills[i][1]
+    local rank = auto_level_skills[i][2]
+    local level = auto_level_skills[i][3]
+    local skill_nodes_containing_skill = skills_to_skill_node_sets[skill_key]
+    if not skill_nodes_containing_skill then
+        out("No skill nodes found for skill " .. skill_key)
+    else
+        for j = 1, #skill_nodes_containing_skill do
+            local skill_node_set = skill_nodes_containing_skill[j]
+            local subtype = skill_node_to_subtypes[skill_node_set]
+            subtypes_to_auto_skills[subtype] = subtypes_to_auto_skills[subtype] or {}
+            subtypes_to_auto_skills[subtype][rank] = subtypes_to_auto_skills[subtype][rank] or {}
+            table.insert(subtypes_to_auto_skills[subtype][rank], skill_key)
+        end
+    end
+end
+
+local skills_to_skill_node_sets = nil
+local auto_level_skills = nil
+local skill_node_to_subtypes = nil
+local skill_node_to_skill = nil
+--]]
+--out(table_to_string(subtypes_to_auto_skills))
 
 local out = function(t)
     ModLog("DRUNKFLAMINGO: "..tostring(t).." (One Button Respec)")
@@ -48,13 +131,18 @@ local panels_open_callback = function(callback, ...)
 end
 
 ---Gets the character off the UI panel rather than using the current selected character, so that this works with Heroes.
----@return CHARACTER_SCRIPT_INTERFACE
+---@return CHARACTER_SCRIPT_INTERFACE|nil
 local get_selected_character = function()
     local character
     -- :root:character_details_panel:character_context_parent
     local context_parent = find_uicomponent(core:get_ui_root(), "character_details_panel", "character_context_parent")
     if context_parent then
-        local character_cqi = context_parent:GetContextObjectId("CcoCampaignCharacter")
+        local char_context_id = context_parent:GetContextObjectId("CcoCampaignCharacter")
+        if not char_context_id then
+            return nil
+        end
+        local character_cqi = tonumber(context_parent:GetContextObjectId("CcoCampaignCharacter"))
+        ---@cast character_cqi number
         character = cm:get_character_by_cqi(character_cqi)
         out("Got character from context parent")
     else
@@ -82,16 +170,16 @@ end
 
 ---Gets the respec cost of the character, factoring the bonus value for submods
 ---@param character CHARACTER_SCRIPT_INTERFACE
----@return number
+---@return integer
 local function get_respec_cost(character)
     local cost = respec_cost
-    local cost_mod = get_characters_bonus_value(character, "obr_respec_cost_mod")
+    local cost_mod = cm:get_characters_bonus_value(character, "obr_respec_cost_mod")
     local real_cost = cost + ((cost/100)*cost_mod)
     if real_cost > 0 then
         --respecing can't give you money
         real_cost = 0
     end
-    return real_cost
+    return math.floor(real_cost)
 end
 
 
@@ -113,10 +201,13 @@ local function get_respec_state_and_tooltip(character)
         return "inactive", "[[col:red]]Something went wrong generating the character context object for this button, please close and reopen the panel[[/col]]"
     end
     local tt = common.get_localised_string("mod_respec_button_tt_title")
+    if character:rank() == 1 then
+        return "inactive", tt
+    end
     local state = "active"
     local cost = get_respec_cost(character)
     local ssm = cm:model():shared_states_manager()
-    local is_unlimited = get_characters_bonus_value(character, "obr_unlimited_respec") > 0
+    local is_unlimited = cm:get_characters_bonus_value(character, "obr_unlimited_respec") > 0
     local was_used = ssm:get_state_as_bool_value(character, script_state_string)
     if cost ~= 0 then
         local cost_tt = string.gsub(common.get_localised_string("mod_respec_button_tt_cost"), "9999", tostring((-1*cost)))
@@ -143,24 +234,84 @@ local function get_respec_state_and_tooltip(character)
 end
 
 
----@param respec_button UIC
+---@param respec_button UIC|nil
 local populate_respec_button = function (respec_button)
-    if not is_uicomponent(respec_button) then
+    if not respec_button or  not is_uicomponent(respec_button) then
         out("The respec button passed to the populate function is not a valid UIComponent.")
     end
+    ---@cast respec_button UIC
 
     local character = get_selected_character()
+    if not character or character:is_null_interface() then
+        return
+    end
     local state, tooltip = get_respec_state_and_tooltip(character)
     respec_button:SetState(state)
     respec_button:SetTooltipText(tooltip, true)
 
 end
 
+--[[
+---@param character CHARACTER_SCRIPT_INTERFACE
+local function reapply_auto_levelled_skills(character)
+    cm:disable_event_feed_events(true, "", "wh_event_subcategory_character_ancillaries", "")
+    local skills = subtypes_to_auto_skills[character:character_subtype_key()]
+    if not skills then
+        out("Character " .. character:command_queue_index() .. " of subtype "..character:character_subtype_key().." has no auto-levelled skills")
+        return
+    end
+    out("Checking auto level skills for " .. character:command_queue_index().." of subtype "..character:character_subtype_key().." who is rank "..character:rank())
+    for i = 1,character:rank() -1  do
+        if not skills[i] then
+            out("Character " .. character:command_queue_index() .. " has no auto-levelled skills for rank "..i+1)
+        else
+            for _,skill in ipairs(skills[i]) do
+                out("Applying auto-levelled skill " .. skill .. " to " .. character:command_queue_index().." for rank "..i+1)
+                cm:force_add_skill(cm:char_lookup_str(character), skill)
+            end
+        end
+    end
+    cm:callback(function ()
+        cm:disable_event_feed_events(false, "", "wh_event_subcategory_character_ancillaries", "")
+    end, 1)
+end--]]
+
+local function respec_character(character)
+    local characterContext = cco("CcoCampaignCharacter", character:command_queue_index())
+    if not characterContext then
+        out("Something went wrong, character passed for respec did not return a valid CCO")
+        return
+    end
+    local num_skills = characterContext:Call("SkillList.Size")
+    out("Respecing character: " .. character:command_queue_index() .. " of subtype "..character:character_subtype_key().." who is rank "..character:rank())
+    out("They have "..num_skills.." to potentially remove")
+    for i = 0, num_skills - 1 do
+        local skill_key = characterContext:Call("SkillList.At("..i..").Key")
+        local skill_indent = characterContext:Call("SkillList.At("..i..").Indent")
+        local skill_level = characterContext:Call("SkillList.At("..i..").Level")
+        out("Checking skill: "..skill_key.." with indent "..skill_indent)
+        if skill_indent > 0 and skill_indent < 7 then
+            if skill_level > 0 then    
+                out("Removing skill: "..skill_key)
+                for _ = 1, skill_level do
+                    cm:remove_skill_point(cm:char_lookup_str(character), skill_key)
+                end
+            else
+                out("No points in this skill")
+            end
+        end
+    end
+end
+
 
 
 local mp_safe_trigger = function()
     local character = get_selected_character()
-    CampaignUI.TriggerCampaignScriptEvent(character:faction():command_queue_index(), ui_trigger_string..tostring(character:command_queue_index()))
+    if character then
+        CampaignUI.TriggerCampaignScriptEvent(character:faction():command_queue_index(), ui_trigger_string..tostring(character:command_queue_index()))
+    else
+        script_error("MP Safe trigger was not able to get the character context from the character context parent")
+    end
 end
 
 ---comment
@@ -189,7 +340,7 @@ local trigger_respec_dilemma = function(faction, character)
     payload_builder_2:text_display("dummy_do_nothing")
     dilemma_builder:add_choice_payload("SECOND", payload_builder_2)
 
-    dilemma_builder:add_target(character)
+    dilemma_builder:add_target("default", character:family_member())
 
     core:add_listener(
         "OneButtonRespecDilemmaTrigger",
@@ -199,7 +350,12 @@ local trigger_respec_dilemma = function(faction, character)
         end,
         function (context)
             if context:choice() == 0 then
+                --[[]
                 cm:force_reset_skills(cm:char_lookup_str(character))
+                cm:callback(function ()
+                    reapply_auto_levelled_skills(character)
+                end, 0.1)--]]
+                respec_character(character)
                 cm:set_script_state(character, script_state_string, true)
             end
         end)
@@ -264,6 +420,7 @@ onebuttonrespec = function()
             out("OBR UI trigger recieved: "..this_trigger_str)
             local faction = cm:model():faction_for_command_queue_index(context:faction_cqi());
             local cqi_as_str = string.gsub(this_trigger_str, ui_trigger_string, "")
+            ---@diagnostic disable-next-line
             local character = cm:get_character_by_cqi(tonumber(cqi_as_str))
             trigger_respec_dilemma(faction, character)
         end,

@@ -1,0 +1,6 @@
+unit	military_group
+#units_to_groupings_military_permissions_tables;0;db/units_to_groupings_military_permissions_tables/!!!bret_boned	
+k_vow_e_errants	wh_main_group_bretonnia
+k_vow_e_realm	wh_main_group_bretonnia
+K_vow_e_questing	wh_main_group_bretonnia
+k_vow_e_grail	wh_main_group_bretonnia

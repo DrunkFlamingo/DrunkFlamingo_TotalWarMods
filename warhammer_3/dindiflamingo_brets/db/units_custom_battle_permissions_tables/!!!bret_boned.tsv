@@ -1,0 +1,6 @@
+faction	general_unit	unit	siege_unit_attacker	siege_unit_defender	general_portrait	general_uniform	set_piece_character	campaign_exclusive	armory_item_set
+#units_custom_battle_permissions_tables;10;db/units_custom_battle_permissions_tables/!!!bret_boned									
+wh_main_brt_bretonnia	false	k_vow_e_errants	true	true				false	
+wh_main_brt_bretonnia	false	k_vow_e_realm	true	true				false	
+wh_main_brt_bretonnia	false	K_vow_e_questing	true	true				false	
+wh_main_brt_bretonnia	false	k_vow_e_grail	true	true				false	

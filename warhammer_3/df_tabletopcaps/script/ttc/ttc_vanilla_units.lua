@@ -170,30 +170,91 @@ local wh3_ror = {
 	---- CATHAY ----
 	----------------
     {"wh3_twa06_cth_inf_dragon_guard_ror_0", "rare", 1},
+    {"wh3_twa07_cth_cav_jade_longma_riders_ror_0", "rare", 2},
 	----------------
 	---- KHORNE ----
 	----------------
     {"wh3_twa06_kho_inf_bloodletters_ror_0", "special", 2},
+    {"wh3_twa07_kho_cav_bloodcrushers_ror_0", "special", 2},
 	----------------
 	---- KISLEV ----
 	----------------
     {"wh3_twa06_ksl_inf_tzar_guard_ror_0", "special", 2},
+    {"wh3_twa07_ksl_cav_war_bear_riders_ror_0", "special", 3},
 	----------------
 	---- NURGLE ----
 	----------------
     {"wh3_twa06_nur_inf_plaguebearers_ror_0", "special", 2},
+    {"wh3_twa07_nur_cav_pox_riders_of_nurgle_ror_0", "special", 2},
 	-----------------------
 	---- OGRE KINGDOMS ----
 	-----------------------
     {"wh3_twa06_ogr_inf_maneaters_ror_0", "special", 2},
+    {"wh3_twa07_ogr_cav_crushers_ror_0", "rare", 2},
 	------------------
 	---- SLAANESH ----
 	------------------
     {"wh3_twa06_sla_inf_daemonette_ror_0", "special", 2},
+    {"wh3_twa07_sla_cav_heartseekers_of_slaanesh_ror_0", "rare", 2},
 	------------------
 	---- TZEENTCH ----
 	------------------
-    {"wh3_twa06_tze_inf_pink_horrors_ror_0", "special", 2}
+    {"wh3_twa06_tze_inf_pink_horrors_ror_0", "special", 2},
+    {"wh3_twa07_tze_cav_doom_knights_ror_0", "rare", 2}
+}
+
+local dlc20_units = {
+    {"wh3_dlc20_chs_cav_chaos_chariot_mkho", "core", 1},
+    {"wh3_dlc20_chs_cav_chaos_chariot_mnur", "core", 1},
+    {"wh3_dlc20_chs_cav_chaos_chariot_msla", "core", 1},
+    {"wh3_dlc20_chs_cav_chaos_chariot_msla_ror", "core", 1},
+    {"wh3_dlc20_chs_cav_chaos_chariot_mtze", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_marauders_mkho", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_marauders_mkho_dualweapons", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_marauders_mnur", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_marauders_mnur_greatweapons", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_marauders_msla", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_marauders_msla_hellscourges", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_marauders_mtze", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_marauders_mtze_spears", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_warriors_mnur", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_warriors_mnur_greatweapons", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_warriors_msla", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_warriors_msla_hellscourges", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_warriors_mtze", "core", 1},
+    {"wh3_dlc20_chs_inf_chaos_warriors_mtze_halberds", "core", 1},
+    {"wh3_dlc20_chs_cav_marauder_horsemen_mkho_throwing_axes", "core", 1},
+    {"wh3_dlc20_chs_cav_marauder_horsemen_mnur_throwing_axes", "core", 1},
+    {"wh3_dlc20_chs_cav_marauder_horsemen_msla_javelins", "core", 1},
+    {"wh3_dlc20_chs_cav_marauder_horsemen_mtze_javelins", "core", 1},
+    {"wh3_dlc20_chs_inf_forsaken_mkho", "core", 1},
+    {"wh3_dlc20_chs_inf_forsaken_msla", "core", 1},
+    ---special
+    {"wh3_dlc20_chs_inf_aspiring_champions_mtze_ror", "special", 1},
+    {"wh3_dlc20_chs_cav_chaos_knights_mkho", "special", 2},
+    {"wh3_dlc20_chs_cav_chaos_knights_mkho_lances", "special", 2},
+    {"wh3_dlc20_chs_cav_chaos_knights_mnur", "special", 2},
+    {"wh3_dlc20_chs_cav_chaos_knights_mnur_lances", "special", 2},
+    {"wh3_dlc20_chs_cav_chaos_knights_msla", "special", 2},
+    {"wh3_dlc20_chs_cav_chaos_knights_msla_lances", "special", 2},
+    {"wh3_dlc20_chs_cav_chaos_knights_mtze_lances", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_mkho", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_mkho_dualweapons", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_mnur", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_mnur_greatweapons", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_msla", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_msla_hellscourges", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_mtze", "special", 2},
+    {"wh3_dlc20_chs_inf_chosen_mtze_halberds", "special", 2},
+    {"wh3_dlc20_chs_mon_warshrine", "special", 2},
+    {"wh3_dlc20_chs_mon_warshrine_mkho", "special", 2},
+    {"wh3_dlc20_chs_mon_warshrine_mnur", "special", 2},
+    {"wh3_dlc20_chs_mon_warshrine_msla", "special", 2},
+    {"wh3_dlc20_chs_mon_warshrine_mtze", "special", 2},
+    ---rare
+    {"wh3_dlc20_chs_mon_giant_mnur_ror", "rare", 2},
+    {"wh3_dlc20_kho_cav_skullcrushers_mkho_ror", "rare", 2},
+    {"wh3_main_nur_mon_spawn_of_nurgle_0_warriors", "rare", 1}
 }
 
 
@@ -286,7 +347,7 @@ local wh2_units = {
     {"wh2_dlc13_emp_cav_reiksguard_imperial_supply", "special", 1},
     {"wh2_dlc13_emp_inf_greatswords_imperial_supply", "special", 1},
     {"wh2_dlc13_emp_inf_huntsmen_0_imperial_supply", "special", 1},
-    {"wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0_mercenary", "special", 2},
+    {"wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0", "special", 2},
     --RARE
     {"wh2_dlc13_emp_art_helblaster_volley_gun_imperial_supply", "rare", 2},
     {"wh2_dlc13_emp_art_helstorm_rocket_battery_imperial_supply","rare", 2},
@@ -344,6 +405,7 @@ local wh2_units = {
     {"wh_dlc06_dwf_art_gob_lobber_0", "special", 1},
     --RARE
     {"wh_dlc06_dwf_inf_norgrimlings_irondrakes_0", "rare", 1},
+    {"wh2_dlc17_lzd_carnosaur", "rare", 2},
     
     
     ---------------------------------------------------------------
@@ -639,6 +701,7 @@ local wh2_units = {
     {"wh_dlc05_wef_inf_deepwood_scouts_1", "special", 1},
     {"wh_dlc05_wef_mon_treekin_0", "special", 2},
     {"wh_dlc05_wef_mon_great_eagle_0", "special", 2},
+    {"wh2_dlc16_wef_mon_gwindalor_summoned", "special", 2},
     {"wh_dlc05_wef_cav_hawk_riders_0", "special", 2},
     {"wh_dlc05_wef_inf_wardancers_0", "special", 1},
     {"wh_dlc05_wef_inf_wardancers_1", "special", 1},
@@ -654,6 +717,7 @@ local wh2_units = {
     {"wh2_dlc16_wef_mon_wolves_0", "special", 1},
     --RARE
     {"wh_dlc05_wef_forest_dragon_0", "rare", 3},
+    {"wh2_dlc16_wef_mon_ceithin_har_summoned", "rare", 3},
     {"wh_dlc05_wef_mon_treeman_0", "rare", 3},
     {"wh_dlc05_wef_inf_waywatchers_0", "rare", 1},
     {"wh_dlc05_wef_cav_sisters_thorn_0", "rare", 1},
@@ -917,6 +981,7 @@ local wh2_units = {
     {"wh2_main_hef_inf_archers_1", "core"},
     {"wh2_main_hef_inf_lothern_sea_guard_0", "core"},
     {"wh2_main_hef_inf_lothern_sea_guard_1", "core"},
+    {"wh2_main_hef_inf_gate_guard", "core"},
     {"wh2_main_hef_cav_ellyrian_reavers_1", "core"},
     {"wh2_main_hef_inf_spearmen_0", "core"},
     {"wh2_main_hef_cav_ellyrian_reavers_0", "core"},
@@ -997,7 +1062,7 @@ local wh2_units = {
     {"wh2_main_def_inf_witch_elves_0", "core"},
     {"wh2_main_def_cav_dark_riders_0", "core"},
     {"wh2_main_def_cav_dark_riders_1", "core"},
-    {"wh_twa03_def_inf_squig_explosive_0", "core"}, --RAKARTH UNIQUE
+    
     --SPECIAL
     {"wh2_main_def_inf_harpies", "special", 1},
     {"wh2_dlc10_def_mon_feral_manticore_0", "special", 2},
@@ -1011,7 +1076,7 @@ local wh2_units = {
     {"wh2_main_def_cav_cold_one_chariot", "special", 2},
     {"wh2_dlc10_def_cav_doomfire_warlocks_0", "special", 2},
     {"wh2_dlc14_def_cav_scourgerunner_chariot_0", "special", 2},
-    {"wh2_twa03_def_mon_wolves_0", "special", 1}, --RAKARTH UNIQUE
+    
     --RARE
     {"wh2_main_def_art_reaper_bolt_thrower", "rare", 1},
     {"wh2_main_def_mon_black_dragon", "rare", 3},
@@ -1019,7 +1084,14 @@ local wh2_units = {
     {"wh2_dlc10_def_mon_kharibdyss_0", "rare", 2},
     {"wh2_dlc14_def_mon_bloodwrack_medusa_0", "rare", 1},
     {"wh2_dlc14_def_veh_bloodwrack_shrine_0", "rare", 2},
-    {"wh2_twa03_def_mon_war_mammoth_0", "rare", 2}, --RAKARTH UNIQUE
+    
+    --RAKARTH UNIQUE
+    {"wh_twa03_def_inf_squig_explosive_0", "core"}, 
+    {"wh2_twa03_def_mon_wolves_0", "special", 1}, 
+    {"wh2_twa03_def_mon_war_mammoth_0", "rare", 2}, 
+    {"wh2_twa03_grn_mon_wyvern_0", "rare", 1},
+    {"wh3_main_monster_feral_bears", "special", 2},
+    {"wh3_main_monster_feral_ice_bears", "rare", 1},
     
     -------ROR-------
     --CORE
@@ -1118,6 +1190,9 @@ local wh2_units = {
     {"wh2_dlc11_cst_mon_bloated_corpse_0", "core"},
     {"wh2_dlc11_cst_mon_fell_bats", "core"},
     {"wh2_dlc11_cst_mon_scurvy_dogs", "core"},
+    {"wh2_dlc11_cst_cav_knights_errant_0", "core"},
+    {"wh2_dlc11_cst_cav_knights_of_the_realm", "core"},
+
     --SPECIAL
     {"wh2_dlc11_cst_art_carronade", "special", 2},
     {"wh2_dlc11_cst_art_mortar", "special", 2},
@@ -1131,8 +1206,10 @@ local wh2_units = {
     {"wh2_dlc11_cst_mon_animated_hulks_0", "special", 1},
     {"wh2_dlc11_cst_mon_rotting_prometheans_0", "special", 2},
     {"wh2_dlc11_cst_mon_rotting_prometheans_gunnery_mob_0", "special", 2},
+    {"wh2_dlc11_cst_cav_questing_knights_0", "special", 2},
     --RARE
     {"wh2_dlc11_cst_mon_mournguls_0", "rare", 1},
+    {"wh2_dlc11_cst_art_queen_bess", "rare", 2},
     {"wh2_dlc11_cst_mon_necrofex_colossus_0", "rare", 3},
     {"wh2_dlc11_cst_mon_rotting_leviathan_0", "rare", 3},
     {"wh2_dlc11_cst_mon_terrorgheist", "rare", 3},
@@ -1187,7 +1264,7 @@ local subculture_defaults = {
 ---multiple flags are OR, not AND. For example: {subculture = wh3_main_sc_ksl_kislev, subtype = wh3_main_ksl_katarin} would apply to anyone who is from the kislev subculture because it means "Is from kislev OR is katarin"
 ---Special rules *do* affect the AI.
 local units_with_special_rules = {
-    {"wh3_main_ksl_mon_snow_leopard_0", {subtype = "wh3_main_ksl_katarin"}}
+    {"wh2_main_skv_inf_plague_monks", {subtype = "wh2_main_skv_lord_skrolk"}}
 }
 
 
@@ -1198,6 +1275,7 @@ ttc.add_setup_callback(function()
    ttc.add_unit_list(wh3_units, true)
    ttc.add_unit_list(wh3_ror, true)
    ttc.add_unit_list(wh2_units, true)
+   ttc.add_unit_list(dlc20_units, true)
    for subculture_key, unit_list in pairs(subculture_defaults) do
     ttc.add_replacement_units_for_subculture(subculture_key, unit_list)
    end

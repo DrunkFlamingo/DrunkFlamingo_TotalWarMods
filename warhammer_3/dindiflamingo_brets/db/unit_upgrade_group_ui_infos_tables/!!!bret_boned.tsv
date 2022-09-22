@@ -1,0 +1,11 @@
+unit_upgrade_group	x	y	category
+#unit_upgrade_group_ui_infos_tables;1;db/unit_upgrade_group_ui_infos_tables/!!!bret_boned			
+k_errant_upgrade	85	315	UNDIVIDED
+k_realm_upgrade	85	210	UNDIVIDED
+k_questing_upgrade	85	105	UNDIVIDED
+k_grail_upgrade	62	0	UNDIVIDED
+k_pegasus_upgrade	173	210	UNDIVIDED
+k_roypegasus_upgrade	173	105	UNDIVIDED
+k_royhippo_upgrade	173	0	UNDIVIDED
+k_relic_upgrade	0	0	UNDIVIDED
+k_vow_e_errants_upgrade	173	210	SLAANESH

@@ -1,3 +1,4 @@
+
 require("common")
 
 local tag_match_string = "<[%w_]+"
@@ -13,17 +14,14 @@ tag_level_of_last_tag = 0
 
 local loop_limit = 5000
 
-local function escape_string(str)
-    return str:gsub("([%(%)%.%%%+%-%*%?%[%^%$%]])", "%%%1")
-end
-
+local escape_string = escape_search_string
 
 --for each file, loop through
 --for each XML tag which is under the hierarchy tag, save its GUID to a table
 --then, for each tag under the components tag, if it's GUID is in the table, extract the whole tag
 --write all of the extracted components to a new file
 
-local file = io.open("lua/input/remove_callbacks.xml", "r+")
+local file = io.open("lua/input/twui/remove_callbacks.xml", "r+")
 file_text = file:read("*a")
 while file_text:find("<callbacks_with_context>") do
     local next_tag_start = file_text:find("<callbacks_with_context>")
@@ -56,7 +54,7 @@ end
 
 local function output_result()
     file:close()
-    local new_file_path = "lua/output/remove_callbacks.xml"
+    local new_file_path = "lua/output/twui/remove_callbacks.xml"
     local new_file = io.open(new_file_path, "w+")
     new_file:write(file_text)
     new_file:flush()

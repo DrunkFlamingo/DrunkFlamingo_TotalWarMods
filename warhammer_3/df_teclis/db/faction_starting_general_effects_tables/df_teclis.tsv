@@ -1,0 +1,3 @@
+agent_subtype	effect_bundle
+#faction_starting_general_effects_tables;0;db/faction_starting_general_effects_tables/df_teclis	
+wh2_main_hef_teclis	df_teclis_starting_general_effects

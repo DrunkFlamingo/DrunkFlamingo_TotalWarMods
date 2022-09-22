@@ -35,7 +35,7 @@ should_flag_context_command_issues = false
 --local guid_find_pattern = string.gsub(guid_template, "[^%-]", "%x")
 function replace_GUID(...)
     for i = 1, #arg do
-        local file = io.open("lua/input/"..arg[i], "r+")
+        local file = io.open("lua/input/twui/"..arg[i], "r+")
         local file_text = file:read("*a")
         file:close()
 
@@ -75,10 +75,16 @@ function replace_GUID(...)
             if line:find("uniqueguid_in_template") then
                 table.insert(lines_to_restore, i)
                 lines_to_old_context[i] = line
-            elseif line:find("Component%(")
-            or line:find("DoesGUIDExist%(") then
-                should_flag_context_command_issues = true
-                total_allowed_fails = total_allowed_fails + 1
+
+            elseif line:find("Component%(&quot;"..guid_find_pattern.."&quot;%)") 
+            or line:find("DoesGUIDExist%(&quot;"..guid_find_pattern.."&quot;%)") then
+                for MATCHED_GUID in string.gmatch(line, guid_find_pattern) do
+                    if UUID_COUNT[MATCHED_GUID] or 0 <= 1 then
+                        should_flag_context_command_issues = true
+                        total_allowed_fails = total_allowed_fails + 1
+                    end
+                end
+
             end
         end
 
@@ -94,7 +100,8 @@ function replace_GUID(...)
         for i = 2, #file_lines do
             new_file_text = new_file_text.."\n" ..file_lines[i]
         end
-        local new_file_path = "lua/output/" .. arg[i] 
+        local new_file_path = "lua/output/twui/" .. arg[i] 
+
         local new_file = io.open(new_file_path, "w+")
         new_file:write(new_file_text)
         new_file:flush()
@@ -112,12 +119,14 @@ for guid, count in pairs(UUID_COUNT) do
     end
 end
 
+
 local error_msg = ""
 if failed > total_allowed_fails then
     --error_msg = error_msg .. (failed.." lone GUIDs found, "..total_allowed_fails.." allowed.\n")
 else
     log(failed.." lone GUIDs found, "..total_allowed_fails.." allowed.")
 end
+
 
 if should_flag_context_command_issues then
     error_msg = error_msg ..("There are context commands in this file which reference UIComponents by GUID. They probably don't work anymore. \bIts possible to rewrite this script a bit to fix it, but you can do that.\n")

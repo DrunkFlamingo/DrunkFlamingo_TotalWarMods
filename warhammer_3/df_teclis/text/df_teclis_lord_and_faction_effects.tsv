@@ -1,0 +1,4 @@
+key	text	tooltip
+#Loc PackedFile;1;text/df_teclis_lord_and_faction_effects.loc		
+effect_bundles_localised_title_df_teclis_starting_general_effects	High Loremaster	true
+effect_bundles_localised_description_df_teclis_starting_general_effects	PLACEHOLDER	true

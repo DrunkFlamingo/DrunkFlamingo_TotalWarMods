@@ -1,0 +1,20 @@
+id	mission_key	payload_key	status_key	value	target_key
+#cdir_events_mission_payloads_tables;2;db/cdir_events_mission_payloads_tables/df_teclis					
+416901	df_teclis_start_mission	TREASURY	SUCCESS	AMOUNT[2500]	default
+416902	df_teclis_start_mission	INFLUENCE	SUCCESS	AMOUNT[80]	default
+416903	df_teclis_settle_wh3_main_combi_region_great_turtle_isle	INFLUENCE	SUCCESS	AMOUNT[150]	default
+416904	df_teclis_settle_wh3_main_combi_region_the_star_tower	INFLUENCE	SUCCESS	AMOUNT[150]	default
+416905	df_teclis_settle_wh3_main_combi_region_arnheim	INFLUENCE	SUCCESS	AMOUNT[150]	default
+416906	df_teclis_settle_wh3_main_combi_region_gronti_mingol	INFLUENCE	SUCCESS	AMOUNT[125]	default
+416907	df_teclis_reclaim_wh3_main_combi_region_great_turtle_isle	INFLUENCE	SUCCESS	AMOUNT[100]	default
+416908	df_teclis_reclaim_wh3_main_combi_region_the_star_tower	INFLUENCE	SUCCESS	AMOUNT[100]	default
+416909	df_teclis_reclaim_wh3_main_combi_region_arnheim	INFLUENCE	SUCCESS	AMOUNT[150]	default
+416910	df_teclis_reclaim_wh3_main_combi_region_gronti_mingol	INFLUENCE	SUCCESS	AMOUNT[125]	default
+416911	df_teclis_reclaim_wh3_main_combi_region_great_turtle_isle	TREASURY	SUCCESS	AMOUNT[4500]	default
+416912	df_teclis_reclaim_wh3_main_combi_region_the_star_tower	TREASURY	SUCCESS	AMOUNT[4500]	default
+416913	df_teclis_reclaim_wh3_main_combi_region_arnheim	TREASURY	SUCCESS	AMOUNT[4500]	default
+416914	df_teclis_reclaim_wh3_main_combi_region_gronti_mingol	TREASURY	SUCCESS	AMOUNT[4500]	default
+416915	df_teclis_settle_wh3_main_combi_region_great_turtle_isle	EFFECT_BUNDLE	SUCCESS	KEY[df_teclis_reclaimed_colony];DURATION[10];GLOBAL	default
+416916	df_teclis_settle_wh3_main_combi_region_the_star_tower	EFFECT_BUNDLE	SUCCESS	KEY[df_teclis_reclaimed_colony];DURATION[10];GLOBAL	default
+416917	df_teclis_settle_wh3_main_combi_region_arnheim	EFFECT_BUNDLE	SUCCESS	KEY[df_teclis_reclaimed_colony];DURATION[10];GLOBAL	default
+416918	df_teclis_settle_wh3_main_combi_region_gronti_mingol	EFFECT_BUNDLE	SUCCESS	KEY[df_teclis_reclaimed_colony];DURATION[10];GLOBAL	default

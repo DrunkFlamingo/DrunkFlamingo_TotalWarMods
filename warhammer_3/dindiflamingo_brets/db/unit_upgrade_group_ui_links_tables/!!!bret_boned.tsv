@@ -1,0 +1,10 @@
+child_key	parent_key	child_link_position	parent_link_position	parent_link_position_offset	child_link_position_offset	mid_link_offset
+#unit_upgrade_group_ui_links_tables;2;db/unit_upgrade_group_ui_links_tables/!!!bret_boned						
+k_realm_upgrade	k_errant_upgrade	3	1	0.0	0.0	0.0
+k_questing_upgrade	k_realm_upgrade	3	1	0.0	0.0	0.0
+k_pegasus_upgrade	k_realm_upgrade	4	2	0.0	0.0	0.0
+k_grail_upgrade	k_questing_upgrade	3	1	0.0	0.0	0.0
+k_roypegasus_upgrade	k_pegasus_upgrade	3	1	0.0	0.0	0.0
+k_royhippo_upgrade	k_roypegasus_upgrade	3	1	0.0	0.0	0.0
+k_relic_upgrade	k_grail_upgrade	2	4	0.0	0.0	0.0
+k_vow_e_errants_upgrade	k_errant_upgrade	0	0	0.0	0.0	0.0

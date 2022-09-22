@@ -2,6 +2,47 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "luaVersion": "5.1",
+            "name": "ReplaceGUID",
+            "program": "${workspaceFolder}/lua/ReplaceGUID.lua",
+            "request": "launch",
+            "type": "lua",
+            "path": "${workspaceFolder}/lua/?.lua"
+        },
+        {
+            "luaVersion": "5.1",
+            "name": "generateRogueDanielDB",
+            "program": "${workspaceFolder}/lua/createRogueDanielTables.lua",
+            "request": "launch",
+            "type": "lua",
+            "path": "${workspaceFolder}/lua/?.lua"
+        },
+        {
+            "luaVersion": "5.1",
+            "name": "ExtractHierarchy",
+            "program": "${workspaceFolder}/lua/ExtractHierarchy.lua",
+            "request": "launch",
+            "type": "lua",
+            "path": "${workspaceFolder}/lua/?.lua"
+        },
+        {
+            "luaVersion": "5.1",
+            "name": "RemoveContextCallbacks",
+            "program": "${workspaceFolder}/lua/RemoveContextCallbacks.lua",
+            "request": "launch",
+            "type": "lua",
+            "path": "${workspaceFolder}/lua/?.lua"
+        },
+        {
+            "luaVersion": "5.1",
+            "name": "CreateLoc",
+            "program": "${workspaceFolder}/lua/CreateLocForTWUIXML.lua",
+            "request": "launch",
+            "type": "lua",
+            "path": "${workspaceFolder}/lua/?.lua;${workspaceFolder}/lua/_lib/?.lua",
+            "cpath": "${workspaceFolder}/lua/_lib/?.dll"
+        },
+        {
             "type": "lua",
             "request": "launch",
             "name": "Launch",

@@ -1,8 +1,8 @@
 key	text	tooltip
 #Loc PackedFile;1;text/db/wec_unit_caps_text.loc		
-ttc_group_name_core	Core	false
-ttc_group_name_special	Special	false
-ttc_group_name_rare	Rare	false
+ttc_group_name_core	[[img:core_1]][[/img]]Core	false
+ttc_group_name_special	[[img:special_1]][[/img]]Special	false
+ttc_group_name_rare	[[img:rare_1]][[/img]]Rare	false
 ttc_measurement_name	points	false
 ttc_army_limited	This army may have up to 0000 1111 worth of 2222 units.	false
 ttc_unit_cost	This unit is a 0000 unit and costs 1111 2222.	false
@@ -12,3 +12,5 @@ ttc_meter_tooltip	[[col:yellow]]2222 3333[[/col]]\\nYou have used 0000 of the 11
 ttc_restriction_tooltip	[[col:red]]You have insufficient 0000 1111 available.[[/col]]	false
 effects_description_df_core_snow_leopard	[[col:yellow]]Special Rule: [[/col]] Katarin can recruit Snow Leopards as Core units in her armies.	true
 ttc_show_costs	Toggle displaying Tabletop Caps categories and values on unit cards.	true
+effects_description_df_core_plague_monks	[[col:yellow]]Special Rule: [[/col]] Lord Skrolk can recruit Plague Monks as Core units in his army.	true
+ttc_warband_upgrade_cost	This upgrade requires 0000 1111 2222 per unit upgraded.	true
