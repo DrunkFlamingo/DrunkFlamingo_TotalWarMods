@@ -27,3 +27,4 @@
 **/out
 log.txt
 main.lua
+lua/_lib
