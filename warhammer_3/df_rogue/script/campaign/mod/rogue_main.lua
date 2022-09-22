@@ -86,7 +86,7 @@ end
   ---take a lua table and return a string which can be loadstringed to recreate the table.
 ---@param t table
 ---@return string
-function table_to_string(t, indent)
+local function table_to_string(t, indent)
     if not indent then
         indent = 0
     end
@@ -121,7 +121,7 @@ function table_to_string(t, indent)
     return result
 end
 
----comment
+---table concat with tostring instead of error when a non-string item is encountered
 ---@param table any[]
 ---@param div string 
 ---@return string
@@ -133,18 +133,36 @@ local function tolerant_table_concat(table, div)
     return result
 end
 
+---adds all items in the table ignoring non-number values
+---@param table any[]
+local function tolerant_table_add(table)
+    local result = 0
+    for i, v in ipairs(table) do
+        if type(v) == "number" then
+            result = result + v
+        elseif type(v) == "string" and tonumber(v) then
+            result = result + tonumber(v)
+        end
+    end
+    return result
+end
+
 
 
 ---comment
 ---@param call fun()
 ---@param time integer
 ---@param name string
----@param should_repeat boolean
+---@param should_repeat boolean|nil
 ---@param time_to_remove_after integer|nil
 local function ui_callback(call, time, name, should_repeat, time_to_remove_after)
     if not is_number(time) then
         out("ui_callback called with a non-number time")
         out("For Immediate callbacks, use game_callback")
+        return
+    end
+    if not is_string(name) then
+        out("ui_callback called with a non-string name")
         return
     end
     local callstack = debug.traceback()
@@ -161,13 +179,49 @@ local function ui_callback(call, time, name, should_repeat, time_to_remove_after
     if should_repeat then
       cm:repeat_real_callback(cb, time, name)
     else
-      cm:callback(cb, time, name)
+      cm:real_callback(cb, time, name)
     end
     if should_repeat and time_to_remove_after then
       cm:real_callback(function()
         cm:remove_real_callback(name)
       end, time_to_remove_after, name)
     end
+end
+
+local unique_callbacks = {} ---@type table<string, boolean>
+---Used to fire a one-time callback without repeating it if it has already been called for elsewhere in the script.
+---if replace is true, the existing callback will be removed and the new one will be added instead - this can delay the callback occuring
+---@param call fun()
+---@param time integer
+---@param name string
+---@param replace boolean|nil
+---@param buffer integer | nil
+local function unique_callback(call, time, name, replace, buffer)
+    if not is_string(name) then
+        out("unique_callback requires a name!")
+        return
+    end
+    if not is_number(time) then
+        out("unique_callback requires a time!")
+        return
+    end
+    if not buffer or buffer < 50 then
+        buffer = 50
+    end
+    if unique_callbacks[name] then
+        if replace then
+            cm:remove_real_callback(name)    
+        else
+            return
+        end
+    end
+    unique_callbacks[name] = true
+    ui_callback(function ()
+        call()
+        ui_callback(function ()
+            unique_callbacks[name] = false
+        end, buffer, name)
+    end, time, name)
 end
 
 ---@param ContextType string
@@ -1426,9 +1480,9 @@ end
 local function grant_armory_item(armory_item_key)
     ---@diagnostic disable-next-line
     cm:add_armory_item_to_character(player.character, armory_item_key, false, false)
-    ui_callback(function ()
-        common.call_context_command("CcoCampaignCharacter", tostring(player.cqi), "Select(false)")
-    end, 500, "SelectCharacterAfterRewards")
+    game_callback(function ()
+        core:trigger_event("PostRewardArmoryItemGranted")
+    end, 0.1) -- wait for the game model to register the item
 end
 
 local function rename_player_at_game_start()
@@ -1447,8 +1501,8 @@ end
 ---@param command_key string
 ---@param ... any
 local function ui_command(command_key, ...)
-    --TODO rewrite this function to use UITrigger for multiplayer safety.
-    --not sure this mod will ever be multiplayer compatible, but maybe one day.
+    --TODO rewrite this function to use UITrigger for multiplayer safety
+    --if we ever decide to let a second player in.
     local commands = {
         ["commence_encounter"] = {command = commence_encounter, delay = 0.1},
         ["rename_player_at_game_start"] = {command = rename_player_at_game_start},
@@ -1464,11 +1518,28 @@ local function ui_command(command_key, ...)
     end
 end
 
+---@param already_selected boolean|nil
+local function show_character_info(already_selected)
+    out("Character info showing. Character was already selected: "..tostring(already_selected))
+    --select the character
+    if not already_selected then
+        common.call_context_command("CcoCampaignCharacter", tostring(player.cqi), "Select(false)")
+    end
+    cm:disable_movement_for_character(player.lookup)
+    local delay = 200
+    if already_selected then
+        delay = 25
+    end
+    --show the correct buttons on the bottom bar
 
-local function show_army_panel()
-
+    --destroy unncessary elements on the character information panel
 end
 
+local function close_character_info()
+    out("Character info closing")
+    cm:enable_movement_for_character(player.lookup)
+    CampaignUI.ClearSelection()
+end
 
 
 ---@return UIC
@@ -1624,19 +1695,21 @@ function start_ui()
     else
         out("The Worldspace Parent Failed to Create! Check the rogue3dui.twui.xml file!")
     end
-    --[[
-    get_or_create_tr_hud()
-
-    --open the units panels
-    ui_click_callback("button_unit_panel", function(context)
-        get_or_create_army_panel()
+    
+    --show character info after a reward was granted.
+    game_event_callback("PostRewardArmoryItemGranted", function ()
+       unique_callback(function ()
+        show_character_info()
+       end, 250, "SelectCharacterAfterRewards", true, 200) 
+       --we buffer this so that the character selected event directly below this doesn't get triggered by this call
     end)
 
-    --open the character details panel
-    ui_click_callback("button_character_details", function(context)
-        --did this via CCO
-    end)--]]
-
+    --call the character info function after the player manually selects their army
+    game_event_callback("CharacterSelected", function (context)
+        unique_callback(function ()
+            show_character_info(true)
+        end, 250, "SelectCharacterAfterRewards")
+    end)
 
     --select encounter
     ui_click_callback("encounter_slot", function (context)
@@ -1645,7 +1718,7 @@ function start_ui()
         -- note to self: this is a weird case, usually you shouldn't need to modify the context_id for get_context_value. CcoCampaignSettlement requires it.
         local settlement_key = common.get_context_value("CcoCampaignSettlement", "settlement:"..context_id, "SettlementKey")
         send_selected_encounter_to_ui(settlement_key)
-        CampaignUI.ClearSelection()
+        close_character_info()
         uim:remove_character_selection_whitelist(player.cqi)
     end)
 
@@ -1722,6 +1795,7 @@ function rogue_main()
     player.name = player.faction:name()
     player.character = player.faction:faction_leader()
     player.cqi = player.character:command_queue_index()
+    player.lookup = cm:char_lookup_str(player.cqi)
     player.force =  player.character:military_force()
     is_new_game = cm:is_new_game()
     --skip all ai faction turns
@@ -1781,7 +1855,7 @@ function rogue_main()
                     end, 700, "startup_sequence")
                 end
             end, 250, "UISTART")
-        end, 100)
+        end, 100, "UILoadScreenDismissed")
     end)
 
     game_callback(function ()
@@ -1925,12 +1999,14 @@ local function test_reward_option(dilemma, choice)
     local choice_details = mod_database.reward_dilemma_choice_details[dilemma]
     local this_choice = choice_details[choice]
     out("Unit rewards for "..choice..": ")
+    local frag_sets = {}
     tab_log(1)
     --TODO, if we add generated components to starting rewards, we need to expand this function.
     for i = 1, #this_choice.mandatory_reward_components do
         local component = this_choice.mandatory_reward_components[i]
         out("Mandatory Reward Component: "..component.force_fragment_set)
         local fragment_set = mod_database.force_fragment_sets[component.force_fragment_set]
+        table.insert(frag_sets, component.force_fragment_set)
         local unit_list = generate_unit_list_from_force_fragment_set(fragment_set)
         unit_count = unit_count + #unit_list
         for j = 1, #unit_list do
@@ -1946,7 +2022,7 @@ local function test_reward_option(dilemma, choice)
     end
     untab_log(1)
     out("Total value for this reward option: "..value.." total count of units: "..unit_count)
-    return value, unit_count
+    return value, unit_count, frag_sets
 end
 
 local function test_starting_armies(depth)
@@ -1966,6 +2042,7 @@ local function test_starting_armies(depth)
             tab_log(1)
             local choice_details = mod_database.reward_dilemma_choice_details[reward.dilemma]
             for choice_key, choice_detail in pairs(choice_details) do
+                local fragment_sets_used = {}
                 local total_value = 0
                 local total_units = 0
                 local highest_value = 0
@@ -1973,7 +2050,10 @@ local function test_starting_armies(depth)
                 local lowest_value = 999999
                 local lowest_units = 999999
                 for _ = 1, depth do
-                    local value, unit_count = test_reward_option(reward.dilemma, choice_key)
+                    local value, unit_count, frag_sets = test_reward_option(reward.dilemma, choice_key)
+                    for k = 1, #frag_sets do
+                        fragment_sets_used[frag_sets[k]] = true
+                    end
                     total_value = total_value + value
                     if value > highest_value then
                         highest_value = value
@@ -1987,10 +2067,15 @@ local function test_starting_armies(depth)
                         lowest_units = unit_count
                     end
                 end
+                local unique_frag_sets = {}
+                for k, _ in pairs(fragment_sets_used) do
+                    table.insert(unique_frag_sets, k)
+                end
                 local average_value = total_value / depth
                 local average_units = total_units / depth
                 local value_variance = ((highest_value - average_value) / average_value) * 100
-                local unit_variance = ((highest_units - average_units) / average_units) * 100
+                local unit_variance = ((highest_units - average_units) / average_units)
+                local frag_sets = tolerant_table_concat(unique_frag_sets, ",")
                 start_army_results[reward.dilemma][choice_key] = {
                     average_value = average_value,
                     average_units = average_units,
@@ -1999,7 +2084,8 @@ local function test_starting_armies(depth)
                     lowest_value = lowest_value,
                     lowest_units = lowest_units,
                     value_variance = value_variance,
-                    unit_variance = unit_variance
+                    unit_variance = unit_variance,
+                    frag_sets = frag_sets
                 }
             end
             untab_log(1)
@@ -2015,11 +2101,17 @@ local function test_starting_armies(depth)
         return
     end
     local had_results = false
-    log_file:write("reward_key\taverage_value\taverage_units\thighest_value\thighest_units\tlowest_value\tlowest_units\tvalue_variance\tunit_variance\n")
+    log_file:write("dilemma_name\tchoice_key\tfragments_used\taverage_value\taverage_units\thighest_value\thighest_units\tlowest_value\tlowest_units\tvalue_variance\tunit_variance\trelative_value\n")
     for dilemma_key, choice_results in pairs(start_army_results) do
+        local average_values = {} ---@type number[]
+        for _, results in pairs(choice_results) do 
+            table.insert(average_values, results.average_value)
+        end
+        local average_of_all_choices = tolerant_table_add(average_values) / #average_values
         for choice_key, results in pairs(choice_results) do
             had_results = true
-            log_file:write(dilemma_key.."_"..choice_key.."\t"..results.average_value.."\t"..results.average_units.."\t"..results.highest_value.."\t"..results.highest_units.."\t"..results.lowest_value.."\t"..results.lowest_units.."\t"..results.value_variance.."\t"..results.unit_variance.."\n")
+            local relative_value = ((results.average_value / average_of_all_choices)*100) - 100
+            log_file:write(dilemma_key.."\t"..choice_key.. "\t" .. results.frag_sets .. "\t"..results.average_value.."\t"..results.average_units.."\t"..results.highest_value.."\t"..results.highest_units.."\t"..results.lowest_value.."\t"..results.lowest_units.."\t"..results.value_variance.."\t"..results.unit_variance.."\t"..relative_value.."\n")
         end
         had_results = true
     end
