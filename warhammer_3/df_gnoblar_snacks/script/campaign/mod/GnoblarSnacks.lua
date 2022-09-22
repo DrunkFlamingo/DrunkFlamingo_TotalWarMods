@@ -36,8 +36,21 @@ mod.ogre_pooled_resource_costs = {
 	["wh3_main_ogr_mon_sabretusk_pack_0"] = { ["unit"] = "wh3_main_ogr_mon_sabretusk_pack_0", ["upkeep_resource_cost"] = 1 },
 	["wh3_main_ogr_mon_stonehorn_0"] = { ["unit"] = "wh3_main_ogr_mon_stonehorn_0", ["upkeep_resource_cost"] = 1 },
 	["wh3_main_ogr_mon_stonehorn_1"] = { ["unit"] = "wh3_main_ogr_mon_stonehorn_1", ["upkeep_resource_cost"] = 1 },
-	["wh3_main_ogr_veh_ironblaster_0"] = { ["unit"] = "wh3_main_ogr_veh_ironblaster_0", ["upkeep_resource_cost"] = 1 }
+	["wh3_main_ogr_veh_ironblaster_0"] = { ["unit"] = "wh3_main_ogr_veh_ironblaster_0", ["upkeep_resource_cost"] = 1 },
+    ["wh3_twa06_ogr_inf_maneaters_ror_0"] = { ["unit"] = "wh3_main_ogr_veh_ironblaster_0", ["upkeep_resource_cost"] = 2 },
+    ["wh3_twa07_ogr_cav_crushers_ror_0"] = { ["unit"] = "wh3_main_ogr_veh_ironblaster_0", ["upkeep_resource_cost"] = 1 },
 }
+
+local ui_table = {}
+local ui_2_table = {}
+for k, v in pairs(mod.ogre_pooled_resource_costs) do
+    ui_table[k] = v.upkeep_resource_cost
+    if v.upkeep_resource_cost > 1 then
+        ui_2_table[k] = v.upkeep_resource_cost
+    end
+end
+common.set_context_value("gnoblar_snacks_meat_costs", ui_table)
+common.set_context_value("gnoblar_snacks_high_meat_costs", ui_2_table)
 
 mod.gnoblar_units = {
     wh3_main_ogr_inf_gnoblars_0 = true,
@@ -244,17 +257,6 @@ mod.is_gnoblar = function(unit_key)
 end
 
 
-mod.refresh_script_notifiers = function()
-    cm:callback(function ()
-        local armyList = find_uicomponent_from_table(core:get_ui_root(), {"units_panel", "main_units_panel", "units"})
-        if not not armyList then
-            for i = 0, armyList:ChildCount() - 1 do	
-                local unitCard = UIComponent(armyList:Find(i))
-                unitCard:AddScriptEventReporter()
-            end
-        end
-    end, 0.2, "GnoblarSnacksRefreshNotifiers")
-end
 
 
 mod.update_unit_selection = function()
@@ -416,10 +418,11 @@ mod.eat_gnoblars = function(faction, char_cqi, trigger_table)
     local payload_builder = cm:create_payload();
     payload_builder:clear()
 
-    dilemma_builder:add_target(character:military_force())
+    dilemma_builder:add_target("default", character:military_force())
     local event_to_show 
     for i = 1, #unitContexts do
-        local index = unitContexts[i][1]
+        local index = tonumber(unitContexts[i][1]) 
+        ---@cast index integer
         local unitContextId = unitContexts[i][2]
         local campaignUnitContext = cco("CcoCampaignUnit", unitContextId)
         if campaignUnitContext and not event_to_show then
@@ -441,11 +444,12 @@ mod.eat_gnoblars = function(faction, char_cqi, trigger_table)
                 out("WTF? Asked the script to eat a character on character cqi "..char_cqi.. " but couldn't get that character")
             end
         end
-        local unit_interface = character:military_force():unit_list():item_at(tonumber(index))
+        local unit_interface = character:military_force():unit_list():item_at(index)
         if unit_interface and not unit_interface:is_null_interface() then
             payload_builder:destroy_unit(unit_interface)
+        else
+            out("WTF? Asked the script to eat a unit at index "..index.. " but couldn't get that unit")
         end
-        
     end
 
     out("Adding a pooled resource gain of "..tostring(food_gain).." to the payload!")
@@ -496,7 +500,6 @@ mod.eat_gnoblars = function(faction, char_cqi, trigger_table)
                 mod.unit_selection = {}
                 mod.check_units_and_populate_snack_button()
                 common.call_context_command("CcoCampaignCharacter", char_cqi, "Select(false)")
-                mod.refresh_script_notifiers()
             end
         end)
     
@@ -537,66 +540,7 @@ mod.hide_or_show_snack_button = function(character)
     end
 end
 
-mod.get_unit_key_from_details_panel = function(unitInfo)
-    local unit_key
-    local detailContextId = unitInfo:GetContextObjectId("CcoUnitDetails")
-    local campaignUnitContextId = unitInfo:GetContextObjectId("CcoCampaignUnit")
-    if campaignUnitContextId then
-        out("Context id for details was  "..tostring(campaignUnitContextId))
-        local campaignUnitContext = cco("CcoCampaignUnit", campaignUnitContextId)
-        unit_key = campaignUnitContext:Call("UnitRecordContext.Key")
-    else
-        out("Context id for details was "..tostring(detailContextId))
-        local key_with_trailing_data = string.gsub(detailContextId, "RecruitmentUnit_", "")
-        unit_key = string.gsub(key_with_trailing_data, "_%d+_%d+_%d+_%d+$", "")
-    end
-    if unit_key then
-        return unit_key
-    else
-        out("Could not find unit key for the details panel!")
-    end
-end
 
-
-mod.fill_meat_consumption_tooltip = function()
-    --do return end
-    -- :root:hud_campaign:unit_information_parent:unit_info_panel_holder_parent:unit_info_panel_holder:unit_information:info_parent:info_panel:list:top_bar:dy_food
-    if mod.is_character_details_open() then
-        return
-    end
-    local unitInfo = find_uicomponent(core:get_ui_root(), "hud_campaign", "unit_information_parent", "unit_info_panel_holder_parent",
-    "unit_info_panel_holder", "unit_information")
-    local unit_key = mod.get_unit_key_from_details_panel(unitInfo)
-    local info_panel = find_uicomponent(unitInfo, "info_parent", "info_panel")
-    if info_panel then
-        if not unit_key then
-            out("Filling meat consumption failed: couldn't find a unit key for the details panel!")
-        else
-            out("Filling meat consumption tooltip: "..unit_key)
-            local resource_cost_table = mod.ogre_pooled_resource_costs[unit_key] or {upkeep_resource_cost = 0}
-            if resource_cost_table.upkeep_resource_cost > 0 then
-                local element_to_use = find_uicomponent(info_panel, "top_bar", "dy_food")
-                if not element_to_use then
-                    return
-                end
-                local image_path = "ui/custom/gnoblar_snacks/meat_upkeep_1.png"
-                if resource_cost_table.upkeep_resource_cost > 1 then
-                    image_path = "ui/custom/gnoblar_snacks/meat_upkeep_2.png"
-                end
-                element_to_use:SetStateText(tostring(resource_cost_table.upkeep_resource_cost))
-                --the UITR things don't fill when you're doing monkey business with the UI.
-                --{{tr:hp_campaign_food_cost_title}}||{{tr:unit_information_food_tooltip}}
-                local tt = common.get_localised_string("ui_text_replacements_localised_text_food_cost_title_wh3_main_sc_ogr_ogre_kingdoms") .. "||" .. common.get_localised_string("ui_text_replacements_localised_text_unit_information_food_tooltip_wh3_main_sc_ogr_ogre_kingdoms")
-                element_to_use:SetTooltipText(tt, true)
-                local image_element = find_uicomponent(element_to_use, "amber_icon")
-                image_element:SetImagePath(image_path)
-                element_to_use:SetVisible(true)
-            end
-        end
-    else
-        out("A unit card was hovered, the details panel isn't there.")
-    end
-end
 
 --unused
 mod.get_unit_key_from_unit_card = function(unitCard)
@@ -655,53 +599,8 @@ mod.add_listeners = function()
                 end
             end,
             true)
-        core:add_listener(
-            "GnoblarSnacks",
-            "ComponentMouseOn",
-            function(context)
-                local component_name = context.string
-                return string.find(component_name, "LandUnit") 
-            end,
-            function (context)
-                mod.fill_meat_consumption_tooltip()
-            end,
-            true)
-        core:add_listener(
-            "GnoblarSnacks",
-            "ComponentMouseOff",
-            function(context)
-                local component_name = context.string
-                return string.find(component_name, "LandUnit") 
-            end,
-            function (context)
-                mod.fill_meat_consumption_tooltip()
-            end,
-            true)
-        --make sure script notifiers are attached to new queued units
-        core:add_listener(
-            "GnoblarSnacks",
-            "ComponentLClickUp",
-            function(context)
-                return string.find(context.string, "_recruitable") or string.find(context.string, "_mercenary")
-            end,
-            function(context)
-                out("Mouseclick triggered on a recruitable")
-                mod.refresh_script_notifiers()
-                mod.fill_meat_consumption_tooltip()
-            end,
-            true)
-        --reattach notifiers when people finish moving
-        core:add_listener(
-            "GnoblarSnacks",
-            "CharacterFinishedMovingEvent",
-            function(context)
-              return context:character():faction():name() == cm:get_local_faction_name(true) and mod.is_units_panel_open()
-            end,
-            function (context)
-                mod.refresh_script_notifiers()
-            end,
-            true)
-        --when the character details panel closes, check whether the units panel is open, and if it is, refresh script notifiers and call the show or hide function.
+
+        --when the character details panel closes, check whether the units panel is open, and if it is, call the show or hide function.
         --necessary because the character might get an immortal skill while this panel is open.
         core:add_listener(
             "GnoblarSnacks",
@@ -711,13 +610,12 @@ mod.add_listeners = function()
             end,
             function(context)
                 if mod.is_units_panel_open() then
-                    mod.refresh_script_notifiers()
                     mod.hide_or_show_snack_button(cm:get_character_by_cqi(cm:get_campaign_ui_manager():get_char_selected_cqi()))
                 end
             end,
             true)
 
-        --listen for the panel opening, create the snack button and add script event reporters to unit cards
+        --listen for the panel opening, create the snack button 
         core:add_listener(
             "GnoblarSnacks",
             "PanelOpenedCampaign",
@@ -727,14 +625,6 @@ mod.add_listeners = function()
             end,
             function(context)
                 out("units panel opened")
-                local units_panel = UIComponent(context.component)
-                local armyList = find_uicomponent(units_panel, "main_units_panel", "units")
-                if not not armyList then
-                    for i = 0, armyList:ChildCount() - 1 do	
-                        local unitCard = UIComponent(armyList:Find(i))
-                        unitCard:AddScriptEventReporter()
-                    end
-                end
                 mod.hide_or_show_snack_button(cm:get_character_by_cqi(cm:get_campaign_ui_manager():get_char_selected_cqi()))
             end,
             true)
@@ -749,7 +639,6 @@ mod.add_listeners = function()
             function(context)
                 out("Mouseclick triggered on a land unit")
                 mod.check_units_and_populate_snack_button()
-                mod.fill_meat_consumption_tooltip()
             end,
             true)
         --listen for the click 
