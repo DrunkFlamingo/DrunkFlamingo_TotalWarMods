@@ -1,18 +1,22 @@
 ---@class EOM_DATA_FACTION
-local template_entry = {
+local default_entry = {
     key = "wh_main_emp_empire",
-    potential_rivals = {}, -- which factions can be selected to feud with this faction?
-    base_fealty = 0, -- what is the fealty value at the start of the game?
-    can_lead_civil_war = false, --can this faction lead a civil war?
-    always_triggers_civil_war = false, --when this faction runs out of Fealty, should they always trigger a civil war instead of rebelling on their own?
+    --- which factions can be selected to feud with this faction?
+    potential_rivals = {}, ---@type string[]
+    --- what is the fealty value at the start of the game?
+    base_fealty = 0, ---@type integer
+    --- can this faction lead a civil war?
+    can_lead_civil_war = false, ---@type boolean
+    --- when this faction runs out of Fealty, should they always trigger a civil war instead of rebelling on their own?
+    always_triggers_civil_war = false, ---@type boolean
+    --- what state does this faction start in.
     starting_state = "normal" ---@type EOM_FACTION_STATE
 } 
 
-return {
+local faction_data = {
     ["wh_main_emp_empire"] = {
         key = "wh_main_emp_empire",
         potential_rivals = {"wh_main_emp_middenland", "wh_main_emp_talabecland", "wh_main_emp_averland"},
-        base_fealty = 0,
         can_lead_civil_war = true,
         always_triggers_civil_war = true,
         starting_state = "emperor"
@@ -90,3 +94,14 @@ return {
         starting_state = "normal"
     }
 } ---@type table<string, EOM_DATA_FACTION>
+
+
+for field_name, default_data in pairs(default_entry) do
+    for faction_key, faction_data in pairs(faction_data) do
+        if faction_data[field_name] == nil then
+            faction_data[field_name] = default_data
+        end
+    end
+end
+
+return faction_data
