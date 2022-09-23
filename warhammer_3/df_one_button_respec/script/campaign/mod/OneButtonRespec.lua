@@ -35,54 +35,16 @@ function table_to_string(t, indent)
     result = result .. "\n"..prefix.."}"
     return result
 end
---[[
+
 
 local auto_level_skills = require("obr_data/auto_level_skills") 
 ---skill, rank, level 
 
-local skill_node_to_subtypes = require("obr_data/skill_node_to_subtypes")
+local whitelisted_subtypes = require("obr_data/whitelisted_subtypes")
 ---skill node set, subtype
 
-local skill_node_to_skill = require("obr_data/skill_to_skill_node") 
----skill, skill node set
 
-local subtypes_to_auto_skills = {} ---@type table<string, table<integer, string[]>>
-local skills_to_skill_node_sets = {} ---@type table<string, string[]>
---build data tables then clear above from memory
-for i = 1, #skill_node_to_skill do
-    local skill_key = skill_node_to_skill[i][1]
-    local skill_node_set = skill_node_to_skill[i][2]
-    if not skills_to_skill_node_sets[skill_key] then
-        skills_to_skill_node_sets[skill_key] = {skill_node_set}
-    else
-        table.insert(skills_to_skill_node_sets[skill_key], skill_node_set)
-    end
-end
 
-for i = 1, #auto_level_skills do
-    local skill_key = auto_level_skills[i][1]
-    local rank = auto_level_skills[i][2]
-    local level = auto_level_skills[i][3]
-    local skill_nodes_containing_skill = skills_to_skill_node_sets[skill_key]
-    if not skill_nodes_containing_skill then
-        out("No skill nodes found for skill " .. skill_key)
-    else
-        for j = 1, #skill_nodes_containing_skill do
-            local skill_node_set = skill_nodes_containing_skill[j]
-            local subtype = skill_node_to_subtypes[skill_node_set]
-            subtypes_to_auto_skills[subtype] = subtypes_to_auto_skills[subtype] or {}
-            subtypes_to_auto_skills[subtype][rank] = subtypes_to_auto_skills[subtype][rank] or {}
-            table.insert(subtypes_to_auto_skills[subtype][rank], skill_key)
-        end
-    end
-end
-
-local skills_to_skill_node_sets = nil
-local auto_level_skills = nil
-local skill_node_to_subtypes = nil
-local skill_node_to_skill = nil
---]]
---out(table_to_string(subtypes_to_auto_skills))
 
 local out = function(t)
     ModLog("DRUNKFLAMINGO: "..tostring(t).." (One Button Respec)")
@@ -290,15 +252,23 @@ local function respec_character(character)
         local skill_indent = characterContext:Call("SkillList.At("..i..").Indent")
         local skill_level = characterContext:Call("SkillList.At("..i..").Level")
         out("Checking skill: "..skill_key.." with indent "..skill_indent)
-        if skill_indent > 0 and skill_indent < 7 then
+
+        if  (skill_indent > 0 and skill_indent < 7) then
             if skill_level > 0 then    
-                out("Removing skill: "..skill_key)
+                out("Removing skill: "..skill_key.. " because it is within indent ranges")
                 for _ = 1, skill_level do
                     cm:remove_skill_point(cm:char_lookup_str(character), skill_key)
                 end
             else
                 out("No points in this skill")
             end
+        elseif (not auto_level_skills[skill_key] and whitelisted_subtypes[character:character_subtype_key()]) then
+            out("Removing skill: "..skill_key.." because it is from a whitelisted subtype and isn't an auto-skill")
+            for _ = 1, skill_level do
+                cm:remove_skill_point(cm:char_lookup_str(character), skill_key)
+            end
+        else
+            out("Skill is not a respecable skill")
         end
     end
 end
