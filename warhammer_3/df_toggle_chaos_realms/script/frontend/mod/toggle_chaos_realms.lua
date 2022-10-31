@@ -1,9 +1,8 @@
----@param t string
+---@param t any
 local out = function(t)
   ModLog("DRUNKFLAMINGO: "..tostring(t).." (toggle realms)")
 end
 
--- :root:sp_grand_campaign:centre_docker:lord_details_panel:lord_info:tab_settings:options:campaign:label_tx
 
 local mct 
 if get_mct then
@@ -29,7 +28,8 @@ end
 
 
 local function get_or_create_toggle_box_sp(uic_grand_campaign)
-  local campaign_options = find_uicomponent(uic_grand_campaign, "centre_docker", "lord_details_panel", "lord_info", "tab_settings", "options", "campaign")
+  -- :root:campaign_select_new:right_holder:tab_settings:settings_holder:settings_holder:listview:list_clip:list_box
+  local campaign_options = find_uicomponent(uic_grand_campaign, "right_holder", "tab_settings", "settings_holder", "settings_holder", "listview", "list_clip", "list_box")
   local existing_checkbox = find_uicomponent(campaign_options, "checkbox_chaos_realms")
   if is_uicomponent(existing_checkbox) then
     return existing_checkbox
@@ -111,10 +111,10 @@ core:add_listener(
     "ChaosRealmsToggle",
     "FrontendScreenTransition",
     function (context)
-        return context.string == "sp_grand_campaign"
+        return context.string == "campaign_select_new"
     end,
     function (context)
-      local uic_grand_campaign = find_uicomponent("sp_grand_campaign");
+      local uic_grand_campaign = find_uicomponent("campaign_select_new");
 			if not uic_grand_campaign then
 				out("ERROR: couldn't find uic_grand_campaign, how can this be?");
 				return false
@@ -162,14 +162,39 @@ core:add_listener(
     true
 )
 
+core:add_listener(
+  "ChaosRealmsHideinIE",
+  "ComponentLClickUp",
+  function(context) return find_uicomponent("campaign_select_new") and uicomponent_descended_from(UIComponent(context.component), "tab_campaign") end,
+  function(context)			
+    local uic_grand_campaign = find_uicomponent("campaign_select_new");
+    local campaign_options = find_uicomponent(uic_grand_campaign, "right_holder", "tab_settings", "settings_holder", "settings_holder", "listview", "list_clip", "list_box")
+    local existing_checkbox = find_uicomponent(campaign_options, "checkbox_chaos_realms")
+    if existing_checkbox then
+      out("Found the checkbox state on campaign selected")
+      core:get_tm():real_callback(function()
+        -- :root:campaign_select_new:side_panel_holder:side_holder:button_list
+        local campaign_button_list = find_uicomponent(uic_grand_campaign, "side_panel_holder", "side_holder", "button_list")
+        local campaign_id = campaign_button_list:GetContextObjectId("CcoCampaignStartInfo")
+        local enable = campaign_id == "wh3_main_chaos__0_0"
+        out("existing_checkbox visibility " ..tostring(existing_checkbox:Visible()).. "new visibility " .. tostring(enable))
+        existing_checkbox:SetVisible(enable)
+      end, 100, "ChaosRealmToggleHideCallback")
+      
+    else
+      out("Campaign is beign selected but we couldn't find any checkbox for the realms toggle")
+    end
+  end,
+  true
+);
 
 core:add_listener(
   "start_campaign_button_listener",
   "ComponentLClickUp",
-  function(context) return context.string == "button_start_campaign" and uicomponent_descended_from(UIComponent(context.component), "sp_grand_campaign") end,
+  function(context) return context.string == "button_start_campaign" and uicomponent_descended_from(UIComponent(context.component), "campaign_select_new") end,
   function(context)			
-    local uic_grand_campaign = find_uicomponent("sp_grand_campaign");
-    local campaign_options = find_uicomponent(uic_grand_campaign, "centre_docker", "lord_details_panel", "lord_info", "tab_settings", "options", "campaign")
+    local uic_grand_campaign = find_uicomponent("campaign_select_new");
+    local campaign_options = find_uicomponent(uic_grand_campaign, "right_holder", "tab_settings", "settings_holder", "settings_holder", "listview", "list_clip", "list_box")
     local existing_checkbox = find_uicomponent(campaign_options, "checkbox_chaos_realms")
     if existing_checkbox then
       out("Found the checkbox state on campaign starting")
@@ -220,9 +245,9 @@ if mct then
   enable:add_option_set_callback(function (option)
     local val = option:get_selected_setting() 
     set_narrative_enabled(val)
-    local uic_grand_campaign = find_uicomponent("sp_grand_campaign");
+    local uic_grand_campaign = find_uicomponent("campaign_select_new");
     if uic_grand_campaign then
-      local campaign_options = find_uicomponent(uic_grand_campaign, "centre_docker", "lord_details_panel", "lord_info", "tab_settings", "options", "campaign")
+      local campaign_options = find_uicomponent(uic_grand_campaign, "right_holder", "tab_settings", "settings_holder", "settings_holder", "listview", "list_clip", "list_box")
       local existing_checkbox = find_uicomponent(campaign_options, "checkbox_chaos_realms")
       if existing_checkbox then
         if val then
@@ -238,8 +263,8 @@ if mct then
     "MctPanelOpened",
     true,
     function (context)
-      local uic_grand_campaign = find_uicomponent("sp_grand_campaign");
-      local campaign_options = find_uicomponent(uic_grand_campaign, "centre_docker", "lord_details_panel", "lord_info", "tab_settings", "options", "campaign")
+      local uic_grand_campaign = find_uicomponent("campaign_select_new");
+      local campaign_options = find_uicomponent(uic_grand_campaign, "right_holder", "tab_settings", "settings_holder", "settings_holder", "listview", "list_clip", "list_box")
       local existing_checkbox = find_uicomponent(campaign_options, "checkbox_chaos_realms")
       if existing_checkbox then
         out("Found the checkbox state on campaign starting")

@@ -1,3 +1,3 @@
-key	generate	ui_image	prioritised	event_category	override_icon
-#incidents_tables;3;db/incidents_tables/toggle_chaos_realms					
-df_chaos_realms_off	false	story_panels/sty_pan_belakor_3	true	Event	event_rift_neutral.png
+key	generate	ui_image	prioritised	event_category	override_icon	is_large_incident
+#incidents_tables;4;db/incidents_tables/toggle_chaos_realms						
+df_chaos_realms_off	false	story_panels/sty_pan_belakor_3	true	Event	event_rift_neutral.png	true

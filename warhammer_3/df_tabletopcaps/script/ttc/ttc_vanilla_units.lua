@@ -171,36 +171,43 @@ local wh3_ror = {
 	----------------
     {"wh3_twa06_cth_inf_dragon_guard_ror_0", "rare", 1},
     {"wh3_twa07_cth_cav_jade_longma_riders_ror_0", "rare", 2},
+    {"wh3_twa08_cth_mon_terracotta_sentinel_0_ror", "rare", 3},
 	----------------
 	---- KHORNE ----
 	----------------
     {"wh3_twa06_kho_inf_bloodletters_ror_0", "special", 2},
     {"wh3_twa07_kho_cav_bloodcrushers_ror_0", "special", 2},
+    {"wh3_twa08_kho_mon_bloodthirster_0_ror", "rare", 3},
 	----------------
 	---- KISLEV ----
 	----------------
     {"wh3_twa06_ksl_inf_tzar_guard_ror_0", "special", 2},
     {"wh3_twa07_ksl_cav_war_bear_riders_ror_0", "special", 3},
+    {"wh3_twa08_ksl_mon_elemental_bear_0_ror", "rare", 3},
 	----------------
 	---- NURGLE ----
 	----------------
     {"wh3_twa06_nur_inf_plaguebearers_ror_0", "special", 2},
     {"wh3_twa07_nur_cav_pox_riders_of_nurgle_ror_0", "special", 2},
+    {"wh3_twa08_nur_mon_great_unclean_one_0_ror", "rare", 3},
 	-----------------------
 	---- OGRE KINGDOMS ----
 	-----------------------
     {"wh3_twa06_ogr_inf_maneaters_ror_0", "special", 2},
     {"wh3_twa07_ogr_cav_crushers_ror_0", "rare", 2},
+    {"wh3_twa08_ogr_mon_stonehorn_0_ror", "rare", 2},
 	------------------
 	---- SLAANESH ----
 	------------------
     {"wh3_twa06_sla_inf_daemonette_ror_0", "special", 2},
     {"wh3_twa07_sla_cav_heartseekers_of_slaanesh_ror_0", "rare", 2},
+    {"wh3_twa08_sla_mon_keeper_of_secrets_0_ror", "rare", 3},
 	------------------
 	---- TZEENTCH ----
 	------------------
     {"wh3_twa06_tze_inf_pink_horrors_ror_0", "special", 2},
-    {"wh3_twa07_tze_cav_doom_knights_ror_0", "rare", 2}
+    {"wh3_twa07_tze_cav_doom_knights_ror_0", "rare", 2},
+    {"wh3_twa08_tze_mon_lord_of_change_0_ror", "rare", 3}
 }
 
 local dlc20_units = {
