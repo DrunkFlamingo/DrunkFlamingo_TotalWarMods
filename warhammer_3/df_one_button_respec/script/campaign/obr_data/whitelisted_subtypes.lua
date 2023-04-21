@@ -457,7 +457,25 @@ local vanilla_subtypes = {
 	["wh3_main_sla_cultist"] = { ["key"] = "wh3_main_sla_cultist" },
 	["wh_dlc08_vmp_terrorgheist_boss"] = { ["key"] = "wh_dlc08_vmp_terrorgheist_boss" },
 	["wh_dlc08_nor_frost_wyrm_boss"] = { ["key"] = "wh_dlc08_nor_frost_wyrm_boss" },
-	["wh2_main_skv_lord_skrolk"] = { ["key"] = "wh2_main_skv_lord_skrolk" }
+	["wh2_main_skv_lord_skrolk"] = { ["key"] = "wh2_main_skv_lord_skrolk" },
+	["wh3_dlc23_chd_astragoth"] = { ["key"] = "wh3_dlc23_chd_astragoth" },
+	["wh3_dlc23_chd_bull_centaur_taurruk"] = { ["key"] = "wh3_dlc23_chd_bull_centaur_taurruk" },
+	["wh3_dlc23_chd_daemonsmith_sorcerer_death"] = { ["key"] = "wh3_dlc23_chd_daemonsmith_sorcerer_death" },
+	["wh3_dlc23_chd_daemonsmith_sorcerer_fire"] = { ["key"] = "wh3_dlc23_chd_daemonsmith_sorcerer_fire" },
+	["wh3_dlc23_chd_daemonsmith_sorcerer_hashut"] = { ["key"] = "wh3_dlc23_chd_daemonsmith_sorcerer_hashut" },
+	["wh3_dlc23_chd_daemonsmith_sorcerer_metal"] = { ["key"] = "wh3_dlc23_chd_daemonsmith_sorcerer_metal" },
+	["wh3_dlc23_chd_drazhoath"] = { ["key"] = "wh3_dlc23_chd_drazhoath" },
+	["wh3_dlc23_chd_gorduz_backstabber"] = { ["key"] = "wh3_dlc23_chd_gorduz_backstabber" },
+	["wh3_dlc23_chd_infernal_castellan"] = { ["key"] = "wh3_dlc23_chd_infernal_castellan" },
+	["wh3_dlc23_chd_lord_convoy_overseer"] = { ["key"] = "wh3_dlc23_chd_lord_convoy_overseer" },
+	["wh3_dlc23_chd_overseer"] = { ["key"] = "wh3_dlc23_chd_overseer" },
+	["wh3_dlc23_chd_overseer_hobgoblin_spawned_army"] = { ["key"] = "wh3_dlc23_chd_overseer_hobgoblin_spawned_army" },
+	["wh3_dlc23_chd_sorcerer_prophet_death"] = { ["key"] = "wh3_dlc23_chd_sorcerer_prophet_death" },
+	["wh3_dlc23_chd_sorcerer_prophet_fire"] = { ["key"] = "wh3_dlc23_chd_sorcerer_prophet_fire" },
+	["wh3_dlc23_chd_sorcerer_prophet_hashut"] = { ["key"] = "wh3_dlc23_chd_sorcerer_prophet_hashut" },
+	["wh3_dlc23_chd_sorcerer_prophet_metal"] = { ["key"] = "wh3_dlc23_chd_sorcerer_prophet_metal" },
+	["wh3_dlc23_chd_zhatan"] = { ["key"] = "wh3_dlc23_chd_zhatan" },
+	["wh3_dlc23_neu_ulrika"] = { ["key"] = "wh3_dlc23_neu_ulrika" }
 }
 
 local retval = {}

@@ -335,6 +335,12 @@ local trigger_respec_dilemma = function(faction, character)
     end
 end
 
+onebuttonrespec_whitelist_subtype = function(subtype_key, new_auto_level_skills) 
+    whitelisted_subtypes[subtype_key] = true
+    for i = 1, #new_auto_level_skills do
+        auto_level_skills[new_auto_level_skills[i]] = true
+    end
+end
 
 -- :root:character_details_panel:character_context_parent:skill_pts_holder:skill_pts:round_small_button
 onebuttonrespec = function()
