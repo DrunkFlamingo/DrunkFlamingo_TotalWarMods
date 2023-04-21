@@ -1914,7 +1914,7 @@ mod.check_ai_character = function(character, read_only)
   end
   character_record:refresh_budget()
   character_record:refresh_special_rules()
-
+  local removed_any_unit = false
   local unit_list = character:military_force():unit_list() ---@type any
   for i = 0, unit_list:num_items() -1 do
     local unit_record = mod.get_unit(unit_list:item_at(i):unit_key(), character_record)
@@ -1951,6 +1951,7 @@ mod.check_ai_character = function(character, read_only)
       for i = 1, #sortable_list do
         local unit_record = sortable_list[i]
         cm:remove_unit_from_character(cm:char_lookup_str(character), unit_record.key)
+        removed_any_unit = true
         table.insert(removed_units[group_key], unit_record)
         balance = balance + unit_record.weight
         out("Removed "..unit_record.key..", balance is now "..balance)
@@ -1990,6 +1991,9 @@ mod.check_ai_character = function(character, read_only)
     local char_cqi = character:command_queue_index()
     out("Checked AI Character: "..char_cqi)
     mod.characters[char_cqi] = nil
+  end
+  if removed_any_unit then 
+    mod.do_colonel_check_on_force(character:military_force());
   end
 end
 
@@ -2034,7 +2038,24 @@ mod.add_character_to_adjustment_queue = function(character, delay)
   end
 end
 
+---@param faction FACTION_SCRIPT_INTERFACE
+mod.do_colonel_check_on_faction = function(faction)
+  local character_list = faction:character_list()
+  for i = 0, character_list:num_items() -1 do
+    local character = character_list:item_at(i)
+    if character:character_type("colonel") then
+      if (not character:has_military_force()) and (not character:is_politician()) and (not character:is_wounded()) and (not character:has_garrison_residence()) then
+        out("Colonel "..character:command_queue_index().." has no force or garrison and is not present in the character pool.")
+        cm:kill_character(cm:char_lookup_str(character), true)
+      end
+    end
+  end
+end
 
+---@param force MILITARY_FORCE_SCRIPT_INTERFACE 
+mod.do_colonel_check_on_force = function (force)
+  mod.do_colonel_check_on_faction(force:faction());
+end
 
 
 mod.add_ai_listeners = function()
@@ -2109,9 +2130,21 @@ mod.add_ai_listeners = function()
             end
         end, 0.1)
       end
+      local faction_name = force:faction():name()
+      core:remove_listener("TTCColonelCheck"..faction_name)
+      core:add_listener("TTCColonelCheck"..faction_name, "FactionTurnEnd", 
+        function (subcontext) return subcontext:faction():name() == faction_name end,
+        function(subcontext)
+          mod.do_colonel_check_on_faction(subcontext:faction());
+        end,
+        false);
 		end,
 		true);
-    out("TTC AI listeners active")
+    out("TTC AI listeners active; executing first tick colonel check")
+    for j = 0, cm:model():world():faction_list():num_items() - 1 do
+      local faction = cm:model():world():faction_list():item_at(j)
+        mod.do_colonel_check_on_faction(faction);
+    end
 end
 
 -----------------------------------------------------------------------------------------------------------

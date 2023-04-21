@@ -501,9 +501,9 @@ local wh2_units = {
     
     -------ROR-------
     --CORE
-    {"wh_pro04_brt_inf_battle_pilgrims_ror_0", "core"},
     {"wh_pro04_brt_cav_mounted_yeomen_ror_0", "core"},
     --SPECIAL
+    {"wh_pro04_brt_inf_battle_pilgrims_ror_0", "special", 1},
     {"wh_pro04_brt_inf_foot_squires_ror_0", "special", 1},
     {"wh_pro04_brt_cav_knights_errant_ror_0", "special", 1},
     {"wh_pro04_brt_cav_knights_of_the_realm_ror_0", "special", 1},
@@ -1264,14 +1264,58 @@ local subculture_defaults = {
     ["wh3_main_sc_dae_daemons"] = {"wh3_main_kho_inf_bloodletters_0","wh3_main_nur_inf_nurglings_0", "wh3_main_sla_inf_daemonette_0", "wh3_main_tze_inf_pink_horrors_0", "wh3_main_tze_inf_blue_horrors_0"},
 } --:map<string, vector<string>>
 
+local chorfs_dlc_units = {
 
+    {"wh3_dlc23_chd_inf_chaos_dwarf_blunderbusses", "core"},
+    {"wh3_dlc23_chd_inf_chaos_dwarf_blunderbusses_ror", "core"},
+    {"wh3_dlc23_chd_inf_chaos_dwarf_warriors", "core"},
+    {"wh3_dlc23_chd_inf_chaos_dwarf_warriors_great_weapons", "core"},
+    {"wh3_dlc23_chd_inf_chaos_dwarf_warriors_ror", "core"},
+    {"wh3_dlc23_chd_inf_goblin_labourers", "core"},
+    {"wh3_dlc23_chd_inf_hobgoblin_archers", "core"},
+    {"wh3_dlc23_chd_inf_hobgoblin_cutthroats", "core"},
+    {"wh3_dlc23_chd_inf_orc_labourers", "core"},
+
+    {"wh3_dlc23_chd_inf_hobgoblin_sneaky_gits", "special", 1},
+    {"wh3_dlc23_chd_inf_infernal_guard", "special", 1},
+    {"wh3_dlc23_chd_inf_infernal_guard_fireglaives", "special", 1},
+    {"wh3_dlc23_chd_inf_infernal_guard_great_weapons", "special", 1},
+    {"wh3_dlc23_chd_veh_deathshrieker_rocket_launcher", "special", 2},
+    {"wh3_dlc23_chd_veh_iron_daemon", "special", 2},
+    {"wh3_dlc23_chd_veh_iron_daemon_ror", "special", 2},
+    {"wh3_dlc23_chd_veh_magma_cannon", "special", 2},
+    {"wh3_dlc23_chd_veh_skullcracker", "special", 2},
+    {"wh3_dlc23_chd_cav_bull_centaurs_axe", "special", 2},
+    {"wh3_dlc23_chd_cav_bull_centaurs_dual_axe", "special", 2},
+    {"wh3_dlc23_chd_cav_bull_centaurs_dual_axe_ror", "special", 2},
+    {"wh3_dlc23_chd_cav_bull_centaurs_greatweapons", "special", 2},
+    {"wh3_dlc23_chd_inf_infernal_ironsworn", "special", 2},
+    {"wh3_dlc23_chd_inf_infernal_ironsworn_ror", "special", 2},
+    {"wh3_dlc23_chd_mon_kdaai_fireborn", "special", 2},
+
+    {"wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_bows", "rare", 1},
+    {"wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_ror", "rare", 1},
+    {"wh3_dlc23_chd_cav_hobgoblin_wolf_raiders_spears", "rare", 1},
+    {"wh3_dlc23_chd_mon_great_taurus", "rare", 1},
+
+    {"wh3_dlc23_chd_mon_lammasu", "rare", 2},
+    {"wh3_dlc23_chd_mon_bale_taurus", "rare", 2},
+    {"wh3_dlc23_chd_mon_kdaai_destroyer", "rare", 3},
+    {"wh3_dlc23_chd_veh_dreadquake_mortar", "rare", 3},
+    {"wh3_dlc23_chd_veh_skullcracker_1dreadquake", "rare", 3},
+    {"wh3_dlc23_chd_veh_iron_daemon_ror_1dreadquake", "rare", 3},
+    {"wh3_dlc23_chd_veh_iron_daemon_1dreadquake", "rare", 3}
+}
 
 ---special rules are set up in the database using effects, however, flagging them here is necessary because it is too expensive for the script to check all 1600 possible units for a special rule.
 ---Valid flags are "subtype", "faction" and "subculture"
 ---multiple flags are OR, not AND. For example: {subculture = wh3_main_sc_ksl_kislev, subtype = wh3_main_ksl_katarin} would apply to anyone who is from the kislev subculture because it means "Is from kislev OR is katarin"
 ---Special rules *do* affect the AI.
 local units_with_special_rules = {
-    {"wh2_main_skv_inf_plague_monks", {subtype = "wh2_main_skv_lord_skrolk"}}
+    {"wh2_main_skv_inf_plague_monks", {subtype = "wh2_main_skv_lord_skrolk"}},
+    {"wh3_dlc23_chd_inf_infernal_guard", {subtype = "wh3_dlc23_chd_drazhoath"}},
+    {"wh3_dlc23_chd_inf_infernal_guard_fireglaives", {subtype = "wh3_dlc23_chd_drazhoath"}},
+    {"wh3_dlc23_chd_inf_infernal_guard_great_weapons", {subtype = "wh3_dlc23_chd_drazhoath"}}
 }
 
 
@@ -1283,6 +1327,7 @@ ttc.add_setup_callback(function()
    ttc.add_unit_list(wh3_ror, true)
    ttc.add_unit_list(wh2_units, true)
    ttc.add_unit_list(dlc20_units, true)
+   ttc.add_unit_list(chorfs_dlc_units, true)
    for subculture_key, unit_list in pairs(subculture_defaults) do
     ttc.add_replacement_units_for_subculture(subculture_key, unit_list)
    end

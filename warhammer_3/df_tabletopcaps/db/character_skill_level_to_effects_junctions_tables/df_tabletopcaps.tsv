@@ -1,3 +1,4 @@
 character_skill_key	effect_key	level	effect_scope	value
 #character_skill_level_to_effects_junctions_tables;1;db/character_skill_level_to_effects_junctions_tables/df_tabletopcaps				
-wh2_main_skill_innate_skv_skrolk_plaguelord	df_core_plague_monks	1	character_to_character_own	1.0
+wh2_main_skill_innate_skv_skrolk_plaguelord	df_core_plague_monks	1	character_to_character_own	1.0000
+wh3_dlc23_skill_innate_chd_drazhoath	df_core_infernal_guard	1	character_to_character_own	1.0000
