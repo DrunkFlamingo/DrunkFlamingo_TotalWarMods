@@ -1262,6 +1262,8 @@ local subculture_defaults = {
     ["wh3_main_sc_sla_slaanesh"] = {"wh3_main_sla_inf_daemonette_0", "wh3_main_sla_inf_marauders_2"},
     ["wh3_main_sc_tze_tzeentch"] = {"wh3_main_tze_inf_pink_horrors_0", "wh3_main_tze_inf_blue_horrors_0"},
     ["wh3_main_sc_dae_daemons"] = {"wh3_main_kho_inf_bloodletters_0","wh3_main_nur_inf_nurglings_0", "wh3_main_sla_inf_daemonette_0", "wh3_main_tze_inf_pink_horrors_0", "wh3_main_tze_inf_blue_horrors_0"},
+    --wh3 DLC
+    ["wh3_dlc23_sc_chd_chaos_dwarfs"] = {"wh3_dlc23_chd_inf_chaos_dwarf_warriors", "wh3_dlc23_chd_inf_chaos_dwarf_warriors_great_weapons", "wh3_dlc23_chd_inf_chaos_dwarf_blunderbusses", "wh3_dlc23_chd_inf_hobgoblin_cutthroats"}
 } --:map<string, vector<string>>
 
 local chorfs_dlc_units = {
@@ -1307,6 +1309,40 @@ local chorfs_dlc_units = {
     {"wh3_dlc23_chd_veh_iron_daemon_1dreadquake", "rare", 3}
 }
 
+--balance by by cataph
+-- go complain at him I don't even play this game anymore.
+local controversial_dlc_units = {
+    {"wh3_dlc24_bst_inf_tzaangors", "special", 1},
+    {"wh3_dlc24_bst_mon_incarnate_elemental_of_beasts", "rare", 3},
+    {"wh3_dlc24_cth_inf_dragon_guard_crossbowmen_ror", "rare", 1},
+    {"wh3_dlc24_cth_inf_onyx_crowmen", "special", 1},
+    {"wh3_dlc24_cth_inf_onyx_crowmen_ror", "special", 1},
+    {"wh3_dlc24_cth_mon_jade_lion", "special", 3},
+    {"wh3_dlc24_cth_mon_jet_lion", "special", 3},
+    {"wh3_dlc24_cth_veh_zhangu_war_drum", "rare", 2},
+    {"wh3_dlc24_cth_veh_zhangu_war_drum_ror", "rare", 2},
+    {"wh3_dlc24_ksl_inf_akshina_ambushers", "rare", 1},
+    {"wh3_dlc24_ksl_inf_akshina_ambushers_ror", "rare", 1},
+    {"wh3_dlc24_ksl_inf_streltsi_ror", "core"},
+    {"wh3_dlc24_ksl_mon_incarnate_elemental_of_beasts", "rare", 3},
+    {"wh3_dlc24_ksl_mon_the_things_in_the_woods", "special", 2},
+    {"wh3_dlc24_ksl_mon_the_things_in_the_woods_ror", "special", 2},
+    {"wh3_dlc24_lzd_mon_carnosaur_0", "rare", 2},
+    {"wh3_dlc24_tze_inf_pink_horrors_ror", "core"},
+    {"wh3_dlc24_tze_inf_tzaangors", "special", 1},
+    {"wh3_dlc24_tze_mon_cockatrice", "rare", 2},
+    {"wh3_dlc24_tze_mon_mutalith_vortex_beast", "rare", 3},
+    {"wh3_dlc24_tze_mon_mutalith_vortex_beast_ror", "rare", 3},
+    {"wh3_dlc24_tze_mon_screamers_ror", "special", 1},
+    {"wh3_twa10_cth_inf_peasant_archers_ror", "core"},
+    {"wh3_twa10_kho_inf_flesh_hounds_of_khorne_ror", "special", 1},
+    {"wh3_twa10_ksl_inf_armoured_kossars_ror", "core"},
+    {"wh3_twa10_nur_inf_nurglings_ror", "core"},
+    {"wh3_twa10_ogr_inf_gnoblars_ror", "core"},
+    {"wh3_twa10_sla_inf_marauders_spears_ror", "core"},
+    {"wh3_twa10_tze_inf_blue_horrors_ror", "core"}
+}
+
 ---special rules are set up in the database using effects, however, flagging them here is necessary because it is too expensive for the script to check all 1600 possible units for a special rule.
 ---Valid flags are "subtype", "faction" and "subculture"
 ---multiple flags are OR, not AND. For example: {subculture = wh3_main_sc_ksl_kislev, subtype = wh3_main_ksl_katarin} would apply to anyone who is from the kislev subculture because it means "Is from kislev OR is katarin"
@@ -1328,6 +1364,7 @@ ttc.add_setup_callback(function()
    ttc.add_unit_list(wh2_units, true)
    ttc.add_unit_list(dlc20_units, true)
    ttc.add_unit_list(chorfs_dlc_units, true)
+    ttc.add_unit_list(controversial_dlc_units, true)
    for subculture_key, unit_list in pairs(subculture_defaults) do
     ttc.add_replacement_units_for_subculture(subculture_key, unit_list)
    end
