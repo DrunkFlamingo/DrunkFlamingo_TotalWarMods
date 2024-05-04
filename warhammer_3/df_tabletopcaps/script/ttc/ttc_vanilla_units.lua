@@ -1343,6 +1343,79 @@ local controversial_dlc_units = {
     {"wh3_twa10_tze_inf_blue_horrors_ror", "core"}
 }
 
+local reputation_salvaging_dlc_units = {
+    {"wh3_dlc24_cth_mon_celestial_lion", "rare", 2},
+    {"wh3_dlc24_cth_mon_great_moon_bird", "special", 3},
+    {"wh3_dlc24_ksl_inf_kislevite_warriors", "core"},
+    {"wh3_dlc24_ksl_mon_frost_wyrm", "rare", 2},
+    {"wh3_dlc24_tze_inf_centigors_great_weapons", "rare", 1},
+    {"wh3_dlc24_bst_inf_centigors_great_weapons_mtze", "rare", 1},
+    {"wh3_dlc24_tze_mon_flamers_changebringers", "rare", 2}
+}
+
+local dlc_25_units = {
+    {"wh3_dlc25_bst_inf_pestigors", "special", 1},
+    {"wh3_dlc25_dwf_art_goblin_hewer", "rare", 1},
+    {"wh3_dlc25_dwf_art_goblin_hewer_malakai", "rare", 1},
+    {"wh3_dlc25_dwf_art_grudge_thrower_grudge_reward", "special", 1},
+    {"wh3_dlc25_dwf_inf_doomseekers", "special", 2},
+    {"wh3_dlc25_dwf_inf_doomseekers_ror", "special", 2},
+    {"wh3_dlc25_dwf_inf_slayer_pirates", "rare", 1},
+    {"wh3_dlc25_dwf_inf_slayer_pirates_ror", "rare", 1},
+    {"wh3_dlc25_dwf_inf_thunderers_grudge_rakers", "special", 1},
+    {"wh3_dlc25_dwf_inf_thunderers_ror", "core"},
+    {"wh3_dlc25_dwf_veh_thunderbarge", "rare", 3},
+    {"wh3_dlc25_dwf_veh_thunderbarge_grungni", "rare", 3},
+    {"wh3_dlc25_dwf_veh_thunderbarge_malakai", "rare", 3},
+    {"wh3_dlc25_emp_art_helstorm_rocket_battery_morr", "rare", 2},
+    {"wh3_dlc25_emp_cav_knights_of_the_black_rose", "special", 2},
+    {"wh3_dlc25_emp_cav_outriders_morr", "special", 2},
+    {"wh3_dlc25_emp_inf_hochland_long_rifles", "special", 1},
+    {"wh3_dlc25_emp_inf_hochland_long_rifles_ror", "special", 1},
+    {"wh3_dlc25_emp_inf_nuln_ironsides", "special", 1},
+    {"wh3_dlc25_emp_inf_nuln_ironsides_morr", "special", 2},
+    {"wh3_dlc25_emp_inf_spearmen_shields_ror", "core"},
+    {"wh3_dlc25_emp_veh_marienburg_land_ship", "rare", 2},
+    {"wh3_dlc25_emp_veh_marienburg_land_ship_morr", "rare", 2},
+    {"wh3_dlc25_emp_veh_marienburg_land_ship_ror", "rare", 2},
+    {"wh3_dlc25_emp_veh_steam_tank_volley_gun", "rare", 3},
+    {"wh3_dlc25_nur_cav_plague_drones_1_ror", "rare", 1},
+    {"wh3_dlc25_nur_cav_rot_knights", "special", 3},
+    {"wh3_dlc25_nur_cav_rot_knights_ror", "special", 3},
+    {"wh3_dlc25_nur_chieftain_art_hellcannon", "rare", 2},
+    {"wh3_dlc25_nur_chieftain_cav_chaos_chariot_mnur", "core"},
+    {"wh3_dlc25_nur_chieftain_cav_rot_knights", "special", 2},
+    {"wh3_dlc25_nur_chieftain_inf_aspiring_champions_0", "special", 1},
+    {"wh3_dlc25_nur_chieftain_inf_centigors_1", "special", 1},
+    {"wh3_dlc25_nur_chieftain_inf_chaos_dwarf_blunderbusses", "core"},
+    {"wh3_dlc25_nur_chieftain_inf_cygor_0", "rare", 2},
+    {"wh3_dlc25_nur_chieftain_inf_infernal_guard_fireglaives", "special", 2},
+    {"wh3_dlc25_nur_chieftain_mon_dragon_ogre_shaggoth", "rare", 3},
+    {"wh3_dlc25_nur_chieftain_mon_fimir_0", "rare", 1},
+    {"wh3_dlc25_nur_chieftain_mon_fimir_1", "rare", 1},
+    {"wh3_dlc25_nur_chieftain_mon_frost_wyrm_0", "rare", 2},
+    {"wh3_dlc25_nur_chieftain_mon_ghorgon", "rare", 3},
+    {"wh3_dlc25_nur_chieftain_mon_skinwolves_0", "special", 2},
+    {"wh3_dlc25_nur_chieftain_mon_toad_dragon", "rare", 3},
+    {"wh3_dlc25_nur_chieftain_mon_war_mammoth_0", "rare", 2},
+    {"wh3_dlc25_nur_chieftain_mon_war_mammoth_1", "rare", 3},
+    {"wh3_dlc25_nur_chieftain_veh_dreadquake_mortar", "rare", 3},
+    {"wh3_dlc25_nur_inf_pestigors", "special", 1},
+    {"wh3_dlc25_nur_inf_plague_ogres", "rare", 2},
+    {"wh3_dlc25_nur_inf_plague_ogres_great_weapons", "rare", 2},
+    {"wh3_dlc25_nur_mon_bile_trolls", "rare", 2},
+    {"wh3_dlc25_nur_mon_soul_grinder_0_ror", "rare", 2},
+    {"wh3_dlc25_nur_mon_toad_dragon", "rare", 3},
+    {"wh_main_dwf_art_flame_cannon_grudge_reward", "rare", 2},
+    {"wh_main_dwf_inf_hammerers_grudge_reward", "special", 2},
+    {"wh_main_dwf_inf_irondrakes_0_grudge_reward", "rare", 1},
+    {"wh_main_dwf_inf_longbeards_1_grudge_reward", "core"},
+    {"wh_main_dwf_inf_quarrellers_1_grudge_reward", "core"},
+    {"wh_main_dwf_inf_slayers_grudge_reward", "special", 1},
+    {"wh_main_dwf_veh_gyrocopter_1_grudge_reward", "special", 2}
+}
+
+
 ---special rules are set up in the database using effects, however, flagging them here is necessary because it is too expensive for the script to check all 1600 possible units for a special rule.
 ---Valid flags are "subtype", "faction" and "subculture"
 ---multiple flags are OR, not AND. For example: {subculture = wh3_main_sc_ksl_kislev, subtype = wh3_main_ksl_katarin} would apply to anyone who is from the kislev subculture because it means "Is from kislev OR is katarin"
@@ -1359,14 +1432,16 @@ local units_with_special_rules = {
 
 local ttc = core:get_static_object("tabletopcaps")
 ttc.add_setup_callback(function()
-   ttc.add_unit_list(wh3_units, true)
-   ttc.add_unit_list(wh3_ror, true)
-   ttc.add_unit_list(wh2_units, true)
-   ttc.add_unit_list(dlc20_units, true)
-   ttc.add_unit_list(chorfs_dlc_units, true)
+    ttc.add_unit_list(wh3_units, true)
+    ttc.add_unit_list(wh3_ror, true)
+    ttc.add_unit_list(wh2_units, true)
+    ttc.add_unit_list(dlc20_units, true)
+    ttc.add_unit_list(chorfs_dlc_units, true)
     ttc.add_unit_list(controversial_dlc_units, true)
-   for subculture_key, unit_list in pairs(subculture_defaults) do
-    ttc.add_replacement_units_for_subculture(subculture_key, unit_list)
-   end
-   ttc.add_special_rule_list(units_with_special_rules)
+    ttc.add_unit_list(reputation_salvaging_dlc_units, true)
+    ttc.add_unit_list(dlc_25_units, true)
+    for subculture_key, unit_list in pairs(subculture_defaults) do
+        ttc.add_replacement_units_for_subculture(subculture_key, unit_list)
+    end
+    ttc.add_special_rule_list(units_with_special_rules)
 end)
