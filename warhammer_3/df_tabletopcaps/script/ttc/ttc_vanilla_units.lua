@@ -237,7 +237,7 @@ local dlc20_units = {
     {"wh3_dlc20_chs_inf_forsaken_mkho", "core", 1},
     {"wh3_dlc20_chs_inf_forsaken_msla", "core", 1},
     ---special
-    {"wh3_dlc20_chs_inf_aspiring_champions_mtze_ror", "special", 1},
+    {"wh3_dlc20_chs_inf_aspiring_champions_mtze_ror", "special", 2},
     {"wh3_dlc20_chs_cav_chaos_knights_mkho", "special", 2},
     {"wh3_dlc20_chs_cav_chaos_knights_mkho_lances", "special", 2},
     {"wh3_dlc20_chs_cav_chaos_knights_mnur", "special", 2},
@@ -319,7 +319,7 @@ local wh2_units = {
     --RARE
     {"wh_dlc04_emp_art_sunmaker_0", "rare", 2},
     {"wh_dlc04_emp_veh_templehof_luminark_0", "rare", 3},
-    {"wh2_dlc13_emp_veh_war_wagon_ror_0", "rare", 1},
+    {"wh2_dlc13_emp_veh_war_wagon_ror_0", "rare", 2},
     
     -------ELECTOR COUNTSHIP-------
     --CORE
@@ -345,13 +345,13 @@ local wh2_units = {
     {"wh2_dlc13_emp_inf_handgunners_imperial_supply", "core"},
     {"wh2_dlc13_emp_cav_empire_knights_imperial_supply", "special", 1},
     --SPECIAL
-    {"wh2_dlc13_emp_cav_demigryph_knights_0_imperial_supply", "special", 1},
-    {"wh2_dlc13_emp_cav_demigryph_knights_1_imperial_supply", "special", 1},
+    {"wh2_dlc13_emp_cav_demigryph_knights_0_imperial_supply", "special", 3},
+    {"wh2_dlc13_emp_cav_demigryph_knights_1_imperial_supply", "special", 3},
     {"wh2_dlc13_emp_art_great_cannon_imperial_supply", "special", 2},
-    {"wh2_dlc13_emp_cav_knights_blazing_sun_0_imperial_supply", "special", 1},
+    {"wh2_dlc13_emp_cav_knights_blazing_sun_0_imperial_supply", "special", 2},
     {"wh2_dlc13_emp_cav_outriders_1_imperial_supply", "special", 1},
     {"wh2_dlc13_emp_cav_pistoliers_1_imperial_supply", "special", 1},
-    {"wh2_dlc13_emp_cav_reiksguard_imperial_supply", "special", 1},
+    {"wh2_dlc13_emp_cav_reiksguard_imperial_supply", "special", 2},
     {"wh2_dlc13_emp_inf_greatswords_imperial_supply", "special", 1},
     {"wh2_dlc13_emp_inf_huntsmen_0_imperial_supply", "special", 1},
     {"wh2_dlc13_huntmarshall_veh_obsinite_gyrocopter_0", "special", 2},
@@ -402,7 +402,7 @@ local wh2_units = {
     --CORE
     {"wh_dlc06_dwf_inf_ekrund_miners_0", "core"},
     {"wh_dlc06_dwf_inf_warriors_dragonfire_pass_0", "core"},
-    {"wh_dlc06_dwf_old_grumblers_0", "core"},
+    {"wh_dlc06_dwf_inf_old_grumblers_0", "core"},
     --SPECIAL
     {"wh_dlc06_dwf_inf_dragonback_slayers_0", "special", 1},
     {"wh_dlc06_dwf_inf_peak_gate_guard_0", "special", 2},
@@ -411,8 +411,8 @@ local wh2_units = {
     {"wh_dlc06_dwf_veh_skyhammer_0", "special", 2},
     {"wh_dlc06_dwf_art_gob_lobber_0", "special", 1},
     --RARE
-    {"wh_dlc06_dwf_inf_norgrimlings_irondrakes_0", "rare", 1},
-    {"wh2_dlc17_lzd_carnosaur", "rare", 2},
+    {"wh_dlc06_dwf_inf_norgrimlings_irondrakes_0", "rare", 2},
+    {"wh2_dlc17_dwf_mon_carnosaur_thorek_0", "rare", 2},
     
     
     ---------------------------------------------------------------
@@ -505,8 +505,8 @@ local wh2_units = {
     --SPECIAL
     {"wh_pro04_brt_inf_battle_pilgrims_ror_0", "special", 1},
     {"wh_pro04_brt_inf_foot_squires_ror_0", "special", 1},
-    {"wh_pro04_brt_cav_knights_errant_ror_0", "special", 1},
-    {"wh_pro04_brt_cav_knights_of_the_realm_ror_0", "special", 1},
+    {"wh_pro04_brt_cav_knights_errant_ror_0", "core"},
+    {"wh_pro04_brt_cav_knights_of_the_realm_ror_0", "core"},
     {"wh_pro04_brt_cav_questing_knights_ror_0", "special", 2},
     
     ---------------------------------------------------------------
@@ -565,7 +565,7 @@ local wh2_units = {
     {"wh_dlc06_grn_cav_moon_howlers_0", "core"},
     {"wh_dlc06_grn_cav_mogrubbs_marauders_0", "core"},
     {"wh_dlc06_grn_cav_deff_creepers_0", "core"},
-    {"wh_dlc06_grn_cav_teef_robbers_0", "core"},
+    {"wh_dlc06_grn_cav_teef_robbers_0", "special", 1},
     --SPECIAL
     {"wh_dlc06_grn_inf_krimson_killerz_0", "special", 2},
     {"wh_dlc06_grn_inf_da_rusty_arrers_0", "special", 1},
@@ -619,7 +619,7 @@ local wh2_units = {
     {"wh_dlc01_chs_mon_trolls_1", "special", 1},
     {"wh_dlc01_chs_inf_chosen_2", "special", 2},
     {"wh_dlc06_chs_feral_manticore", "special", 2},
-    {"wh_dlc06_chs_inf_aspiring_champions_0", "special", 1},
+    {"wh_dlc06_chs_inf_aspiring_champions_0", "special", 2},
     --RARE
     {"wh_main_chs_art_hellcannon", "rare", 2},
     {"wh_main_chs_mon_chaos_spawn", "rare", 1},
@@ -680,7 +680,7 @@ local wh2_units = {
     {"wh_pro04_bst_inf_bestigor_herd_ror_0", "special", 1},
     {"wh_pro04_bst_inf_centigors_ror_0", "special", 1},
     {"wh_pro04_bst_inf_minotaurs_ror_0", "special", 2},
-    {"wh2_dlc17_bst_inf_centigors_ror_1", "special", 2},
+    {"wh2_dlc17_bst_inf_centigors_ror_1", "special", 1},
     {"wh2_dlc17_bst_mon_ghorgon_ror_0", "rare", 3},
     --RARE
     {"wh2_dlc17_bst_mon_jabberslythe_ror_0", "rare", 3},
@@ -767,7 +767,7 @@ local wh2_units = {
     {"wh_main_nor_mon_chaos_trolls", "special", 2},
     {"wh_dlc08_nor_mon_warwolves_0", "special", 1},
     {"wh_dlc08_nor_mon_norscan_ice_trolls_0", "special", 2},
-    {"wh_dlc08_nor_feral_manticore", "special", 1},
+    {"wh_dlc08_nor_feral_manticore", "special", 2},
     {"wh_dlc08_nor_inf_marauder_berserkers_0", "special", 1},
     {"wh_dlc08_nor_inf_marauder_champions_0", "special", 2},
     {"wh_dlc08_nor_inf_marauder_champions_1", "special", 2},
@@ -1363,7 +1363,7 @@ local dlc_25_units = {
     {"wh3_dlc25_dwf_inf_slayer_pirates", "rare", 1},
     {"wh3_dlc25_dwf_inf_slayer_pirates_ror", "rare", 1},
     {"wh3_dlc25_dwf_inf_thunderers_grudge_rakers", "special", 1},
-    {"wh3_dlc25_dwf_inf_thunderers_ror", "core"},
+    {"wh3_dlc25_dwf_inf_thunderers_ror", "core"},               --could go either way, but they're not grudge rakers
     {"wh3_dlc25_dwf_veh_thunderbarge", "rare", 3},
     {"wh3_dlc25_dwf_veh_thunderbarge_grungni", "rare", 3},
     {"wh3_dlc25_dwf_veh_thunderbarge_malakai", "rare", 3},
@@ -1385,7 +1385,7 @@ local dlc_25_units = {
     {"wh3_dlc25_nur_chieftain_art_hellcannon", "rare", 2},
     {"wh3_dlc25_nur_chieftain_cav_chaos_chariot_mnur", "core"},
     {"wh3_dlc25_nur_chieftain_cav_rot_knights", "special", 2},
-    {"wh3_dlc25_nur_chieftain_inf_aspiring_champions_0", "special", 1},
+    {"wh3_dlc25_nur_chieftain_inf_aspiring_champions_0", "special", 2},
     {"wh3_dlc25_nur_chieftain_inf_centigors_1", "special", 1},
     {"wh3_dlc25_nur_chieftain_inf_chaos_dwarf_blunderbusses", "core"},
     {"wh3_dlc25_nur_chieftain_inf_cygor_0", "rare", 2},
@@ -1408,11 +1408,17 @@ local dlc_25_units = {
     {"wh3_dlc25_nur_mon_toad_dragon", "rare", 3},
     {"wh_main_dwf_art_flame_cannon_grudge_reward", "rare", 2},
     {"wh_main_dwf_inf_hammerers_grudge_reward", "special", 2},
-    {"wh_main_dwf_inf_irondrakes_0_grudge_reward", "rare", 1},
+    {"wh_main_dwf_inf_irondrakes_0_grudge_reward", "rare", 2},
     {"wh_main_dwf_inf_longbeards_1_grudge_reward", "core"},
     {"wh_main_dwf_inf_quarrellers_1_grudge_reward", "core"},
     {"wh_main_dwf_inf_slayers_grudge_reward", "special", 1},
-    {"wh_main_dwf_veh_gyrocopter_1_grudge_reward", "special", 2}
+    {"wh_main_dwf_veh_gyrocopter_1_grudge_reward", "special", 2},
+    {"wh_main_dwf_art_cannon_malakai" , "special" , 2},
+    {"wh_main_dwf_art_flame_cannon_malakai" , "rare" , 2},
+    {"wh_main_dwf_art_organ_gun_malakai" , "rare" , 2},
+    {"wh_main_dwf_veh_gyrobomber_malakai" , "special" , 2},
+    {"wh_main_dwf_veh_gyrocopter_0_malakai" , "special" , 2},
+    {"wh_main_dwf_veh_gyrocopter_1_malakai" , "special" , 2}
 }
 
 
@@ -1432,16 +1438,16 @@ local units_with_special_rules = {
 
 local ttc = core:get_static_object("tabletopcaps")
 ttc.add_setup_callback(function()
-    ttc.add_unit_list(wh3_units, true)
-    ttc.add_unit_list(wh3_ror, true)
-    ttc.add_unit_list(wh2_units, true)
-    ttc.add_unit_list(dlc20_units, true)
-    ttc.add_unit_list(chorfs_dlc_units, true)
+   ttc.add_unit_list(wh3_units, true)
+   ttc.add_unit_list(wh3_ror, true)
+   ttc.add_unit_list(wh2_units, true)
+   ttc.add_unit_list(dlc20_units, true)
+   ttc.add_unit_list(chorfs_dlc_units, true)
     ttc.add_unit_list(controversial_dlc_units, true)
     ttc.add_unit_list(reputation_salvaging_dlc_units, true)
     ttc.add_unit_list(dlc_25_units, true)
-    for subculture_key, unit_list in pairs(subculture_defaults) do
-        ttc.add_replacement_units_for_subculture(subculture_key, unit_list)
-    end
-    ttc.add_special_rule_list(units_with_special_rules)
+   for subculture_key, unit_list in pairs(subculture_defaults) do
+    ttc.add_replacement_units_for_subculture(subculture_key, unit_list)
+   end
+   ttc.add_special_rule_list(units_with_special_rules)
 end)
